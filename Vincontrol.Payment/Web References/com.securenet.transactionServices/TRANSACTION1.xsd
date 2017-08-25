@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://gateway.securenet.com/API/Contracts" elementFormDefault="qualified" targetNamespace="http://gateway.securenet.com/API/Contracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="MERCHANT_KEY">
+    <xs:sequence>
+      <xs:element name="GROUPID" type="xs:int" />
+      <xs:element minOccurs="0" name="SECUREKEY" nillable="true" type="xs:string" />
+      <xs:element name="SECURENETID" type="xs:int" />
+      <xs:element minOccurs="0" name="ADDITIONALINFO" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MERCHANT_KEY" nillable="true" type="tns:MERCHANT_KEY" />
+  <xs:complexType name="ArrayOfTRANSACTIONRESPONSE">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TRANSACTIONRESPONSE" nillable="true" type="tns:TRANSACTIONRESPONSE" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTRANSACTIONRESPONSE" nillable="true" type="tns:ArrayOfTRANSACTIONRESPONSE" />
+  <xs:complexType name="TRANSACTIONRESPONSE">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:RESPONSE">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ADDITIONALAMOUNT" type="xs:decimal" />
+          <xs:element minOccurs="0" name="ADDITIONALDATA1" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ADDITIONALDATA2" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ADDITIONALDATA3" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ADDITIONALDATA4" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ADDITIONALDATA5" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AUTHCODE" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="AUTHORIZEDAMOUNT" type="xs:decimal" />
+          <xs:element minOccurs="0" name="AVS_RESULT_CODE" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BANK_ACCOUNTNAME" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BANK_ACCOUNTTYPE" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BATCHID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CARDHOLDER_FIRSTNAME" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CARDHOLDER_LASTNAME" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CARDLEVEL_RESULTS" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CARDTYPE" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CARD_CODE_RESPONSE_CODE" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CASHBACK_AMOUNT" type="xs:decimal" />
+          <xs:element minOccurs="0" name="CAVV_RESPONSE_CODE" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CHECKNUM" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CODE" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CUSTOMERID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="CUSTOMER_BILL" nillable="true" type="tns:CUSTOMER_BILL" />
+          <xs:element minOccurs="0" name="EXPIRYDATE" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="GRATUITY" type="xs:decimal" />
+          <xs:element minOccurs="0" name="INDUSTRYSPECIFICDATA" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LAST4DIGITS" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LEVEL2_VALID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="LEVEL3_VALID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MARKETSPECIFICDATA" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="METHOD" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NETWORKCODE" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="NETWORKID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="ORDERID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="PAYMENTID" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="RETREFERENCENUM" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SECURENETID" type="xs:int" />
+          <xs:element minOccurs="0" name="SETTLEMENTAMOUNT" type="xs:decimal" />
+          <xs:element minOccurs="0" name="SETTLEMENTDATETIME" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="SYSTEM_TRACENUM" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TRACKTYPE" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TRANSACTIONAMOUNT" type="xs:decimal" />
+          <xs:element minOccurs="0" name="TRANSACTIONDATETIME" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TRANSACTIONID" type="xs:int" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="TRANSACTIONRESPONSE" nillable="true" type="tns:TRANSACTIONRESPONSE" />
+  <xs:complexType name="RESPONSE">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="RESPONSE_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RESPONSE_REASON_CODE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RESPONSE_REASON_TEXT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RESPONSE_SUBCODE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RESPONSE" nillable="true" type="tns:RESPONSE" />
+  <xs:complexType name="CUSTOMER_BILL">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ADDRESS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CITY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COMPANY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COUNTRY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMAIL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EMAILRECEIPT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FIRSTNAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LASTNAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PHONE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="STATE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ZIP" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CUSTOMER_BILL" nillable="true" type="tns:CUSTOMER_BILL" />
+</xs:schema>

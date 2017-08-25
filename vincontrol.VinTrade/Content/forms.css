@@ -1,0 +1,200 @@
+/* for forms */
+
+#fancybox-content
+{
+    border: 10px solid #0273C1 !important;
+}
+input[type="text"]
+{
+    display: inline-block;
+    width: 210px;
+    height: 16px;
+    padding: 4px;
+    margin-bottom: 9px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #555;
+    border: 1px solid #CCC;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    resize: none;
+}
+#share-with-friend > label
+{
+    font-weight: bold;
+    color: black;
+    clear: both;
+}
+.share-radio
+{
+    float: left;
+    margin-left: 10px;
+}
+.form-wrap p
+{
+    font-size: 13px;
+    color: #222 !important;
+    font-weight: bold;
+}
+.form-wrap textarea
+{
+    resize: none;
+    width: 260px !important;
+}
+#get-quote-form ul li
+{
+    list-style: none;
+    height: 54px !important;
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+}
+#get-quote-form ul
+{
+    margin: 0px;
+    padding: 0px;
+}
+#fancybox-wrap
+{
+    position: fixed !important;
+}
+#offer-form .buttons-info
+{
+    margin-top: 65px;
+}
+
+#offer-form ul li
+{
+    list-style: none;
+}
+#offer-form ul li
+{
+    list-style: none;
+    height: 54px !important;
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+}
+#offer-form ul
+{
+    margin: 0px;
+    padding: 0px;
+}
+.control-group
+{
+    height: 54px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+#test-drive > label
+{
+    font-weight: bold;
+    color: black;
+    clear: both !important;
+}
+.form-wrap h3
+{
+    margin: 0px;
+    color: #333 !important;
+    font-size: 2em;
+}
+.buttons-info:hover
+{
+    background-color: #0394FC;
+}
+.buttons-info
+{
+    font-weight: bold;
+    float: right;
+    background-color: #0273C1;
+    padding-top: 6px;
+    width: 100px;
+    color: white;
+    height: 23px;
+    border: 1px solid gray;
+    text-align: center;
+}
+.test-radio
+{
+    float: left;
+}
+label
+{
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+.more-radio-lb
+{
+    font-size: 13px;
+    font-weight: bold;
+    width: 40px;
+    float: left;
+}
+#more-info-form ul
+{
+    margin: 0px;
+    padding: 0px;
+}
+.lb-info
+{
+    font-size: 13px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-top: 6px;
+    float: left;
+    width: 100px;
+    color: #333;
+    display: block;
+}
+#more-info-form ul li
+{
+    list-style: none;
+    height: 54px !important;
+    float: left;
+    width: 50%;
+    margin-top: 10px;
+}
+.form-wrap h4
+{
+    color: #333;
+    padding: 9px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.form-wrap
+{
+    background: white !important;
+    padding: 10px;
+    width: 300px;
+    overflow: auto;
+}
+
+.form-wrap div input[type="text"]
+{
+    height: 30px;
+    width: 170px !important;
+}
+
+input[type="text"]
+{
+    width: 150px;
+    background: #111517;
+    color: white;
+    border-radius: 4px 4px 4px 4px;
+    border: 1px solid rgba(26, 37, 40, 1);
+    border-top: 1px solid #2F2F2F;
+}
+
+.help-inline
+{
+    margin-top: -7px;
+    font-size: 11px;
+    color: #F00 !important;
+    display: block;
+    margin-left: 103px;
+}
+
+/* end for forms */

@@ -1,0 +1,29 @@
+﻿<Window x:Class="vincontrol.Backend.Windows.DataFeed.Import.AttachDescriptionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        Title="Attach Import Description" Height="400" Width="500"  WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Width="100" Text="Status"/>
+                <ComboBox Width="200" ItemsSource="{Binding StatusList}" SelectedValuePath="Key"  DisplayMemberPath="Value" SelectedValue="{Binding CurrentStatus, ValidatesOnDataErrors=True, NotifyOnValidationError=True}"></ComboBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+                <TextBlock Width="100" Text="Content"/>
+                <TextBox Width="300" Text="{Binding Content}" Height="183" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 10 0 0">
+                <Button Content="Attach File"  Command="{Binding AttachFileCommand}" ></Button>
+                <TextBox Margin="45 0 25 0" Width="100" IsEnabled="False" Text="{Binding FileName}"></TextBox>
+                <Button Content="Download File"  Command="{Binding DownloadFileCommand}" ></Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0 10 0 0" HorizontalAlignment="Center">
+
+                <Button Content="Save" Command="{Binding SaveFileCommand}" Width="100"></Button>
+                <Button Content="Save and send email" Command="{Binding SaveFileAndSendEmailCommand}" Width="140"/>
+            </StackPanel>
+
+        </StackPanel>
+        <xctk:BusyIndicator VerticalAlignment="Stretch"  HorizontalAlignment="Stretch" Margin="6,0,6,66" IsBusy="{Binding IsBusy}"></xctk:BusyIndicator>
+    </Grid>
+</Window>

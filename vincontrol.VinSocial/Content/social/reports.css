@@ -1,0 +1,56 @@
+div.reports-box ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+div.reports-box h3 {
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+div.reports-box {
+  width: 885px;
+  margin-left: 30px;
+}
+
+li.report-tab {
+  float: left;
+}
+
+h3.report-tab-title {
+  border-bottom: 4px solid #003399;
+  width: 855px;
+}
+
+div.reports-list {
+  overflow: hidden;
+}
+
+div.report-tab-control {
+  width: 24px;
+  height: 24px;
+  background: transparent url(/Content/Images/social/report_expended_icon.png) center no-repeat;
+  float: left;
+}
+
+li.closed div.report-tab-control {
+  background: transparent url(/Content/Images/social/report_minimize_icon.png) center no-repeat !important;
+}
+
+li.closed ul.reports-list {
+  display: none;
+}
+
+li.report {
+  float: left;
+  text-align: center;
+  width: 255px;
+  padding: 20px;
+  background: #EEEEEE;
+}
+
+li.report h3 {
+  font-size: 12pt;
+}

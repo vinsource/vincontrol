@@ -1,0 +1,17 @@
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Test\bin\Debug\vincontrol.Test.exe.config
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Test\bin\Debug\vincontrol.Test.exe
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Test\bin\Debug\vincontrol.Test.pdb
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Test\bin\Debug\vincontrol.Backend.Data.dll
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Test\bin\Debug\vincontrol.DataFeed.dll
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Test\bin\Debug\vincontrol.TaskScheduler.dll
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Test\bin\Debug\vincontrol.Backend.Model.dll
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Test\bin\Debug\Starksoft.Net.Ftp.dll
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Test\bin\Debug\LumenWorks.Framework.IO.dll
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Test\bin\Debug\Starksoft.Net.Proxy.dll
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Test\bin\Debug\vincontrol.Backend.Data.pdb
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Test\bin\Debug\vincontrol.DataFeed.pdb
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Test\bin\Debug\vincontrol.TaskScheduler.pdb
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Test\bin\Debug\vincontrol.Backend.Model.pdb
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Test\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Test\obj\x86\Debug\vincontrol.Test.exe
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Test\obj\x86\Debug\vincontrol.Test.pdb

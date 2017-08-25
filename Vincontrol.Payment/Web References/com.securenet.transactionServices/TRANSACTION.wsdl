@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://gateway.securenet.com/API/DATA/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://gateway.securenet.com/API/DATA/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://gateway.securenet.com/API/DATA/Imports">
+      <xsd:import schemaLocation="http://certify.securenet.com/API/DATA/TRANSACTION.svc?xsd=xsd0" namespace="http://gateway.securenet.com/API/DATA/" />
+      <xsd:import schemaLocation="http://certify.securenet.com/API/DATA/TRANSACTION.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://certify.securenet.com/API/DATA/TRANSACTION.svc?xsd=xsd2" namespace="http://gateway.securenet.com/API/Contracts" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ITRANSACTION_GetTransactions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransactions" />
+  </wsdl:message>
+  <wsdl:message name="ITRANSACTION_GetTransactions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransactionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITRANSACTION_GetTransactionByTransactionID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransactionByTransactionID" />
+  </wsdl:message>
+  <wsdl:message name="ITRANSACTION_GetTransactionByTransactionID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransactionByTransactionIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITRANSACTION_GetTransactionByOrderID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransactionByOrderID" />
+  </wsdl:message>
+  <wsdl:message name="ITRANSACTION_GetTransactionByOrderID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransactionByOrderIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITRANSACTION_GetBatchTransactions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetBatchTransactions" />
+  </wsdl:message>
+  <wsdl:message name="ITRANSACTION_GetBatchTransactions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetBatchTransactionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITRANSACTION_GetCurrentBatchID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentBatchID" />
+  </wsdl:message>
+  <wsdl:message name="ITRANSACTION_GetCurrentBatchID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCurrentBatchIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ITRANSACTION">
+    <wsdl:operation name="GetTransactions">
+      <wsdl:input wsaw:Action="http://gateway.securenet.com/API/DATA/ITRANSACTION/GetTransactions" message="tns:ITRANSACTION_GetTransactions_InputMessage" />
+      <wsdl:output wsaw:Action="http://gateway.securenet.com/API/DATA/ITRANSACTION/GetTransactionsResponse" message="tns:ITRANSACTION_GetTransactions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionByTransactionID">
+      <wsdl:input wsaw:Action="http://gateway.securenet.com/API/DATA/ITRANSACTION/GetTransactionByTransactionID" message="tns:ITRANSACTION_GetTransactionByTransactionID_InputMessage" />
+      <wsdl:output wsaw:Action="http://gateway.securenet.com/API/DATA/ITRANSACTION/GetTransactionByTransactionIDResponse" message="tns:ITRANSACTION_GetTransactionByTransactionID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransactionByOrderID">
+      <wsdl:input wsaw:Action="http://gateway.securenet.com/API/DATA/ITRANSACTION/GetTransactionByOrderID" message="tns:ITRANSACTION_GetTransactionByOrderID_InputMessage" />
+      <wsdl:output wsaw:Action="http://gateway.securenet.com/API/DATA/ITRANSACTION/GetTransactionByOrderIDResponse" message="tns:ITRANSACTION_GetTransactionByOrderID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBatchTransactions">
+      <wsdl:input wsaw:Action="http://gateway.securenet.com/API/DATA/ITRANSACTION/GetBatchTransactions" message="tns:ITRANSACTION_GetBatchTransactions_InputMessage" />
+      <wsdl:output wsaw:Action="http://gateway.securenet.com/API/DATA/ITRANSACTION/GetBatchTransactionsResponse" message="tns:ITRANSACTION_GetBatchTransactions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCurrentBatchID">
+      <wsdl:input wsaw:Action="http://gateway.securenet.com/API/DATA/ITRANSACTION/GetCurrentBatchID" message="tns:ITRANSACTION_GetCurrentBatchID_InputMessage" />
+      <wsdl:output wsaw:Action="http://gateway.securenet.com/API/DATA/ITRANSACTION/GetCurrentBatchIDResponse" message="tns:ITRANSACTION_GetCurrentBatchID_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

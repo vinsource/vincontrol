@@ -1,0 +1,6 @@
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\Vincontrol.Console.ChangeActivityTracking.Temp\bin\Debug\Vincontrol.Console.ChangeActivityTracking.Temp.exe.config
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\Vincontrol.Console.ChangeActivityTracking.Temp\bin\Debug\Vincontrol.Console.ChangeActivityTracking.Temp.exe
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\Vincontrol.Console.ChangeActivityTracking.Temp\bin\Debug\Vincontrol.Console.ChangeActivityTracking.Temp.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\Vincontrol.Console.ChangeActivityTracking.Temp\obj\x86\Debug\Vincontrol.Console.ChangeActivityTracking.Temp.exe
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\Vincontrol.Console.ChangeActivityTracking.Temp\obj\x86\Debug\Vincontrol.Console.ChangeActivityTracking.Temp.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\Vincontrol.Console.ChangeActivityTracking.Temp\obj\x86\Debug\Vincontrol.Console.ChangeActivityTracking.Temp.csprojResolveAssemblyReference.cache

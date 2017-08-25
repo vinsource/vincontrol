@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VinCommercialTruckModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="VinCommercialTruckEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CommercialTrucks" EntityType="VinCommercialTruckModel.CommercialTruck" />
+    <EntitySet Name="CommercialTruckSoldOuts" EntityType="VinCommercialTruckModel.CommercialTruckSoldOut" />
+    <EntitySet Name="CommercialTruckDealers" EntityType="VinCommercialTruckModel.CommercialTruckDealer" />
+    <AssociationSet Name="FK_CommercialTruck_CommercialTruck" Association="VinCommercialTruckModel.FK_CommercialTruck_CommercialTruck">
+      <End Role="CommercialTruckDealer" EntitySet="CommercialTruckDealers" />
+      <End Role="CommercialTruck" EntitySet="CommercialTrucks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CommercialTruckSoldOut_CommercialTruckSoldOut" Association="VinCommercialTruckModel.FK_CommercialTruckSoldOut_CommercialTruckSoldOut">
+      <End Role="CommercialTruckDealer" EntitySet="CommercialTruckDealers" />
+      <End Role="CommercialTruckSoldOut" EntitySet="CommercialTruckSoldOuts" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="CommercialTruck">
+    <Key>
+      <PropertyRef Name="TruckId" />
+    </Key>
+    <Property Name="TruckId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CommercialTruckId" Type="Int32" Nullable="false" />
+    <Property Name="DealerId" Type="Int32" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+    <Property Name="Make" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Model" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Trim" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Vin" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Stock" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="ExteriorColor" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="InteriorColor" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="BodyStyle" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Engine" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Fuel" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Transmission" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="DriveTrain" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Price" Type="Int32" Nullable="false" />
+    <Property Name="Mileage" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Package" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="IsNew" Type="Boolean" Nullable="false" />
+    <Property Name="DateStamp" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Images" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Category" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Class" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Url" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Name="Litter" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+    <Property Type="DateTime" Name="Updated" Nullable="false" Precision="3" />
+    <NavigationProperty Name="CommercialTruckDealer" Relationship="VinCommercialTruckModel.FK_CommercialTruck_CommercialTruck" FromRole="CommercialTruck" ToRole="CommercialTruckDealer" />
+  </EntityType>
+  <EntityType Name="CommercialTruckSoldOut">
+    <Key>
+      <PropertyRef Name="SoldOutTruckId" />
+    </Key>
+    <Property Type="Int32" Name="SoldOutTruckId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="TruckId" Nullable="false" />
+    <Property Type="Int32" Name="CommercialTruckId" Nullable="false" />
+    <Property Type="Int32" Name="DealerId" />
+    <Property Type="Int32" Name="Year" Nullable="false" />
+    <Property Type="String" Name="Make" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Model" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Trim" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Vin" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Stock" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ExteriorColor" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="InteriorColor" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BodyStyle" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Engine" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Fuel" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Transmission" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DriveTrain" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Price" Nullable="false" />
+    <Property Type="Int32" Name="Mileage" Nullable="false" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Package" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsNew" Nullable="false" />
+    <Property Type="DateTime" Name="DateStamp" Nullable="false" Precision="3" />
+    <Property Type="String" Name="Images" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Category" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Class" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Url" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Litter" MaxLength="250" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="CommercialTruckDealer" Relationship="VinCommercialTruckModel.FK_CommercialTruckSoldOut_CommercialTruckSoldOut" FromRole="CommercialTruckSoldOut" ToRole="CommercialTruckDealer" />
+  </EntityType>
+  <EntityType Name="CommercialTruckDealer">
+    <Key>
+      <PropertyRef Name="DealerId" />
+    </Key>
+    <Property Type="Int32" Name="DealerId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="CommercialTruckDealerId" Nullable="false" />
+    <Property Type="String" Name="DealerGroupId" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Name" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Address" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="State" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ZipCode" Nullable="false" />
+    <Property Type="String" Name="Phone" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Double" Name="Latitude" />
+    <Property Type="Double" Name="Longitude" />
+    <Property Type="DateTime" Name="DateStamp" Nullable="false" Precision="3" />
+    <NavigationProperty Name="CommercialTrucks" Relationship="VinCommercialTruckModel.FK_CommercialTruck_CommercialTruck" FromRole="CommercialTruckDealer" ToRole="CommercialTruck" />
+    <NavigationProperty Name="CommercialTruckSoldOuts" Relationship="VinCommercialTruckModel.FK_CommercialTruckSoldOut_CommercialTruckSoldOut" FromRole="CommercialTruckDealer" ToRole="CommercialTruckSoldOut" />
+  </EntityType>
+  <Association Name="FK_CommercialTruck_CommercialTruck">
+    <End Type="VinCommercialTruckModel.CommercialTruckDealer" Role="CommercialTruckDealer" Multiplicity="0..1" />
+    <End Type="VinCommercialTruckModel.CommercialTruck" Role="CommercialTruck" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CommercialTruckDealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="CommercialTruck">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CommercialTruckSoldOut_CommercialTruckSoldOut">
+    <End Type="VinCommercialTruckModel.CommercialTruckDealer" Role="CommercialTruckDealer" Multiplicity="0..1" />
+    <End Type="VinCommercialTruckModel.CommercialTruckSoldOut" Role="CommercialTruckSoldOut" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CommercialTruckDealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="CommercialTruckSoldOut">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,64 @@
+﻿<UserControl x:Class="vincontrol.Backend.Controls.DealerSettingContent"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="1000">
+    <ScrollViewer>
+        <StackPanel>
+            <TextBlock Text="Inventory"></TextBlock>
+            <TextBlock Text="Default Inventory Sorting:"></TextBlock>
+            <ComboBox />
+            <!--Age(Default) Make Model Market Year-->
+            <TextBlock Text="Sold"></TextBlock>
+            <TextBlock Text="Select Sold Action:"></TextBlock>
+
+
+
+            <!--Delete (Default) Display as Sold (3 Days) Display as Sold (5 Days) Display as Sold (7 Days) Display as Sold (30 Days)-->
+            <TextBlock Text=" Buyer Guides"></TextBlock>
+            <TextBlock Text=" As Is (English) (Spanish)"></TextBlock>
+            <TextBlock Text="Manufacturer warranty (English) (Spanish) "></TextBlock>
+            <TextBlock Text="Dealer Certified (English) (Spanish)  "></TextBlock>
+            <TextBlock Text="Manufacturer Certified (English) (Spanish)  "></TextBlock>
+            <TextBlock Text="Third Party Site Login Credentials   "></TextBlock>
+            <TextBlock Text="CarFax:"></TextBlock>
+            <TextBox></TextBox>
+            <TextBox></TextBox>
+            <TextBlock Text="Manheim:"></TextBlock>
+            <TextBox></TextBox>
+            <TextBox></TextBox>
+
+            <TextBlock Text="Kelly Blue Book:"></TextBlock>
+            <TextBox></TextBox>
+            <TextBox></TextBox>
+
+            <TextBlock Text="Black Book Online:"></TextBlock>
+            <TextBox></TextBox>
+            <TextBox></TextBox>
+            <TextBlock Text="Auto Description"></TextBlock>
+            <CheckBox></CheckBox>
+            <TextBlock Text="Enable Auto Descripition"></TextBlock>
+            <TextBlock Text="Ebay/Craigslist Misc Information"></TextBlock>
+            <TextBlock Text="Dealer Contact Info:"></TextBlock>
+            <TextBox Text="Name"></TextBox>
+            <TextBox Text="Phone"></TextBox>
+            <TextBox Text="Email"></TextBox>
+            <TextBlock Text=" Dealer Warranty "></TextBlock>
+            <TextBox></TextBox>
+            <TextBlock Text="  Shipping Details "></TextBlock>
+            <TextBox></TextBox>
+
+            <TextBlock Text="   Terms and Conditions  "></TextBlock>
+            <TextBox></TextBox>
+            <TextBlock Text="Description"></TextBlock>
+            <TextBlock Text="Starting Sentence "></TextBlock>
+            <TextBox></TextBox>
+            <TextBlock Text="Ending Sentence "></TextBlock>
+            <TextBox></TextBox>
+            <TextBlock Text="Auction Sentence  "></TextBlock>
+            <TextBox></TextBox>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

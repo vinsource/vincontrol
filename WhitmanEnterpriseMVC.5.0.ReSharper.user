@@ -1,0 +1,80 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="vehicleInfo" priority="0" />
+      <Item value="string" priority="2" />
+      <Item value="null" priority="3" />
+      <Item value="fo" priority="1" />
+      <Item value="var" priority="1" />
+      <Item value="if" priority="1" />
+      <Item value="firstEngine" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WhitmanEnterpriseMVC.com.chromedata.services.Description7a.VehicleDescription">
+      <Item value="bestModelName" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Empty" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WhitmanEnterpriseMVC.com.chromedata.services.Description7a.Option">
+      <Item value="header" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WhitmanEnterpriseMVC.com.chromedata.services.Description7a.Engine">
+      <Item value="fuelEconomy" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:WhitmanEnterpriseMVC.com.chromedata.services.Description7a.EngineDisplacement">
+      <Item value="liters" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="51AA7DBC-D185-43BE-BF02-B955EBFCF7E3/d:Controllers/f:AppraisalController.cs" caret="126881" fromTop="27" />
+      <File id="51AA7DBC-D185-43BE-BF02-B955EBFCF7E3/d:HelperClass/f:ConvertHelper.cs" caret="26998" fromTop="24" />
+      <File id="51AA7DBC-D185-43BE-BF02-B955EBFCF7E3/d:Controllers/f:AjaxController.cs" caret="12653" fromTop="20" />
+      <File id="51AA7DBC-D185-43BE-BF02-B955EBFCF7E3/d:Views/d:Inventory/f:EditProfile.aspx" caret="3767" fromTop="27" />
+      <File id="51AA7DBC-D185-43BE-BF02-B955EBFCF7E3/d:Views/d:Inventory/f:EditProfileForTruck.aspx" caret="3700" fromTop="24" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="51AA7DBC-D185-43BE-BF02-B955EBFCF7E3/d:Controllers/f:AppraisalController.cs" caret="74360" fromTop="26" />
+      <File id="51AA7DBC-D185-43BE-BF02-B955EBFCF7E3/d:Controllers/f:AppraisalController.cs" caret="126712" fromTop="24" />
+      <File id="51AA7DBC-D185-43BE-BF02-B955EBFCF7E3/d:HelperClass/f:ConvertHelper.cs" caret="13333" fromTop="8" />
+      <File id="51AA7DBC-D185-43BE-BF02-B955EBFCF7E3/d:HelperClass/f:ConvertHelper.cs" caret="15420" fromTop="32" />
+      <File id="51AA7DBC-D185-43BE-BF02-B955EBFCF7E3/d:HelperClass/f:ConvertHelper.cs" caret="16315" fromTop="37" />
+      <File id="51AA7DBC-D185-43BE-BF02-B955EBFCF7E3/d:HelperClass/f:ConvertHelper.cs" caret="16845" fromTop="34" />
+      <File id="51AA7DBC-D185-43BE-BF02-B955EBFCF7E3/d:HelperClass/f:ConvertHelper.cs" caret="17853" fromTop="46" />
+      <File id="51AA7DBC-D185-43BE-BF02-B955EBFCF7E3/d:HelperClass/f:ConvertHelper.cs" caret="17770" fromTop="37" />
+      <File id="51AA7DBC-D185-43BE-BF02-B955EBFCF7E3/d:HelperClass/f:ConvertHelper.cs" caret="18127" fromTop="36" />
+      <File id="51AA7DBC-D185-43BE-BF02-B955EBFCF7E3/d:HelperClass/f:ConvertHelper.cs" caret="18502" fromTop="37" />
+      <File id="51AA7DBC-D185-43BE-BF02-B955EBFCF7E3/d:HelperClass/f:ConvertHelper.cs" caret="20767" fromTop="28" />
+      <File id="51AA7DBC-D185-43BE-BF02-B955EBFCF7E3/d:HelperClass/f:ConvertHelper.cs" caret="21610" fromTop="42" />
+      <File id="51AA7DBC-D185-43BE-BF02-B955EBFCF7E3/d:HelperClass/f:ConvertHelper.cs" caret="24285" fromTop="33" />
+      <File id="51AA7DBC-D185-43BE-BF02-B955EBFCF7E3/d:HelperClass/f:ConvertHelper.cs" caret="25178" fromTop="32" />
+      <File id="51AA7DBC-D185-43BE-BF02-B955EBFCF7E3/d:HelperClass/f:ConvertHelper.cs" caret="26693" fromTop="38" />
+      <File id="51AA7DBC-D185-43BE-BF02-B955EBFCF7E3/d:HelperClass/f:ConvertHelper.cs" caret="26610" fromTop="35" />
+      <File id="51AA7DBC-D185-43BE-BF02-B955EBFCF7E3/d:HelperClass/f:ConvertHelper.cs" caret="26860" fromTop="41" />
+      <File id="51AA7DBC-D185-43BE-BF02-B955EBFCF7E3/d:Controllers/f:AjaxController.cs" caret="13848" fromTop="37" />
+      <File id="51AA7DBC-D185-43BE-BF02-B955EBFCF7E3/d:Controllers/f:AjaxController.cs" caret="11545" fromTop="36" />
+      <File id="51AA7DBC-D185-43BE-BF02-B955EBFCF7E3/d:Controllers/f:AjaxController.cs" caret="11975" fromTop="34" />
+      <File id="51AA7DBC-D185-43BE-BF02-B955EBFCF7E3/d:Controllers/f:AjaxController.cs" caret="12885" fromTop="34" />
+      <File id="51AA7DBC-D185-43BE-BF02-B955EBFCF7E3/d:Views/d:Inventory/f:EditProfile.aspx" caret="3767" fromTop="27" />
+      <File id="51AA7DBC-D185-43BE-BF02-B955EBFCF7E3/d:Views/d:Inventory/f:EditProfileForTruck.aspx" caret="3766" fromTop="27" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

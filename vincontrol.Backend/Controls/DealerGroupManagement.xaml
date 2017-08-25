@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="vincontrol.Backend.Controls.DealerGroupManagement"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="1000">
+    <StackPanel Orientation="Vertical" Height="479" Width="705">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <TextBlock Text="Search DealerGroup" Padding="10"  ></TextBlock>
+            <TextBox Height="23" Padding="10"  HorizontalAlignment="Left" Name="textBox13" VerticalAlignment="Top" Width="120" />
+        </StackPanel>
+        <DataGrid CanUserAddRows="False" AutoGenerateColumns="False" Height="355" Name="dtgDealerGroup" Width="815" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Dealer Group Id" Width="200" Binding="{Binding Path=DealerGroupId}"></DataGridTextColumn>
+                <DataGridHyperlinkColumn Header="Dealer Group Name" Width="200" Binding="{Binding Path=DealerGroupName}"></DataGridHyperlinkColumn>
+                <DataGridTextColumn Header="Master User Name" Width="200" Binding="{Binding Path=MasterUserName}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Master Login" Width="200" Binding="{Binding Path=MasterLogin}"></DataGridTextColumn>
+                <!--<DataGridTextColumn Header="Default Dealer ID" Width="100"></DataGridTextColumn>-->
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Create Dealer Group" Name="btnCreateDealerGroup" Width="200"></Button>
+    </StackPanel>
+</UserControl>

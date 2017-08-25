@@ -1,0 +1,101 @@
+﻿<Mappings Header="True" Delimeter="|">
+  <Mapping Order="1">
+    <DBField Name="DealershipId" />
+    <XMLField Name="Dealer ID" />
+  </Mapping>
+  <Mapping Order="2">
+    <DBField Name="DealershipName" />
+    <XMLField Name="Dealer Name" />
+  </Mapping>
+  <Mapping Order="3">
+    <DBField Name="DealershipAddress" />
+    <XMLField Name="Address" />
+  </Mapping>
+  <Mapping Order="4">
+    <DBField Name="DealershipCity" />
+    <XMLField Name="City" />
+  </Mapping>
+  <Mapping Order="5">
+    <DBField Name="DealershipState" />
+    <XMLField Name="State" />
+  </Mapping>
+  <Mapping Order="6">
+    <DBField Name="DealershipZipCode" />
+    <XMLField Name="Zip Code" />
+  </Mapping>
+  <Mapping Order="7">
+    <DBField Name="DealershipPhone" />
+    <XMLField Name="Phone Number" />
+  </Mapping>
+  <Mapping Order="8">
+    <DBField Name="ModelYear" />
+    <XMLField Name="Year" />
+  </Mapping>
+  <Mapping Order="9">
+    <DBField Name="Make" />
+    <XMLField Name="Make" />
+  </Mapping>
+  <Mapping Order="10">
+    <DBField Name="Model" />
+    <XMLField Name="Model" />
+  </Mapping>
+  <Mapping Order="11">
+    <DBField Name="Trim" />
+    <XMLField Name="Trim" />
+  </Mapping>
+  <Mapping Order="12">
+    <DBField Name="VINNumber" />
+    <XMLField Name="VIN" />
+  </Mapping>
+  <Mapping Order="13">
+    <DBField Name="Mileage" />
+    <XMLField Name="Mileage" />
+  </Mapping>
+  <Mapping Order="14">
+    <DBField Name="SalePrice" />
+    <XMLField Name="Price" />
+  </Mapping>
+  <Mapping Order="15">
+    <DBField Name="" />
+    <XMLField Name="Special_Price" />
+  </Mapping>
+  <Mapping Order="16">
+    <DBField Name="ExteriorColor" />
+    <XMLField Name="Exterior Color" />
+  </Mapping>
+  <Mapping Order="17">
+    <DBField Name="InteriorColor" />
+    <XMLField Name="Interior Color" />
+  </Mapping>
+  <Mapping Order="18">
+    <DBField Name="Tranmission" />
+    <XMLField Name="Transmission" />
+  </Mapping>
+  <Mapping Order="19">
+    <DBField Name="CarImageUrl" />
+    <XMLField Name="Image" />
+  </Mapping>
+  <Mapping Order="20">
+    <DBField Name="" />
+    <XMLField Name="Comments" />
+  </Mapping>
+  <Mapping Order="21">
+    <DBField Name="CarsOptions" />
+    <XMLField Name="Options" />
+  </Mapping>
+  <Mapping Order="22">
+    <DBField Name="NewUsed" />
+    <XMLField Name="Status">
+      <Replaces>
+        <Replace From="NR" To="New" />
+        <Replace From="UR" To="Used" />
+        <Replace From="UF" To="Used" />
+      </Replaces>
+      <Conditions>
+        <Condition XMLField="Status" Operator="==" ComparedValue="UR" DBField="NewUsed" TargetValue="Used" Type="String" />
+        <Condition XMLField="Status" Operator="==" ComparedValue="UF" DBField="NewUsed" TargetValue="Used" Type="String" />
+        <Condition XMLField="Status" Operator="==" ComparedValue="NR" DBField="NewUsed" TargetValue="New" Type="String" />
+      </Conditions>
+    </XMLField>
+  </Mapping>
+</Mappings>

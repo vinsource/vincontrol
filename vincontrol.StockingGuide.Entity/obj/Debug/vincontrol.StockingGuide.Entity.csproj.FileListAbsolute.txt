@@ -1,0 +1,5 @@
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.StockingGuide.Entity\bin\Debug\vincontrol.StockingGuide.Entity.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.StockingGuide.Entity\bin\Debug\vincontrol.StockingGuide.Entity.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.StockingGuide.Entity\obj\Debug\vincontrol.StockingGuide.Entity.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.StockingGuide.Entity\obj\Debug\vincontrol.StockingGuide.Entity.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.StockingGuide.Entity\obj\Debug\vincontrol.StockingGuide.Entity.csprojResolveAssemblyReference.cache

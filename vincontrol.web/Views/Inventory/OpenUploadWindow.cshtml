@@ -1,0 +1,290 @@
+﻿@{
+    Layout = null;
+}
+@using Vincontrol.Web.Handlers
+@model vincontrol.Application.ViewModels.CommonManagement.CarInfoFormViewModel
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Photo Upload</title>    
+    <script src="~/Scripts/jquery-1.6.4.min.js"></script>
+    <script src="~/js/jquery-ui-1.8.16.custom.min.js"></script>
+    <script src="~/js/jquery.blockUI.js"></script>
+    <script src="~/Scripts/dropzone.js"></script>
+    <script src="~/Scripts/require.js"></script>
+    
+    <link href="~/Css/dropzone.css" rel="stylesheet" />    
+    
+    <style>
+        .container { position: relative; width: 120px; height: 100px; float: left; margin: 20px; }
+            .container img { width: 120px; height: 100px; }
+        .checkbox { position: absolute; top: 0px; left: 0px; }
+        .remove { position: absolute; top: 0px; right: 0px; cursor: pointer; }
+            .remove:before {
+                content: 'x';
+                color: #000;
+                font-weight: bolder;
+                text-align: center;
+                font-family: Arial, sans-serif;
+                position: absolute;
+                right: 0px;
+                background-color: #ffd800;
+                width: 20px;
+            }
+        .dz-message { color: #fff !important; font-size: 20px !important; }
+    </style>
+</head>
+<body>
+    @if (Model.SessionTimeOut)
+    {
+        <script type="text/javascript">
+
+                parent.$.fancybox.close();
+                alert("Your session is timed out. Please login back again");
+                var actionUrl = '@Url.Action("LogOff", "Account" )';
+                window.parent.location = actionUrl;
+
+        </script>
+    }
+    <script>
+        $(function () {
+            $("#photos").sortable();
+            $("#photos").disableSelection();
+        });
+    </script>
+    <script type="text/javascript">
+        function closeForm() {
+            parent.$.fancybox.close();
+        }
+    </script>
+    <script type="text/javascript">
+        var allPhotos = [];
+        var selectedPhotos = [];
+
+        Dropzone.options.dropzoneForm = {
+            parallelUploads: 1,
+            uploadMultiple: true,
+            autoProcessQueue: false,
+            addRemoveLinks: true,
+            accept: function (file, done) {
+                console.log(file)
+                if ((file.type).toLowerCase() != "image/jpg" &&
+                        (file.type).toLowerCase() != "image/gif" &&
+                        (file.type).toLowerCase() != "image/jpeg" &&
+                        (file.type).toLowerCase() != "image/png"
+                        ) {
+                    done("Invalid file");
+                }
+                else {
+                    done();
+                }
+            },
+            //accept: function (file, done) {
+            //    console.log(file);
+            //    if (file.type != "image/jpeg" && file.type != "image/png") {
+            //        done("Error! Files of this type are not accepted");
+            //    }
+            //    else { done(); }
+            //},
+            init: function () {
+                var submitButton = document.querySelector("#buttonSubmit")
+                myDropzone = this;
+                submitButton.addEventListener("click", function () {
+                    myDropzone.processQueue();
+                });
+                myDropzone.on("addedfile", function (file) {
+                    if (!file.type.match(/image.*/)) {
+                        //if (file.type.match(/application.zip/)) {
+                        //    myDropzone.emit("thumbnail", file, "path/to/img");
+                        //} else {
+                        //    myDropzone.emit("thumbnail", file, "path/to/img");
+                        //}
+                        done("Error! Files of this type are not accepted");
+                    }
+                });
+                myDropzone.on("complete", function (file) {
+                    //var res = JSON.parse(data.xhr.responseText);
+                    if (file.status == "error") {
+                        console.log(file.xhr.responseText);
+                        alert("The photo(s) can't be uploaded at this time. Sorry for that and please try again later.");
+                    } else {
+                        myDropzone.removeFile(file);
+                        //parent.$.fancybox.close();
+                        var newPhoto = '<div class="container"><img src="' + file.xhr.responseText + '" /><input type="checkbox" class="checkbox" id="check_' + file.xhr.responseText + '" onclick="javascript: check(this)"/><span class="remove" id="remove_' + file.xhr.responseText + '" onclick="javascript:remove(this)"></span></div>';
+                        $('#photos').append(newPhoto);
+                        if (myDropzone.files.length > 0) myDropzone.processQueue();
+                    }
+                });
+                myDropzone.on("sending", function (file, xhr, formData) {
+                    var value = $('form#dropzoneForm #overlay').val();
+                    formData.append("overlay", value); // Append all the additional input data of your form here!
+                });
+            },
+        };
+
+        $(document).ready(function () {
+            @if (Model.ThumbnailPhotosUrl != null)
+            {
+                foreach (var d in Model.ThumbnailPhotosUrl)
+                {
+                    @:allPhotos.push("@d");
+                }
+            }
+
+
+            $("#checkboxAll").click(function () {
+                $('input:checkbox').not(this).not('#checkboxOverlay').prop('checked', this.checked);
+                if (this.checked) {
+                    selectedPhotos = allPhotos;
+                } else {
+                    selectedPhotos = [];
+                }
+            });
+
+            $("#buttonClose").click(function () {
+                closeForm();
+            });
+
+            $("#buttonDelete").click(function () {
+                if (selectedPhotos.length > 0) {
+                    var r = confirm("Are you sure to delete photo(s)?");
+                    if (r == true) {
+                        $.each(selectedPhotos, function (key, value) {
+                            removeMany(document.getElementById("remove_" + value));
+                        });
+                    } else {
+
+                    }
+                } else {
+                    alert("Please select photo(s)");
+                }
+
+            });
+
+            $("#buttonOrder").click(function () {
+                updateOrder();
+            });
+
+            $("#checkboxOverlay").click(function () {
+                if (this.checked) $('#overlay').val('1');
+                else $('#overlay').val('0');
+            });
+        });
+
+        function remove(photo) {
+            var r = confirm("Are you sure to delete this photo?");
+            if (r == true) {
+                var obj = {
+                    listingId: '@(Model.ListingId)',
+                    photo: photo.id.replace("remove_", "")
+                };
+                $.ajax({
+                    type: "POST",
+                    url: "/Image/DeleteInventoryPhoto",
+                    data: JSON.stringify(obj),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    //traditional: true,
+                    success: function (result) {
+                        $(photo).parent().hide('slow');
+                    },
+                    error: function (err) {
+                        console.log('Error');
+                        console.log(err.status + " - " + err.statusText);
+                        alert(err.status + " - " + err.statusText);
+                    }
+                });
+            } else {
+
+            }
+        }
+
+        function removeMany(photo) {
+            {
+                var obj = {
+                    listingId: '@(Model.ListingId)',
+                    photo: photo.id.replace("remove_", "")
+                };
+                $.ajax({
+                    type: "POST",
+                    url: "/Image/DeleteInventoryPhoto",
+                    data: JSON.stringify(obj),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    //traditional: true,
+                    success: function (result) {
+                        $(photo).parent().hide('slow');
+                    },
+                    error: function (err) {
+                        console.log('Error');
+                        console.log(err.status + " - " + err.statusText);
+                        alert(err.status + " - " + err.statusText);
+                    }
+                });
+            }
+        }
+
+        function updateOrder() {
+            var list = new Array(); var i = 0;
+            $('#photos .container img').each(function () {
+                list[i] = ($(this).attr('src'));
+                i++;
+            });
+
+            var postData = { listingId: '@(Model.ListingId)', values: list };
+            $.blockUI({ message: '<div><img src="/images/ajaxloadingindicator.gif" /></div>', css: { width: '600px', backgroundColor: 'none', border: 'none' } });
+            $.ajax({
+                type: "POST",
+                url: "/Image/UpdateOrder",
+                data: postData,
+                success: function (data) {
+                    $.unblockUI();
+                },
+                dataType: "json",
+                traditional: true
+            });
+        }
+
+        function check(photo) {
+            if (photo.checked) {
+                selectedPhotos.push(photo.id.replace("check_", ""));
+            }
+            else {
+                selectedPhotos.splice(selectedPhotos.indexOf(photo.id.replace("check_", "")), 1);
+            }
+        }
+    </script>
+
+    <div>
+        <form action="~/Image/UploadPhoto?dealerId=@Model.DealerId&listingId=@Model.ListingId&vin=@Model.Vin" class="dropzone" id="dropzoneForm" method="post" style="background-color:#3366cc;">
+            <input type="hidden" id="dealerId" value="@Model.DealerId" />
+            <input type="hidden" id="listingId" value="@Model.ListingId" />
+            <input type="hidden" id="vin" value="@Model.Vin" />            
+            <input type="hidden" id="overlay" value="0" />
+        </form>
+        <div style="display: inline-block; width: 100%; margin-top: 10px; padding: 10px 0 10px 0;">
+            <button type="submit" id="buttonSubmit">Save</button>&nbsp;
+            <button id="buttonDelete">Delete photo(s)</button>&nbsp;
+            <button id="buttonOrder">Update order(s)</button>&nbsp;
+            <input type="checkbox" id="checkboxAll" />Check All&nbsp;
+            <input type="checkbox" id="checkboxOverlay" />Overlay
+            <button type="submit" id="buttonClose" style="float: right;">Close</button>
+        </div>
+        
+    </div>
+    <div id="photos">
+        @if (Model.ThumbnailPhotosUrl != null && Model.ThumbnailPhotosUrl.Any())
+        {
+            foreach (var item in Model.ThumbnailPhotosUrl)
+            {
+                <div class="container">
+                    <img src="@item" /> 
+                    <input type="checkbox" class="checkbox" id="check_@item" onclick="javascript: check(this)"/>
+                    <span class="remove" id="remove_@item" onclick="javascript:remove(this)"></span>
+                </div>
+            }
+        }
+    </div>
+</body>
+</html>

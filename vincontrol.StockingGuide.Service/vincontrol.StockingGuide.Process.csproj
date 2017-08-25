@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE7D6E2D-0BDE-474A-9D55-793BAB74B85B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>vincontrol.StockingGuide.Service</RootNamespace>
+    <AssemblyName>vincontrol.StockingGuide.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Contracts\ICreateSegmentProcess.cs" />
+    <Compile Include="CreateSegmentProcess.cs" />
+    <Compile Include="Contracts\IProcess.cs" />
+    <Compile Include="Contracts\IUpdateBrandStockingGuideProcess.cs" />
+    <Compile Include="Contracts\IUpdateSegmentChromeProcess.cs" />
+    <Compile Include="Contracts\IUpdateSegmentDealerProcess.cs" />
+    <Compile Include="Contracts\IUpdateSegmentInventoryDetailProcess.cs" />
+    <Compile Include="Contracts\IUpdateSegmentMarketDetailProcess.cs" />
+    <Compile Include="Contracts\IUpdateSummarizeStockingGuideProcess.cs" />
+    <Compile Include="Contracts\IUpdateWeeklyTurnOverByMonthProcess.cs" />
+    <Compile Include="Contracts\IUpdateSegmentChromeWithMakeModelProcess.cs" />
+    <Compile Include="CreateSegmentWithMakeModelProcess.cs" />
+    <Compile Include="Contracts\ICreateSegmentWithMakeModelProcess.cs" />
+    <Compile Include="Contracts\IUpdateMarketDetailWithTrimProcess.cs" />
+    <Compile Include="UpdateBrandStockingGuideProcess.cs" />
+    <Compile Include="UpdateMarketDetailWithTrimProcess.cs" />
+    <Compile Include="UpdateSegmentChromeWithMakeModelProcess.cs" />
+    <Compile Include="UpdateSegmentDealerProcess.cs" />
+    <Compile Include="UpdateSegmentInventoryDetailProcess.cs" />
+    <Compile Include="UpdateSegmentMarketDetailProcess.cs" />
+    <Compile Include="UpdateSegmentChromeProcess.cs" />
+    <Compile Include="UpdateWeeklyTurnOverByMonthProcess.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\vincontrol.Data\vincontrol.Data.csproj">
+      <Project>{7D76E800-C9D8-407A-8844-A775EE6D5A65}</Project>
+      <Name>vincontrol.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.StockingGuide.Common\vincontrol.StockingGuide.Common.csproj">
+      <Project>{9E733EBD-792E-4A82-80D8-13F4ADCC0F96}</Project>
+      <Name>vincontrol.StockingGuide.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.StockingGuide.Entity\vincontrol.StockingGuide.Entity.csproj">
+      <Project>{A1B6BD0C-0B9D-438D-8E7D-BF0BCB001673}</Project>
+      <Name>vincontrol.StockingGuide.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.StockingGuide\vincontrol.StockingGuide.DataService.csproj">
+      <Project>{C8EA26FD-1BD6-409C-8B0D-0086F7F03D98}</Project>
+      <Name>vincontrol.StockingGuide.DataService</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Log4net\log4net.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Log4net\Logs.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,7 @@
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.Logging\bin\Release\VINControl.Logging.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.Logging\bin\Release\VINControl.Logging.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.Logging\bin\Release\log4net.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.Logging\bin\Release\log4net.xml
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.Logging\obj\Release\VINControl.Logging.csprojResolveAssemblyReference.cache
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.Logging\obj\Release\VINControl.Logging.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.Logging\obj\Release\VINControl.Logging.pdb

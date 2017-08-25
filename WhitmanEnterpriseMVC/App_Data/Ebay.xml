@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<EbayVehicleDetails>
+  <EbayVehicleDetail attributeID="56739" ValueID="-3" name="Body Type"></EbayVehicleDetail>
+  <EbayVehicleDetail attributeID="25846" ValueID="-3" name="Engine Type"></EbayVehicleDetail>
+  <EbayVehicleDetail attributeID="10719" ValueID="2288" name="Exterior Color"></EbayVehicleDetail>
+  <EbayVehicleDetail attributeID="39705" ValueID="-3" name="Fuel Type"></EbayVehicleDetail>
+  <EbayVehicleDetail attributeID="10720" ValueID="1032" name="Interior Color"></EbayVehicleDetail>
+  <EbayVehicleDetail attributeID="10242" ValueID="-3" name="Existing Warranty"></EbayVehicleDetail>
+  <EbayVehicleDetail attributeID="39" ValueID="-3" name="Make"></EbayVehicleDetail>
+  <EbayVehicleDetail attributeID="85" ValueID="-3" name="Mileage"></EbayVehicleDetail>
+  <EbayVehicleDetail attributeID="41" ValueID="0" name="Model"></EbayVehicleDetail>
+  <EbayVehicleDetail attributeID="10718" ValueID="-3" name="Number of Cylinders"></EbayVehicleDetail>
+  <EbayVehicleDetail attributeID="10240" ValueID="-3" name="Number of Doors"></EbayVehicleDetail>
+  <EbayVehicleDetail attributeID="10446" ValueID="-3" name="Options"></EbayVehicleDetail>
+  <EbayVehicleDetail attributeID="10246" ValueID="-3" name="Subtitle"></EbayVehicleDetail>
+  <EbayVehicleDetail attributeID="10239" ValueID="10427" name="Transmission"></EbayVehicleDetail>
+  <EbayVehicleDetail attributeID="10236" ValueID="-3" name="VIN"></EbayVehicleDetail>
+  <EbayVehicleDetail attributeID="38" ValueID="-3" name="Year"></EbayVehicleDetail>
+  <EbayVehicleDetail attributeID="10243" ValueID="10448" name="Title"></EbayVehicleDetail>
+</EbayVehicleDetails>

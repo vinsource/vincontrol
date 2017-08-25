@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AddManufacturers>
+  <Make divisionId="150" divisionName="Aston Martin"></Make>
+  <Make divisionId="151" divisionName="Bentley"></Make>
+  <Make divisionId="152" divisionName="Ferrari"></Make>
+  <Make divisionId="153" divisionName="Lamborghini"></Make>
+  <Make divisionId="154" divisionName="Lotus"></Make>
+  <Make divisionId="174" divisionName="Maserati"></Make>
+  <Make divisionId="169" divisionName="Maybach"></Make>
+  <Make divisionId="155" divisionName="Rolls-Royce"></Make>
+
+</AddManufacturers>

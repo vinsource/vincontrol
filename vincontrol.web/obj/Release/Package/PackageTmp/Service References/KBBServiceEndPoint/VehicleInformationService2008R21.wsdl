@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://www.kbb.com/2011/01/25/VehicleInformationService" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.kbb.com/2011/01/25/VehicleInformationService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://www.kbb.com/2011/01/25/VehicleInformationService/Imports">
+      <xsd:import schemaLocation="http://idws.syndication.kbb.com/3.0/VehicleInformationService2008R2.svc?xsd=xsd0" namespace="http://www.kbb.com/2011/01/25/VehicleInformationService" />
+      <xsd:import schemaLocation="http://idws.syndication.kbb.com/3.0/VehicleInformationService2008R2.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://idws.syndication.kbb.com/3.0/VehicleInformationService2008R2.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://idws.syndication.kbb.com/3.0/VehicleInformationService2008R2.svc?xsd=xsd3" namespace="http://www.kbb.com/VehicleInformationService/2008/09" />
+      <xsd:import schemaLocation="http://idws.syndication.kbb.com/3.0/VehicleInformationService2008R2.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/KBB.VIS.Web.Service.R3.DataContract" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IVehicleInformationService2008R2_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetYears_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetYears" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetYears_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetYearsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetYearsByModel_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetYearsByModel" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetYearsByModel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetYearsByModelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetYearsByModel_DateOutOfRangeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:DateOutOfRangeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetYearsByModel_ModelIdNotFoundFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:ModelIdNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetYearsByModel_InternalOperationFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InternalOperationFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetYearsByModel_SecurityFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetModelsByYearAndMake_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetModelsByYearAndMake" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetModelsByYearAndMake_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetModelsByYearAndMakeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetModelsByYearAndMake_MakeIdNotFoundFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:MakeIdNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetModelsByYearAndMake_YearIdNotFoundFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:YearIdNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetModelsByYearAndMake_InternalOperationFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InternalOperationFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetModelsByYearAndMake_SecurityFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetModelsByMakeAcrossAllYears_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetModelsByMakeAcrossAllYears" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetModelsByMakeAcrossAllYears_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetModelsByMakeAcrossAllYearsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetModelsByMakeAcrossAllYears_MakeIdNotFoundFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:MakeIdNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetModelsByMakeAcrossAllYears_InternalOperationFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InternalOperationFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetModelsByMakeAcrossAllYears_SecurityFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetModelsByMakeAcrossAllYears_DateOutOfRangeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:DateOutOfRangeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetTrimsAndVehicleIdsByYearAndModel_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrimsAndVehicleIdsByYearAndModel" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetTrimsAndVehicleIdsByYearAndModel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTrimsAndVehicleIdsByYearAndModelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetTrimsAndVehicleIdsByYearAndModel_InternalOperationFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InternalOperationFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetTrimsAndVehicleIdsByYearAndModel_SecurityFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetTrimsAndVehicleIdsByYearAndModel_DateOutOfRangeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:DateOutOfRangeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetTrimsAndVehicleIdsByYearAndModel_ModelIdNotFoundFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:ModelIdNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetTrimsAndVehicleIdsByYearAndModel_YearIdNotFoundFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:YearIdNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetEnginesByVehicleId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEnginesByVehicleId" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetEnginesByVehicleId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEnginesByVehicleIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetEnginesByVehicleId_InternalOperationFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InternalOperationFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetEnginesByVehicleId_SecurityFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetEnginesByVehicleId_DateOutOfRangeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:DateOutOfRangeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetEnginesByVehicleId_VehicleIdNotFoundFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:VehicleIdNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetEnginesByVehicleId_InvalidZipCodeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InvalidZipCodeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetTransmissionsByVehicleId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransmissionsByVehicleId" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetTransmissionsByVehicleId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTransmissionsByVehicleIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetTransmissionsByVehicleId_InternalOperationFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InternalOperationFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetTransmissionsByVehicleId_SecurityFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetTransmissionsByVehicleId_DateOutOfRangeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:DateOutOfRangeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetTransmissionsByVehicleId_VehicleIdNotFoundFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:VehicleIdNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetTransmissionsByVehicleId_InvalidZipCodeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InvalidZipCodeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetDrivetrainsByVehicleId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrivetrainsByVehicleId" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetDrivetrainsByVehicleId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDrivetrainsByVehicleIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetDrivetrainsByVehicleId_InvalidZipCodeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InvalidZipCodeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetDrivetrainsByVehicleId_InternalOperationFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InternalOperationFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetDrivetrainsByVehicleId_SecurityFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetDrivetrainsByVehicleId_DateOutOfRangeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:DateOutOfRangeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetDrivetrainsByVehicleId_VehicleIdNotFoundFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:VehicleIdNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetCompetitiveSetByVehicleId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompetitiveSetByVehicleId" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetCompetitiveSetByVehicleId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompetitiveSetByVehicleIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetCompetitiveSetByVehicleId_InternalOperationFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InternalOperationFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetCompetitiveSetByVehicleId_SecurityFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetCompetitiveSetByVehicleId_DateOutOfRangeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:DateOutOfRangeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetCompetitiveSetByVehicleId_VehicleIdNotFoundFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:VehicleIdNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetCompetitiveSetByVehicleId_InvalidZipCodeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InvalidZipCodeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetReleaseVersionByVersionDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReleaseVersionByVersionDate" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetReleaseVersionByVersionDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReleaseVersionByVersionDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetReleaseVersionByVersionDate_InternalOperationFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InternalOperationFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetReleaseVersionByVersionDate_SecurityFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetReleaseVersionByVersionDate_DateOutOfRangeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:DateOutOfRangeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetEquipmentOptionsByVehicleId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquipmentOptionsByVehicleId" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetEquipmentOptionsByVehicleId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquipmentOptionsByVehicleIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetEquipmentOptionsByVehicleId_InternalOperationFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InternalOperationFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetEquipmentOptionsByVehicleId_SecurityFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetEquipmentOptionsByVehicleId_DateOutOfRangeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:DateOutOfRangeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetEquipmentOptionsByVehicleId_VehicleIdNotFoundFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:VehicleIdNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetEquipmentOptionsByVehicleId_InvalidZipCodeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InvalidZipCodeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetUpdatedEquipmentOptionsByVehicleId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUpdatedEquipmentOptionsByVehicleId" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetUpdatedEquipmentOptionsByVehicleId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUpdatedEquipmentOptionsByVehicleIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetUpdatedEquipmentOptionsByVehicleId_InternalOperationFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InternalOperationFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetUpdatedEquipmentOptionsByVehicleId_SecurityFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetUpdatedEquipmentOptionsByVehicleId_DateOutOfRangeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:DateOutOfRangeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetUpdatedEquipmentOptionsByVehicleId_VehicleIdNotFoundFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:VehicleIdNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetUpdatedEquipmentOptionsByVehicleId_InvalidZipCodeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InvalidZipCodeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_ValidateUpdatedEquipmentOptionsByVehicleId_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateUpdatedEquipmentOptionsByVehicleId" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_ValidateUpdatedEquipmentOptionsByVehicleId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateUpdatedEquipmentOptionsByVehicleIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_ValidateUpdatedEquipmentOptionsByVehicleId_InternalOperationFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InternalOperationFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_ValidateUpdatedEquipmentOptionsByVehicleId_SecurityFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_ValidateUpdatedEquipmentOptionsByVehicleId_DateOutOfRangeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:DateOutOfRangeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_ValidateUpdatedEquipmentOptionsByVehicleId_VehicleIdNotFoundFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:VehicleIdNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_ValidateUpdatedEquipmentOptionsByVehicleId_InvalidZipCodeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InvalidZipCodeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleConfigurationByVIN_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVehicleConfigurationByVIN" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleConfigurationByVIN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVehicleConfigurationByVINResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleConfigurationByVIN_VINValidationTooShortFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:VINValidationTooShortFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleConfigurationByVIN_VINValidationInvalidCheckDigitFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:VINValidationInvalidCheckDigitFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleConfigurationByVIN_VINValidationInvalidPatternFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:VINValidationInvalidPatternFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleConfigurationByVIN_VINValidationTooLongFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:VINValidationTooLongFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleConfigurationByVIN_InternalOperationFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InternalOperationFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleConfigurationByVIN_SecurityFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleConfigurationByVIN_DateOutOfRangeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:DateOutOfRangeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleConfigurationByVIN_VINValidationInvalidCharactersFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:VINValidationInvalidCharactersFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleConfigurationByVehicleId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVehicleConfigurationByVehicleId" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleConfigurationByVehicleId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVehicleConfigurationByVehicleIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleConfigurationByVehicleId_SecurityFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleConfigurationByVehicleId_DateOutOfRangeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:DateOutOfRangeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleConfigurationByVehicleId_VehicleIdNotFoundFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:VehicleIdNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleConfigurationByVehicleId_InvalidZipCodeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InvalidZipCodeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleConfigurationByVehicleId_InternalOperationFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InternalOperationFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_ValidateVIN_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateVIN" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_ValidateVIN_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateVINResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_ValidateVIN_SecurityFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_ValidateVIN_InternalOperationFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InternalOperationFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_ValidateVIN_InvalidValueFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InvalidValueFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetZeroPointMileageByYear_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetZeroPointMileageByYear" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetZeroPointMileageByYear_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetZeroPointMileageByYearResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetZeroPointMileageByYear_YearIdNotFoundFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:YearIdNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetZeroPointMileageByYear_InternalOperationFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InternalOperationFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetZeroPointMileageByYear_SecurityFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetReviewsByVehicleId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetReviewsByVehicleId" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetReviewsByVehicleId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetReviewsByVehicleIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetReviewsByVehicleId_InvalidZipCodeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InvalidZipCodeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetReviewsByVehicleId_InternalOperationFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InternalOperationFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetReviewsByVehicleId_SecurityFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetReviewsByVehicleId_DateOutOfRangeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:DateOutOfRangeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetReviewsByVehicleId_VehicleIdNotFoundFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:VehicleIdNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleValuesByVehicleConfiguration_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVehicleValuesByVehicleConfiguration" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleValuesByVehicleConfiguration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVehicleValuesByVehicleConfigurationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleValuesByVehicleConfiguration_SecurityFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleValuesByVehicleConfiguration_DateOutOfRangeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:DateOutOfRangeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleValuesByVehicleConfiguration_InvalidZipCodeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InvalidZipCodeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleValuesByVehicleConfiguration_InternalOperationFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InternalOperationFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleValuesByVehicleConfigurationAllConditions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVehicleValuesByVehicleConfigurationAllConditions" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleValuesByVehicleConfigurationAllConditions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVehicleValuesByVehicleConfigurationAllConditionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleValuesByVehicleConfigurationAllConditions_DateOutOfRangeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:DateOutOfRangeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleValuesByVehicleConfigurationAllConditions_SecurityFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleValuesByVehicleConfigurationAllConditions_InvalidZipCodeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InvalidZipCodeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleValuesByVehicleConfigurationAllConditions_InternalOperationFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InternalOperationFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetEquipmentOptionsValueByVehicleId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquipmentOptionsValueByVehicleId" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetEquipmentOptionsValueByVehicleId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquipmentOptionsValueByVehicleIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetEquipmentOptionsValueByVehicleId_InternalOperationFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InternalOperationFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetEquipmentOptionsValueByVehicleId_SecurityFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetEquipmentOptionsValueByVehicleId_DateOutOfRangeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:DateOutOfRangeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetEquipmentOptionsValueByVehicleId_VehicleIdNotFoundFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:VehicleIdNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetEquipmentOptionsValueByVehicleId_InvalidZipCodeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InvalidZipCodeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetEquipmentOptionValuesByVehicleConfiguration_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquipmentOptionValuesByVehicleConfiguration" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetEquipmentOptionValuesByVehicleConfiguration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEquipmentOptionValuesByVehicleConfigurationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetEquipmentOptionValuesByVehicleConfiguration_InternalOperationFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InternalOperationFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetEquipmentOptionValuesByVehicleConfiguration_SecurityFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetEquipmentOptionValuesByVehicleConfiguration_DateOutOfRangeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:DateOutOfRangeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetEquipmentOptionValuesByVehicleConfiguration_VehicleIdNotFoundFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:VehicleIdNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetEquipmentOptionValuesByVehicleConfiguration_InvalidZipCodeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InvalidZipCodeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetMakes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMakes" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetMakes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMakesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetMakes_InternalOperationFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InternalOperationFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetMakes_SecurityFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetMakes_DateOutOfRangeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:DateOutOfRangeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetMakesByYear_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMakesByYear" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetMakesByYear_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMakesByYearResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetMakesByYear_DateOutOfRangeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:DateOutOfRangeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetMakesByYear_YearIdNotFoundFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:YearIdNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetMakesByYear_InternalOperationFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InternalOperationFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetMakesByYear_SecurityFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetCPOPrograms_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCPOPrograms" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetCPOPrograms_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCPOProgramsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetCPOPrograms_InternalOperationFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InternalOperationFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetCPOPrograms_SecurityFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetCPOPrograms_DateOutOfRangeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:DateOutOfRangeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleSpecificationsByVehicleId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetVehicleSpecificationsByVehicleId" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleSpecificationsByVehicleId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetVehicleSpecificationsByVehicleIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleSpecificationsByVehicleId_SecurityFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleSpecificationsByVehicleId_InternalOperationFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InternalOperationFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleSpecificationsByVehicleId_VehicleIdNotFoundFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:VehicleIdNotFoundFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetVehicleSpecificationsByVehicleId_DateOutOfRangeFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:DateOutOfRangeFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetAvailableMethods_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAvailableMethods" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetAvailableMethods_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAvailableMethodsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetAvailableMethods_InternalOperationFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:InternalOperationFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetConversionDataByVersionDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConversionDataByVersionDate" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetConversionDataByVersionDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConversionDataByVersionDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetConversionDataByVersionDate_SecurityFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:SecurityFault" />
+  </wsdl:message>
+  <wsdl:message name="IVehicleInformationService2008R2_GetConversionDataByVersionDate_VehicleIdNotFoundFaultFault_FaultMessage">
+    <wsdl:part name="detail" element="tns:VehicleIdNotFoundFault" />
+  </wsdl:message>
+  <wsdl:portType name="IVehicleInformationService2008R2">
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/Login" message="tns:IVehicleInformationService2008R2_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/LoginResponse" message="tns:IVehicleInformationService2008R2_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetYears">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetYears" message="tns:IVehicleInformationService2008R2_GetYears_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetYearsResponse" message="tns:IVehicleInformationService2008R2_GetYears_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetYearsByModel">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetYearsByModel" message="tns:IVehicleInformationService2008R2_GetYearsByModel_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetYearsByModelResponse" message="tns:IVehicleInformationService2008R2_GetYearsByModel_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetYearsByModelDateOutOfRangeFaultFault" name="DateOutOfRangeFaultFault" message="tns:IVehicleInformationService2008R2_GetYearsByModel_DateOutOfRangeFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetYearsByModelModelIdNotFoundFaultFault" name="ModelIdNotFoundFaultFault" message="tns:IVehicleInformationService2008R2_GetYearsByModel_ModelIdNotFoundFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetYearsByModelInternalOperationFaultFault" name="InternalOperationFaultFault" message="tns:IVehicleInformationService2008R2_GetYearsByModel_InternalOperationFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetYearsByModelSecurityFaultFault" name="SecurityFaultFault" message="tns:IVehicleInformationService2008R2_GetYearsByModel_SecurityFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetModelsByYearAndMake">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetModelsByYearAndMake" message="tns:IVehicleInformationService2008R2_GetModelsByYearAndMake_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetModelsByYearAndMakeResponse" message="tns:IVehicleInformationService2008R2_GetModelsByYearAndMake_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetModelsByYearAndMakeMakeIdNotFoundFaultFault" name="MakeIdNotFoundFaultFault" message="tns:IVehicleInformationService2008R2_GetModelsByYearAndMake_MakeIdNotFoundFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetModelsByYearAndMakeYearIdNotFoundFaultFault" name="YearIdNotFoundFaultFault" message="tns:IVehicleInformationService2008R2_GetModelsByYearAndMake_YearIdNotFoundFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetModelsByYearAndMakeInternalOperationFaultFault" name="InternalOperationFaultFault" message="tns:IVehicleInformationService2008R2_GetModelsByYearAndMake_InternalOperationFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetModelsByYearAndMakeSecurityFaultFault" name="SecurityFaultFault" message="tns:IVehicleInformationService2008R2_GetModelsByYearAndMake_SecurityFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetModelsByMakeAcrossAllYears">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetModelsByMakeAcrossAllYears" message="tns:IVehicleInformationService2008R2_GetModelsByMakeAcrossAllYears_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetModelsByMakeAcrossAllYearsResponse" message="tns:IVehicleInformationService2008R2_GetModelsByMakeAcrossAllYears_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetModelsByMakeAcrossAllYearsMakeIdNotFoundFaultFault" name="MakeIdNotFoundFaultFault" message="tns:IVehicleInformationService2008R2_GetModelsByMakeAcrossAllYears_MakeIdNotFoundFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetModelsByMakeAcrossAllYearsInternalOperationFaultFault" name="InternalOperationFaultFault" message="tns:IVehicleInformationService2008R2_GetModelsByMakeAcrossAllYears_InternalOperationFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetModelsByMakeAcrossAllYearsSecurityFaultFault" name="SecurityFaultFault" message="tns:IVehicleInformationService2008R2_GetModelsByMakeAcrossAllYears_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetModelsByMakeAcrossAllYearsDateOutOfRangeFaultFault" name="DateOutOfRangeFaultFault" message="tns:IVehicleInformationService2008R2_GetModelsByMakeAcrossAllYears_DateOutOfRangeFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTrimsAndVehicleIdsByYearAndModel">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetTrimsAndVehicleIdsByYearAndModel" message="tns:IVehicleInformationService2008R2_GetTrimsAndVehicleIdsByYearAndModel_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetTrimsAndVehicleIdsByYearAndModelResponse" message="tns:IVehicleInformationService2008R2_GetTrimsAndVehicleIdsByYearAndModel_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetTrimsAndVehicleIdsByYearAndModelInternalOperationFaultFault" name="InternalOperationFaultFault" message="tns:IVehicleInformationService2008R2_GetTrimsAndVehicleIdsByYearAndModel_InternalOperationFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetTrimsAndVehicleIdsByYearAndModelSecurityFaultFault" name="SecurityFaultFault" message="tns:IVehicleInformationService2008R2_GetTrimsAndVehicleIdsByYearAndModel_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetTrimsAndVehicleIdsByYearAndModelDateOutOfRangeFaultFault" name="DateOutOfRangeFaultFault" message="tns:IVehicleInformationService2008R2_GetTrimsAndVehicleIdsByYearAndModel_DateOutOfRangeFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetTrimsAndVehicleIdsByYearAndModelModelIdNotFoundFaultFault" name="ModelIdNotFoundFaultFault" message="tns:IVehicleInformationService2008R2_GetTrimsAndVehicleIdsByYearAndModel_ModelIdNotFoundFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetTrimsAndVehicleIdsByYearAndModelYearIdNotFoundFaultFault" name="YearIdNotFoundFaultFault" message="tns:IVehicleInformationService2008R2_GetTrimsAndVehicleIdsByYearAndModel_YearIdNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEnginesByVehicleId">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEnginesByVehicleId" message="tns:IVehicleInformationService2008R2_GetEnginesByVehicleId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEnginesByVehicleIdResponse" message="tns:IVehicleInformationService2008R2_GetEnginesByVehicleId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEnginesByVehicleIdInternalOperationFaultFault" name="InternalOperationFaultFault" message="tns:IVehicleInformationService2008R2_GetEnginesByVehicleId_InternalOperationFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEnginesByVehicleIdSecurityFaultFault" name="SecurityFaultFault" message="tns:IVehicleInformationService2008R2_GetEnginesByVehicleId_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEnginesByVehicleIdDateOutOfRangeFaultFault" name="DateOutOfRangeFaultFault" message="tns:IVehicleInformationService2008R2_GetEnginesByVehicleId_DateOutOfRangeFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEnginesByVehicleIdVehicleIdNotFoundFaultFault" name="VehicleIdNotFoundFaultFault" message="tns:IVehicleInformationService2008R2_GetEnginesByVehicleId_VehicleIdNotFoundFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEnginesByVehicleIdInvalidZipCodeFaultFault" name="InvalidZipCodeFaultFault" message="tns:IVehicleInformationService2008R2_GetEnginesByVehicleId_InvalidZipCodeFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTransmissionsByVehicleId">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetTransmissionsByVehicleId" message="tns:IVehicleInformationService2008R2_GetTransmissionsByVehicleId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetTransmissionsByVehicleIdResponse" message="tns:IVehicleInformationService2008R2_GetTransmissionsByVehicleId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetTransmissionsByVehicleIdInternalOperationFaultFault" name="InternalOperationFaultFault" message="tns:IVehicleInformationService2008R2_GetTransmissionsByVehicleId_InternalOperationFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetTransmissionsByVehicleIdSecurityFaultFault" name="SecurityFaultFault" message="tns:IVehicleInformationService2008R2_GetTransmissionsByVehicleId_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetTransmissionsByVehicleIdDateOutOfRangeFaultFault" name="DateOutOfRangeFaultFault" message="tns:IVehicleInformationService2008R2_GetTransmissionsByVehicleId_DateOutOfRangeFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetTransmissionsByVehicleIdVehicleIdNotFoundFaultFault" name="VehicleIdNotFoundFaultFault" message="tns:IVehicleInformationService2008R2_GetTransmissionsByVehicleId_VehicleIdNotFoundFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetTransmissionsByVehicleIdInvalidZipCodeFaultFault" name="InvalidZipCodeFaultFault" message="tns:IVehicleInformationService2008R2_GetTransmissionsByVehicleId_InvalidZipCodeFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDrivetrainsByVehicleId">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetDrivetrainsByVehicleId" message="tns:IVehicleInformationService2008R2_GetDrivetrainsByVehicleId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetDrivetrainsByVehicleIdResponse" message="tns:IVehicleInformationService2008R2_GetDrivetrainsByVehicleId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetDrivetrainsByVehicleIdInvalidZipCodeFaultFault" name="InvalidZipCodeFaultFault" message="tns:IVehicleInformationService2008R2_GetDrivetrainsByVehicleId_InvalidZipCodeFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetDrivetrainsByVehicleIdInternalOperationFaultFault" name="InternalOperationFaultFault" message="tns:IVehicleInformationService2008R2_GetDrivetrainsByVehicleId_InternalOperationFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetDrivetrainsByVehicleIdSecurityFaultFault" name="SecurityFaultFault" message="tns:IVehicleInformationService2008R2_GetDrivetrainsByVehicleId_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetDrivetrainsByVehicleIdDateOutOfRangeFaultFault" name="DateOutOfRangeFaultFault" message="tns:IVehicleInformationService2008R2_GetDrivetrainsByVehicleId_DateOutOfRangeFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetDrivetrainsByVehicleIdVehicleIdNotFoundFaultFault" name="VehicleIdNotFoundFaultFault" message="tns:IVehicleInformationService2008R2_GetDrivetrainsByVehicleId_VehicleIdNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompetitiveSetByVehicleId">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetCompetitiveSetByVehicleId" message="tns:IVehicleInformationService2008R2_GetCompetitiveSetByVehicleId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetCompetitiveSetByVehicleIdResponse" message="tns:IVehicleInformationService2008R2_GetCompetitiveSetByVehicleId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetCompetitiveSetByVehicleIdInternalOperationFaultFault" name="InternalOperationFaultFault" message="tns:IVehicleInformationService2008R2_GetCompetitiveSetByVehicleId_InternalOperationFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetCompetitiveSetByVehicleIdSecurityFaultFault" name="SecurityFaultFault" message="tns:IVehicleInformationService2008R2_GetCompetitiveSetByVehicleId_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetCompetitiveSetByVehicleIdDateOutOfRangeFaultFault" name="DateOutOfRangeFaultFault" message="tns:IVehicleInformationService2008R2_GetCompetitiveSetByVehicleId_DateOutOfRangeFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetCompetitiveSetByVehicleIdVehicleIdNotFoundFaultFault" name="VehicleIdNotFoundFaultFault" message="tns:IVehicleInformationService2008R2_GetCompetitiveSetByVehicleId_VehicleIdNotFoundFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetCompetitiveSetByVehicleIdInvalidZipCodeFaultFault" name="InvalidZipCodeFaultFault" message="tns:IVehicleInformationService2008R2_GetCompetitiveSetByVehicleId_InvalidZipCodeFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReleaseVersionByVersionDate">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetReleaseVersionByVersionDate" message="tns:IVehicleInformationService2008R2_GetReleaseVersionByVersionDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetReleaseVersionByVersionDateResponse" message="tns:IVehicleInformationService2008R2_GetReleaseVersionByVersionDate_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetReleaseVersionByVersionDateInternalOperationFaultFault" name="InternalOperationFaultFault" message="tns:IVehicleInformationService2008R2_GetReleaseVersionByVersionDate_InternalOperationFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetReleaseVersionByVersionDateSecurityFaultFault" name="SecurityFaultFault" message="tns:IVehicleInformationService2008R2_GetReleaseVersionByVersionDate_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetReleaseVersionByVersionDateDateOutOfRangeFaultFault" name="DateOutOfRangeFaultFault" message="tns:IVehicleInformationService2008R2_GetReleaseVersionByVersionDate_DateOutOfRangeFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEquipmentOptionsByVehicleId">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEquipmentOptionsByVehicleId" message="tns:IVehicleInformationService2008R2_GetEquipmentOptionsByVehicleId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEquipmentOptionsByVehicleIdResponse" message="tns:IVehicleInformationService2008R2_GetEquipmentOptionsByVehicleId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEquipmentOptionsByVehicleIdInternalOperationFaultFault" name="InternalOperationFaultFault" message="tns:IVehicleInformationService2008R2_GetEquipmentOptionsByVehicleId_InternalOperationFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEquipmentOptionsByVehicleIdSecurityFaultFault" name="SecurityFaultFault" message="tns:IVehicleInformationService2008R2_GetEquipmentOptionsByVehicleId_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEquipmentOptionsByVehicleIdDateOutOfRangeFaultFault" name="DateOutOfRangeFaultFault" message="tns:IVehicleInformationService2008R2_GetEquipmentOptionsByVehicleId_DateOutOfRangeFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEquipmentOptionsByVehicleIdVehicleIdNotFoundFaultFault" name="VehicleIdNotFoundFaultFault" message="tns:IVehicleInformationService2008R2_GetEquipmentOptionsByVehicleId_VehicleIdNotFoundFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEquipmentOptionsByVehicleIdInvalidZipCodeFaultFault" name="InvalidZipCodeFaultFault" message="tns:IVehicleInformationService2008R2_GetEquipmentOptionsByVehicleId_InvalidZipCodeFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUpdatedEquipmentOptionsByVehicleId">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetUpdatedEquipmentOptionsByVehicleId" message="tns:IVehicleInformationService2008R2_GetUpdatedEquipmentOptionsByVehicleId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetUpdatedEquipmentOptionsByVehicleIdResponse" message="tns:IVehicleInformationService2008R2_GetUpdatedEquipmentOptionsByVehicleId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetUpdatedEquipmentOptionsByVehicleIdInternalOperationFaultFault" name="InternalOperationFaultFault" message="tns:IVehicleInformationService2008R2_GetUpdatedEquipmentOptionsByVehicleId_InternalOperationFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetUpdatedEquipmentOptionsByVehicleIdSecurityFaultFault" name="SecurityFaultFault" message="tns:IVehicleInformationService2008R2_GetUpdatedEquipmentOptionsByVehicleId_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetUpdatedEquipmentOptionsByVehicleIdDateOutOfRangeFaultFault" name="DateOutOfRangeFaultFault" message="tns:IVehicleInformationService2008R2_GetUpdatedEquipmentOptionsByVehicleId_DateOutOfRangeFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetUpdatedEquipmentOptionsByVehicleIdVehicleIdNotFoundFaultFault" name="VehicleIdNotFoundFaultFault" message="tns:IVehicleInformationService2008R2_GetUpdatedEquipmentOptionsByVehicleId_VehicleIdNotFoundFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetUpdatedEquipmentOptionsByVehicleIdInvalidZipCodeFaultFault" name="InvalidZipCodeFaultFault" message="tns:IVehicleInformationService2008R2_GetUpdatedEquipmentOptionsByVehicleId_InvalidZipCodeFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateUpdatedEquipmentOptionsByVehicleId">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/ValidateUpdatedEquipmentOptionsByVehicleId" message="tns:IVehicleInformationService2008R2_ValidateUpdatedEquipmentOptionsByVehicleId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/ValidateUpdatedEquipmentOptionsByVehicleIdResponse" message="tns:IVehicleInformationService2008R2_ValidateUpdatedEquipmentOptionsByVehicleId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/ValidateUpdatedEquipmentOptionsByVehicleIdInternalOperationFaultFault" name="InternalOperationFaultFault" message="tns:IVehicleInformationService2008R2_ValidateUpdatedEquipmentOptionsByVehicleId_InternalOperationFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/ValidateUpdatedEquipmentOptionsByVehicleIdSecurityFaultFault" name="SecurityFaultFault" message="tns:IVehicleInformationService2008R2_ValidateUpdatedEquipmentOptionsByVehicleId_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/ValidateUpdatedEquipmentOptionsByVehicleIdDateOutOfRangeFaultFault" name="DateOutOfRangeFaultFault" message="tns:IVehicleInformationService2008R2_ValidateUpdatedEquipmentOptionsByVehicleId_DateOutOfRangeFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/ValidateUpdatedEquipmentOptionsByVehicleIdVehicleIdNotFoundFaultFault" name="VehicleIdNotFoundFaultFault" message="tns:IVehicleInformationService2008R2_ValidateUpdatedEquipmentOptionsByVehicleId_VehicleIdNotFoundFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/ValidateUpdatedEquipmentOptionsByVehicleIdInvalidZipCodeFaultFault" name="InvalidZipCodeFaultFault" message="tns:IVehicleInformationService2008R2_ValidateUpdatedEquipmentOptionsByVehicleId_InvalidZipCodeFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleConfigurationByVIN">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleConfigurationByVIN" message="tns:IVehicleInformationService2008R2_GetVehicleConfigurationByVIN_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleConfigurationByVINResponse" message="tns:IVehicleInformationService2008R2_GetVehicleConfigurationByVIN_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleConfigurationByVINVINValidationTooShortFaultFault" name="VINValidationTooShortFaultFault" message="tns:IVehicleInformationService2008R2_GetVehicleConfigurationByVIN_VINValidationTooShortFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleConfigurationByVINVINValidationInvalidCheckDigitFaultFault" name="VINValidationInvalidCheckDigitFaultFault" message="tns:IVehicleInformationService2008R2_GetVehicleConfigurationByVIN_VINValidationInvalidCheckDigitFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleConfigurationByVINVINValidationInvalidPatternFaultFault" name="VINValidationInvalidPatternFaultFault" message="tns:IVehicleInformationService2008R2_GetVehicleConfigurationByVIN_VINValidationInvalidPatternFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleConfigurationByVINVINValidationTooLongFaultFault" name="VINValidationTooLongFaultFault" message="tns:IVehicleInformationService2008R2_GetVehicleConfigurationByVIN_VINValidationTooLongFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleConfigurationByVINInternalOperationFaultFault" name="InternalOperationFaultFault" message="tns:IVehicleInformationService2008R2_GetVehicleConfigurationByVIN_InternalOperationFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleConfigurationByVINSecurityFaultFault" name="SecurityFaultFault" message="tns:IVehicleInformationService2008R2_GetVehicleConfigurationByVIN_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleConfigurationByVINDateOutOfRangeFaultFault" name="DateOutOfRangeFaultFault" message="tns:IVehicleInformationService2008R2_GetVehicleConfigurationByVIN_DateOutOfRangeFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleConfigurationByVINVINValidationInvalidCharactersFaultFault" name="VINValidationInvalidCharactersFaultFault" message="tns:IVehicleInformationService2008R2_GetVehicleConfigurationByVIN_VINValidationInvalidCharactersFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleConfigurationByVehicleId">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleConfigurationByVehicleId" message="tns:IVehicleInformationService2008R2_GetVehicleConfigurationByVehicleId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleConfigurationByVehicleIdResponse" message="tns:IVehicleInformationService2008R2_GetVehicleConfigurationByVehicleId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleConfigurationByVehicleIdSecurityFaultFault" name="SecurityFaultFault" message="tns:IVehicleInformationService2008R2_GetVehicleConfigurationByVehicleId_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleConfigurationByVehicleIdDateOutOfRangeFaultFault" name="DateOutOfRangeFaultFault" message="tns:IVehicleInformationService2008R2_GetVehicleConfigurationByVehicleId_DateOutOfRangeFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleConfigurationByVehicleIdVehicleIdNotFoundFaultFault" name="VehicleIdNotFoundFaultFault" message="tns:IVehicleInformationService2008R2_GetVehicleConfigurationByVehicleId_VehicleIdNotFoundFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleConfigurationByVehicleIdInvalidZipCodeFaultFault" name="InvalidZipCodeFaultFault" message="tns:IVehicleInformationService2008R2_GetVehicleConfigurationByVehicleId_InvalidZipCodeFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleConfigurationByVehicleIdInternalOperationFaultFault" name="InternalOperationFaultFault" message="tns:IVehicleInformationService2008R2_GetVehicleConfigurationByVehicleId_InternalOperationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidateVIN">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/ValidateVIN" message="tns:IVehicleInformationService2008R2_ValidateVIN_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/ValidateVINResponse" message="tns:IVehicleInformationService2008R2_ValidateVIN_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/ValidateVINSecurityFaultFault" name="SecurityFaultFault" message="tns:IVehicleInformationService2008R2_ValidateVIN_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/ValidateVINInternalOperationFaultFault" name="InternalOperationFaultFault" message="tns:IVehicleInformationService2008R2_ValidateVIN_InternalOperationFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/ValidateVINInvalidValueFaultFault" name="InvalidValueFaultFault" message="tns:IVehicleInformationService2008R2_ValidateVIN_InvalidValueFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetZeroPointMileageByYear">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetZeroPointMileageByYear" message="tns:IVehicleInformationService2008R2_GetZeroPointMileageByYear_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetZeroPointMileageByYearResponse" message="tns:IVehicleInformationService2008R2_GetZeroPointMileageByYear_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetZeroPointMileageByYearYearIdNotFoundFaultFault" name="YearIdNotFoundFaultFault" message="tns:IVehicleInformationService2008R2_GetZeroPointMileageByYear_YearIdNotFoundFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetZeroPointMileageByYearInternalOperationFaultFault" name="InternalOperationFaultFault" message="tns:IVehicleInformationService2008R2_GetZeroPointMileageByYear_InternalOperationFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetZeroPointMileageByYearSecurityFaultFault" name="SecurityFaultFault" message="tns:IVehicleInformationService2008R2_GetZeroPointMileageByYear_SecurityFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetReviewsByVehicleId">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetReviewsByVehicleId" message="tns:IVehicleInformationService2008R2_GetReviewsByVehicleId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetReviewsByVehicleIdResponse" message="tns:IVehicleInformationService2008R2_GetReviewsByVehicleId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetReviewsByVehicleIdInvalidZipCodeFaultFault" name="InvalidZipCodeFaultFault" message="tns:IVehicleInformationService2008R2_GetReviewsByVehicleId_InvalidZipCodeFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetReviewsByVehicleIdInternalOperationFaultFault" name="InternalOperationFaultFault" message="tns:IVehicleInformationService2008R2_GetReviewsByVehicleId_InternalOperationFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetReviewsByVehicleIdSecurityFaultFault" name="SecurityFaultFault" message="tns:IVehicleInformationService2008R2_GetReviewsByVehicleId_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetReviewsByVehicleIdDateOutOfRangeFaultFault" name="DateOutOfRangeFaultFault" message="tns:IVehicleInformationService2008R2_GetReviewsByVehicleId_DateOutOfRangeFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetReviewsByVehicleIdVehicleIdNotFoundFaultFault" name="VehicleIdNotFoundFaultFault" message="tns:IVehicleInformationService2008R2_GetReviewsByVehicleId_VehicleIdNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleValuesByVehicleConfiguration">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleValuesByVehicleConfiguration" message="tns:IVehicleInformationService2008R2_GetVehicleValuesByVehicleConfiguration_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleValuesByVehicleConfigurationResponse" message="tns:IVehicleInformationService2008R2_GetVehicleValuesByVehicleConfiguration_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleValuesByVehicleConfigurationSecurityFaultFault" name="SecurityFaultFault" message="tns:IVehicleInformationService2008R2_GetVehicleValuesByVehicleConfiguration_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleValuesByVehicleConfigurationDateOutOfRangeFaultFault" name="DateOutOfRangeFaultFault" message="tns:IVehicleInformationService2008R2_GetVehicleValuesByVehicleConfiguration_DateOutOfRangeFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleValuesByVehicleConfigurationInvalidZipCodeFaultFault" name="InvalidZipCodeFaultFault" message="tns:IVehicleInformationService2008R2_GetVehicleValuesByVehicleConfiguration_InvalidZipCodeFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleValuesByVehicleConfigurationInternalOperationFaultFault" name="InternalOperationFaultFault" message="tns:IVehicleInformationService2008R2_GetVehicleValuesByVehicleConfiguration_InternalOperationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleValuesByVehicleConfigurationAllConditions">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleValuesByVehicleConfigurationAllConditions" message="tns:IVehicleInformationService2008R2_GetVehicleValuesByVehicleConfigurationAllConditions_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleValuesByVehicleConfigurationAllConditionsResponse" message="tns:IVehicleInformationService2008R2_GetVehicleValuesByVehicleConfigurationAllConditions_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleValuesByVehicleConfigurationAllConditionsDateOutOfRangeFaultFault" name="DateOutOfRangeFaultFault" message="tns:IVehicleInformationService2008R2_GetVehicleValuesByVehicleConfigurationAllConditions_DateOutOfRangeFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleValuesByVehicleConfigurationAllConditionsSecurityFaultFault" name="SecurityFaultFault" message="tns:IVehicleInformationService2008R2_GetVehicleValuesByVehicleConfigurationAllConditions_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleValuesByVehicleConfigurationAllConditionsInvalidZipCodeFaultFault" name="InvalidZipCodeFaultFault" message="tns:IVehicleInformationService2008R2_GetVehicleValuesByVehicleConfigurationAllConditions_InvalidZipCodeFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleValuesByVehicleConfigurationAllConditionsInternalOperationFaultFault" name="InternalOperationFaultFault" message="tns:IVehicleInformationService2008R2_GetVehicleValuesByVehicleConfigurationAllConditions_InternalOperationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEquipmentOptionsValueByVehicleId">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEquipmentOptionsValueByVehicleId" message="tns:IVehicleInformationService2008R2_GetEquipmentOptionsValueByVehicleId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEquipmentOptionsValueByVehicleIdResponse" message="tns:IVehicleInformationService2008R2_GetEquipmentOptionsValueByVehicleId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEquipmentOptionsValueByVehicleIdInternalOperationFaultFault" name="InternalOperationFaultFault" message="tns:IVehicleInformationService2008R2_GetEquipmentOptionsValueByVehicleId_InternalOperationFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEquipmentOptionsValueByVehicleIdSecurityFaultFault" name="SecurityFaultFault" message="tns:IVehicleInformationService2008R2_GetEquipmentOptionsValueByVehicleId_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEquipmentOptionsValueByVehicleIdDateOutOfRangeFaultFault" name="DateOutOfRangeFaultFault" message="tns:IVehicleInformationService2008R2_GetEquipmentOptionsValueByVehicleId_DateOutOfRangeFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEquipmentOptionsValueByVehicleIdVehicleIdNotFoundFaultFault" name="VehicleIdNotFoundFaultFault" message="tns:IVehicleInformationService2008R2_GetEquipmentOptionsValueByVehicleId_VehicleIdNotFoundFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEquipmentOptionsValueByVehicleIdInvalidZipCodeFaultFault" name="InvalidZipCodeFaultFault" message="tns:IVehicleInformationService2008R2_GetEquipmentOptionsValueByVehicleId_InvalidZipCodeFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEquipmentOptionValuesByVehicleConfiguration">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEquipmentOptionValuesByVehicleConfiguration" message="tns:IVehicleInformationService2008R2_GetEquipmentOptionValuesByVehicleConfiguration_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEquipmentOptionValuesByVehicleConfigurationResponse" message="tns:IVehicleInformationService2008R2_GetEquipmentOptionValuesByVehicleConfiguration_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEquipmentOptionValuesByVehicleConfigurationInternalOperationFaultFault" name="InternalOperationFaultFault" message="tns:IVehicleInformationService2008R2_GetEquipmentOptionValuesByVehicleConfiguration_InternalOperationFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEquipmentOptionValuesByVehicleConfigurationSecurityFaultFault" name="SecurityFaultFault" message="tns:IVehicleInformationService2008R2_GetEquipmentOptionValuesByVehicleConfiguration_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEquipmentOptionValuesByVehicleConfigurationDateOutOfRangeFaultFault" name="DateOutOfRangeFaultFault" message="tns:IVehicleInformationService2008R2_GetEquipmentOptionValuesByVehicleConfiguration_DateOutOfRangeFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEquipmentOptionValuesByVehicleConfigurationVehicleIdNotFoundFaultFault" name="VehicleIdNotFoundFaultFault" message="tns:IVehicleInformationService2008R2_GetEquipmentOptionValuesByVehicleConfiguration_VehicleIdNotFoundFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEquipmentOptionValuesByVehicleConfigurationInvalidZipCodeFaultFault" name="InvalidZipCodeFaultFault" message="tns:IVehicleInformationService2008R2_GetEquipmentOptionValuesByVehicleConfiguration_InvalidZipCodeFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMakes">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetMakes" message="tns:IVehicleInformationService2008R2_GetMakes_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetMakesResponse" message="tns:IVehicleInformationService2008R2_GetMakes_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetMakesInternalOperationFaultFault" name="InternalOperationFaultFault" message="tns:IVehicleInformationService2008R2_GetMakes_InternalOperationFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetMakesSecurityFaultFault" name="SecurityFaultFault" message="tns:IVehicleInformationService2008R2_GetMakes_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetMakesDateOutOfRangeFaultFault" name="DateOutOfRangeFaultFault" message="tns:IVehicleInformationService2008R2_GetMakes_DateOutOfRangeFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMakesByYear">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetMakesByYear" message="tns:IVehicleInformationService2008R2_GetMakesByYear_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetMakesByYearResponse" message="tns:IVehicleInformationService2008R2_GetMakesByYear_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetMakesByYearDateOutOfRangeFaultFault" name="DateOutOfRangeFaultFault" message="tns:IVehicleInformationService2008R2_GetMakesByYear_DateOutOfRangeFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetMakesByYearYearIdNotFoundFaultFault" name="YearIdNotFoundFaultFault" message="tns:IVehicleInformationService2008R2_GetMakesByYear_YearIdNotFoundFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetMakesByYearInternalOperationFaultFault" name="InternalOperationFaultFault" message="tns:IVehicleInformationService2008R2_GetMakesByYear_InternalOperationFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetMakesByYearSecurityFaultFault" name="SecurityFaultFault" message="tns:IVehicleInformationService2008R2_GetMakesByYear_SecurityFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCPOPrograms">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetCPOPrograms" message="tns:IVehicleInformationService2008R2_GetCPOPrograms_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetCPOProgramsResponse" message="tns:IVehicleInformationService2008R2_GetCPOPrograms_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetCPOProgramsInternalOperationFaultFault" name="InternalOperationFaultFault" message="tns:IVehicleInformationService2008R2_GetCPOPrograms_InternalOperationFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetCPOProgramsSecurityFaultFault" name="SecurityFaultFault" message="tns:IVehicleInformationService2008R2_GetCPOPrograms_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetCPOProgramsDateOutOfRangeFaultFault" name="DateOutOfRangeFaultFault" message="tns:IVehicleInformationService2008R2_GetCPOPrograms_DateOutOfRangeFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleSpecificationsByVehicleId">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleSpecificationsByVehicleId" message="tns:IVehicleInformationService2008R2_GetVehicleSpecificationsByVehicleId_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleSpecificationsByVehicleIdResponse" message="tns:IVehicleInformationService2008R2_GetVehicleSpecificationsByVehicleId_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleSpecificationsByVehicleIdSecurityFaultFault" name="SecurityFaultFault" message="tns:IVehicleInformationService2008R2_GetVehicleSpecificationsByVehicleId_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleSpecificationsByVehicleIdInternalOperationFaultFault" name="InternalOperationFaultFault" message="tns:IVehicleInformationService2008R2_GetVehicleSpecificationsByVehicleId_InternalOperationFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleSpecificationsByVehicleIdVehicleIdNotFoundFaultFault" name="VehicleIdNotFoundFaultFault" message="tns:IVehicleInformationService2008R2_GetVehicleSpecificationsByVehicleId_VehicleIdNotFoundFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleSpecificationsByVehicleIdDateOutOfRangeFaultFault" name="DateOutOfRangeFaultFault" message="tns:IVehicleInformationService2008R2_GetVehicleSpecificationsByVehicleId_DateOutOfRangeFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableMethods">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetAvailableMethods" message="tns:IVehicleInformationService2008R2_GetAvailableMethods_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetAvailableMethodsResponse" message="tns:IVehicleInformationService2008R2_GetAvailableMethods_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetAvailableMethodsInternalOperationFaultFault" name="InternalOperationFaultFault" message="tns:IVehicleInformationService2008R2_GetAvailableMethods_InternalOperationFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConversionDataByVersionDate">
+      <wsdl:input wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetConversionDataByVersionDate" message="tns:IVehicleInformationService2008R2_GetConversionDataByVersionDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetConversionDataByVersionDateResponse" message="tns:IVehicleInformationService2008R2_GetConversionDataByVersionDate_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetConversionDataByVersionDateSecurityFaultFault" name="SecurityFaultFault" message="tns:IVehicleInformationService2008R2_GetConversionDataByVersionDate_SecurityFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetConversionDataByVersionDateVehicleIdNotFoundFaultFault" name="VehicleIdNotFoundFaultFault" message="tns:IVehicleInformationService2008R2_GetConversionDataByVersionDate_VehicleIdNotFoundFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

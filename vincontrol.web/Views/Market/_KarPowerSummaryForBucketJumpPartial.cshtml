@@ -1,0 +1,95 @@
+﻿@model vincontrol.Application.ViewModels.CommonManagement.KarPowerViewModel
+<br />
+@if (Model != null)
+{
+    <table border="1" cellpadding="2" cellspacing="2" width="750px" style="font-size: 1.9em; color: White; border-color: White;">
+        <tr>
+            <td style="background-color: #0062A0">@Model.BaseWholesale</td>
+
+            <td style="background-color: #008000">@Model.MileageAdjustment</td>
+            <td id="txtBaseWholesale" style="background-color: #D02C00">@Model.Wholesale</td>
+            <input type="hidden" id="BaseWholesaleWithoutOptions" name="BaseWholesaleWithoutOptions" value="@Model.Wholesale" />
+        </tr>
+    </table>
+
+    <table border="0" cellpadding="2" cellspacing="2" width="750px" style="background-color: #E8CB95">
+        <tr>
+            <td>Year</td>
+            <td>@Model.SelectedYearId</td>
+            <td>Engine</td>
+            <td>@Html.DropDownListFor(m => m.SelectedEngineId, Model.Engines, new { @class = "dropdownlist" })</td>
+        </tr>
+        <tr>
+            <td>Make</td>
+            <td>@Html.DropDownListFor(m => m.SelectedMakeId, Model.Makes, new { @class = "dropdownlist", disabled = true })</td>
+            <td>Transmission</td>
+            <td>
+                @Html.DropDownListFor(m => m.SelectedTransmissionId, Model.Transmissions, new { @class = "dropdownlist" })
+            </td>
+        </tr>
+        <tr>
+            <td>Model</td>
+
+            <td>
+                @if (!Model.IsMultipleModels)
+                {
+                    @Html.DropDownListFor(m => m.SelectedModelId, Model.Models, new { @class = "dropdownlist", disabled = true })
+            }
+                else
+                {
+                    @Html.DropDownListFor(m => m.SelectedModelId, Model.Models, new { @class = "dropdownlist" })
+            }
+            </td>
+            <td>Drive Train</td>
+            <td>@Html.DropDownListFor(m => m.SelectedDriveTrainId, Model.DriveTrains, new { @class = "dropdownlist" })</td>
+        </tr>
+        <tr>
+            <td>Trim</td>
+            <td>
+                @Html.DropDownListFor(m => m.SelectedTrimId, Model.Trims, new { @class = "dropdownlist" })
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <br />
+
+    <div style="background-color:#EAEBEB; width:750px;">
+        <div style="margin-bottom:5px;font-size:1.1em;">Optional Equipment</div>
+        <table id="options" cellspacing="0" cellpadding="0" border="0" style="border-collapse: collapse;">
+        <tbody>
+            <tr>
+            @{
+                    int i = 0;
+                    foreach (var option in Model.OptionalEquipmentMarkupList)
+                    {
+                        i += 1;
+
+                        if (!string.IsNullOrEmpty(option.DisplayName))
+                        {
+                    <td>
+                        <span>
+                            <input id="option_@option.Id" type="checkbox" name="option_@option.Id" @(option.IsSelected ? "checked" : "") value="@option.DisplayName"/>
+                            <label>@option.DisplayName</label>
+                        </span>
+                    </td>
+                    }
+
+                    if (i % 4 == 0)
+                    { 
+                        @:</tr>
+                        @:<tr> 
+                    }
+
+                }
+            }        
+        </tbody>
+        </table>
+    </div>
+    <br />
+    <input type="button" name="btnPrint" id="btnPrint" value="Print" style="cursor:pointer;width:120px;" />
+}
+else
+{
+    <h1 style="color: #fff;">Sorry, we cannot get market information for this vehicle.</h1>
+}

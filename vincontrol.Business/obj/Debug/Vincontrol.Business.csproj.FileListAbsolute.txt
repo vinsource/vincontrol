@@ -1,0 +1,4 @@
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Business\bin\Debug\vincontrol.Business.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Business\bin\Debug\vincontrol.Business.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Business\obj\Debug\vincontrol.Business.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Business\obj\Debug\vincontrol.Business.pdb

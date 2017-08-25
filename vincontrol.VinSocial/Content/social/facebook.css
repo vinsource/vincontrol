@@ -1,0 +1,353 @@
+/* - - - - - - - -
+  Facebook Page
+- - - - - - - - */
+
+div#calendar {
+  margin-left: 30px;
+  position: relative;
+  float: left;
+}
+
+div#calendar #current-month {
+  margin:0;
+  padding-top: 3px;
+  margin-bottom: 7px;
+  margin-left: 80px;
+  font-size: 16pt;
+  font-weight: normal;
+}
+
+div#calendar table td {
+  width: 85px;
+  height: 80px;
+  border-bottom: 1px solid #d8d8d8;
+  border-right: 1px solid #d8d8d8;
+  text-align: right;
+  vertical-align: top;
+  font-size: 10pt;
+  cursor: pointer;
+}
+
+div#calendar table td:hover {
+  background: #003399;
+  color: white;
+}
+
+div#calendar table tr td:nth-child(1) {
+  border-left: 1px solid #d8d8d8;
+}
+
+div#calendar th.weekday {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 9pt;
+  background: #d8d8d8;
+  padding: 5px 0px;
+}
+
+div#calendar td.other-month {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+div#calendar span.day {
+  display: inline-block;
+  padding: 5px;
+}
+
+div.next-month {
+  position: absolute;
+  top: 0;
+  left: 250px;
+  width: 30px;
+  height: 30px;
+  background: #003399;
+  cursor: pointer;
+  background: url(/Content/Images/social/next-month.png);
+}
+
+div.prev-month {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background: #003399;
+  cursor: pointer;
+  background: url(/Content/Images/social/prev-month.png);
+}
+
+div.facebook-stats-box {
+  position: absolute;
+  top: 0px;
+  right: 0;
+}
+
+div.facebook-stats-box div {
+  float: left;
+  font-size: 10pt;
+}
+
+div.facebook-stats-box div.label {
+  padding: 7px 10px;
+  background: #3366cc;
+  color: white;
+  margin-left: 10px;
+}
+
+div.facebook-stats-box div.number {
+  border: 2px solid #3366cc;
+  padding: 5px 8px;
+  width: 65px;
+  text-align: center;
+}
+
+div#calendar td.cal-selected {
+  background: #003399;
+  color: white;
+}
+
+div.post-new {
+  width: 240px;
+  float: left;
+  margin-left: 30px;
+}
+
+div.post-new img {
+  float: left;
+}
+
+div.post-new button {
+  width: 210px;
+  color: white;
+  padding: 4px 10px;
+  background: #3366cc;
+  margin: 0;
+  height: 25px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+div.post-new button:hover {
+  background: #003399;
+}
+
+div.facebook-post-box {
+  float: left;
+  margin-left: 30px;
+  border: 5px solid #003399;
+  margin-bottom: 20px;
+  width: 230px;
+  margin-top: 10px;
+}
+
+div.stats-box div.date-header {
+  background: #003399;
+  color: white;
+  font-size: 10pt;
+  font-weight: bold;
+  padding: 5px;
+}
+
+div.post-schedule {
+  height: 250px;
+  overflow: hidden;
+  overflow-y: auto;
+  font-size: 8pt;
+}
+
+div.post-schedule ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+div.post-schedule li {
+  padding: 5px;
+  border-bottom: 1px solid #d8d8d8;
+  border-top: 1px solid white;
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+div.post-schedule li:nth-child(2n+1) {
+  background: #e9eaef;
+}
+
+div.post-schedule li > div {
+  float: left;
+}
+
+div.post-delete {
+  position: absolute;
+  bottom: 4px;
+  left: 10px;
+  background: #d8d8d8;
+  padding: 0px 3px;
+  cursor: pointer;
+}
+
+div.post-delete:hover {
+  color: white;
+  background: #003399;
+}
+
+div.post-description {
+  width: 150px;
+  margin-left: 5px;
+  padding-left: 5px;
+  border-left: 1px solid #d8d8d8;
+}
+
+div#facebook-recent-activity {
+  width: 240px;
+  margin-left: 30px;
+  float: left;
+  height: 200px;
+  overflow: hidden;
+}
+
+div.fb-numbers-breakdown {
+  overflow: hidden;
+  clear: both;
+}
+
+div.fb-numbers-box {
+  float: left;
+  margin-left: 30px;
+  width: 180px;
+  background: #d8d8d8;
+  padding: 10px;
+}
+
+div.fb-numbers-box div.top-label {
+  font-size: 9pt;
+  position: relative;
+}
+
+div.fb-numbers-box div.top-label div.fb-numbers-change {
+  float: right
+}
+
+div.fb-numbers-box div.fb-number {
+  font-weight: bold;
+  font-size: 20pt;
+}
+
+div.fb-graph-canvas {
+  margin: 20px 0px;
+  margin-left: 30px;
+  border: 1px solid #e9eaef;
+  overflow: hidden;
+  float: left;
+}
+
+div.fb-posts-items {
+  float: left;
+  overflow: hidden;
+  margin-left: 30px;
+}
+
+div.fb-posts-items table {
+  font-size: 10pt;
+}
+
+div.fb-posts-items div.scrollingArea {
+  height: 250px;
+}
+
+div.post-data-box {
+  width: 200px;
+  float: left;
+  margin-left: 20px;
+  padding: 10px;
+  background: #e9eaef;
+  font-size: 10pt;
+  height: 265px;
+}
+
+div.fb-popup-controls {
+  padding: 5px;
+  color: white;
+  background: #003399;
+}
+
+div.fb-popup-controls > div,
+div.fb-popup-controls > input {
+  float: left;
+}
+
+div.fb-popup-controls div.label {
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+div.fb-popup-postbox textarea {
+  width: 100%;
+  height: 350px;
+  resize: none;
+}
+
+div.fb-controls {
+  border: 1px solid #e9eaef;
+  padding: 2px;
+  overflow: hidden;
+}
+
+div.fb-btn {
+  width: 25px;
+  height: 25px;
+  background: #e9eaef;
+  float: left;
+  cursor: pointer;
+}
+
+div.fb-btn:hover {
+  background-color: #d8d8d8;
+}
+
+div.right {
+  float: right;
+  width: auto;
+  height: auto;
+  padding: 5px 10px;
+}
+
+div.fb-dropdown {
+  padding: 0;
+  margin: 0;
+}
+
+div.fb-dropdown select {
+  padding: 0;
+}
+
+div.tag {
+  background-image: url(/Content/Images/social/tag.gif);
+  background-repeat: no-repeat;
+  background-position: 3px 2px;
+}
+
+div.photo {
+  background-image: url(/Content/Images/social/photo.gif);
+  background-repeat: no-repeat;
+  background-position: 3px 2px;
+}
+
+div.emotion {
+  background-image: url(/Content/Images/social/feeling.gif);
+  background-repeat: no-repeat;
+  background-position: 3px 2px;
+}
+
+div.place {
+  display: none;
+}
+
+div.fb-btn.save {
+  background-color: #003399;
+  color: white;
+}

@@ -1,0 +1,5 @@
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.ConfigurationManagement\bin\Debug\vincontrol.ConfigurationManagement.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.ConfigurationManagement\bin\Debug\vincontrol.ConfigurationManagement.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.ConfigurationManagement\obj\Debug\vincontrol.ConfigurationManagement.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.ConfigurationManagement\obj\Debug\vincontrol.ConfigurationManagement.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.ConfigurationManagement\obj\Debug\Vincontrol.ConfigurationManagement.csprojResolveAssemblyReference.cache

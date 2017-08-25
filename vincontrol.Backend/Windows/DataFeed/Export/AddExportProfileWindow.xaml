@@ -1,0 +1,10 @@
+﻿<Window x:Class="vincontrol.Backend.Windows.DataFeed.Export.AddExportProfileWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStartupLocation="CenterScreen"
+         xmlns:password="clr-namespace:vincontrol.Backend.Helper"
+             xmlns:CustomControls="clr-namespace:vincontrol.Backend.CustomControls"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:Export="clr-namespace:vincontrol.Backend.Controls.DataFeed.Export" Title="Create Exporting Profile" Height="750" Width="1000">
+    <Export:ExportProfileTemplateMapping></Export:ExportProfileTemplateMapping>
+</Window>

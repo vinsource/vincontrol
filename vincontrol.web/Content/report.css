@@ -1,0 +1,131 @@
+.report_header {
+	width: 82%;
+	float: left;
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.report_fixed_title {
+	padding: 10px 15px;
+	font-weight: bold;
+	font-size: 25px;
+    color: red;
+}
+.reports_content_items {
+	width: 53%;
+	margin-left: 50px;
+	clear: both;
+	height: 20px;
+}
+
+.reports_content_left {
+	float: left;
+	width: 69%;
+	font-weight: bold;
+}
+
+.reports_content_items a {
+	color: black;
+}
+
+.reports_content_right {
+	height: 20px;
+	float: right;
+	width: 30%;
+}
+
+.reports_content_left:hover {
+	color: red;
+}
+
+.reports_content_right a {
+	color: black;
+}
+
+.reports_content_right a:hover {
+	color: red;
+}
+
+.reports_content_right_first {
+	font-weight: bold;
+	float: left;
+	width: 49%;
+	text-align: left;
+	border-right: 2px solid;
+}
+
+.reports_content_right_second {
+	font-weight: bold;
+	float: left;
+	text-align: center;
+	width: 49%;
+}
+
+.reports_items {
+	padding-left: 10px;
+	clear: both;
+	padding-top: 10px;
+}
+
+.reports_items_header {
+	height: 26px;
+	cursor: pointer;
+}
+
+.reports_items_header_icon {
+	margin-top:3px;
+	float: left;
+	background-image: url("../images/report_minimize_icon.png");
+	width: 12px;
+	height: 15px;
+}
+
+.reports_items_expended {
+	background-image: url("../images/report_expended_icon.png") !important;
+	width: 15px;
+	height: 12px;
+}
+
+.reports_items_header_text {
+	float: left;
+	margin-left: 10px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.reports_items_header_bottom {
+	background-repeat: no-repeat;
+	clear: both;
+	height: 4px;
+	background-image: url("../images/report_blue_line.jpg");
+}
+
+.reports_items_content {
+	background-color: #EEEEEE;
+	display: none;
+}
+
+.reports_items_content_part {
+	height: 100px;
+	float: left;
+	padding: 10px;
+	width: 30%;
+    position: relative;
+}
+
+.ric_part_title {
+	text-align: center;
+	width: 235px;
+	font-size: 17px;
+	font-weight: bold;
+	margin: 0px auto;
+}
+
+.ric_part_icon {
+	margin: 10px auto;
+}
+
+.ric_part_icon img {
+	margin: 0px auto;
+	display: block;
+}

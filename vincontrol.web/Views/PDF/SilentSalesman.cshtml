@@ -1,0 +1,417 @@
+﻿@using System.Web.Optimization
+@model vincontrol.Application.ViewModels.CommonManagement.CarShortViewModel
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>VINControl | Silent Salesman</title>
+    
+    <style type="text/css">
+        div#calendar
+        {
+            margin-left: 30px;
+            position: relative;
+            float: left;
+            width: 640px;
+        }
+
+            div#calendar table td
+            {
+                vertical-align: top;
+                font-size: 10pt;
+                cursor: pointer;
+            }
+
+                div#calendar table td:hover
+                {
+                    background: #003399;
+                    color: white;
+                    opacity: .3;
+                }
+
+            div#calendar table thead tr
+            {
+                font-weight: normal;
+                text-transform: uppercase;
+                font-size: 10pt;
+                background: #d8d8d8;
+                padding: 5px 0px;
+                height: 22px;
+                vertical-align: central;
+            }
+
+            div#calendar table.fc-header
+            {
+                width: 50%;
+            }
+
+                div#calendar table.fc-header td, div#calendar tablefc-header td:hover
+                {
+                    background: none;
+                    color: black;
+                    opacity: 1;
+                }
+
+            div#calendar .fc-cell-overlay
+            {
+                background-color: #003399;
+            }
+
+        div.facebook-stats-box
+        {
+            position: absolute;
+            top: 0px;
+            right: 0;
+        }
+
+            div.facebook-stats-box div
+            {
+                float: left;
+                font-size: 10pt;
+            }
+
+                div.facebook-stats-box div.label
+                {
+                    padding: 7px 10px;
+                    background: #3366cc;
+                    color: white;
+                    margin-left: 10px;
+                }
+
+                div.facebook-stats-box div.labelFooter
+                {
+                    padding: 7px 10px;
+                    background: #3366cc;
+                    color: white;
+                    margin-left: 10px;
+                }
+
+                div.facebook-stats-box div.number
+                {
+                    border: 2px solid #3366cc;
+                    padding: 5px 8px;
+                    width: 65px;
+                    text-align: center;
+                    height: 15px;
+                }
+
+        div#calendar td.cal-selected
+        {
+            background: #003399;
+            color: white;
+        }
+
+        div.post-new
+        {
+            width: 240px;
+            float: left;
+            margin-left: 30px;
+        }
+
+            div.post-new img
+            {
+                float: left;
+            }
+
+            div.post-new button
+            {
+                width: 210px;
+                color: white;
+                padding: 4px 10px;
+                background: #3366cc;
+                margin: 0;
+                height: 25px;
+                margin-left: 5px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+                div.post-new button:hover
+                {
+                    background: #003399;
+                }
+
+        div.facebook-post-box
+        {
+            float: left;
+            margin-left: 30px;
+            border: 5px solid #003399;
+            margin-bottom: 20px;
+            width: 230px;
+            margin-top: 10px;
+        }
+
+        div.post-delete
+        {
+            position: absolute;
+            bottom: 4px;
+            left: 10px;
+            background: #d8d8d8;
+            padding: 0px 3px;
+            cursor: pointer;
+        }
+
+            div.post-delete:hover
+            {
+                color: white;
+                background: #003399;
+            }
+
+        div.fb-posts-items
+        {
+            float: left;
+            overflow: hidden;
+            margin-left: 30px;
+        }
+
+            div.fb-posts-items table
+            {
+                font-size: 10pt;
+            }
+
+            div.fb-posts-items div.scrollingArea
+            {
+                height: 250px;
+            }
+
+        div.post-data-box
+        {
+            width: 200px;
+            float: left;
+            margin-left: 20px;
+            padding: 10px;
+            background: #e9eaef;
+            font-size: 10pt;
+            height: 265px;
+        }
+
+        div.fb-popup-controls
+        {
+            padding: 5px;
+            color: black;
+            background: #fff;
+        }
+
+            div.fb-popup-controls > div,
+            div.fb-popup-controls > input
+            {
+                float: left;
+            }
+
+            div.fb-popup-controls div.label
+            {
+                padding-top: 5px;
+                padding-right: 5px;
+                padding-left: 5px;
+                color: #003399;
+            }
+
+        div.fb-popup-postbox textarea
+        {
+            width: 98.8%;
+            height: 330px;
+            resize: none;
+        }
+
+        div.fb-controls
+        {
+            border: 1px solid #e9eaef;
+            padding: 2px;
+            overflow: hidden;
+        }
+
+        div.fb-btn
+        {
+            width: 25px;
+            height: 25px;
+            background: #e9eaef;
+            float: left;
+            cursor: pointer;
+        }
+
+            div.fb-btn:hover
+            {
+                background-color: #d8d8d8;
+            }
+
+        div.right
+        {
+            float: right;
+            width: auto;
+            height: auto;
+            padding: 5px 10px;
+        }
+
+        div.fb-btn.save
+        {
+            background-color: #003399;
+            color: white;
+        }
+
+        html
+        {
+            background-color: #3366cc;
+        }
+
+        input#popup_ok
+        {
+            background-color: #003399;
+            color: white;
+        }
+
+        input#popup_cancel
+        {
+            background: none repeat scroll 0 0 #E9EAEF;
+            cursor: pointer;
+        }
+
+        #popup_container
+        {
+            border: solid 5px #003399;
+        }
+
+        #popup_title
+        {
+            background-color: #003399;
+            color: white;
+        }
+
+        #ui-datepicker-div
+        {
+            font-size: 13px;
+        }
+
+        dt
+        {
+            clear: left;
+            color: #666;
+            float: left;
+            font-weight: normal;
+            width: 105px;
+        }
+
+        dd
+        {
+            color: #444;
+            float: left;
+            padding-bottom: 10px;
+        }
+
+        .yt-chip
+        {
+            -moz-user-select: none;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-shadow: 0 1px 0 white;
+            color: #333;
+            cursor: pointer;
+            display: inline-block;
+            height: 22px;
+            line-height: 22px;
+            margin: 4px;
+            overflow: hidden;
+            padding: 0 9px 0 9px;
+            resize: none;
+        }
+
+        div.fb-popup-controls
+        {
+            padding: 5px;
+            color: white;
+            /*background: #003399;*/
+            background-color: white;
+        }
+
+            div.fb-popup-controls div.label
+            {
+                color: #003399;
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            @@font-face {
+              font-family: 'Merienda One';
+              font-style: normal;
+              font-weight: 400;
+              src: local('Merienda One'), local('MeriendaOne-Regular'), url(../../Content/VinControl/bCA-uDdUx6nTO8SjzCLXvXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+            }
+
+            div.fb-popup-controls .box
+            {
+                width: 1038px;
+                height: 90px;
+                /*font-size: 26px;*/
+                border: 0px;
+                border-bottom: 1px solid #3366cc;
+                /*font: 400 35px/0.8 'Cookie', Helvetica, sans-serif;*/
+                font: 600 85px/1.2 "Comic Sans MS", cursive, sans-serif;
+                color: #2b2b2b;
+                /*text-shadow: 2px 2px 0px rgba(0,0,0,0.2), 4px 4px 8px rgba(0,0,0,0.2);*/
+                overflow: hidden;
+            }
+             div.fb-popup-controls .boxTitle
+            {
+                width: 1038px;
+                height: 70px;
+                /*font-size: 26px;*/
+                border: 0px;
+                border-bottom: 1px solid #3366cc;
+                /*font: 400 35px/0.8 'Cookie', Helvetica, sans-serif;*/
+                font: 600 50px/1.2 "Comic Sans MS", cursive, sans-serif;
+                color: #2b2b2b;
+                /*text-shadow: 2px 2px 0px rgba(0,0,0,0.2), 4px 4px 8px rgba(0,0,0,0.2);*/
+                overflow: hidden;
+            }
+    </style>
+
+</head>
+<body>
+    <form id="post-form" action="" method="post" enctype="multipart/form-data">
+        <div class="popup-wrap" style="margin: 0; padding: 55px;">
+            <div class="fb-popup-controls" style="display: inline-block; width: 98%;">
+                <div class="label">
+                    Model:<br/>
+                    <input type="text" id="Title" name="Title" value="@Model.Title" class="boxTitle" style="border: none"/>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="fb-popup-controls" style="display: inline-block; width: 98%;">
+                <div class="label">
+                    Engine:<br/>
+                    <input type="text" id="Engine" name="Engine" value="@Model.Engine" class="boxTitle" style="border: none"/>
+                    
+                </div>
+            </div>
+            
+            <div class="fb-popup-controls" style="display: inline-block; width: 98%; height: 1040px; overflow-y: auto;">
+                <div class="label" style="display: inline-block; width: 98%">
+                    Specification:
+                </div>
+                <div>
+                    <ul style="list-style: none; margin: 0; padding: 0;">
+                        @{
+                            var options = Model.OtherOptions.Split(',').ToArray();
+                            for (var i = 0; i < 10; i++){
+                                <li><input type="text" id="option_@i" name="option_@i" class="box" style="text-align: center" value="@(i < options.Count() ? options[i] : string.Empty)"/></li>
+                            }    
+                        }
+                    </ul>
+                </div>
+            </div>
+            <div class="fb-popup-controls" style="display: inline-block; width: 98%; background-color: #3366cc; float: none; text-align: center;">
+                <div class="label" style="color: white; font-size: 40px; float: none; font-size: 100px;">
+                    Everyday Low Prices
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

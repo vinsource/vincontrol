@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{48017860-9E82-45FC-B702-2EA0951F7DE8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vincontrol.Vinsell.DesktopVersion</RootNamespace>
+    <AssemblyName>Vincontrol.Vinsell.DesktopVersion</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>ftp://vinclapp.net/vinselldesktop/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://vinclapp.net/vinselldesktop/</InstallUrl>
+    <UpdateUrl>http://vinclapp.net/vinselldesktop/</UpdateUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>CE979B737B1421E74DF6CDDECE8E66C0B46231F1</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Vincontrol.Vinsell.DesktopVersion_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HiQPdf">
+      <HintPath>..\WhitmanEnterpriseMVC\bin\HiQPdf.dll</HintPath>
+    </Reference>
+    <Reference Include="ImageResizer">
+      <HintPath>..\Package\ImageResizer.dll</HintPath>
+    </Reference>
+    <Reference Include="Starksoft.Net.Ftp">
+      <HintPath>..\VINCapture.UploadImage\Libs\Starksoft.Net.Ftp.dll</HintPath>
+    </Reference>
+    <Reference Include="Starksoft.Net.Proxy">
+      <HintPath>..\VINCapture.UploadImage\Libs\Starksoft.Net.Proxy.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Management">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <HintPath>D:\ShareLibrary\System.Web.Extensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebKitBrowser">
+      <HintPath>D:\.NET Developers\WebKit.NET-0.5-bin-cairo\bin\WebKitBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="View\App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Helpers\DataHelper.cs" />
+    <Compile Include="Models\BaseModel.cs" />
+    <Compile Include="Models\CarfaxModel.cs" />
+    <Compile Include="Models\KBBModel.cs" />
+    <Compile Include="Models\MainheimModel.cs" />
+    <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="ViewModels\ManheimViewModel.cs" />
+    <Compile Include="Models\MarketModel.cs" />
+    <Compile Include="View\ManheimWindow.xaml.cs">
+      <DependentUpon>ManheimWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\StartupWindow.xaml.cs">
+      <DependentUpon>StartupWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="View\ManheimWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\StartupWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\button_1.png" />
+    <Resource Include="Image\button_1_on.png" />
+    <Resource Include="Image\button_2.png" />
+    <Resource Include="Image\button_2_on.png" />
+    <Resource Include="Image\footer.jpg" />
+    <Resource Include="Image\icon.png" />
+    <Resource Include="Image\icon_close.png" />
+    <Resource Include="Image\icon_close_on.png" />
+    <Resource Include="Image\logo.png" />
+    <Resource Include="Image\Title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\Sign-in.png" />
+    <Resource Include="Image\Sign-in_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\bt_saign-in.png" />
+    <Resource Include="Image\bt_saign-in_on.png" />
+    <Resource Include="Image\frame.png" />
+    <Resource Include="Image\frame_small.png" />
+    <Resource Include="Image\login.jpg" />
+    <Resource Include="Image\missing.png" />
+    <Resource Include="Image\pass.png" />
+    <Resource Include="Image\USER.png" />
+    <Resource Include="Image\wrong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\vincontrol.Application\vincontrol.Application.csproj">
+      <Project>{7F0F1443-BE02-4BAD-8E5C-34ADED92DCA3}</Project>
+      <Name>vincontrol.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.CarFax\vincontrol.CarFax.csproj">
+      <Project>{E5C5FBB2-88D1-4DC3-AE3A-4CA4E3E4C75E}</Project>
+      <Name>vincontrol.CarFax</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.Constant\vincontrol.Constant.csproj">
+      <Project>{ad3324ca-2044-4c68-be5d-ccb63ad12897}</Project>
+      <Name>vincontrol.Constant</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.Data\vincontrol.Data.csproj">
+      <Project>{7D76E800-C9D8-407A-8844-A775EE6D5A65}</Project>
+      <Name>vincontrol.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.DomainObject\vincontrol.DomainObject.csproj">
+      <Project>{E5A9809F-55E2-4E2E-9696-48042DDF4305}</Project>
+      <Name>vincontrol.DomainObject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.Helper\vincontrol.Helper.csproj">
+      <Project>{9B02AFFB-392B-46D8-A75D-A0A5D521222C}</Project>
+      <Name>vincontrol.Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.KBB\vincontrol.KBB.csproj">
+      <Project>{b1b5a625-8c49-48e1-87c7-63cf76fc4a1d}</Project>
+      <Name>vincontrol.KBB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.Manheim\vincontrol.Manheim.csproj">
+      <Project>{0fab8214-efd2-43a2-9a93-4c79d3e7ee2d}</Project>
+      <Name>vincontrol.Manheim</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.WPF.Helpers\vincontrol.WPF.Helpers.csproj">
+      <Project>{3B0EB8B0-3B14-4D7E-B5E6-CFCB0364EF2B}</Project>
+      <Name>vincontrol.WPF.Helpers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

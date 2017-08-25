@@ -1,0 +1,8 @@
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Models\bin\Debug\vincontrol.Models.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Models\bin\Debug\vincontrol.Models.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Models\bin\Debug\System.Web.Mvc.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Models\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Models\bin\Debug\Microsoft.Web.Infrastructure.xml
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Models\obj\Debug\vincontrol.Models.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Models\obj\Debug\vincontrol.Models.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Models\obj\Debug\vincontrol.Models.csprojResolveAssemblyReference.cache

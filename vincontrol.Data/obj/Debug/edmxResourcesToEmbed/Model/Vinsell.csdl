@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VinsellModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="VinsellEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="dailylogmanheims" EntityType="VinsellModel.dailylogmanheim" />
+    <EntitySet Name="manheim_auctions" EntityType="VinsellModel.manheim_auctions" />
+    <EntitySet Name="manheim_bodystyles" EntityType="VinsellModel.manheim_bodystyles" />
+    <EntitySet Name="manheim_Carfax" EntityType="VinsellModel.manheim_Carfax" />
+    <EntitySet Name="manheim_exteriorcolors" EntityType="VinsellModel.manheim_exteriorcolors" />
+    <EntitySet Name="manheim_favorites" EntityType="VinsellModel.manheim_favorites" />
+    <EntitySet Name="manheim_kbbtrims" EntityType="VinsellModel.manheim_kbbtrims" />
+    <EntitySet Name="manheim_KellyBlueBook" EntityType="VinsellModel.manheim_KellyBlueBook" />
+    <EntitySet Name="manheim_makes" EntityType="VinsellModel.manheim_makes" />
+    <EntitySet Name="manheim_ManheimValue" EntityType="VinsellModel.manheim_ManheimValue" />
+    <EntitySet Name="manheim_markettrim" EntityType="VinsellModel.manheim_markettrim" />
+    <EntitySet Name="manheim_models" EntityType="VinsellModel.manheim_models" />
+    <EntitySet Name="manheim_notes" EntityType="VinsellModel.manheim_notes" />
+    <EntitySet Name="manheim_notifications" EntityType="VinsellModel.manheim_notifications" />
+    <EntitySet Name="manheim_regions" EntityType="VinsellModel.manheim_regions" />
+    <EntitySet Name="manheim_sellers" EntityType="VinsellModel.manheim_sellers" />
+    <EntitySet Name="manheim_states" EntityType="VinsellModel.manheim_states" />
+    <EntitySet Name="manheim_trims" EntityType="VinsellModel.manheim_trims" />
+    <EntitySet Name="manheim_urls" EntityType="VinsellModel.manheim_urls" />
+    <EntitySet Name="manheim_vehicles" EntityType="VinsellModel.manheim_vehicles" />
+    <EntitySet Name="manheim_vehicles_sold" EntityType="VinsellModel.manheim_vehicles_sold" />
+    <EntitySet Name="manheim_yearmakemodel" EntityType="VinsellModel.manheim_yearmakemodel" />
+    <EntitySet Name="manheim_years" EntityType="VinsellModel.manheim_years" />
+    <EntitySet Name="manheimchartselections" EntityType="VinsellModel.manheimchartselection" />
+    <EntitySet Name="ManheimCredentials" EntityType="VinsellModel.ManheimCredential" />
+    <AssociationSet Name="FK_manheim_favorites_manheim_vehicles" Association="VinsellModel.FK_manheim_favorites_manheim_vehicles">
+      <End Role="manheim_vehicles" EntitySet="manheim_vehicles" />
+      <End Role="manheim_favorites" EntitySet="manheim_favorites" />
+    </AssociationSet>
+    <AssociationSet Name="FK_manheim_favorites_manheim_vehicles_sold" Association="VinsellModel.FK_manheim_favorites_manheim_vehicles_sold">
+      <End Role="manheim_vehicles_sold" EntitySet="manheim_vehicles_sold" />
+      <End Role="manheim_favorites" EntitySet="manheim_favorites" />
+    </AssociationSet>
+    <AssociationSet Name="FK_manheim_notes_manheim_vehicles" Association="VinsellModel.FK_manheim_notes_manheim_vehicles">
+      <End Role="manheim_vehicles" EntitySet="manheim_vehicles" />
+      <End Role="manheim_notes" EntitySet="manheim_notes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_manheim_notes_manheim_vehicles_sold" Association="VinsellModel.FK_manheim_notes_manheim_vehicles_sold">
+      <End Role="manheim_vehicles_sold" EntitySet="manheim_vehicles_sold" />
+      <End Role="manheim_notes" EntitySet="manheim_notes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="dailylogmanheim">
+    <Key>
+      <PropertyRef Name="Logid" />
+    </Key>
+    <Property Type="Int32" Name="Logid" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="PowerSearchLink" MaxLength="255" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="ErrorMessage" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateStamp" Precision="3" />
+  </EntityType>
+  <EntityType Name="manheim_auctions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="State" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateStamp" Precision="3" />
+    <Property Type="String" Name="Code" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Phone" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Fax" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="StreetAddress" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CityAddress" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Longitude" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Latitude" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Region" MaxLength="100" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="manheim_bodystyles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="manheim_Carfax">
+    <Key>
+      <PropertyRef Name="CarfaxId" />
+    </Key>
+    <Property Type="Int32" Name="CarfaxId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Vin" Nullable="false" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Owner" />
+    <Property Type="Int32" Name="ServiceRecord" />
+    <Property Type="String" Name="WindowSticker" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="PriorRental" />
+    <Property Type="Int32" Name="Accident" />
+    <Property Type="DateTime" Name="DateStamp" Precision="3" />
+    <Property Type="DateTime" Name="LastUpdated" Precision="3" />
+    <Property Type="DateTime" Name="Expiration" Precision="3" />
+    <Property Type="Int32" Name="VehicleId" />
+  </EntityType>
+  <EntityType Name="manheim_exteriorcolors">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="manheim_favorites">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="VehicleId" />
+    <Property Type="Int32" Name="DealerId" Nullable="false" />
+    <Property Type="Int32" Name="UserStamp" Nullable="false" />
+    <Property Type="DateTime" Name="DateStamp" Nullable="false" Precision="3" />
+    <Property Type="String" Name="Vin" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="SoldVehicleId" />
+    <NavigationProperty Name="manheim_vehicles" Relationship="VinsellModel.FK_manheim_favorites_manheim_vehicles" FromRole="manheim_favorites" ToRole="manheim_vehicles" />
+    <NavigationProperty Name="manheim_vehicles_sold" Relationship="VinsellModel.FK_manheim_favorites_manheim_vehicles_sold" FromRole="manheim_favorites" ToRole="manheim_vehicles_sold" />
+  </EntityType>
+  <EntityType Name="manheim_kbbtrims">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="DealershipId" Nullable="false" />
+    <Property Type="String" Name="Vin" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="TrimId" Nullable="false" />
+    <Property Type="String" Name="Options" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="TransmissionId" />
+    <Property Type="Int32" Name="DriveTrainId" />
+    <Property Type="DateTime" Name="DateStamp" Precision="3" />
+  </EntityType>
+  <EntityType Name="manheim_KellyBlueBook">
+    <Key>
+      <PropertyRef Name="KellyBlueBookId" />
+    </Key>
+    <Property Type="Int32" Name="KellyBlueBookId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Vin" Nullable="false" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Trim" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="TradeInFairPrice" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="TradeInGoodPrice" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="TradeInVeryGoodPrice" Precision="18" Scale="0" />
+    <Property Type="DateTime" Name="LastUpdated" Precision="3" />
+    <Property Type="DateTime" Name="Expiration" Precision="3" />
+    <Property Type="Decimal" Name="BaseWholeSale" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="MileageAdjustment" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="WholeSale" Precision="18" Scale="0" />
+    <Property Type="Int32" Name="TrimId" />
+    <Property Type="Int16" Name="VehicleStatusCodeId" />
+    <Property Type="DateTime" Name="DateStamp" Precision="3" />
+    <Property Type="Int32" Name="VehicleId" />
+    <Property Type="Int32" Name="ModelId" />
+  </EntityType>
+  <EntityType Name="manheim_makes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Year" Nullable="false" />
+  </EntityType>
+  <EntityType Name="manheim_ManheimValue">
+    <Key>
+      <PropertyRef Name="ManheimValueId" />
+    </Key>
+    <Property Type="Int32" Name="ManheimValueId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Vin" Nullable="false" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Trim" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="AuctionLowestPrice" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="AuctionAveragePrice" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="AuctionHighestPrice" Precision="18" Scale="0" />
+    <Property Type="DateTime" Name="DateAdded" Precision="3" />
+    <Property Type="DateTime" Name="LastUpdated" Precision="3" />
+    <Property Type="DateTime" Name="Expiration" Precision="3" />
+    <Property Type="Int32" Name="TrimServiceId" />
+    <Property Type="Int32" Name="Year" />
+    <Property Type="Int32" Name="MakeServiceId" />
+    <Property Type="Int32" Name="ModelServiceId" />
+    <Property Type="Int16" Name="VehicleStatusCodeId" />
+    <Property Type="Int32" Name="VehicleId" />
+  </EntityType>
+  <EntityType Name="manheim_markettrim">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Vin" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="DealerId" Nullable="false" />
+    <Property Type="String" Name="Trim" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateStamp" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="manheim_models">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Make" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Year" />
+  </EntityType>
+  <EntityType Name="manheim_notes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="VehicleId" />
+    <Property Type="Int32" Name="DealerId" Nullable="false" />
+    <Property Type="Int32" Name="UserStamp" Nullable="false" />
+    <Property Type="DateTime" Name="DateStamp" Nullable="false" Precision="3" />
+    <Property Type="String" Name="Note" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Vin" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="SoldVehicleId" />
+    <NavigationProperty Name="manheim_vehicles" Relationship="VinsellModel.FK_manheim_notes_manheim_vehicles" FromRole="manheim_notes" ToRole="manheim_vehicles" />
+    <NavigationProperty Name="manheim_vehicles_sold" Relationship="VinsellModel.FK_manheim_notes_manheim_vehicles_sold" FromRole="manheim_notes" ToRole="manheim_vehicles_sold" />
+  </EntityType>
+  <EntityType Name="manheim_notifications">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="DealerId" Nullable="false" />
+    <Property Type="String" Name="UserStamp" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateStamp" Nullable="false" Precision="3" />
+    <Property Type="String" Name="Auction" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="manheim_regions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="manheim_sellers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Auction" MaxLength="150" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="manheim_states">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Region" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="manheim_trims">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Model" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Make" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Year" />
+  </EntityType>
+  <EntityType Name="manheim_urls">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="AuctionCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Url" MaxLength="500" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="manheim_vehicles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Vin" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Year" Nullable="false" />
+    <Property Type="String" Name="Make" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Model" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Trim" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Mileage" />
+    <Property Type="String" Name="FuelType" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Engine" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Litters" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Doors" Nullable="false" />
+    <Property Type="String" Name="BodyStyle" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="VehicleType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DriveTrain" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Transmission" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ExteriorColor" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="InteriorColor" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="AsIs" />
+    <Property Type="String" Name="Cr" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Mmr" Nullable="false" />
+    <Property Type="Int32" Name="Lane" />
+    <Property Type="Int32" Name="Run" />
+    <Property Type="DateTime" Name="SaleDate" Precision="3" />
+    <Property Type="String" Name="Status" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Auction" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Url" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateStamp" Precision="3" />
+    <Property Type="String" Name="Images" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Seller" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Equipment" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="MmrAbove" />
+    <Property Type="Int32" Name="MmrBelow" />
+    <Property Type="String" Name="Stereo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Airbags" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="InteriorType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Comment" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Category" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LaneDescription" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CrUrl" MaxLength="250" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="manheim_favorites" Relationship="VinsellModel.FK_manheim_favorites_manheim_vehicles" FromRole="manheim_vehicles" ToRole="manheim_favorites" />
+    <NavigationProperty Name="manheim_notes" Relationship="VinsellModel.FK_manheim_notes_manheim_vehicles" FromRole="manheim_vehicles" ToRole="manheim_notes" />
+  </EntityType>
+  <EntityType Name="manheim_vehicles_sold">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Vin" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Year" Nullable="false" />
+    <Property Type="String" Name="Make" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Model" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Trim" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Mileage" />
+    <Property Type="String" Name="FuelType" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Engine" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Litters" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Doors" Nullable="false" />
+    <Property Type="String" Name="BodyStyle" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="VehicleType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DriveTrain" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Transmission" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ExteriorColor" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="InteriorColor" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="AsIs" />
+    <Property Type="String" Name="Cr" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Mmr" Nullable="false" />
+    <Property Type="Int32" Name="Lane" />
+    <Property Type="Int32" Name="Run" />
+    <Property Type="DateTime" Name="SaleDate" Precision="3" />
+    <Property Type="String" Name="Status" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Auction" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Url" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateStamp" Precision="3" />
+    <Property Type="DateTime" Name="DateStampSold" Precision="3" />
+    <Property Type="String" Name="Images" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Seller" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Equipment" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="MmrAbove" />
+    <Property Type="Int32" Name="MmrBelow" />
+    <Property Type="String" Name="Stereo" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Airbags" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="InteriorType" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="VehicleId" />
+    <Property Type="String" Name="Comment" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Category" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LaneDescription" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CrUrl" MaxLength="250" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="manheim_favorites" Relationship="VinsellModel.FK_manheim_favorites_manheim_vehicles_sold" FromRole="manheim_vehicles_sold" ToRole="manheim_favorites" />
+    <NavigationProperty Name="manheim_notes" Relationship="VinsellModel.FK_manheim_notes_manheim_vehicles_sold" FromRole="manheim_vehicles_sold" ToRole="manheim_notes" />
+  </EntityType>
+  <EntityType Name="manheim_yearmakemodel">
+    <Key>
+      <PropertyRef Name="manheim_yearmakemodel_id" />
+    </Key>
+    <Property Type="Int32" Name="manheim_yearmakemodel_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="year" />
+    <Property Type="String" Name="make" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="model" MaxLength="200" FixedLength="true" Unicode="true" />
+    <Property Type="DateTime" Name="datestamp" Precision="3" />
+  </EntityType>
+  <EntityType Name="manheim_years">
+    <Key>
+      <PropertyRef Name="Year" />
+    </Key>
+    <Property Type="Int32" Name="Year" Nullable="false" />
+  </EntityType>
+  <EntityType Name="manheimchartselection">
+    <Key>
+      <PropertyRef Name="chartselectionid" />
+    </Key>
+    <Property Type="Int32" Name="chartselectionid" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="vin" MaxLength="18" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="dealerId" />
+    <Property Type="Boolean" Name="isCarsCom" />
+    <Property Type="String" Name="options" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="trims" MaxLength="550" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="isCertified" />
+    <Property Type="Boolean" Name="isAll" />
+    <Property Type="Boolean" Name="isFranchise" />
+    <Property Type="Boolean" Name="isIndependant" />
+    <Property Type="String" Name="screen" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="sourceType" MaxLength="45" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ManheimCredential">
+    <Key>
+      <PropertyRef Name="CredentialId" />
+    </Key>
+    <Property Type="Int32" Name="CredentialId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CredentialUsername" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="CredentialPassword" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Type="DateTime" Name="DateStamp" Precision="3" />
+  </EntityType>
+  <Association Name="FK_manheim_favorites_manheim_vehicles">
+    <End Type="VinsellModel.manheim_vehicles" Role="manheim_vehicles" Multiplicity="0..1" />
+    <End Type="VinsellModel.manheim_favorites" Role="manheim_favorites" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="manheim_vehicles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="manheim_favorites">
+        <PropertyRef Name="VehicleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_manheim_favorites_manheim_vehicles_sold">
+    <End Type="VinsellModel.manheim_vehicles_sold" Role="manheim_vehicles_sold" Multiplicity="0..1" />
+    <End Type="VinsellModel.manheim_favorites" Role="manheim_favorites" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="manheim_vehicles_sold">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="manheim_favorites">
+        <PropertyRef Name="SoldVehicleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_manheim_notes_manheim_vehicles">
+    <End Type="VinsellModel.manheim_vehicles" Role="manheim_vehicles" Multiplicity="0..1" />
+    <End Type="VinsellModel.manheim_notes" Role="manheim_notes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="manheim_vehicles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="manheim_notes">
+        <PropertyRef Name="VehicleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_manheim_notes_manheim_vehicles_sold">
+    <End Type="VinsellModel.manheim_vehicles_sold" Role="manheim_vehicles_sold" Multiplicity="0..1" />
+    <End Type="VinsellModel.manheim_notes" Role="manheim_notes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="manheim_vehicles_sold">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="manheim_notes">
+        <PropertyRef Name="SoldVehicleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

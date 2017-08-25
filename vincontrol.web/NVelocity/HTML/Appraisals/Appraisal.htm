@@ -1,0 +1,116 @@
+﻿#set ($i=0)
+<div id="right_content_nav">
+	<div class="right_content_nav_items nav_middle"></div>
+	<div class="right_content_nav_items nav_vin_expended right_content_items_vin nav_long">
+		VIN
+	</div>
+
+	<div class="right_content_nav_items nav_middle">
+		Year
+	</div>
+	<div class="right_content_nav_items nav_long">
+		Make
+	</div>
+	<div class="right_content_nav_items nav_long">
+		Model
+	</div>
+	<div class="right_content_nav_items nav_long">
+		Trim
+	</div>
+	<div class="right_content_nav_items nav_middle">
+		Color
+	</div>
+	<div class="right_content_nav_items right_content_items_owners nav_short">
+		Owners
+	</div>
+	<div class="right_content_nav_items right_content_items_client">
+		Client
+	</div>
+	<div class="right_content_nav_items right_content_items_appraiser">
+		Appraiser
+	</div>
+	<div class="right_content_nav_items nav_middle">
+		Miles
+	</div>
+	<div class="right_content_nav_items nav_long">
+		ACV
+	</div>
+</div>
+
+<div class="vin_listVehicle_holder">
+    #foreach($car in $Appraisals)
+    #set ($i=$i+1)
+    #set ($j=$i%2)
+    #if($j==1)
+<div class="contain_list list_even">
+    #else
+    <div class="contain_list">
+        #end
+        <a class="vin_editProfile" href="$car.URLDetail">
+            <div class="right_content_items right_content_items_img">
+                $car.URLImage
+            </div></a>
+
+        <a class="vin_editProfile" href="$car.URLDetail">
+            <div class="right_content_items right_content_items_vin nav_long">
+                $car.SortVin
+            </div></a>
+
+        <a class="vin_editProfile" href="$car.URLDetail">
+            <div class="right_content_items nav_middle">
+                $car.ModelYear
+            </div></a>
+        <a class="vin_editProfile" href="$car.URLDetail">
+            <div class="right_content_items nav_long">
+                $car.ShortMake
+            </div></a>
+        <a class="vin_editProfile" href="$car.URLDetail">
+            <div class="right_content_items nav_long">
+                $car.AppraisalModelSort
+            </div></a>
+        <a class="vin_editProfile" href="$car.URLDetail">
+            <div class="right_content_items nav_long">
+                $car.StrTrim
+            </div></a>
+        <div class="right_content_items nav_middle">
+            $car.StrExteriorColor
+        </div>
+        <div class="right_content_items right_content_items_owners nav_short">
+            $car.StrCarFaxOwner
+        </div>
+        <div class="right_content_items right_content_items_client">
+            $!car.StrClientName
+        </div>
+        <div class="right_content_items right_content_items_appraiser nav_long">
+            $!car.AppraisalBy
+        </div>
+        <div class="right_content_items nav_middle vehicle_miles">
+            <input type="text" id="$car.AppraisalID" name="odometer" class="sForm" onblur="javascript:updateMileage(this);" value="$!car.StrMileage" />
+        </div>
+        <div class="right_content_items nav_long vehicle_price">
+            <input type="text" id="$car.AppraisalID" name="Acv" class="sForm" onblur="javascript:updateACV(this);" value="$!car.StrACV" />
+        </div>
+        
+        <div class="invent_expanded_action_holder invent_expanded" style="display: block;">
+            <label class="invent_expanded_recon">
+                <input type="checkbox">
+                Recon </label>
+            <label class="invent_expanded_recon">
+                <input type="checkbox">
+                Wholesale </label><label class="invent_expanded_recon">
+                                      <input type="checkbox">
+                                      Auction </label><label class="invent_expanded_recon">
+                                                          <input type="checkbox">
+                                                          Loaner </label>
+            <label class="invent_expanded_recon">
+                <input type="checkbox">
+                Sold </label>
+                
+            <label class="invent_expanded_recon">
+                <input type="checkbox">
+                Trade Not Clear</label>
+        </div>
+    </div>
+    #end
+</div>
+</div>

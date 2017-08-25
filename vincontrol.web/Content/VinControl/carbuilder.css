@@ -1,0 +1,402 @@
+.carbuilder_container {
+	width: 1280px;
+	margin: 0px auto;
+	height: 800px;
+}
+
+.carbuilder_header {
+	background-color: #0066CB;
+}
+.carbuilder_header img {
+	display: block;
+	margin: 0px auto;
+	padding: 10px;
+}
+body {
+	margin: 0px;
+	font-family: arial narrow;
+}
+.carbuilder_line {
+	height: 12px;
+	background-color: #039;
+}
+.carbuilder_top_icon {
+	width: 55%;
+	margin-top:20px;
+	float: right;
+}
+.carbuilder_ymmt {
+	float: left;
+	padding-bottom: 10px;
+	padding-top: 25px;
+	width: 45%;
+	text-align: center;
+}
+.carbuilder_content_holder {
+	border: 1px solid #CDCDCD;
+	display: none;
+}
+.carbuilder_top_icon_items:hover{
+	opacity: 0.8;
+}
+.carbuilder_top_icon_items{
+	width: 110px;
+	cursor:pointer;
+	float: right;
+	margin-left: 10px;
+}
+.carbuilder_ymm {
+	color: #222;
+	font-weight: bold;
+	font-size: 30px;
+}
+.carbuilder_trim {
+	padding-top: 4px;
+}
+.carbuilder_ecpo_cb_items input[type="checkbox"] {
+	opacity: 0;
+	margin-left: 20px;
+}
+.carbuilder_ecpo_cb_items .labelInactive {
+	background: url("./images/checkbox.png");
+	background-repeat: no-repeat;
+}
+
+.carbuilder_ecpo_cb_items .labelActive {
+
+	background: url("./images/checkbox_on.png");
+	background-repeat: no-repeat;
+}
+.carbuilder_ecpo_cb_items {
+	width: 43%;
+	position: relative;
+	float: left;
+	margin-bottom: 12px !important;
+	margin: 0px 20px;
+}
+#carbuilder_trim_select {
+	background-color: #CDCDCD;
+	border: 0px;
+	padding: 1px 5px;
+	font-size: 13px;
+	font-weight: bold;
+	width: inherit;
+	text-align: center;
+}
+
+.carbuilder_info {
+	height: 495px;
+}
+
+.carbuilder_info_left {
+	width: 45%;
+	float: left;
+	height: 450px;
+}
+.carbuilder_info_img_holder {
+	width: 521px;
+	height: 291px;
+	margin: 0px auto;
+}
+.carbuilder_info_img_holder img {
+	height: inherit;
+	width: inherit;
+}
+.carbuilder_info_detail {
+
+}
+
+.carbuilder_detail_items {
+	width: 60%;
+	margin: 10px auto;
+	clear: both;
+	height: 15px;
+	font-weight: bold;
+	font-size: 18px;
+	color: #444;
+}
+
+.carbuilder_detail_key {
+	width: 50%;
+	float: left;
+}
+
+.carbuilder_detail_value {
+	width: 50%;
+	float: right;
+	text-align: right;
+}
+.msrp > div {
+
+}
+.msrp {
+	height: 40px;
+	padding-top: 10px;
+	font-size: 22px;
+}
+
+.carbuilder_info_right {
+	width: 55%;
+	float: right;
+	height: 450px;
+}
+
+.carbuilder_footer {
+	height: 50px;
+	width: 100%;
+	position: absolute;
+	background-color: #039;
+	bottom: 0px;
+	z-index: 0;
+}
+
+.carbuilder_right_tabs_holder {
+
+}
+.carbuilder_footer_holder {
+	position: relative;
+}
+.carbuilder_right_tabs:hover {
+	opacity: 0.9;
+}
+.carbuilder_right_tabs {
+	color: #FFF;
+	cursor: pointer;
+	float: left;
+	background-color: #0066CB;
+	padding: 4px 11px;
+	margin-right: 4px;
+	border: 1px solid #CDCDCD;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.carbuilder_active_tab {
+	border-bottom: 1px solid #EEE !important;
+	color: #333 !important;
+	background-color: #EEE !important;
+	margin-bottom: auto;
+}
+
+.carbuilder_summary_tab {
+	margin-right: 0px;
+	float: right;
+	background-color: #039;
+}
+.carbuilder_right_content {
+	background-color: #EEEEEE;
+	clear: both;
+}
+.carbuilder_content_title {
+	padding: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+	text-align: center;
+}
+.carbuilder_content_colors:hover {
+	background-color: #EEEFFF;
+}
+.carbuilder_content_colors {
+	padding-top: 10px;
+	width: 16%;
+	float: left;
+	height: 125px;
+	cursor: pointer;
+}
+
+.carbuilder_content_colors img {
+	height: 70px;
+	display: block;
+	box-shadow: 4px 2px 5px 0px #808080;
+	margin: 0px auto;
+	width: 60px;
+}
+.carbuilder_content_colors_active {
+	background-color: #0066CB !important;
+}
+.carbuilder_content_colors_active .cc_colors_text {
+	color: white !important;
+	font-weight: bold;
+}
+.cc_colors_text {
+	text-align: center;
+	padding-top: 10px;
+	font-size: 14px;
+}
+
+.carbuilder_content_items_holder {
+	height: 390px;
+	overflow: auto;
+	position: relative;
+}
+.carbuilder_footer_holder img {
+	z-index: 100;
+	display: block;
+	position: relative;
+	margin: 0px auto;
+}
+
+.carbuilder_button {
+	height: 50px;
+	clear: both;
+}
+.carbuilder_ecpo_checkbox_holder {
+	margin-top: 8px;
+}
+.carbuilder_ecpo_items {
+	clear: both;
+}
+.carbuilder_ecpo_cb_items > label {
+	cursor:pointer;
+	overflow: hidden;
+	display: block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.carbuilder_span {
+	display: block;
+	font-size: 15px;
+	padding-left: 40px;
+	color: #555;
+	font-weight: bold;
+}
+.carbuilder_btns {
+	margin-left: 10px;
+	z-index: 100;
+	float: right;
+	width: inherit;
+	text-align: center;
+	cursor: pointer;
+	background-color: #039;
+	padding: 5px 15px;
+	font-weight: bold;
+	font-size: 15px;
+	color: #FFF;
+	margin-top: 15px;
+}
+.carbuilder_btns:hover {
+	opacity: 0.9;
+}
+
+.carbuilder_ecpo_title {
+	padding: 2px 20px;
+	margin: 3px;
+	background-color: #CDCDCD;
+	font-size: 17px;
+	font-weight: bold;
+	color: #333;
+}
+
+.carbuilder_ecpo_arrow {
+	cursor: pointer;
+	width: 10px;
+	top: 5px;
+	height: 10px;
+	position: absolute;
+	left: 24px;
+	z-index: 100;
+}
+
+.arrow_up {
+	background: url("./images/test/arrow_up.png");
+}
+
+.arrow_down {
+	background: url("./images/test/arrow_down.png");
+}
+
+.carbuilder_packages_hidden {
+	padding-left: 50px;
+	display: none;
+}
+
+.carbuilder_ph_items {
+	font-size: 13px;
+	font-family: helvetica;
+	color: #555;
+	line-height: 20px;
+}
+
+.carbuilder_summary_list {
+	margin: 2px;
+	height: 343px;
+	overflow: auto;
+}
+.carbuilder_summary_items {
+
+}
+.carbuilder_summary_items_title {
+	height: 26px;
+	cursor: pointer;
+	background-color: #CDCDCD;
+}
+.carbuilder_summary_arrow {
+	cursor: pointer;
+	width: 10px;
+	height: 10px;
+	z-index: 100;
+	float: left;
+	margin: 8px;
+}
+.csi_title_text {
+	width: 70%;
+	float: left;
+	font-size: 18px;
+	font-weight: bold;
+	color: #444;
+}
+.csi_title_money {
+	width: 100px;
+	text-align: right;
+	float: right;
+	margin: 1px 5px;
+	font-weight: bold;
+	color: #333;
+	font-size: 17px;
+}
+.carbuilder_summary_items_content {
+	display: none;
+}
+.csi_content_items {
+	font-size: 16px;
+	padding-top: 5px;
+	height: 23px;
+}
+.csi_content_item_text {
+	width: 75%;
+	float: left;
+	padding-left: 26px;
+}
+.csi_content_item_money {
+	width: 10%;
+	float: right;
+	text-align: right;
+	padding-right: 10px;
+}
+.carbuilder_summary_bottom {
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+}
+
+.carbuilder_summary_bottom_total {
+	background-color: #0066CB;
+	height: 40px;
+}
+.carbuilder_summary_bottom_key {
+	float: right;
+	color: #FFF;
+	font-weight: bold;
+	width: 100px;
+	padding-top: 8px;
+	font-size: 19px;
+}
+.carbuilder_summary_bottom_value {
+	float: right;
+	color: #FFF;
+	font-weight: bold;
+	width: 100px;
+	padding-top: 8px;
+	font-size: 19px;
+}

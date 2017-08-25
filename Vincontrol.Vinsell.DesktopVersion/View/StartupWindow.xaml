@@ -1,0 +1,43 @@
+﻿<Window x:Class="Vincontrol.Vinsell.DesktopVersion.View.StartupWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="StartupWindow" Height="336" Width="388" WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image Source="../Image/frame.png" Stretch="None"></Image>
+        <Grid>
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 20 0 0">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Username" FontSize="14" FontWeight="Bold" Height="34" Width="88" HorizontalAlignment="Left" Name="label1" VerticalAlignment="Top" />
+                    <TextBox Height="34" HorizontalAlignment="Left"  Name="txtUsername" VerticalAlignment="Top" Width="150">
+                    </TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Password" FontSize="14" FontWeight="Bold"  Width="88"  Height="34" HorizontalAlignment="Left" Name="label2" VerticalAlignment="Top" />
+                    <PasswordBox   Height="34" HorizontalAlignment="Left"  Name="txtPassword" VerticalAlignment="Top" Width="150" ></PasswordBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <CheckBox Name="chkRemember" IsChecked="True" VerticalAlignment="Center"></CheckBox>
+                    <TextBlock Text="Remember password" Margin="5 0 0 0"></TextBlock>
+                </StackPanel>
+                <Button Margin="0 10 0 0" Content="OK" HorizontalAlignment="Left" Name="btnOK" VerticalAlignment="Top"  Click="BtnOkClick" IsDefault="True" >
+                    <Button.Template>
+                        <ControlTemplate>
+                            <Image Name="imageCancel" Source="../Image/bt_saign-in.png" Stretch="None"></Image>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <!-- UPDATE THE BUTTON BACKGROUND -->
+                                    <Setter Property="Source" TargetName="imageCancel">
+                                        <Setter.Value>
+                                            ..\Image\bt_saign-in_on.png
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+
+</Window>

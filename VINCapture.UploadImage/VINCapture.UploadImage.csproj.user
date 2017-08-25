@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>ftp://vinclapp.net/vincapture/|ftp://vinclapp.net/vincaptureversion2/|ftp://vinclapp.net/vincaptue/</PublishUrlHistory>
+    <InstallUrlHistory>http://vinclapp.net/vincapture/|http://vinclapp.net/vincaptureversion2/</InstallUrlHistory>
+    <SupportUrlHistory />
+    <UpdateUrlHistory>http://vinclapp.net/vincaptureversion2/|http://vinclapp.net/vincapture/</UpdateUrlHistory>
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+  </PropertyGroup>
+</Project>

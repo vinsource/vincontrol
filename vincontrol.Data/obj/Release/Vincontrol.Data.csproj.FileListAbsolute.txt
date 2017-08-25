@@ -1,0 +1,13 @@
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Data\bin\Release\vincontrol.Data.dll.config
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Data\bin\Release\vincontrol.Data.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Data\bin\Release\vincontrol.Data.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Data\bin\Release\Dapper.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Data\bin\Release\DapperExtensions.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Data\bin\Release\vincontrol.Constant.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Data\bin\Release\vincontrol.DomainObject.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Data\bin\Release\vincontrol.Constant.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Data\bin\Release\vincontrol.DomainObject.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Data\bin\Release\Dapper.xml
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Data\obj\Release\Vincontrol.Data.csprojResolveAssemblyReference.cache
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Data\obj\Release\vincontrol.Data.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Data\obj\Release\vincontrol.Data.pdb

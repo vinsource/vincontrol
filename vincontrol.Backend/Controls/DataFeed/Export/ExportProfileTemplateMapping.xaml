@@ -1,0 +1,105 @@
+﻿<UserControl x:Class="vincontrol.Backend.Controls.DataFeed.Export.ExportProfileTemplateMapping"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:password="clr-namespace:vincontrol.Backend.Helper"
+             xmlns:CustomControls="clr-namespace:vincontrol.Backend.CustomControls"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" Height="750" Width="1000"
+             mc:Ignorable="d">
+    <Grid>
+        <StackPanel Height="750" Width="1000">
+            <Grid Width="1000">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="4*" />
+                    <ColumnDefinition Width="5*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="6*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+                    <RowDefinition ></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock HorizontalAlignment="Left"  Text="Profile" Height="28" Width="64" />
+                <TextBox HorizontalAlignment="Left" Grid.Column="1" Height="23"  Name="textBox2"  Width="120" Text="{Binding ProfileName, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}"  />
+                <CheckBox Grid.Column="2" Content="Header" Height="16" Name="checkBox2"  IsChecked="{Binding HasHeader}" />
+                <StackPanel  Grid.Column="5" Orientation="Horizontal" >
+                    <Button Height="23"  Command="{Binding OpenFileNameWindowCommand}" Margin="0 0 25 0">
+                        <Button.Content>
+                            <TextBox Width="120" IsEnabled="False" Background="Transparent" BorderThickness="0" Text="{Binding SelectedFileName, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                        </Button.Content>
+                    </Button>
+                    <CheckBox Content="Bundle" Height="16" Name="checkBox3" IsChecked="{Binding Bundle}" />
+                </StackPanel>
+                <TextBlock Text="File Name" Grid.Column="3" Height="28" Name="label4" />
+
+                <TextBlock Text="Company Name" Grid.Row="1"  Height="28" Name="label3" Grid.ColumnSpan="3"  />
+                <TextBox HorizontalAlignment="Left" Grid.Column="1" Grid.Row="1" Height="23"  Width="120" Text="{Binding CompanyName}"  />
+                <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="2" >
+                    <TextBlock Text="Format" Height="28" Width="90"  />
+                    <ComboBox HorizontalAlignment="Left" Grid.Row="1" Grid.Column="1" Height="23" Width="120" ItemsSource="{Binding FileTypeList}" SelectedValuePath="Key"  DisplayMemberPath="Value" SelectedValue="{Binding ExportFileType, ValidatesOnDataErrors=True, NotifyOnValidationError=True}" Margin="0,2" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="2" >
+                    <TextBlock Text="Delimiter" Height="28"  Width="90"    />
+                    <ComboBox Height="23" ItemsSource="{Binding DelimiterList}" Width="120" SelectedValuePath="Key"  DisplayMemberPath="Value" SelectedValue="{Binding Delimiter, ValidatesOnDataErrors=True, NotifyOnValidationError=True}" Grid.Column="1" />
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Grid.Row="3" Grid.Column="2" >
+                    <TextBlock Text="Inventory Status" Height="28"  Width="90"    />
+                    <ComboBox Height="23" ItemsSource="{Binding InventoryStatusList}" Width="120" SelectedValuePath="Key"  DisplayMemberPath="Value" SelectedValue="{Binding InventoryStatus, ValidatesOnDataErrors=True, NotifyOnValidationError=True}" Grid.Column="1" />
+                </StackPanel>
+
+                <TextBox HorizontalAlignment="Left" Height="23" Name="textBox4" Width="149" Text="{Binding FTPHost, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}" Grid.Row="1" Grid.Column="4" Margin="0,2" />
+
+                <TextBox HorizontalAlignment="Left" Height="23" Name="textBox5" Width="149" Text="{Binding FTPUserName, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}" Grid.Row="2" Grid.Column="4" Margin="0,2" />
+
+                <TextBox HorizontalAlignment="Left" Height="23" Width="149" Grid.Row="3" Grid.Column="5" Text="{Binding FTPPassword, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}"/>
+                <!--<PasswordBox HorizontalAlignment="Left" Height="23" Width="149" PasswordChar="*" ToolTip="Password" Grid.Row="3" Grid.Column="5" 
+                              password:BoundPasswordBox.BoundPassword="{Binding Path=FTPPassword,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                          ></PasswordBox>-->
+                <TextBlock Grid.Row="2" Text="Email" Height="28" />
+                <TextBox HorizontalAlignment="Left" Grid.Column="1" Grid.Row="2" Height="23"  Width="190" Text="{Binding Email, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}"  />
+
+                <TextBlock HorizontalAlignment="Left" Grid.Row="3" Text="Frequency" Height="28" Name="label8" Grid.ColumnSpan="3" />
+                <!--<ComboBox Height="23" HorizontalAlignment="Left" Margin="70,68,0,0" Name="comboBox2" VerticalAlignment="Top" Width="211" Grid.ColumnSpan="2" />-->
+                <CustomControls:NumericControl HorizontalAlignment="Left" Grid.Row="3"  Grid.Column="1" Minimum="1" Maximum="24" Value="{Binding Frequency}"   Height="23" Width="54" ></CustomControls:NumericControl>
+
+                <!--<DataGrid AutoGenerateColumns="False" Height="206" HorizontalAlignment="Left" Margin="10,137,0,0" Name="dataGrid1" VerticalAlignment="Top" Width="625" Grid.ColumnSpan="2" />-->
+
+                <!--<CheckBox Content="Discontinue " Height="16" HorizontalAlignment="Left" Margin="10,352,0,0" Name="checkBox4" VerticalAlignment="Top" IsChecked="{Binding Discontinued}" />-->
+                <TextBlock Grid.Row="4" Text="Time" Height="28" />
+                <!--<ComboBox Height="23" HorizontalAlignment="Left" Margin="45,101,0,0" Name="comboBox3" VerticalAlignment="Top" Width="119" Grid.ColumnSpan="2" />-->
+                <!--<CustomControls:TimeControl  Height="23" HorizontalAlignment="Left" Margin="45,101,0,0" VerticalAlignment="Top"  Width="119" Grid.ColumnSpan="2"  ></CustomControls:TimeControl>-->
+                <!--<DatePicker Height="23" HorizontalAlignment="Left" Margin="45,101,0,0" VerticalAlignment="Top" Width="119" Grid.ColumnSpan="2" SelectedDate="{Binding RunningTime}" DisplayDate="{Binding RunningTime}" ></DatePicker>-->
+                <CustomControls:TimePicker HorizontalAlignment="Left" Grid.Row="4" Grid.Column="1" x:Name="timePicker" Width="100" Height="20" SelectedItem="{Binding RunningTime, Mode=TwoWay}"></CustomControls:TimePicker>
+                <TextBlock HorizontalAlignment="Left" Text="FTP Host" Grid.Row="1" Grid.Column="3" Height="28"  />
+                <TextBlock HorizontalAlignment="Left" Text="Login" Grid.Row="2" Grid.Column="3" Height="28"  />
+                <TextBlock HorizontalAlignment="Left" Text="Password" Grid.Row="3" Grid.Column="3" Height="28" Width="50" />
+                <CheckBox Grid.Row="4" Grid.Column="2"  Content="Split Images" IsChecked="{Binding SplitImage}"></CheckBox>
+            </Grid>
+            <ListBox password:SelectorExtenders.IsAutoscroll="true"  Height="500" HorizontalAlignment="Stretch"  VerticalAlignment="Top" ItemTemplate="{StaticResource ExportMappingListDataTemplate}" ItemsSource="{Binding Mappings}">
+            </ListBox>
+            <StackPanel Margin="10,10,0,0">
+                <CheckBox Content="Discontinue " Height="16"  IsChecked="{Binding Discontinue}" Visibility="{Binding IsAdded, Converter={StaticResource HiddenConverter}}" />
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button Content="Add Mapping" Height="31"  Width="95"  Command="{Binding AddExportMappingCommand}" FontSize="14" />
+                    <Button Content="Save Profile" Height="31"  Width="88"  Command="{Binding SaveExportMappingCommand}" Visibility="{Binding IsAdded, Converter={StaticResource HiddenConverter}}" FontSize="14" />
+                    <Button Content="Create Profile" Height="31"  Width="95" Grid.Column="1"  Command="{Binding CreateExportProfileCommand}" Visibility="{Binding IsAdded, Converter={StaticResource VisibilityConverter}}" FontSize="14" />
+
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <xctk:BusyIndicator VerticalAlignment="Stretch"  HorizontalAlignment="Stretch" Margin="6,0,6,66" IsBusy="{Binding IsBusy}"></xctk:BusyIndicator>
+
+    </Grid>
+</UserControl>

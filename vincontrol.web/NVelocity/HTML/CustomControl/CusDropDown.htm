@@ -1,0 +1,10 @@
+﻿<select id="$id" data-errormessage-value-missing="$errorMessage"
+        data-validation-engine="$vaidationEngine" class="$className" name="$id">
+    #foreach($item in $Items)
+        #if($selected==$item.Value)
+            <option value="$item.Value" selected="selected">$item.Text</option>
+        #else
+            <option value="$item.Value">$item.Text</option>
+        #end
+    #end
+</select>

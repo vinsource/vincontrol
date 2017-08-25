@@ -1,0 +1,563 @@
+
+.kpi_fixed_title
+{
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+}
+
+.kpi_top_holder
+{
+    height: 318px;
+}
+
+.kpi_top_items
+{
+    padding-top: 20px;
+    float: left;
+    width: 33%;
+    height: inherit;
+}
+
+.kpi_top_charts_holder
+{
+}
+
+    .kpi_top_charts_holder img
+    {
+        margin-left: 38px;
+    }
+
+.kpi_top_charts_text
+{
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+    font-size: 24px;
+}
+
+.kpi_pdp_holder
+{
+    width: 335px;
+    height: 50px;
+    margin: 0px auto;
+}
+
+.kpi_pdp_items
+{
+    float: left;
+    width: 95px;
+    margin-left: 10px;
+}
+
+.kpi_pdp_items_key
+{
+    padding: 2px;
+    font-size: 13px;
+    background-color: #C1C1C1;
+    text-align: center;
+    font-weight: bold;
+}
+
+.kpi_pdp_items_value
+{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.kpi_pdp_pictures, .kpi_pdp_price
+{
+    background-color: #458C00;
+}
+
+.kpi_pdp_price_above
+{
+    background-color: #D12C00;
+}
+
+.kpi_pdp_price_average
+{
+    background-color: #458C00;
+}
+
+.kpi_pdp_price_below
+{
+    background-color: #0062A1;
+}
+
+.kpi_pdp_des
+{
+    background-color: #D12C00;
+}
+
+.kpi_pdp_holder a
+{
+    color: black;
+}
+
+    .kpi_pdp_holder a div:hover
+    {
+        font-weight: bold !important;
+    }
+
+.kpi_content_left
+{
+    float: left;
+    width: 60%;
+    height: 350px;
+}
+
+.kpi_content_right
+{
+    width: 39%;
+    height: 350px;
+    float: right;
+}
+
+.kpi_inventory_age_holder
+{
+    clear: both;
+    width: 292px;
+    margin: 0px auto;
+}
+
+.kpi_inventory_age_items
+{
+    height: 23px;
+}
+
+.kpi_inventory_age_header
+{
+}
+
+.kpi_inventory_age_items > a:hover
+{
+    color: red !important;
+    font-size: 18px;
+}
+
+.inventory_market_items > a
+{
+    float: left;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+    .inventory_market_items > a:hover
+    {
+        color: red !important;
+        font-size: 18px;
+    }
+
+.kpi_inventory_age_header div
+{
+    font-weight: bold;
+    text-align: center;
+    background-color: #C1C1C1;
+    font-size: 13px;
+}
+
+.kpi_inventory_age_collumn
+{
+    font-weight: bold;
+    text-align: center;
+    float: left;
+    margin-right: 3px;
+}
+
+.kpi_inventory_age_items_1 .kpi_inventory_age_collumn
+{
+    color: #3AD7B0;
+}
+
+.kpi_inventory_age_items_2 .kpi_inventory_age_collumn
+{
+    color: #458C00;
+}
+
+.kpi_inventory_age_items_3 .kpi_inventory_age_collumn
+{
+    color: #0062A1;
+}
+
+.kpi_inventory_age_items_4 .kpi_inventory_age_collumn
+{
+    color: #E8A440;
+}
+
+.kpi_inventory_age_items_5 .kpi_inventory_age_collumn
+{
+    color: #D12C00;
+}
+
+.kpi_inventory_age_days
+{
+    width: 60px;
+}
+
+.kpi_inventory_age_cars
+{
+    width: 85px;
+}
+
+.kpi_inventory_age_percent
+{
+    width: 130px;
+}
+
+.inventory_market_holder
+{
+    margin: 0px 10px;
+}
+
+.kpi_content_right_top
+{
+    margin-top: 50px;
+    height: 165px;
+}
+
+.inventory_market_items
+{
+    clear: both;
+    margin-top: 6px;
+    height: 25px;
+}
+
+.kpi_content_right_vs
+{
+    clear: both;
+    margin-top: 20px;
+}
+
+.inventory_market_items > div
+{
+    float: left;
+    font-size: 18px;
+}
+
+.inventory_market_value
+{
+    margin-left: 10px;
+}
+
+.inventory_market_text
+{
+    padding-left: 5px;
+    width: 65%;
+    color: white;
+}
+
+.inventory_market_above .inventory_market_text
+{
+    background-color: #D12C00;
+}
+
+.inventory_market_above .inventory_market_value
+{
+    color: #D12C00;
+}
+
+.inventory_market_at .inventory_market_text
+{
+    background-color: #458C00;
+}
+
+.inventory_market_at .inventory_market_value
+{
+    color: #458C00;
+}
+
+.inventory_market_below .inventory_market_text
+{
+    background-color: #0062A1;
+}
+
+.inventory_market_below .inventory_market_value
+{
+    color: #0062A1;
+}
+
+.kpi_list_holder
+{
+    clear: both;
+}
+
+.kpi_list_header
+{
+    padding: 0px !important;
+    height: 20px !important;
+    margin-bottom: 6px;
+}
+
+    .kpi_list_header .kpi_list_collum
+    {
+        font-weight: bold;
+        font-size: 15px;
+        margin-top: 0px !important;
+        padding-top: 0px !important;
+    }
+
+.kpi_list_collum
+{
+    font-size: 13px;
+    float: left;
+    text-align: center;
+    width: 70px;
+    height: 25px;
+    padding-top: 5px;
+    margin-top: 5px;
+    height: 20px;
+    color: black;
+}
+
+.kpi_list_carfaxowner
+{
+    width: 29px !important;
+    height: 15px;
+    margin: 6px 17px;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 7px;
+    background: url(owners-bg.png) top left no-repeat;
+    font-weight: bold;
+    font-family: arial, sans-serif;
+}
+
+.kpi_list_marketData
+{
+    /*width: 5%;*/
+    width: 35px;
+    padding-right: 11px;
+}
+
+.kpi_list_img
+{
+    width: 65px;
+    min-height: 5px;
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+}
+
+.kpi_list_container
+{
+    border: 2px solid #000;
+    clear: both;
+    height: 218px;
+    margin: 0px 7px;
+    overflow: auto;
+    border-radius: 5px;
+}
+
+
+
+.kpi_list_items
+{
+    padding: 5px;
+    clear: both;
+    height: 40px;
+}
+
+.kpi_list_vin
+{
+    /*width: 80px !important;*/
+    width: 83px !important;
+}
+
+.kpi_list_items_odd
+{
+    background-color: #DCDEDE;
+}
+
+.kpi_list_vin
+{
+    width: 9%;
+}
+
+.kpi_list_miles
+{
+    margin-right: 1px;
+    border: 1px solid black;
+}
+
+.kpi_list_price
+{
+    border: 1px solid green;
+}
+
+.kpi_market_icons
+{
+    float: right;
+    background-size: 100%;
+    width: 20px;
+    height: 20px;
+}
+
+.kpi_content_right_top .admin_notifications_title
+{
+    font-size: 23px;
+    text-align: center;
+}
+
+.kpi_list_items > div.hover:hover
+{
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.kpi_list_items > a > div.hover:hover
+{
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.wrapText
+{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 70px!important;
+    padding-right: 7px;
+}
+
+.kpi_list_collum_longHeader
+{
+    font-weight: bold;
+    font-size: 15px;
+    float: left;
+    text-align: center;
+    width: 74px;
+    height: 25px;
+    height: 20px;
+    color: black;
+    padding-left: 13px;
+}
+
+.kpi_list_collum_mediumHeader
+{
+    font-weight: bold;
+    font-size: 15px;
+    float: left;
+    text-align: center;
+    width: 61px;
+    height: 25px;
+    height: 20px;
+    color: black;
+    padding-left: 16px;
+}
+
+.kpi_list_collum_long
+{
+    font-size: 13px;
+    float: left;
+    text-align: center;
+    height: 25px;
+    padding-top: 5px;
+    margin-top: 5px;
+    height: 20px;
+    color: black;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 93px!important;
+}
+
+.kpi_list_collum_medium
+{
+    font-size: 13px;
+    float: left;
+    text-align: center;
+    width: 75px;
+    height: 25px;
+    padding-top: 5px;
+    margin-top: 5px;
+    height: 20px;
+    color: black;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 70px!important;
+    padding-right: 5px;
+}
+
+.kpi_print_btns
+{
+    position: relative;
+    left: 15px;
+    background-color: #5C5C5C;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: -3px;
+    padding: 2px 5px 0px;
+    text-align: center;
+    width: 55px;
+}
+
+    .kpi_print_btns > a
+    {
+        color: #FFFFFF;
+    }
+
+.orange_color
+{
+    background-color: #D12C00;
+}
+
+.green_color
+{
+    background-color: #458C00;
+}
+
+.blue_color
+{
+    background-color: #0062A1;
+}
+
+.border_color
+{
+    border: solid 2px black;
+}
+
+.age_text_border
+{
+    width: 37px;
+    text-align: center;
+    height: 16px;
+    padding: 0px 0px;
+    margin-left: 15px;
+    float: left;
+    color: black;
+}
+
+.age_text
+{
+    width: 37px;
+    text-align: center;
+    height: 16px;
+    padding: 2px 0px;
+    float: left;
+    color: #FFF;
+    margin-left: 9px;
+}
+
+.vin_viewprofile img
+{
+    width: 15px !important;
+    height: 27px !important;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+}
+
+.black_color
+{
+    background-color: #000000;
+}

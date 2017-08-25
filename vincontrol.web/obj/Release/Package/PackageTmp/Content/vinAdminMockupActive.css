@@ -1,0 +1,125 @@
+.admin_mockupActive_header_left {
+	width: 54%;
+	float: left;
+	padding: 10px 10px 10px 17px;
+font-weight: bold;
+	font-size: 25px;
+	color: white
+}
+.admin_mockupActive_header_date {
+	float: left;
+	padding: 10px;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.admin_mockupActive_content {
+	clear: both;
+	
+	margin: 0px auto;
+}
+
+.calendar_logo {
+	width: 20px;
+	right: 40px;
+	position: absolute;
+	top: 17px;
+	cursor: pointer;
+}
+.admin_mockupActive_header {
+	position: relative;
+}
+.activity_date {
+	color: black;
+	font-size: 18px;
+	text-align: center;
+	z-index: 2;
+	width: 107px;
+	float: left;
+	margin-top: 15px;
+	border: 0px;
+	font-weight: bold;
+	background-color: #3366cc;
+}
+
+.activity_list_header {
+	height: 18px;
+background-color: #BEBEBE;
+padding: 15px 10px;
+
+}
+.activity_list_items {
+	padding: 8px;
+}
+.activity_list_content_holder {
+	height: 555px;
+	
+	overflow: auto;
+	border-radius: 4px;
+}
+
+.activity_display {
+   display:none;
+}
+.activity_display_none {
+   
+}
+
+.activity_list_odd {
+	background-color: #EEEEEE;
+}
+.activity_list_collumn {
+	float: left;
+	width: 14%;
+}
+.activity_vin{
+	width: 10%;
+}
+
+.activity_vehicle{
+	width: 15%;
+}
+.activity_datestock{
+	width: 17%;
+}
+.activity_list_header .activity_list_first {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.activity_list_header .activity_list_second {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.activity_list_header .activity_list_content_collumn {
+
+}
+.activity_stock{
+	width: 10%;
+}
+.activity_list_items .activity_list_first {
+	font-size: 13px;
+	font-style: italic;
+}
+
+.activity_list_items .activity_list_second {
+	font-size: 13px;
+	padding-left:10px;
+}
+
+.activity_list_items .activity_list_content_collumn {
+
+}
+
+.activity_list_collumn_content {
+	width: 16%;
+}
+
+.calendar_logo_From {
+    font-weight: bold;
+}
+
+.calendar_logo_To {
+    font-weight: bold;
+}

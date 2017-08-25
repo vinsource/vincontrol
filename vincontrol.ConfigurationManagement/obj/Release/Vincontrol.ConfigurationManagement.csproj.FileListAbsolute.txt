@@ -1,0 +1,4 @@
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.ConfigurationManagement\bin\Release\vincontrol.ConfigurationManagement.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.ConfigurationManagement\bin\Release\vincontrol.ConfigurationManagement.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.ConfigurationManagement\obj\Release\vincontrol.ConfigurationManagement.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.ConfigurationManagement\obj\Release\vincontrol.ConfigurationManagement.pdb

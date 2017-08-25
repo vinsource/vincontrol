@@ -1,0 +1,23 @@
+﻿<Window x:Class="vincontrol.Backend.Windows.DataFeed.Import.AddImportProfileWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Height="700" Width="1000" WindowStartupLocation="CenterScreen" 
+        xmlns:WPFVINControl="clr-namespace:vincontrol.Backend.Controls"
+        xmlns:import="clr-namespace:vincontrol.Backend.Controls.DataFeed.Import"
+        Title="Create Importing Profile" >
+    <Viewbox>
+        <Grid>
+           
+       
+        <StackPanel Orientation="Vertical">
+                <!--<ScrollViewer>-->
+                    <import:IncomingProfileTemplateMapping ></import:IncomingProfileTemplateMapping>
+                <!--</ScrollViewer>-->
+            </StackPanel>
+   
+  
+        </Grid>
+    </Viewbox>
+    <!--<Window.WindowState>Maximized</Window.WindowState>-->
+
+</Window>

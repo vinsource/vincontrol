@@ -1,0 +1,35 @@
+#header h1 {
+	margin-top: 32px;
+}
+
+.steps .step {
+	display: inline !important;
+	margin-right: -14px;
+}
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/*NEW LINES*/
+#options {
+	padding-top: 30px;
+}
+
+#options li {
+	display: inline;
+	width: 276px;
+	padding: 9px;
+	margin-bottom: 5px;
+	background: white;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	cursor: pointer;
+	margin-left: 5px;
+	font-weight: bold;
+	font-size: 1.0em;
+}
+
+#reviews .text-wrap {
+position: relative;
+}
+/*END NEW LINES*/
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/

@@ -1,0 +1,2292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VincontrolModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="VincontrolModelStoreContainer">
+    <EntitySet Name="Answer" EntityType="VincontrolModel.Store.Answer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Appraisal" EntityType="VincontrolModel.Store.Appraisal" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AppraisalCustomer" EntityType="VincontrolModel.Store.AppraisalCustomer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AppraisalDealerActivity" EntityType="VincontrolModel.Store.AppraisalDealerActivity" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AppraisalStatusCode" EntityType="VincontrolModel.Store.AppraisalStatusCode" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AutoTrader" EntityType="VincontrolModel.Store.AutoTrader" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AutoTraderDealer" EntityType="VincontrolModel.Store.AutoTraderDealer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BlackBook" EntityType="VincontrolModel.Store.BlackBook" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BucketJumpHistory" EntityType="VincontrolModel.Store.BucketJumpHistory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Button" EntityType="VincontrolModel.Store.Button" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BuyerGuide" EntityType="VincontrolModel.Store.BuyerGuide" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Carfax" EntityType="VincontrolModel.Store.Carfax" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ChartSelection" EntityType="VincontrolModel.Store.ChartSelection" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DataFeedCompany" EntityType="VincontrolModel.Store.DataFeedCompany" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DataFeedDealer" EntityType="VincontrolModel.Store.DataFeedDealer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Dealer" EntityType="VincontrolModel.Store.Dealer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DealerActivitySubTypeCode" EntityType="VincontrolModel.Store.DealerActivitySubTypeCode" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DealerActivityTypeCode" EntityType="VincontrolModel.Store.DealerActivityTypeCode" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DealerButton" EntityType="VincontrolModel.Store.DealerButton" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DealerGroup" EntityType="VincontrolModel.Store.DealerGroup" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Description" EntityType="VincontrolModel.Store.Description" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DescriptionTemplate" EntityType="VincontrolModel.Store.DescriptionTemplate" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Ebay" EntityType="VincontrolModel.Store.Ebay" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EbayCategory" EntityType="VincontrolModel.Store.EbayCategory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FlyerShareDealerActivity" EntityType="VincontrolModel.Store.FlyerShareDealerActivity" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Inventory" EntityType="VincontrolModel.Store.Inventory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="InventoryDealerActivity" EntityType="VincontrolModel.Store.InventoryDealerActivity" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="InventoryStatusCode" EntityType="VincontrolModel.Store.InventoryStatusCode" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="KellyBlueBook" EntityType="VincontrolModel.Store.KellyBlueBook" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Make" EntityType="VincontrolModel.Store.Make" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ManheimMake" EntityType="VincontrolModel.Store.ManheimMake" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ManheimMakeModel" EntityType="VincontrolModel.Store.ManheimMakeModel" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ManheimModel" EntityType="VincontrolModel.Store.ManheimModel" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ManheimModelTrim" EntityType="VincontrolModel.Store.ManheimModelTrim" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ManheimTrim" EntityType="VincontrolModel.Store.ManheimTrim" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ManheimValue" EntityType="VincontrolModel.Store.ManheimValue" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ManheimYearMake" EntityType="VincontrolModel.Store.ManheimYearMake" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="MarketSourceCode" EntityType="VincontrolModel.Store.MarketSourceCode" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Model" EntityType="VincontrolModel.Store.Model" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NotificationSetting" EntityType="VincontrolModel.Store.NotificationSetting" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="NotificationTypeCode" EntityType="VincontrolModel.Store.NotificationTypeCode" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Option" EntityType="VincontrolModel.Store.Option" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Package" EntityType="VincontrolModel.Store.Package" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PermissionCode" EntityType="VincontrolModel.Store.PermissionCode" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PermissionValue" EntityType="VincontrolModel.Store.PermissionValue" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PriceChangeHistory" EntityType="VincontrolModel.Store.PriceChangeHistory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Question" EntityType="VincontrolModel.Store.Question" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="QuestionType" EntityType="VincontrolModel.Store.QuestionType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Rebate" EntityType="VincontrolModel.Store.Rebate" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Role" EntityType="VincontrolModel.Store.Role" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="RolePermission" EntityType="VincontrolModel.Store.RolePermission" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Sentence" EntityType="VincontrolModel.Store.Sentence" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SentenceType" EntityType="VincontrolModel.Store.SentenceType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Setting" EntityType="VincontrolModel.Store.Setting" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="SoldoutInventory" EntityType="VincontrolModel.Store.SoldoutInventory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="VincontrolModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TradeInComment" EntityType="VincontrolModel.Store.TradeInComment" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TradeInCustomer" EntityType="VincontrolModel.Store.TradeInCustomer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Trim" EntityType="VincontrolModel.Store.Trim" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TrimOption" EntityType="VincontrolModel.Store.TrimOption" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TrimPackage" EntityType="VincontrolModel.Store.TrimPackage" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TruckCategory" EntityType="VincontrolModel.Store.TruckCategory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UsaZipCode" EntityType="VincontrolModel.Store.UsaZipCode" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="User" EntityType="VincontrolModel.Store.User" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserDealerActivity" EntityType="VincontrolModel.Store.UserDealerActivity" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserNotification" EntityType="VincontrolModel.Store.UserNotification" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="UserPermission" EntityType="VincontrolModel.Store.UserPermission" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Vehicle" EntityType="VincontrolModel.Store.Vehicle" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VehicleStatusCode" EntityType="VincontrolModel.Store.VehicleStatusCode" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="VPContactInfo" EntityType="VincontrolModel.Store.VPContactInfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Walkaround" EntityType="VincontrolModel.Store.Walkaround" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="WarrantyType" EntityType="VincontrolModel.Store.WarrantyType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="YearMake" EntityType="VincontrolModel.Store.YearMake" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Appraisal_AppraisalStatusCode" Association="VincontrolModel.Store.FK_Appraisal_AppraisalStatusCode">
+      <End Role="AppraisalStatusCode" EntitySet="AppraisalStatusCode" />
+      <End Role="Appraisal" EntitySet="Appraisal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Appraisal_Dealer" Association="VincontrolModel.Store.FK_Appraisal_Dealer">
+      <End Role="Dealer" EntitySet="Dealer" />
+      <End Role="Appraisal" EntitySet="Appraisal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Appraisal_DealershipId" Association="VincontrolModel.Store.FK_Appraisal_DealershipId">
+      <End Role="AppraisalCustomer" EntitySet="AppraisalCustomer" />
+      <End Role="Appraisal" EntitySet="Appraisal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Appraisal_User" Association="VincontrolModel.Store.FK_Appraisal_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Appraisal" EntitySet="Appraisal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Appraisal_User1" Association="VincontrolModel.Store.FK_Appraisal_User1">
+      <End Role="User" EntitySet="User" />
+      <End Role="Appraisal" EntitySet="Appraisal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Appraisal_Vehicle" Association="VincontrolModel.Store.FK_Appraisal_Vehicle">
+      <End Role="Vehicle" EntitySet="Vehicle" />
+      <End Role="Appraisal" EntitySet="Appraisal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AppraisalDealerActivity_DealerActivitySubTypeCode1" Association="VincontrolModel.Store.FK_AppraisalDealerActivity_DealerActivitySubTypeCode1">
+      <End Role="DealerActivitySubTypeCode" EntitySet="DealerActivitySubTypeCode" />
+      <End Role="AppraisalDealerActivity" EntitySet="AppraisalDealerActivity" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AppraisalDealerActivity_User" Association="VincontrolModel.Store.FK_AppraisalDealerActivity_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="AppraisalDealerActivity" EntitySet="AppraisalDealerActivity" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AutoTraderDealer_Dealer" Association="VincontrolModel.Store.FK_AutoTraderDealer_Dealer">
+      <End Role="Dealer" EntitySet="Dealer" />
+      <End Role="AutoTraderDealer" EntitySet="AutoTraderDealer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BucketJumpHistory_VehicleStatusCode" Association="VincontrolModel.Store.FK_BucketJumpHistory_VehicleStatusCode">
+      <End Role="VehicleStatusCode" EntitySet="VehicleStatusCode" />
+      <End Role="BucketJumpHistory" EntitySet="BucketJumpHistory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ChartSelection_VehicleStatusCode" Association="VincontrolModel.Store.FK_ChartSelection_VehicleStatusCode">
+      <End Role="VehicleStatusCode" EntitySet="VehicleStatusCode" />
+      <End Role="ChartSelection" EntitySet="ChartSelection" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DataFeedDealer_DataFeedCompany" Association="VincontrolModel.Store.FK_DataFeedDealer_DataFeedCompany">
+      <End Role="DataFeedCompany" EntitySet="DataFeedCompany" />
+      <End Role="DataFeedDealer" EntitySet="DataFeedDealer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DataFeedDealer_Dealer" Association="VincontrolModel.Store.FK_DataFeedDealer_Dealer">
+      <End Role="Dealer" EntitySet="Dealer" />
+      <End Role="DataFeedDealer" EntitySet="DataFeedDealer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DealerActivity_DealerActivity" Association="VincontrolModel.Store.FK_DealerActivity_DealerActivity">
+      <End Role="DealerActivitySubTypeCode" EntitySet="DealerActivitySubTypeCode" />
+      <End Role="InventoryDealerActivity" EntitySet="InventoryDealerActivity" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Dealership_DealerGroupId" Association="VincontrolModel.Store.FK_Dealership_DealerGroupId">
+      <End Role="DealerGroup" EntitySet="DealerGroup" />
+      <End Role="Dealer" EntitySet="Dealer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EbayAd_DealershipID" Association="VincontrolModel.Store.FK_EbayAd_DealershipID">
+      <End Role="Dealer" EntitySet="Dealer" />
+      <End Role="Ebay" EntitySet="Ebay" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EbayAd_InventoryId" Association="VincontrolModel.Store.FK_EbayAd_InventoryId">
+      <End Role="Inventory" EntitySet="Inventory" />
+      <End Role="Ebay" EntitySet="Ebay" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FlyerShareDealerActivity_Dealer" Association="VincontrolModel.Store.FK_FlyerShareDealerActivity_Dealer">
+      <End Role="Dealer" EntitySet="Dealer" />
+      <End Role="FlyerShareDealerActivity" EntitySet="FlyerShareDealerActivity" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FlyerShareDealerActivity_User" Association="VincontrolModel.Store.FK_FlyerShareDealerActivity_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="FlyerShareDealerActivity" EntitySet="FlyerShareDealerActivity" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inventory_Appraisal" Association="VincontrolModel.Store.FK_Inventory_Appraisal">
+      <End Role="Appraisal" EntitySet="Appraisal" />
+      <End Role="Inventory" EntitySet="Inventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inventory_Dealer" Association="VincontrolModel.Store.FK_Inventory_Dealer">
+      <End Role="Dealer" EntitySet="Dealer" />
+      <End Role="Inventory" EntitySet="Inventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inventory_DescriptionTemplate" Association="VincontrolModel.Store.FK_Inventory_DescriptionTemplate">
+      <End Role="DescriptionTemplate" EntitySet="DescriptionTemplate" />
+      <End Role="Inventory" EntitySet="Inventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inventory_InventoryStatusCode" Association="VincontrolModel.Store.FK_Inventory_InventoryStatusCode">
+      <End Role="InventoryStatusCode" EntitySet="InventoryStatusCode" />
+      <End Role="Inventory" EntitySet="Inventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inventory_User" Association="VincontrolModel.Store.FK_Inventory_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Inventory" EntitySet="Inventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inventory_Vehicle" Association="VincontrolModel.Store.FK_Inventory_Vehicle">
+      <End Role="Vehicle" EntitySet="Vehicle" />
+      <End Role="Inventory" EntitySet="Inventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InventoryDealerActivity_User" Association="VincontrolModel.Store.FK_InventoryDealerActivity_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="InventoryDealerActivity" EntitySet="InventoryDealerActivity" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KellyBlueBook_VehicleStatusCode" Association="VincontrolModel.Store.FK_KellyBlueBook_VehicleStatusCode">
+      <End Role="VehicleStatusCode" EntitySet="VehicleStatusCode" />
+      <End Role="KellyBlueBook" EntitySet="KellyBlueBook" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ManheimValue_VehicleStatusCode" Association="VincontrolModel.Store.FK_ManheimValue_VehicleStatusCode">
+      <End Role="VehicleStatusCode" EntitySet="VehicleStatusCode" />
+      <End Role="ManheimValue" EntitySet="ManheimValue" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Models_YearMakes" Association="VincontrolModel.Store.FK_Models_YearMakes">
+      <End Role="YearMake" EntitySet="YearMake" />
+      <End Role="Model" EntitySet="Model" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NotificationSetting_DealershipId" Association="VincontrolModel.Store.FK_NotificationSetting_DealershipId">
+      <End Role="Dealer" EntitySet="Dealer" />
+      <End Role="NotificationSetting" EntitySet="NotificationSetting" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PriceChangeHistory_VehicleStatusCode" Association="VincontrolModel.Store.FK_PriceChangeHistory_VehicleStatusCode">
+      <End Role="VehicleStatusCode" EntitySet="VehicleStatusCode" />
+      <End Role="PriceChangeHistory" EntitySet="PriceChangeHistory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rebate_DealershipID" Association="VincontrolModel.Store.FK_Rebate_DealershipID">
+      <End Role="Dealer" EntitySet="Dealer" />
+      <End Role="Rebate" EntitySet="Rebate" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Setting_DealershipId" Association="VincontrolModel.Store.FK_Setting_DealershipId">
+      <End Role="Dealer" EntitySet="Dealer" />
+      <End Role="Setting" EntitySet="Setting" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SoldoutInventory_Dealer" Association="VincontrolModel.Store.FK_SoldoutInventory_Dealer">
+      <End Role="Dealer" EntitySet="Dealer" />
+      <End Role="SoldoutInventory" EntitySet="SoldoutInventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SoldoutInventory_DealershipID" Association="VincontrolModel.Store.FK_SoldoutInventory_DealershipID">
+      <End Role="Vehicle" EntitySet="Vehicle" />
+      <End Role="SoldoutInventory" EntitySet="SoldoutInventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SoldoutInventory_SoldoutInventory" Association="VincontrolModel.Store.FK_SoldoutInventory_SoldoutInventory">
+      <End Role="User" EntitySet="User" />
+      <End Role="SoldoutInventory" EntitySet="SoldoutInventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SoldoutInventory_VehicleStatusCode1" Association="VincontrolModel.Store.FK_SoldoutInventory_VehicleStatusCode1">
+      <End Role="InventoryStatusCode" EntitySet="InventoryStatusCode" />
+      <End Role="SoldoutInventory" EntitySet="SoldoutInventory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TradeInComment_DealershipID" Association="VincontrolModel.Store.FK_TradeInComment_DealershipID">
+      <End Role="Dealer" EntitySet="Dealer" />
+      <End Role="TradeInComment" EntitySet="TradeInComment" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TradeInCustomer_Dealer" Association="VincontrolModel.Store.FK_TradeInCustomer_Dealer">
+      <End Role="Dealer" EntitySet="Dealer" />
+      <End Role="TradeInCustomer" EntitySet="TradeInCustomer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TrimOption_Option" Association="VincontrolModel.Store.FK_TrimOption_Option">
+      <End Role="Option" EntitySet="Option" />
+      <End Role="TrimOption" EntitySet="TrimOption" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TrimOptions_Trims" Association="VincontrolModel.Store.FK_TrimOptions_Trims">
+      <End Role="Trim" EntitySet="Trim" />
+      <End Role="TrimOption" EntitySet="TrimOption" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TrimPackages_Trims" Association="VincontrolModel.Store.FK_TrimPackages_Trims">
+      <End Role="Package" EntitySet="Package" />
+      <End Role="TrimPackage" EntitySet="TrimPackage" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Trims_Models" Association="VincontrolModel.Store.FK_Trims_Models">
+      <End Role="Model" EntitySet="Model" />
+      <End Role="Trim" EntitySet="Trim" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_DealerGroup" Association="VincontrolModel.Store.FK_User_DealerGroup">
+      <End Role="DealerGroup" EntitySet="DealerGroup" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserDealerActivity_DealerActivitySubTypeCode" Association="VincontrolModel.Store.FK_UserDealerActivity_DealerActivitySubTypeCode">
+      <End Role="DealerActivitySubTypeCode" EntitySet="DealerActivitySubTypeCode" />
+      <End Role="UserDealerActivity" EntitySet="UserDealerActivity" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserDealerActivity_User" Association="VincontrolModel.Store.FK_UserDealerActivity_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserDealerActivity" EntitySet="UserDealerActivity" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserDealerActivity_User1" Association="VincontrolModel.Store.FK_UserDealerActivity_User1">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserDealerActivity" EntitySet="UserDealerActivity" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserInfo_Group" Association="VincontrolModel.Store.FK_UserInfo_Group">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="UserPermission" EntitySet="UserPermission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserNotification_DealershipID" Association="VincontrolModel.Store.FK_UserNotification_DealershipID">
+      <End Role="Dealer" EntitySet="Dealer" />
+      <End Role="UserNotification" EntitySet="UserNotification" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserNotification_User" Association="VincontrolModel.Store.FK_UserNotification_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserNotification" EntitySet="UserNotification" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserPermission_User" Association="VincontrolModel.Store.FK_UserPermission_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="UserPermission" EntitySet="UserPermission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_DealershipID" Association="VincontrolModel.Store.FK_Users_DealershipID">
+      <End Role="Dealer" EntitySet="Dealer" />
+      <End Role="UserPermission" EntitySet="UserPermission" />
+    </AssociationSet>
+    <AssociationSet Name="FK_vincontroldealershipbuttons_vincontrolbuttons" Association="VincontrolModel.Store.FK_vincontroldealershipbuttons_vincontrolbuttons">
+      <End Role="Button" EntitySet="Button" />
+      <End Role="DealerButton" EntitySet="DealerButton" />
+    </AssociationSet>
+    <AssociationSet Name="FK_vincontroldealershipbuttons_vincontrolgroups" Association="VincontrolModel.Store.FK_vincontroldealershipbuttons_vincontrolgroups">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="DealerButton" EntitySet="DealerButton" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WarrantyType_DealershipId" Association="VincontrolModel.Store.FK_WarrantyType_DealershipId">
+      <End Role="Dealer" EntitySet="Dealer" />
+      <End Role="WarrantyType" EntitySet="WarrantyType" />
+    </AssociationSet>
+    <AssociationSet Name="FK_YearMakes_Makes" Association="VincontrolModel.Store.FK_YearMakes_Makes">
+      <End Role="Make" EntitySet="Make" />
+      <End Role="YearMake" EntitySet="YearMake" />
+    </AssociationSet>
+    <AssociationSet Name="manheimmakemodels$model" Association="VincontrolModel.Store.manheimmakemodels$model">
+      <End Role="ManheimModel" EntitySet="ManheimModel" />
+      <End Role="ManheimMakeModel" EntitySet="ManheimMakeModel" />
+    </AssociationSet>
+    <AssociationSet Name="manheimmakemodels$yearmake" Association="VincontrolModel.Store.manheimmakemodels$yearmake">
+      <End Role="ManheimYearMake" EntitySet="ManheimYearMake" />
+      <End Role="ManheimMakeModel" EntitySet="ManheimMakeModel" />
+    </AssociationSet>
+    <AssociationSet Name="manheimmodeltrims$makemodel" Association="VincontrolModel.Store.manheimmodeltrims$makemodel">
+      <End Role="ManheimMakeModel" EntitySet="ManheimMakeModel" />
+      <End Role="ManheimModelTrim" EntitySet="ManheimModelTrim" />
+    </AssociationSet>
+    <AssociationSet Name="manheimmodeltrims$trim" Association="VincontrolModel.Store.manheimmodeltrims$trim">
+      <End Role="ManheimTrim" EntitySet="ManheimTrim" />
+      <End Role="ManheimModelTrim" EntitySet="ManheimModelTrim" />
+    </AssociationSet>
+    <AssociationSet Name="manheimyearmakes$makeId" Association="VincontrolModel.Store.manheimyearmakes$makeId">
+      <End Role="ManheimMake" EntitySet="ManheimMake" />
+      <End Role="ManheimYearMake" EntitySet="ManheimYearMake" />
+    </AssociationSet>
+    <AssociationSet Name="vincontrolanswers$fk_answers_appraisals" Association="VincontrolModel.Store.vincontrolanswers$fk_answers_appraisals">
+      <End Role="Appraisal" EntitySet="Appraisal" />
+      <End Role="Answer" EntitySet="Answer" />
+    </AssociationSet>
+    <AssociationSet Name="vincontrolanswers$fk_answers_questions" Association="VincontrolModel.Store.vincontrolanswers$fk_answers_questions">
+      <End Role="Question" EntitySet="Question" />
+      <End Role="Answer" EntitySet="Answer" />
+    </AssociationSet>
+    <AssociationSet Name="vincontrolgrouppermissions$fk_grouppermission_group" Association="VincontrolModel.Store.vincontrolgrouppermissions$fk_grouppermission_group">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="RolePermission" EntitySet="RolePermission" />
+    </AssociationSet>
+    <AssociationSet Name="vincontrolgrouppermissions$fk_grouppermission_permissioncodes" Association="VincontrolModel.Store.vincontrolgrouppermissions$fk_grouppermission_permissioncodes">
+      <End Role="PermissionCode" EntitySet="PermissionCode" />
+      <End Role="RolePermission" EntitySet="RolePermission" />
+    </AssociationSet>
+    <AssociationSet Name="vincontrolgrouppermissions$fk_grouppermission_permissionvalue" Association="VincontrolModel.Store.vincontrolgrouppermissions$fk_grouppermission_permissionvalue">
+      <End Role="PermissionValue" EntitySet="PermissionValue" />
+      <End Role="RolePermission" EntitySet="RolePermission" />
+    </AssociationSet>
+    <AssociationSet Name="vincontrolquestions$fk_questions_questiontype" Association="VincontrolModel.Store.vincontrolquestions$fk_questions_questiontype">
+      <End Role="QuestionType" EntitySet="QuestionType" />
+      <End Role="Question" EntitySet="Question" />
+    </AssociationSet>
+    <AssociationSet Name="vincontrolsentence$fk_sentence_type" Association="VincontrolModel.Store.vincontrolsentence$fk_sentence_type">
+      <End Role="SentenceType" EntitySet="SentenceType" />
+      <End Role="Sentence" EntitySet="Sentence" />
+    </AssociationSet>
+    <AssociationSet Name="vincontrolwalkaround$fk_walkaround_appraisal" Association="VincontrolModel.Store.vincontrolwalkaround$fk_walkaround_appraisal">
+      <End Role="Appraisal" EntitySet="Appraisal" />
+      <End Role="Walkaround" EntitySet="Walkaround" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Answer">
+    <Key>
+      <PropertyRef Name="AnswerId" />
+    </Key>
+    <Property Name="AnswerId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AppraisalId" Type="int" Nullable="false" />
+    <Property Name="QuestionId" Type="int" Nullable="false" />
+    <Property Name="Answer" Type="nvarchar" MaxLength="45" />
+    <Property Name="Comment" Type="nvarchar" MaxLength="455" />
+  </EntityType>
+  <EntityType Name="Appraisal">
+    <Key>
+      <PropertyRef Name="AppraisalId" />
+    </Key>
+    <Property Name="AppraisalId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PackageDescription" Type="nvarchar(max)" />
+    <Property Name="PhotoUrl" Type="nvarchar(max)" />
+    <Property Name="AppraisalType" Type="nvarchar" MaxLength="25" />
+    <Property Name="Note" Type="nvarchar(max)" />
+    <Property Name="AppraisalStatusCodeId" Type="smallint" />
+    <Property Name="VinGenie" Type="bit" />
+    <Property Name="VinGenieUserId" Type="int" />
+    <Property Name="DeviceId" Type="nvarchar" MaxLength="100" />
+    <Property Name="DeviceName" Type="nvarchar" MaxLength="255" />
+    <Property Name="KarPowerEntryId" Type="nvarchar" MaxLength="45" />
+    <Property Name="Location" Type="nvarchar" MaxLength="200" />
+    <Property Name="AppraisalCustomerId" Type="int" />
+    <Property Name="AppraisalById" Type="int" />
+    <Property Name="VinGenieAppraisalDate" Type="datetime2" Precision="0" />
+    <Property Name="AppraisalDate" Type="datetime2" Precision="0" />
+    <Property Name="OldAppraisalId" Type="int" />
+    <Property Name="Stock" Type="nvarchar" MaxLength="100" />
+    <Property Name="SalePrice" Type="decimal" />
+    <Property Name="Mileage" Type="bigint" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="100" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="AdditionalOptions" Type="nvarchar(max)" />
+    <Property Name="AdditionalPackages" Type="nvarchar(max)" />
+    <Property Name="Descriptions" Type="nvarchar(max)" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="CarRanking" Type="int" />
+    <Property Name="MarketTrim" Type="nvarchar" MaxLength="45" />
+    <Property Name="MarketRange" Type="int" />
+    <Property Name="LastUpdated" Type="datetime" />
+    <Property Name="CARFAXOwner" Type="int" />
+    <Property Name="ACV" Type="decimal" />
+    <Property Name="DealerCost" Type="decimal" />
+    <Property Name="VehicleId" Type="int" Nullable="false" />
+    <Property Name="ThumbnailUrl" Type="nvarchar(max)" />
+    <Property Name="PackageDescriptions" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="AppraisalCustomer">
+    <Key>
+      <PropertyRef Name="AppraisalCustomerId" />
+    </Key>
+    <Property Name="FirstName" Type="nvarchar" MaxLength="200" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="200" />
+    <Property Name="Address" Type="nvarchar" MaxLength="200" />
+    <Property Name="City" Type="nvarchar" MaxLength="20" />
+    <Property Name="State" Type="nvarchar" MaxLength="20" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="Email" Type="nvarchar" MaxLength="45" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="45" />
+    <Property Name="Street" Type="nvarchar" MaxLength="255" />
+    <Property Name="AppraisalCustomerId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SignatureUrl" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="AppraisalDealerActivity">
+    <Key>
+      <PropertyRef Name="AppraisalDealerActivityId" />
+    </Key>
+    <Property Name="AppraisalDealerActivityId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Detail" Type="nvarchar(max)" />
+    <Property Name="AppraisalId" Type="int" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="DateStamp" Type="datetime" Nullable="false" />
+    <Property Name="DealerActivitySubTypeCodeId" Type="smallint" Nullable="false" />
+    <Property Name="VIN" Type="nvarchar" MaxLength="30" />
+    <Property Name="Stock" Type="nvarchar" MaxLength="30" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="UserStampId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AppraisalStatusCode">
+    <Key>
+      <PropertyRef Name="AppraisalStatusCodeId" />
+    </Key>
+    <Property Name="AppraisalStatusCodeId" Type="smallint" Nullable="false" />
+    <Property Name="Value" Type="nvarchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="AutoTrader">
+    <Key>
+      <PropertyRef Name="AutoTraderId" />
+    </Key>
+    <Property Name="AutoTraderId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FTPHost" Type="nchar" Nullable="false" MaxLength="100" />
+    <Property Name="FTPPort" Type="int" />
+    <Property Name="DateStamp" Type="datetime" />
+  </EntityType>
+  <EntityType Name="AutoTraderDealer">
+    <Key>
+      <PropertyRef Name="AutoTraderDealerId" />
+    </Key>
+    <Property Name="AutoTraderDealerId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AutoTraderDealerServiceId" Type="int" />
+    <Property Name="FTPUsername" Type="nchar" MaxLength="100" />
+    <Property Name="FTPPassword" Type="nchar" MaxLength="100" />
+    <Property Name="DealerId" Type="int" />
+    <Property Name="DateStamp" Type="datetime" />
+  </EntityType>
+  <EntityType Name="BlackBook">
+    <Key>
+      <PropertyRef Name="BlackBookId" />
+    </Key>
+    <Property Name="BlackBookId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Vin" Type="nvarchar" Nullable="false" MaxLength="45" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="45" />
+    <Property Name="TradeInFairPrice" Type="decimal" />
+    <Property Name="TradeInGoodPrice" Type="decimal" />
+    <Property Name="TradeInVeryGoodPrice" Type="decimal" />
+    <Property Name="DateStamp" Type="datetime" />
+    <Property Name="Expiration" Type="datetime" />
+  </EntityType>
+  <EntityType Name="BucketJumpHistory">
+    <Key>
+      <PropertyRef Name="BucketJumpHistoryId" />
+    </Key>
+    <Property Name="BucketJumpHistoryId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ListingId" Type="int" Nullable="false" />
+    <Property Name="VehicleStatusCodeId" Type="smallint" Nullable="false" />
+    <Property Name="AttachFile" Type="nvarchar" MaxLength="225" />
+    <Property Name="SalePrice" Type="decimal" />
+    <Property Name="BucketJumpDayAlert" Type="int" />
+    <Property Name="BucketJumpCompleteDate" Type="datetime" />
+    <Property Name="RetailPrice" Type="decimal" />
+    <Property Name="UserStamp" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateStamp" Type="datetime" />
+    <Property Name="OldListingId" Type="int" />
+  </EntityType>
+  <EntityType Name="Button">
+    <Key>
+      <PropertyRef Name="ButtonId" />
+    </Key>
+    <Property Name="ButtonId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Button" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="Screen" Type="nvarchar" Nullable="false" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="BuyerGuide">
+    <Key>
+      <PropertyRef Name="BuyerGuideId" />
+    </Key>
+    <Property Name="BuyerGuideId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="45" />
+    <Property Name="Model" Type="nvarchar" MaxLength="45" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="45" />
+    <Property Name="Stock" Type="nvarchar" MaxLength="45" />
+    <Property Name="WarrantyType" Type="int" Nullable="false" />
+    <Property Name="IsAsWarranty" Type="bit" />
+    <Property Name="IsWarranty" Type="bit" />
+    <Property Name="IsFullWarranty" Type="bit" />
+    <Property Name="IsLimitedWarranty" Type="bit" />
+    <Property Name="IsServiceContract" Type="bit" />
+    <Property Name="SystemCovered" Type="nvarchar(max)" />
+    <Property Name="Durations" Type="nvarchar(max)" />
+    <Property Name="PercentageOfLabor" Type="float" />
+    <Property Name="PercentageOfPart" Type="float" />
+    <Property Name="PriorRental" Type="nvarchar" MaxLength="45" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="IsMixed" Type="bit" />
+    <Property Name="SystemCoveredAndDurations" Type="nvarchar(max)" />
+    <Property Name="LanguageVersion" Type="int" />
+  </EntityType>
+  <EntityType Name="Carfax">
+    <Key>
+      <PropertyRef Name="CarfaxId" />
+    </Key>
+    <Property Name="CarfaxId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Vin" Type="nvarchar" Nullable="false" MaxLength="45" />
+    <Property Name="Owner" Type="int" />
+    <Property Name="ServiceRecord" Type="int" />
+    <Property Name="WindowSticker" Type="nvarchar(max)" />
+    <Property Name="PriorRental" Type="bit" />
+    <Property Name="Accident" Type="int" />
+    <Property Name="DateStamp" Type="datetime" />
+    <Property Name="LastUpdated" Type="datetime" />
+    <Property Name="Expiration" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ChartSelection">
+    <Key>
+      <PropertyRef Name="ChartSelectionId" />
+    </Key>
+    <Property Name="ChartSelectionId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ListingId" Type="int" Nullable="false" />
+    <Property Name="IsCarsCom" Type="bit" />
+    <Property Name="Options" Type="nvarchar" MaxLength="255" />
+    <Property Name="Trims" Type="nvarchar" MaxLength="550" />
+    <Property Name="IsCertified" Type="bit" />
+    <Property Name="IsAll" Type="bit" />
+    <Property Name="IsFranchise" Type="bit" />
+    <Property Name="IsIndependant" Type="bit" />
+    <Property Name="VehicleStatusCodeId" Type="smallint" Nullable="false" />
+    <Property Name="IsNationwide" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DataFeedCompany">
+    <Key>
+      <PropertyRef Name="DataFeedCompanyId" />
+    </Key>
+    <Property Name="DataFeedCompanyId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyName" Type="nchar" Nullable="false" MaxLength="100" />
+    <Property Name="FTPUserName" Type="nchar" MaxLength="100" />
+    <Property Name="FTPPassword" Type="nchar" MaxLength="100" />
+    <Property Name="FTPHost" Type="nchar" MaxLength="100" />
+    <Property Name="FTPPort" Type="int" />
+    <Property Name="DateStamp" Type="datetime" />
+  </EntityType>
+  <EntityType Name="DataFeedDealer">
+    <Key>
+      <PropertyRef Name="DataFeedCompanyId" />
+      <PropertyRef Name="DealerId" />
+    </Key>
+    <Property Name="DataFeedCompanyId" Type="int" Nullable="false" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="DepositFileId" Type="nchar" MaxLength="100" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="DateStamp" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Dealer">
+    <Key>
+      <PropertyRef Name="DealerId" />
+    </Key>
+    <Property Name="DealerId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="100" />
+    <Property Name="City" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="45" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="45" />
+    <Property Name="Email" Type="nvarchar" MaxLength="255" />
+    <Property Name="Lattitude" Type="decimal" Precision="9" Scale="6" />
+    <Property Name="Longtitude" Type="decimal" Precision="9" Scale="6" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="DealerGroupId" Type="nvarchar" MaxLength="10" />
+    <Property Name="ImportFeed" Type="bit" />
+    <Property Name="DateStamp" Type="datetime" />
+  </EntityType>
+  <EntityType Name="DealerActivitySubTypeCode">
+    <Key>
+      <PropertyRef Name="DealerActivitySubTypeCodeId" />
+    </Key>
+    <Property Name="DealerActivitySubTypeCodeId" Type="smallint" Nullable="false" />
+    <Property Name="Value" Type="nvarchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="DealerActivityTypeCode">
+    <Key>
+      <PropertyRef Name="DealerActivityTypeCodeId" />
+    </Key>
+    <Property Name="DealerActivityTypeCodeId" Type="smallint" Nullable="false" />
+    <Property Name="Value" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="DealerButton">
+    <Key>
+      <PropertyRef Name="DealerButtonId" />
+    </Key>
+    <Property Name="DealerButtonId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="GroupId" Type="int" Nullable="false" />
+    <Property Name="ButtonId" Type="int" Nullable="false" />
+    <Property Name="CanSee" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DealerGroup">
+    <Key>
+      <PropertyRef Name="DealerGroupId" />
+    </Key>
+    <Property Name="DealerGroupId" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="DealerGroupName" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="DefaultDealerId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Description">
+    <Key>
+      <PropertyRef Name="DescriptionId" />
+    </Key>
+    <Property Name="DescriptionId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="45" />
+    <Property Name="YesNo" Type="bit" />
+    <Property Name="DescriptionSentence" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="DescriptionTemplate">
+    <Key>
+      <PropertyRef Name="DescriptionTemplateId" />
+    </Key>
+    <Property Name="DescriptionTemplateId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="2000" />
+    <Property Name="Content" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="2000" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+    <Property Name="Type" Type="nchar" Nullable="false" MaxLength="7" />
+  </EntityType>
+  <EntityType Name="Ebay">
+    <Key>
+      <PropertyRef Name="EbayId" />
+    </Key>
+    <Property Name="EbayId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="InventoryId" Type="int" Nullable="false" />
+    <Property Name="EbayAdId" Type="nvarchar" Nullable="false" MaxLength="45" />
+    <Property Name="EbayAdURL" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="Expiration" Type="datetime" />
+    <Property Name="DateStamp" Type="datetime" />
+  </EntityType>
+  <EntityType Name="EbayCategory">
+    <Key>
+      <PropertyRef Name="EbayCategoryID" />
+    </Key>
+    <Property Name="EbayCategoryID" Type="int" Nullable="false" />
+    <Property Name="Make" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="FlyerShareDealerActivity">
+    <Key>
+      <PropertyRef Name="FlyerShareDealerActivityId" />
+    </Key>
+    <Property Name="FlyerShareDealerActivityId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CustomerName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerEmail" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserStampId" Type="int" Nullable="false" />
+    <Property Name="DateStamp" Type="datetime" Nullable="false" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Inventory">
+    <Key>
+      <PropertyRef Name="InventoryId" />
+    </Key>
+    <Property Name="InventoryId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DealerMsrp" Type="decimal" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="ThumbnailUrl" Type="nvarchar(max)" />
+    <Property Name="DateInStock" Type="datetime2" Precision="0" />
+    <Property Name="Condition" Type="bit" Nullable="false" />
+    <Property Name="AddToInventoryById" Type="int" />
+    <Property Name="AppraisalId" Type="int" />
+    <Property Name="WarrantyInfo" Type="int" />
+    <Property Name="RetailPrice" Type="decimal" />
+    <Property Name="WindowStickerPrice" Type="decimal" />
+    <Property Name="DealerDiscount" Type="decimal" />
+    <Property Name="ManufacturerRebate" Type="decimal" />
+    <Property Name="PriorRental" Type="bit" />
+    <Property Name="Disclaimer" Type="nvarchar(max)" />
+    <Property Name="DealerDemo" Type="bit" />
+    <Property Name="Unwind" Type="bit" />
+    <Property Name="IsFeatured" Type="bit" />
+    <Property Name="AdditionalTitle" Type="nvarchar" MaxLength="255" />
+    <Property Name="EnableAutoDescription" Type="bit" />
+    <Property Name="DescriptionTemplateId" Type="int" />
+    <Property Name="BucketJumpCompleteDay" Type="int" />
+    <Property Name="ACar" Type="bit" />
+    <Property Name="BrandedTitle" Type="bit" />
+    <Property Name="OldInventoryId" Type="int" />
+    <Property Name="OldType" Type="nvarchar" MaxLength="3" />
+    <Property Name="InventoryStatusCodeId" Type="smallint" Nullable="false" />
+    <Property Name="Stock" Type="nvarchar" MaxLength="100" />
+    <Property Name="SalePrice" Type="decimal" />
+    <Property Name="Mileage" Type="bigint" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="100" />
+    <Property Name="AdditionalOptions" Type="nvarchar(max)" />
+    <Property Name="AdditionalPackages" Type="nvarchar(max)" />
+    <Property Name="Descriptions" Type="nvarchar(max)" />
+    <Property Name="PhotoUrl" Type="nvarchar(max)" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="CarRanking" Type="int" />
+    <Property Name="MarketTrim" Type="nvarchar" MaxLength="45" />
+    <Property Name="MarketRange" Type="int" />
+    <Property Name="LastUpdated" Type="datetime" />
+    <Property Name="CarfaxOwner" Type="int" />
+    <Property Name="ACV" Type="decimal" />
+    <Property Name="DealerCost" Type="decimal" />
+    <Property Name="OldAppraisalId" Type="int" />
+    <Property Name="VehicleId" Type="int" Nullable="false" />
+    <Property Name="PackageDescriptions" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="InventoryDealerActivity">
+    <Key>
+      <PropertyRef Name="InventoryDealerActivityId" />
+    </Key>
+    <Property Name="InventoryDealerActivityId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Detail" Type="nvarchar(max)" />
+    <Property Name="InventoryId" Type="int" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="DateStamp" Type="datetime" Nullable="false" />
+    <Property Name="DealerActivitySubTypeCodeId" Type="smallint" Nullable="false" />
+    <Property Name="VIN" Type="nvarchar" MaxLength="17" />
+    <Property Name="Stock" Type="nchar" MaxLength="10" />
+    <Property Name="OldPrice" Type="decimal" />
+    <Property Name="NewPrice" Type="decimal" />
+    <Property Name="AppraisalId" Type="int" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="UserStampId" Type="int" />
+  </EntityType>
+  <EntityType Name="InventoryStatusCode">
+    <Key>
+      <PropertyRef Name="InventoryStatusCodeId" />
+    </Key>
+    <Property Name="InventoryStatusCodeId" Type="smallint" Nullable="false" />
+    <Property Name="Value" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="KellyBlueBook">
+    <Key>
+      <PropertyRef Name="KellyBlueBookId" />
+    </Key>
+    <Property Name="KellyBlueBookId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Vin" Type="nvarchar" Nullable="false" MaxLength="45" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="45" />
+    <Property Name="TradeInFairPrice" Type="decimal" />
+    <Property Name="TradeInGoodPrice" Type="decimal" />
+    <Property Name="TradeInVeryGoodPrice" Type="decimal" />
+    <Property Name="LastUpdated" Type="datetime" />
+    <Property Name="Expiration" Type="datetime" />
+    <Property Name="BaseWholeSale" Type="decimal" />
+    <Property Name="MileageAdjustment" Type="decimal" />
+    <Property Name="WholeSale" Type="decimal" />
+    <Property Name="TrimId" Type="int" />
+    <Property Name="VehicleStatusCodeId" Type="smallint" />
+    <Property Name="DateStamp" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Make">
+    <Key>
+      <PropertyRef Name="MakeId" />
+    </Key>
+    <Property Name="MakeId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="ChromeId" Type="int" />
+    <Property Name="Source" Type="varchar" MaxLength="1000" />
+    <Property Name="ManheimServiceId" Type="int" />
+    <Property Name="KBBServiceId" Type="int" />
+  </EntityType>
+  <EntityType Name="ManheimMake">
+    <Key>
+      <PropertyRef Name="ManheimMakeId" />
+    </Key>
+    <Property Name="ManheimMakeId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ServiceId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="ManheimMakeModel">
+    <Key>
+      <PropertyRef Name="ManheimMakeModelId" />
+    </Key>
+    <Property Name="ManheimMakeModelId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="YearMakeId" Type="int" Nullable="false" />
+    <Property Name="ModelId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ManheimModel">
+    <Key>
+      <PropertyRef Name="ManheimModelId" />
+    </Key>
+    <Property Name="ManheimModelId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ServiceId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="ManheimModelTrim">
+    <Key>
+      <PropertyRef Name="ManheimModelTrimId" />
+    </Key>
+    <Property Name="ManheimModelTrimId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MakeModelId" Type="int" Nullable="false" />
+    <Property Name="TrimId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ManheimTrim">
+    <Key>
+      <PropertyRef Name="ManheimTrimId" />
+    </Key>
+    <Property Name="ManheimTrimId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ServiceId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="LowestPrice" Type="decimal" />
+    <Property Name="AveragePrice" Type="decimal" />
+    <Property Name="HighestPrice" Type="decimal" />
+    <Property Name="ExpirationDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ManheimValue">
+    <Key>
+      <PropertyRef Name="ManheimValueId" />
+    </Key>
+    <Property Name="ManheimValueId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Vin" Type="nvarchar" Nullable="false" MaxLength="45" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="45" />
+    <Property Name="AuctionLowestPrice" Type="decimal" />
+    <Property Name="AuctionAveragePrice" Type="decimal" />
+    <Property Name="AuctionHighestPrice" Type="decimal" />
+    <Property Name="DateAdded" Type="datetime" />
+    <Property Name="LastUpdated" Type="datetime" />
+    <Property Name="Expiration" Type="datetime" />
+    <Property Name="TrimServiceId" Type="int" />
+    <Property Name="Year" Type="int" />
+    <Property Name="MakeServiceId" Type="int" />
+    <Property Name="ModelServiceId" Type="int" />
+    <Property Name="VehicleStatusCodeId" Type="smallint" />
+  </EntityType>
+  <EntityType Name="ManheimYearMake">
+    <Key>
+      <PropertyRef Name="ManheimYearMakeId" />
+    </Key>
+    <Property Name="ManheimYearMakeId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="MakeId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MarketSourceCode">
+    <Key>
+      <PropertyRef Name="MarketSourceCodeId" />
+    </Key>
+    <Property Name="MarketSourceCodeId" Type="smallint" Nullable="false" />
+    <Property Name="Value" Type="nvarchar" Nullable="false" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Model">
+    <Key>
+      <PropertyRef Name="ModelId" />
+    </Key>
+    <Property Name="ModelId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="ChromeId" Type="int" />
+    <Property Name="YearMakeId" Type="int" Nullable="false" />
+    <Property Name="Source" Type="varchar" MaxLength="1000" />
+    <Property Name="ManheimServiceId" Type="int" />
+    <Property Name="KBBServiceId" Type="int" />
+  </EntityType>
+  <EntityType Name="NotificationSetting">
+    <Key>
+      <PropertyRef Name="DealerId" />
+    </Key>
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="AppraisalNotified" Type="bit" Nullable="false" />
+    <Property Name="WholesaleNotified" Type="bit" Nullable="false" />
+    <Property Name="InventoryNotified" Type="bit" Nullable="false" />
+    <Property Name="C24hNotified" Type="bit" Nullable="false" />
+    <Property Name="NoteNotified" Type="bit" Nullable="false" />
+    <Property Name="PriceChangeNotified" Type="bit" Nullable="false" />
+    <Property Name="AgingNotified" Type="bit" Nullable="false" />
+    <Property Name="BucketJumpNotified" Type="bit" Nullable="false" />
+    <Property Name="MarketPriceRangeNotified" Type="bit" Nullable="false" />
+    <Property Name="ImageUploadNotified" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NotificationTypeCode">
+    <Key>
+      <PropertyRef Name="NotificationTypeCodeId" />
+    </Key>
+    <Property Name="NotificationTypeCodeId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Option">
+    <Key>
+      <PropertyRef Name="OptionId" />
+    </Key>
+    <Property Name="OptionId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ChromeId" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Price" Type="decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="FullValue" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Package">
+    <Key>
+      <PropertyRef Name="PackageId" />
+    </Key>
+    <Property Name="PackageId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ChromeId" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Price" Type="decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="FullValue" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PermissionCode">
+    <Key>
+      <PropertyRef Name="PermissionCodeId" />
+    </Key>
+    <Property Name="PermissionCodeId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PermissionCodeText" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="PermissionText" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="PermissionCategory" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Indent" Type="int" Nullable="false" />
+    <Property Name="ScreenOrder" Type="int" Nullable="false" />
+    <Property Name="UserStamp" Type="nvarchar" Nullable="false" MaxLength="25" />
+    <Property Name="DateStamp" Type="datetime2" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="PermissionValue">
+    <Key>
+      <PropertyRef Name="PermissionValueId" />
+    </Key>
+    <Property Name="PermissionValueId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PermissionValueText" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="UserStamp" Type="nvarchar" Nullable="false" MaxLength="25" />
+    <Property Name="DateStamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PriceChangeHistory">
+    <Key>
+      <PropertyRef Name="PriceChangeHistoryId" />
+    </Key>
+    <Property Name="PriceChangeHistoryId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OldPrice" Type="decimal" Precision="11" />
+    <Property Name="NewPrice" Type="decimal" Precision="11" />
+    <Property Name="AttachFile" Type="nvarchar" MaxLength="225" />
+    <Property Name="ListingId" Type="int" Nullable="false" />
+    <Property Name="VehicleStatusCodeId" Type="smallint" Nullable="false" />
+    <Property Name="UserStamp" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateStamp" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Question">
+    <Key>
+      <PropertyRef Name="QuestionId" />
+    </Key>
+    <Property Name="QuestionId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="455" />
+    <Property Name="QuestionTypeId" Type="int" Nullable="false" />
+    <Property Name="ShortDesciption" Type="nvarchar" MaxLength="300" />
+    <Property Name="Order" Type="int" />
+  </EntityType>
+  <EntityType Name="QuestionType">
+    <Key>
+      <PropertyRef Name="QuestionTypeId" />
+    </Key>
+    <Property Name="QuestionTypeId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="45" />
+    <Property Name="Description" Type="nvarchar" MaxLength="145" />
+    <Property Name="Option" Type="nvarchar" MaxLength="145" />
+    <Property Name="Code" Type="int" />
+    <Property Name="Unit" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Rebate">
+    <Key>
+      <PropertyRef Name="RebateId" />
+    </Key>
+    <Property Name="RebateId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="Make" Type="nvarchar" Nullable="false" MaxLength="45" />
+    <Property Name="Model" Type="nvarchar" Nullable="false" MaxLength="45" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="45" />
+    <Property Name="BodyType" Type="nvarchar" MaxLength="45" />
+    <Property Name="ManufactureReabte" Type="nvarchar" MaxLength="45" />
+    <Property Name="Disclaimer" Type="nvarchar(max)" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="DateStamp" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="RoleId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoleName" Type="nvarchar" Nullable="false" MaxLength="25" />
+    <Property Name="RoleNote" Type="nvarchar" MaxLength="150" />
+    <Property Name="UserStamp" Type="nvarchar" Nullable="false" MaxLength="25" />
+    <Property Name="DateStamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="RolePermission">
+    <Key>
+      <PropertyRef Name="RolePermissionId" />
+    </Key>
+    <Property Name="RolePermissionId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+    <Property Name="PermissionCodeId" Type="int" Nullable="false" />
+    <Property Name="PermissionValueId" Type="int" Nullable="false" />
+    <Property Name="UserStamp" Type="nvarchar" Nullable="false" MaxLength="25" />
+    <Property Name="DateStamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sentence">
+    <Key>
+      <PropertyRef Name="SentenceId" />
+    </Key>
+    <Property Name="SentenceId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Sentence" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SentenceTypeId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SentenceType">
+    <Key>
+      <PropertyRef Name="SentenceTypeId" />
+    </Key>
+    <Property Name="SentenceTypeId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="225" />
+  </EntityType>
+  <EntityType Name="Setting">
+    <Key>
+      <PropertyRef Name="DealerId" />
+    </Key>
+    <Property Name="InventorySorting" Type="nvarchar" MaxLength="45" />
+    <Property Name="SoldOut" Type="nvarchar" MaxLength="45" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="Ebay" Type="nvarchar" MaxLength="100" />
+    <Property Name="EbayPassword" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarFax" Type="nvarchar" MaxLength="100" />
+    <Property Name="CarFaxPassword" Type="nvarchar" MaxLength="45" />
+    <Property Name="Manheim" Type="nvarchar" MaxLength="100" />
+    <Property Name="ManheimPassword" Type="nvarchar" MaxLength="45" />
+    <Property Name="KellyBlueBook" Type="nvarchar" MaxLength="100" />
+    <Property Name="KellyPassword" Type="nvarchar" MaxLength="45" />
+    <Property Name="BlackBook" Type="nvarchar" MaxLength="100" />
+    <Property Name="BlackBookPassword" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoCheck" Type="nvarchar" MaxLength="100" />
+    <Property Name="AutoCheckPassword" Type="nvarchar" MaxLength="45" />
+    <Property Name="DefaultStockImageUrl" Type="nvarchar" MaxLength="255" />
+    <Property Name="OverideStockImage" Type="bit" />
+    <Property Name="DealerInfo" Type="nvarchar(max)" />
+    <Property Name="DealerWarranty" Type="nvarchar(max)" />
+    <Property Name="TermsAndCondition" Type="nvarchar(max)" />
+    <Property Name="EbayToken" Type="nvarchar(max)" />
+    <Property Name="EbayInventoryUrl" Type="nvarchar(max)" />
+    <Property Name="CreditUrl" Type="nvarchar(max)" />
+    <Property Name="WebSiteUrl" Type="nvarchar(max)" />
+    <Property Name="ContactUsUrl" Type="nvarchar(max)" />
+    <Property Name="FacebookUrl" Type="nvarchar(max)" />
+    <Property Name="LogoUrl" Type="nvarchar(max)" />
+    <Property Name="ContactPerson" Type="nvarchar(max)" />
+    <Property Name="RetailPrice" Type="bit" />
+    <Property Name="DealerDiscount" Type="bit" />
+    <Property Name="ManufacturerReabte" Type="bit" />
+    <Property Name="SalePrice" Type="bit" />
+    <Property Name="ShippingInfo" Type="nvarchar(max)" />
+    <Property Name="AsIsWarranty" Type="nvarchar(max)" />
+    <Property Name="AsIsWarrantySpanish" Type="nvarchar(max)" />
+    <Property Name="StartDescriptionSentence" Type="nvarchar(max)" />
+    <Property Name="EndDescriptionSentence" Type="nvarchar(max)" />
+    <Property Name="AuctionSentence" Type="nvarchar(max)" />
+    <Property Name="LoanerSentence" Type="nvarchar(max)" />
+    <Property Name="FirstTimeRangeBucketJump" Type="int" />
+    <Property Name="SecondTimeRangeBucketJump" Type="int" />
+    <Property Name="IntervalBucketJump" Type="int" />
+    <Property Name="RetailPriceText" Type="nvarchar" MaxLength="255" />
+    <Property Name="DealerDiscountText" Type="nvarchar" MaxLength="255" />
+    <Property Name="ManufactureReabateText" Type="nvarchar" MaxLength="255" />
+    <Property Name="SalePriceText" Type="nvarchar" MaxLength="255" />
+    <Property Name="HeaderOverlayURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="FooterOverlayURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="KellyBlueBookAccessRight" Type="bit" />
+    <Property Name="AutoDescription" Type="bit" />
+    <Property Name="AutoDescriptionSubscribe" Type="bit" />
+    <Property Name="EmailFormat" Type="smallint" />
+    <Property Name="PriceVariance" Type="decimal" Precision="8" />
+    <Property Name="CanViewBucketJump" Type="bit" />
+    <Property Name="EbayContactInfoName" Type="nvarchar" MaxLength="255" />
+    <Property Name="EbayContactInfoPhone" Type="nvarchar" MaxLength="255" />
+    <Property Name="EbayContactInfoEmail" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="SoldoutInventory">
+    <Key>
+      <PropertyRef Name="SoldoutInventoryId" />
+    </Key>
+    <Property Name="SoldoutInventoryId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Stock" Type="nvarchar" MaxLength="100" />
+    <Property Name="SalePrice" Type="decimal" />
+    <Property Name="DealerMsrp" Type="decimal" />
+    <Property Name="Mileage" Type="bigint" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="100" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="AdditionalOptions" Type="nvarchar(max)" />
+    <Property Name="AdditionalPackages" Type="nvarchar(max)" />
+    <Property Name="Descriptions" Type="nvarchar(max)" />
+    <Property Name="PhotoUrl" Type="nvarchar(max)" />
+    <Property Name="ThumbnailUrl" Type="nvarchar(max)" />
+    <Property Name="DateInStock" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime" />
+    <Property Name="DateRemoved" Type="datetime" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="DealerCost" Type="decimal" />
+    <Property Name="ACV" Type="decimal" />
+    <Property Name="Condition" Type="bit" Nullable="false" />
+    <Property Name="RemoveBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="AddToInventoryById" Type="int" />
+    <Property Name="AppraisalId" Type="int" />
+    <Property Name="DataFeed" Type="bit" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="100" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="100" />
+    <Property Name="State" Type="nvarchar" MaxLength="45" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="WarrantyInfo" Type="int" />
+    <Property Name="RetailPrice" Type="decimal" />
+    <Property Name="WindowStickerPrice" Type="decimal" />
+    <Property Name="DealerDiscount" Type="decimal" />
+    <Property Name="ManufacturerRebate" Type="decimal" />
+    <Property Name="PriorRental" Type="bit" />
+    <Property Name="CarFaxOwner" Type="int" />
+    <Property Name="Disclaimer" Type="nvarchar(max)" />
+    <Property Name="DealerDemo" Type="bit" />
+    <Property Name="Unwind" Type="bit" />
+    <Property Name="CarRanking" Type="int" />
+    <Property Name="AdditionalTitle" Type="nvarchar" MaxLength="255" />
+    <Property Name="Country" Type="nvarchar" MaxLength="45" />
+    <Property Name="EnableAutoDescription" Type="bit" />
+    <Property Name="Template" Type="int" />
+    <Property Name="PackageDescriptions" Type="nvarchar(max)" />
+    <Property Name="BucketJumpCompleteDay" Type="int" />
+    <Property Name="MarketTrim" Type="nvarchar" MaxLength="45" />
+    <Property Name="ACar" Type="bit" />
+    <Property Name="TempOldListingId" Type="int" />
+    <Property Name="IsFeatured" Type="bit" />
+    <Property Name="BrandedTitle" Type="bit" />
+    <Property Name="InventoryStatusCodeId" Type="smallint" />
+    <Property Name="VehicleId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TradeInComment">
+    <Key>
+      <PropertyRef Name="TradeInCommentId" />
+    </Key>
+    <Property Name="TradeInCommentId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Content" Type="nvarchar(max)" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="State" Type="nvarchar" MaxLength="45" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="CommentDate" Type="datetime" />
+    <Property Name="LastUpdated" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TradeInCustomer">
+    <Key>
+      <PropertyRef Name="TradeInCustomerId" />
+    </Key>
+    <Property Name="TradeInCustomerId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="255" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="255" />
+    <Property Name="Email" Type="nvarchar" MaxLength="255" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="45" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="45" />
+    <Property Name="Model" Type="nvarchar" MaxLength="45" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="45" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="45" />
+    <Property Name="SelectedOptions" Type="nvarchar(max)" />
+    <Property Name="Condition" Type="nvarchar" MaxLength="45" />
+    <Property Name="ChromeTrimId" Type="int" />
+    <Property Name="TradeInFairValue" Type="decimal" />
+    <Property Name="TradeInMaxValue" Type="decimal" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="VarianceValue" Type="decimal" />
+    <Property Name="Source" Type="nvarchar" MaxLength="255" />
+    <Property Name="TradeInStatus" Type="nvarchar" MaxLength="10" />
+    <Property Name="DateStamp" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Trim">
+    <Key>
+      <PropertyRef Name="TrimId" />
+    </Key>
+    <Property Name="TrimId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="StyleName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="ChromeId" Type="bigint" Nullable="false" />
+    <Property Name="ModelId" Type="int" Nullable="false" />
+    <Property Name="IsDefault" Type="bit" Nullable="false" />
+    <Property Name="KBBTrimId" Type="int" />
+    <Property Name="ManheimTrimId" Type="int" />
+    <Property Name="DefaultImageUrl" Type="nvarchar" MaxLength="500" />
+    <Property Name="TrimName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Code" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TrimOption">
+    <Key>
+      <PropertyRef Name="TrimOptionId" />
+    </Key>
+    <Property Name="TrimOptionId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TrimId" Type="int" Nullable="false" />
+    <Property Name="OptionId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TrimPackage">
+    <Key>
+      <PropertyRef Name="TrimPackageId" />
+    </Key>
+    <Property Name="TrimPackageId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TrimId" Type="int" Nullable="false" />
+    <Property Name="PackageId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TruckCategory">
+    <Key>
+      <PropertyRef Name="TruckCategoryId" />
+    </Key>
+    <Property Name="TruckCategoryId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryName" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="TruckType" Type="nvarchar" Nullable="false" MaxLength="45" />
+    <Property Name="DateStamp" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="UsaZipCode">
+    <Key>
+      <PropertyRef Name="UsaZipCodeId" />
+    </Key>
+    <Property Name="UsaZipCodeId" Type="int" Nullable="false" />
+    <Property Name="ZIPType" Type="nvarchar" MaxLength="45" />
+    <Property Name="CityName" Type="nvarchar" MaxLength="45" />
+    <Property Name="CityType" Type="nvarchar" MaxLength="45" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="45" />
+    <Property Name="CountyFIPS" Type="nvarchar" MaxLength="45" />
+    <Property Name="StateName" Type="nvarchar" MaxLength="45" />
+    <Property Name="StateAbbr" Type="nvarchar" MaxLength="45" />
+    <Property Name="StateFIPS" Type="nvarchar" MaxLength="45" />
+    <Property Name="MSACode" Type="nvarchar" MaxLength="45" />
+    <Property Name="AreaCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="TimeZone" Type="nvarchar" MaxLength="45" />
+    <Property Name="UTC" Type="nvarchar" MaxLength="45" />
+    <Property Name="DST" Type="nvarchar" MaxLength="45" />
+    <Property Name="Latitude" Type="decimal" Precision="9" Scale="6" />
+    <Property Name="Longitude" Type="decimal" Precision="9" Scale="6" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Expiration" Type="datetime" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="25" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="CellPhone" Type="nvarchar" MaxLength="100" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="DefaultLogin" Type="int" />
+    <Property Name="DealerGroupId" Type="nvarchar" MaxLength="10" />
+    <Property Name="OldUserId" Type="int" />
+  </EntityType>
+  <EntityType Name="UserDealerActivity">
+    <Key>
+      <PropertyRef Name="UserDealerActivityId" />
+    </Key>
+    <Property Name="UserDealerActivityId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Detail" Type="nvarchar(max)" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="DateStamp" Type="datetime" Nullable="false" />
+    <Property Name="DealerActivitySubTypeCodeId" Type="smallint" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="Role" Type="nvarchar" MaxLength="20" />
+    <Property Name="UserStampId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserNotification">
+    <Key>
+      <PropertyRef Name="UserNotificationId" />
+    </Key>
+    <Property Name="UserNotificationId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="DateStamp" Type="datetime" />
+    <Property Name="AppraisalNotified" Type="bit" Nullable="false" />
+    <Property Name="WholesaleNotified" Type="bit" Nullable="false" />
+    <Property Name="InventoryNotified" Type="bit" Nullable="false" />
+    <Property Name="C24hNotified" Type="bit" Nullable="false" />
+    <Property Name="NoteNotified" Type="bit" Nullable="false" />
+    <Property Name="PriceChangeNotified" Type="bit" Nullable="false" />
+    <Property Name="AgingNotified" Type="bit" Nullable="false" />
+    <Property Name="BucketJumpNotified" Type="bit" Nullable="false" />
+    <Property Name="MarketPriceRangeNotified" Type="bit" Nullable="false" />
+    <Property Name="ImageUploadNotified" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="UserPermission">
+    <Key>
+      <PropertyRef Name="UserPermissionId" />
+    </Key>
+    <Property Name="UserPermissionId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Vehicle">
+    <Key>
+      <PropertyRef Name="VehicleId" />
+    </Key>
+    <Property Name="VehicleId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="100" />
+    <Property Name="Msrp" Type="decimal" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="100" />
+    <Property Name="BodyType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Cylinders" Type="int" />
+    <Property Name="Litter" Type="float" />
+    <Property Name="EngineType" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveTrain" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="200" />
+    <Property Name="Doors" Type="int" />
+    <Property Name="FuelEconomyCity" Type="nvarchar" MaxLength="45" />
+    <Property Name="FuelEconomyHighWay" Type="nvarchar" MaxLength="45" />
+    <Property Name="StandardOptions" Type="nvarchar(max)" />
+    <Property Name="KBBEngineId" Type="int" />
+    <Property Name="KBBTransmissionId" Type="int" />
+    <Property Name="KBBDriveTrainId" Type="int" />
+    <Property Name="KBBOptionsId" Type="nvarchar(max)" />
+    <Property Name="KBBTrimId" Type="int" />
+    <Property Name="MarketLowestPrice" Type="decimal" Precision="11" />
+    <Property Name="MarketAveragePrice" Type="decimal" Precision="11" />
+    <Property Name="MarketHighestPrice" Type="decimal" Precision="11" />
+    <Property Name="ColorCode" Type="nvarchar" MaxLength="30" />
+    <Property Name="NumberOfCar" Type="int" />
+    <Property Name="ChromeStyleId" Type="nvarchar" MaxLength="45" />
+    <Property Name="ChromeModelId" Type="nvarchar" MaxLength="45" />
+    <Property Name="ManheimTrimId" Type="int" />
+    <Property Name="VehicleType" Type="smallint" />
+    <Property Name="DefaultStockImage" Type="nvarchar(max)" />
+    <Property Name="OldIsWholesale" Type="bit" />
+    <Property Name="OldAppraisalId" Type="int" />
+    <Property Name="OldInventoryId" Type="int" />
+    <Property Name="OldSoldoutInventoryId" Type="int" />
+  </EntityType>
+  <EntityType Name="VehicleStatusCode">
+    <Key>
+      <PropertyRef Name="VehicleStatusCodeId" />
+    </Key>
+    <Property Name="VehicleStatusCodeId" Type="smallint" Nullable="false" />
+    <Property Name="Value" Type="nchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="VPContactInfo">
+    <Key>
+      <PropertyRef Name="VPContactInfoId" />
+    </Key>
+    <Property Name="VPContactInfoId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="FirstName" Type="nchar" MaxLength="125" />
+    <Property Name="MiddleName" Type="nchar" MaxLength="50" />
+    <Property Name="LastName" Type="nchar" MaxLength="125" />
+    <Property Name="FriendName" Type="nchar" MaxLength="125" />
+    <Property Name="ContactPrefer" Type="nchar" MaxLength="125" />
+    <Property Name="ContactType" Type="int" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="State" Type="nvarchar" MaxLength="125" />
+    <Property Name="Postal" Type="int" />
+    <Property Name="Email" Type="nchar" MaxLength="125" />
+    <Property Name="FriendEmail" Type="nchar" MaxLength="125" />
+    <Property Name="Phone" Type="nchar" MaxLength="125" />
+    <Property Name="Vin" Type="nchar" MaxLength="125" />
+    <Property Name="Stock" Type="nchar" MaxLength="125" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nchar" MaxLength="125" />
+    <Property Name="Model" Type="nchar" MaxLength="125" />
+    <Property Name="Engine" Type="nchar" MaxLength="125" />
+    <Property Name="Trim" Type="nchar" MaxLength="125" />
+    <Property Name="Transmission" Type="nchar" MaxLength="125" />
+    <Property Name="ExteriorColor" Type="nchar" MaxLength="125" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="Condition" Type="nchar" MaxLength="125" />
+    <Property Name="Options" Type="nvarchar" MaxLength="1000" />
+    <Property Name="ServiceType" Type="nvarchar" MaxLength="255" />
+    <Property Name="OfferValue" Type="int" />
+    <Property Name="JobTitle" Type="nvarchar" MaxLength="125" />
+    <Property Name="SpecialId" Type="int" />
+    <Property Name="SpecialCategory" Type="nvarchar" MaxLength="50" />
+    <Property Name="TemplateType" Type="int" />
+    <Property Name="CL" Type="nvarchar" MaxLength="125" />
+    <Property Name="CV" Type="nvarchar" MaxLength="125" />
+    <Property Name="Comment" Type="nvarchar(max)" />
+    <Property Name="Notes" Type="nvarchar(max)" />
+    <Property Name="ScheduleDate" Type="datetime2" Precision="0" />
+    <Property Name="ScheduleTime" Type="nchar" MaxLength="125" />
+    <Property Name="RequestLink" Type="nvarchar" MaxLength="500" />
+    <Property Name="SubmitFlag" Type="bit" />
+    <Property Name="ReadFlag" Type="bit" />
+    <Property Name="FavoriteFlag" Type="bit" />
+    <Property Name="DeleteFlag" Type="bit" />
+    <Property Name="RegisterDate" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="Walkaround">
+    <Key>
+      <PropertyRef Name="WalkaroundId" />
+    </Key>
+    <Property Name="WalkaroundId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Order" Type="int" />
+    <Property Name="X" Type="float" />
+    <Property Name="Y" Type="float" />
+    <Property Name="Note" Type="nvarchar" MaxLength="455" />
+    <Property Name="AppraisalId" Type="int" Nullable="false" />
+    <Property Name="OldAppraisalId" Type="int" />
+  </EntityType>
+  <EntityType Name="WarrantyType">
+    <Key>
+      <PropertyRef Name="WarrantyTypeId" />
+    </Key>
+    <Property Name="WarrantyTypeId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" MaxLength="225" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="Category" Type="int" />
+  </EntityType>
+  <EntityType Name="YearMake">
+    <Key>
+      <PropertyRef Name="YearMakeId" />
+    </Key>
+    <Property Name="YearMakeId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MakeId" Type="int" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Appraisal_AppraisalStatusCode">
+    <End Role="AppraisalStatusCode" Type="VincontrolModel.Store.AppraisalStatusCode" Multiplicity="0..1" />
+    <End Role="Appraisal" Type="VincontrolModel.Store.Appraisal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AppraisalStatusCode">
+        <PropertyRef Name="AppraisalStatusCodeId" />
+      </Principal>
+      <Dependent Role="Appraisal">
+        <PropertyRef Name="AppraisalStatusCodeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Appraisal_Dealer">
+    <End Role="Dealer" Type="VincontrolModel.Store.Dealer" Multiplicity="1" />
+    <End Role="Appraisal" Type="VincontrolModel.Store.Appraisal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="Appraisal">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Appraisal_DealershipId">
+    <End Role="AppraisalCustomer" Type="VincontrolModel.Store.AppraisalCustomer" Multiplicity="0..1" />
+    <End Role="Appraisal" Type="VincontrolModel.Store.Appraisal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AppraisalCustomer">
+        <PropertyRef Name="AppraisalCustomerId" />
+      </Principal>
+      <Dependent Role="Appraisal">
+        <PropertyRef Name="AppraisalCustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Appraisal_User">
+    <End Role="User" Type="VincontrolModel.Store.User" Multiplicity="0..1" />
+    <End Role="Appraisal" Type="VincontrolModel.Store.Appraisal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Appraisal">
+        <PropertyRef Name="VinGenieUserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Appraisal_User1">
+    <End Role="User" Type="VincontrolModel.Store.User" Multiplicity="0..1" />
+    <End Role="Appraisal" Type="VincontrolModel.Store.Appraisal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Appraisal">
+        <PropertyRef Name="AppraisalById" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Appraisal_Vehicle">
+    <End Role="Vehicle" Type="VincontrolModel.Store.Vehicle" Multiplicity="1" />
+    <End Role="Appraisal" Type="VincontrolModel.Store.Appraisal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicle">
+        <PropertyRef Name="VehicleId" />
+      </Principal>
+      <Dependent Role="Appraisal">
+        <PropertyRef Name="VehicleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AppraisalDealerActivity_DealerActivitySubTypeCode1">
+    <End Role="DealerActivitySubTypeCode" Type="VincontrolModel.Store.DealerActivitySubTypeCode" Multiplicity="1" />
+    <End Role="AppraisalDealerActivity" Type="VincontrolModel.Store.AppraisalDealerActivity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DealerActivitySubTypeCode">
+        <PropertyRef Name="DealerActivitySubTypeCodeId" />
+      </Principal>
+      <Dependent Role="AppraisalDealerActivity">
+        <PropertyRef Name="DealerActivitySubTypeCodeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AppraisalDealerActivity_User">
+    <End Role="User" Type="VincontrolModel.Store.User" Multiplicity="1" />
+    <End Role="AppraisalDealerActivity" Type="VincontrolModel.Store.AppraisalDealerActivity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="AppraisalDealerActivity">
+        <PropertyRef Name="UserStampId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AutoTraderDealer_Dealer">
+    <End Role="Dealer" Type="VincontrolModel.Store.Dealer" Multiplicity="0..1" />
+    <End Role="AutoTraderDealer" Type="VincontrolModel.Store.AutoTraderDealer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="AutoTraderDealer">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BucketJumpHistory_VehicleStatusCode">
+    <End Role="VehicleStatusCode" Type="VincontrolModel.Store.VehicleStatusCode" Multiplicity="1" />
+    <End Role="BucketJumpHistory" Type="VincontrolModel.Store.BucketJumpHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VehicleStatusCode">
+        <PropertyRef Name="VehicleStatusCodeId" />
+      </Principal>
+      <Dependent Role="BucketJumpHistory">
+        <PropertyRef Name="VehicleStatusCodeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ChartSelection_VehicleStatusCode">
+    <End Role="VehicleStatusCode" Type="VincontrolModel.Store.VehicleStatusCode" Multiplicity="1" />
+    <End Role="ChartSelection" Type="VincontrolModel.Store.ChartSelection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VehicleStatusCode">
+        <PropertyRef Name="VehicleStatusCodeId" />
+      </Principal>
+      <Dependent Role="ChartSelection">
+        <PropertyRef Name="VehicleStatusCodeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DataFeedDealer_DataFeedCompany">
+    <End Role="DataFeedCompany" Type="VincontrolModel.Store.DataFeedCompany" Multiplicity="1" />
+    <End Role="DataFeedDealer" Type="VincontrolModel.Store.DataFeedDealer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DataFeedCompany">
+        <PropertyRef Name="DataFeedCompanyId" />
+      </Principal>
+      <Dependent Role="DataFeedDealer">
+        <PropertyRef Name="DataFeedCompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DataFeedDealer_Dealer">
+    <End Role="Dealer" Type="VincontrolModel.Store.Dealer" Multiplicity="1" />
+    <End Role="DataFeedDealer" Type="VincontrolModel.Store.DataFeedDealer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="DataFeedDealer">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DealerActivity_DealerActivity">
+    <End Role="DealerActivitySubTypeCode" Type="VincontrolModel.Store.DealerActivitySubTypeCode" Multiplicity="1" />
+    <End Role="InventoryDealerActivity" Type="VincontrolModel.Store.InventoryDealerActivity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DealerActivitySubTypeCode">
+        <PropertyRef Name="DealerActivitySubTypeCodeId" />
+      </Principal>
+      <Dependent Role="InventoryDealerActivity">
+        <PropertyRef Name="DealerActivitySubTypeCodeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Dealership_DealerGroupId">
+    <End Role="DealerGroup" Type="VincontrolModel.Store.DealerGroup" Multiplicity="0..1" />
+    <End Role="Dealer" Type="VincontrolModel.Store.Dealer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DealerGroup">
+        <PropertyRef Name="DealerGroupId" />
+      </Principal>
+      <Dependent Role="Dealer">
+        <PropertyRef Name="DealerGroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EbayAd_DealershipID">
+    <End Role="Dealer" Type="VincontrolModel.Store.Dealer" Multiplicity="1" />
+    <End Role="Ebay" Type="VincontrolModel.Store.Ebay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="Ebay">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EbayAd_InventoryId">
+    <End Role="Inventory" Type="VincontrolModel.Store.Inventory" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Ebay" Type="VincontrolModel.Store.Ebay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inventory">
+        <PropertyRef Name="InventoryId" />
+      </Principal>
+      <Dependent Role="Ebay">
+        <PropertyRef Name="InventoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FlyerShareDealerActivity_Dealer">
+    <End Role="Dealer" Type="VincontrolModel.Store.Dealer" Multiplicity="1" />
+    <End Role="FlyerShareDealerActivity" Type="VincontrolModel.Store.FlyerShareDealerActivity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="FlyerShareDealerActivity">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FlyerShareDealerActivity_User">
+    <End Role="User" Type="VincontrolModel.Store.User" Multiplicity="1" />
+    <End Role="FlyerShareDealerActivity" Type="VincontrolModel.Store.FlyerShareDealerActivity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="FlyerShareDealerActivity">
+        <PropertyRef Name="UserStampId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inventory_Appraisal">
+    <End Role="Appraisal" Type="VincontrolModel.Store.Appraisal" Multiplicity="0..1" />
+    <End Role="Inventory" Type="VincontrolModel.Store.Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Appraisal">
+        <PropertyRef Name="AppraisalId" />
+      </Principal>
+      <Dependent Role="Inventory">
+        <PropertyRef Name="AppraisalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inventory_Dealer">
+    <End Role="Dealer" Type="VincontrolModel.Store.Dealer" Multiplicity="1" />
+    <End Role="Inventory" Type="VincontrolModel.Store.Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="Inventory">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inventory_DescriptionTemplate">
+    <End Role="DescriptionTemplate" Type="VincontrolModel.Store.DescriptionTemplate" Multiplicity="0..1" />
+    <End Role="Inventory" Type="VincontrolModel.Store.Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DescriptionTemplate">
+        <PropertyRef Name="DescriptionTemplateId" />
+      </Principal>
+      <Dependent Role="Inventory">
+        <PropertyRef Name="DescriptionTemplateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inventory_InventoryStatusCode">
+    <End Role="InventoryStatusCode" Type="VincontrolModel.Store.InventoryStatusCode" Multiplicity="1" />
+    <End Role="Inventory" Type="VincontrolModel.Store.Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="InventoryStatusCode">
+        <PropertyRef Name="InventoryStatusCodeId" />
+      </Principal>
+      <Dependent Role="Inventory">
+        <PropertyRef Name="InventoryStatusCodeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inventory_User">
+    <End Role="User" Type="VincontrolModel.Store.User" Multiplicity="0..1" />
+    <End Role="Inventory" Type="VincontrolModel.Store.Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Inventory">
+        <PropertyRef Name="AddToInventoryById" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inventory_Vehicle">
+    <End Role="Vehicle" Type="VincontrolModel.Store.Vehicle" Multiplicity="1" />
+    <End Role="Inventory" Type="VincontrolModel.Store.Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicle">
+        <PropertyRef Name="VehicleId" />
+      </Principal>
+      <Dependent Role="Inventory">
+        <PropertyRef Name="VehicleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InventoryDealerActivity_User">
+    <End Role="User" Type="VincontrolModel.Store.User" Multiplicity="0..1" />
+    <End Role="InventoryDealerActivity" Type="VincontrolModel.Store.InventoryDealerActivity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="InventoryDealerActivity">
+        <PropertyRef Name="UserStampId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KellyBlueBook_VehicleStatusCode">
+    <End Role="VehicleStatusCode" Type="VincontrolModel.Store.VehicleStatusCode" Multiplicity="0..1" />
+    <End Role="KellyBlueBook" Type="VincontrolModel.Store.KellyBlueBook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VehicleStatusCode">
+        <PropertyRef Name="VehicleStatusCodeId" />
+      </Principal>
+      <Dependent Role="KellyBlueBook">
+        <PropertyRef Name="VehicleStatusCodeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ManheimValue_VehicleStatusCode">
+    <End Role="VehicleStatusCode" Type="VincontrolModel.Store.VehicleStatusCode" Multiplicity="0..1" />
+    <End Role="ManheimValue" Type="VincontrolModel.Store.ManheimValue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VehicleStatusCode">
+        <PropertyRef Name="VehicleStatusCodeId" />
+      </Principal>
+      <Dependent Role="ManheimValue">
+        <PropertyRef Name="VehicleStatusCodeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Models_YearMakes">
+    <End Role="YearMake" Type="VincontrolModel.Store.YearMake" Multiplicity="1" />
+    <End Role="Model" Type="VincontrolModel.Store.Model" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="YearMake">
+        <PropertyRef Name="YearMakeId" />
+      </Principal>
+      <Dependent Role="Model">
+        <PropertyRef Name="YearMakeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NotificationSetting_DealershipId">
+    <End Role="Dealer" Type="VincontrolModel.Store.Dealer" Multiplicity="1" />
+    <End Role="NotificationSetting" Type="VincontrolModel.Store.NotificationSetting" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="NotificationSetting">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PriceChangeHistory_VehicleStatusCode">
+    <End Role="VehicleStatusCode" Type="VincontrolModel.Store.VehicleStatusCode" Multiplicity="1" />
+    <End Role="PriceChangeHistory" Type="VincontrolModel.Store.PriceChangeHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VehicleStatusCode">
+        <PropertyRef Name="VehicleStatusCodeId" />
+      </Principal>
+      <Dependent Role="PriceChangeHistory">
+        <PropertyRef Name="VehicleStatusCodeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rebate_DealershipID">
+    <End Role="Dealer" Type="VincontrolModel.Store.Dealer" Multiplicity="1" />
+    <End Role="Rebate" Type="VincontrolModel.Store.Rebate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="Rebate">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Setting_DealershipId">
+    <End Role="Dealer" Type="VincontrolModel.Store.Dealer" Multiplicity="1" />
+    <End Role="Setting" Type="VincontrolModel.Store.Setting" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="Setting">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SoldoutInventory_Dealer">
+    <End Role="Dealer" Type="VincontrolModel.Store.Dealer" Multiplicity="1" />
+    <End Role="SoldoutInventory" Type="VincontrolModel.Store.SoldoutInventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="SoldoutInventory">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SoldoutInventory_DealershipID">
+    <End Role="Vehicle" Type="VincontrolModel.Store.Vehicle" Multiplicity="1" />
+    <End Role="SoldoutInventory" Type="VincontrolModel.Store.SoldoutInventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicle">
+        <PropertyRef Name="VehicleId" />
+      </Principal>
+      <Dependent Role="SoldoutInventory">
+        <PropertyRef Name="VehicleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SoldoutInventory_SoldoutInventory">
+    <End Role="User" Type="VincontrolModel.Store.User" Multiplicity="0..1" />
+    <End Role="SoldoutInventory" Type="VincontrolModel.Store.SoldoutInventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="SoldoutInventory">
+        <PropertyRef Name="AddToInventoryById" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SoldoutInventory_VehicleStatusCode1">
+    <End Role="InventoryStatusCode" Type="VincontrolModel.Store.InventoryStatusCode" Multiplicity="0..1" />
+    <End Role="SoldoutInventory" Type="VincontrolModel.Store.SoldoutInventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="InventoryStatusCode">
+        <PropertyRef Name="InventoryStatusCodeId" />
+      </Principal>
+      <Dependent Role="SoldoutInventory">
+        <PropertyRef Name="InventoryStatusCodeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TradeInComment_DealershipID">
+    <End Role="Dealer" Type="VincontrolModel.Store.Dealer" Multiplicity="1" />
+    <End Role="TradeInComment" Type="VincontrolModel.Store.TradeInComment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="TradeInComment">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TradeInCustomer_Dealer">
+    <End Role="Dealer" Type="VincontrolModel.Store.Dealer" Multiplicity="1" />
+    <End Role="TradeInCustomer" Type="VincontrolModel.Store.TradeInCustomer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="TradeInCustomer">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TrimOption_Option">
+    <End Role="Option" Type="VincontrolModel.Store.Option" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TrimOption" Type="VincontrolModel.Store.TrimOption" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Option">
+        <PropertyRef Name="OptionId" />
+      </Principal>
+      <Dependent Role="TrimOption">
+        <PropertyRef Name="OptionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TrimOptions_Trims">
+    <End Role="Trim" Type="VincontrolModel.Store.Trim" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TrimOption" Type="VincontrolModel.Store.TrimOption" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Trim">
+        <PropertyRef Name="TrimId" />
+      </Principal>
+      <Dependent Role="TrimOption">
+        <PropertyRef Name="TrimId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TrimPackages_Trims">
+    <End Role="Package" Type="VincontrolModel.Store.Package" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TrimPackage" Type="VincontrolModel.Store.TrimPackage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Package">
+        <PropertyRef Name="PackageId" />
+      </Principal>
+      <Dependent Role="TrimPackage">
+        <PropertyRef Name="PackageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Trims_Models">
+    <End Role="Model" Type="VincontrolModel.Store.Model" Multiplicity="1" />
+    <End Role="Trim" Type="VincontrolModel.Store.Trim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Model">
+        <PropertyRef Name="ModelId" />
+      </Principal>
+      <Dependent Role="Trim">
+        <PropertyRef Name="ModelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_DealerGroup">
+    <End Role="DealerGroup" Type="VincontrolModel.Store.DealerGroup" Multiplicity="0..1" />
+    <End Role="User" Type="VincontrolModel.Store.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DealerGroup">
+        <PropertyRef Name="DealerGroupId" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="DealerGroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserDealerActivity_DealerActivitySubTypeCode">
+    <End Role="DealerActivitySubTypeCode" Type="VincontrolModel.Store.DealerActivitySubTypeCode" Multiplicity="1" />
+    <End Role="UserDealerActivity" Type="VincontrolModel.Store.UserDealerActivity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DealerActivitySubTypeCode">
+        <PropertyRef Name="DealerActivitySubTypeCodeId" />
+      </Principal>
+      <Dependent Role="UserDealerActivity">
+        <PropertyRef Name="DealerActivitySubTypeCodeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserDealerActivity_User">
+    <End Role="User" Type="VincontrolModel.Store.User" Multiplicity="0..1" />
+    <End Role="UserDealerActivity" Type="VincontrolModel.Store.UserDealerActivity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserDealerActivity">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserDealerActivity_User1">
+    <End Role="User" Type="VincontrolModel.Store.User" Multiplicity="0..1" />
+    <End Role="UserDealerActivity" Type="VincontrolModel.Store.UserDealerActivity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserDealerActivity">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserInfo_Group">
+    <End Role="Role" Type="VincontrolModel.Store.Role" Multiplicity="1" />
+    <End Role="UserPermission" Type="VincontrolModel.Store.UserPermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="UserPermission">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserNotification_DealershipID">
+    <End Role="Dealer" Type="VincontrolModel.Store.Dealer" Multiplicity="1" />
+    <End Role="UserNotification" Type="VincontrolModel.Store.UserNotification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="UserNotification">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserNotification_User">
+    <End Role="User" Type="VincontrolModel.Store.User" Multiplicity="1" />
+    <End Role="UserNotification" Type="VincontrolModel.Store.UserNotification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserNotification">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserPermission_User">
+    <End Role="User" Type="VincontrolModel.Store.User" Multiplicity="1" />
+    <End Role="UserPermission" Type="VincontrolModel.Store.UserPermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserPermission">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_DealershipID">
+    <End Role="Dealer" Type="VincontrolModel.Store.Dealer" Multiplicity="1" />
+    <End Role="UserPermission" Type="VincontrolModel.Store.UserPermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="UserPermission">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_vincontroldealershipbuttons_vincontrolbuttons">
+    <End Role="Button" Type="VincontrolModel.Store.Button" Multiplicity="1" />
+    <End Role="DealerButton" Type="VincontrolModel.Store.DealerButton" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Button">
+        <PropertyRef Name="ButtonId" />
+      </Principal>
+      <Dependent Role="DealerButton">
+        <PropertyRef Name="ButtonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_vincontroldealershipbuttons_vincontrolgroups">
+    <End Role="Role" Type="VincontrolModel.Store.Role" Multiplicity="1" />
+    <End Role="DealerButton" Type="VincontrolModel.Store.DealerButton" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="DealerButton">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WarrantyType_DealershipId">
+    <End Role="Dealer" Type="VincontrolModel.Store.Dealer" Multiplicity="1" />
+    <End Role="WarrantyType" Type="VincontrolModel.Store.WarrantyType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="WarrantyType">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_YearMakes_Makes">
+    <End Role="Make" Type="VincontrolModel.Store.Make" Multiplicity="1" />
+    <End Role="YearMake" Type="VincontrolModel.Store.YearMake" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Make">
+        <PropertyRef Name="MakeId" />
+      </Principal>
+      <Dependent Role="YearMake">
+        <PropertyRef Name="MakeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="manheimmakemodels$model">
+    <End Role="ManheimModel" Type="VincontrolModel.Store.ManheimModel" Multiplicity="1" />
+    <End Role="ManheimMakeModel" Type="VincontrolModel.Store.ManheimMakeModel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ManheimModel">
+        <PropertyRef Name="ManheimModelId" />
+      </Principal>
+      <Dependent Role="ManheimMakeModel">
+        <PropertyRef Name="ModelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="manheimmakemodels$yearmake">
+    <End Role="ManheimYearMake" Type="VincontrolModel.Store.ManheimYearMake" Multiplicity="1" />
+    <End Role="ManheimMakeModel" Type="VincontrolModel.Store.ManheimMakeModel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ManheimYearMake">
+        <PropertyRef Name="ManheimYearMakeId" />
+      </Principal>
+      <Dependent Role="ManheimMakeModel">
+        <PropertyRef Name="YearMakeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="manheimmodeltrims$makemodel">
+    <End Role="ManheimMakeModel" Type="VincontrolModel.Store.ManheimMakeModel" Multiplicity="1" />
+    <End Role="ManheimModelTrim" Type="VincontrolModel.Store.ManheimModelTrim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ManheimMakeModel">
+        <PropertyRef Name="ManheimMakeModelId" />
+      </Principal>
+      <Dependent Role="ManheimModelTrim">
+        <PropertyRef Name="MakeModelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="manheimmodeltrims$trim">
+    <End Role="ManheimTrim" Type="VincontrolModel.Store.ManheimTrim" Multiplicity="1" />
+    <End Role="ManheimModelTrim" Type="VincontrolModel.Store.ManheimModelTrim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ManheimTrim">
+        <PropertyRef Name="ManheimTrimId" />
+      </Principal>
+      <Dependent Role="ManheimModelTrim">
+        <PropertyRef Name="TrimId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="manheimyearmakes$makeId">
+    <End Role="ManheimMake" Type="VincontrolModel.Store.ManheimMake" Multiplicity="1" />
+    <End Role="ManheimYearMake" Type="VincontrolModel.Store.ManheimYearMake" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ManheimMake">
+        <PropertyRef Name="ManheimMakeId" />
+      </Principal>
+      <Dependent Role="ManheimYearMake">
+        <PropertyRef Name="MakeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vincontrolanswers$fk_answers_appraisals">
+    <End Role="Appraisal" Type="VincontrolModel.Store.Appraisal" Multiplicity="1" />
+    <End Role="Answer" Type="VincontrolModel.Store.Answer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Appraisal">
+        <PropertyRef Name="AppraisalId" />
+      </Principal>
+      <Dependent Role="Answer">
+        <PropertyRef Name="AppraisalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vincontrolanswers$fk_answers_questions">
+    <End Role="Question" Type="VincontrolModel.Store.Question" Multiplicity="1" />
+    <End Role="Answer" Type="VincontrolModel.Store.Answer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Question">
+        <PropertyRef Name="QuestionId" />
+      </Principal>
+      <Dependent Role="Answer">
+        <PropertyRef Name="QuestionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vincontrolgrouppermissions$fk_grouppermission_group">
+    <End Role="Role" Type="VincontrolModel.Store.Role" Multiplicity="1" />
+    <End Role="RolePermission" Type="VincontrolModel.Store.RolePermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="RolePermission">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vincontrolgrouppermissions$fk_grouppermission_permissioncodes">
+    <End Role="PermissionCode" Type="VincontrolModel.Store.PermissionCode" Multiplicity="1" />
+    <End Role="RolePermission" Type="VincontrolModel.Store.RolePermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PermissionCode">
+        <PropertyRef Name="PermissionCodeId" />
+      </Principal>
+      <Dependent Role="RolePermission">
+        <PropertyRef Name="PermissionCodeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vincontrolgrouppermissions$fk_grouppermission_permissionvalue">
+    <End Role="PermissionValue" Type="VincontrolModel.Store.PermissionValue" Multiplicity="1" />
+    <End Role="RolePermission" Type="VincontrolModel.Store.RolePermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PermissionValue">
+        <PropertyRef Name="PermissionValueId" />
+      </Principal>
+      <Dependent Role="RolePermission">
+        <PropertyRef Name="PermissionValueId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vincontrolquestions$fk_questions_questiontype">
+    <End Role="QuestionType" Type="VincontrolModel.Store.QuestionType" Multiplicity="1" />
+    <End Role="Question" Type="VincontrolModel.Store.Question" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="QuestionType">
+        <PropertyRef Name="QuestionTypeId" />
+      </Principal>
+      <Dependent Role="Question">
+        <PropertyRef Name="QuestionTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vincontrolsentence$fk_sentence_type">
+    <End Role="SentenceType" Type="VincontrolModel.Store.SentenceType" Multiplicity="1" />
+    <End Role="Sentence" Type="VincontrolModel.Store.Sentence" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SentenceType">
+        <PropertyRef Name="SentenceTypeId" />
+      </Principal>
+      <Dependent Role="Sentence">
+        <PropertyRef Name="SentenceTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vincontrolwalkaround$fk_walkaround_appraisal">
+    <End Role="Appraisal" Type="VincontrolModel.Store.Appraisal" Multiplicity="1" />
+    <End Role="Walkaround" Type="VincontrolModel.Store.Walkaround" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Appraisal">
+        <PropertyRef Name="AppraisalId" />
+      </Principal>
+      <Dependent Role="Walkaround">
+        <PropertyRef Name="AppraisalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

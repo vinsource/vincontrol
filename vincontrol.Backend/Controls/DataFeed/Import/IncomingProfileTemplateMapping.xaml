@@ -1,0 +1,109 @@
+﻿<UserControl x:Class="vincontrol.Backend.Controls.DataFeed.Import.IncomingProfileTemplateMapping"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+              xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:Collections="clr-namespace:System.Collections;assembly=mscorlib"
+             xmlns:CustomControls="clr-namespace:vincontrol.Backend.CustomControls"
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" mc:Ignorable="d">
+    <UserControl.Resources>
+
+
+    </UserControl.Resources>
+    <Grid>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Grid Width="983">
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="3.5*"></ColumnDefinition>
+                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                        <ColumnDefinition Width="3.5*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Profile Name" Height="28"  Width="70" ></TextBlock>
+
+                    <TextBox Height="23" Width="120" Grid.Column="1" HorizontalAlignment="Left"   Text="{Binding ProfileName, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}"/>
+                    <TextBlock Text="Company Name" Height="28"  Width="90" Grid.Row="1" ></TextBlock>
+                    <TextBox Height="23" Width="120" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left"   Text="{Binding CompanyName}"/>
+                    <TextBlock Text="Format" Height="28" Grid.Column="2" HorizontalAlignment="Left"/>
+                    <TextBlock Text="Delimiter"  Height="28" Width="64" Grid.Row="1" Grid.Column="2"  HorizontalAlignment="Left" ></TextBlock>
+
+                    <StackPanel Orientation="Horizontal" Grid.Column="3">
+                        <ComboBox  Margin="0 0 30 0"  HorizontalAlignment="Left" Grid.Row="1" Grid.Column="1" Height="23" Width="120" ItemsSource="{Binding FileTypeList}" SelectedValuePath="Key"  DisplayMemberPath="Value" SelectedValue="{Binding ExportFileType, ValidatesOnDataErrors=True, NotifyOnValidationError=True}"  />
+
+
+                        <CheckBox Content="Header" Height="16"  IsChecked="{Binding HasHeader}"/>
+
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="3">
+                        <ComboBox  Margin="0 0 30 0" Height="23" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left"  Width="120" ItemsSource="{Binding DelimiterList}" SelectedValuePath="Key"  DisplayMemberPath="Value" SelectedValue="{Binding Delimiter, ValidatesOnDataErrors=True, NotifyOnValidationError=True}" />
+                        <CheckBox Content="Mapping in code" Height="16" Grid.Column="2" IsChecked="{Binding UseSpecificMapping}"/>
+                    </StackPanel>
+                    <TextBlock Text="Schema URL" Height="28"  Width="64" Grid.Column="4"/>
+                    <TextBox Height="23" HorizontalAlignment="Left" IsEnabled="{Binding IsAdded}" Text="{Binding SchemaURL, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}"  Width="270" Grid.Column="5"  />
+
+                    <TextBlock Text="Running Time" Height="28" Width="80" Grid.Row="1" Grid.Column="4"  ></TextBlock>
+                    <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="5">
+                        <CustomControls:TimePicker x:Name="timePicker" SelectedItem="{Binding RunningTime, Mode=TwoWay}" ></CustomControls:TimePicker>
+                        <TextBlock Padding="40,0,0,0" Text="Frequency" Height="28"  />
+                        <CustomControls:NumericControl Maximum="24" Minimum="1" Value="{Binding Frequency}" Height="23"  Width="50"></CustomControls:NumericControl>
+
+                    </StackPanel>
+                    <TextBlock Text="Email" Height="28" Width="80" Grid.Row="2"  ></TextBlock>
+                    <TextBox Height="23" Width="120" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left"   Text="{Binding Email, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}"/>
+
+                    <Button Content="Mapping From Url" Padding="5" HorizontalAlignment="Left" Grid.Row="3" Grid.Column="1" Command="{Binding ImportSampleFileFromFeedUrlCommand}"  Visibility="{Binding IsAdded, Converter={StaticResource VisibilityConverter}}" Width="113"></Button>
+
+                </Grid>
+            </StackPanel>
+            <!--<DataGrid Height="550"  IsEnabled="{Binding UseSpecificMapping, Converter={StaticResource RevertConverter}}"  Width="955" ItemsSource="{Binding Mappings}" AutoGenerateColumns="False" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="XML Field/Order" Binding="{Binding XMLField}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Sample Data" Binding="{Binding SampleData}"></DataGridTextColumn>
+                <DataGridTemplateColumn Header="DB Field"  >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ComboBox Margin="5" ItemsSource="{Binding DBFields}" MinWidth="100" DisplayMemberPath="Text" SelectedValuePath="Text" SelectedValue="{Binding DBField}">
+                            </ComboBox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn  >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Replace" Command="{Binding OpenReplaceWindowCommand}"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn  >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button  Content="Condition" Command="{Binding OpenConditionWindowCommand}"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>-->
+            <ListBox IsEnabled="{Binding UseSpecificMapping, Converter={StaticResource RevertConverter}}"  Height="500"  HorizontalAlignment="Stretch" Margin="0,10,0,0"  VerticalAlignment="Top" ItemTemplate="{StaticResource ImportMappingListDataTemplate}" ItemsSource="{Binding Mappings}">
+            </ListBox>
+            <StackPanel Orientation="Horizontal">
+                <CheckBox  Content="Discontinue" Height="16" Width="100" IsChecked="{Binding Discontinue}" Visibility="{Binding IsAdded, Converter={StaticResource HiddenConverter}}" />
+                <Button Content="Save Profile" Height="23" Margin="5"  Width="75"  Command="{Binding SaveMappingCommand}" Visibility="{Binding IsAdded, Converter={StaticResource HiddenConverter}}"/>
+                <Button Content="Create Profile" Height="23"  Margin="5"  Command="{Binding CreateProfileCommand}" Visibility="{Binding IsAdded, Converter={StaticResource VisibilityConverter}}" />
+            </StackPanel>
+        </StackPanel>
+        <xctk:BusyIndicator VerticalAlignment="Stretch"  HorizontalAlignment="Stretch" Margin="6,0,6,66" IsBusy="{Binding IsBusy}"></xctk:BusyIndicator>
+
+    </Grid>
+
+
+</UserControl>

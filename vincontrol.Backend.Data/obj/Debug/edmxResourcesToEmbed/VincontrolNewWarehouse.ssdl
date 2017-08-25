@@ -1,0 +1,2127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="vincontrolwarehouseModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="vincontrolwarehouseModelStoreContainer">
+    <EntitySet Name="alerts" EntityType="vincontrolwarehouseModel.Store.alerts" store:Type="Tables" store:Schema="dbo" store:Name="alerts">
+      <DefiningQuery>SELECT 
+      [alerts].[Id] AS [Id], 
+      [alerts].[AlertType] AS [AlertType]
+      FROM [dbo].[alerts] AS [alerts]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="answers" EntityType="vincontrolwarehouseModel.Store.answers" store:Type="Tables" store:Schema="dbo" store:Name="answers">
+      <DefiningQuery>SELECT 
+      [answers].[Id] AS [Id], 
+      [answers].[QuestionId] AS [QuestionId], 
+      [answers].[AnswerContent] AS [AnswerContent], 
+      [answers].[Comment] AS [Comment], 
+      [answers].[AppraisalInfoId] AS [AppraisalInfoId]
+      FROM [dbo].[answers] AS [answers]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="autotradertrims" EntityType="vincontrolwarehouseModel.Store.autotradertrims" store:Type="Tables" store:Schema="dbo" store:Name="autotradertrims">
+      <DefiningQuery>SELECT 
+      [autotradertrims].[Id] AS [Id], 
+      [autotradertrims].[Value] AS [Value], 
+      [autotradertrims].[AutoTraderId] AS [AutoTraderId], 
+      [autotradertrims].[ModelId] AS [ModelId], 
+      [autotradertrims].[TrimId] AS [TrimId]
+      FROM [dbo].[autotradertrims] AS [autotradertrims]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="backendusers" EntityType="vincontrolwarehouseModel.Store.backendusers" store:Type="Tables" store:Schema="dbo" store:Name="backendusers">
+      <DefiningQuery>SELECT 
+      [backendusers].[Id] AS [Id], 
+      [backendusers].[UserName] AS [UserName], 
+      [backendusers].[Password] AS [Password], 
+      [backendusers].[Role] AS [Role]
+      FROM [dbo].[backendusers] AS [backendusers]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="backendusertracking" EntityType="vincontrolwarehouseModel.Store.backendusertracking" store:Type="Tables" store:Schema="dbo" store:Name="backendusertracking">
+      <DefiningQuery>SELECT 
+      [backendusertracking].[Id] AS [Id], 
+      [backendusertracking].[ActionBy] AS [ActionBy], 
+      [backendusertracking].[Action] AS [Action], 
+      [backendusertracking].[ActionDate] AS [ActionDate], 
+      [backendusertracking].[ItemId] AS [ItemId], 
+      [backendusertracking].[ItemName] AS [ItemName], 
+      [backendusertracking].[ItemType] AS [ItemType]
+      FROM [dbo].[backendusertracking] AS [backendusertracking]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="bannercustomers" EntityType="vincontrolwarehouseModel.Store.bannercustomers" store:Type="Tables" store:Schema="dbo" store:Name="bannercustomers">
+      <DefiningQuery>SELECT 
+      [bannercustomers].[Id] AS [Id], 
+      [bannercustomers].[FirstName] AS [FirstName], 
+      [bannercustomers].[LastName] AS [LastName], 
+      [bannercustomers].[Email] AS [Email], 
+      [bannercustomers].[Phone] AS [Phone], 
+      [bannercustomers].[Year] AS [Year], 
+      [bannercustomers].[Make] AS [Make], 
+      [bannercustomers].[Model] AS [Model], 
+      [bannercustomers].[Trim] AS [Trim], 
+      [bannercustomers].[Mileage] AS [Mileage], 
+      [bannercustomers].[SelectedOptions] AS [SelectedOptions], 
+      [bannercustomers].[Condition] AS [Condition], 
+      [bannercustomers].[KBBVehicelId] AS [KBBVehicelId], 
+      [bannercustomers].[Vin] AS [Vin], 
+      [bannercustomers].[TradeInFairValue] AS [TradeInFairValue], 
+      [bannercustomers].[TradeInMaxValue] AS [TradeInMaxValue], 
+      [bannercustomers].[CreatedDate] AS [CreatedDate], 
+      [bannercustomers].[VarianceValue] AS [VarianceValue], 
+      [bannercustomers].[Source] AS [Source], 
+      [bannercustomers].[TradeInStatus] AS [TradeInStatus], 
+      [bannercustomers].[EmailContent] AS [EmailContent], 
+      [bannercustomers].[ADFEmailContent] AS [ADFEmailContent], 
+      [bannercustomers].[Receivers] AS [Receivers], 
+      [bannercustomers].[DealerId] AS [DealerId]
+      FROM [dbo].[bannercustomers] AS [bannercustomers]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="bb_kbb" EntityType="vincontrolwarehouseModel.Store.bb_kbb" store:Type="Tables" store:Schema="dbo" store:Name="bb_kbb">
+      <DefiningQuery>SELECT 
+      [bb_kbb].[TrimName] AS [TrimName], 
+      [bb_kbb].[FairPrice] AS [FairPrice], 
+      [bb_kbb].[GoodPrice] AS [GoodPrice], 
+      [bb_kbb].[DateAdded] AS [DateAdded], 
+      [bb_kbb].[Type] AS [Type], 
+      [bb_kbb].[LastUpdated] AS [LastUpdated], 
+      [bb_kbb].[ExpiredDate] AS [ExpiredDate], 
+      [bb_kbb].[VeryGoodPrice] AS [VeryGoodPrice], 
+      [bb_kbb].[Id] AS [Id], 
+      [bb_kbb].[Vin] AS [Vin], 
+      [bb_kbb].[MigrateAutoId] AS [MigrateAutoId]
+      FROM [dbo].[bb_kbb] AS [bb_kbb]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="bb_kbb_kbb" EntityType="vincontrolwarehouseModel.Store.bb_kbb_kbb" store:Type="Tables" store:Schema="dbo" store:Name="bb_kbb_kbb">
+      <DefiningQuery>SELECT 
+      [bb_kbb_kbb].[BaseWholeSale] AS [BaseWholeSale], 
+      [bb_kbb_kbb].[MileageAdjustment] AS [MileageAdjustment], 
+      [bb_kbb_kbb].[WholeSale] AS [WholeSale], 
+      [bb_kbb_kbb].[TrimId] AS [TrimId], 
+      [bb_kbb_kbb].[Id] AS [Id]
+      FROM [dbo].[bb_kbb_kbb] AS [bb_kbb_kbb]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="buyerguides" EntityType="vincontrolwarehouseModel.Store.buyerguides" store:Type="Tables" store:Schema="dbo" store:Name="buyerguides">
+      <DefiningQuery>SELECT 
+      [buyerguides].[Id] AS [Id], 
+      [buyerguides].[Make] AS [Make], 
+      [buyerguides].[Model] AS [Model], 
+      [buyerguides].[Year] AS [Year], 
+      [buyerguides].[VinNumber] AS [VinNumber], 
+      [buyerguides].[StockNumber] AS [StockNumber], 
+      [buyerguides].[WarrantyType] AS [WarrantyType], 
+      [buyerguides].[IsAsWarranty] AS [IsAsWarranty], 
+      [buyerguides].[IsWarranty] AS [IsWarranty], 
+      [buyerguides].[IsFullWarranty] AS [IsFullWarranty], 
+      [buyerguides].[IsLimitedWarranty] AS [IsLimitedWarranty], 
+      [buyerguides].[IsServiceContract] AS [IsServiceContract], 
+      [buyerguides].[SystemCovered] AS [SystemCovered], 
+      [buyerguides].[Durations] AS [Durations], 
+      [buyerguides].[PercentageOfLabor] AS [PercentageOfLabor], 
+      [buyerguides].[PercentageOfPart] AS [PercentageOfPart], 
+      [buyerguides].[PriorRental] AS [PriorRental], 
+      [buyerguides].[IsMixed] AS [IsMixed], 
+      [buyerguides].[SystemCoveredAndDurations] AS [SystemCoveredAndDurations], 
+      [buyerguides].[LanguageVersion] AS [LanguageVersion], 
+      [buyerguides].[DealerId] AS [DealerId]
+      FROM [dbo].[buyerguides] AS [buyerguides]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="carfaxes" EntityType="vincontrolwarehouseModel.Store.carfaxes" store:Type="Tables" store:Schema="dbo" store:Name="carfaxes">
+      <DefiningQuery>SELECT 
+      [carfaxes].[Id] AS [Id], 
+      [carfaxes].[Vin] AS [Vin], 
+      [carfaxes].[Owner] AS [Owner], 
+      [carfaxes].[ServiceRecord] AS [ServiceRecord], 
+      [carfaxes].[WindowSticker] AS [WindowSticker], 
+      [carfaxes].[DateAdded] AS [DateAdded], 
+      [carfaxes].[LastUpdated] AS [LastUpdated], 
+      [carfaxes].[ExpiredDate] AS [ExpiredDate], 
+      [carfaxes].[Vehicle_Id] AS [Vehicle_Id]
+      FROM [dbo].[carfaxes] AS [carfaxes]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="carscomtrims" EntityType="vincontrolwarehouseModel.Store.carscomtrims" store:Type="Tables" store:Schema="dbo" store:Name="carscomtrims">
+      <DefiningQuery>SELECT 
+      [carscomtrims].[Id] AS [Id], 
+      [carscomtrims].[Value] AS [Value], 
+      [carscomtrims].[CarscomId] AS [CarscomId], 
+      [carscomtrims].[ModelId] AS [ModelId], 
+      [carscomtrims].[TrimId] AS [TrimId]
+      FROM [dbo].[carscomtrims] AS [carscomtrims]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="chartselections" EntityType="vincontrolwarehouseModel.Store.chartselections" store:Type="Tables" store:Schema="dbo" store:Name="chartselections">
+      <DefiningQuery>SELECT 
+      [chartselections].[IsCarsCom] AS [IsCarsCom], 
+      [chartselections].[Options] AS [Options], 
+      [chartselections].[Trims] AS [Trims], 
+      [chartselections].[IsCertified] AS [IsCertified], 
+      [chartselections].[IsAll] AS [IsAll], 
+      [chartselections].[IsFranchise] AS [IsFranchise], 
+      [chartselections].[IsIndependant] AS [IsIndependant], 
+      [chartselections].[Screen] AS [Screen], 
+      [chartselections].[SourceType] AS [SourceType], 
+      [chartselections].[Id] AS [Id], 
+      [chartselections].[InventoryId] AS [InventoryId]
+      FROM [dbo].[chartselections] AS [chartselections]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="customers" EntityType="vincontrolwarehouseModel.Store.customers" store:Type="Tables" store:Schema="dbo" store:Name="customers">
+      <DefiningQuery>SELECT 
+      [customers].[Id] AS [Id], 
+      [customers].[FirstName] AS [FirstName], 
+      [customers].[LastName] AS [LastName], 
+      [customers].[Street] AS [Street], 
+      [customers].[State] AS [State], 
+      [customers].[Country] AS [Country], 
+      [customers].[ZipPostal] AS [ZipPostal], 
+      [customers].[Phone] AS [Phone], 
+      [customers].[Email] AS [Email], 
+      [customers].[Address] AS [Address], 
+      [customers].[City] AS [City]
+      FROM [dbo].[customers] AS [customers]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="datafeedcredentials" EntityType="vincontrolwarehouseModel.Store.datafeedcredentials" store:Type="Tables" store:Schema="dbo" store:Name="datafeedcredentials">
+      <DefiningQuery>SELECT 
+      [datafeedcredentials].[Id] AS [Id], 
+      [datafeedcredentials].[UserName] AS [UserName], 
+      [datafeedcredentials].[Password] AS [Password], 
+      [datafeedcredentials].[DataFeedLookup_Id] AS [DataFeedLookup_Id]
+      FROM [dbo].[datafeedcredentials] AS [datafeedcredentials]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="datafeedlookups" EntityType="vincontrolwarehouseModel.Store.datafeedlookups" store:Type="Tables" store:Schema="dbo" store:Name="datafeedlookups">
+      <DefiningQuery>SELECT 
+      [datafeedlookups].[Id] AS [Id], 
+      [datafeedlookups].[DataFeedProfileId] AS [DataFeedProfileId], 
+      [datafeedlookups].[DealerId] AS [DealerId], 
+      [datafeedlookups].[PartnerId] AS [PartnerId], 
+      [datafeedlookups].[UseSpecificMapping] AS [UseSpecificMapping], 
+      [datafeedlookups].[ExportDataProfileMapping_Id] AS [ExportDataProfileMapping_Id], 
+      [datafeedlookups].[FileName] AS [FileName], 
+      [datafeedlookups].[Discontinued] AS [Discontinued]
+      FROM [dbo].[datafeedlookups] AS [datafeedlookups]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="datafeedprofiles" EntityType="vincontrolwarehouseModel.Store.datafeedprofiles" store:Type="Tables" store:Schema="dbo" store:Name="datafeedprofiles">
+      <DefiningQuery>SELECT 
+      [datafeedprofiles].[Id] AS [Id], 
+      [datafeedprofiles].[CompanyName] AS [CompanyName], 
+      [datafeedprofiles].[FTPServer] AS [FTPServer], 
+      [datafeedprofiles].[DefaultUserName] AS [DefaultUserName], 
+      [datafeedprofiles].[DefaultPassword] AS [DefaultPassword], 
+      [datafeedprofiles].[Frequency] AS [Frequency], 
+      [datafeedprofiles].[ExportDataProfileMapping_Id] AS [ExportDataProfileMapping_Id], 
+      [datafeedprofiles].[Email] AS [Email], 
+      [datafeedprofiles].[FileName] AS [FileName], 
+      [datafeedprofiles].[RunningTime] AS [RunningTime], 
+      [datafeedprofiles].[Bundle] AS [Bundle], 
+      [datafeedprofiles].[Mapping] AS [Mapping], 
+      [datafeedprofiles].[Discontinued] AS [Discontinued], 
+      [datafeedprofiles].[ProfileName] AS [ProfileName]
+      FROM [dbo].[datafeedprofiles] AS [datafeedprofiles]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="dealergroups" EntityType="vincontrolwarehouseModel.Store.dealergroups" store:Type="Tables" store:Schema="dbo" store:Name="dealergroups">
+      <DefiningQuery>SELECT 
+      [dealergroups].[Id] AS [Id], 
+      [dealergroups].[GroupAbbr] AS [GroupAbbr], 
+      [dealergroups].[Name] AS [Name], 
+      [dealergroups].[DateAdded] AS [DateAdded]
+      FROM [dbo].[dealergroups] AS [dealergroups]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="dealers" EntityType="vincontrolwarehouseModel.Store.dealers" store:Type="Tables" store:Schema="dbo" store:Name="dealers">
+      <DefiningQuery>SELECT 
+      [dealers].[Id] AS [Id], 
+      [dealers].[DealerGroupId] AS [DealerGroupId], 
+      [dealers].[Name] AS [Name], 
+      [dealers].[Address] AS [Address], 
+      [dealers].[City] AS [City], 
+      [dealers].[State] AS [State], 
+      [dealers].[Country] AS [Country], 
+      [dealers].[ZipPostal] AS [ZipPostal], 
+      [dealers].[Phone] AS [Phone], 
+      [dealers].[LeadsEmail] AS [LeadsEmail], 
+      [dealers].[EmailFormatId] AS [EmailFormatId], 
+      [dealers].[Latitude] AS [Latitude], 
+      [dealers].[Longtitude] AS [Longtitude], 
+      [dealers].[WebPageUrl] AS [WebPageUrl], 
+      [dealers].[WebInventoryUrl] AS [WebInventoryUrl]
+      FROM [dbo].[dealers] AS [dealers]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="dealers_dealersetting" EntityType="vincontrolwarehouseModel.Store.dealers_dealersetting" store:Type="Tables" store:Schema="dbo" store:Name="dealers_dealersetting">
+      <DefiningQuery>SELECT 
+      [dealers_dealersetting].[InventorySorting] AS [InventorySorting], 
+      [dealers_dealersetting].[SoldOut] AS [SoldOut], 
+      [dealers_dealersetting].[DealershipId] AS [DealershipId], 
+      [dealers_dealersetting].[Cragislist] AS [Cragislist], 
+      [dealers_dealersetting].[CraigslistPassword] AS [CraigslistPassword], 
+      [dealers_dealersetting].[Ebay] AS [Ebay], 
+      [dealers_dealersetting].[EbayPassword] AS [EbayPassword], 
+      [dealers_dealersetting].[CarFax] AS [CarFax], 
+      [dealers_dealersetting].[CarFaxPassword] AS [CarFaxPassword], 
+      [dealers_dealersetting].[Manheim] AS [Manheim], 
+      [dealers_dealersetting].[ManheimPassword] AS [ManheimPassword], 
+      [dealers_dealersetting].[KellyBlueBook] AS [KellyBlueBook], 
+      [dealers_dealersetting].[KellyPassword] AS [KellyPassword], 
+      [dealers_dealersetting].[BlackBook] AS [BlackBook], 
+      [dealers_dealersetting].[BlackBookPassword] AS [BlackBookPassword], 
+      [dealers_dealersetting].[AutoCheck] AS [AutoCheck], 
+      [dealers_dealersetting].[AutoCheckPassword] AS [AutoCheckPassword], 
+      [dealers_dealersetting].[AppraisalNotification] AS [AppraisalNotification], 
+      [dealers_dealersetting].[WholeNotification] AS [WholeNotification], 
+      [dealers_dealersetting].[InventoryNotification] AS [InventoryNotification], 
+      [dealers_dealersetting].[C24Hnotification] AS [C24Hnotification], 
+      [dealers_dealersetting].[NoteNotification] AS [NoteNotification], 
+      [dealers_dealersetting].[PriceChangeNotification] AS [PriceChangeNotification], 
+      [dealers_dealersetting].[AgeingBucketNotification] AS [AgeingBucketNotification], 
+      [dealers_dealersetting].[DefaultStockImageUrl] AS [DefaultStockImageUrl], 
+      [dealers_dealersetting].[OverideStockImage] AS [OverideStockImage], 
+      [dealers_dealersetting].[DealerInfo] AS [DealerInfo], 
+      [dealers_dealersetting].[DealerWarranty] AS [DealerWarranty], 
+      [dealers_dealersetting].[TermsAndCondition] AS [TermsAndCondition], 
+      [dealers_dealersetting].[EbayToken] AS [EbayToken], 
+      [dealers_dealersetting].[EbayInventoryURL] AS [EbayInventoryURL], 
+      [dealers_dealersetting].[CreditURL] AS [CreditURL], 
+      [dealers_dealersetting].[WebSiteURL] AS [WebSiteURL], 
+      [dealers_dealersetting].[ContactUsURL] AS [ContactUsURL], 
+      [dealers_dealersetting].[FacebookURL] AS [FacebookURL], 
+      [dealers_dealersetting].[LogoURL] AS [LogoURL], 
+      [dealers_dealersetting].[ContactPerson] AS [ContactPerson], 
+      [dealers_dealersetting].[RetailPrice] AS [RetailPrice], 
+      [dealers_dealersetting].[DealerDiscount] AS [DealerDiscount], 
+      [dealers_dealersetting].[ManufacturerReabte] AS [ManufacturerReabte], 
+      [dealers_dealersetting].[SalePrice] AS [SalePrice], 
+      [dealers_dealersetting].[ManufacturerWarranty] AS [ManufacturerWarranty], 
+      [dealers_dealersetting].[ManufacturerWarrantySpanish] AS [ManufacturerWarrantySpanish], 
+      [dealers_dealersetting].[ManufacturerWarrantyDuration] AS [ManufacturerWarrantyDuration], 
+      [dealers_dealersetting].[DealerCertified] AS [DealerCertified], 
+      [dealers_dealersetting].[DealerCertifiedSpanish] AS [DealerCertifiedSpanish], 
+      [dealers_dealersetting].[DealerCertifiedDuration] AS [DealerCertifiedDuration], 
+      [dealers_dealersetting].[ManufacturerCertified] AS [ManufacturerCertified], 
+      [dealers_dealersetting].[ManufacturerCertifiedSpanish] AS [ManufacturerCertifiedSpanish], 
+      [dealers_dealersetting].[ManufacturerCertifiedDuration] AS [ManufacturerCertifiedDuration], 
+      [dealers_dealersetting].[ShippingInfo] AS [ShippingInfo], 
+      [dealers_dealersetting].[AsIsWarranty] AS [AsIsWarranty], 
+      [dealers_dealersetting].[AsIsWarrantySpanish] AS [AsIsWarrantySpanish], 
+      [dealers_dealersetting].[StartDescriptionSentence] AS [StartDescriptionSentence], 
+      [dealers_dealersetting].[EndDescriptionSentence] AS [EndDescriptionSentence], 
+      [dealers_dealersetting].[AuctionSentence] AS [AuctionSentence], 
+      [dealers_dealersetting].[FirstTimeRangeBucketJump] AS [FirstTimeRangeBucketJump], 
+      [dealers_dealersetting].[SecondTimeRangeBucketJump] AS [SecondTimeRangeBucketJump], 
+      [dealers_dealersetting].[IntervalBucketJump] AS [IntervalBucketJump], 
+      [dealers_dealersetting].[RetailPriceText] AS [RetailPriceText], 
+      [dealers_dealersetting].[DealerDiscountText] AS [DealerDiscountText], 
+      [dealers_dealersetting].[ManufactureReabateText] AS [ManufactureReabateText], 
+      [dealers_dealersetting].[SalePriceText] AS [SalePriceText], 
+      [dealers_dealersetting].[HeaderOverlayURL] AS [HeaderOverlayURL], 
+      [dealers_dealersetting].[FooterOverlayURL] AS [FooterOverlayURL], 
+      [dealers_dealersetting].[MarketPriceRangeChangeNotification] AS [MarketPriceRangeChangeNotification], 
+      [dealers_dealersetting].[PriceVariance] AS [PriceVariance], 
+      [dealers_dealersetting].[Id] AS [Id], 
+      [dealers_dealersetting].[DiscontinuedImport] AS [DiscontinuedImport], 
+      [dealers_dealersetting].[DiscontinuedExport] AS [DiscontinuedExport], 
+      [dealers_dealersetting].[ImportDataFeedProfileId] AS [ImportDataFeedProfileId], 
+      [dealers_dealersetting].[ImportFeedUrl] AS [ImportFeedUrl]
+      FROM [dbo].[dealers_dealersetting] AS [dealers_dealersetting]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="descriptions" EntityType="vincontrolwarehouseModel.Store.descriptions" store:Type="Tables" store:Schema="dbo" store:Name="descriptions">
+      <DefiningQuery>SELECT 
+      [descriptions].[VinControlDescriptionId] AS [VinControlDescriptionId], 
+      [descriptions].[Title] AS [Title], 
+      [descriptions].[YesNo] AS [YesNo], 
+      [descriptions].[DescriptionSentence] AS [DescriptionSentence]
+      FROM [dbo].[descriptions] AS [descriptions]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ebays" EntityType="vincontrolwarehouseModel.Store.ebays" store:Type="Tables" store:Schema="dbo" store:Name="ebays">
+      <DefiningQuery>SELECT 
+      [ebays].[ServiceId] AS [ServiceId], 
+      [ebays].[AdUrl] AS [AdUrl], 
+      [ebays].[StartTime] AS [StartTime], 
+      [ebays].[EndTime] AS [EndTime], 
+      [ebays].[Id] AS [Id], 
+      [ebays].[Inventory_Id] AS [Inventory_Id]
+      FROM [dbo].[ebays] AS [ebays]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="exportdataprofilemappings" EntityType="vincontrolwarehouseModel.Store.exportdataprofilemappings" store:Type="Tables" store:Schema="dbo" store:Name="exportdataprofilemappings">
+      <DefiningQuery>SELECT 
+      [exportdataprofilemappings].[Id] AS [Id], 
+      [exportdataprofilemappings].[Mapping] AS [Mapping], 
+      [exportdataprofilemappings].[UseHeader] AS [UseHeader]
+      FROM [dbo].[exportdataprofilemappings] AS [exportdataprofilemappings]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="exportservicehistories" EntityType="vincontrolwarehouseModel.Store.exportservicehistories" store:Type="Tables" store:Schema="dbo" store:Name="exportservicehistories">
+      <DefiningQuery>SELECT 
+      [exportservicehistories].[Id] AS [Id], 
+      [exportservicehistories].[RunningDate] AS [RunningDate], 
+      [exportservicehistories].[Status] AS [Status], 
+      [exportservicehistories].[ArchiveFileName] AS [ArchiveFileName], 
+      [exportservicehistories].[DatafeedProfileId] AS [DatafeedProfileId], 
+      [exportservicehistories].[DealerId] AS [DealerId], 
+      [exportservicehistories].[CompletedDate] AS [CompletedDate]
+      FROM [dbo].[exportservicehistories] AS [exportservicehistories]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="fueltypes" EntityType="vincontrolwarehouseModel.Store.fueltypes" store:Type="Tables" store:Schema="dbo" store:Name="fueltypes">
+      <DefiningQuery>SELECT 
+      [fueltypes].[Id] AS [Id], 
+      [fueltypes].[Value] AS [Value]
+      FROM [dbo].[fueltypes] AS [fueltypes]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="grouppermissions" EntityType="vincontrolwarehouseModel.Store.grouppermissions" store:Type="Tables" store:Schema="dbo" store:Name="grouppermissions">
+      <DefiningQuery>SELECT 
+      [grouppermissions].[Id] AS [Id], 
+      [grouppermissions].[GroupId] AS [GroupId], 
+      [grouppermissions].[PermissionCode] AS [PermissionCode], 
+      [grouppermissions].[PermissionValue] AS [PermissionValue], 
+      [grouppermissions].[UserStamp] AS [UserStamp], 
+      [grouppermissions].[DateStamp] AS [DateStamp]
+      FROM [dbo].[grouppermissions] AS [grouppermissions]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="groups" EntityType="vincontrolwarehouseModel.Store.groups" store:Type="Tables" store:Schema="dbo" store:Name="groups">
+      <DefiningQuery>SELECT 
+      [groups].[Id] AS [Id], 
+      [groups].[GroupName] AS [GroupName], 
+      [groups].[GroupNote] AS [GroupNote], 
+      [groups].[UserStamp] AS [UserStamp], 
+      [groups].[DateStamp] AS [DateStamp]
+      FROM [dbo].[groups] AS [groups]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="importdatafeedprofilefiles" EntityType="vincontrolwarehouseModel.Store.importdatafeedprofilefiles" store:Type="Tables" store:Schema="dbo" store:Name="importdatafeedprofilefiles">
+      <DefiningQuery>SELECT 
+      [importdatafeedprofilefiles].[Id] AS [Id], 
+      [importdatafeedprofilefiles].[Status] AS [Status], 
+      [importdatafeedprofilefiles].[Description] AS [Description], 
+      [importdatafeedprofilefiles].[ImportDataFeedProfileId] AS [ImportDataFeedProfileId], 
+      [importdatafeedprofilefiles].[FileName] AS [FileName], 
+      [importdatafeedprofilefiles].[DeveloperEmails] AS [DeveloperEmails]
+      FROM [dbo].[importdatafeedprofilefiles] AS [importdatafeedprofilefiles]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="importdatafeedprofiles" EntityType="vincontrolwarehouseModel.Store.importdatafeedprofiles" store:Type="Tables" store:Schema="dbo" store:Name="importdatafeedprofiles">
+      <DefiningQuery>SELECT 
+      [importdatafeedprofiles].[Id] AS [Id], 
+      [importdatafeedprofiles].[CompanyName] AS [CompanyName], 
+      [importdatafeedprofiles].[Mapping] AS [Mapping], 
+      [importdatafeedprofiles].[SampleData] AS [SampleData], 
+      [importdatafeedprofiles].[RunningTime] AS [RunningTime], 
+      [importdatafeedprofiles].[Frequency] AS [Frequency], 
+      [importdatafeedprofiles].[Discontinued] AS [Discontinued], 
+      [importdatafeedprofiles].[SchemaURL] AS [SchemaURL], 
+      [importdatafeedprofiles].[ProfileName] AS [ProfileName], 
+      [importdatafeedprofiles].[UseMappingInCode] AS [UseMappingInCode], 
+      [importdatafeedprofiles].[Email] AS [Email]
+      FROM [dbo].[importdatafeedprofiles] AS [importdatafeedprofiles]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="importservicehistories" EntityType="vincontrolwarehouseModel.Store.importservicehistories" store:Type="Tables" store:Schema="dbo" store:Name="importservicehistories">
+      <DefiningQuery>SELECT 
+      [importservicehistories].[RunningDate] AS [RunningDate], 
+      [importservicehistories].[Status] AS [Status], 
+      [importservicehistories].[ArchiveFileName] AS [ArchiveFileName], 
+      [importservicehistories].[Id] AS [Id], 
+      [importservicehistories].[DealerId] AS [DealerId], 
+      [importservicehistories].[ImportProfileId] AS [ImportProfileId], 
+      [importservicehistories].[CompletedDate] AS [CompletedDate]
+      FROM [dbo].[importservicehistories] AS [importservicehistories]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="inventory" EntityType="vincontrolwarehouseModel.Store.inventory" store:Type="Tables" store:Schema="dbo" store:Name="inventory">
+      <DefiningQuery>SELECT 
+      [inventory].[Id] AS [Id], 
+      [inventory].[StockNumber] AS [StockNumber], 
+      [inventory].[MSRP] AS [MSRP], 
+      [inventory].[Mileage] AS [Mileage], 
+      [inventory].[ACV] AS [ACV], 
+      [inventory].[DealerCost] AS [DealerCost], 
+      [inventory].[SalePrice] AS [SalePrice], 
+      [inventory].[ExteriorColor] AS [ExteriorColor], 
+      [inventory].[InteriorColor] AS [InteriorColor], 
+      [inventory].[Options] AS [Options], 
+      [inventory].[Packages] AS [Packages], 
+      [inventory].[Description] AS [Description], 
+      [inventory].[Images] AS [Images], 
+      [inventory].[Condition] AS [Condition], 
+      [inventory].[VehicleId] AS [VehicleId], 
+      [inventory].[DealerId] AS [DealerId], 
+      [inventory].[Certified] AS [Certified], 
+      [inventory].[CarFaxOwner] AS [CarFaxOwner], 
+      [inventory].[KBBOptionsId] AS [KBBOptionsId], 
+      [inventory].[KBBTrimsId] AS [KBBTrimsId], 
+      [inventory].[AddedBy] AS [AddedBy], 
+      [inventory].[AddedDate] AS [AddedDate], 
+      [inventory].[LastModifiedBy] AS [LastModifiedBy], 
+      [inventory].[LastModifiedDate] AS [LastModifiedDate], 
+      [inventory].[MigrateListingId] AS [MigrateListingId], 
+      [inventory].[MigrateAppraisalId] AS [MigrateAppraisalId], 
+      [inventory].[MigrateSoldoutListingId] AS [MigrateSoldoutListingId], 
+      [inventory].[MigrateWholesaleListingId] AS [MigrateWholesaleListingId], 
+      [inventory].[StatusId] AS [StatusId], 
+      [inventory].[ColorCode] AS [ColorCode], 
+      [inventory].[MarketRange] AS [MarketRange], 
+      [inventory].[MarketLowestPrice] AS [MarketLowestPrice], 
+      [inventory].[MarketHighestPrice] AS [MarketHighestPrice], 
+      [inventory].[MarketAveragePrice] AS [MarketAveragePrice], 
+      [inventory].[NumberOfCar] AS [NumberOfCar], 
+      [inventory].[Timestamp] AS [Timestamp], 
+      [inventory].[IsAppraisal] AS [IsAppraisal]
+      FROM [dbo].[inventory] AS [inventory]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="inventory_appraisalinfo" EntityType="vincontrolwarehouseModel.Store.inventory_appraisalinfo" store:Type="Tables" store:Schema="dbo" store:Name="inventory_appraisalinfo">
+      <DefiningQuery>SELECT 
+      [inventory_appraisalinfo].[PackageDescription] AS [PackageDescription], 
+      [inventory_appraisalinfo].[InventoryAdd] AS [InventoryAdd], 
+      [inventory_appraisalinfo].[AppraisalType] AS [AppraisalType], 
+      [inventory_appraisalinfo].[Note] AS [Note], 
+      [inventory_appraisalinfo].[Signature] AS [Signature], 
+      [inventory_appraisalinfo].[UserStamp] AS [UserStamp], 
+      [inventory_appraisalinfo].[DateStamp] AS [DateStamp], 
+      [inventory_appraisalinfo].[Photo] AS [Photo], 
+      [inventory_appraisalinfo].[SignatureURL] AS [SignatureURL], 
+      [inventory_appraisalinfo].[IsFromVinGenie] AS [IsFromVinGenie], 
+      [inventory_appraisalinfo].[Id] AS [Id]
+      FROM [dbo].[inventory_appraisalinfo] AS [inventory_appraisalinfo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="inventory_inventoryinfo" EntityType="vincontrolwarehouseModel.Store.inventory_inventoryinfo" store:Type="Tables" store:Schema="dbo" store:Name="inventory_inventoryinfo">
+      <DefiningQuery>SELECT 
+      [inventory_inventoryinfo].[DealershipZipCode] AS [DealershipZipCode], 
+      [inventory_inventoryinfo].[WarrantyInfo] AS [WarrantyInfo], 
+      [inventory_inventoryinfo].[RetailPrice] AS [RetailPrice], 
+      [inventory_inventoryinfo].[WindowStickerPrice] AS [WindowStickerPrice], 
+      [inventory_inventoryinfo].[DealerDiscount] AS [DealerDiscount], 
+      [inventory_inventoryinfo].[ManufacturerRebate] AS [ManufacturerRebate], 
+      [inventory_inventoryinfo].[PriorRental] AS [PriorRental], 
+      [inventory_inventoryinfo].[Recon] AS [Recon], 
+      [inventory_inventoryinfo].[Disclaimer] AS [Disclaimer], 
+      [inventory_inventoryinfo].[DealerDemo] AS [DealerDemo], 
+      [inventory_inventoryinfo].[Unwind] AS [Unwind], 
+      [inventory_inventoryinfo].[IsFeatured] AS [IsFeatured], 
+      [inventory_inventoryinfo].[Thumnails] AS [Thumnails], 
+      [inventory_inventoryinfo].[DateInStock] AS [DateInStock], 
+      [inventory_inventoryinfo].[CarRanking] AS [CarRanking], 
+      [inventory_inventoryinfo].[Id] AS [Id]
+      FROM [dbo].[inventory_inventoryinfo] AS [inventory_inventoryinfo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="inventoryhistories" EntityType="vincontrolwarehouseModel.Store.inventoryhistories" store:Type="Tables" store:Schema="dbo" store:Name="inventoryhistories">
+      <DefiningQuery>SELECT 
+      [inventoryhistories].[Id] AS [Id], 
+      [inventoryhistories].[StockNumber] AS [StockNumber], 
+      [inventoryhistories].[MSRP] AS [MSRP], 
+      [inventoryhistories].[Mileage] AS [Mileage], 
+      [inventoryhistories].[ACV] AS [ACV], 
+      [inventoryhistories].[DealerCost] AS [DealerCost], 
+      [inventoryhistories].[SalePrice] AS [SalePrice], 
+      [inventoryhistories].[ExteriorColor] AS [ExteriorColor], 
+      [inventoryhistories].[InteriorColor] AS [InteriorColor], 
+      [inventoryhistories].[Options] AS [Options], 
+      [inventoryhistories].[Packages] AS [Packages], 
+      [inventoryhistories].[Description] AS [Description], 
+      [inventoryhistories].[Images] AS [Images], 
+      [inventoryhistories].[Thumbnails] AS [Thumbnails], 
+      [inventoryhistories].[LastUpdated] AS [LastUpdated], 
+      [inventoryhistories].[Condition] AS [Condition], 
+      [inventoryhistories].[VehicleId] AS [VehicleId], 
+      [inventoryhistories].[DealerId] AS [DealerId], 
+      [inventoryhistories].[StatusId] AS [StatusId], 
+      [inventoryhistories].[Certified] AS [Certified], 
+      [inventoryhistories].[CarFaxOwner] AS [CarFaxOwner], 
+      [inventoryhistories].[KBBOptionsId] AS [KBBOptionsId], 
+      [inventoryhistories].[KBBTrimsId] AS [KBBTrimsId], 
+      [inventoryhistories].[AddedBy] AS [AddedBy], 
+      [inventoryhistories].[AddedDate] AS [AddedDate], 
+      [inventoryhistories].[LastModifiedBy] AS [LastModifiedBy], 
+      [inventoryhistories].[LastModifiedDate] AS [LastModifiedDate], 
+      [inventoryhistories].[InventoryId] AS [InventoryId], 
+      [inventoryhistories].[Timestamp] AS [Timestamp]
+      FROM [dbo].[inventoryhistories] AS [inventoryhistories]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="kbboptions" EntityType="vincontrolwarehouseModel.Store.kbboptions" store:Type="Tables" store:Schema="dbo" store:Name="kbboptions">
+      <DefiningQuery>SELECT 
+      [kbboptions].[Id] AS [Id], 
+      [kbboptions].[KBBId] AS [KBBId], 
+      [kbboptions].[Value] AS [Value]
+      FROM [dbo].[kbboptions] AS [kbboptions]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="kbbpackages" EntityType="vincontrolwarehouseModel.Store.kbbpackages" store:Type="Tables" store:Schema="dbo" store:Name="kbbpackages">
+      <DefiningQuery>SELECT 
+      [kbbpackages].[Id] AS [Id], 
+      [kbbpackages].[KBBId] AS [KBBId], 
+      [kbbpackages].[Value] AS [Value]
+      FROM [dbo].[kbbpackages] AS [kbbpackages]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="kbbtrimoptions" EntityType="vincontrolwarehouseModel.Store.kbbtrimoptions" store:Type="Tables" store:Schema="dbo" store:Name="kbbtrimoptions">
+      <DefiningQuery>SELECT 
+      [kbbtrimoptions].[Id] AS [Id], 
+      [kbbtrimoptions].[TrimId] AS [TrimId], 
+      [kbbtrimoptions].[OptionId] AS [OptionId]
+      FROM [dbo].[kbbtrimoptions] AS [kbbtrimoptions]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="kbbtrimpackages" EntityType="vincontrolwarehouseModel.Store.kbbtrimpackages" store:Type="Tables" store:Schema="dbo" store:Name="kbbtrimpackages">
+      <DefiningQuery>SELECT 
+      [kbbtrimpackages].[Id] AS [Id], 
+      [kbbtrimpackages].[TrimId] AS [TrimId], 
+      [kbbtrimpackages].[PackageId] AS [PackageId]
+      FROM [dbo].[kbbtrimpackages] AS [kbbtrimpackages]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="kbbtrims" EntityType="vincontrolwarehouseModel.Store.kbbtrims" store:Type="Tables" store:Schema="dbo" store:Name="kbbtrims">
+      <DefiningQuery>SELECT 
+      [kbbtrims].[Id] AS [Id], 
+      [kbbtrims].[Value] AS [Value], 
+      [kbbtrims].[KBBId] AS [KBBId], 
+      [kbbtrims].[ModelId] AS [ModelId]
+      FROM [dbo].[kbbtrims] AS [kbbtrims]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="makes" EntityType="vincontrolwarehouseModel.Store.makes" store:Type="Tables" store:Schema="dbo" store:Name="makes">
+      <DefiningQuery>SELECT 
+      [makes].[Id] AS [Id], 
+      [makes].[Value] AS [Value], 
+      [makes].[ChromeId] AS [ChromeId], 
+      [makes].[Source] AS [Source], 
+      [makes].[ManheimServiceId] AS [ManheimServiceId], 
+      [makes].[KBBServiceId] AS [KBBServiceId]
+      FROM [dbo].[makes] AS [makes]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="models" EntityType="vincontrolwarehouseModel.Store.models" store:Type="Tables" store:Schema="dbo" store:Name="models">
+      <DefiningQuery>SELECT 
+      [models].[Id] AS [Id], 
+      [models].[Value] AS [Value], 
+      [models].[ChromeId] AS [ChromeId], 
+      [models].[YearMakeId] AS [YearMakeId], 
+      [models].[Source] AS [Source], 
+      [models].[ManheimServiceId] AS [ManheimServiceId], 
+      [models].[KBBServiceId] AS [KBBServiceId]
+      FROM [dbo].[models] AS [models]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="notes" EntityType="vincontrolwarehouseModel.Store.notes" store:Type="Tables" store:Schema="dbo" store:Name="notes">
+      <DefiningQuery>SELECT 
+      [notes].[Id] AS [Id], 
+      [notes].[UserId] AS [UserId], 
+      [notes].[InventoryId] AS [InventoryId], 
+      [notes].[Content] AS [Content], 
+      [notes].[AddedDate] AS [AddedDate], 
+      [notes].[StatusId] AS [StatusId], 
+      [notes].[Timestamp] AS [Timestamp]
+      FROM [dbo].[notes] AS [notes]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="options" EntityType="vincontrolwarehouseModel.Store.options" store:Type="Tables" store:Schema="dbo" store:Name="options">
+      <DefiningQuery>SELECT 
+      [options].[Id] AS [Id], 
+      [options].[ChromeId] AS [ChromeId], 
+      [options].[Value] AS [Value], 
+      [options].[Price] AS [Price], 
+      [options].[Description] AS [Description], 
+      [options].[FullValue] AS [FullValue]
+      FROM [dbo].[options] AS [options]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="packages" EntityType="vincontrolwarehouseModel.Store.packages" store:Type="Tables" store:Schema="dbo" store:Name="packages">
+      <DefiningQuery>SELECT 
+      [packages].[Id] AS [Id], 
+      [packages].[ChromeId] AS [ChromeId], 
+      [packages].[Value] AS [Value], 
+      [packages].[Price] AS [Price], 
+      [packages].[Description] AS [Description], 
+      [packages].[FullValue] AS [FullValue]
+      FROM [dbo].[packages] AS [packages]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="permissioncodes" EntityType="vincontrolwarehouseModel.Store.permissioncodes" store:Type="Tables" store:Schema="dbo" store:Name="permissioncodes">
+      <DefiningQuery>SELECT 
+      [permissioncodes].[Id] AS [Id], 
+      [permissioncodes].[Code] AS [Code], 
+      [permissioncodes].[PermissionText] AS [PermissionText], 
+      [permissioncodes].[PermissionCategory] AS [PermissionCategory], 
+      [permissioncodes].[Indent] AS [Indent], 
+      [permissioncodes].[ScreenOrder] AS [ScreenOrder], 
+      [permissioncodes].[UserStamp] AS [UserStamp], 
+      [permissioncodes].[DateStamp] AS [DateStamp]
+      FROM [dbo].[permissioncodes] AS [permissioncodes]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="permissionvalues" EntityType="vincontrolwarehouseModel.Store.permissionvalues" store:Type="Tables" store:Schema="dbo" store:Name="permissionvalues">
+      <DefiningQuery>SELECT 
+      [permissionvalues].[Id] AS [Id], 
+      [permissionvalues].[Value] AS [Value], 
+      [permissionvalues].[UserStamp] AS [UserStamp], 
+      [permissionvalues].[DateStamp] AS [DateStamp]
+      FROM [dbo].[permissionvalues] AS [permissionvalues]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="questions" EntityType="vincontrolwarehouseModel.Store.questions" store:Type="Tables" store:Schema="dbo" store:Name="questions">
+      <DefiningQuery>SELECT 
+      [questions].[Id] AS [Id], 
+      [questions].[Title] AS [Title], 
+      [questions].[QuestionTypeId] AS [QuestionTypeId], 
+      [questions].[ShortDescription] AS [ShortDescription], 
+      [questions].[Order] AS [Order]
+      FROM [dbo].[questions] AS [questions]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="questiontypes" EntityType="vincontrolwarehouseModel.Store.questiontypes" store:Type="Tables" store:Schema="dbo" store:Name="questiontypes">
+      <DefiningQuery>SELECT 
+      [questiontypes].[Id] AS [Id], 
+      [questiontypes].[Name] AS [Name], 
+      [questiontypes].[Description] AS [Description], 
+      [questiontypes].[Option] AS [Option], 
+      [questiontypes].[Code] AS [Code], 
+      [questiontypes].[Unit] AS [Unit]
+      FROM [dbo].[questiontypes] AS [questiontypes]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="rebates" EntityType="vincontrolwarehouseModel.Store.rebates" store:Type="Tables" store:Schema="dbo" store:Name="rebates">
+      <DefiningQuery>SELECT 
+      [rebates].[Id] AS [Id], 
+      [rebates].[Year] AS [Year], 
+      [rebates].[Make] AS [Make], 
+      [rebates].[Model] AS [Model], 
+      [rebates].[Trim] AS [Trim], 
+      [rebates].[BodyType] AS [BodyType], 
+      [rebates].[ManufactureReabte] AS [ManufactureReabte], 
+      [rebates].[Disclaimer] AS [Disclaimer], 
+      [rebates].[DateAdded] AS [DateAdded], 
+      [rebates].[LastUpdated] AS [LastUpdated], 
+      [rebates].[DealerId] AS [DealerId]
+      FROM [dbo].[rebates] AS [rebates]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="status" EntityType="vincontrolwarehouseModel.Store.status" store:Type="Tables" store:Schema="dbo" store:Name="status">
+      <DefiningQuery>SELECT 
+      [status].[Id] AS [Id], 
+      [status].[Name] AS [Name]
+      FROM [dbo].[status] AS [status]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="styles" EntityType="vincontrolwarehouseModel.Store.styles" store:Type="Tables" store:Schema="dbo" store:Name="styles">
+      <DefiningQuery>SELECT 
+      [styles].[Id] AS [Id], 
+      [styles].[Value] AS [Value], 
+      [styles].[StyleWithoutTrim] AS [StyleWithoutTrim], 
+      [styles].[TrimId] AS [TrimId]
+      FROM [dbo].[styles] AS [styles]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tradeinbannercomments" EntityType="vincontrolwarehouseModel.Store.tradeinbannercomments" store:Type="Tables" store:Schema="dbo" store:Name="tradeinbannercomments">
+      <DefiningQuery>SELECT 
+      [tradeinbannercomments].[Id] AS [Id], 
+      [tradeinbannercomments].[Content] AS [Content], 
+      [tradeinbannercomments].[Name] AS [Name], 
+      [tradeinbannercomments].[City] AS [City], 
+      [tradeinbannercomments].[State] AS [State], 
+      [tradeinbannercomments].[DateComment] AS [DateComment], 
+      [tradeinbannercomments].[DateUpdated] AS [DateUpdated], 
+      [tradeinbannercomments].[DealerId] AS [DealerId]
+      FROM [dbo].[tradeinbannercomments] AS [tradeinbannercomments]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="transactions" EntityType="vincontrolwarehouseModel.Store.transactions" store:Type="Tables" store:Schema="dbo" store:Name="transactions">
+      <DefiningQuery>SELECT 
+      [transactions].[Id] AS [Id], 
+      [transactions].[TransactionDate] AS [TransactionDate], 
+      [transactions].[CustomerId] AS [CustomerId], 
+      [transactions].[UserId] AS [UserId], 
+      [transactions].[InventoryId] AS [InventoryId], 
+      [transactions].[TransactionTypeId] AS [TransactionTypeId]
+      FROM [dbo].[transactions] AS [transactions]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="transactiontypes" EntityType="vincontrolwarehouseModel.Store.transactiontypes" store:Type="Tables" store:Schema="dbo" store:Name="transactiontypes">
+      <DefiningQuery>SELECT 
+      [transactiontypes].[Id] AS [Id], 
+      [transactiontypes].[Type] AS [Type]
+      FROM [dbo].[transactiontypes] AS [transactiontypes]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="trimoptions" EntityType="vincontrolwarehouseModel.Store.trimoptions" store:Type="Tables" store:Schema="dbo" store:Name="trimoptions">
+      <DefiningQuery>SELECT 
+      [trimoptions].[Id] AS [Id], 
+      [trimoptions].[TrimId] AS [TrimId], 
+      [trimoptions].[OptionId] AS [OptionId]
+      FROM [dbo].[trimoptions] AS [trimoptions]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="trimpackages" EntityType="vincontrolwarehouseModel.Store.trimpackages" store:Type="Tables" store:Schema="dbo" store:Name="trimpackages">
+      <DefiningQuery>SELECT 
+      [trimpackages].[Id] AS [Id], 
+      [trimpackages].[TrimId] AS [TrimId], 
+      [trimpackages].[PackageId] AS [PackageId]
+      FROM [dbo].[trimpackages] AS [trimpackages]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="trims" EntityType="vincontrolwarehouseModel.Store.trims" store:Type="Tables" store:Schema="dbo" store:Name="trims">
+      <DefiningQuery>SELECT 
+      [trims].[Id] AS [Id], 
+      [trims].[Value] AS [Value], 
+      [trims].[ChromeId] AS [ChromeId], 
+      [trims].[ModelId] AS [ModelId], 
+      [trims].[IsDefault] AS [IsDefault], 
+      [trims].[KBBTrimId] AS [KBBTrimId], 
+      [trims].[ManheimTrimId] AS [ManheimTrimId]
+      FROM [dbo].[trims] AS [trims]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="truckcategories" EntityType="vincontrolwarehouseModel.Store.truckcategories" store:Type="Tables" store:Schema="dbo" store:Name="truckcategories">
+      <DefiningQuery>SELECT 
+      [truckcategories].[Id] AS [Id], 
+      [truckcategories].[Value] AS [Value], 
+      [truckcategories].[TruckTypeId] AS [TruckTypeId]
+      FROM [dbo].[truckcategories] AS [truckcategories]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="truckclasses" EntityType="vincontrolwarehouseModel.Store.truckclasses" store:Type="Tables" store:Schema="dbo" store:Name="truckclasses">
+      <DefiningQuery>SELECT 
+      [truckclasses].[Id] AS [Id], 
+      [truckclasses].[Value] AS [Value], 
+      [truckclasses].[Text] AS [Text]
+      FROM [dbo].[truckclasses] AS [truckclasses]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="trucktypes" EntityType="vincontrolwarehouseModel.Store.trucktypes" store:Type="Tables" store:Schema="dbo" store:Name="trucktypes">
+      <DefiningQuery>SELECT 
+      [trucktypes].[Id] AS [Id], 
+      [trucktypes].[Value] AS [Value]
+      FROM [dbo].[trucktypes] AS [trucktypes]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="useralerts" EntityType="vincontrolwarehouseModel.Store.useralerts" store:Type="Tables" store:Schema="dbo" store:Name="useralerts">
+      <DefiningQuery>SELECT 
+      [useralerts].[Id] AS [Id], 
+      [useralerts].[AlertId] AS [AlertId], 
+      [useralerts].[UserId] AS [UserId]
+      FROM [dbo].[useralerts] AS [useralerts]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="userdealers" EntityType="vincontrolwarehouseModel.Store.userdealers" store:Type="Tables" store:Schema="dbo" store:Name="userdealers">
+      <DefiningQuery>SELECT 
+      [userdealers].[Id] AS [Id], 
+      [userdealers].[UserId] AS [UserId], 
+      [userdealers].[DealerId] AS [DealerId]
+      FROM [dbo].[userdealers] AS [userdealers]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="users" EntityType="vincontrolwarehouseModel.Store.users" store:Type="Tables" store:Schema="dbo" store:Name="users">
+      <DefiningQuery>SELECT 
+      [users].[Id] AS [Id], 
+      [users].[UserName] AS [UserName], 
+      [users].[Password] AS [Password], 
+      [users].[Name] AS [Name], 
+      [users].[Email] AS [Email], 
+      [users].[CellPhone] AS [CellPhone], 
+      [users].[Active] AS [Active], 
+      [users].[DateAdded] AS [DateAdded], 
+      [users].[ExpirationDate] AS [ExpirationDate], 
+      [users].[MigrateUserId] AS [MigrateUserId], 
+      [users].[GroupId] AS [GroupId], 
+      [users].[DefaultDealership] AS [DefaultDealership]
+      FROM [dbo].[users] AS [users]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vehicles" EntityType="vincontrolwarehouseModel.Store.vehicles" store:Type="Tables" store:Schema="dbo" store:Name="vehicles">
+      <DefiningQuery>SELECT 
+      [vehicles].[Id] AS [Id], 
+      [vehicles].[VIN] AS [VIN], 
+      [vehicles].[Year] AS [Year], 
+      [vehicles].[Body] AS [Body], 
+      [vehicles].[Cylinder] AS [Cylinder], 
+      [vehicles].[Engine] AS [Engine], 
+      [vehicles].[DriveTrain] AS [DriveTrain], 
+      [vehicles].[Transmission] AS [Transmission], 
+      [vehicles].[Door] AS [Door], 
+      [vehicles].[FuelEconomyCity] AS [FuelEconomyCity], 
+      [vehicles].[FuelEconomyHighway] AS [FuelEconomyHighway], 
+      [vehicles].[StandardOptions] AS [StandardOptions], 
+      [vehicles].[TrimId] AS [TrimId], 
+      [vehicles].[MakeId] AS [MakeId], 
+      [vehicles].[DefaultImageURL] AS [DefaultImageURL], 
+      [vehicles].[Liters] AS [Liters], 
+      [vehicles].[ModelId] AS [ModelId], 
+      [vehicles].[MigrateListingId] AS [MigrateListingId], 
+      [vehicles].[MigrateAppraisalId] AS [MigrateAppraisalId], 
+      [vehicles].[StandardPackages] AS [StandardPackages], 
+      [vehicles].[MigrateSoldoutListingId] AS [MigrateSoldoutListingId], 
+      [vehicles].[MigrateWholesaleListingId] AS [MigrateWholesaleListingId], 
+      [vehicles].[VehicleTypeId] AS [VehicleTypeId], 
+      [vehicles].[FuelId] AS [FuelId], 
+      [vehicles].[MakeValue] AS [MakeValue], 
+      [vehicles].[ModelValue] AS [ModelValue], 
+      [vehicles].[TrimValue] AS [TrimValue]
+      FROM [dbo].[vehicles] AS [vehicles]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vehicles_truck" EntityType="vincontrolwarehouseModel.Store.vehicles_truck" store:Type="Tables" store:Schema="dbo" store:Name="vehicles_truck">
+      <DefiningQuery>SELECT 
+      [vehicles_truck].[TruckClassId] AS [TruckClassId], 
+      [vehicles_truck].[TruckCategoryId] AS [TruckCategoryId], 
+      [vehicles_truck].[Id] AS [Id]
+      FROM [dbo].[vehicles_truck] AS [vehicles_truck]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vehicletypes" EntityType="vincontrolwarehouseModel.Store.vehicletypes" store:Type="Tables" store:Schema="dbo" store:Name="vehicletypes">
+      <DefiningQuery>SELECT 
+      [vehicletypes].[Id] AS [Id], 
+      [vehicletypes].[Type] AS [Type]
+      FROM [dbo].[vehicletypes] AS [vehicletypes]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="walkarounds" EntityType="vincontrolwarehouseModel.Store.walkarounds" store:Type="Tables" store:Schema="dbo" store:Name="walkarounds">
+      <DefiningQuery>SELECT 
+      [walkarounds].[Id] AS [Id], 
+      [walkarounds].[Order] AS [Order], 
+      [walkarounds].[X] AS [X], 
+      [walkarounds].[Y] AS [Y], 
+      [walkarounds].[Note] AS [Note], 
+      [walkarounds].[AppraisalInfoId] AS [AppraisalInfoId]
+      FROM [dbo].[walkarounds] AS [walkarounds]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="yearmakes" EntityType="vincontrolwarehouseModel.Store.yearmakes" store:Type="Tables" store:Schema="dbo" store:Name="yearmakes">
+      <DefiningQuery>SELECT 
+      [yearmakes].[Id] AS [Id], 
+      [yearmakes].[MakeId] AS [MakeId], 
+      [yearmakes].[Year] AS [Year]
+      FROM [dbo].[yearmakes] AS [yearmakes]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.alerts' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="alerts">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="AlertType" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="AlertType" Type="varchar" Nullable="false" MaxLength="1000" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.answers' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="answers">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="AppraisalInfoId" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="QuestionId" Type="int" />
+    <Property Name="AnswerContent" Type="varchar" MaxLength="45" />
+    <Property Name="Comment" Type="varchar" MaxLength="455" />
+    <Property Name="AppraisalInfoId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.autotradertrims' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="autotradertrims">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Value" />
+      <PropertyRef Name="AutoTraderId" />
+      <PropertyRef Name="ModelId" />
+      <PropertyRef Name="TrimId" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="AutoTraderId" Type="bigint" Nullable="false" />
+    <Property Name="ModelId" Type="int" Nullable="false" />
+    <Property Name="TrimId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.backendusers' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="backendusers">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="Password" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Password" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Role" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.backendusertracking' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="backendusertracking">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="ActionBy" />
+      <PropertyRef Name="Action" />
+      <PropertyRef Name="ActionDate" />
+      <PropertyRef Name="ItemId" />
+      <PropertyRef Name="ItemType" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="ActionBy" Type="int" Nullable="false" />
+    <Property Name="Action" Type="varchar" Nullable="false" MaxLength="500" />
+    <Property Name="ActionDate" Type="datetime" Nullable="false" />
+    <Property Name="ItemId" Type="int" Nullable="false" />
+    <Property Name="ItemName" Type="varchar" MaxLength="500" />
+    <Property Name="ItemType" Type="varchar" Nullable="false" MaxLength="500" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.bannercustomers' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="bannercustomers">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="DealerId" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="255" />
+    <Property Name="LastName" Type="varchar" MaxLength="255" />
+    <Property Name="Email" Type="varchar" MaxLength="255" />
+    <Property Name="Phone" Type="varchar" MaxLength="45" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="varchar" MaxLength="45" />
+    <Property Name="Model" Type="varchar" MaxLength="45" />
+    <Property Name="Trim" Type="varchar" MaxLength="45" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="SelectedOptions" Type="varchar(max)" />
+    <Property Name="Condition" Type="varchar" MaxLength="45" />
+    <Property Name="KBBVehicelId" Type="int" />
+    <Property Name="Vin" Type="varchar" MaxLength="45" />
+    <Property Name="TradeInFairValue" Type="varchar" MaxLength="45" />
+    <Property Name="TradeInMaxValue" Type="varchar" MaxLength="45" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="0" />
+    <Property Name="VarianceValue" Type="varchar" MaxLength="45" />
+    <Property Name="Source" Type="varchar" MaxLength="255" />
+    <Property Name="TradeInStatus" Type="varchar" MaxLength="10" />
+    <Property Name="EmailContent" Type="varchar(max)" />
+    <Property Name="ADFEmailContent" Type="varchar(max)" />
+    <Property Name="Receivers" Type="varchar" MaxLength="2000" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.bb_kbb' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="bb_kbb">
+    <Key>
+      <PropertyRef Name="TrimName" />
+      <PropertyRef Name="DateAdded" />
+      <PropertyRef Name="Type" />
+      <PropertyRef Name="LastUpdated" />
+      <PropertyRef Name="ExpiredDate" />
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Vin" />
+      <PropertyRef Name="MigrateAutoId" />
+    </Key>
+    <Property Name="TrimName" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="FairPrice" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="GoodPrice" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="DateAdded" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="Type" Type="smallint" Nullable="false" />
+    <Property Name="LastUpdated" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="ExpiredDate" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="VeryGoodPrice" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Vin" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="MigrateAutoId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.bb_kbb_kbb' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="bb_kbb_kbb">
+    <Key>
+      <PropertyRef Name="BaseWholeSale" />
+      <PropertyRef Name="MileageAdjustment" />
+      <PropertyRef Name="WholeSale" />
+      <PropertyRef Name="TrimId" />
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="BaseWholeSale" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="MileageAdjustment" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="WholeSale" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="TrimId" Type="int" Nullable="false" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.buyerguides' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="buyerguides">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="DealerId" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Make" Type="varchar" MaxLength="45" />
+    <Property Name="Model" Type="varchar" MaxLength="45" />
+    <Property Name="Year" Type="varchar" MaxLength="45" />
+    <Property Name="VinNumber" Type="varchar" MaxLength="45" />
+    <Property Name="StockNumber" Type="varchar" MaxLength="45" />
+    <Property Name="WarrantyType" Type="varchar" MaxLength="45" />
+    <Property Name="IsAsWarranty" Type="bit" />
+    <Property Name="IsWarranty" Type="bit" />
+    <Property Name="IsFullWarranty" Type="bit" />
+    <Property Name="IsLimitedWarranty" Type="bit" />
+    <Property Name="IsServiceContract" Type="bit" />
+    <Property Name="SystemCovered" Type="varchar(max)" />
+    <Property Name="Durations" Type="varchar(max)" />
+    <Property Name="PercentageOfLabor" Type="float" />
+    <Property Name="PercentageOfPart" Type="float" />
+    <Property Name="PriorRental" Type="varchar" MaxLength="45" />
+    <Property Name="IsMixed" Type="bit" />
+    <Property Name="SystemCoveredAndDurations" Type="varchar(max)" />
+    <Property Name="LanguageVersion" Type="int" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.carfaxes' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="carfaxes">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Vin" />
+      <PropertyRef Name="Owner" />
+      <PropertyRef Name="ServiceRecord" />
+      <PropertyRef Name="WindowSticker" />
+      <PropertyRef Name="DateAdded" />
+      <PropertyRef Name="LastUpdated" />
+      <PropertyRef Name="ExpiredDate" />
+      <PropertyRef Name="Vehicle_Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Vin" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Owner" Type="int" Nullable="false" />
+    <Property Name="ServiceRecord" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="WindowSticker" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="DateAdded" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="ExpiredDate" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="Vehicle_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.carscomtrims' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="carscomtrims">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Value" />
+      <PropertyRef Name="CarscomId" />
+      <PropertyRef Name="ModelId" />
+      <PropertyRef Name="TrimId" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="CarscomId" Type="bigint" Nullable="false" />
+    <Property Name="ModelId" Type="int" Nullable="false" />
+    <Property Name="TrimId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.chartselections' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="chartselections">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="InventoryId" />
+    </Key>
+    <Property Name="IsCarsCom" Type="bit" />
+    <Property Name="Options" Type="varchar" MaxLength="255" />
+    <Property Name="Trims" Type="varchar" MaxLength="550" />
+    <Property Name="IsCertified" Type="bit" />
+    <Property Name="IsAll" Type="bit" />
+    <Property Name="IsFranchise" Type="bit" />
+    <Property Name="IsIndependant" Type="bit" />
+    <Property Name="Screen" Type="varchar" MaxLength="45" />
+    <Property Name="SourceType" Type="varchar" MaxLength="45" />
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="InventoryId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.customers' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="customers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="1000" />
+    <Property Name="LastName" Type="varchar" MaxLength="1000" />
+    <Property Name="Street" Type="varchar" MaxLength="1000" />
+    <Property Name="State" Type="varchar" MaxLength="1000" />
+    <Property Name="Country" Type="varchar" MaxLength="1000" />
+    <Property Name="ZipPostal" Type="varchar" MaxLength="1000" />
+    <Property Name="Phone" Type="varchar" MaxLength="1000" />
+    <Property Name="Email" Type="varchar" MaxLength="1000" />
+    <Property Name="Address" Type="varchar" MaxLength="1000" />
+    <Property Name="City" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.datafeedcredentials' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="datafeedcredentials">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="Password" />
+      <PropertyRef Name="DataFeedLookup_Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Password" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="DataFeedLookup_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.datafeedlookups' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="datafeedlookups">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="DataFeedProfileId" />
+      <PropertyRef Name="DealerId" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="DataFeedProfileId" Type="int" Nullable="false" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="PartnerId" Type="varchar" MaxLength="1000" />
+    <Property Name="UseSpecificMapping" Type="bit" />
+    <Property Name="ExportDataProfileMapping_Id" Type="int" />
+    <Property Name="FileName" Type="varchar" MaxLength="500" />
+    <Property Name="Discontinued" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.datafeedprofiles' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="datafeedprofiles">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="CompanyName" />
+      <PropertyRef Name="Mapping" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="CompanyName" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="FTPServer" Type="varchar" MaxLength="1000" />
+    <Property Name="DefaultUserName" Type="varchar" MaxLength="1000" />
+    <Property Name="DefaultPassword" Type="varchar" MaxLength="1000" />
+    <Property Name="Frequency" Type="int" />
+    <Property Name="ExportDataProfileMapping_Id" Type="int" />
+    <Property Name="Email" Type="varchar" MaxLength="1000" />
+    <Property Name="FileName" Type="varchar" MaxLength="500" />
+    <Property Name="RunningTime" Type="datetime" />
+    <Property Name="Bundle" Type="bit" />
+    <Property Name="Mapping" Type="varchar(max)" Nullable="false" />
+    <Property Name="Discontinued" Type="bit" />
+    <Property Name="ProfileName" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.dealergroups' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="dealergroups">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="DateAdded" />
+    </Key>
+    <Property Name="Id" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="GroupAbbr" Type="varchar" MaxLength="100" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="DateAdded" Type="datetime2" Nullable="false" Precision="0" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.dealers' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="dealers">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Address" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="DealerGroupId" Type="varchar" MaxLength="10" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Address" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="City" Type="varchar" MaxLength="1000" />
+    <Property Name="State" Type="varchar" MaxLength="1000" />
+    <Property Name="Country" Type="varchar" MaxLength="1000" />
+    <Property Name="ZipPostal" Type="varchar" MaxLength="1000" />
+    <Property Name="Phone" Type="varchar" MaxLength="1000" />
+    <Property Name="LeadsEmail" Type="varchar" MaxLength="1000" />
+    <Property Name="EmailFormatId" Type="smallint" />
+    <Property Name="Latitude" Type="varchar" MaxLength="1000" />
+    <Property Name="Longtitude" Type="varchar" MaxLength="1000" />
+    <Property Name="WebPageUrl" Type="varchar" MaxLength="1000" />
+    <Property Name="WebInventoryUrl" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.dealers_dealersetting' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="dealers_dealersetting">
+    <Key>
+      <PropertyRef Name="PriceVariance" />
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="InventorySorting" Type="varchar" MaxLength="45" />
+    <Property Name="SoldOut" Type="varchar" MaxLength="45" />
+    <Property Name="DealershipId" Type="int" />
+    <Property Name="Cragislist" Type="varchar" MaxLength="100" />
+    <Property Name="CraigslistPassword" Type="varchar" MaxLength="45" />
+    <Property Name="Ebay" Type="varchar" MaxLength="100" />
+    <Property Name="EbayPassword" Type="varchar" MaxLength="45" />
+    <Property Name="CarFax" Type="varchar" MaxLength="100" />
+    <Property Name="CarFaxPassword" Type="varchar" MaxLength="45" />
+    <Property Name="Manheim" Type="varchar" MaxLength="100" />
+    <Property Name="ManheimPassword" Type="varchar" MaxLength="45" />
+    <Property Name="KellyBlueBook" Type="varchar" MaxLength="100" />
+    <Property Name="KellyPassword" Type="varchar" MaxLength="45" />
+    <Property Name="BlackBook" Type="varchar" MaxLength="100" />
+    <Property Name="BlackBookPassword" Type="varchar" MaxLength="45" />
+    <Property Name="AutoCheck" Type="varchar" MaxLength="100" />
+    <Property Name="AutoCheckPassword" Type="varchar" MaxLength="45" />
+    <Property Name="AppraisalNotification" Type="bit" />
+    <Property Name="WholeNotification" Type="bit" />
+    <Property Name="InventoryNotification" Type="bit" />
+    <Property Name="C24Hnotification" Type="bit" />
+    <Property Name="NoteNotification" Type="bit" />
+    <Property Name="PriceChangeNotification" Type="bit" />
+    <Property Name="AgeingBucketNotification" Type="bit" />
+    <Property Name="DefaultStockImageUrl" Type="varchar" MaxLength="255" />
+    <Property Name="OverideStockImage" Type="bit" />
+    <Property Name="DealerInfo" Type="varchar(max)" />
+    <Property Name="DealerWarranty" Type="varchar(max)" />
+    <Property Name="TermsAndCondition" Type="varchar(max)" />
+    <Property Name="EbayToken" Type="varchar(max)" />
+    <Property Name="EbayInventoryURL" Type="varchar(max)" />
+    <Property Name="CreditURL" Type="varchar(max)" />
+    <Property Name="WebSiteURL" Type="varchar(max)" />
+    <Property Name="ContactUsURL" Type="varchar(max)" />
+    <Property Name="FacebookURL" Type="varchar(max)" />
+    <Property Name="LogoURL" Type="varchar(max)" />
+    <Property Name="ContactPerson" Type="varchar(max)" />
+    <Property Name="RetailPrice" Type="bit" />
+    <Property Name="DealerDiscount" Type="bit" />
+    <Property Name="ManufacturerReabte" Type="bit" />
+    <Property Name="SalePrice" Type="bit" />
+    <Property Name="ManufacturerWarranty" Type="varchar(max)" />
+    <Property Name="ManufacturerWarrantySpanish" Type="varchar(max)" />
+    <Property Name="ManufacturerWarrantyDuration" Type="varchar(max)" />
+    <Property Name="DealerCertified" Type="varchar(max)" />
+    <Property Name="DealerCertifiedSpanish" Type="varchar(max)" />
+    <Property Name="DealerCertifiedDuration" Type="varchar(max)" />
+    <Property Name="ManufacturerCertified" Type="varchar(max)" />
+    <Property Name="ManufacturerCertifiedSpanish" Type="varchar(max)" />
+    <Property Name="ManufacturerCertifiedDuration" Type="varchar(max)" />
+    <Property Name="ShippingInfo" Type="varchar(max)" />
+    <Property Name="AsIsWarranty" Type="varchar(max)" />
+    <Property Name="AsIsWarrantySpanish" Type="varchar(max)" />
+    <Property Name="StartDescriptionSentence" Type="varchar(max)" />
+    <Property Name="EndDescriptionSentence" Type="varchar(max)" />
+    <Property Name="AuctionSentence" Type="varchar(max)" />
+    <Property Name="FirstTimeRangeBucketJump" Type="int" />
+    <Property Name="SecondTimeRangeBucketJump" Type="int" />
+    <Property Name="IntervalBucketJump" Type="int" />
+    <Property Name="RetailPriceText" Type="varchar" MaxLength="255" />
+    <Property Name="DealerDiscountText" Type="varchar" MaxLength="255" />
+    <Property Name="ManufactureReabateText" Type="varchar" MaxLength="255" />
+    <Property Name="SalePriceText" Type="varchar" MaxLength="255" />
+    <Property Name="HeaderOverlayURL" Type="varchar" MaxLength="255" />
+    <Property Name="FooterOverlayURL" Type="varchar" MaxLength="255" />
+    <Property Name="MarketPriceRangeChangeNotification" Type="bit" />
+    <Property Name="PriceVariance" Type="decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="DiscontinuedImport" Type="bit" />
+    <Property Name="DiscontinuedExport" Type="bit" />
+    <Property Name="ImportDataFeedProfileId" Type="int" />
+    <Property Name="ImportFeedUrl" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.descriptions' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="descriptions">
+    <Key>
+      <PropertyRef Name="VinControlDescriptionId" />
+    </Key>
+    <Property Name="VinControlDescriptionId" Type="int" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="45" />
+    <Property Name="YesNo" Type="bit" />
+    <Property Name="DescriptionSentence" Type="varchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.ebays' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="ebays">
+    <Key>
+      <PropertyRef Name="ServiceId" />
+      <PropertyRef Name="AdUrl" />
+      <PropertyRef Name="StartTime" />
+      <PropertyRef Name="EndTime" />
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Inventory_Id" />
+    </Key>
+    <Property Name="ServiceId" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="AdUrl" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="StartTime" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="EndTime" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Inventory_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.exportdataprofilemappings' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="exportdataprofilemappings">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Mapping" />
+      <PropertyRef Name="UseHeader" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Mapping" Type="varchar(max)" Nullable="false" />
+    <Property Name="UseHeader" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.exportservicehistories' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="exportservicehistories">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="RunningDate" Type="datetime" />
+    <Property Name="Status" Type="varchar" MaxLength="20" />
+    <Property Name="ArchiveFileName" Type="varchar" MaxLength="200" />
+    <Property Name="DatafeedProfileId" Type="int" />
+    <Property Name="DealerId" Type="int" />
+    <Property Name="CompletedDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.fueltypes' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="fueltypes">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Value" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="45" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.grouppermissions' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="grouppermissions">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="GroupId" />
+      <PropertyRef Name="PermissionCode" />
+      <PropertyRef Name="PermissionValue" />
+      <PropertyRef Name="UserStamp" />
+      <PropertyRef Name="DateStamp" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="GroupId" Type="int" Nullable="false" />
+    <Property Name="PermissionCode" Type="int" Nullable="false" />
+    <Property Name="PermissionValue" Type="int" Nullable="false" />
+    <Property Name="UserStamp" Type="varchar" Nullable="false" MaxLength="25" />
+    <Property Name="DateStamp" Type="datetime2" Nullable="false" Precision="0" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.groups' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="groups">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="GroupName" />
+      <PropertyRef Name="UserStamp" />
+      <PropertyRef Name="DateStamp" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="GroupName" Type="varchar" Nullable="false" MaxLength="25" />
+    <Property Name="GroupNote" Type="varchar" MaxLength="150" />
+    <Property Name="UserStamp" Type="varchar" Nullable="false" MaxLength="25" />
+    <Property Name="DateStamp" Type="datetime2" Nullable="false" Precision="0" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.importdatafeedprofilefiles' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="importdatafeedprofilefiles">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="ImportDataFeedProfileId" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="Description" Type="nvarchar(max)" />
+    <Property Name="ImportDataFeedProfileId" Type="int" Nullable="false" />
+    <Property Name="FileName" Type="nvarchar" MaxLength="200" />
+    <Property Name="DeveloperEmails" Type="nvarchar" MaxLength="1000" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.importdatafeedprofiles' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="importdatafeedprofiles">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="CompanyName" />
+      <PropertyRef Name="Mapping" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="CompanyName" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Mapping" Type="varchar(max)" Nullable="false" />
+    <Property Name="SampleData" Type="varchar(max)" />
+    <Property Name="RunningTime" Type="datetime" />
+    <Property Name="Frequency" Type="int" />
+    <Property Name="Discontinued" Type="bit" />
+    <Property Name="SchemaURL" Type="varchar" MaxLength="1000" />
+    <Property Name="ProfileName" Type="varchar" MaxLength="1000" />
+    <Property Name="UseMappingInCode" Type="bit" />
+    <Property Name="Email" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.importservicehistories' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="importservicehistories">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="RunningDate" Type="datetime" />
+    <Property Name="Status" Type="varchar" MaxLength="20" />
+    <Property Name="ArchiveFileName" Type="varchar" MaxLength="200" />
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="DealerId" Type="int" />
+    <Property Name="ImportProfileId" Type="int" />
+    <Property Name="CompletedDate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.inventory' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="inventory">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Mileage" />
+      <PropertyRef Name="Images" />
+      <PropertyRef Name="VehicleId" />
+      <PropertyRef Name="DealerId" />
+      <PropertyRef Name="Certified" />
+      <PropertyRef Name="MigrateListingId" />
+      <PropertyRef Name="MigrateAppraisalId" />
+      <PropertyRef Name="MigrateSoldoutListingId" />
+      <PropertyRef Name="MigrateWholesaleListingId" />
+      <PropertyRef Name="StatusId" />
+      <PropertyRef Name="Timestamp" />
+      <PropertyRef Name="IsAppraisal" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="StockNumber" Type="varchar" MaxLength="1000" />
+    <Property Name="MSRP" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="Mileage" Type="bigint" Nullable="false" />
+    <Property Name="ACV" Type="decimal" Precision="20" Scale="2" />
+    <Property Name="DealerCost" Type="decimal" Precision="20" Scale="2" />
+    <Property Name="SalePrice" Type="decimal" Precision="20" Scale="2" />
+    <Property Name="ExteriorColor" Type="varchar" MaxLength="1000" />
+    <Property Name="InteriorColor" Type="varchar" MaxLength="1000" />
+    <Property Name="Options" Type="varchar(max)" />
+    <Property Name="Packages" Type="varchar(max)" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="Images" Type="varchar(max)" Nullable="false" />
+    <Property Name="Condition" Type="varchar" MaxLength="1000" />
+    <Property Name="VehicleId" Type="int" Nullable="false" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="Certified" Type="bit" Nullable="false" />
+    <Property Name="CarFaxOwner" Type="smallint" />
+    <Property Name="KBBOptionsId" Type="varchar" MaxLength="1000" />
+    <Property Name="KBBTrimsId" Type="bigint" />
+    <Property Name="AddedBy" Type="varchar" MaxLength="1000" />
+    <Property Name="AddedDate" Type="datetime2" Precision="0" />
+    <Property Name="LastModifiedBy" Type="varchar" MaxLength="1000" />
+    <Property Name="LastModifiedDate" Type="datetime2" Precision="0" />
+    <Property Name="MigrateListingId" Type="int" Nullable="false" />
+    <Property Name="MigrateAppraisalId" Type="int" Nullable="false" />
+    <Property Name="MigrateSoldoutListingId" Type="int" Nullable="false" />
+    <Property Name="MigrateWholesaleListingId" Type="int" Nullable="false" />
+    <Property Name="StatusId" Type="char" Nullable="false" MaxLength="5" />
+    <Property Name="ColorCode" Type="varchar" MaxLength="1000" />
+    <Property Name="MarketRange" Type="smallint" />
+    <Property Name="MarketLowestPrice" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="MarketHighestPrice" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="MarketAveragePrice" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="NumberOfCar" Type="int" />
+    <Property Name="Timestamp" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="IsAppraisal" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.inventory_appraisalinfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="inventory_appraisalinfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="PackageDescription" Type="varchar(max)" />
+    <Property Name="InventoryAdd" Type="varchar" MaxLength="1000" />
+    <Property Name="AppraisalType" Type="varchar" MaxLength="1000" />
+    <Property Name="Note" Type="varchar(max)" />
+    <Property Name="Signature" Type="varbinary(max)" />
+    <Property Name="UserStamp" Type="varchar" MaxLength="1000" />
+    <Property Name="DateStamp" Type="datetime2" Precision="0" />
+    <Property Name="Photo" Type="varbinary(max)" />
+    <Property Name="SignatureURL" Type="varchar" MaxLength="1000" />
+    <Property Name="IsFromVinGenie" Type="bit" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.inventory_inventoryinfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="inventory_inventoryinfo">
+    <Key>
+      <PropertyRef Name="DateInStock" />
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="DealershipZipCode" Type="varchar" MaxLength="1000" />
+    <Property Name="WarrantyInfo" Type="varchar" MaxLength="1000" />
+    <Property Name="RetailPrice" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="WindowStickerPrice" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="DealerDiscount" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="ManufacturerRebate" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="PriorRental" Type="bit" />
+    <Property Name="Recon" Type="bit" />
+    <Property Name="Disclaimer" Type="varchar" MaxLength="1000" />
+    <Property Name="DealerDemo" Type="bit" />
+    <Property Name="Unwind" Type="bit" />
+    <Property Name="IsFeatured" Type="bit" />
+    <Property Name="Thumnails" Type="varchar(max)" />
+    <Property Name="DateInStock" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="CarRanking" Type="int" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.inventoryhistories' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="inventoryhistories">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="StockNumber" />
+      <PropertyRef Name="Mileage" />
+      <PropertyRef Name="Images" />
+      <PropertyRef Name="Thumbnails" />
+      <PropertyRef Name="LastUpdated" />
+      <PropertyRef Name="Condition" />
+      <PropertyRef Name="VehicleId" />
+      <PropertyRef Name="DealerId" />
+      <PropertyRef Name="StatusId" />
+      <PropertyRef Name="Certified" />
+      <PropertyRef Name="CarFaxOwner" />
+      <PropertyRef Name="AddedBy" />
+      <PropertyRef Name="AddedDate" />
+      <PropertyRef Name="LastModifiedBy" />
+      <PropertyRef Name="LastModifiedDate" />
+      <PropertyRef Name="InventoryId" />
+      <PropertyRef Name="Timestamp" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="StockNumber" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="MSRP" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="Mileage" Type="bigint" Nullable="false" />
+    <Property Name="ACV" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="DealerCost" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="SalePrice" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="ExteriorColor" Type="varchar" MaxLength="1000" />
+    <Property Name="InteriorColor" Type="varchar" MaxLength="1000" />
+    <Property Name="Options" Type="varchar(max)" />
+    <Property Name="Packages" Type="varchar(max)" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="Images" Type="varchar(max)" Nullable="false" />
+    <Property Name="Thumbnails" Type="varchar(max)" Nullable="false" />
+    <Property Name="LastUpdated" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="Condition" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="VehicleId" Type="int" Nullable="false" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="StatusId" Type="int" Nullable="false" />
+    <Property Name="Certified" Type="bit" Nullable="false" />
+    <Property Name="CarFaxOwner" Type="smallint" Nullable="false" />
+    <Property Name="KBBOptionsId" Type="varchar" MaxLength="1000" />
+    <Property Name="KBBTrimsId" Type="varchar" MaxLength="1000" />
+    <Property Name="AddedBy" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="AddedDate" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="LastModifiedBy" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="LastModifiedDate" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="InventoryId" Type="int" Nullable="false" />
+    <Property Name="Timestamp" Type="datetime2" Nullable="false" Precision="0" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.kbboptions' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="kbboptions">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="KBBId" />
+      <PropertyRef Name="Value" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="KBBId" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="1000" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.kbbpackages' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="kbbpackages">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="KBBId" />
+      <PropertyRef Name="Value" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="KBBId" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="1000" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.kbbtrimoptions' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="kbbtrimoptions">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="TrimId" />
+      <PropertyRef Name="OptionId" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="TrimId" Type="int" Nullable="false" />
+    <Property Name="OptionId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.kbbtrimpackages' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="kbbtrimpackages">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="TrimId" />
+      <PropertyRef Name="PackageId" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="TrimId" Type="int" Nullable="false" />
+    <Property Name="PackageId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.kbbtrims' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="kbbtrims">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Value" />
+      <PropertyRef Name="KBBId" />
+      <PropertyRef Name="ModelId" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="KBBId" Type="bigint" Nullable="false" />
+    <Property Name="ModelId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.makes' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="makes">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Value" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="ChromeId" Type="int" />
+    <Property Name="Source" Type="varchar" MaxLength="1000" />
+    <Property Name="ManheimServiceId" Type="int" />
+    <Property Name="KBBServiceId" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.models' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="models">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Value" />
+      <PropertyRef Name="YearMakeId" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="ChromeId" Type="int" />
+    <Property Name="YearMakeId" Type="int" Nullable="false" />
+    <Property Name="Source" Type="varchar" MaxLength="1000" />
+    <Property Name="ManheimServiceId" Type="int" />
+    <Property Name="KBBServiceId" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.notes' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="notes">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="InventoryId" />
+      <PropertyRef Name="Content" />
+      <PropertyRef Name="AddedDate" />
+      <PropertyRef Name="StatusId" />
+      <PropertyRef Name="Timestamp" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="InventoryId" Type="int" Nullable="false" />
+    <Property Name="Content" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="AddedDate" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="StatusId" Type="char" Nullable="false" MaxLength="5" />
+    <Property Name="Timestamp" Type="datetime2" Nullable="false" Precision="0" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.options' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="options">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="ChromeId" />
+      <PropertyRef Name="Value" />
+      <PropertyRef Name="Price" />
+      <PropertyRef Name="FullValue" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="ChromeId" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Price" Type="decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="FullValue" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.packages' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="packages">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="ChromeId" />
+      <PropertyRef Name="Value" />
+      <PropertyRef Name="Price" />
+      <PropertyRef Name="FullValue" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="ChromeId" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Price" Type="decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="FullValue" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.permissioncodes' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="permissioncodes">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Code" />
+      <PropertyRef Name="PermissionText" />
+      <PropertyRef Name="PermissionCategory" />
+      <PropertyRef Name="Indent" />
+      <PropertyRef Name="ScreenOrder" />
+      <PropertyRef Name="UserStamp" />
+      <PropertyRef Name="DateStamp" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Code" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="PermissionText" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="PermissionCategory" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Indent" Type="int" Nullable="false" />
+    <Property Name="ScreenOrder" Type="int" Nullable="false" />
+    <Property Name="UserStamp" Type="varchar" Nullable="false" MaxLength="25" />
+    <Property Name="DateStamp" Type="datetime2" Nullable="false" Precision="0" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.permissionvalues' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="permissionvalues">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Value" />
+      <PropertyRef Name="UserStamp" />
+      <PropertyRef Name="DateStamp" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="UserStamp" Type="varchar" Nullable="false" MaxLength="25" />
+    <Property Name="DateStamp" Type="datetime2" Nullable="false" Precision="0" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.questions' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="questions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="455" />
+    <Property Name="QuestionTypeId" Type="int" />
+    <Property Name="ShortDescription" Type="varchar" MaxLength="300" />
+    <Property Name="Order" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.questiontypes' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="questiontypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="45" />
+    <Property Name="Description" Type="varchar" MaxLength="145" />
+    <Property Name="Option" Type="varchar" MaxLength="145" />
+    <Property Name="Code" Type="int" />
+    <Property Name="Unit" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.rebates' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="rebates">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="DealerId" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="varchar" MaxLength="45" />
+    <Property Name="Model" Type="varchar" MaxLength="45" />
+    <Property Name="Trim" Type="varchar" MaxLength="45" />
+    <Property Name="BodyType" Type="varchar" MaxLength="45" />
+    <Property Name="ManufactureReabte" Type="varchar" MaxLength="45" />
+    <Property Name="Disclaimer" Type="varchar(max)" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.status' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="status">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="Id" Type="char" Nullable="false" MaxLength="5" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="1000" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.styles' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="styles">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Value" />
+      <PropertyRef Name="StyleWithoutTrim" />
+      <PropertyRef Name="TrimId" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="StyleWithoutTrim" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="TrimId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.tradeinbannercomments' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="tradeinbannercomments">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="DealerId" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Content" Type="varchar(max)" />
+    <Property Name="Name" Type="varchar" MaxLength="255" />
+    <Property Name="City" Type="varchar" MaxLength="255" />
+    <Property Name="State" Type="varchar" MaxLength="45" />
+    <Property Name="DateComment" Type="datetime2" Precision="0" />
+    <Property Name="DateUpdated" Type="datetime2" Precision="0" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.transactions' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="transactions">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="InventoryId" />
+      <PropertyRef Name="TransactionTypeId" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="TransactionDate" Type="varchar" MaxLength="1000" />
+    <Property Name="CustomerId" Type="int" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="InventoryId" Type="int" Nullable="false" />
+    <Property Name="TransactionTypeId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.transactiontypes' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="transactiontypes">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Type" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Type" Type="varchar" Nullable="false" MaxLength="1000" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.trimoptions' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="trimoptions">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="TrimId" />
+      <PropertyRef Name="OptionId" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="TrimId" Type="int" Nullable="false" />
+    <Property Name="OptionId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.trimpackages' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="trimpackages">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="TrimId" />
+      <PropertyRef Name="PackageId" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="TrimId" Type="int" Nullable="false" />
+    <Property Name="PackageId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.trims' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="trims">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Value" />
+      <PropertyRef Name="ChromeId" />
+      <PropertyRef Name="ModelId" />
+      <PropertyRef Name="IsDefault" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="ChromeId" Type="bigint" Nullable="false" />
+    <Property Name="ModelId" Type="int" Nullable="false" />
+    <Property Name="IsDefault" Type="bit" Nullable="false" />
+    <Property Name="KBBTrimId" Type="int" />
+    <Property Name="ManheimTrimId" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.truckcategories' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="truckcategories">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Value" />
+      <PropertyRef Name="TruckTypeId" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="TruckTypeId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.truckclasses' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="truckclasses">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Value" />
+      <PropertyRef Name="Text" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Text" Type="varchar" Nullable="false" MaxLength="1000" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.trucktypes' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="trucktypes">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Value" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="1000" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.useralerts' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="useralerts">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="AlertId" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="AlertId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.userdealers' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="userdealers">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="DealerId" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.users' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="Password" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="GroupId" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="UserName" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Password" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Email" Type="varchar" MaxLength="1000" />
+    <Property Name="CellPhone" Type="varchar" MaxLength="1000" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="ExpirationDate" Type="datetime2" Precision="0" />
+    <Property Name="MigrateUserId" Type="int" />
+    <Property Name="GroupId" Type="int" Nullable="false" />
+    <Property Name="DefaultDealership" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.vehicles' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vehicles">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="MigrateListingId" />
+      <PropertyRef Name="MigrateAppraisalId" />
+      <PropertyRef Name="MigrateSoldoutListingId" />
+      <PropertyRef Name="MigrateWholesaleListingId" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="VIN" Type="varchar" MaxLength="1000" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Body" Type="varchar" MaxLength="1000" />
+    <Property Name="Cylinder" Type="varchar" MaxLength="1000" />
+    <Property Name="Engine" Type="varchar" MaxLength="1000" />
+    <Property Name="DriveTrain" Type="varchar" MaxLength="1000" />
+    <Property Name="Transmission" Type="varchar" MaxLength="1000" />
+    <Property Name="Door" Type="smallint" />
+    <Property Name="FuelEconomyCity" Type="smallint" />
+    <Property Name="FuelEconomyHighway" Type="smallint" />
+    <Property Name="StandardOptions" Type="varchar(max)" />
+    <Property Name="TrimId" Type="int" />
+    <Property Name="MakeId" Type="int" />
+    <Property Name="DefaultImageURL" Type="varchar" MaxLength="1000" />
+    <Property Name="Liters" Type="varchar" MaxLength="45" />
+    <Property Name="ModelId" Type="int" />
+    <Property Name="MigrateListingId" Type="int" Nullable="false" />
+    <Property Name="MigrateAppraisalId" Type="int" Nullable="false" />
+    <Property Name="StandardPackages" Type="varchar(max)" />
+    <Property Name="MigrateSoldoutListingId" Type="int" Nullable="false" />
+    <Property Name="MigrateWholesaleListingId" Type="int" Nullable="false" />
+    <Property Name="VehicleTypeId" Type="int" />
+    <Property Name="FuelId" Type="int" />
+    <Property Name="MakeValue" Type="varchar" MaxLength="1000" />
+    <Property Name="ModelValue" Type="varchar" MaxLength="1000" />
+    <Property Name="TrimValue" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.vehicles_truck' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vehicles_truck">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="TruckClassId" Type="int" />
+    <Property Name="TruckCategoryId" Type="int" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.vehicletypes' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vehicletypes">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Type" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Type" Type="varchar" Nullable="false" MaxLength="1000" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.walkarounds' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="walkarounds">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="AppraisalInfoId" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Order" Type="int" />
+    <Property Name="X" Type="float" />
+    <Property Name="Y" Type="float" />
+    <Property Name="Note" Type="varchar" MaxLength="455" />
+    <Property Name="AppraisalInfoId" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'vincontrolwarehouse.dbo.yearmakes' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="yearmakes">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="MakeId" />
+      <PropertyRef Name="Year" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="MakeId" Type="int" Nullable="false" />
+    <Property Name="Year" Type="int" Nullable="false" />
+  </EntityType>
+</Schema>

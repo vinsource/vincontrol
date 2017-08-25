@@ -1,0 +1,9 @@
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.Canon\bin\Debug\VINControl.Canon.exe.config
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.Canon\bin\Debug\VINControl.Canon.exe
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.Canon\bin\Debug\VINControl.Canon.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.Canon\obj\Debug\VINControl.Canon.csprojResolveAssemblyReference.cache
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.Canon\obj\Debug\VINControl.Canon.MainForm.resources
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.Canon\obj\Debug\VINControl.Canon.Properties.Resources.resources
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.Canon\obj\Debug\VINControl.Canon.csproj.GenerateResource.Cache
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.Canon\obj\Debug\VINControl.Canon.exe
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.Canon\obj\Debug\VINControl.Canon.pdb

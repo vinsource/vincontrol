@@ -1,0 +1,48 @@
+﻿<reviewSite name="yelp.com" url="www.yelp.com">
+  <namespaces>
+    <namespace name="ns" value="http://www.w3.org/1999/xhtml"/>
+  </namespaces>
+  <pages>
+    <reviewPage name="" dealerId="0" url="" hasAdditionalDealerReview="false" hasAdditionalUserReview="false" hasDetailUserReview="false" category="Sales">
+      <about context="//p[@id='bizAnnounDesc']"/>
+      <overallScore context="//div[@id='bizRating']/div/div/meta/@content"/>
+      <additionalReview>
+        <customerService context=""/>
+        <qualityOfWork context=""/>
+        <friendliness context=""/>
+        <overallExperience context=""/>
+        <pricing context=""/>
+        <buyingProcess context=""/>
+        <overallFacilities context=""/>
+      </additionalReview>
+    </reviewPage>
+
+  </pages>
+
+  <reviews>
+    <reviewNode context="//div[@id='reviews-other']/ul/li"/>
+    
+    <reviewUrl context=""/>
+    <reviewAuthor context="./h4/span"/>
+    <reviewDate context="./div/div[2]/div/meta/@content"/>
+    <reviewContent context="./div/div[2]/p[@class='review_comment ieSucks']"/>
+    <reviewDetailContent context=""/>
+    <reviewRating context="./div/div[2]/div/div/div/meta/@content"/>
+    <additionalReview>
+      <customerService context=""/>
+      <qualityOfWork context=""/>
+      <friendliness context=""/>
+      <overallExperience context=""/>
+      <pricing context=""/>
+      <buyingProcess context=""/>
+      <overallFacilities context=""/>
+      <reasonForVisit context=""/>
+      <recommendThisDealer context=""/>
+      <purchasedAVehicle context=""/>
+    </additionalReview>
+    
+    <nextPageUrl context="//span[@class='highlight2']/following-sibling::*[1]/@href">
+      
+    </nextPageUrl>
+  </reviews>
+</reviewSite>

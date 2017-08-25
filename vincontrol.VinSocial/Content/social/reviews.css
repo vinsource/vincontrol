@@ -1,0 +1,1015 @@
+/* new manager dashboard view */
+.md_v2_sc_bar_blue
+{
+    background-color:#3A57B5;
+    }
+    
+    .md_v2_sc_bar_gray
+{
+    background-color:#DDDDE5;
+    }
+    
+    .md_v2_sc_bar_red
+{
+    background-color:#A83335;
+    }
+.manager_dashboad_v2_statistics {
+	margin-bottom: 20px;
+}
+.md_v2_statis_top {
+	height: 23px;
+}
+.md_v2_title {
+	margin-bottom: 5px;
+font-weight: bold;
+font-size: 15px;
+color: #666;
+}
+.md_v2_sc_right_header {
+	padding: 3px;
+color: #FFF;
+text-align: center;
+font-weight: bold;
+font-size: 11px;
+}
+.md_v2_bar_good {
+	background-color: #227942;
+}
+
+.md_v2_bar_short {
+	background-color: #4D4D4F;
+}
+
+.md_v2_bar_veryshort {
+	background-color: #A83335;
+}
+
+.md_v2_title_statictis {
+	float: left;
+}
+.md_v2_sc_right_list
+{
+    height: 44px;
+background-color: #DCDCE4;
+padding-left: 5px;
+    }
+.md_v2_title nobr {
+	font-size: 12px;
+	color: #666;
+}
+.md_v2_st_right {
+	float: right;
+}
+
+.md_v2_st_right select {
+	width: 65px;
+	font-size: 13px;
+}
+.md_v2_statis_charts {
+	position: relative;
+	margin: 4px 0px;
+	border: 1px solid #EDD;
+	clear: both;
+	height: 150px;
+}
+.md_v2_sc_bar_dynamic .md_v2_sc_bar_number {
+	width: 20px;
+	position: absolute;
+	left: -17px;
+	top: -3px;
+	font-size: 12px;
+	font-weight: bold;
+}
+.md_v2_sc_bar_top .md_v2_sc_bar_number, .md_v2_sc_bar_bottom .md_v2_sc_bar_number 
+{
+    position: absolute;
+right: -19px;
+font-size: 12px;
+font-weight: bold;
+top: -6px;
+}
+.md_v2_sc_list_items label
+{
+    font-size: 11px;
+width: 50%;
+text-align: center;
+display: block;
+float: left;
+padding-top: 4px;
+    }
+.md_v2_statis_charts_items {
+	width: 25%;
+	float: left;
+}
+.md_v2_sc_items_bars {
+	position: relative;
+	height: 128px;
+}
+.md_v2_statis_charts_left {
+	position: absolute;
+	float: left;
+	bottom: 0px;
+	width: 70px;
+	left: 27px;
+}
+.md_v2_statis_charts_right 
+{
+    width:42%;
+	position: absolute;
+	right: 10px;
+	bottom: 5px;
+}
+.md_v2_sc_bar_dynamic {
+	position: absolute;
+	background-color: #009345;
+	height: 10px;
+	width: 109%;
+	top: 21px;
+	z-index:100;
+	left: -6px;
+}
+.md_v2_sc_bar_top 
+{
+    position:relative;
+	height: 50px;
+	
+}
+.md_v2_sc_bar_bottom 
+{
+    position:relative;
+	
+	height: 70px;
+}
+.md_v2_sc_items_title {
+	background-color: #DCDCE4;
+	text-align: center;
+	font-size: 16px;
+	color: #666;
+	padding: 2px;
+	font-weight: bold;
+}
+.manager_dashboad_v2_content {
+}
+.md_rr_star_holder {
+	width: 80%;
+	height: 40px;
+	float: left;
+	margin-top: 5px;
+}
+.md_rr_star_items {
+	float: left;
+	margin-left: 1%;
+	width: 18%;
+	height: 40px;
+}
+.md_rr_star_info {
+	margin-top: 5px;
+	width: 20%;
+	float: right;
+}
+.md_rr_star_info_items {
+
+}
+.md_rr_star_info_items label {
+	width: 50%;
+	display: block;
+	font-size: 12px;
+	float: left;
+	text-align: center;
+}
+.md_v2_content_left {
+	width: 40%;
+	float: left;
+}
+.md_v2_content_left_top {
+	clear: both;
+	margin-bottom: 20px;
+}
+.md_v2_reviewrating_holder {
+	height: 48px;
+	border: 1px solid #EDD;
+	margin: 5px 0px;
+	padding: 10px;
+}
+.md_v2_reviewbreakdown_holder {
+}
+.md_v2_content_right {
+	width: 58%;
+	float: right;
+}
+.md_v2_content_right_top {
+	margin-bottom: 20px;
+}
+.md_v2_team_holder {
+	height: 48px;
+	margin: 5px 0px;
+	padding: 10px;
+	border: 1px solid #CDCDCD;
+}
+.md_v2_team_rates {
+	width: 60%;
+	float: left;
+}
+.md_v2_team_rates_items {
+	width: 17%;
+	height: 47px;
+	position: relative;
+	border: 1px solid;
+	float: left;
+	margin-right: 2%;
+	text-align: center;
+	background-color: #302E55;
+}
+.md_v2_tr_items_number {
+	width: 28px;
+	font-size: 12px;
+	position: absolute;
+	padding: 1px;
+	background-color: #F4C72C;
+	bottom: -1px;
+	right: -1px;
+}
+.md_v2_team_rs {
+	width: 13%;
+	float: left;
+	text-align: center;
+	margin-left: 5px;
+	font-size: 13px;
+}
+.md_v2_team_rate {
+	float: right;
+	font-size: 13px;
+	text-align: center;
+}
+.md_v2_team_rs_title {
+	font-weight: bold;
+}
+.md_v2_team_rs_new {
+	font-weight: bold;
+	color: #247942;
+}
+.md_v2_team_rs_total {
+	font-weight: bold;
+	color: #302E55;
+}
+.md_v2_survey_list {
+	height: 260px;
+	overflow: auto;
+}
+.md_v2_survey_items {
+}
+.md_v2_si_header {
+	margin: 3px 0px;
+	font-size: 12px;
+	background-color: #EEE;
+	padding: 1px 8px;
+}
+.md_v2_si_header nobr {
+	float: right;
+}
+.md_v2_si_items_holder {
+	clear: both;
+}
+.md_v2_bw_holder {
+	font-size: 12px;
+	clear: both;
+	height: 17px;
+	padding: 2px;
+}
+.md_v2_bw_alert {
+	text-align: center;
+	width: 40px;
+	color: #FFF;
+	float: left;
+	padding: 1px;
+	font-size: 9px;
+}
+.md_v2_best {
+	background-color: #009345;
+}
+.md_v2_bw_text {
+	width: 77%;
+	padding: 0px 5px;
+	float: left;
+	font-size: 10px;
+}
+.md_v2_bw_rate_holder {
+}
+.md_v2_best_start {
+}
+.md_v2_best_number {
+	border: 1px solid #EEE;
+	float: right;
+	background-color: #FEFCD3;
+	width: 10%;
+	height: 18px;
+	text-align: center;
+}
+.md_v2_worst {
+	background-color: #C1282D;
+}
+.md_v2_worst_start {
+}
+.md_v2_worst_number {
+	border: 1px solid #EEE;
+	background-color: #FEFCD3;
+	float: right;
+	width: 10%;
+	text-align: center;
+}
+/* end */
+div.comparison-view {
+	float: right;
+	position: relative;
+	top: -30px;
+	width: 200px;
+	overflow: hidden;
+	background: #e9eaef;
+	height: 605px;
+}
+
+div.comparison-view .expand-control {
+	float: left;
+	height: 100%;
+	width: 5px;
+	background: white;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+h3.comparison-header {
+	margin: 0;
+	width: 180px;
+	background: #222222;
+	color: white;
+	font-weight: normal;
+	font-size: 14pt;
+	padding: 5px 0px 5px 30px;
+}
+
+div.comparison-list-wrap {
+	height: 572px;
+	overflow: hidden;
+	overflow-y: auto;
+}
+
+ul.comparison-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-size: 8pt;
+	overflow: auto;
+}
+
+ul.comparison-list li {
+	padding: 5px 5px 5px 10px;
+}
+
+ul.comparison-list li:nth-child(2n+2) {
+	background: white;
+}
+
+div.profile-reviews-header h3 {
+	font-size: 18pt;
+	font-weight: normal;
+	color: #222;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+div.profile-reviews-controls {
+	float: right;
+	position: relative;
+	top: -45px;
+}
+
+div.profile-reviews-controls div {
+	float: left;
+	width: 141px;
+	padding: 5px 0px;
+	text-align: center;
+	margin-left: 15px;
+	background: #003399;
+	color: white;
+	font-size: 11pt;
+	cursor: pointer;
+}
+
+div.profile-reviews-listing-filter {
+	background: #003399;
+	padding: 5px 10px;
+	color: white;
+	font-size: 10pt;
+}
+
+div.profile-reviews-listing-items div.scrollingArea {
+	height: 200px;
+}
+
+div.profile-reviews-listing table.list {
+	font-size: 9pt;
+	text-align: left;
+}
+
+div.profile-reviews-listing table.list thead th {
+	font-size: 10pt !important;
+	padding: 10px;
+	background: #d8d8d8;
+	color: black;
+}
+
+div.profile-reviews-listing table.list td, div.profile-reviews-listing table.list th {
+	padding: 5px 10px 5px 10px;
+}
+
+ul.comparison-list span.stars {
+	width: 50px;
+	height: 15px;
+	display: inline-block;
+	float: right;
+}
+
+.page-tab {
+	margin: 0;
+	padding: 0;
+	clear: both;
+	float: left;
+}
+
+/*send survey*/
+
+div.form-boxes {
+	float: left;
+	margin-bottom: 20px;
+}
+
+div.customer-survey-form {
+	width: 310px;
+}
+
+div.form-boxes h3 {
+	padding: 0px;
+	margin: 0px;
+	margin-left: 30px;
+	font-weight: normal;
+	font-size: 14pt;
+}
+
+div.send-survey-tab div.form-wrapper {
+	border: 2px solid white;
+	background: #e8eaef;
+	margin-left: 30px;
+	box-shadow: 0px 0px 0px 1px #e8eaef;
+	padding: 10px;
+	overflow: hidden;
+}
+
+div.form-wrapper > div {
+	font-size: 10pt;
+}
+
+div.form-wrapper span.label {
+	display: block;
+	float: left;
+	padding-top: 4px;
+	width: 125px;
+}
+
+div.form-wrapper input[type="text"] {
+	width: 125px;
+	height: 22px;
+	margin-bottom: 1px;
+}
+
+div.customer-car-info span.label, div.customer-sales-info span.label {
+	width: auto;
+	margin-right: 5px;
+}
+
+div.customer-car-info select, div.customer-sales-info select {
+	width: 93px;
+}
+
+div.customer-car-info > div.form-wrapper > div {
+	float: left;
+	margin-right: 10px;
+}
+
+div.customer-sales-info > div.form-wrapper {
+	width: 550px;
+}
+
+div.customer-sales-info > div.form-wrapper > div {
+	float: left;
+	margin-right: 10px;
+}
+
+div.survey-preview-window {
+	margin-left: 30px;
+}
+
+div.survey-preview-window h3 {
+	font-weight: normal;
+	font-size: 14pt;
+	margin: 0;
+	padding: 0;
+}
+
+div.template-view-wrapper {
+	border: 2px solid white;
+	background: #e8eaef;
+	box-shadow: 0px 0px 0px 1px #e8eaef;
+	padding: 10px;
+	overflow: hidden;
+	width: 860px;
+}
+
+div.template-view {
+	border: 2px solid #e8eaef;
+	background: white;
+	box-shadow: 0px 0px 0px 1px white;
+	padding: 10px;
+	overflow: hidden;
+	height: 300px;
+	overflow-y: auto;
+	font-size: 10pt;
+}
+
+div.survey-preview-window {
+	float: left;
+	position: relative;
+}
+
+div.new-survey-controls {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+/*salesperson surveys*/
+
+div.survey-list-wrap, div.reviews-list-wrap {
+	padding: 0px 30px;
+}
+
+div.survey-list-wrap table {
+	font-size: 10pt;
+}
+
+div.survey-list-wrap table th {
+	padding: 10px;
+	background: #d8d8d8;
+	color: black;
+	overflow: hidden;
+}
+
+div.survey-list-wrap table td {
+	padding: 3px 10px;
+	overflow: hidden;
+}
+
+div.survey-list-filter {
+	color: white;
+	background: #003399;
+	padding: 5px 10px;
+	font-size: 10pt;
+}
+
+div.survey-list-wrap div.scrollingArea {
+	height: 475px;
+}
+
+/*salesperson reviews*/
+
+div.reviews-listing-filter {
+	background: #003399;
+	padding: 5px 10px;
+	color: white;
+	font-size: 10pt;
+}
+
+div.reviews-listing-items div.scrollingArea {
+	height: 475px;
+}
+
+div.reviews-list-wrap table {
+	font-size: 9pt;
+	text-align: left;
+}
+
+div.reviews-list-wrap table.list thead th {
+	font-size: 10pt !important;
+	padding: 10px;
+	background: #d8d8d8;
+	color: black;
+}
+
+div.reviews-list-wrap table.list td, div.reviews-list-wrap table.list th {
+	padding: 5px 10px 5px 10px;
+}
+
+/* - - - - - - - -
+ Manager Page
+ - - - - - - - - */
+
+div.dashboard-new-reviews, div.dashboard-pending-surveys {
+	margin-left: 30px;
+	margin-bottom: 20px;
+}
+
+div.dash-new-reviews-list, div.dash-pending-surveys-list {
+	width: 350px;
+	height: 258px;
+	background: #f9f9fb;
+	border: 1px solid #d8d8d8;
+	overflow: hidden;
+}
+
+div.dash-new-reviews-list .scrollingArea, div.dash-pending-surveys-list .scrollingArea {
+	height: 195px;
+}
+
+div.dash-new-reviews-list table, div.dash-pending-surveys-list table {
+	font-size: 10pt;
+}
+
+h3.dash-box-header {
+	font-size: 14pt;
+	font-weight: normal;
+	margin: 0;
+}
+
+div.dashboard-tab-col {
+	float: left;
+}
+
+div.dashboard-tab-col:nth-child(1) {
+	margin-right: 20px;
+}
+
+div.dashboard-team-rating {
+	overflow: hidden;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+div.top-five-sales {
+	background: #f9f9fb;
+	border: 1px solid #d8d8d8;
+	padding: 10px;
+	float: left;
+	width: 500px;
+}
+
+div.top-five-sales > span {
+	font-size: 10pt;
+}
+
+div.sales-portrait {
+	float: left;
+	margin-right: 20px;
+	margin-top: 5px;
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	position: relative;
+}
+
+div.sales-portrait div.portrait-rating-number {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	background: gold;
+	font-size: 8pt;
+	padding: 1px 5px;
+}
+
+div.team-numbers {
+	float: left;
+}
+
+div.team-numbers > div {
+	float: left;
+	margin-right: 20px;
+	font-size: 10pt;
+	margin-top: 5px;
+}
+
+div.team-number-new {
+	color: #458c00;
+}
+
+div.team-number-total {
+	color: #003399;
+}
+
+div.dashboard-team-rating .stars {
+	width: 200px;
+	height: 50px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+div.dash-social-sites {
+	width: 480px;
+	background: #f9f9fb;
+	border: 1px solid #d8d8d8;
+	padding: 20px;
+	overflow: hidden;
+	height: 339px;
+}
+
+div.dash-social-site-box {
+	float: left;
+	width: 225px;
+	margin-bottom: 20px;
+}
+div.dash-social-site-box img {
+	float: left;
+}
+
+div.dash-social-site-box div.stars {
+	float: left;
+	height: 33px;
+	width: 125px;
+	margin-left: 10px;
+}
+
+div.dash-social-site-box div.review-overview-stats {
+	float: left;
+	margin-top: 10px;
+	margin-left: 20px;
+	font-size: 10pt;
+}
+
+div.team-listing {
+	width: 889px;
+	border: 1px solid #d8d8d8;
+	margin-left: 30px;
+	float: left;
+	margin-bottom: 20px;
+	height: 103px;
+}
+
+div.team-listing-box {
+	margin: 1px;
+	background: #e8eaef;
+	padding: 5px;
+	font-size: 10pt;
+	width: 284px;
+	float: left;
+	cursor: pointer;
+}
+
+div.team-listing-box:hover {
+	color: white;
+	background: #003399;
+}
+
+div.team-listing-box .team-listing-teamname {
+	float: left;
+	margin: 3px;
+}
+
+div.team-listing-box .stars {
+	height: 22px;
+	width: 95px;
+	float: right;
+}
+
+h3.team-tab-header {
+	font-size: 14pt;
+	font-weight: normal;
+	margin: 0;
+}
+
+h3.teams-listing-header {
+	margin-left: 30px;
+}
+
+div.team-member-list {
+	float: left;
+	margin-left: 30px;
+	margin-right: 20px;
+	width: 250px;
+}
+
+div.team-member-rating {
+	float: right;
+	background: gold;
+	padding: 2px 5px;
+	color: black;
+	margin-top: -2px;
+}
+
+div.team-member-list h3 {
+	background: #333;
+	color: white;
+	font-size: 10pt;
+	padding: 10px;
+}
+
+div.team-member-list ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	height: 350px;
+	overflow: hidden;
+	overflow-y: auto;
+	border: 1px solid #e8eaef;
+	padding: 1px;
+}
+
+div.team-member-list li {
+	font-size: 9pt;
+	padding: 5px;
+	cursor: pointer;
+	position: relative;
+}
+
+div.team-member-list li:hover {
+	background: #003399 !important;
+	color: white;
+}
+
+div.team-member-list li:nth-child(2n+1) {
+	background: #e8eaef;
+}
+
+div.reviews-and-survey-lists {
+	padding: 1px;
+	border: 1px solid #e8eaef;
+	float: left;
+	width: 618px;
+}
+
+div.reviews-and-survey-controls {
+	background: #333;
+	color: white;
+	overflow: hidden;
+	font-size: 10pt;
+}
+
+div.reviews-and-survey-controls > div {
+	float: left;
+}
+
+div.reviews-tab-btn, div.surveys-tab-btn {
+	background: #3366cc;
+	padding: 10px 12px;
+	cursor: pointer;
+}
+
+div.reviews-tab-btn.selected, div.surveys-tab-btn.selected, div.reviews-tab-btn:hover, div.surveys-tab-btn:hover {
+	background: #003399;
+}
+
+div.filter-box-right {
+	float: right !important;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+div.reviews-and-survey-lists table {
+	font-size: 10pt;
+}
+
+div.reviews-and-survey-lists .scrollingArea {
+	height: 315px;
+}
+
+div.reviews-and-survey-lists thead th {
+	background: #003399;
+}
+
+div.team-listing .active, div.team-member-list .active {
+	background: #003399 !important;
+	color: white !important;
+}
+
+div.survey-popup div.survey-total-rating {
+	float: right;
+	width: 200px;
+	height: 50px;
+}
+
+div.survey-popup-customer-info, div.review-popup-customer-info {
+	padding: 1px;
+	border: 1px solid #e8eaef;
+	overflow: hidden;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+div.survey-popup-customer-info ul.customer-info-list, div.review-popup-customer-info ul.customer-info-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	float: left;
+	width: 100%;
+}
+
+div.survey-popup-customer-info ul.customer-info-list li, div.review-popup-customer-info ul.customer-info-list li {
+	padding: 5px;
+	background: #e8eaef;
+	width: 48%;
+	float: left;
+	font-size: 8pt;
+}
+
+div.customer-info-list-label {
+	float: left;
+	width: 110px;
+}
+
+div.survey-popup-survey-answers ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+div.survey-popup-survey-answers li > div {
+	float: left;
+	padding: 15px 10px;
+	margin: 1px;
+}
+
+div.survey-popup-survey-answers li {
+	clear: both;
+	float: left;
+	width: 100%;
+}
+
+div.survey-popup-survey-answers li div.question-answer {
+	float: right;
+	background: gold;
+	width: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+
+div.survey-popup-survey-answers li div.question-label {
+	background: #e8eaef;
+	width: 30px;
+	text-align: center;
+}
+div.survey-popup-survey-answers li div.question-text {
+	border-bottom: 1px solid #e8eaef;
+	width: 400px
+}
+
+div.survey-popup-survey-answers div.comments {
+	margin-top: 20px;
+	float: left;
+}
+
+div.customer-review-rating {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+div.review-website-icon {
+	float: left;
+}
+
+div.customer-review-rating .stars {
+	width: 250px;
+	height: 60px;
+	float: left;
+}
+
+div.view-on-wrap {
+	width: 100%;
+	background: #e8eaef;
+	float: left;
+	padding: 5px;
+	margin-top: 5px;
+	text-align: center;
+}
+
+div.new-reviews-controls {
+	overflow: hidden;
+}
+
+div.new-reviews-controls > div:nth-child(1) {
+	border: none;
+}
+
+div.reviews-btn, div.surveys-btn {
+	float: left;
+	text-align: center;
+	width: 116px;
+	padding: 5px 0px;
+	border-left: #d8d8d8 1px solid;
+	cursor: pointer;
+}
+
+div.reviews-btn:hover, div.surveys-btn:hover {
+	background: #d8d8d8;
+}
+
+div.reviews-btn.active, div.surveys-btn.active {
+	background: #444;
+	color: white;
+}

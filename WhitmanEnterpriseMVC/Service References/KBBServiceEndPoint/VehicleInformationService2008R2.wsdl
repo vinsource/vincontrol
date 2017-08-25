@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:i0="http://www.kbb.com/2011/01/25/VehicleInformationService" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="VehicleInformationService2008R2" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://www.kbb.com/2011/01/25/VehicleInformationService" location="http://idws.syndication.kbb.com/3.0/VehicleInformationService2008R2.svc?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="Release2008R2" type="i0:IVehicleInformationService2008R2">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetYears">
+      <soap:operation soapAction="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetYears" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetYearsByModel">
+      <soap:operation soapAction="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetYearsByModel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DateOutOfRangeFaultFault">
+        <soap:fault use="literal" name="DateOutOfRangeFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InternalOperationFaultFault">
+        <soap:fault use="literal" name="InternalOperationFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ModelIdNotFoundFaultFault">
+        <soap:fault use="literal" name="ModelIdNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetModelsByYearAndMake">
+      <soap:operation soapAction="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetModelsByYearAndMake" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InternalOperationFaultFault">
+        <soap:fault use="literal" name="InternalOperationFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="MakeIdNotFoundFaultFault">
+        <soap:fault use="literal" name="MakeIdNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="YearIdNotFoundFaultFault">
+        <soap:fault use="literal" name="YearIdNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetModelsByMakeAcrossAllYears">
+      <soap:operation soapAction="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetModelsByMakeAcrossAllYears" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InternalOperationFaultFault">
+        <soap:fault use="literal" name="InternalOperationFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="DateOutOfRangeFaultFault">
+        <soap:fault use="literal" name="DateOutOfRangeFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="MakeIdNotFoundFaultFault">
+        <soap:fault use="literal" name="MakeIdNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetTrimsAndVehicleIdsByYearAndModel">
+      <soap:operation soapAction="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetTrimsAndVehicleIdsByYearAndModel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InternalOperationFaultFault">
+        <soap:fault use="literal" name="InternalOperationFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="DateOutOfRangeFaultFault">
+        <soap:fault use="literal" name="DateOutOfRangeFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="ModelIdNotFoundFaultFault">
+        <soap:fault use="literal" name="ModelIdNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="YearIdNotFoundFaultFault">
+        <soap:fault use="literal" name="YearIdNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetEnginesByVehicleId">
+      <soap:operation soapAction="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEnginesByVehicleId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidZipCodeFaultFault">
+        <soap:fault use="literal" name="InvalidZipCodeFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InternalOperationFaultFault">
+        <soap:fault use="literal" name="InternalOperationFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="DateOutOfRangeFaultFault">
+        <soap:fault use="literal" name="DateOutOfRangeFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="VehicleIdNotFoundFaultFault">
+        <soap:fault use="literal" name="VehicleIdNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetTransmissionsByVehicleId">
+      <soap:operation soapAction="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetTransmissionsByVehicleId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InternalOperationFaultFault">
+        <soap:fault use="literal" name="InternalOperationFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="DateOutOfRangeFaultFault">
+        <soap:fault use="literal" name="DateOutOfRangeFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="VehicleIdNotFoundFaultFault">
+        <soap:fault use="literal" name="VehicleIdNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidZipCodeFaultFault">
+        <soap:fault use="literal" name="InvalidZipCodeFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetDrivetrainsByVehicleId">
+      <soap:operation soapAction="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetDrivetrainsByVehicleId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidZipCodeFaultFault">
+        <soap:fault use="literal" name="InvalidZipCodeFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InternalOperationFaultFault">
+        <soap:fault use="literal" name="InternalOperationFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="DateOutOfRangeFaultFault">
+        <soap:fault use="literal" name="DateOutOfRangeFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="VehicleIdNotFoundFaultFault">
+        <soap:fault use="literal" name="VehicleIdNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompetitiveSetByVehicleId">
+      <soap:operation soapAction="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetCompetitiveSetByVehicleId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidZipCodeFaultFault">
+        <soap:fault use="literal" name="InvalidZipCodeFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InternalOperationFaultFault">
+        <soap:fault use="literal" name="InternalOperationFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="DateOutOfRangeFaultFault">
+        <soap:fault use="literal" name="DateOutOfRangeFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="VehicleIdNotFoundFaultFault">
+        <soap:fault use="literal" name="VehicleIdNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetReleaseVersionByVersionDate">
+      <soap:operation soapAction="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetReleaseVersionByVersionDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InternalOperationFaultFault">
+        <soap:fault use="literal" name="InternalOperationFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="DateOutOfRangeFaultFault">
+        <soap:fault use="literal" name="DateOutOfRangeFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetEquipmentOptionsByVehicleId">
+      <soap:operation soapAction="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEquipmentOptionsByVehicleId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InternalOperationFaultFault">
+        <soap:fault use="literal" name="InternalOperationFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="DateOutOfRangeFaultFault">
+        <soap:fault use="literal" name="DateOutOfRangeFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="VehicleIdNotFoundFaultFault">
+        <soap:fault use="literal" name="VehicleIdNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidZipCodeFaultFault">
+        <soap:fault use="literal" name="InvalidZipCodeFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetUpdatedEquipmentOptionsByVehicleId">
+      <soap:operation soapAction="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetUpdatedEquipmentOptionsByVehicleId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InvalidZipCodeFaultFault">
+        <soap:fault use="literal" name="InvalidZipCodeFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="DateOutOfRangeFaultFault">
+        <soap:fault use="literal" name="DateOutOfRangeFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="VehicleIdNotFoundFaultFault">
+        <soap:fault use="literal" name="VehicleIdNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InternalOperationFaultFault">
+        <soap:fault use="literal" name="InternalOperationFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateUpdatedEquipmentOptionsByVehicleId">
+      <soap:operation soapAction="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/ValidateUpdatedEquipmentOptionsByVehicleId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InternalOperationFaultFault">
+        <soap:fault use="literal" name="InternalOperationFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="DateOutOfRangeFaultFault">
+        <soap:fault use="literal" name="DateOutOfRangeFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="VehicleIdNotFoundFaultFault">
+        <soap:fault use="literal" name="VehicleIdNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidZipCodeFaultFault">
+        <soap:fault use="literal" name="InvalidZipCodeFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleConfigurationByVIN">
+      <soap:operation soapAction="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleConfigurationByVIN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="VINValidationTooLongFaultFault">
+        <soap:fault use="literal" name="VINValidationTooLongFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="VINValidationTooShortFaultFault">
+        <soap:fault use="literal" name="VINValidationTooShortFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InternalOperationFaultFault">
+        <soap:fault use="literal" name="InternalOperationFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="DateOutOfRangeFaultFault">
+        <soap:fault use="literal" name="DateOutOfRangeFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="VINValidationInvalidCharactersFaultFault">
+        <soap:fault use="literal" name="VINValidationInvalidCharactersFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="VINValidationInvalidCheckDigitFaultFault">
+        <soap:fault use="literal" name="VINValidationInvalidCheckDigitFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="VINValidationInvalidPatternFaultFault">
+        <soap:fault use="literal" name="VINValidationInvalidPatternFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleConfigurationByVehicleId">
+      <soap:operation soapAction="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleConfigurationByVehicleId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="VehicleIdNotFoundFaultFault">
+        <soap:fault use="literal" name="VehicleIdNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InternalOperationFaultFault">
+        <soap:fault use="literal" name="InternalOperationFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="DateOutOfRangeFaultFault">
+        <soap:fault use="literal" name="DateOutOfRangeFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidZipCodeFaultFault">
+        <soap:fault use="literal" name="InvalidZipCodeFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ValidateVIN">
+      <soap:operation soapAction="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/ValidateVIN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InternalOperationFaultFault">
+        <soap:fault use="literal" name="InternalOperationFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidValueFaultFault">
+        <soap:fault use="literal" name="InvalidValueFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetZeroPointMileageByYear">
+      <soap:operation soapAction="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetZeroPointMileageByYear" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InternalOperationFaultFault">
+        <soap:fault use="literal" name="InternalOperationFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="YearIdNotFoundFaultFault">
+        <soap:fault use="literal" name="YearIdNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetReviewsByVehicleId">
+      <soap:operation soapAction="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetReviewsByVehicleId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InternalOperationFaultFault">
+        <soap:fault use="literal" name="InternalOperationFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="DateOutOfRangeFaultFault">
+        <soap:fault use="literal" name="DateOutOfRangeFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="VehicleIdNotFoundFaultFault">
+        <soap:fault use="literal" name="VehicleIdNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidZipCodeFaultFault">
+        <soap:fault use="literal" name="InvalidZipCodeFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleValuesByVehicleConfiguration">
+      <soap:operation soapAction="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleValuesByVehicleConfiguration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InternalOperationFaultFault">
+        <soap:fault use="literal" name="InternalOperationFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="DateOutOfRangeFaultFault">
+        <soap:fault use="literal" name="DateOutOfRangeFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidZipCodeFaultFault">
+        <soap:fault use="literal" name="InvalidZipCodeFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleValuesByVehicleConfigurationAllConditions">
+      <soap:operation soapAction="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleValuesByVehicleConfigurationAllConditions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DateOutOfRangeFaultFault">
+        <soap:fault use="literal" name="DateOutOfRangeFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InternalOperationFaultFault">
+        <soap:fault use="literal" name="InternalOperationFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidZipCodeFaultFault">
+        <soap:fault use="literal" name="InvalidZipCodeFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetEquipmentOptionsValueByVehicleId">
+      <soap:operation soapAction="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetEquipmentOptionsValueByVehicleId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InternalOperationFaultFault">
+        <soap:fault use="literal" name="InternalOperationFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="DateOutOfRangeFaultFault">
+        <soap:fault use="literal" name="DateOutOfRangeFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="VehicleIdNotFoundFaultFault">
+        <soap:fault use="literal" name="VehicleIdNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InvalidZipCodeFaultFault">
+        <soap:fault use="literal" name="InvalidZipCodeFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetMakes">
+      <soap:operation soapAction="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetMakes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="DateOutOfRangeFaultFault">
+        <soap:fault use="literal" name="DateOutOfRangeFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InternalOperationFaultFault">
+        <soap:fault use="literal" name="InternalOperationFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetMakesByYear">
+      <soap:operation soapAction="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetMakesByYear" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InternalOperationFaultFault">
+        <soap:fault use="literal" name="InternalOperationFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="DateOutOfRangeFaultFault">
+        <soap:fault use="literal" name="DateOutOfRangeFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="YearIdNotFoundFaultFault">
+        <soap:fault use="literal" name="YearIdNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetCPOPrograms">
+      <soap:operation soapAction="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetCPOPrograms" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InternalOperationFaultFault">
+        <soap:fault use="literal" name="InternalOperationFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="DateOutOfRangeFaultFault">
+        <soap:fault use="literal" name="DateOutOfRangeFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetVehicleSpecificationsByVehicleId">
+      <soap:operation soapAction="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetVehicleSpecificationsByVehicleId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InternalOperationFaultFault">
+        <soap:fault use="literal" name="InternalOperationFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="DateOutOfRangeFaultFault">
+        <soap:fault use="literal" name="DateOutOfRangeFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="VehicleIdNotFoundFaultFault">
+        <soap:fault use="literal" name="VehicleIdNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableMethods">
+      <soap:operation soapAction="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetAvailableMethods" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InternalOperationFaultFault">
+        <soap:fault use="literal" name="InternalOperationFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetConversionDataByVersionDate">
+      <soap:operation soapAction="http://www.kbb.com/2011/01/25/VehicleInformationService/IVehicleInformationService2008R2/GetConversionDataByVersionDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="VehicleIdNotFoundFaultFault">
+        <soap:fault use="literal" name="VehicleIdNotFoundFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="SecurityFaultFault">
+        <soap:fault use="literal" name="SecurityFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VehicleInformationService2008R2">
+    <wsdl:port name="Release2008R2" binding="tns:Release2008R2">
+      <soap:address location="http://idws.syndication.kbb.com/3.0/VehicleInformationService2008R2.svc/Soap11" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

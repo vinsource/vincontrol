@@ -1,0 +1,16 @@
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\Vincontrol.Payment\bin\Debug\Vincontrol.Payment.dll.config
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\Vincontrol.Payment\bin\Debug\Vincontrol.Payment.dll
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\Vincontrol.Payment\bin\Debug\Vincontrol.Payment.pdb
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\Vincontrol.Payment\bin\Debug\vincontrol.ConfigurationManagement.dll
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\Vincontrol.Payment\bin\Debug\vincontrol.ConfigurationManagement.pdb
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\Vincontrol.Payment\obj\Debug\Vincontrol.Payment.csprojResolveAssemblyReference.cache
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\Vincontrol.Payment\obj\Debug\Vincontrol.Payment.dll
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\Vincontrol.Payment\obj\Debug\Vincontrol.Payment.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\Vincontrol.Payment\bin\Debug\Vincontrol.Payment.dll.config
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\Vincontrol.Payment\bin\Debug\Vincontrol.Payment.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\Vincontrol.Payment\bin\Debug\Vincontrol.Payment.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\Vincontrol.Payment\bin\Debug\vincontrol.ConfigurationManagement.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\Vincontrol.Payment\bin\Debug\vincontrol.ConfigurationManagement.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\Vincontrol.Payment\obj\Debug\Vincontrol.Payment.csprojResolveAssemblyReference.cache
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\Vincontrol.Payment\obj\Debug\Vincontrol.Payment.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\Vincontrol.Payment\obj\Debug\Vincontrol.Payment.pdb

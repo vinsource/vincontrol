@@ -1,0 +1,1755 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="vincontrolscrappingModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="vincontrolscrappingModelStoreContainer">
+    <EntitySet Name="automake" EntityType="vincontrolscrappingModel.Store.automake" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="autotrader_from_year2001_to_year2003" EntityType="vincontrolscrappingModel.Store.autotrader_from_year2001_to_year2003" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="autotrader_from_year2004_to_year2005" EntityType="vincontrolscrappingModel.Store.autotrader_from_year2004_to_year2005" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="autotrader_lessorequal_year2000" EntityType="vincontrolscrappingModel.Store.autotrader_lessorequal_year2000" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="autotrader_year2006" EntityType="vincontrolscrappingModel.Store.autotrader_year2006" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="autotrader_year2007" EntityType="vincontrolscrappingModel.Store.autotrader_year2007" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="autotrader_year2008" EntityType="vincontrolscrappingModel.Store.autotrader_year2008" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="autotrader_year2009" EntityType="vincontrolscrappingModel.Store.autotrader_year2009" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="autotrader_year2010" EntityType="vincontrolscrappingModel.Store.autotrader_year2010" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="autotrader_year2011" EntityType="vincontrolscrappingModel.Store.autotrader_year2011" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="autotrader_year2012" EntityType="vincontrolscrappingModel.Store.autotrader_year2012" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="autotrader_year2013" EntityType="vincontrolscrappingModel.Store.autotrader_year2013" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="autotrader_year2014" EntityType="vincontrolscrappingModel.Store.autotrader_year2014" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="autotraderdealer" EntityType="vincontrolscrappingModel.Store.autotraderdealer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="carscom_from_year2001_to_year2003" EntityType="vincontrolscrappingModel.Store.carscom_from_year2001_to_year2003" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="carscom_from_year2004_to_year2005" EntityType="vincontrolscrappingModel.Store.carscom_from_year2004_to_year2005" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="carscom_lessorequal_year2000" EntityType="vincontrolscrappingModel.Store.carscom_lessorequal_year2000" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="carscom_year2006" EntityType="vincontrolscrappingModel.Store.carscom_year2006" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="carscom_year2007" EntityType="vincontrolscrappingModel.Store.carscom_year2007" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="carscom_year2008" EntityType="vincontrolscrappingModel.Store.carscom_year2008" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="carscom_year2009" EntityType="vincontrolscrappingModel.Store.carscom_year2009" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="carscom_year2010" EntityType="vincontrolscrappingModel.Store.carscom_year2010" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="carscom_year2011" EntityType="vincontrolscrappingModel.Store.carscom_year2011" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="carscom_year2012" EntityType="vincontrolscrappingModel.Store.carscom_year2012" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="carscom_year2013" EntityType="vincontrolscrappingModel.Store.carscom_year2013" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="carscom_year2014" EntityType="vincontrolscrappingModel.Store.carscom_year2014" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="carscomdealer" EntityType="vincontrolscrappingModel.Store.carscomdealer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="manheim_auctions" EntityType="vincontrolscrappingModel.Store.manheim_auctions" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="automake">
+    <Key>
+      <PropertyRef Name="VinAutoMakeId" />
+    </Key>
+    <Property Name="VinAutoMakeId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Make" Type="nvarchar" MaxLength="45" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="autotrader_from_year2001_to_year2003">
+    <Key>
+      <PropertyRef Name="RegionalListingId" />
+    </Key>
+    <Property Name="RegionalListingId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="100" />
+    <Property Name="AutoTraderStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="BodyStyle" Type="nvarchar" MaxLength="100" />
+    <Property Name="StartingPrice" Type="int" />
+    <Property Name="CurrentPrice" Type="int" />
+    <Property Name="MSRP" Type="nvarchar" MaxLength="45" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="100" />
+    <Property Name="Engine" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Doors" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTrader" Type="bit" />
+    <Property Name="AutoTraderListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTraderListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderListingURL" Type="nvarchar(max)" />
+    <Property Name="AutoTraderThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderDescription" Type="nvarchar(max)" />
+    <Property Name="AutoTraderInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarsCom" Type="bit" />
+    <Property Name="CarsComListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComListingURL" Type="nvarchar(max)" />
+    <Property Name="CarsComThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComDescription" Type="nvarchar(max)" />
+    <Property Name="CarsComInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="Ebay" Type="smallint" />
+    <Property Name="EbayListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="EbayListingName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EbayURL" Type="nvarchar(max)" />
+    <Property Name="EbayThumbnailURL" Type="nvarchar(max)" />
+    <Property Name="EbayDescription" Type="nvarchar(max)" />
+    <Property Name="EbayInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarFaxURL" Type="nvarchar(max)" />
+    <Property Name="CarFaxType" Type="int" />
+    <Property Name="AutoCheckURL" Type="nvarchar(max)" />
+    <Property Name="Navigation" Type="smallint" />
+    <Property Name="SunRoof" Type="bit" />
+    <Property Name="MoonRoof" Type="bit" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="Franchise" Type="bit" />
+    <Property Name="UsedNew" Type="smallint" />
+    <Property Name="VinControlDealerId" Type="int" />
+    <Property Name="AutoTraderDealerId" Type="int" />
+    <Property Name="CarsComDealerId" Type="int" />
+    <Property Name="Dealershipname" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="10" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdatedPrice" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="autotrader_from_year2004_to_year2005">
+    <Key>
+      <PropertyRef Name="RegionalListingId" />
+    </Key>
+    <Property Name="RegionalListingId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="100" />
+    <Property Name="AutoTraderStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="BodyStyle" Type="nvarchar" MaxLength="100" />
+    <Property Name="StartingPrice" Type="int" />
+    <Property Name="CurrentPrice" Type="int" />
+    <Property Name="MSRP" Type="nvarchar" MaxLength="45" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="100" />
+    <Property Name="Engine" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Doors" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTrader" Type="bit" />
+    <Property Name="AutoTraderListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTraderListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderListingURL" Type="nvarchar(max)" />
+    <Property Name="AutoTraderThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderDescription" Type="nvarchar(max)" />
+    <Property Name="AutoTraderInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarsCom" Type="bit" />
+    <Property Name="CarsComListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComListingURL" Type="nvarchar(max)" />
+    <Property Name="CarsComThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComDescription" Type="nvarchar(max)" />
+    <Property Name="CarsComInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="Ebay" Type="smallint" />
+    <Property Name="EbayListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="EbayListingName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EbayURL" Type="nvarchar(max)" />
+    <Property Name="EbayThumbnailURL" Type="nvarchar(max)" />
+    <Property Name="EbayDescription" Type="nvarchar(max)" />
+    <Property Name="EbayInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarFaxURL" Type="nvarchar(max)" />
+    <Property Name="CarFaxType" Type="int" />
+    <Property Name="AutoCheckURL" Type="nvarchar(max)" />
+    <Property Name="Navigation" Type="smallint" />
+    <Property Name="SunRoof" Type="bit" />
+    <Property Name="MoonRoof" Type="bit" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="Franchise" Type="bit" />
+    <Property Name="UsedNew" Type="smallint" />
+    <Property Name="VinControlDealerId" Type="int" />
+    <Property Name="AutoTraderDealerId" Type="int" />
+    <Property Name="CarsComDealerId" Type="int" />
+    <Property Name="Dealershipname" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="10" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdatedPrice" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="autotrader_lessorequal_year2000">
+    <Key>
+      <PropertyRef Name="RegionalListingId" />
+    </Key>
+    <Property Name="RegionalListingId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="100" />
+    <Property Name="AutoTraderStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="BodyStyle" Type="nvarchar" MaxLength="100" />
+    <Property Name="StartingPrice" Type="int" />
+    <Property Name="CurrentPrice" Type="int" />
+    <Property Name="MSRP" Type="nvarchar" MaxLength="45" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="100" />
+    <Property Name="Engine" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Doors" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTrader" Type="bit" />
+    <Property Name="AutoTraderListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTraderListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderListingURL" Type="nvarchar(max)" />
+    <Property Name="AutoTraderThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderDescription" Type="nvarchar(max)" />
+    <Property Name="AutoTraderInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarsCom" Type="bit" />
+    <Property Name="CarsComListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComListingURL" Type="nvarchar(max)" />
+    <Property Name="CarsComThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComDescription" Type="nvarchar(max)" />
+    <Property Name="CarsComInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="Ebay" Type="smallint" />
+    <Property Name="EbayListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="EbayListingName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EbayURL" Type="nvarchar(max)" />
+    <Property Name="EbayThumbnailURL" Type="nvarchar(max)" />
+    <Property Name="EbayDescription" Type="nvarchar(max)" />
+    <Property Name="EbayInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarFaxURL" Type="nvarchar(max)" />
+    <Property Name="CarFaxType" Type="int" />
+    <Property Name="AutoCheckURL" Type="nvarchar(max)" />
+    <Property Name="Navigation" Type="smallint" />
+    <Property Name="SunRoof" Type="bit" />
+    <Property Name="MoonRoof" Type="bit" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="Franchise" Type="bit" />
+    <Property Name="UsedNew" Type="smallint" />
+    <Property Name="VinControlDealerId" Type="int" />
+    <Property Name="AutoTraderDealerId" Type="int" />
+    <Property Name="CarsComDealerId" Type="int" />
+    <Property Name="Dealershipname" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="10" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdatedPrice" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="autotrader_year2006">
+    <Key>
+      <PropertyRef Name="RegionalListingId" />
+    </Key>
+    <Property Name="RegionalListingId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="100" />
+    <Property Name="AutoTraderStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="BodyStyle" Type="nvarchar" MaxLength="100" />
+    <Property Name="StartingPrice" Type="int" />
+    <Property Name="CurrentPrice" Type="int" />
+    <Property Name="MSRP" Type="nvarchar" MaxLength="45" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="100" />
+    <Property Name="Engine" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Doors" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTrader" Type="bit" />
+    <Property Name="AutoTraderListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTraderListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderListingURL" Type="nvarchar(max)" />
+    <Property Name="AutoTraderThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderDescription" Type="nvarchar(max)" />
+    <Property Name="AutoTraderInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarsCom" Type="bit" />
+    <Property Name="CarsComListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComListingURL" Type="nvarchar(max)" />
+    <Property Name="CarsComThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComDescription" Type="nvarchar(max)" />
+    <Property Name="CarsComInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="Ebay" Type="smallint" />
+    <Property Name="EbayListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="EbayListingName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EbayURL" Type="nvarchar(max)" />
+    <Property Name="EbayThumbnailURL" Type="nvarchar(max)" />
+    <Property Name="EbayDescription" Type="nvarchar(max)" />
+    <Property Name="EbayInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarFaxURL" Type="nvarchar(max)" />
+    <Property Name="CarFaxType" Type="int" />
+    <Property Name="AutoCheckURL" Type="nvarchar(max)" />
+    <Property Name="Navigation" Type="smallint" />
+    <Property Name="SunRoof" Type="bit" />
+    <Property Name="MoonRoof" Type="bit" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="Franchise" Type="bit" />
+    <Property Name="UsedNew" Type="smallint" />
+    <Property Name="VinControlDealerId" Type="int" />
+    <Property Name="AutoTraderDealerId" Type="int" />
+    <Property Name="CarsComDealerId" Type="int" />
+    <Property Name="Dealershipname" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="10" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdatedPrice" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="autotrader_year2007">
+    <Key>
+      <PropertyRef Name="RegionalListingId" />
+    </Key>
+    <Property Name="RegionalListingId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="100" />
+    <Property Name="AutoTraderStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="BodyStyle" Type="nvarchar" MaxLength="100" />
+    <Property Name="StartingPrice" Type="int" />
+    <Property Name="CurrentPrice" Type="int" />
+    <Property Name="MSRP" Type="nvarchar" MaxLength="45" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="100" />
+    <Property Name="Engine" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Doors" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTrader" Type="bit" />
+    <Property Name="AutoTraderListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTraderListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderListingURL" Type="nvarchar(max)" />
+    <Property Name="AutoTraderThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderDescription" Type="nvarchar(max)" />
+    <Property Name="AutoTraderInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarsCom" Type="bit" />
+    <Property Name="CarsComListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComListingURL" Type="nvarchar(max)" />
+    <Property Name="CarsComThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComDescription" Type="nvarchar(max)" />
+    <Property Name="CarsComInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="Ebay" Type="smallint" />
+    <Property Name="EbayListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="EbayListingName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EbayURL" Type="nvarchar(max)" />
+    <Property Name="EbayThumbnailURL" Type="nvarchar(max)" />
+    <Property Name="EbayDescription" Type="nvarchar(max)" />
+    <Property Name="EbayInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarFaxURL" Type="nvarchar(max)" />
+    <Property Name="CarFaxType" Type="int" />
+    <Property Name="AutoCheckURL" Type="nvarchar(max)" />
+    <Property Name="Navigation" Type="smallint" />
+    <Property Name="SunRoof" Type="bit" />
+    <Property Name="MoonRoof" Type="bit" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="Franchise" Type="bit" />
+    <Property Name="UsedNew" Type="smallint" />
+    <Property Name="VinControlDealerId" Type="int" />
+    <Property Name="AutoTraderDealerId" Type="int" />
+    <Property Name="CarsComDealerId" Type="int" />
+    <Property Name="Dealershipname" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="10" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdatedPrice" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="autotrader_year2008">
+    <Key>
+      <PropertyRef Name="RegionalListingId" />
+    </Key>
+    <Property Name="RegionalListingId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="100" />
+    <Property Name="AutoTraderStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="BodyStyle" Type="nvarchar" MaxLength="100" />
+    <Property Name="StartingPrice" Type="int" />
+    <Property Name="CurrentPrice" Type="int" />
+    <Property Name="MSRP" Type="nvarchar" MaxLength="45" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="100" />
+    <Property Name="Engine" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Doors" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTrader" Type="bit" />
+    <Property Name="AutoTraderListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTraderListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderListingURL" Type="nvarchar(max)" />
+    <Property Name="AutoTraderThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderDescription" Type="nvarchar(max)" />
+    <Property Name="AutoTraderInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarsCom" Type="bit" />
+    <Property Name="CarsComListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComListingURL" Type="nvarchar(max)" />
+    <Property Name="CarsComThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComDescription" Type="nvarchar(max)" />
+    <Property Name="CarsComInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="Ebay" Type="smallint" />
+    <Property Name="EbayListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="EbayListingName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EbayURL" Type="nvarchar(max)" />
+    <Property Name="EbayThumbnailURL" Type="nvarchar(max)" />
+    <Property Name="EbayDescription" Type="nvarchar(max)" />
+    <Property Name="EbayInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarFaxURL" Type="nvarchar(max)" />
+    <Property Name="CarFaxType" Type="int" />
+    <Property Name="AutoCheckURL" Type="nvarchar(max)" />
+    <Property Name="Navigation" Type="smallint" />
+    <Property Name="SunRoof" Type="bit" />
+    <Property Name="MoonRoof" Type="bit" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="Franchise" Type="bit" />
+    <Property Name="UsedNew" Type="smallint" />
+    <Property Name="VinControlDealerId" Type="int" />
+    <Property Name="AutoTraderDealerId" Type="int" />
+    <Property Name="CarsComDealerId" Type="int" />
+    <Property Name="Dealershipname" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="10" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdatedPrice" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="autotrader_year2009">
+    <Key>
+      <PropertyRef Name="RegionalListingId" />
+    </Key>
+    <Property Name="RegionalListingId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="100" />
+    <Property Name="AutoTraderStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="BodyStyle" Type="nvarchar" MaxLength="100" />
+    <Property Name="StartingPrice" Type="int" />
+    <Property Name="CurrentPrice" Type="int" />
+    <Property Name="MSRP" Type="nvarchar" MaxLength="45" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="100" />
+    <Property Name="Engine" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Doors" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTrader" Type="bit" />
+    <Property Name="AutoTraderListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTraderListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderListingURL" Type="nvarchar(max)" />
+    <Property Name="AutoTraderThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderDescription" Type="nvarchar(max)" />
+    <Property Name="AutoTraderInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarsCom" Type="bit" />
+    <Property Name="CarsComListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComListingURL" Type="nvarchar(max)" />
+    <Property Name="CarsComThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComDescription" Type="nvarchar(max)" />
+    <Property Name="CarsComInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="Ebay" Type="smallint" />
+    <Property Name="EbayListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="EbayListingName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EbayURL" Type="nvarchar(max)" />
+    <Property Name="EbayThumbnailURL" Type="nvarchar(max)" />
+    <Property Name="EbayDescription" Type="nvarchar(max)" />
+    <Property Name="EbayInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarFaxURL" Type="nvarchar(max)" />
+    <Property Name="CarFaxType" Type="int" />
+    <Property Name="AutoCheckURL" Type="nvarchar(max)" />
+    <Property Name="Navigation" Type="smallint" />
+    <Property Name="SunRoof" Type="bit" />
+    <Property Name="MoonRoof" Type="bit" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="Franchise" Type="bit" />
+    <Property Name="UsedNew" Type="smallint" />
+    <Property Name="VinControlDealerId" Type="int" />
+    <Property Name="AutoTraderDealerId" Type="int" />
+    <Property Name="CarsComDealerId" Type="int" />
+    <Property Name="Dealershipname" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="10" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdatedPrice" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="autotrader_year2010">
+    <Key>
+      <PropertyRef Name="RegionalListingId" />
+    </Key>
+    <Property Name="RegionalListingId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="100" />
+    <Property Name="AutoTraderStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="BodyStyle" Type="nvarchar" MaxLength="100" />
+    <Property Name="StartingPrice" Type="int" />
+    <Property Name="CurrentPrice" Type="int" />
+    <Property Name="MSRP" Type="nvarchar" MaxLength="45" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="100" />
+    <Property Name="Engine" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Doors" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTrader" Type="bit" />
+    <Property Name="AutoTraderListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTraderListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderListingURL" Type="nvarchar(max)" />
+    <Property Name="AutoTraderThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderDescription" Type="nvarchar(max)" />
+    <Property Name="AutoTraderInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarsCom" Type="bit" />
+    <Property Name="CarsComListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComListingURL" Type="nvarchar(max)" />
+    <Property Name="CarsComThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComDescription" Type="nvarchar(max)" />
+    <Property Name="CarsComInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="Ebay" Type="smallint" />
+    <Property Name="EbayListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="EbayListingName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EbayURL" Type="nvarchar(max)" />
+    <Property Name="EbayThumbnailURL" Type="nvarchar(max)" />
+    <Property Name="EbayDescription" Type="nvarchar(max)" />
+    <Property Name="EbayInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarFaxURL" Type="nvarchar(max)" />
+    <Property Name="CarFaxType" Type="int" />
+    <Property Name="AutoCheckURL" Type="nvarchar(max)" />
+    <Property Name="Navigation" Type="smallint" />
+    <Property Name="SunRoof" Type="bit" />
+    <Property Name="MoonRoof" Type="bit" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="Franchise" Type="bit" />
+    <Property Name="UsedNew" Type="smallint" />
+    <Property Name="VinControlDealerId" Type="int" />
+    <Property Name="AutoTraderDealerId" Type="int" />
+    <Property Name="CarsComDealerId" Type="int" />
+    <Property Name="Dealershipname" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="10" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdatedPrice" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="autotrader_year2011">
+    <Key>
+      <PropertyRef Name="RegionalListingId" />
+    </Key>
+    <Property Name="RegionalListingId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="100" />
+    <Property Name="AutoTraderStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="BodyStyle" Type="nvarchar" MaxLength="100" />
+    <Property Name="StartingPrice" Type="int" />
+    <Property Name="CurrentPrice" Type="int" />
+    <Property Name="MSRP" Type="nvarchar" MaxLength="45" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="100" />
+    <Property Name="Engine" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Doors" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTrader" Type="bit" />
+    <Property Name="AutoTraderListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTraderListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderListingURL" Type="nvarchar(max)" />
+    <Property Name="AutoTraderThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderDescription" Type="nvarchar(max)" />
+    <Property Name="AutoTraderInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarsCom" Type="bit" />
+    <Property Name="CarsComListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComListingURL" Type="nvarchar(max)" />
+    <Property Name="CarsComThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComDescription" Type="nvarchar(max)" />
+    <Property Name="CarsComInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="Ebay" Type="smallint" />
+    <Property Name="EbayListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="EbayListingName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EbayURL" Type="nvarchar(max)" />
+    <Property Name="EbayThumbnailURL" Type="nvarchar(max)" />
+    <Property Name="EbayDescription" Type="nvarchar(max)" />
+    <Property Name="EbayInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarFaxURL" Type="nvarchar(max)" />
+    <Property Name="CarFaxType" Type="int" />
+    <Property Name="AutoCheckURL" Type="nvarchar(max)" />
+    <Property Name="Navigation" Type="smallint" />
+    <Property Name="SunRoof" Type="bit" />
+    <Property Name="MoonRoof" Type="bit" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="Franchise" Type="bit" />
+    <Property Name="UsedNew" Type="smallint" />
+    <Property Name="VinControlDealerId" Type="int" />
+    <Property Name="AutoTraderDealerId" Type="int" />
+    <Property Name="CarsComDealerId" Type="int" />
+    <Property Name="Dealershipname" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="10" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdatedPrice" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="autotrader_year2012">
+    <Key>
+      <PropertyRef Name="RegionalListingId" />
+    </Key>
+    <Property Name="RegionalListingId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="100" />
+    <Property Name="AutoTraderStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="BodyStyle" Type="nvarchar" MaxLength="100" />
+    <Property Name="StartingPrice" Type="int" />
+    <Property Name="CurrentPrice" Type="int" />
+    <Property Name="MSRP" Type="nvarchar" MaxLength="45" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="100" />
+    <Property Name="Engine" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Doors" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTrader" Type="bit" />
+    <Property Name="AutoTraderListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTraderListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderListingURL" Type="nvarchar(max)" />
+    <Property Name="AutoTraderThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderDescription" Type="nvarchar(max)" />
+    <Property Name="AutoTraderInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarsCom" Type="bit" />
+    <Property Name="CarsComListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComListingURL" Type="nvarchar(max)" />
+    <Property Name="CarsComThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComDescription" Type="nvarchar(max)" />
+    <Property Name="CarsComInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="Ebay" Type="smallint" />
+    <Property Name="EbayListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="EbayListingName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EbayURL" Type="nvarchar(max)" />
+    <Property Name="EbayThumbnailURL" Type="nvarchar(max)" />
+    <Property Name="EbayDescription" Type="nvarchar(max)" />
+    <Property Name="EbayInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarFaxURL" Type="nvarchar(max)" />
+    <Property Name="CarFaxType" Type="int" />
+    <Property Name="AutoCheckURL" Type="nvarchar(max)" />
+    <Property Name="Navigation" Type="smallint" />
+    <Property Name="SunRoof" Type="bit" />
+    <Property Name="MoonRoof" Type="bit" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="Franchise" Type="bit" />
+    <Property Name="UsedNew" Type="smallint" />
+    <Property Name="VinControlDealerId" Type="int" />
+    <Property Name="AutoTraderDealerId" Type="int" />
+    <Property Name="CarsComDealerId" Type="int" />
+    <Property Name="Dealershipname" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="10" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdatedPrice" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="autotrader_year2013">
+    <Key>
+      <PropertyRef Name="RegionalListingId" />
+    </Key>
+    <Property Name="RegionalListingId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="100" />
+    <Property Name="AutoTraderStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="BodyStyle" Type="nvarchar" MaxLength="100" />
+    <Property Name="StartingPrice" Type="int" />
+    <Property Name="CurrentPrice" Type="int" />
+    <Property Name="MSRP" Type="nvarchar" MaxLength="45" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="100" />
+    <Property Name="Engine" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Doors" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTrader" Type="bit" />
+    <Property Name="AutoTraderListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTraderListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderListingURL" Type="nvarchar(max)" />
+    <Property Name="AutoTraderThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderDescription" Type="nvarchar(max)" />
+    <Property Name="AutoTraderInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarsCom" Type="bit" />
+    <Property Name="CarsComListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComListingURL" Type="nvarchar(max)" />
+    <Property Name="CarsComThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComDescription" Type="nvarchar(max)" />
+    <Property Name="CarsComInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="Ebay" Type="smallint" />
+    <Property Name="EbayListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="EbayListingName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EbayURL" Type="nvarchar(max)" />
+    <Property Name="EbayThumbnailURL" Type="nvarchar(max)" />
+    <Property Name="EbayDescription" Type="nvarchar(max)" />
+    <Property Name="EbayInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarFaxURL" Type="nvarchar(max)" />
+    <Property Name="CarFaxType" Type="int" />
+    <Property Name="AutoCheckURL" Type="nvarchar(max)" />
+    <Property Name="Navigation" Type="smallint" />
+    <Property Name="SunRoof" Type="bit" />
+    <Property Name="MoonRoof" Type="bit" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="Franchise" Type="bit" />
+    <Property Name="UsedNew" Type="smallint" />
+    <Property Name="VinControlDealerId" Type="int" />
+    <Property Name="AutoTraderDealerId" Type="int" />
+    <Property Name="CarsComDealerId" Type="int" />
+    <Property Name="Dealershipname" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="10" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdatedPrice" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="autotrader_year2014">
+    <Key>
+      <PropertyRef Name="RegionalListingId" />
+    </Key>
+    <Property Name="RegionalListingId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="100" />
+    <Property Name="AutoTraderStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="BodyStyle" Type="nvarchar" MaxLength="100" />
+    <Property Name="StartingPrice" Type="int" />
+    <Property Name="CurrentPrice" Type="int" />
+    <Property Name="MSRP" Type="nvarchar" MaxLength="45" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="100" />
+    <Property Name="Engine" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Doors" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTrader" Type="bit" />
+    <Property Name="AutoTraderListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTraderListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderListingURL" Type="nvarchar(max)" />
+    <Property Name="AutoTraderThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderDescription" Type="nvarchar(max)" />
+    <Property Name="AutoTraderInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarsCom" Type="bit" />
+    <Property Name="CarsComListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComListingURL" Type="nvarchar(max)" />
+    <Property Name="CarsComThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComDescription" Type="nvarchar(max)" />
+    <Property Name="CarsComInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="Ebay" Type="smallint" />
+    <Property Name="EbayListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="EbayListingName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EbayURL" Type="nvarchar(max)" />
+    <Property Name="EbayThumbnailURL" Type="nvarchar(max)" />
+    <Property Name="EbayDescription" Type="nvarchar(max)" />
+    <Property Name="EbayInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarFaxURL" Type="nvarchar(max)" />
+    <Property Name="CarFaxType" Type="int" />
+    <Property Name="AutoCheckURL" Type="nvarchar(max)" />
+    <Property Name="Navigation" Type="smallint" />
+    <Property Name="SunRoof" Type="bit" />
+    <Property Name="MoonRoof" Type="bit" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="Franchise" Type="bit" />
+    <Property Name="UsedNew" Type="smallint" />
+    <Property Name="VinControlDealerId" Type="int" />
+    <Property Name="AutoTraderDealerId" Type="int" />
+    <Property Name="CarsComDealerId" Type="int" />
+    <Property Name="Dealershipname" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="10" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdatedPrice" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="autotraderdealer">
+    <Key>
+      <PropertyRef Name="VinDealerId" />
+    </Key>
+    <Property Name="VinDealerId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AutoTraderDealerName" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComDealerName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderId" Type="int" />
+    <Property Name="CarsComId" Type="int" />
+    <Property Name="Address" Type="nvarchar(max)" />
+    <Property Name="City" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="45" />
+    <Property Name="ZipCode" Type="int" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="45" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="Franchise" Type="bit" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="255" />
+    <Property Name="Active" Type="bit" />
+  </EntityType>
+  <EntityType Name="carscom_from_year2001_to_year2003">
+    <Key>
+      <PropertyRef Name="RegionalListingId" />
+    </Key>
+    <Property Name="RegionalListingId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="100" />
+    <Property Name="AutoTraderStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="BodyStyle" Type="nvarchar" MaxLength="100" />
+    <Property Name="StartingPrice" Type="int" />
+    <Property Name="CurrentPrice" Type="int" />
+    <Property Name="MSRP" Type="nvarchar" MaxLength="45" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="100" />
+    <Property Name="Engine" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Doors" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTrader" Type="bit" />
+    <Property Name="AutoTraderListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTraderListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderListingURL" Type="nvarchar(max)" />
+    <Property Name="AutoTraderThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderDescription" Type="nvarchar(max)" />
+    <Property Name="AutoTraderInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarsCom" Type="bit" />
+    <Property Name="CarsComListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComListingURL" Type="nvarchar(max)" />
+    <Property Name="CarsComThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComDescription" Type="nvarchar(max)" />
+    <Property Name="CarsComInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="Ebay" Type="smallint" />
+    <Property Name="EbayListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="EbayListingName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EbayURL" Type="nvarchar(max)" />
+    <Property Name="EbayThumbnailURL" Type="nvarchar(max)" />
+    <Property Name="EbayDescription" Type="nvarchar(max)" />
+    <Property Name="EbayInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarFaxURL" Type="nvarchar(max)" />
+    <Property Name="CarFaxType" Type="int" />
+    <Property Name="AutoCheckURL" Type="nvarchar(max)" />
+    <Property Name="Navigation" Type="smallint" />
+    <Property Name="SunRoof" Type="bit" />
+    <Property Name="MoonRoof" Type="bit" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="Franchise" Type="bit" />
+    <Property Name="UsedNew" Type="smallint" />
+    <Property Name="VinControlDealerId" Type="int" />
+    <Property Name="AutoTraderDealerId" Type="int" />
+    <Property Name="CarsComDealerId" Type="int" />
+    <Property Name="Dealershipname" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="10" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdatedPrice" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="carscom_from_year2004_to_year2005">
+    <Key>
+      <PropertyRef Name="RegionalListingId" />
+    </Key>
+    <Property Name="RegionalListingId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="100" />
+    <Property Name="AutoTraderStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="BodyStyle" Type="nvarchar" MaxLength="100" />
+    <Property Name="StartingPrice" Type="int" />
+    <Property Name="CurrentPrice" Type="int" />
+    <Property Name="MSRP" Type="nvarchar" MaxLength="45" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="100" />
+    <Property Name="Engine" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Doors" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTrader" Type="bit" />
+    <Property Name="AutoTraderListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTraderListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderListingURL" Type="nvarchar(max)" />
+    <Property Name="AutoTraderThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderDescription" Type="nvarchar(max)" />
+    <Property Name="AutoTraderInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarsCom" Type="bit" />
+    <Property Name="CarsComListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComListingURL" Type="nvarchar(max)" />
+    <Property Name="CarsComThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComDescription" Type="nvarchar(max)" />
+    <Property Name="CarsComInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="Ebay" Type="smallint" />
+    <Property Name="EbayListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="EbayListingName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EbayURL" Type="nvarchar(max)" />
+    <Property Name="EbayThumbnailURL" Type="nvarchar(max)" />
+    <Property Name="EbayDescription" Type="nvarchar(max)" />
+    <Property Name="EbayInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarFaxURL" Type="nvarchar(max)" />
+    <Property Name="CarFaxType" Type="int" />
+    <Property Name="AutoCheckURL" Type="nvarchar(max)" />
+    <Property Name="Navigation" Type="smallint" />
+    <Property Name="SunRoof" Type="bit" />
+    <Property Name="MoonRoof" Type="bit" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="Franchise" Type="bit" />
+    <Property Name="UsedNew" Type="smallint" />
+    <Property Name="VinControlDealerId" Type="int" />
+    <Property Name="AutoTraderDealerId" Type="int" />
+    <Property Name="CarsComDealerId" Type="int" />
+    <Property Name="Dealershipname" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="10" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdatedPrice" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="carscom_lessorequal_year2000">
+    <Key>
+      <PropertyRef Name="RegionalListingId" />
+    </Key>
+    <Property Name="RegionalListingId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="100" />
+    <Property Name="AutoTraderStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="BodyStyle" Type="nvarchar" MaxLength="100" />
+    <Property Name="StartingPrice" Type="int" />
+    <Property Name="CurrentPrice" Type="int" />
+    <Property Name="MSRP" Type="nvarchar" MaxLength="45" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="100" />
+    <Property Name="Engine" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Doors" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTrader" Type="bit" />
+    <Property Name="AutoTraderListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTraderListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderListingURL" Type="nvarchar(max)" />
+    <Property Name="AutoTraderThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderDescription" Type="nvarchar(max)" />
+    <Property Name="AutoTraderInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarsCom" Type="bit" />
+    <Property Name="CarsComListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComListingURL" Type="nvarchar(max)" />
+    <Property Name="CarsComThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComDescription" Type="nvarchar(max)" />
+    <Property Name="CarsComInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="Ebay" Type="smallint" />
+    <Property Name="EbayListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="EbayListingName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EbayURL" Type="nvarchar(max)" />
+    <Property Name="EbayThumbnailURL" Type="nvarchar(max)" />
+    <Property Name="EbayDescription" Type="nvarchar(max)" />
+    <Property Name="EbayInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarFaxURL" Type="nvarchar(max)" />
+    <Property Name="CarFaxType" Type="int" />
+    <Property Name="AutoCheckURL" Type="nvarchar(max)" />
+    <Property Name="Navigation" Type="smallint" />
+    <Property Name="SunRoof" Type="bit" />
+    <Property Name="MoonRoof" Type="bit" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="Franchise" Type="bit" />
+    <Property Name="UsedNew" Type="smallint" />
+    <Property Name="VinControlDealerId" Type="int" />
+    <Property Name="AutoTraderDealerId" Type="int" />
+    <Property Name="CarsComDealerId" Type="int" />
+    <Property Name="Dealershipname" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="10" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdatedPrice" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="carscom_year2006">
+    <Key>
+      <PropertyRef Name="RegionalListingId" />
+    </Key>
+    <Property Name="RegionalListingId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="100" />
+    <Property Name="AutoTraderStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="BodyStyle" Type="nvarchar" MaxLength="100" />
+    <Property Name="StartingPrice" Type="int" />
+    <Property Name="CurrentPrice" Type="int" />
+    <Property Name="MSRP" Type="nvarchar" MaxLength="45" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="100" />
+    <Property Name="Engine" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Doors" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTrader" Type="bit" />
+    <Property Name="AutoTraderListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTraderListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderListingURL" Type="nvarchar(max)" />
+    <Property Name="AutoTraderThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderDescription" Type="nvarchar(max)" />
+    <Property Name="AutoTraderInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarsCom" Type="bit" />
+    <Property Name="CarsComListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComListingURL" Type="nvarchar(max)" />
+    <Property Name="CarsComThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComDescription" Type="nvarchar(max)" />
+    <Property Name="CarsComInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="Ebay" Type="smallint" />
+    <Property Name="EbayListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="EbayListingName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EbayURL" Type="nvarchar(max)" />
+    <Property Name="EbayThumbnailURL" Type="nvarchar(max)" />
+    <Property Name="EbayDescription" Type="nvarchar(max)" />
+    <Property Name="EbayInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarFaxURL" Type="nvarchar(max)" />
+    <Property Name="CarFaxType" Type="int" />
+    <Property Name="AutoCheckURL" Type="nvarchar(max)" />
+    <Property Name="Navigation" Type="smallint" />
+    <Property Name="SunRoof" Type="bit" />
+    <Property Name="MoonRoof" Type="bit" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="Franchise" Type="bit" />
+    <Property Name="UsedNew" Type="smallint" />
+    <Property Name="VinControlDealerId" Type="int" />
+    <Property Name="AutoTraderDealerId" Type="int" />
+    <Property Name="CarsComDealerId" Type="int" />
+    <Property Name="Dealershipname" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="10" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdatedPrice" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="carscom_year2007">
+    <Key>
+      <PropertyRef Name="RegionalListingId" />
+    </Key>
+    <Property Name="RegionalListingId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="100" />
+    <Property Name="AutoTraderStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="BodyStyle" Type="nvarchar" MaxLength="100" />
+    <Property Name="StartingPrice" Type="int" />
+    <Property Name="CurrentPrice" Type="int" />
+    <Property Name="MSRP" Type="nvarchar" MaxLength="45" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="100" />
+    <Property Name="Engine" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Doors" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTrader" Type="bit" />
+    <Property Name="AutoTraderListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTraderListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderListingURL" Type="nvarchar(max)" />
+    <Property Name="AutoTraderThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderDescription" Type="nvarchar(max)" />
+    <Property Name="AutoTraderInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarsCom" Type="bit" />
+    <Property Name="CarsComListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComListingURL" Type="nvarchar(max)" />
+    <Property Name="CarsComThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComDescription" Type="nvarchar(max)" />
+    <Property Name="CarsComInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="Ebay" Type="smallint" />
+    <Property Name="EbayListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="EbayListingName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EbayURL" Type="nvarchar(max)" />
+    <Property Name="EbayThumbnailURL" Type="nvarchar(max)" />
+    <Property Name="EbayDescription" Type="nvarchar(max)" />
+    <Property Name="EbayInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarFaxURL" Type="nvarchar(max)" />
+    <Property Name="CarFaxType" Type="int" />
+    <Property Name="AutoCheckURL" Type="nvarchar(max)" />
+    <Property Name="Navigation" Type="smallint" />
+    <Property Name="SunRoof" Type="bit" />
+    <Property Name="MoonRoof" Type="bit" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="Franchise" Type="bit" />
+    <Property Name="UsedNew" Type="smallint" />
+    <Property Name="VinControlDealerId" Type="int" />
+    <Property Name="AutoTraderDealerId" Type="int" />
+    <Property Name="CarsComDealerId" Type="int" />
+    <Property Name="Dealershipname" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="10" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdatedPrice" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="carscom_year2008">
+    <Key>
+      <PropertyRef Name="RegionalListingId" />
+    </Key>
+    <Property Name="RegionalListingId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="100" />
+    <Property Name="AutoTraderStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="BodyStyle" Type="nvarchar" MaxLength="100" />
+    <Property Name="StartingPrice" Type="int" />
+    <Property Name="CurrentPrice" Type="int" />
+    <Property Name="MSRP" Type="nvarchar" MaxLength="45" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="100" />
+    <Property Name="Engine" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Doors" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTrader" Type="bit" />
+    <Property Name="AutoTraderListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTraderListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderListingURL" Type="nvarchar(max)" />
+    <Property Name="AutoTraderThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderDescription" Type="nvarchar(max)" />
+    <Property Name="AutoTraderInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarsCom" Type="bit" />
+    <Property Name="CarsComListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComListingURL" Type="nvarchar(max)" />
+    <Property Name="CarsComThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComDescription" Type="nvarchar(max)" />
+    <Property Name="CarsComInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="Ebay" Type="smallint" />
+    <Property Name="EbayListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="EbayListingName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EbayURL" Type="nvarchar(max)" />
+    <Property Name="EbayThumbnailURL" Type="nvarchar(max)" />
+    <Property Name="EbayDescription" Type="nvarchar(max)" />
+    <Property Name="EbayInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarFaxURL" Type="nvarchar(max)" />
+    <Property Name="CarFaxType" Type="int" />
+    <Property Name="AutoCheckURL" Type="nvarchar(max)" />
+    <Property Name="Navigation" Type="smallint" />
+    <Property Name="SunRoof" Type="bit" />
+    <Property Name="MoonRoof" Type="bit" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="Franchise" Type="bit" />
+    <Property Name="UsedNew" Type="smallint" />
+    <Property Name="VinControlDealerId" Type="int" />
+    <Property Name="AutoTraderDealerId" Type="int" />
+    <Property Name="CarsComDealerId" Type="int" />
+    <Property Name="Dealershipname" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="10" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdatedPrice" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="carscom_year2009">
+    <Key>
+      <PropertyRef Name="RegionalListingId" />
+    </Key>
+    <Property Name="RegionalListingId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="100" />
+    <Property Name="AutoTraderStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="BodyStyle" Type="nvarchar" MaxLength="100" />
+    <Property Name="StartingPrice" Type="int" />
+    <Property Name="CurrentPrice" Type="int" />
+    <Property Name="MSRP" Type="nvarchar" MaxLength="45" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="100" />
+    <Property Name="Engine" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Doors" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTrader" Type="bit" />
+    <Property Name="AutoTraderListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTraderListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderListingURL" Type="nvarchar(max)" />
+    <Property Name="AutoTraderThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderDescription" Type="nvarchar(max)" />
+    <Property Name="AutoTraderInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarsCom" Type="bit" />
+    <Property Name="CarsComListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComListingURL" Type="nvarchar(max)" />
+    <Property Name="CarsComThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComDescription" Type="nvarchar(max)" />
+    <Property Name="CarsComInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="Ebay" Type="smallint" />
+    <Property Name="EbayListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="EbayListingName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EbayURL" Type="nvarchar(max)" />
+    <Property Name="EbayThumbnailURL" Type="nvarchar(max)" />
+    <Property Name="EbayDescription" Type="nvarchar(max)" />
+    <Property Name="EbayInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarFaxURL" Type="nvarchar(max)" />
+    <Property Name="CarFaxType" Type="int" />
+    <Property Name="AutoCheckURL" Type="nvarchar(max)" />
+    <Property Name="Navigation" Type="smallint" />
+    <Property Name="SunRoof" Type="bit" />
+    <Property Name="MoonRoof" Type="bit" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="Franchise" Type="bit" />
+    <Property Name="UsedNew" Type="smallint" />
+    <Property Name="VinControlDealerId" Type="int" />
+    <Property Name="AutoTraderDealerId" Type="int" />
+    <Property Name="CarsComDealerId" Type="int" />
+    <Property Name="Dealershipname" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="10" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdatedPrice" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="carscom_year2010">
+    <Key>
+      <PropertyRef Name="RegionalListingId" />
+    </Key>
+    <Property Name="RegionalListingId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="100" />
+    <Property Name="AutoTraderStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="BodyStyle" Type="nvarchar" MaxLength="100" />
+    <Property Name="StartingPrice" Type="int" />
+    <Property Name="CurrentPrice" Type="int" />
+    <Property Name="MSRP" Type="nvarchar" MaxLength="45" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="100" />
+    <Property Name="Engine" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Doors" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTrader" Type="bit" />
+    <Property Name="AutoTraderListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTraderListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderListingURL" Type="nvarchar(max)" />
+    <Property Name="AutoTraderThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderDescription" Type="nvarchar(max)" />
+    <Property Name="AutoTraderInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarsCom" Type="bit" />
+    <Property Name="CarsComListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComListingURL" Type="nvarchar(max)" />
+    <Property Name="CarsComThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComDescription" Type="nvarchar(max)" />
+    <Property Name="CarsComInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="Ebay" Type="smallint" />
+    <Property Name="EbayListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="EbayListingName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EbayURL" Type="nvarchar(max)" />
+    <Property Name="EbayThumbnailURL" Type="nvarchar(max)" />
+    <Property Name="EbayDescription" Type="nvarchar(max)" />
+    <Property Name="EbayInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarFaxURL" Type="nvarchar(max)" />
+    <Property Name="CarFaxType" Type="int" />
+    <Property Name="AutoCheckURL" Type="nvarchar(max)" />
+    <Property Name="Navigation" Type="smallint" />
+    <Property Name="SunRoof" Type="bit" />
+    <Property Name="MoonRoof" Type="bit" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="Franchise" Type="bit" />
+    <Property Name="UsedNew" Type="smallint" />
+    <Property Name="VinControlDealerId" Type="int" />
+    <Property Name="AutoTraderDealerId" Type="int" />
+    <Property Name="CarsComDealerId" Type="int" />
+    <Property Name="Dealershipname" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="10" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdatedPrice" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="carscom_year2011">
+    <Key>
+      <PropertyRef Name="RegionalListingId" />
+    </Key>
+    <Property Name="RegionalListingId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="100" />
+    <Property Name="AutoTraderStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="BodyStyle" Type="nvarchar" MaxLength="100" />
+    <Property Name="StartingPrice" Type="int" />
+    <Property Name="CurrentPrice" Type="int" />
+    <Property Name="MSRP" Type="nvarchar" MaxLength="45" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="100" />
+    <Property Name="Engine" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Doors" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTrader" Type="bit" />
+    <Property Name="AutoTraderListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTraderListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderListingURL" Type="nvarchar(max)" />
+    <Property Name="AutoTraderThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderDescription" Type="nvarchar(max)" />
+    <Property Name="AutoTraderInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarsCom" Type="bit" />
+    <Property Name="CarsComListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComListingURL" Type="nvarchar(max)" />
+    <Property Name="CarsComThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComDescription" Type="nvarchar(max)" />
+    <Property Name="CarsComInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="Ebay" Type="smallint" />
+    <Property Name="EbayListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="EbayListingName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EbayURL" Type="nvarchar(max)" />
+    <Property Name="EbayThumbnailURL" Type="nvarchar(max)" />
+    <Property Name="EbayDescription" Type="nvarchar(max)" />
+    <Property Name="EbayInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarFaxURL" Type="nvarchar(max)" />
+    <Property Name="CarFaxType" Type="int" />
+    <Property Name="AutoCheckURL" Type="nvarchar(max)" />
+    <Property Name="Navigation" Type="smallint" />
+    <Property Name="SunRoof" Type="bit" />
+    <Property Name="MoonRoof" Type="bit" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="Franchise" Type="bit" />
+    <Property Name="UsedNew" Type="smallint" />
+    <Property Name="VinControlDealerId" Type="int" />
+    <Property Name="AutoTraderDealerId" Type="int" />
+    <Property Name="CarsComDealerId" Type="int" />
+    <Property Name="Dealershipname" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="10" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdatedPrice" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="carscom_year2012">
+    <Key>
+      <PropertyRef Name="RegionalListingId" />
+    </Key>
+    <Property Name="RegionalListingId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="100" />
+    <Property Name="AutoTraderStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="BodyStyle" Type="nvarchar" MaxLength="100" />
+    <Property Name="StartingPrice" Type="int" />
+    <Property Name="CurrentPrice" Type="int" />
+    <Property Name="MSRP" Type="nvarchar" MaxLength="45" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="100" />
+    <Property Name="Engine" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Doors" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTrader" Type="bit" />
+    <Property Name="AutoTraderListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTraderListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderListingURL" Type="nvarchar(max)" />
+    <Property Name="AutoTraderThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderDescription" Type="nvarchar(max)" />
+    <Property Name="AutoTraderInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarsCom" Type="bit" />
+    <Property Name="CarsComListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComListingURL" Type="nvarchar(max)" />
+    <Property Name="CarsComThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComDescription" Type="nvarchar(max)" />
+    <Property Name="CarsComInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="Ebay" Type="smallint" />
+    <Property Name="EbayListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="EbayListingName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EbayURL" Type="nvarchar(max)" />
+    <Property Name="EbayThumbnailURL" Type="nvarchar(max)" />
+    <Property Name="EbayDescription" Type="nvarchar(max)" />
+    <Property Name="EbayInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarFaxURL" Type="nvarchar(max)" />
+    <Property Name="CarFaxType" Type="int" />
+    <Property Name="AutoCheckURL" Type="nvarchar(max)" />
+    <Property Name="Navigation" Type="smallint" />
+    <Property Name="SunRoof" Type="bit" />
+    <Property Name="MoonRoof" Type="bit" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="Franchise" Type="bit" />
+    <Property Name="UsedNew" Type="smallint" />
+    <Property Name="VinControlDealerId" Type="int" />
+    <Property Name="AutoTraderDealerId" Type="int" />
+    <Property Name="CarsComDealerId" Type="int" />
+    <Property Name="Dealershipname" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="10" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdatedPrice" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="carscom_year2013">
+    <Key>
+      <PropertyRef Name="RegionalListingId" />
+    </Key>
+    <Property Name="RegionalListingId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="100" />
+    <Property Name="AutoTraderStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="BodyStyle" Type="nvarchar" MaxLength="100" />
+    <Property Name="StartingPrice" Type="int" />
+    <Property Name="CurrentPrice" Type="int" />
+    <Property Name="MSRP" Type="nvarchar" MaxLength="45" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="100" />
+    <Property Name="Engine" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Doors" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTrader" Type="bit" />
+    <Property Name="AutoTraderListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTraderListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderListingURL" Type="nvarchar(max)" />
+    <Property Name="AutoTraderThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderDescription" Type="nvarchar(max)" />
+    <Property Name="AutoTraderInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarsCom" Type="bit" />
+    <Property Name="CarsComListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComListingURL" Type="nvarchar(max)" />
+    <Property Name="CarsComThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComDescription" Type="nvarchar(max)" />
+    <Property Name="CarsComInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="Ebay" Type="smallint" />
+    <Property Name="EbayListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="EbayListingName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EbayURL" Type="nvarchar(max)" />
+    <Property Name="EbayThumbnailURL" Type="nvarchar(max)" />
+    <Property Name="EbayDescription" Type="nvarchar(max)" />
+    <Property Name="EbayInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarFaxURL" Type="nvarchar(max)" />
+    <Property Name="CarFaxType" Type="int" />
+    <Property Name="AutoCheckURL" Type="nvarchar(max)" />
+    <Property Name="Navigation" Type="smallint" />
+    <Property Name="SunRoof" Type="bit" />
+    <Property Name="MoonRoof" Type="bit" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="Franchise" Type="bit" />
+    <Property Name="UsedNew" Type="smallint" />
+    <Property Name="VinControlDealerId" Type="int" />
+    <Property Name="AutoTraderDealerId" Type="int" />
+    <Property Name="CarsComDealerId" Type="int" />
+    <Property Name="Dealershipname" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="10" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdatedPrice" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="carscom_year2014">
+    <Key>
+      <PropertyRef Name="RegionalListingId" />
+    </Key>
+    <Property Name="RegionalListingId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="100" />
+    <Property Name="AutoTraderStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComStockNo" Type="nvarchar" MaxLength="45" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="45" />
+    <Property Name="BodyStyle" Type="nvarchar" MaxLength="100" />
+    <Property Name="StartingPrice" Type="int" />
+    <Property Name="CurrentPrice" Type="int" />
+    <Property Name="MSRP" Type="nvarchar" MaxLength="45" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="100" />
+    <Property Name="Engine" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Doors" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTrader" Type="bit" />
+    <Property Name="AutoTraderListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTraderListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderListingURL" Type="nvarchar(max)" />
+    <Property Name="AutoTraderThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderDescription" Type="nvarchar(max)" />
+    <Property Name="AutoTraderInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarsCom" Type="bit" />
+    <Property Name="CarsComListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComListingName" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComListingURL" Type="nvarchar(max)" />
+    <Property Name="CarsComThumbnailURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComDescription" Type="nvarchar(max)" />
+    <Property Name="CarsComInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="Ebay" Type="smallint" />
+    <Property Name="EbayListingId" Type="nvarchar" MaxLength="45" />
+    <Property Name="EbayListingName" Type="nvarchar" MaxLength="100" />
+    <Property Name="EbayURL" Type="nvarchar(max)" />
+    <Property Name="EbayThumbnailURL" Type="nvarchar(max)" />
+    <Property Name="EbayDescription" Type="nvarchar(max)" />
+    <Property Name="EbayInstalledFeatures" Type="nvarchar(max)" />
+    <Property Name="CarFaxURL" Type="nvarchar(max)" />
+    <Property Name="CarFaxType" Type="int" />
+    <Property Name="AutoCheckURL" Type="nvarchar(max)" />
+    <Property Name="Navigation" Type="smallint" />
+    <Property Name="SunRoof" Type="bit" />
+    <Property Name="MoonRoof" Type="bit" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="Franchise" Type="bit" />
+    <Property Name="UsedNew" Type="smallint" />
+    <Property Name="VinControlDealerId" Type="int" />
+    <Property Name="AutoTraderDealerId" Type="int" />
+    <Property Name="CarsComDealerId" Type="int" />
+    <Property Name="Dealershipname" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="10" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdatedPrice" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="carscomdealer">
+    <Key>
+      <PropertyRef Name="VinDealerId" />
+    </Key>
+    <Property Name="VinDealerId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AutoTraderDealerName" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComDealerName" Type="nvarchar" MaxLength="255" />
+    <Property Name="AutoTraderId" Type="int" />
+    <Property Name="CarsComId" Type="int" />
+    <Property Name="Franchise" Type="bit" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="45" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="45" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="ZipCode" Type="int" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComInventoryLink" Type="nvarchar" MaxLength="255" />
+    <Property Name="CarsComInverntoryId" Type="int" />
+  </EntityType>
+  <EntityType Name="manheim_auctions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="State" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="DateStamp" Type="datetime" />
+    <Property Name="Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="50" />
+    <Property Name="StreetAddress" Type="nvarchar" MaxLength="100" />
+    <Property Name="CityAddress" Type="nvarchar" MaxLength="200" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="50" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+</Schema>

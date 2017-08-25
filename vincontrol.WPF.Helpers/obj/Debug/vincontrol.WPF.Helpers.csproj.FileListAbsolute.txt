@@ -1,0 +1,14 @@
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.WPF.Helpers\bin\Debug\vincontrol.WPF.Helpers.dll
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.WPF.Helpers\bin\Debug\vincontrol.WPF.Helpers.pdb
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.WPF.Helpers\obj\Debug\vincontrol.WPF.Helpers.Properties.Resources.resources
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.WPF.Helpers\obj\Debug\Vincontrol.WPF.Helpers.csproj.GenerateResource.Cache
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.WPF.Helpers\obj\Debug\vincontrol.WPF.Helpers.dll
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.WPF.Helpers\obj\Debug\vincontrol.WPF.Helpers.pdb
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.WPF.Helpers\obj\Debug\Vincontrol.WPF.Helpers.csprojResolveAssemblyReference.cache
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.WPF.Helpers\bin\Debug\vincontrol.WPF.Helpers.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.WPF.Helpers\bin\Debug\vincontrol.WPF.Helpers.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.WPF.Helpers\obj\Debug\vincontrol.WPF.Helpers.Properties.Resources.resources
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.WPF.Helpers\obj\Debug\Vincontrol.WPF.Helpers.csproj.GenerateResource.Cache
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.WPF.Helpers\obj\Debug\vincontrol.WPF.Helpers.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.WPF.Helpers\obj\Debug\vincontrol.WPF.Helpers.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.WPF.Helpers\obj\Debug\Vincontrol.WPF.Helpers.csprojResolveAssemblyReference.cache

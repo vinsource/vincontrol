@@ -1,0 +1,70 @@
+﻿<reviewSite name="edmunds.com" url="www.edmunds.com">
+  <namespaces>
+    <namespace name="ns" value="http://www.w3.org/1999/xhtml"/>
+  </namespaces>
+  <pages>
+    <reviewPage name="" dealerId="0" url="" hasAdditionalDealerReview="false" hasAdditionalUserReview="false" hasDetailUserReview="true" category="Sales">
+      <about context=""/>
+      <overallScore context="//ns:span[@class='rating-big']/@title"/>
+      <additionalReview>
+        <customerService context=""/>
+        <qualityOfWork context=""/>
+        <friendliness context=""/>
+        <overallExperience context=""/>
+        <pricing context=""/>
+        <buyingProcess context=""/>
+        <overallFacilities context=""/>
+      </additionalReview>
+    </reviewPage>
+    
+  </pages>
+
+  <reviews>
+    <reviewNode context="//ns:div[@id='sales_reviews_list']/ns:div[@class='hreview sales-review-item']"/>
+    
+    <reviewUrl context="./ns:div/ns:p/ns:a/@href"/>
+    <reviewAuthor context="./ns:span[@class='reviewer vcard sales-review-by']/ns:span"/>
+    <reviewDate context="./ns:span[@class='reviewer vcard sales-review-by']/ns:span[@class='dtreviewed']">
+      <replace>
+        <!--<filter original="(?&lt;dd&gt;\d{2})/(?&lt;MM&gt;\d{2})/(?&lt;yyyy&gt;\d{2})" replace="${MM}/${dd}/${yyyy}"></filter>-->
+        <filter original="PST" replace=""></filter>
+        <filter original="PDT" replace=""></filter>
+        <filter original="/13 " replace="/2013 "></filter>
+        <filter original="/12 " replace="/2012 "></filter>
+        <filter original="/11 " replace="/2011 "></filter>
+        <filter original="/10 " replace="/2010 "></filter>
+        <filter original="/09 " replace="/2009 "></filter>
+        <filter original="/08 " replace="/2008 "></filter>
+      </replace>
+    </reviewDate>
+    <reviewContent context="./ns:div/ns:p"/>
+    <reviewDetailContent context="//ns:div[@class='description item vcard']/ns:p"/>
+    <reviewRating context="./ns:span/ns:span[@class='rating-big']/@title"/>
+    <additionalReview>
+      <customerService context=""/>
+      <qualityOfWork context=""/>
+      <friendliness context=""/>
+      <overallExperience context=""/>
+      <pricing context=""/>
+      <buyingProcess context=""/>
+      <overallFacilities context=""/>
+      <reasonForVisit context=""/>
+      <recommendThisDealer context="./ns:span[@class='sales-review-dlr-rcmnd']/ns:span">
+        <replace>
+          <filter original="Yes" replace="true"></filter>
+          <filter original="No" replace="false"></filter>
+        </replace>
+      </recommendThisDealer>
+      <purchasedAVehicle context="./ns:span[@class='sales-review-dlr-prchsd']/ns:span">
+        <replace>
+          <filter original="Yes" replace="true"></filter>
+          <filter original="No" replace="false"></filter>
+        </replace>
+      </purchasedAVehicle>
+    </additionalReview>
+    
+    <nextPageUrl context="//ns:span[@id='listingsJumpPages']/ns:span[contains(@class,'listingsCurrentJumpPage')]/following-sibling::*[1]/ns:a/@href">
+      
+    </nextPageUrl>
+  </reviews>
+</reviewSite>

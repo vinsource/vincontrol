@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="whitmanenterprisecraigslistModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="whitmanenterprisecraigslistEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="vinclappdealerschedules" EntityType="whitmanenterprisecraigslistModel.vinclappdealerschedule" />
+    <EntitySet Name="vinclappemailaccounts" EntityType="whitmanenterprisecraigslistModel.vinclappemailaccount" />
+    <EntitySet Name="vinclapppcschedules" EntityType="whitmanenterprisecraigslistModel.vinclapppcschedule" />
+    <EntitySet Name="vinclapptracking_date" EntityType="whitmanenterprisecraigslistModel.vinclapptracking_date" />
+    <EntitySet Name="vinclapptrackingemailaccounts" EntityType="whitmanenterprisecraigslistModel.vinclapptrackingemailaccount" />
+    <EntitySet Name="vincontrolcraigslisttrackings" EntityType="whitmanenterprisecraigslistModel.vincontrolcraigslisttracking" />
+    <EntitySet Name="whitmanenterprisechunkstrings" EntityType="whitmanenterprisecraigslistModel.whitmanenterprisechunkstring" />
+    <EntitySet Name="whitmanenterprisecomputeraccounts" EntityType="whitmanenterprisecraigslistModel.whitmanenterprisecomputeraccount" />
+    <EntitySet Name="whitmanenterprisecraigslisdailytinventories" EntityType="whitmanenterprisecraigslistModel.whitmanenterprisecraigslisdailytinventory" />
+    <EntitySet Name="whitmanenterprisecraigslistcities" EntityType="whitmanenterprisecraigslistModel.whitmanenterprisecraigslistcity" />
+    <EntitySet Name="whitmanenterprisecraigslistinventories" EntityType="whitmanenterprisecraigslistModel.whitmanenterprisecraigslistinventory" />
+    <EntitySet Name="whitmanenterprisecraigslistinventorysoldouts" EntityType="whitmanenterprisecraigslistModel.whitmanenterprisecraigslistinventorysoldout" />
+    <EntitySet Name="whitmanenterprisedealerlists" EntityType="whitmanenterprisecraigslistModel.whitmanenterprisedealerlist" />
+  </EntityContainer>
+  <EntityType Name="vinclappdealerschedule">
+    <Key>
+      <PropertyRef Name="AutoId" />
+    </Key>
+    <Property Name="AutoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DealerId" Type="Int32" />
+    <Property Name="CityId" Type="Int32" />
+    <Property Name="Price" Type="Boolean" />
+    <Property Name="Split" Type="Boolean" />
+    <Property Name="Schedules" Type="Int32" />
+    <Property Name="LastUpdated" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="vinclappemailaccount">
+    <Key>
+      <PropertyRef Name="AccountId" />
+    </Key>
+    <Property Name="AccountId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AccountName" Type="String" />
+    <Property Name="AccountPassword" Type="String" />
+    <Property Name="Phone" Type="String" />
+    <Property Name="Computer" Type="Int32" />
+    <Property Name="Proxy" Type="Boolean" />
+    <Property Name="ProxyIP" Type="String" />
+    <Property Name="Notes" Type="String" />
+    <Property Name="CurrentStickPercentage" Type="Int32" />
+    <Property Name="OverallStickPercentage" Type="Int32" />
+    <Property Name="LastTimeUsed" Type="DateTime" />
+    <Property Name="DateAdded" Type="DateTime" />
+    <Property Name="LastUpdated" Type="DateTime" />
+    <Property Name="Active" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="vinclapppcschedule">
+    <Key>
+      <PropertyRef Name="AutoId" />
+    </Key>
+    <Property Name="AutoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PC" Type="Int32" />
+    <Property Name="Schedule" Type="Int32" />
+    <Property Name="LastUpdated" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="vinclapptracking_date">
+    <Key>
+      <PropertyRef Name="TrackingId" />
+      <PropertyRef Name="TrackingDate" />
+    </Key>
+    <Property Name="TrackingId" Type="Int32" Nullable="false" />
+    <Property Name="TrackingDate" Type="DateTime" Nullable="false" />
+    <Property Name="Counter" Type="Int32" />
+  </EntityType>
+  <EntityType Name="vinclapptrackingemailaccount">
+    <Key>
+      <PropertyRef Name="AccountName" />
+      <PropertyRef Name="TrackingDate" />
+    </Key>
+    <Property Name="AccountName" Type="String" Nullable="false" />
+    <Property Name="TrackingDate" Type="DateTime" Nullable="false" />
+    <Property Name="GhostingAds" Type="Int32" />
+    <Property Name="PostingAds" Type="Int32" />
+    <Property Name="FlagAds" Type="Int32" />
+    <Property Name="GhostingAdsIds" Type="String" />
+    <Property Name="PostingAdsId" Type="String" />
+    <Property Name="NumberAds" Type="Int32" />
+    <Property Name="Percentage" Type="Int32" />
+  </EntityType>
+  <EntityType Name="vincontrolcraigslisttracking">
+    <Key>
+      <PropertyRef Name="TrackingId" />
+    </Key>
+    <Property Name="TrackingId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CLPostingId" Type="Int64" />
+    <Property Name="ListingId" Type="Int32" />
+    <Property Name="CityId" Type="Int32" />
+    <Property Name="DealerId" Type="Int32" />
+    <Property Name="Computer" Type="Int32" />
+    <Property Name="EmailAccount" Type="String" />
+    <Property Name="ShowAd" Type="Boolean" />
+    <Property Name="HtmlCraigslistUrl" Type="String" />
+    <Property Name="Renew" Type="Boolean" />
+    <Property Name="AddedDate" Type="DateTime" />
+    <Property Name="ExpirationDate" Type="DateTime" />
+    <Property Name="CheckDate" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisechunkstring">
+    <Key>
+      <PropertyRef Name="ChunkStringId" />
+    </Key>
+    <Property Name="ChunkStringId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ChunkName" Type="String" />
+    <Property Name="ChunkValue" Type="String" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisecomputeraccount">
+    <Key>
+      <PropertyRef Name="AutoCombineId" />
+    </Key>
+    <Property Name="AutoCombineId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AccountPC" Type="Int32" Nullable="false" />
+    <Property Name="DealerId" Type="Int32" Nullable="false" />
+    <Property Name="CityId" Type="Int32" Nullable="false" />
+    <Property Name="Location" Type="String" />
+    <Property Name="LastUpdated" Type="DateTime" />
+    <Property Name="Price" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisecraigslisdailytinventory">
+    <Key>
+      <PropertyRef Name="ListingID" />
+    </Key>
+    <Property Name="ListingID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ModelYear" Type="String" />
+    <Property Name="Make" Type="String" />
+    <Property Name="Model" Type="String" />
+    <Property Name="Trim" Type="String" />
+    <Property Name="VINNumber" Type="String" />
+    <Property Name="StockNumber" Type="String" />
+    <Property Name="SalePrice" Type="String" />
+    <Property Name="MSRP" Type="String" />
+    <Property Name="Mileage" Type="String" />
+    <Property Name="ExteriorColor" Type="String" />
+    <Property Name="InteriorColor" Type="String" />
+    <Property Name="InteriorSurface" Type="String" />
+    <Property Name="BodyType" Type="String" />
+    <Property Name="Cylinders" Type="String" />
+    <Property Name="Liters" Type="String" />
+    <Property Name="EngineType" Type="String" />
+    <Property Name="DriveTrain" Type="String" />
+    <Property Name="FuelType" Type="String" />
+    <Property Name="Tranmission" Type="String" />
+    <Property Name="Doors" Type="String" />
+    <Property Name="Certified" Type="Boolean" />
+    <Property Name="CarsPackages" Type="String" />
+    <Property Name="CarsOptions" Type="String" />
+    <Property Name="Descriptions" Type="String" />
+    <Property Name="CarImageUrl" Type="String" />
+    <Property Name="ThumbnailImageURL" Type="String" />
+    <Property Name="DateInStock" Type="DateTime" />
+    <Property Name="LastUpdated" Type="DateTime" />
+    <Property Name="DealershipId" Type="Int32" />
+    <Property Name="DealershipName" Type="String" />
+    <Property Name="DealershipAddress" Type="String" />
+    <Property Name="DealershipCity" Type="String" />
+    <Property Name="DealershipState" Type="String" />
+    <Property Name="DealershipPhone" Type="String" />
+    <Property Name="DealershipZipCode" Type="String" />
+    <Property Name="DealerCost" Type="String" />
+    <Property Name="ACV" Type="String" />
+    <Property Name="DefaultImageUrl" Type="String" />
+    <Property Name="NewUsed" Type="String" />
+    <Property Name="AddToInventoryBy" Type="String" />
+    <Property Name="AppraisalID" Type="String" />
+    <Property Name="Age" Type="Int32" />
+    <Property Name="AccountPC" Type="Int32" />
+    <Property Name="PostingCityId" Type="Int32" />
+    <Property Name="Price" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisecraigslistcity">
+    <Key>
+      <PropertyRef Name="CityID" />
+    </Key>
+    <Property Name="CityID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CityName" Type="String" />
+    <Property Name="CraigsListCityURL" Type="String" />
+    <Property Name="SubCity" Type="Boolean" />
+    <Property Name="CLIndex" Type="Int32" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisecraigslistinventory">
+    <Key>
+      <PropertyRef Name="ListingID" />
+    </Key>
+    <Property Name="ListingID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ModelYear" Type="String" />
+    <Property Name="Make" Type="String" />
+    <Property Name="Model" Type="String" />
+    <Property Name="Trim" Type="String" />
+    <Property Name="VINNumber" Type="String" />
+    <Property Name="StockNumber" Type="String" />
+    <Property Name="SalePrice" Type="String" />
+    <Property Name="MSRP" Type="String" />
+    <Property Name="Mileage" Type="String" />
+    <Property Name="ExteriorColor" Type="String" />
+    <Property Name="InteriorColor" Type="String" />
+    <Property Name="InteriorSurface" Type="String" />
+    <Property Name="BodyType" Type="String" />
+    <Property Name="Cylinders" Type="String" />
+    <Property Name="Liters" Type="String" />
+    <Property Name="EngineType" Type="String" />
+    <Property Name="DriveTrain" Type="String" />
+    <Property Name="FuelType" Type="String" />
+    <Property Name="Tranmission" Type="String" />
+    <Property Name="Doors" Type="String" />
+    <Property Name="Certified" Type="Boolean" />
+    <Property Name="CarsPackages" Type="String" />
+    <Property Name="CarsOptions" Type="String" />
+    <Property Name="Descriptions" Type="String" />
+    <Property Name="CarImageUrl" Type="String" />
+    <Property Name="ThumbnailImageURL" Type="String" />
+    <Property Name="DateInStock" Type="DateTime" />
+    <Property Name="LastUpdated" Type="DateTime" />
+    <Property Name="DealershipId" Type="Int32" />
+    <Property Name="DealershipName" Type="String" />
+    <Property Name="DealershipAddress" Type="String" />
+    <Property Name="DealershipCity" Type="String" />
+    <Property Name="DealershipState" Type="String" />
+    <Property Name="DealershipPhone" Type="String" />
+    <Property Name="DealershipZipCode" Type="String" />
+    <Property Name="DealerCost" Type="String" />
+    <Property Name="ACV" Type="String" />
+    <Property Name="DefaultImageUrl" Type="String" />
+    <Property Name="NewUsed" Type="String" />
+    <Property Name="AddToInventoryBy" Type="String" />
+    <Property Name="AppraisalID" Type="String" />
+    <Property Name="Age" Type="Int32" />
+    <Property Name="OverideTitle" Type="String" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisecraigslistinventorysoldout">
+    <Key>
+      <PropertyRef Name="ListingID" />
+    </Key>
+    <Property Name="ListingID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ModelYear" Type="String" />
+    <Property Name="Make" Type="String" />
+    <Property Name="Model" Type="String" />
+    <Property Name="Trim" Type="String" />
+    <Property Name="VINNumber" Type="String" />
+    <Property Name="StockNumber" Type="String" />
+    <Property Name="SalePrice" Type="String" />
+    <Property Name="MSRP" Type="String" />
+    <Property Name="Mileage" Type="String" />
+    <Property Name="ExteriorColor" Type="String" />
+    <Property Name="InteriorColor" Type="String" />
+    <Property Name="InteriorSurface" Type="String" />
+    <Property Name="BodyType" Type="String" />
+    <Property Name="Cylinders" Type="String" />
+    <Property Name="Liters" Type="String" />
+    <Property Name="EngineType" Type="String" />
+    <Property Name="DriveTrain" Type="String" />
+    <Property Name="FuelType" Type="String" />
+    <Property Name="Tranmission" Type="String" />
+    <Property Name="Doors" Type="String" />
+    <Property Name="Certified" Type="Boolean" />
+    <Property Name="CarsOptions" Type="String" />
+    <Property Name="Descriptions" Type="String" />
+    <Property Name="CarImageUrl" Type="String" />
+    <Property Name="DateInStock" Type="DateTime" Nullable="false" />
+    <Property Name="DealershipId" Type="Int32" />
+    <Property Name="DealershipName" Type="String" />
+    <Property Name="DealershipAddress" Type="String" />
+    <Property Name="DealershipCity" Type="String" />
+    <Property Name="DealershipState" Type="String" />
+    <Property Name="DealershipPhone" Type="String" />
+    <Property Name="DealershipZipCode" Type="String" />
+    <Property Name="DealerCost" Type="String" />
+    <Property Name="ACV" Type="String" />
+    <Property Name="DefaultImageUrl" Type="String" />
+    <Property Name="NewUsed" Type="String" />
+    <Property Name="AddToInventoryBy" Type="String" />
+    <Property Name="AppraisalID" Type="String" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisedealerlist">
+    <Key>
+      <PropertyRef Name="OldDealerId" />
+    </Key>
+    <Property Name="OldDealerId" Type="Int32" Nullable="false" />
+    <Property Name="VincontrolId" Type="Int32" />
+    <Property Name="Password" Type="String" />
+    <Property Name="DealershipName" Type="String" />
+    <Property Name="PhoneNumber" Type="String" />
+    <Property Name="StreetAddress" Type="String" />
+    <Property Name="City" Type="String" />
+    <Property Name="State" Type="String" />
+    <Property Name="ZipCode" Type="String" />
+    <Property Name="LogoURL" Type="String" />
+    <Property Name="WebSiteURL" Type="String" />
+    <Property Name="CreditURL" Type="String" />
+    <Property Name="Email" Type="String" />
+    <Property Name="CityOveride" Type="String" />
+    <Property Name="EmailFormat" Type="Int32" />
+    <Property Name="Active" Type="Boolean" />
+    <Property Name="ExceptionCategory" Type="Int32" />
+    <Property Name="DealerSpecialtyID" Type="String" />
+    <Property Name="SubConstraint" Type="String" />
+    <Property Name="GoogleAnalyticAccount" Type="String" />
+    <Property Name="TradeInBannerLink" Type="String" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,9 @@
+﻿<Window x:Class="vincontrol.Backend.Windows.DataFeed.AddDealerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStartupLocation="CenterScreen"
+        Title="Add Dealer" Height="700" Width="1000">
+    <Grid>
+        <Button Width="200" Height="50">Create dealer</Button>
+    </Grid>
+</Window>

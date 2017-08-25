@@ -1,0 +1,1238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="whitmanenterprisewarehouseModelStoreContainer" CdmEntityContainer="whitmanenterprisewarehouseEntities">
+    <EntitySetMapping Name="manheimmakemodels">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.manheimmakemodel">
+        <MappingFragment StoreEntitySet="manheimmakemodels">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="yearmakeId" ColumnName="yearmakeId" />
+          <ScalarProperty Name="modelId" ColumnName="modelId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manheimmakes">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.manheimmake">
+        <MappingFragment StoreEntitySet="manheimmakes">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="serviceId" ColumnName="serviceId" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manheimmodels">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.manheimmodel">
+        <MappingFragment StoreEntitySet="manheimmodels">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="serviceId" ColumnName="serviceId" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manheimmodeltrims">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.manheimmodeltrim">
+        <MappingFragment StoreEntitySet="manheimmodeltrims">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="makemodelId" ColumnName="makemodelId" />
+          <ScalarProperty Name="trimId" ColumnName="trimId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manheimtrims">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.manheimtrim">
+        <MappingFragment StoreEntitySet="manheimtrims">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="serviceId" ColumnName="serviceId" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="lowestPrice" ColumnName="lowestPrice" />
+          <ScalarProperty Name="averagePrice" ColumnName="averagePrice" />
+          <ScalarProperty Name="highestPrice" ColumnName="highestPrice" />
+          <ScalarProperty Name="expirationDate" ColumnName="expirationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manheimyearmakes">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.manheimyearmake">
+        <MappingFragment StoreEntitySet="manheimyearmakes">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="year" ColumnName="year" />
+          <ScalarProperty Name="makeId" ColumnName="makeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontrolanswers">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontrolanswer">
+        <MappingFragment StoreEntitySet="vincontrolanswers">
+          <ScalarProperty Name="answerid" ColumnName="answerid" />
+          <ScalarProperty Name="appraisalid" ColumnName="appraisalid" />
+          <ScalarProperty Name="questionid" ColumnName="questionid" />
+          <ScalarProperty Name="answer" ColumnName="answer" />
+          <ScalarProperty Name="comment" ColumnName="comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontrolbannercustomers">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontrolbannercustomer">
+        <MappingFragment StoreEntitySet="vincontrolbannercustomer">
+          <ScalarProperty Name="TradeInCustomerId" ColumnName="TradeInCustomerId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Make" ColumnName="Make" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Trim" ColumnName="Trim" />
+          <ScalarProperty Name="Mileage" ColumnName="Mileage" />
+          <ScalarProperty Name="SelectedOptions" ColumnName="SelectedOptions" />
+          <ScalarProperty Name="Condition" ColumnName="Condition" />
+          <ScalarProperty Name="KBBVehicelId" ColumnName="KBBVehicelId" />
+          <ScalarProperty Name="Vin" ColumnName="Vin" />
+          <ScalarProperty Name="TradeInFairValue" ColumnName="TradeInFairValue" />
+          <ScalarProperty Name="TradeInMaxValue" ColumnName="TradeInMaxValue" />
+          <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="VarianceValue" ColumnName="VarianceValue" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="TradeInStatus" ColumnName="TradeInStatus" />
+          <ScalarProperty Name="EmailContent" ColumnName="EmailContent" />
+          <ScalarProperty Name="ADFEmailContent" ColumnName="ADFEmailContent" />
+          <ScalarProperty Name="Receivers" ColumnName="Receivers" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontrolbucketjumphistories">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontrolbucketjumphistory">
+        <MappingFragment StoreEntitySet="vincontrolbucketjumphistory">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserStamp" ColumnName="UserStamp" />
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="ListingId" ColumnName="ListingId" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="AttachFile" ColumnName="AttachFile" />
+          <ScalarProperty Name="SalePrice" ColumnName="SalePrice" />
+          <ScalarProperty Name="BucketJumpDayAlert" ColumnName="BucketJumpDayAlert" />
+          <ScalarProperty Name="BucketJumpCompleteDate" ColumnName="BucketJumpCompleteDate" />
+          <ScalarProperty Name="RetailPrice" ColumnName="RetailPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontrolbuttons">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontrolbutton">
+        <MappingFragment StoreEntitySet="vincontrolbuttons">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Button" ColumnName="Button" />
+          <ScalarProperty Name="Screen" ColumnName="Screen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontrolbuyerguides">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontrolbuyerguide">
+        <MappingFragment StoreEntitySet="vincontrolbuyerguide">
+          <ScalarProperty Name="buyerguideid" ColumnName="buyerguideid" />
+          <ScalarProperty Name="make" ColumnName="make" />
+          <ScalarProperty Name="model" ColumnName="model" />
+          <ScalarProperty Name="year" ColumnName="year" />
+          <ScalarProperty Name="vinNumber" ColumnName="vinNumber" />
+          <ScalarProperty Name="stockNumber" ColumnName="stockNumber" />
+          <ScalarProperty Name="warrantyType" ColumnName="warrantyType" />
+          <ScalarProperty Name="isAsWarranty" ColumnName="isAsWarranty" />
+          <ScalarProperty Name="isWarranty" ColumnName="isWarranty" />
+          <ScalarProperty Name="isFullWarranty" ColumnName="isFullWarranty" />
+          <ScalarProperty Name="isLimitedWarranty" ColumnName="isLimitedWarranty" />
+          <ScalarProperty Name="isServiceContract" ColumnName="isServiceContract" />
+          <ScalarProperty Name="systemCovered" ColumnName="systemCovered" />
+          <ScalarProperty Name="durations" ColumnName="durations" />
+          <ScalarProperty Name="percentageOfLabor" ColumnName="percentageOfLabor" />
+          <ScalarProperty Name="percentageOfPart" ColumnName="percentageOfPart" />
+          <ScalarProperty Name="priorRental" ColumnName="priorRental" />
+          <ScalarProperty Name="dealershipId" ColumnName="dealershipId" />
+          <ScalarProperty Name="isMixed" ColumnName="isMixed" />
+          <ScalarProperty Name="systemCoveredAndDurations" ColumnName="systemCoveredAndDurations" />
+          <ScalarProperty Name="LanguageVersion" ColumnName="LanguageVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontrolchartselections">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontrolchartselection">
+        <MappingFragment StoreEntitySet="vincontrolchartselection">
+          <ScalarProperty Name="chartselectionid" ColumnName="chartselectionid" />
+          <ScalarProperty Name="listingId" ColumnName="listingId" />
+          <ScalarProperty Name="isCarsCom" ColumnName="isCarsCom" />
+          <ScalarProperty Name="options" ColumnName="options" />
+          <ScalarProperty Name="trims" ColumnName="trims" />
+          <ScalarProperty Name="isCertified" ColumnName="isCertified" />
+          <ScalarProperty Name="isAll" ColumnName="isAll" />
+          <ScalarProperty Name="isFranchise" ColumnName="isFranchise" />
+          <ScalarProperty Name="isIndependant" ColumnName="isIndependant" />
+          <ScalarProperty Name="screen" ColumnName="screen" />
+          <ScalarProperty Name="sourceType" ColumnName="sourceType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontroldealershipactivities">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontroldealershipactivity">
+        <MappingFragment StoreEntitySet="vincontroldealershipactivity">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+          <ScalarProperty Name="UserStamp" ColumnName="UserStamp" />
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Detail" ColumnName="Detail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontroldealershipbuttons">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontroldealershipbutton">
+        <MappingFragment StoreEntitySet="vincontroldealershipbuttons">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DealershipId" ColumnName="DealershipId" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="ButtonId" ColumnName="ButtonId" />
+          <ScalarProperty Name="CanSee" ColumnName="CanSee" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontroldescriptions">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontroldescription">
+        <MappingFragment StoreEntitySet="vincontroldescription">
+          <ScalarProperty Name="VinControlDescriptionId" ColumnName="VinControlDescriptionId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="YesNo" ColumnName="YesNo" />
+          <ScalarProperty Name="DescriptionSentence" ColumnName="DescriptionSentence" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontroldescriptiontemplates">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontroldescriptiontemplate">
+        <MappingFragment StoreEntitySet="vincontroldescriptiontemplate">
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontrolexportlists">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontrolexportlist">
+        <MappingFragment StoreEntitySet="vincontrolexportlist">
+          <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="InventoryURL" ColumnName="InventoryURL" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="AutoBytelId" ColumnName="AutoBytelId" />
+          <ScalarProperty Name="AutoBytel" ColumnName="AutoBytel" />
+          <ScalarProperty Name="AutoTraderId" ColumnName="AutoTraderId" />
+          <ScalarProperty Name="AutoTrader" ColumnName="AutoTrader" />
+          <ScalarProperty Name="AutoTraderFTPUsername" ColumnName="AutoTraderFTPUsername" />
+          <ScalarProperty Name="AutoTraderFTPPassword" ColumnName="AutoTraderFTPPassword" />
+          <ScalarProperty Name="CarsComId" ColumnName="CarsComId" />
+          <ScalarProperty Name="CarsCom" ColumnName="CarsCom" />
+          <ScalarProperty Name="CUDLId" ColumnName="CUDLId" />
+          <ScalarProperty Name="CUDL" ColumnName="CUDL" />
+          <ScalarProperty Name="DealerComId" ColumnName="DealerComId" />
+          <ScalarProperty Name="DealerCom" ColumnName="DealerCom" />
+          <ScalarProperty Name="HomenetId" ColumnName="HomenetId" />
+          <ScalarProperty Name="Homenet" ColumnName="Homenet" />
+          <ScalarProperty Name="VastId" ColumnName="VastId" />
+          <ScalarProperty Name="Vast" ColumnName="Vast" />
+          <ScalarProperty Name="DMIId" ColumnName="DMIId" />
+          <ScalarProperty Name="DMI" ColumnName="DMI" />
+          <ScalarProperty Name="LTTFID" ColumnName="LTTFID" />
+          <ScalarProperty Name="LTTF" ColumnName="LTTF" />
+          <ScalarProperty Name="CostcoId" ColumnName="CostcoId" />
+          <ScalarProperty Name="Costco" ColumnName="Costco" />
+          <ScalarProperty Name="CommericalTruckId" ColumnName="CommericalTruckId" />
+          <ScalarProperty Name="CommericalTruck" ColumnName="CommericalTruck" />
+          <ScalarProperty Name="CobaltId" ColumnName="CobaltId" />
+          <ScalarProperty Name="CobaltFeed" ColumnName="CobaltFeed" />
+          <ScalarProperty Name="RecycleId" ColumnName="RecycleId" />
+          <ScalarProperty Name="RecycleFeed" ColumnName="RecycleFeed" />
+          <ScalarProperty Name="PixelId" ColumnName="PixelId" />
+          <ScalarProperty Name="PixelNationFeed" ColumnName="PixelNationFeed" />
+          <ScalarProperty Name="CarWeekId" ColumnName="CarWeekId" />
+          <ScalarProperty Name="CarWeekFeed" ColumnName="CarWeekFeed" />
+          <ScalarProperty Name="Web2CarId" ColumnName="Web2CarId" />
+          <ScalarProperty Name="Web2CarFeed" ColumnName="Web2CarFeed" />
+          <ScalarProperty Name="IseeCarId" ColumnName="IseeCarId" />
+          <ScalarProperty Name="IseeCarFeed" ColumnName="IseeCarFeed" />
+          <ScalarProperty Name="AutoPaymentFinderId" ColumnName="AutoPaymentFinderId" />
+          <ScalarProperty Name="AutoPaymentFeed" ColumnName="AutoPaymentFeed" />
+          <ScalarProperty Name="EDriveAutosId" ColumnName="EDriveAutosId" />
+          <ScalarProperty Name="EDriveAutoFed" ColumnName="EDriveAutoFed" />
+          <ScalarProperty Name="AutoFerretId" ColumnName="AutoFerretId" />
+          <ScalarProperty Name="AutoFerretFeed" ColumnName="AutoFerretFeed" />
+          <ScalarProperty Name="DealerRaterId" ColumnName="DealerRaterId" />
+          <ScalarProperty Name="DealerRaterFeed" ColumnName="DealerRaterFeed" />
+          <ScalarProperty Name="SamClubId" ColumnName="SamClubId" />
+          <ScalarProperty Name="SamClubFeed" ColumnName="SamClubFeed" />
+          <ScalarProperty Name="TripleAId" ColumnName="TripleAId" />
+          <ScalarProperty Name="TripleAFeed" ColumnName="TripleAFeed" />
+          <ScalarProperty Name="DealerForum" ColumnName="DealerForum" />
+          <ScalarProperty Name="DealerForumFeed" ColumnName="DealerForumFeed" />
+          <ScalarProperty Name="DealerLink" ColumnName="DealerLink" />
+          <ScalarProperty Name="DealerLinkFeed" ColumnName="DealerLinkFeed" />
+          <ScalarProperty Name="CommericalTruckAdId" ColumnName="CommericalTruckAdId" />
+          <ScalarProperty Name="CommercialTruckAdFeed" ColumnName="CommercialTruckAdFeed" />
+          <ScalarProperty Name="ManheimOVEId" ColumnName="ManheimOVEId" />
+          <ScalarProperty Name="ManheimOVEFeed" ColumnName="ManheimOVEFeed" />
+          <ScalarProperty Name="GabrielId" ColumnName="GabrielId" />
+          <ScalarProperty Name="GabrielFeed" ColumnName="GabrielFeed" />
+          <ScalarProperty Name="GlobalAutoSportsId" ColumnName="GlobalAutoSportsId" />
+          <ScalarProperty Name="GlobalAutoSportsFeed" ColumnName="GlobalAutoSportsFeed" />
+          <ScalarProperty Name="OddleId" ColumnName="OddleId" />
+          <ScalarProperty Name="OddleFeed" ColumnName="OddleFeed" />
+          <ScalarProperty Name="IntelliFusionID" ColumnName="IntelliFusionID" />
+          <ScalarProperty Name="IntelliFusionFeed" ColumnName="IntelliFusionFeed" />
+          <ScalarProperty Name="CarsForSaleId" ColumnName="CarsForSaleId" />
+          <ScalarProperty Name="CarsForSaleFeed" ColumnName="CarsForSaleFeed" />
+          <ScalarProperty Name="CommercialWebServiceId" ColumnName="CommercialWebServiceId" />
+          <ScalarProperty Name="CommercialWebServiceFeed" ColumnName="CommercialWebServiceFeed" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontrolgrouppermissions">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontrolgrouppermission">
+        <MappingFragment StoreEntitySet="vincontrolgrouppermissions">
+          <ScalarProperty Name="grouppermissionid" ColumnName="grouppermissionid" />
+          <ScalarProperty Name="groupid" ColumnName="groupid" />
+          <ScalarProperty Name="permissioncode" ColumnName="permissioncode" />
+          <ScalarProperty Name="permissionvalue" ColumnName="permissionvalue" />
+          <ScalarProperty Name="userstamp" ColumnName="userstamp" />
+          <ScalarProperty Name="datestamp" ColumnName="datestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontrolgroups">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontrolgroup">
+        <MappingFragment StoreEntitySet="vincontrolgroups">
+          <ScalarProperty Name="groupid" ColumnName="groupid" />
+          <ScalarProperty Name="groupname" ColumnName="groupname" />
+          <ScalarProperty Name="groupnote" ColumnName="groupnote" />
+          <ScalarProperty Name="userstamp" ColumnName="userstamp" />
+          <ScalarProperty Name="datestamp" ColumnName="datestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontrolmanheimvalues">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontrolmanheimvalue">
+        <MappingFragment StoreEntitySet="vincontrolmanheimvalue">
+          <ScalarProperty Name="AutoId" ColumnName="AutoId" />
+          <ScalarProperty Name="Vin" ColumnName="Vin" />
+          <ScalarProperty Name="Trim" ColumnName="Trim" />
+          <ScalarProperty Name="AuctionLowestPrice" ColumnName="AuctionLowestPrice" />
+          <ScalarProperty Name="AuctionAveragePrice" ColumnName="AuctionAveragePrice" />
+          <ScalarProperty Name="AuctionHighestPrice" ColumnName="AuctionHighestPrice" />
+          <ScalarProperty Name="DateAdded" ColumnName="DateAdded" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="ExpiredDate" ColumnName="ExpiredDate" />
+          <ScalarProperty Name="TrimServiceId" ColumnName="TrimServiceId" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="MakeServiceId" ColumnName="MakeServiceId" />
+          <ScalarProperty Name="ModelServiceId" ColumnName="ModelServiceId" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontrolpermissions">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontrolpermission">
+        <MappingFragment StoreEntitySet="vincontrolpermission">
+          <ScalarProperty Name="permissionid" ColumnName="permissionid" />
+          <ScalarProperty Name="permissionname" ColumnName="permissionname" />
+          <ScalarProperty Name="userstamp" ColumnName="userstamp" />
+          <ScalarProperty Name="datestamp" ColumnName="datestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontrolpermissioncodes">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontrolpermissioncode">
+        <MappingFragment StoreEntitySet="vincontrolpermissioncodes">
+          <ScalarProperty Name="permissioncodeid" ColumnName="permissioncodeid" />
+          <ScalarProperty Name="permissioncode" ColumnName="permissioncode" />
+          <ScalarProperty Name="permissiontext" ColumnName="permissiontext" />
+          <ScalarProperty Name="permissioncategory" ColumnName="permissioncategory" />
+          <ScalarProperty Name="indent" ColumnName="indent" />
+          <ScalarProperty Name="screenorder" ColumnName="screenorder" />
+          <ScalarProperty Name="userstamp" ColumnName="userstamp" />
+          <ScalarProperty Name="datestamp" ColumnName="datestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontrolpermissionvalues">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontrolpermissionvalue">
+        <MappingFragment StoreEntitySet="vincontrolpermissionvalue">
+          <ScalarProperty Name="permissionvalueid" ColumnName="permissionvalueid" />
+          <ScalarProperty Name="permissionvalue" ColumnName="permissionvalue" />
+          <ScalarProperty Name="userstamp" ColumnName="userstamp" />
+          <ScalarProperty Name="datestamp" ColumnName="datestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontrolpricechangeshistories">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontrolpricechangeshistory">
+        <MappingFragment StoreEntitySet="vincontrolpricechangeshistory">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OldPrice" ColumnName="OldPrice" />
+          <ScalarProperty Name="NewPrice" ColumnName="NewPrice" />
+          <ScalarProperty Name="AttachFile" ColumnName="AttachFile" />
+          <ScalarProperty Name="UserStamp" ColumnName="UserStamp" />
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="ListingId" ColumnName="ListingId" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontrolquestions">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontrolquestion">
+        <MappingFragment StoreEntitySet="vincontrolquestions">
+          <ScalarProperty Name="questionid" ColumnName="questionid" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="questiontypeid" ColumnName="questiontypeid" />
+          <ScalarProperty Name="shortdescription" ColumnName="shortdescription" />
+          <ScalarProperty Name="order" ColumnName="order" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontrolquestiontypes">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontrolquestiontype">
+        <MappingFragment StoreEntitySet="vincontrolquestiontype">
+          <ScalarProperty Name="questiontypeid" ColumnName="questiontypeid" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="option" ColumnName="option" />
+          <ScalarProperty Name="code" ColumnName="code" />
+          <ScalarProperty Name="unit" ColumnName="unit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontrolrebates">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontrolrebate">
+        <MappingFragment StoreEntitySet="vincontrolrebate">
+          <ScalarProperty Name="vincontrolrebateid" ColumnName="vincontrolrebateid" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Make" ColumnName="Make" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Trim" ColumnName="Trim" />
+          <ScalarProperty Name="BodyType" ColumnName="BodyType" />
+          <ScalarProperty Name="ManufactureReabte" ColumnName="ManufactureReabte" />
+          <ScalarProperty Name="Disclaimer" ColumnName="Disclaimer" />
+          <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+          <ScalarProperty Name="DateAdded" ColumnName="DateAdded" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontrolsentences">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontrolsentence">
+        <MappingFragment StoreEntitySet="vincontrolsentence">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="sentence" ColumnName="sentence" />
+          <ScalarProperty Name="typeId" ColumnName="typeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontrolsentencetypes">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontrolsentencetype">
+        <MappingFragment StoreEntitySet="vincontrolsentencetype">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontrolsouthcoastmitsubishis">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontrolsouthcoastmitsubishi">
+        <MappingFragment StoreEntitySet="vincontrolsouthcoastmitsubishi">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="vin" ColumnName="vin" />
+          <ScalarProperty Name="lastName" ColumnName="lastName" />
+          <ScalarProperty Name="firstName" ColumnName="firstName" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="year" ColumnName="year" />
+          <ScalarProperty Name="make" ColumnName="make" />
+          <ScalarProperty Name="model" ColumnName="model" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="zip" ColumnName="zip" />
+          <ScalarProperty Name="street" ColumnName="street" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="dealerId" ColumnName="dealerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontrolsouthcoastmitsubishisettings">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontrolsouthcoastmitsubishisetting">
+        <MappingFragment StoreEntitySet="vincontrolsouthcoastmitsubishisetting">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="deviceId" ColumnName="deviceId" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="notification" ColumnName="notification" />
+          <ScalarProperty Name="sms" ColumnName="sms" />
+          <ScalarProperty Name="customerId" ColumnName="customerId" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="dateStamp" ColumnName="dateStamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontrolsouthcoastmitsubishivins">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontrolsouthcoastmitsubishivin">
+        <MappingFragment StoreEntitySet="vincontrolsouthcoastmitsubishivin">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="year" ColumnName="year" />
+          <ScalarProperty Name="make" ColumnName="make" />
+          <ScalarProperty Name="model" ColumnName="model" />
+          <ScalarProperty Name="customerId" ColumnName="customerId" />
+          <ScalarProperty Name="vin" ColumnName="vin" />
+          <ScalarProperty Name="lastAppointment" ColumnName="lastAppointment" />
+          <ScalarProperty Name="mileage" ColumnName="mileage" />
+          <ScalarProperty Name="imageUrl" ColumnName="imageUrl" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontroltradeinbannercomments">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontroltradeinbannercomment">
+        <MappingFragment StoreEntitySet="vincontroltradeinbannercomment">
+          <ScalarProperty Name="SmartCommentId" ColumnName="SmartCommentId" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+          <ScalarProperty Name="DateComment" ColumnName="DateComment" />
+          <ScalarProperty Name="DateUpdated" ColumnName="DateUpdated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontroltruckcategories">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontroltruckcategory">
+        <MappingFragment StoreEntitySet="vincontroltruckcategory">
+          <ScalarProperty Name="Vincontroltruckcategoryid" ColumnName="Vincontroltruckcategoryid" />
+          <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
+          <ScalarProperty Name="TruckType" ColumnName="TruckType" />
+          <ScalarProperty Name="DateAdded" ColumnName="DateAdded" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontrolusergroups">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontrolusergroup">
+        <MappingFragment StoreEntitySet="vincontrolusergroup">
+          <ScalarProperty Name="usergroupid" ColumnName="usergroupid" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="groupid" ColumnName="groupid" />
+          <ScalarProperty Name="userstamp" ColumnName="userstamp" />
+          <ScalarProperty Name="datestamp" ColumnName="datestamp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontrolusers">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontroluser">
+        <MappingFragment StoreEntitySet="vincontrolusers">
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="expirationdate" ColumnName="expirationdate" />
+          <ScalarProperty Name="accountstatus" ColumnName="accountstatus" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="rolename" ColumnName="rolename" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontrolwalkarounds">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontrolwalkaround">
+        <MappingFragment StoreEntitySet="vincontrolwalkaround">
+          <ScalarProperty Name="walkaroundid" ColumnName="walkaroundid" />
+          <ScalarProperty Name="order" ColumnName="order" />
+          <ScalarProperty Name="x" ColumnName="x" />
+          <ScalarProperty Name="y" ColumnName="y" />
+          <ScalarProperty Name="note" ColumnName="note" />
+          <ScalarProperty Name="appraisalid" ColumnName="appraisalid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontrolwarrantytypes">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontrolwarrantytype">
+        <MappingFragment StoreEntitySet="vincontrolwarrantytype">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontrolwholesaleinventories">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontrolwholesaleinventory">
+        <MappingFragment StoreEntitySet="vincontrolwholesaleinventory">
+          <ScalarProperty Name="KBBDriveTrainId" ColumnName="KBBDriveTrainId" />
+          <ScalarProperty Name="KBBTransmissionId" ColumnName="KBBTransmissionId" />
+          <ScalarProperty Name="KBBEngineId" ColumnName="KBBEngineId" />
+          <ScalarProperty Name="ListingID" ColumnName="ListingID" />
+          <ScalarProperty Name="ModelYear" ColumnName="ModelYear" />
+          <ScalarProperty Name="Make" ColumnName="Make" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Trim" ColumnName="Trim" />
+          <ScalarProperty Name="VINNumber" ColumnName="VINNumber" />
+          <ScalarProperty Name="StockNumber" ColumnName="StockNumber" />
+          <ScalarProperty Name="SalePrice" ColumnName="SalePrice" />
+          <ScalarProperty Name="MSRP" ColumnName="MSRP" />
+          <ScalarProperty Name="DealerMSRP" ColumnName="DealerMSRP" />
+          <ScalarProperty Name="Mileage" ColumnName="Mileage" />
+          <ScalarProperty Name="ExteriorColor" ColumnName="ExteriorColor" />
+          <ScalarProperty Name="InteriorColor" ColumnName="InteriorColor" />
+          <ScalarProperty Name="InteriorSurface" ColumnName="InteriorSurface" />
+          <ScalarProperty Name="BodyType" ColumnName="BodyType" />
+          <ScalarProperty Name="Cylinders" ColumnName="Cylinders" />
+          <ScalarProperty Name="Liters" ColumnName="Liters" />
+          <ScalarProperty Name="EngineType" ColumnName="EngineType" />
+          <ScalarProperty Name="DriveTrain" ColumnName="DriveTrain" />
+          <ScalarProperty Name="FuelType" ColumnName="FuelType" />
+          <ScalarProperty Name="Tranmission" ColumnName="Tranmission" />
+          <ScalarProperty Name="Doors" ColumnName="Doors" />
+          <ScalarProperty Name="FuelEconomyCity" ColumnName="FuelEconomyCity" />
+          <ScalarProperty Name="FuelEconomyHighWay" ColumnName="FuelEconomyHighWay" />
+          <ScalarProperty Name="Certified" ColumnName="Certified" />
+          <ScalarProperty Name="StandardOptions" ColumnName="StandardOptions" />
+          <ScalarProperty Name="CarsOptions" ColumnName="CarsOptions" />
+          <ScalarProperty Name="CarsPackages" ColumnName="CarsPackages" />
+          <ScalarProperty Name="Descriptions" ColumnName="Descriptions" />
+          <ScalarProperty Name="CarImageUrl" ColumnName="CarImageUrl" />
+          <ScalarProperty Name="ThumbnailImageURL" ColumnName="ThumbnailImageURL" />
+          <ScalarProperty Name="DateInStock" ColumnName="DateInStock" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="DealershipId" ColumnName="DealershipId" />
+          <ScalarProperty Name="DealershipName" ColumnName="DealershipName" />
+          <ScalarProperty Name="DealershipAddress" ColumnName="DealershipAddress" />
+          <ScalarProperty Name="DealershipCity" ColumnName="DealershipCity" />
+          <ScalarProperty Name="DealershipState" ColumnName="DealershipState" />
+          <ScalarProperty Name="DealershipPhone" ColumnName="DealershipPhone" />
+          <ScalarProperty Name="DealershipZipCode" ColumnName="DealershipZipCode" />
+          <ScalarProperty Name="DealerCost" ColumnName="DealerCost" />
+          <ScalarProperty Name="ACV" ColumnName="ACV" />
+          <ScalarProperty Name="DefaultImageUrl" ColumnName="DefaultImageUrl" />
+          <ScalarProperty Name="NewUsed" ColumnName="NewUsed" />
+          <ScalarProperty Name="AddToInventoryBy" ColumnName="AddToInventoryBy" />
+          <ScalarProperty Name="AppraisalID" ColumnName="AppraisalID" />
+          <ScalarProperty Name="VehicleType" ColumnName="VehicleType" />
+          <ScalarProperty Name="TruckClass" ColumnName="TruckClass" />
+          <ScalarProperty Name="TruckType" ColumnName="TruckType" />
+          <ScalarProperty Name="TruckCategory" ColumnName="TruckCategory" />
+          <ScalarProperty Name="WarrantyInfo" ColumnName="WarrantyInfo" />
+          <ScalarProperty Name="RetailPrice" ColumnName="RetailPrice" />
+          <ScalarProperty Name="WindowStickerPrice" ColumnName="WindowStickerPrice" />
+          <ScalarProperty Name="DealerDiscount" ColumnName="DealerDiscount" />
+          <ScalarProperty Name="ManufacturerRebate" ColumnName="ManufacturerRebate" />
+          <ScalarProperty Name="MarketRange" ColumnName="MarketRange" />
+          <ScalarProperty Name="Recon" ColumnName="Recon" />
+          <ScalarProperty Name="PriorRental" ColumnName="PriorRental" />
+          <ScalarProperty Name="CarFaxOwner" ColumnName="CarFaxOwner" />
+          <ScalarProperty Name="KBBOptionsId" ColumnName="KBBOptionsId" />
+          <ScalarProperty Name="KBBTrimId" ColumnName="KBBTrimId" />
+          <ScalarProperty Name="Disclaimer" ColumnName="Disclaimer" />
+          <ScalarProperty Name="DealerDemo" ColumnName="DealerDemo" />
+          <ScalarProperty Name="Unwind" ColumnName="Unwind" />
+          <ScalarProperty Name="NumberOfCar" ColumnName="NumberOfCar" />
+          <ScalarProperty Name="CarRanking" ColumnName="CarRanking" />
+          <ScalarProperty Name="MarketLowestPrice" ColumnName="MarketLowestPrice" />
+          <ScalarProperty Name="MarketAveragePrice" ColumnName="MarketAveragePrice" />
+          <ScalarProperty Name="MarketHighestPrice" ColumnName="MarketHighestPrice" />
+          <ScalarProperty Name="ColorCode" ColumnName="ColorCode" />
+          <ScalarProperty Name="AdditionalTitle" ColumnName="AdditionalTitle" />
+          <ScalarProperty Name="ChromeStyleId" ColumnName="ChromeStyleId" />
+          <ScalarProperty Name="ChromeModelId" ColumnName="ChromeModelId" />
+          <ScalarProperty Name="EnableAutoDescription" ColumnName="EnableAutoDescription" />
+          <ScalarProperty Name="Template" ColumnName="Template" />
+          <ScalarProperty Name="PackageDescriptions" ColumnName="PackageDescriptions" />
+          <ScalarProperty Name="Loaner" ColumnName="Loaner" />
+          <ScalarProperty Name="Auction" ColumnName="Auction" />
+          <ScalarProperty Name="BucketJumpCompleteDay" ColumnName="BucketJumpCompleteDay" />
+          <ScalarProperty Name="ManheimTrimId" ColumnName="ManheimTrimId" />
+          <ScalarProperty Name="MarketTrim" ColumnName="MarketTrim" />
+          <ScalarProperty Name="ACar" ColumnName="ACar" />
+          <ScalarProperty Name="IsFeatured" ColumnName="IsFeatured" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vincontrondnsimportlists">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.vincontrondnsimportlist">
+        <MappingFragment StoreEntitySet="vincontrondnsimportlist">
+          <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="whitmanenteprisecarfaxes">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.whitmanenteprisecarfax">
+        <MappingFragment StoreEntitySet="whitmanenteprisecarfax">
+          <ScalarProperty Name="AutoId" ColumnName="AutoId" />
+          <ScalarProperty Name="Vin" ColumnName="Vin" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="ServiceRecord" ColumnName="ServiceRecord" />
+          <ScalarProperty Name="WindowSticker" ColumnName="WindowSticker" />
+          <ScalarProperty Name="DateAdded" ColumnName="DateAdded" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="ExpiredDate" ColumnName="ExpiredDate" />
+          <ScalarProperty Name="PriorRental" ColumnName="PriorRental" />
+          <ScalarProperty Name="Accident" ColumnName="Accident" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="whitmanenterpriseappraisals">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.whitmanenterpriseappraisal">
+        <MappingFragment StoreEntitySet="whitmanenterpriseappraisal">
+          <ScalarProperty Name="KBBDriveTrainId" ColumnName="KBBDriveTrainId" />
+          <ScalarProperty Name="KBBTransmissionId" ColumnName="KBBTransmissionId" />
+          <ScalarProperty Name="KBBEngineId" ColumnName="KBBEngineId" />
+          <ScalarProperty Name="idAppraisal" ColumnName="idAppraisal" />
+          <ScalarProperty Name="ModelYear" ColumnName="ModelYear" />
+          <ScalarProperty Name="Make" ColumnName="Make" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Trim" ColumnName="Trim" />
+          <ScalarProperty Name="VINNumber" ColumnName="VINNumber" />
+          <ScalarProperty Name="StockNumber" ColumnName="StockNumber" />
+          <ScalarProperty Name="SalePrice" ColumnName="SalePrice" />
+          <ScalarProperty Name="MSRP" ColumnName="MSRP" />
+          <ScalarProperty Name="Mileage" ColumnName="Mileage" />
+          <ScalarProperty Name="Cylinders" ColumnName="Cylinders" />
+          <ScalarProperty Name="ExteriorColor" ColumnName="ExteriorColor" />
+          <ScalarProperty Name="InteriorColor" ColumnName="InteriorColor" />
+          <ScalarProperty Name="InteriorSurface" ColumnName="InteriorSurface" />
+          <ScalarProperty Name="BodyType" ColumnName="BodyType" />
+          <ScalarProperty Name="EngineType" ColumnName="EngineType" />
+          <ScalarProperty Name="DriveTrain" ColumnName="DriveTrain" />
+          <ScalarProperty Name="FuelType" ColumnName="FuelType" />
+          <ScalarProperty Name="Tranmission" ColumnName="Tranmission" />
+          <ScalarProperty Name="Liters" ColumnName="Liters" />
+          <ScalarProperty Name="Doors" ColumnName="Doors" />
+          <ScalarProperty Name="FuelEconomyCity" ColumnName="FuelEconomyCity" />
+          <ScalarProperty Name="FuelEconomyHighWay" ColumnName="FuelEconomyHighWay" />
+          <ScalarProperty Name="Certified" ColumnName="Certified" />
+          <ScalarProperty Name="CarsOptions" ColumnName="CarsOptions" />
+          <ScalarProperty Name="CarsPackages" ColumnName="CarsPackages" />
+          <ScalarProperty Name="PackageDescription" ColumnName="PackageDescription" />
+          <ScalarProperty Name="Descriptions" ColumnName="Descriptions" />
+          <ScalarProperty Name="CarImageUrl" ColumnName="CarImageUrl" />
+          <ScalarProperty Name="DealershipName" ColumnName="DealershipName" />
+          <ScalarProperty Name="DealershipAddress" ColumnName="DealershipAddress" />
+          <ScalarProperty Name="DealershipCity" ColumnName="DealershipCity" />
+          <ScalarProperty Name="DealershipState" ColumnName="DealershipState" />
+          <ScalarProperty Name="DealershipPhone" ColumnName="DealershipPhone" />
+          <ScalarProperty Name="DealershipId" ColumnName="DealershipId" />
+          <ScalarProperty Name="DealerCost" ColumnName="DealerCost" />
+          <ScalarProperty Name="ACV" ColumnName="ACV" />
+          <ScalarProperty Name="DefaultImageUrl" ColumnName="DefaultImageUrl" />
+          <ScalarProperty Name="AppraisalDate" ColumnName="AppraisalDate" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="AppraisalBy" ColumnName="AppraisalBy" />
+          <ScalarProperty Name="InventoryAdd" ColumnName="InventoryAdd" />
+          <ScalarProperty Name="AppraisalType" ColumnName="AppraisalType" />
+          <ScalarProperty Name="AppraisalID" ColumnName="AppraisalID" />
+          <ScalarProperty Name="ChromeModelId" ColumnName="ChromeModelId" />
+          <ScalarProperty Name="ChromeStyleId" ColumnName="ChromeStyleId" />
+          <ScalarProperty Name="StandardOptions" ColumnName="StandardOptions" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="VehicleType" ColumnName="VehicleType" />
+          <ScalarProperty Name="TruckClass" ColumnName="TruckClass" />
+          <ScalarProperty Name="TruckType" ColumnName="TruckType" />
+          <ScalarProperty Name="TruckCategory" ColumnName="TruckCategory" />
+          <ScalarProperty Name="KBBOptionsId" ColumnName="KBBOptionsId" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Carfaxowner" ColumnName="Carfaxowner" />
+          <ScalarProperty Name="KBBTrimId" ColumnName="KBBTrimId" />
+          <ScalarProperty Name="Signature" ColumnName="Signature" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="VinGenie" ColumnName="VinGenie" />
+          <ScalarProperty Name="UserStamp" ColumnName="UserStamp" />
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="NumberOfCar" ColumnName="NumberOfCar" />
+          <ScalarProperty Name="CarRanking" ColumnName="CarRanking" />
+          <ScalarProperty Name="DeviceId" ColumnName="DeviceId" />
+          <ScalarProperty Name="DeviceName" ColumnName="DeviceName" />
+          <ScalarProperty Name="MarketLowestPrice" ColumnName="MarketLowestPrice" />
+          <ScalarProperty Name="MarketAveragePrice" ColumnName="MarketAveragePrice" />
+          <ScalarProperty Name="MarketHighestPrice" ColumnName="MarketHighestPrice" />
+          <ScalarProperty Name="ColorCode" ColumnName="ColorCode" />
+          <ScalarProperty Name="PhotoUrl" ColumnName="PhotoUrl" />
+          <ScalarProperty Name="SignatureUrl" ColumnName="SignatureUrl" />
+          <ScalarProperty Name="MarketRange" ColumnName="MarketRange" />
+          <ScalarProperty Name="PackageDescriptions" ColumnName="PackageDescriptions" />
+          <ScalarProperty Name="KarPowerEntryId" ColumnName="KarPowerEntryId" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="ManheimTrimId" ColumnName="ManheimTrimId" />
+          <ScalarProperty Name="MarketTrim" ColumnName="MarketTrim" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="whitmanenterprisebayads">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.whitmanenterprisebayad">
+        <MappingFragment StoreEntitySet="whitmanenterprisebayads">
+          <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+          <ScalarProperty Name="AutoId" ColumnName="AutoId" />
+          <ScalarProperty Name="ListingId" ColumnName="ListingId" />
+          <ScalarProperty Name="EbayAdId" ColumnName="EbayAdId" />
+          <ScalarProperty Name="EbayAdURL" ColumnName="EbayAdURL" />
+          <ScalarProperty Name="EbayAdStartTime" ColumnName="EbayAdStartTime" />
+          <ScalarProperty Name="EbayAdEndTime" ColumnName="EbayAdEndTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="whitmanenterprisebbs">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.whitmanenterprisebb">
+        <MappingFragment StoreEntitySet="whitmanenterprisebb">
+          <ScalarProperty Name="AutoId" ColumnName="AutoId" />
+          <ScalarProperty Name="Vin" ColumnName="Vin" />
+          <ScalarProperty Name="Trim" ColumnName="Trim" />
+          <ScalarProperty Name="TradeInFairPrice" ColumnName="TradeInFairPrice" />
+          <ScalarProperty Name="TradeInGoodPrice" ColumnName="TradeInGoodPrice" />
+          <ScalarProperty Name="TradeInVeryGoodPrice" ColumnName="TradeInVeryGoodPrice" />
+          <ScalarProperty Name="DateAdded" ColumnName="DateAdded" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="ExpiredDate" ColumnName="ExpiredDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="whitmanenterpriseclientinfoes">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.whitmanenterpriseclientinfo">
+        <MappingFragment StoreEntitySet="whitmanenterpriseclientinfo">
+          <ScalarProperty Name="idwhitmanenterpriseclientinfo" ColumnName="idwhitmanenterpriseclientinfo" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="whitmanenterprisedealergroups">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.whitmanenterprisedealergroup">
+        <MappingFragment StoreEntitySet="whitmanenterprisedealergroup">
+          <ScalarProperty Name="DealerGroupId" ColumnName="DealerGroupId" />
+          <ScalarProperty Name="DealerGroupName" ColumnName="DealerGroupName" />
+          <ScalarProperty Name="MasterUserName" ColumnName="MasterUserName" />
+          <ScalarProperty Name="MasterLogin" ColumnName="MasterLogin" />
+          <ScalarProperty Name="DefaultDealerID" ColumnName="DefaultDealerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="whitmanenterprisedealerships">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.whitmanenterprisedealership">
+        <MappingFragment StoreEntitySet="whitmanenterprisedealership">
+          <ScalarProperty Name="idWhitmanenterpriseDealership" ColumnName="idWhitmanenterpriseDealership" />
+          <ScalarProperty Name="DealerPassword" ColumnName="DealerPassword" />
+          <ScalarProperty Name="DealershipName" ColumnName="DealershipName" />
+          <ScalarProperty Name="DealershipAddress" ColumnName="DealershipAddress" />
+          <ScalarProperty Name="DateAdded" ColumnName="DateAdded" />
+          <ScalarProperty Name="Lattitude" ColumnName="Lattitude" />
+          <ScalarProperty Name="Longtitude" ColumnName="Longtitude" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="DealerGroupID" ColumnName="DealerGroupID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="EmailFormat" ColumnName="EmailFormat" />
+          <ScalarProperty Name="PriceVariance" ColumnName="PriceVariance" />
+          <ScalarProperty Name="OverideDealerKBBReport" ColumnName="OverideDealerKBBReport" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="whitmanenterprisedealershipinventories">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.whitmanenterprisedealershipinventory">
+        <MappingFragment StoreEntitySet="whitmanenterprisedealershipinventory">
+          <ScalarProperty Name="KBBDriveTrainId" ColumnName="KBBDriveTrainId" />
+          <ScalarProperty Name="KBBTransmissionId" ColumnName="KBBTransmissionId" />
+          <ScalarProperty Name="KBBEngineId" ColumnName="KBBEngineId" />
+          <ScalarProperty Name="BrandedTitle" ColumnName="BrandedTitle" />
+          <ScalarProperty Name="ListingID" ColumnName="ListingID" />
+          <ScalarProperty Name="ModelYear" ColumnName="ModelYear" />
+          <ScalarProperty Name="Make" ColumnName="Make" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Trim" ColumnName="Trim" />
+          <ScalarProperty Name="VINNumber" ColumnName="VINNumber" />
+          <ScalarProperty Name="StockNumber" ColumnName="StockNumber" />
+          <ScalarProperty Name="SalePrice" ColumnName="SalePrice" />
+          <ScalarProperty Name="MSRP" ColumnName="MSRP" />
+          <ScalarProperty Name="DealerMSRP" ColumnName="DealerMSRP" />
+          <ScalarProperty Name="Mileage" ColumnName="Mileage" />
+          <ScalarProperty Name="ExteriorColor" ColumnName="ExteriorColor" />
+          <ScalarProperty Name="InteriorColor" ColumnName="InteriorColor" />
+          <ScalarProperty Name="InteriorSurface" ColumnName="InteriorSurface" />
+          <ScalarProperty Name="BodyType" ColumnName="BodyType" />
+          <ScalarProperty Name="Cylinders" ColumnName="Cylinders" />
+          <ScalarProperty Name="Liters" ColumnName="Liters" />
+          <ScalarProperty Name="EngineType" ColumnName="EngineType" />
+          <ScalarProperty Name="DriveTrain" ColumnName="DriveTrain" />
+          <ScalarProperty Name="FuelType" ColumnName="FuelType" />
+          <ScalarProperty Name="Tranmission" ColumnName="Tranmission" />
+          <ScalarProperty Name="Doors" ColumnName="Doors" />
+          <ScalarProperty Name="FuelEconomyCity" ColumnName="FuelEconomyCity" />
+          <ScalarProperty Name="FuelEconomyHighWay" ColumnName="FuelEconomyHighWay" />
+          <ScalarProperty Name="Certified" ColumnName="Certified" />
+          <ScalarProperty Name="StandardOptions" ColumnName="StandardOptions" />
+          <ScalarProperty Name="CarsOptions" ColumnName="CarsOptions" />
+          <ScalarProperty Name="CarsPackages" ColumnName="CarsPackages" />
+          <ScalarProperty Name="Descriptions" ColumnName="Descriptions" />
+          <ScalarProperty Name="CarImageUrl" ColumnName="CarImageUrl" />
+          <ScalarProperty Name="ThumbnailImageURL" ColumnName="ThumbnailImageURL" />
+          <ScalarProperty Name="DateInStock" ColumnName="DateInStock" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="DealershipId" ColumnName="DealershipId" />
+          <ScalarProperty Name="DealershipName" ColumnName="DealershipName" />
+          <ScalarProperty Name="DealershipAddress" ColumnName="DealershipAddress" />
+          <ScalarProperty Name="DealershipCity" ColumnName="DealershipCity" />
+          <ScalarProperty Name="DealershipState" ColumnName="DealershipState" />
+          <ScalarProperty Name="DealershipPhone" ColumnName="DealershipPhone" />
+          <ScalarProperty Name="DealershipZipCode" ColumnName="DealershipZipCode" />
+          <ScalarProperty Name="DealerCost" ColumnName="DealerCost" />
+          <ScalarProperty Name="ACV" ColumnName="ACV" />
+          <ScalarProperty Name="DefaultImageUrl" ColumnName="DefaultImageUrl" />
+          <ScalarProperty Name="NewUsed" ColumnName="NewUsed" />
+          <ScalarProperty Name="AddToInventoryBy" ColumnName="AddToInventoryBy" />
+          <ScalarProperty Name="AppraisalID" ColumnName="AppraisalID" />
+          <ScalarProperty Name="VehicleType" ColumnName="VehicleType" />
+          <ScalarProperty Name="TruckClass" ColumnName="TruckClass" />
+          <ScalarProperty Name="TruckType" ColumnName="TruckType" />
+          <ScalarProperty Name="TruckCategory" ColumnName="TruckCategory" />
+          <ScalarProperty Name="WarrantyInfo" ColumnName="WarrantyInfo" />
+          <ScalarProperty Name="RetailPrice" ColumnName="RetailPrice" />
+          <ScalarProperty Name="WindowStickerPrice" ColumnName="WindowStickerPrice" />
+          <ScalarProperty Name="DealerDiscount" ColumnName="DealerDiscount" />
+          <ScalarProperty Name="ManufacturerRebate" ColumnName="ManufacturerRebate" />
+          <ScalarProperty Name="MarketRange" ColumnName="MarketRange" />
+          <ScalarProperty Name="Recon" ColumnName="Recon" />
+          <ScalarProperty Name="PriorRental" ColumnName="PriorRental" />
+          <ScalarProperty Name="CarFaxOwner" ColumnName="CarFaxOwner" />
+          <ScalarProperty Name="KBBOptionsId" ColumnName="KBBOptionsId" />
+          <ScalarProperty Name="KBBTrimId" ColumnName="KBBTrimId" />
+          <ScalarProperty Name="PreWholeSale" ColumnName="PreWholeSale" />
+          <ScalarProperty Name="Disclaimer" ColumnName="Disclaimer" />
+          <ScalarProperty Name="DealerDemo" ColumnName="DealerDemo" />
+          <ScalarProperty Name="Unwind" ColumnName="Unwind" />
+          <ScalarProperty Name="IsFeatured" ColumnName="IsFeatured" />
+          <ScalarProperty Name="NumberOfCar" ColumnName="NumberOfCar" />
+          <ScalarProperty Name="CarRanking" ColumnName="CarRanking" />
+          <ScalarProperty Name="MarketLowestPrice" ColumnName="MarketLowestPrice" />
+          <ScalarProperty Name="MarketAveragePrice" ColumnName="MarketAveragePrice" />
+          <ScalarProperty Name="MarketHighestPrice" ColumnName="MarketHighestPrice" />
+          <ScalarProperty Name="ColorCode" ColumnName="ColorCode" />
+          <ScalarProperty Name="AdditionalTitle" ColumnName="AdditionalTitle" />
+          <ScalarProperty Name="ChromeStyleId" ColumnName="ChromeStyleId" />
+          <ScalarProperty Name="ChromeModelId" ColumnName="ChromeModelId" />
+          <ScalarProperty Name="EnableAutoDescription" ColumnName="EnableAutoDescription" />
+          <ScalarProperty Name="Template" ColumnName="Template" />
+          <ScalarProperty Name="PackageDescriptions" ColumnName="PackageDescriptions" />
+          <ScalarProperty Name="Loaner" ColumnName="Loaner" />
+          <ScalarProperty Name="Auction" ColumnName="Auction" />
+          <ScalarProperty Name="BucketJumpCompleteDay" ColumnName="BucketJumpCompleteDay" />
+          <ScalarProperty Name="ManheimTrimId" ColumnName="ManheimTrimId" />
+          <ScalarProperty Name="MarketTrim" ColumnName="MarketTrim" />
+          <ScalarProperty Name="ACar" ColumnName="ACar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="whitmanenterprisedealershipinventorysoldouts">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.whitmanenterprisedealershipinventorysoldout">
+        <MappingFragment StoreEntitySet="whitmanenterprisedealershipinventorysoldout">
+          <ScalarProperty Name="KBBDriveTrainId" ColumnName="KBBDriveTrainId" />
+          <ScalarProperty Name="KBBTransmissionId" ColumnName="KBBTransmissionId" />
+          <ScalarProperty Name="KBBEngineId" ColumnName="KBBEngineId" />
+          <ScalarProperty Name="BrandedTitle" ColumnName="BrandedTitle" />
+          <ScalarProperty Name="ListingID" ColumnName="ListingID" />
+          <ScalarProperty Name="ModelYear" ColumnName="ModelYear" />
+          <ScalarProperty Name="Make" ColumnName="Make" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Trim" ColumnName="Trim" />
+          <ScalarProperty Name="VINNumber" ColumnName="VINNumber" />
+          <ScalarProperty Name="StockNumber" ColumnName="StockNumber" />
+          <ScalarProperty Name="SalePrice" ColumnName="SalePrice" />
+          <ScalarProperty Name="MSRP" ColumnName="MSRP" />
+          <ScalarProperty Name="DealerMSRP" ColumnName="DealerMSRP" />
+          <ScalarProperty Name="Mileage" ColumnName="Mileage" />
+          <ScalarProperty Name="ExteriorColor" ColumnName="ExteriorColor" />
+          <ScalarProperty Name="InteriorColor" ColumnName="InteriorColor" />
+          <ScalarProperty Name="InteriorSurface" ColumnName="InteriorSurface" />
+          <ScalarProperty Name="BodyType" ColumnName="BodyType" />
+          <ScalarProperty Name="Cylinders" ColumnName="Cylinders" />
+          <ScalarProperty Name="Liters" ColumnName="Liters" />
+          <ScalarProperty Name="EngineType" ColumnName="EngineType" />
+          <ScalarProperty Name="DriveTrain" ColumnName="DriveTrain" />
+          <ScalarProperty Name="FuelType" ColumnName="FuelType" />
+          <ScalarProperty Name="Tranmission" ColumnName="Tranmission" />
+          <ScalarProperty Name="Doors" ColumnName="Doors" />
+          <ScalarProperty Name="FuelEconomyCity" ColumnName="FuelEconomyCity" />
+          <ScalarProperty Name="FuelEconomyHighWay" ColumnName="FuelEconomyHighWay" />
+          <ScalarProperty Name="Certified" ColumnName="Certified" />
+          <ScalarProperty Name="CarsOptions" ColumnName="CarsOptions" />
+          <ScalarProperty Name="CarsPackages" ColumnName="CarsPackages" />
+          <ScalarProperty Name="Descriptions" ColumnName="Descriptions" />
+          <ScalarProperty Name="CarImageUrl" ColumnName="CarImageUrl" />
+          <ScalarProperty Name="ThumbnailImageURL" ColumnName="ThumbnailImageURL" />
+          <ScalarProperty Name="DateInStock" ColumnName="DateInStock" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="DateRemoved" ColumnName="DateRemoved" />
+          <ScalarProperty Name="DealershipName" ColumnName="DealershipName" />
+          <ScalarProperty Name="DealershipAddress" ColumnName="DealershipAddress" />
+          <ScalarProperty Name="DealershipCity" ColumnName="DealershipCity" />
+          <ScalarProperty Name="DealershipState" ColumnName="DealershipState" />
+          <ScalarProperty Name="DealershipZipCode" ColumnName="DealershipZipCode" />
+          <ScalarProperty Name="DealershipPhone" ColumnName="DealershipPhone" />
+          <ScalarProperty Name="DealershipId" ColumnName="DealershipId" />
+          <ScalarProperty Name="DealerCost" ColumnName="DealerCost" />
+          <ScalarProperty Name="ACV" ColumnName="ACV" />
+          <ScalarProperty Name="DefaultImageUrl" ColumnName="DefaultImageUrl" />
+          <ScalarProperty Name="NewUsed" ColumnName="NewUsed" />
+          <ScalarProperty Name="RemoveBy" ColumnName="RemoveBy" />
+          <ScalarProperty Name="AddToInventoryBy" ColumnName="AddToInventoryBy" />
+          <ScalarProperty Name="AppraisalID" ColumnName="AppraisalID" />
+          <ScalarProperty Name="DataFeed" ColumnName="DataFeed" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="VehicleType" ColumnName="VehicleType" />
+          <ScalarProperty Name="TruckClass" ColumnName="TruckClass" />
+          <ScalarProperty Name="TruckType" ColumnName="TruckType" />
+          <ScalarProperty Name="TruckCategory" ColumnName="TruckCategory" />
+          <ScalarProperty Name="WarrantyInfo" ColumnName="WarrantyInfo" />
+          <ScalarProperty Name="RetailPrice" ColumnName="RetailPrice" />
+          <ScalarProperty Name="WindowStickerPrice" ColumnName="WindowStickerPrice" />
+          <ScalarProperty Name="DealerDiscount" ColumnName="DealerDiscount" />
+          <ScalarProperty Name="ManufacturerRebate" ColumnName="ManufacturerRebate" />
+          <ScalarProperty Name="Recon" ColumnName="Recon" />
+          <ScalarProperty Name="PriorRental" ColumnName="PriorRental" />
+          <ScalarProperty Name="StandardOptions" ColumnName="StandardOptions" />
+          <ScalarProperty Name="CarFaxOwner" ColumnName="CarFaxOwner" />
+          <ScalarProperty Name="KBBOptionsId" ColumnName="KBBOptionsId" />
+          <ScalarProperty Name="KBBTrimId" ColumnName="KBBTrimId" />
+          <ScalarProperty Name="Disclaimer" ColumnName="Disclaimer" />
+          <ScalarProperty Name="DealerDemo" ColumnName="DealerDemo" />
+          <ScalarProperty Name="Unwind" ColumnName="Unwind" />
+          <ScalarProperty Name="NumberOfCar" ColumnName="NumberOfCar" />
+          <ScalarProperty Name="CarRanking" ColumnName="CarRanking" />
+          <ScalarProperty Name="ColorCode" ColumnName="ColorCode" />
+          <ScalarProperty Name="AdditionalTitle" ColumnName="AdditionalTitle" />
+          <ScalarProperty Name="ChromeStyleId" ColumnName="ChromeStyleId" />
+          <ScalarProperty Name="ChromeModelId" ColumnName="ChromeModelId" />
+          <ScalarProperty Name="Loaner" ColumnName="Loaner" />
+          <ScalarProperty Name="Auction" ColumnName="Auction" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="EnableAutoDescription" ColumnName="EnableAutoDescription" />
+          <ScalarProperty Name="Template" ColumnName="Template" />
+          <ScalarProperty Name="PackageDescriptions" ColumnName="PackageDescriptions" />
+          <ScalarProperty Name="BucketJumpCompleteDay" ColumnName="BucketJumpCompleteDay" />
+          <ScalarProperty Name="ManheimTrimId" ColumnName="ManheimTrimId" />
+          <ScalarProperty Name="MarketTrim" ColumnName="MarketTrim" />
+          <ScalarProperty Name="ACar" ColumnName="ACar" />
+          <ScalarProperty Name="OldListingId" ColumnName="OldListingId" />
+          <ScalarProperty Name="IsFeatured" ColumnName="IsFeatured" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="whitmanenterpriseebayvehiclecategories">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.whitmanenterpriseebayvehiclecategory">
+        <MappingFragment StoreEntitySet="whitmanenterpriseebayvehiclecategory">
+          <ScalarProperty Name="EbayCategoryID" ColumnName="EbayCategoryID" />
+          <ScalarProperty Name="Make" ColumnName="Make" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="whitmanenterprisekbbs">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.whitmanenterprisekbb">
+        <MappingFragment StoreEntitySet="whitmanenterprisekbb">
+          <ScalarProperty Name="AutoId" ColumnName="AutoId" />
+          <ScalarProperty Name="Vin" ColumnName="Vin" />
+          <ScalarProperty Name="Trim" ColumnName="Trim" />
+          <ScalarProperty Name="TradeInFairPrice" ColumnName="TradeInFairPrice" />
+          <ScalarProperty Name="TradeInGoodPrice" ColumnName="TradeInGoodPrice" />
+          <ScalarProperty Name="TradeInVeryGoodPrice" ColumnName="TradeInVeryGoodPrice" />
+          <ScalarProperty Name="DateAdded" ColumnName="DateAdded" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="ExpiredDate" ColumnName="ExpiredDate" />
+          <ScalarProperty Name="BaseWholeSale" ColumnName="BaseWholeSale" />
+          <ScalarProperty Name="MileageAdjustment" ColumnName="MileageAdjustment" />
+          <ScalarProperty Name="WholeSale" ColumnName="WholeSale" />
+          <ScalarProperty Name="TrimId" ColumnName="TrimId" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="whitmanenterprisesettings">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.whitmanenterprisesetting">
+        <MappingFragment StoreEntitySet="whitmanenterprisesetting">
+          <ScalarProperty Name="ImageUploadNotification" ColumnName="ImageUploadNotification" />
+          <ScalarProperty Name="idwhitmanenterprisesetting" ColumnName="idwhitmanenterprisesetting" />
+          <ScalarProperty Name="InventorySorting" ColumnName="InventorySorting" />
+          <ScalarProperty Name="SoldOut" ColumnName="SoldOut" />
+          <ScalarProperty Name="DealershipId" ColumnName="DealershipId" />
+          <ScalarProperty Name="Cragislist" ColumnName="Cragislist" />
+          <ScalarProperty Name="CraigslistPassword" ColumnName="CraigslistPassword" />
+          <ScalarProperty Name="Ebay" ColumnName="Ebay" />
+          <ScalarProperty Name="EbayPassword" ColumnName="EbayPassword" />
+          <ScalarProperty Name="CarFax" ColumnName="CarFax" />
+          <ScalarProperty Name="CarFaxPassword" ColumnName="CarFaxPassword" />
+          <ScalarProperty Name="Manheim" ColumnName="Manheim" />
+          <ScalarProperty Name="ManheimPassword" ColumnName="ManheimPassword" />
+          <ScalarProperty Name="KellyBlueBook" ColumnName="KellyBlueBook" />
+          <ScalarProperty Name="KellyPassword" ColumnName="KellyPassword" />
+          <ScalarProperty Name="BlackBook" ColumnName="BlackBook" />
+          <ScalarProperty Name="BlackBookPassword" ColumnName="BlackBookPassword" />
+          <ScalarProperty Name="AutoCheck" ColumnName="AutoCheck" />
+          <ScalarProperty Name="AutoCheckPassword" ColumnName="AutoCheckPassword" />
+          <ScalarProperty Name="AppraisalNotification" ColumnName="AppraisalNotification" />
+          <ScalarProperty Name="WholeNotification" ColumnName="WholeNotification" />
+          <ScalarProperty Name="InventoryNotification" ColumnName="InventoryNotification" />
+          <ScalarProperty Name="C24Hnotification" ColumnName="24Hnotification" />
+          <ScalarProperty Name="NoteNotification" ColumnName="NoteNotification" />
+          <ScalarProperty Name="PriceChangeNotification" ColumnName="PriceChangeNotification" />
+          <ScalarProperty Name="AgeingBucketNotification" ColumnName="AgeingBucketNotification" />
+          <ScalarProperty Name="BucketJumpNotification" ColumnName="BucketJumpNotification" />
+          <ScalarProperty Name="DefaultStockImageUrl" ColumnName="DefaultStockImageUrl" />
+          <ScalarProperty Name="OverideStockImage" ColumnName="OverideStockImage" />
+          <ScalarProperty Name="DealerInfo" ColumnName="DealerInfo" />
+          <ScalarProperty Name="DealerWarranty" ColumnName="DealerWarranty" />
+          <ScalarProperty Name="TermsAndCondition" ColumnName="TermsAndCondition" />
+          <ScalarProperty Name="EbayToken" ColumnName="EbayToken" />
+          <ScalarProperty Name="EbayInventoryURL" ColumnName="EbayInventoryURL" />
+          <ScalarProperty Name="CreditURL" ColumnName="CreditURL" />
+          <ScalarProperty Name="WebSiteURL" ColumnName="WebSiteURL" />
+          <ScalarProperty Name="ContactUsURL" ColumnName="ContactUsURL" />
+          <ScalarProperty Name="FacebookURL" ColumnName="FacebookURL" />
+          <ScalarProperty Name="LogoURL" ColumnName="LogoURL" />
+          <ScalarProperty Name="ContactPerson" ColumnName="ContactPerson" />
+          <ScalarProperty Name="RetailPrice" ColumnName="RetailPrice" />
+          <ScalarProperty Name="DealerDiscount" ColumnName="DealerDiscount" />
+          <ScalarProperty Name="ManufacturerReabte" ColumnName="ManufacturerReabte" />
+          <ScalarProperty Name="SalePrice" ColumnName="SalePrice" />
+          <ScalarProperty Name="ManufacturerWarranty" ColumnName="ManufacturerWarranty" />
+          <ScalarProperty Name="ManufacturerWarrantySpanish" ColumnName="ManufacturerWarrantySpanish" />
+          <ScalarProperty Name="ManufacturerWarrantyDuration" ColumnName="ManufacturerWarrantyDuration" />
+          <ScalarProperty Name="DealerCertified" ColumnName="DealerCertified" />
+          <ScalarProperty Name="DealerCertifiedSpanish" ColumnName="DealerCertifiedSpanish" />
+          <ScalarProperty Name="DealerCertifiedDuration" ColumnName="DealerCertifiedDuration" />
+          <ScalarProperty Name="ManufacturerCertified" ColumnName="ManufacturerCertified" />
+          <ScalarProperty Name="ManufacturerCertifiedSpanish" ColumnName="ManufacturerCertifiedSpanish" />
+          <ScalarProperty Name="ManufacturerCertifiedDuration" ColumnName="ManufacturerCertifiedDuration" />
+          <ScalarProperty Name="ShippingInfo" ColumnName="ShippingInfo" />
+          <ScalarProperty Name="AsIsWarranty" ColumnName="AsIsWarranty" />
+          <ScalarProperty Name="AsIsWarrantySpanish" ColumnName="AsIsWarrantySpanish" />
+          <ScalarProperty Name="StartDescriptionSentence" ColumnName="StartDescriptionSentence" />
+          <ScalarProperty Name="EndDescriptionSentence" ColumnName="EndDescriptionSentence" />
+          <ScalarProperty Name="AuctionSentence" ColumnName="AuctionSentence" />
+          <ScalarProperty Name="LoanerSentence" ColumnName="LoanerSentence" />
+          <ScalarProperty Name="FirstTimeRangeBucketJump" ColumnName="FirstTimeRangeBucketJump" />
+          <ScalarProperty Name="SecondTimeRangeBucketJump" ColumnName="SecondTimeRangeBucketJump" />
+          <ScalarProperty Name="IntervalBucketJump" ColumnName="IntervalBucketJump" />
+          <ScalarProperty Name="RetailPriceText" ColumnName="RetailPriceText" />
+          <ScalarProperty Name="DealerDiscountText" ColumnName="DealerDiscountText" />
+          <ScalarProperty Name="ManufactureReabateText" ColumnName="ManufactureReabateText" />
+          <ScalarProperty Name="SalePriceText" ColumnName="SalePriceText" />
+          <ScalarProperty Name="HeaderOverlayURL" ColumnName="HeaderOverlayURL" />
+          <ScalarProperty Name="FooterOverlayURL" ColumnName="FooterOverlayURL" />
+          <ScalarProperty Name="MarketPriceRangeChangeNotification" ColumnName="MarketPriceRangeChangeNotification" />
+          <ScalarProperty Name="KellyBlueBookAccessRight" ColumnName="KellyBlueBookAccessRight" />
+          <ScalarProperty Name="AutoDescription" ColumnName="AutoDescription" />
+          <ScalarProperty Name="AutoDescriptionSubscribe" ColumnName="AutoDescriptionSubscribe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="whitmanenterpriseusazipcodes">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.whitmanenterpriseusazipcode">
+        <MappingFragment StoreEntitySet="whitmanenterpriseusazipcode">
+          <ScalarProperty Name="ZIPCode" ColumnName="ZIPCode" />
+          <ScalarProperty Name="ZIPType" ColumnName="ZIPType" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="CityType" ColumnName="CityType" />
+          <ScalarProperty Name="CountyName" ColumnName="CountyName" />
+          <ScalarProperty Name="CountyFIPS" ColumnName="CountyFIPS" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="StateAbbr" ColumnName="StateAbbr" />
+          <ScalarProperty Name="StateFIPS" ColumnName="StateFIPS" />
+          <ScalarProperty Name="MSACode" ColumnName="MSACode" />
+          <ScalarProperty Name="AreaCode" ColumnName="AreaCode" />
+          <ScalarProperty Name="TimeZone" ColumnName="TimeZone" />
+          <ScalarProperty Name="UTC" ColumnName="UTC" />
+          <ScalarProperty Name="DST" ColumnName="DST" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="whitmanenterpriseusers">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.whitmanenterpriseuser">
+        <MappingFragment StoreEntitySet="whitmanenterpriseusers">
+          <ScalarProperty Name="idwhitmanenterpriseuser" ColumnName="idwhitmanenterpriseuser" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Cellphone" ColumnName="Cellphone" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="DealershipID" ColumnName="DealershipID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="DefaultLogin" ColumnName="DefaultLogin" />
+          <ScalarProperty Name="DealerGroupId" ColumnName="DealerGroupId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="whitmanenterpriseusersnotifications">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.whitmanenterpriseusersnotification">
+        <MappingFragment StoreEntitySet="whitmanenterpriseusersnotification">
+          <ScalarProperty Name="ImageUploadNotification" ColumnName="ImageUploadNotification" />
+          <ScalarProperty Name="idwhitmanenterpriseusersnotification" ColumnName="idwhitmanenterpriseusersnotification" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="AppraisalNotification" ColumnName="AppraisalNotification" />
+          <ScalarProperty Name="WholeNotification" ColumnName="WholeNotification" />
+          <ScalarProperty Name="InventoryNotification" ColumnName="InventoryNotification" />
+          <ScalarProperty Name="C24Hnotification" ColumnName="24Hnotification" />
+          <ScalarProperty Name="NoteNotification" ColumnName="NoteNotification" />
+          <ScalarProperty Name="PriceChangeNotification" ColumnName="PriceChangeNotification" />
+          <ScalarProperty Name="AgingNotification" ColumnName="AgingNotification" />
+          <ScalarProperty Name="BucketJumpNotification" ColumnName="BucketJumpNotification" />
+          <ScalarProperty Name="DealershipId" ColumnName="DealershipId" />
+          <ScalarProperty Name="MarketPriceRangeNotification" ColumnName="MarketPriceRangeNotification" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="whitmanenterprisevehiclecategories">
+      <EntityTypeMapping TypeName="whitmanenterprisewarehouseModel.whitmanenterprisevehiclecategory">
+        <MappingFragment StoreEntitySet="whitmanenterprisevehiclecategory">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="NameCompare" ColumnName="NameCompare" />
+          <ScalarProperty Name="Make" ColumnName="Make" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,1267 @@
+.hidden
+{
+    display: none;
+}
+
+body
+{
+    font-family: Arial;
+    /*height: 1000px;
+	margin: 0px;*/
+}
+
+a
+{
+    text-decoration: none;
+}
+
+#container_left_btns_holder a
+{
+    text-decoration: none;
+}
+
+.announcement_v2
+{
+    width: 185px;
+    left: 14px;
+    height: 150px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 10;
+    background-color: #eeeeee;
+}
+
+.announcement_header
+{
+    background-color: #039;
+    text-align: center;
+    color: white;
+    padding: 6px 0px;
+    font-size: 14px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.announcement_text
+{
+    font-size: 11px;
+    font-style: italic;
+    padding: 12px;
+}
+
+.announcement_minutes
+{
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px;
+}
+
+#container
+{
+    background-color: #E8EAEF;
+    width: 1280px;
+    margin: 15px auto;
+}
+
+#container_left
+{
+    z-index: 10;
+    background-color: white;
+    height: 777px;
+    width: 17%;
+    float: left;
+    box-shadow: 4px 0px 5px #888;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+#container_right
+{
+    height: 777px;
+    width: 83%;
+    float: right;
+}
+
+.profile_popup
+{
+    border: 10px solid #333;
+    border-radius: 5px;
+    padding: 15px;
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    display: none;
+}
+
+#top_line
+{
+    height: 15px;
+    background-color: #3366cc;
+}
+
+#container_left_logo
+{
+    background-color: white;
+    height: 85px;
+}
+
+    #container_left_logo img
+    {
+        margin: 7px 17px;
+        width: 180px;
+    }
+
+#container_right_top
+{
+    height: 117px;
+}
+
+/*
+#container_right_top_search {
+	background-color: #3366cc;
+	float: right;
+	width: 17%;
+	height: 28px;
+	text-align: center;
+	font-size: 15px;
+	color: #FFF;
+	font-weight: bold;
+}
+*/
+.mvp_cars_holder
+{
+    float: right;
+    margin-top: 3px;
+    border: 1px solid #808080;
+    border-top: 0px;
+    height: 56px;
+    border-bottom: 0px;
+}
+
+
+#container_right_btn_holder
+{
+    background-color: #3366cc;
+    height: 65px;
+}
+
+.kpi_market_equal_icon
+{
+    background-image: url("/content/images/market_equal.gif");
+}
+
+.kpi_market_above_icon
+{
+    background-image: url("/content/images/market_higher.gif");
+}
+
+.kpi_market_below_icon
+{
+    background-image: url("/content/images/market_lower.gif");
+}
+
+#container_right_btns
+{
+    position: relative;
+    height: 55px;
+    top: 10px;
+    background-color: #3366cc;
+}
+
+#container_right_content
+{
+    min-height: 613px;
+    width: 97%;
+    margin: 0px auto;
+    background-color: white;
+    box-shadow: 4px 0px 5px #888;
+}
+
+.tab_active
+{
+    background-color: #E8EAEF;
+}
+
+#container_left_btns_holder
+{
+}
+
+.container_left_btns:hover
+{
+    background-color: #E8EAEF;
+}
+
+.container_left_btns
+{
+    cursor: pointer;
+    font-weight: bold;
+    text-align: right;
+    font-size: 22px;
+    height: 25px;
+    padding: 13px;
+    border-bottom: 2px solid #808080;
+    color: #414342;
+}
+
+.btns_shadow:hover
+{
+    background-color: #333333;
+}
+
+.btns_shadow
+{
+    box-shadow: 3px 2px 3px #333;
+}
+
+#container_left_search_input input
+{
+    width: 108px;
+    height: 20px;
+}
+
+.tenm
+{
+    padding: .1em .3em .1em .3em;
+    border-radius: 4px 4px 0px 0px;
+    background: -moz-linear-gradient(left, rgba(136, 0, 0, 1) 56%, rgba(136, 0, 0, 0) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(56%,rgba(136, 0, 0, 1)), color-stop(100%,rgba(136, 0, 0, 0)));
+    background: -webkit-linear-gradient(left, rgba(136, 0, 0, 1) 56%,rgba(136, 0, 0, 0) 100%);
+    background: -o-linear-gradient(left, rgba(136, 0, 0, 1) 56%,rgba(136, 0, 0, 0) 100%);
+    background: -ms-linear-gradient(left, rgba(136, 0, 0, 1) 56%,rgba(136, 0, 0, 0) 100%);
+    background: linear-gradient(to right, rgba(136, 0, 0, 1) 56%,rgba(136, 0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#880000', endColorstr='#00880000',GradientType=1 );
+}
+
+input[type="text"]
+{
+    padding-left: 5px;
+}
+
+#admin_top_btns_holder
+{
+    /*float: left;*/
+    clear: both;
+    height: 55px;
+    padding-left: 10px;
+}
+
+.admin_top_btns
+{
+    position: relative;
+    cursor: pointer;
+    margin: 29px 5px 5px 5px;
+    float: left;
+    background-color: white;
+    padding: 2px 14px;
+    box-shadow: 4px 0px 5px #888;
+    font-size: 19px;
+}
+
+    .admin_top_btns > a
+    {
+        color: black;
+    }
+
+.admin_top_btns_active
+{
+    padding-top: 8px !important;
+    height: 46px !important;
+    margin-top: 0px !important;
+}
+
+.admin_notifications_title
+{
+    clear: both;
+    font-size: 20px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+#opacity-layer
+{
+    display: none;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #2a558c;
+    opacity: 0.9;
+    z-index: 2;
+}
+
+/* bucket jump popup */
+#profile_bucketjump_holder
+{
+    padding: 0px;
+    width: 900px;
+    height: 450px;
+    background-color: #EEEEEE;
+}
+
+.bucketjump_popup_content
+{
+    height: 400px;
+    overflow: auto;
+}
+
+.bucketjump_popup_header
+{
+    position: relative;
+    height: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #3366cc;
+    padding: 10px;
+}
+
+.popup_circle_close:hover
+{
+    opacity: 1;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.popup_circle_close
+{
+    opacity: 0.5;
+    cursor: pointer;
+    background-color: #000;
+    position: absolute;
+    top: -18px;
+    right: -19px;
+    font-size: 14px;
+    color: white;
+    font-family: times;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.bucketjump_popup_collumn
+{
+    float: left;
+}
+
+.bucketjump_popup_content_items
+{
+    clear: both;
+    height: 16px;
+    padding: 5px 10px;
+}
+
+    .bucketjump_popup_content_items > div
+    {
+        font-size: 13px;
+    }
+
+.bucketjump_popup_content_header
+{
+    padding: 10px 10px;
+    background-color: #A4A4A4;
+}
+
+    .bucketjump_popup_content_header > div
+    {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+.bucketjump_popup_collumn_userstamp
+{
+    width: 15%;
+}
+
+.bucketjump_popup_collumn_datestamp
+{
+    width: 20%;
+}
+
+.bucketjump_popup_collumn_price
+{
+    width: 25%;
+}
+
+.bucketjump_popup_collumn_download
+{
+    width: 10%;
+}
+
+.bucketjump_popup_download_btns
+{
+    width: 75px;
+    border-radius: 10px;
+    margin-top: -4px;
+    background-color: #D3202B;
+    color: white;
+    padding: 4px 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+    .bucketjump_popup_download_btns nobr
+    {
+        font-weight: bold;
+        margin-left: 3px;
+    }
+
+.bucketjump_popup_odd
+{
+    background-color: #D4D4D4;
+    ;
+}
+
+#profile_pricetracking_holder
+{
+    padding: 0px;
+}
+
+.pricetracking_time_select_holder label
+{
+    font-size: 13px;
+}
+
+.price_tracking_print
+{
+    width: 90px;
+    background-color: #5C5C5C;
+    color: #FFF;
+    margin: 0px auto;
+    text-align: center;
+    padding: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* end */
+/* market expended */
+.market_expended_popup_holder
+{
+    width: 1000px;
+    height: 600px;
+}
+
+.marketexpend_popup_content
+{
+    height: 560px;
+    overflow: auto;
+    padding: 5px;
+}
+
+.mkexpend_viewmap_holder
+{
+    margin-bottom: 15px;
+}
+
+.mkexpend_viewmap
+{
+    font-size: 13px;
+    background-color: #5C5C5C;
+    color: #FFF;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+    width: 70px;
+    font-weight: bold;
+}
+
+.mkexpend_vhInfo_holder
+{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.mkexpend_checksource_holder
+{
+}
+
+.mkexpend_checksource_items
+{
+    float: left;
+    margin-right: 10px;
+}
+
+    .mkexpend_checksource_items label
+    {
+        font-size: 13px;
+    }
+
+    .mkexpend_checksource_items a
+    {
+        color: #00F;
+        text-decoration: underline;
+        font-size: 14px;
+    }
+
+.number_state_holder
+{
+    clear: both;
+}
+
+    .number_state_holder > div
+    {
+        font-weight: bold;
+        text-align: center;
+        font-size: 13px;
+        color: white;
+        padding: 5px;
+        width: 55px;
+        cursor: pointer;
+        float: left;
+        margin-right: 4px;
+    }
+
+.mkexpend_number
+{
+    background-color: #3366cc;
+}
+
+.mkexpend_state
+{
+    background-color: black;
+}
+
+.mkexpend_select_trim_holder
+{
+    background-color: #3366cc;
+    padding: 7px;
+    clear: both;
+    height: 22px;
+}
+
+.mkexpend_select_trim_items
+{
+    float: left;
+    margin-right: 5px;
+}
+
+    .mkexpend_select_trim_items label
+    {
+        font-size: 13px;
+        color: white;
+    }
+
+.mkexpend_save
+{
+    background-color: #5C5C5C;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.mkexpend_select_trim_items a
+{
+    color: white;
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.mkexpend_charts_content_holder
+{
+    padding-top: 15px;
+}
+
+.mkexpend_charts_content_left
+{
+    float: left;
+    width: 715px;
+}
+
+.mkexpend_charts_holder
+{
+}
+
+    .mkexpend_charts_holder img
+    {
+        width: 715px;
+    }
+
+.mkexpend_charts_content_right
+{
+    float: right;
+    width: 250px;
+    position: relative;
+}
+
+.mkexpend_list_holder
+{
+    margin-top: 20px;
+    clear: both;
+}
+
+.mkexpend_list_title
+{
+    height: 30px;
+}
+
+.mkexpend_list_title_text
+{
+    font-size: 20px;
+    float: left;
+}
+
+.mkexpend_list_title_print
+{
+    float: left;
+    font-size: 13px;
+    margin-left: 20px;
+    color: #FFF;
+    background-color: #3366cc;
+    width: 80px;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mkexpend_list_content
+{
+    clear: both;
+}
+
+.mkexpend_list_header
+{
+    height: 23px;
+    background-color: #000;
+}
+
+    .mkexpend_list_header div
+    {
+        color: white;
+    }
+
+.mkexpend_list_collumn
+{
+    width: 27px;
+    font-size: 11px;
+    text-align: center;
+    float: left;
+    padding: 4px 10px;
+}
+
+.mkexpend_list_items
+{
+    height: 35px;
+    clear: both;
+}
+
+    .mkexpend_list_items div
+    {
+        color: black;
+    }
+
+.mkexpend_item_odd
+{
+    background-color: #CDCDCD;
+}
+
+.mkexpend_list_model
+{
+    width: 50px;
+}
+
+.mkexpend_list_dc
+{
+    width: 30px;
+}
+
+.mkexpend_list_seller
+{
+    width: 115px;
+}
+
+.mkexpend_list_number
+{
+    width: 15px;
+}
+
+.mkexpend_item_active
+{
+    background-color: #008001 !important;
+}
+
+    .mkexpend_item_active div
+    {
+        color: white !important;
+    }
+
+.mkexpend_right_holder
+{
+    margin-left: 50px;
+    width: 200px;
+    height: 360px;
+    background-color: #EEEEEE;
+}
+
+.mkexpend_right_vhInfo_holder ul
+{
+    padding: 5px;
+}
+
+    .mkexpend_right_vhInfo_holder div, .mkexpend_right_vhInfo_holder ul li
+    {
+        list-style: none;
+        font-size: 14px;
+        color: #FFF;
+        color: white;
+    }
+
+.mkexpend_right_vhInfo_holder
+{
+    padding: 5px;
+    background-color: #3366cc;
+}
+
+.mkexpend_right_vhInfo_title
+{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0px;
+}
+
+.mkexpend_right_price_holder
+{
+    padding-left: 8px;
+}
+
+    .mkexpend_right_price_holder div
+    {
+        float: left;
+        font-size: 14px;
+    }
+
+.mkexpend_price_range_lower
+{
+    color: blue;
+}
+
+.mkexpend_price_range_medium
+{
+    color: green;
+}
+
+.mkexpend_price_title
+{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.mkexpend_price_range_higher
+{
+    color: red;
+}
+
+.mkexpend_right_price_holder nobr
+{
+    float: left;
+    margin: -2px 5px;
+}
+/* end */
+
+.number_below
+{
+    padding-top: 3px;
+    margin-left: -14px;
+    width: 100%;
+    background-color: #BEBEBE;
+    height: 20px;
+    position: absolute;
+    bottom: 0px;
+    color: #3366cc;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.menu_gear_holder
+{
+    background-position-x: -5px;
+    background-position-y: -20px;
+    background-repeat: no-repeat;
+    height: 328px;
+    background-image: url("/Content/images/MenuGear.png");
+}
+
+.user_profile_item_holder
+{
+    float: right;
+    list-style-type: none;
+    z-index: 1;
+    position: relative;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+    .user_profile_item_holder:hover
+    {
+        background-color: #002774;
+    }
+
+        .user_profile_item_holder:hover .user_profile_subitem_holder
+        {
+            display: block;
+        }
+
+.user_profile_item_text
+{
+    padding: 5px 0px 6px 0px;
+    text-align: left;
+    font-size: 12px;
+    color: white;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.user_profile_subitem_holder
+{
+    list-style-type: none;
+    display: none;
+    background-color: #003399;
+    padding-left: 0px;
+}
+
+.user_profile_subitem:hover
+{
+    background-color: #3366cc;
+}
+
+.user_profile_subitem
+{
+    border-top: 1px solid #0041C3;
+    border-bottom: 1px solid #002264;
+}
+
+.user_profile_subitem_text
+{
+    padding: 5px 10px;
+    text-align: left;
+    font-size: 13px;
+    color: white;
+}
+
+.user_profile_subitem_icon
+{
+    margin-right: 10px;
+}
+
+.mvp_cars_holder select
+{
+    color: #CDCDCD;
+    border: 0px;
+    background-color: #039;
+    font-weight: bold;
+    height: 33px !important;
+    width: 275px;
+    margin-top: 12px;
+    border: 2px solid #FFF;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.ptr_items_textInfo select
+{
+    color: white;
+    border: 0px;
+    background-color: #3366cc;
+    font-weight: bold;
+    height: 20px !important;
+    margin-top: 1px;
+}
+
+.cl_appraisal_btns_items:hover
+{
+    background-color: #003399;
+}
+
+.cl_appraisal_btns_items
+{
+    cursor: pointer;
+    border: 1px solid #FFF;
+    color: #FFF;
+    float: left;
+    background-color: #36C;
+    width: 70px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 3px 0px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.cl_search_btns_items:hover
+{
+    background-color: #3366cc;
+}
+
+.cl_search_btns_items
+{
+    cursor: pointer;
+    margin-right: 9px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    float: left;
+    background-color: #003399;
+    width: 90px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 2px 0px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+}
+
+.container_left_advanceSearch:hover
+{
+    background-color: #3366cc;
+}
+
+#container_right_top_MVP
+{
+    float: left;
+    width: 45%;
+    height: 60px;
+    background-color: #003399;
+}
+
+#loSearchInput
+{
+    height: 26px;
+    width: 84%;
+    float: left;
+    border-radius: 5px 0px 0px 5px;
+    background-color: #EEE;
+}
+
+.losrInfoYmm
+{
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#loSearchBtn
+{
+    border-radius: 0px 5px 5px 0px;
+    float: left;
+    width: 34px;
+    height: 32px;
+    background-color: #008000;
+    cursor: pointer;
+    background-image: url("/Content/images/leoSearchIcon.png");
+    background-size: 100%;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.loSearchTop
+{
+    height: 35px;
+    position: relative;
+    width: 350px;
+    margin: 14px 0px 0px 19px;
+    float: left;
+}
+
+.losrInfoItems
+{
+    font-size: 13px;
+    height: 17px;
+}
+
+.losrInfoValue
+{
+    float: left;
+    width: 125px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.losrShowmore:hover
+{
+    background-color: #808080;
+}
+
+.losrShowmore
+{
+    width: 120px;
+    background-color: #a4a4a4;
+    float: right;
+    padding: 4px;
+    font-size: 12px;
+    margin: 5px;
+    font-weight: bold;
+    color: #FFF;
+    cursor: pointer;
+    text-align: center;
+}
+
+#losrHeader
+{
+    font-size: 15px;
+    padding: 5px;
+    background-color: #CDCDCD;
+}
+
+.losrInfoKey
+{
+    width: 91px;
+    float: left;
+}
+
+.losrItems
+{
+    padding-bottom: 4px;
+    background-color: #FFF;
+    clear: both;
+    border-bottom: 1px solid #CDCDCD;
+}
+
+.losrNoResultItems {
+    background-color: #FFF;
+    clear: both;
+    border-bottom: 1px solid #CDCDCD;
+    color: grey;
+    font-size: 13px;
+    padding: 5px;
+}
+
+#loSearchResult a
+{
+    color: #555;
+}
+
+.losrCarInfo
+{
+    width: 74%;
+    float: left;
+    margin-left: 5px;
+}
+
+.losrCars
+{
+    border-left: 1px solid #CDCDCD;
+    background-color: #EEE;
+    float: right;
+    width: 76%;
+}
+
+#loShowMoreResult
+{
+    display: none;
+    width: 0px;
+    z-index: 1000;
+    max-height: 748px;
+    background-color: #eeeeee;
+    position: absolute;
+    border: 1px solid #CDCDCD;
+    top: 31px;
+    left: 420px;
+}
+
+#loShowMoreList
+{
+    height: 718px;
+    overflow: auto;
+}
+
+#loShowMoreHeader
+{
+    background-color: #555;
+    font-size: 15px;
+    padding: 8px 14px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+#loShowMoreResult .losrCarsItems
+{
+    height: 100px !important;
+}
+
+#loShowMoreResult .losrCarImg img
+{
+    max-height: 90% !important;
+    min-height: 80%;
+}
+
+#loShowMoreResult .losrInfoYmm
+{
+    font-size: 19px;
+}
+
+#loShowMoreResult a
+{
+    color: #555;
+}
+
+.showMoreLoading
+{
+    display: none;
+    float: right;
+    width: 25px;
+    height: 25px;
+    background-image: url("/Content/images/bx_loader.gif");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 4px;
+    margin-right: 2px;
+}
+
+.losrCarsItems
+{
+    clear: both;
+    height: 73px;
+    border-top: 1px solid #CDCDCD;
+    padding-top: 5px;
+}
+
+.losrCarImg
+{
+    margin-left: 5px;
+    width: 20%;
+    float: left;
+}
+
+    .losrCarImg img
+    {
+        width: 100%;
+        max-height: 65px;
+        min-height: 50px;
+    }
+
+.losrType
+{
+    float: left;
+    width: 90px;
+    text-align: center;
+    height: 100%;
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #555;
+}
+
+#loShowMoreResult .losrInfoValue
+{
+    width: 225px !important;
+}
+
+#loSearchResult
+{
+    display: none;
+    width: 418px;
+    position: absolute;
+    z-index: 1000;
+    background-color: #FAFAFA;
+    top: 32px;
+    border: 1px solid #CDCDCD;
+    box-shadow: 1px 2px 3px #808080;
+    max-height: 745px;
+    overflow: auto;
+}
+
+#searchImgLoading {
+    left: 275px;
+    position: absolute;
+    display: none;
+}
+
+.container_right_logout_mpv
+{
+    float: right;
+    width: 55%;
+    background-color: #003399;
+    height: 60px;
+}
+
+#container_left_search_btns
+{
+    float: right;
+    width: 82px;
+    margin-top: 14px;
+}
+
+.container_left_advanceSearch
+{
+    padding: 2px;
+    margin: 18px 0px 0px;
+    background-color: #039;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    color: #FFF;
+    border: 1px solid #FFF;
+    float: left;
+    height: 17px;
+    border-radius: 5px;
+}
+
+#container_left_search_input
+{
+    padding: 13px 0px 13px 13px;
+    padding-bottom: 8px !important;
+    float: left;
+    width: 119px;
+}
+
+#container_left_seach
+{
+    height: 50px;
+    background-color: #003399;
+}
+/* end new */
+
+/*Liem Add*/
+.cl_search_btns_items > a
+{
+    color: #222222;
+    background-color: #eeeeee;
+}
+
+.cl_search_btns_items_LogOut
+{
+    background-color: #EEEEEE;
+    color: #222222;
+    cursor: pointer;
+    float: right;
+    font-size: 17px;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-top: 3px;
+    padding: 2px;
+    text-align: center;
+    width: 100px;
+}
+
+.bucketjump_popup_download_btns > a
+{
+    color: white;
+}
+
+.arrow-down
+{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 9px solid white;
+    margin: 5px 0px 0px 5px;
+    float: right;
+}
+/*End Liem Add*/

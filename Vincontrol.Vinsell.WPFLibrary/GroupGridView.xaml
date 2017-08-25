@@ -1,0 +1,68 @@
+﻿<UserControl x:Class="Vincontrol.Vinsell.WPFLibrary.GroupGridView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+            xmlns:custom="http://schemas.microsoft.com/wpf/2008/toolkit" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300"  >
+    <UserControl.Resources>
+        <Style x:Key="GroupHeaderStyle" TargetType="{x:Type GroupItem}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type GroupItem}">
+                        <Expander x:Name="exp" IsExpanded="True"
+                          Background="White"
+                          Foreground="Black">
+                            <Expander.Header>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding Name}"/>
+                                    <TextBlock Text="{Binding Path=ItemCount}" FontWeight="Bold" Margin="8,0,4,0"/>
+                                    <TextBlock Text="Vehicles"/>
+                                </StackPanel>
+                            </Expander.Header>
+                            <ItemsPresenter />
+                        </Expander>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Upcoming Auctions" Width="150" x:Name="btnUpcoming" Click="btnUpcoming_Click" Foreground="White"></Button>
+            <Button Content="Past Auctions"  Width="150" x:Name="btnPast" Click="btnPast_Click" Foreground="White"></Button>
+        </StackPanel>
+        <Grid Height="500">
+        <ScrollViewer>
+        <Grid>
+            <custom:DataGrid x:Name="dgData" CanUserAddRows="False" AutoGenerateColumns="False"
+                         CanUserDeleteRows="False" ItemsSource="{Binding}">
+                <custom:DataGrid.GroupStyle>
+                    <GroupStyle ContainerStyle="{StaticResource GroupHeaderStyle}">
+                        <GroupStyle.Panel>
+                            <ItemsPanelTemplate>
+                                <custom:DataGridRowsPresenter/>
+                            </ItemsPanelTemplate>
+                        </GroupStyle.Panel>
+                    </GroupStyle>
+                </custom:DataGrid.GroupStyle>
+                <custom:DataGrid.Columns>
+                    <custom:DataGridTextColumn Header="Year" Binding="{Binding Year}"/>
+                    <custom:DataGridTextColumn Header="Make" Binding="{Binding Make}"/>
+                    <custom:DataGridTextColumn Header="Model" Binding="{Binding Model}"/>
+                    <custom:DataGridTextColumn Header="Trim" Binding="{Binding Trim}"/>
+                    <custom:DataGridTextColumn Header="VIN" Binding="{Binding Vin}"/>
+                    <custom:DataGridTextColumn Header="Seller" Binding="{Binding Seller}"/>
+                    <custom:DataGridTextColumn Header="Mileage" Binding="{Binding Mileage}"/>
+                    <custom:DataGridTextColumn Header="MMR" Binding="{Binding Mmr}"/>
+                    <custom:DataGridTextColumn Header="Lane" Binding="{Binding Lane}"/>
+                    <custom:DataGridTextColumn Header="Run" Binding="{Binding Run}"/>
+                    <custom:DataGridTextColumn Header="Condition" Binding="{Binding Cr}"/>
+                </custom:DataGrid.Columns>
+            </custom:DataGrid>
+        </Grid>
+        </ScrollViewer>
+        </Grid>
+    </StackPanel>
+</UserControl>

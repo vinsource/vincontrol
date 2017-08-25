@@ -1,0 +1,335 @@
+
+
+.vehicle {
+  position: relative;
+}
+
+.vehicle .information {
+  padding: 20px 30px 0px 30px;
+  width: 570px;
+  position: relative;
+}
+
+.vehicle .images {
+  width: 150px;
+  float: left;
+  position: relative;
+}
+
+.vehicle .images .main-image img {
+  width: 100%;
+  border: 2px solid #aaa;
+}
+
+.vehicle .image-list {
+  overflow: auto;
+  width: 145px;
+  height: 230px;
+  border: 2px solid #aaa;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.vehicle .image-list img {
+  width: 60px;
+}
+
+.car-controls .favorite-vehicle {
+  display: inline-block;
+  float: left;
+  cursor: pointer;
+}
+
+.favorite-vehicle input {
+  display: none;
+}
+
+.favorite-vehicle img {
+  margin-top: -5px;
+  margin-right: 5px;
+}
+
+.vehicle .information button {
+  border: none;
+  background-color: #414342;
+  color: white;
+  margin: 0px;
+  padding: 0.5em 1.1em 0.5em 1.1em;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.carInfo {
+  display: inline-block;
+  margin-left: 20px;
+  width: 400px;
+  height: 392px;
+  position: relative;
+}
+
+.carInfo h3 {
+  margin-top: 0;
+  margin-bottom: 3px;
+  font-size: 1.1em;
+}
+
+.car-details {
+  padding-bottom: 5px;
+  overflow: hidden;
+}
+
+.carInfo ul {
+  list-style-type: none;
+  font-size: .7em;
+  margin: 0;
+  padding: 0;
+  display: block;
+  float: left;
+  min-width: 80px;
+}
+
+.carInfo ul:nth-child(1n+2) {
+  margin-right: 12px
+}
+
+.carInfo ul li {
+  padding-bottom: 5px;
+}
+
+.carInfo ul li b {
+  display: inline-block;
+  width: 100px;
+}
+
+.equipement {
+  position: relative;
+}
+
+.cr-large {
+  width: 75px;
+  height: 75px;
+  border-radius: 50px;
+  border: 4px solid #161e8a;
+  position: absolute;
+  right: 30px;
+  top: 25px;
+  background: white;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.cr-large .cr {
+  margin-top: 18px;
+}
+
+.cr-data {
+  background: white;
+  /*overflow: hidden;*/
+  position: absolute;
+  right: 80px;
+  top: 10px;
+  z-index: 100;
+  font-size: .8em;
+  padding: 10px;
+  color: #333;
+  width: 140px;
+  height: 140px;
+  /*box-shadow: 0px 0px 4px black;*/
+}
+
+.cr-data-wrap {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 7px;
+}
+
+.notes {
+  width: 320px;
+    height: 55px;
+  overflow: hidden;
+}
+
+.notes .notes-label {
+  width: 50px;
+  display: inline-block;
+  float: left;
+  padding-top: 20px;
+}
+
+.notes textarea {
+  margin-top: 10px;
+  width: 490px;
+  height: 200px;
+  display: inline-block;
+  resize: none;
+}
+
+div.data {
+  width: 330px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  right: 20px;
+}
+
+div.data .data-box {
+ 
+  margin-top: 5px;
+  }
+
+div.data .data-box div.header {
+  height: 22px;
+  padding-top: 4px;
+  text-align: center;
+  overflow: hidden;
+  width: 139px;
+  border: #6770f0 3px solid;
+  border-bottom: none;
+  border-radius: 4px 4px 0px 0px;
+  margin-top: 10px;
+  position: relative;
+}
+
+div.data .data-box div.subheader-nav {
+  height: 30px;
+  background: #6770f0;
+  color: white;
+  position: relative;
+
+}
+
+div.data .data-box div.subheader-nav div.subnav-text {
+  height: 25px;
+  width: 100%;
+  padding-top: 5px;
+  text-align: center;
+}
+
+div.data .data-box div.data-content {
+  border: 3px solid #6770f0;
+  border-top: 0px;
+  border-radius: 0px 0px 4px 4px;
+  height: 80px;
+  padding: 10px;
+  font-size: 14px
+}
+
+div.data .data-box div.subheader-nav .left-control {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+}
+
+div.data .data-box div.subheader-nav .right-control {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+}
+
+div.data #carfax div.header {
+  padding: 0px;
+  height: 26px;
+}
+
+div.data #carfax div.subheader-nav div {
+  display: inline-block;
+  min-width: 45%;
+  text-align: center;
+  margin-top: 5px;
+}
+
+
+div.data #manheim ul, div.data #kbb ul, div.data #market ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+div.data #manheim ul li, div.data #kbb ul li, div.data #market ul li{
+  width: 100%;
+  padding: 4px;
+  position: relative;
+  top: -10px;
+}
+
+div.data #manheim ul li:nth-child(1),
+div.data #kbb ul li:nth-child(1),
+div.data #market ul li:nth-child(1){
+  color: red;
+}
+div.data #manheim ul li:nth-child(2),
+div.data #kbb ul li:nth-child(2),
+div.data #market ul li:nth-child(2) {
+  color: green;
+}
+div.data #manheim ul li:nth-child(3),
+div.data #kbb ul li:nth-child(3),
+div.data #market ul li:nth-child(3) {
+  color: blue;
+}
+
+div.data ul span.label {
+  display: inline-block;
+  width: 60%;
+  color: black;
+  font-weight: bold;
+}
+
+div.data ul img {
+  position: relative;
+  top: 4px;
+}
+
+div.data #carfax ul {
+  list-style-type: none;
+  font-size: .8em;
+  padding: 0;
+  margin: 0;
+}
+
+div.data #kbb ul li {
+  position: relative;
+  top: 0;
+}
+
+div.car-controls {
+  height: 40px;
+  padding-top: 20px;
+  position: relative;
+}
+
+div.car-controls h3 {
+  display: inline-block;
+  color: white;
+  font-size: 2em;
+  padding: 0;
+  margin: 0;
+}
+
+div.car-controls .prev-car,
+div.car-controls .next-car {
+  display: inline-block;
+  background: #090c28;
+  float: left;
+  margin-right: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 4px rgba(0,0,0,.3)
+}
+
+div.car-controls .disabled {
+  opacity: .4;
+}
+
+.header img.icon {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  cursor: pointer;
+}

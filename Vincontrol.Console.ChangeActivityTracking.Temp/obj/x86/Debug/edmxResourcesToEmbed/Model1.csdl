@@ -1,0 +1,2422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VincontrolModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="VincontrolEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Answers" EntityType="VincontrolModel.Answer" />
+    <EntitySet Name="Appraisals" EntityType="VincontrolModel.Appraisal" />
+    <EntitySet Name="AppraisalCustomers" EntityType="VincontrolModel.AppraisalCustomer" />
+    <EntitySet Name="AppraisalDealerActivities" EntityType="VincontrolModel.AppraisalDealerActivity" />
+    <EntitySet Name="AppraisalStatusCodes" EntityType="VincontrolModel.AppraisalStatusCode" />
+    <EntitySet Name="AutoTraders" EntityType="VincontrolModel.AutoTrader" />
+    <EntitySet Name="AutoTraderDealers" EntityType="VincontrolModel.AutoTraderDealer" />
+    <EntitySet Name="BlackBooks" EntityType="VincontrolModel.BlackBook" />
+    <EntitySet Name="BucketJumpHistories" EntityType="VincontrolModel.BucketJumpHistory" />
+    <EntitySet Name="Buttons" EntityType="VincontrolModel.Button" />
+    <EntitySet Name="BuyerGuides" EntityType="VincontrolModel.BuyerGuide" />
+    <EntitySet Name="Carfaxes" EntityType="VincontrolModel.Carfax" />
+    <EntitySet Name="ChartSelections" EntityType="VincontrolModel.ChartSelection" />
+    <EntitySet Name="DataFeedCompanies" EntityType="VincontrolModel.DataFeedCompany" />
+    <EntitySet Name="DataFeedDealers" EntityType="VincontrolModel.DataFeedDealer" />
+    <EntitySet Name="Dealers" EntityType="VincontrolModel.Dealer" />
+    <EntitySet Name="DealerActivitySubTypeCodes" EntityType="VincontrolModel.DealerActivitySubTypeCode" />
+    <EntitySet Name="DealerActivityTypeCodes" EntityType="VincontrolModel.DealerActivityTypeCode" />
+    <EntitySet Name="DealerButtons" EntityType="VincontrolModel.DealerButton" />
+    <EntitySet Name="DealerGroups" EntityType="VincontrolModel.DealerGroup" />
+    <EntitySet Name="Descriptions" EntityType="VincontrolModel.Description" />
+    <EntitySet Name="DescriptionTemplates" EntityType="VincontrolModel.DescriptionTemplate" />
+    <EntitySet Name="Ebays" EntityType="VincontrolModel.Ebay" />
+    <EntitySet Name="EbayCategories" EntityType="VincontrolModel.EbayCategory" />
+    <EntitySet Name="FlyerShareDealerActivities" EntityType="VincontrolModel.FlyerShareDealerActivity" />
+    <EntitySet Name="Inventories" EntityType="VincontrolModel.Inventory" />
+    <EntitySet Name="InventoryDealerActivities" EntityType="VincontrolModel.InventoryDealerActivity" />
+    <EntitySet Name="InventoryStatusCodes" EntityType="VincontrolModel.InventoryStatusCode" />
+    <EntitySet Name="KellyBlueBooks" EntityType="VincontrolModel.KellyBlueBook" />
+    <EntitySet Name="Makes" EntityType="VincontrolModel.Make" />
+    <EntitySet Name="ManheimMakes" EntityType="VincontrolModel.ManheimMake" />
+    <EntitySet Name="ManheimMakeModels" EntityType="VincontrolModel.ManheimMakeModel" />
+    <EntitySet Name="ManheimModels" EntityType="VincontrolModel.ManheimModel" />
+    <EntitySet Name="ManheimModelTrims" EntityType="VincontrolModel.ManheimModelTrim" />
+    <EntitySet Name="ManheimTrims" EntityType="VincontrolModel.ManheimTrim" />
+    <EntitySet Name="ManheimValues" EntityType="VincontrolModel.ManheimValue" />
+    <EntitySet Name="ManheimYearMakes" EntityType="VincontrolModel.ManheimYearMake" />
+    <EntitySet Name="MarketSourceCodes" EntityType="VincontrolModel.MarketSourceCode" />
+    <EntitySet Name="Models" EntityType="VincontrolModel.Model" />
+    <EntitySet Name="NotificationSettings" EntityType="VincontrolModel.NotificationSetting" />
+    <EntitySet Name="NotificationTypeCodes" EntityType="VincontrolModel.NotificationTypeCode" />
+    <EntitySet Name="Options" EntityType="VincontrolModel.Option" />
+    <EntitySet Name="Packages" EntityType="VincontrolModel.Package" />
+    <EntitySet Name="PermissionCodes" EntityType="VincontrolModel.PermissionCode" />
+    <EntitySet Name="PermissionValues" EntityType="VincontrolModel.PermissionValue" />
+    <EntitySet Name="PriceChangeHistories" EntityType="VincontrolModel.PriceChangeHistory" />
+    <EntitySet Name="Questions" EntityType="VincontrolModel.Question" />
+    <EntitySet Name="QuestionTypes" EntityType="VincontrolModel.QuestionType" />
+    <EntitySet Name="Rebates" EntityType="VincontrolModel.Rebate" />
+    <EntitySet Name="Roles" EntityType="VincontrolModel.Role" />
+    <EntitySet Name="RolePermissions" EntityType="VincontrolModel.RolePermission" />
+    <EntitySet Name="Sentences" EntityType="VincontrolModel.Sentence" />
+    <EntitySet Name="SentenceTypes" EntityType="VincontrolModel.SentenceType" />
+    <EntitySet Name="Settings" EntityType="VincontrolModel.Setting" />
+    <EntitySet Name="SoldoutInventories" EntityType="VincontrolModel.SoldoutInventory" />
+    <EntitySet Name="sysdiagrams" EntityType="VincontrolModel.sysdiagram" />
+    <EntitySet Name="TradeInComments" EntityType="VincontrolModel.TradeInComment" />
+    <EntitySet Name="TradeInCustomers" EntityType="VincontrolModel.TradeInCustomer" />
+    <EntitySet Name="Trims" EntityType="VincontrolModel.Trim" />
+    <EntitySet Name="TrimOptions" EntityType="VincontrolModel.TrimOption" />
+    <EntitySet Name="TrimPackages" EntityType="VincontrolModel.TrimPackage" />
+    <EntitySet Name="TruckCategories" EntityType="VincontrolModel.TruckCategory" />
+    <EntitySet Name="UsaZipCodes" EntityType="VincontrolModel.UsaZipCode" />
+    <EntitySet Name="Users" EntityType="VincontrolModel.User" />
+    <EntitySet Name="UserDealerActivities" EntityType="VincontrolModel.UserDealerActivity" />
+    <EntitySet Name="UserNotifications" EntityType="VincontrolModel.UserNotification" />
+    <EntitySet Name="UserPermissions" EntityType="VincontrolModel.UserPermission" />
+    <EntitySet Name="Vehicles" EntityType="VincontrolModel.Vehicle" />
+    <EntitySet Name="VehicleStatusCodes" EntityType="VincontrolModel.VehicleStatusCode" />
+    <EntitySet Name="VPContactInfoes" EntityType="VincontrolModel.VPContactInfo" />
+    <EntitySet Name="Walkarounds" EntityType="VincontrolModel.Walkaround" />
+    <EntitySet Name="WarrantyTypes" EntityType="VincontrolModel.WarrantyType" />
+    <EntitySet Name="YearMakes" EntityType="VincontrolModel.YearMake" />
+    <AssociationSet Name="vincontrolanswers_fk_answers_appraisals" Association="VincontrolModel.vincontrolanswers_fk_answers_appraisals">
+      <End Role="Appraisal" EntitySet="Appraisals" />
+      <End Role="Answer" EntitySet="Answers" />
+    </AssociationSet>
+    <AssociationSet Name="vincontrolanswers_fk_answers_questions" Association="VincontrolModel.vincontrolanswers_fk_answers_questions">
+      <End Role="Question" EntitySet="Questions" />
+      <End Role="Answer" EntitySet="Answers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Appraisal_AppraisalStatusCode" Association="VincontrolModel.FK_Appraisal_AppraisalStatusCode">
+      <End Role="AppraisalStatusCode" EntitySet="AppraisalStatusCodes" />
+      <End Role="Appraisal" EntitySet="Appraisals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Appraisal_Dealer" Association="VincontrolModel.FK_Appraisal_Dealer">
+      <End Role="Dealer" EntitySet="Dealers" />
+      <End Role="Appraisal" EntitySet="Appraisals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Appraisal_DealershipId" Association="VincontrolModel.FK_Appraisal_DealershipId">
+      <End Role="AppraisalCustomer" EntitySet="AppraisalCustomers" />
+      <End Role="Appraisal" EntitySet="Appraisals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Appraisal_User" Association="VincontrolModel.FK_Appraisal_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Appraisal" EntitySet="Appraisals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Appraisal_User1" Association="VincontrolModel.FK_Appraisal_User1">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Appraisal" EntitySet="Appraisals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Appraisal_Vehicle" Association="VincontrolModel.FK_Appraisal_Vehicle">
+      <End Role="Vehicle" EntitySet="Vehicles" />
+      <End Role="Appraisal" EntitySet="Appraisals" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inventory_Appraisal" Association="VincontrolModel.FK_Inventory_Appraisal">
+      <End Role="Appraisal" EntitySet="Appraisals" />
+      <End Role="Inventory" EntitySet="Inventories" />
+    </AssociationSet>
+    <AssociationSet Name="vincontrolwalkaround_fk_walkaround_appraisal" Association="VincontrolModel.vincontrolwalkaround_fk_walkaround_appraisal">
+      <End Role="Appraisal" EntitySet="Appraisals" />
+      <End Role="Walkaround" EntitySet="Walkarounds" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AppraisalDealerActivity_DealerActivitySubTypeCode1" Association="VincontrolModel.FK_AppraisalDealerActivity_DealerActivitySubTypeCode1">
+      <End Role="DealerActivitySubTypeCode" EntitySet="DealerActivitySubTypeCodes" />
+      <End Role="AppraisalDealerActivity" EntitySet="AppraisalDealerActivities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AppraisalDealerActivity_User" Association="VincontrolModel.FK_AppraisalDealerActivity_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="AppraisalDealerActivity" EntitySet="AppraisalDealerActivities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AutoTraderDealer_Dealer" Association="VincontrolModel.FK_AutoTraderDealer_Dealer">
+      <End Role="Dealer" EntitySet="Dealers" />
+      <End Role="AutoTraderDealer" EntitySet="AutoTraderDealers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BucketJumpHistory_VehicleStatusCode" Association="VincontrolModel.FK_BucketJumpHistory_VehicleStatusCode">
+      <End Role="VehicleStatusCode" EntitySet="VehicleStatusCodes" />
+      <End Role="BucketJumpHistory" EntitySet="BucketJumpHistories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_vincontroldealershipbuttons_vincontrolbuttons" Association="VincontrolModel.FK_vincontroldealershipbuttons_vincontrolbuttons">
+      <End Role="Button" EntitySet="Buttons" />
+      <End Role="DealerButton" EntitySet="DealerButtons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ChartSelection_VehicleStatusCode" Association="VincontrolModel.FK_ChartSelection_VehicleStatusCode">
+      <End Role="VehicleStatusCode" EntitySet="VehicleStatusCodes" />
+      <End Role="ChartSelection" EntitySet="ChartSelections" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DataFeedDealer_DataFeedCompany" Association="VincontrolModel.FK_DataFeedDealer_DataFeedCompany">
+      <End Role="DataFeedCompany" EntitySet="DataFeedCompanies" />
+      <End Role="DataFeedDealer" EntitySet="DataFeedDealers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DataFeedDealer_Dealer" Association="VincontrolModel.FK_DataFeedDealer_Dealer">
+      <End Role="Dealer" EntitySet="Dealers" />
+      <End Role="DataFeedDealer" EntitySet="DataFeedDealers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Dealership_DealerGroupId" Association="VincontrolModel.FK_Dealership_DealerGroupId">
+      <End Role="DealerGroup" EntitySet="DealerGroups" />
+      <End Role="Dealer" EntitySet="Dealers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EbayAd_DealershipID" Association="VincontrolModel.FK_EbayAd_DealershipID">
+      <End Role="Dealer" EntitySet="Dealers" />
+      <End Role="Ebay" EntitySet="Ebays" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FlyerShareDealerActivity_Dealer" Association="VincontrolModel.FK_FlyerShareDealerActivity_Dealer">
+      <End Role="Dealer" EntitySet="Dealers" />
+      <End Role="FlyerShareDealerActivity" EntitySet="FlyerShareDealerActivities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inventory_Dealer" Association="VincontrolModel.FK_Inventory_Dealer">
+      <End Role="Dealer" EntitySet="Dealers" />
+      <End Role="Inventory" EntitySet="Inventories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NotificationSetting_DealershipId" Association="VincontrolModel.FK_NotificationSetting_DealershipId">
+      <End Role="Dealer" EntitySet="Dealers" />
+      <End Role="NotificationSetting" EntitySet="NotificationSettings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Rebate_DealershipID" Association="VincontrolModel.FK_Rebate_DealershipID">
+      <End Role="Dealer" EntitySet="Dealers" />
+      <End Role="Rebate" EntitySet="Rebates" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Setting_DealershipId" Association="VincontrolModel.FK_Setting_DealershipId">
+      <End Role="Dealer" EntitySet="Dealers" />
+      <End Role="Setting" EntitySet="Settings" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SoldoutInventory_Dealer" Association="VincontrolModel.FK_SoldoutInventory_Dealer">
+      <End Role="Dealer" EntitySet="Dealers" />
+      <End Role="SoldoutInventory" EntitySet="SoldoutInventories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TradeInComment_DealershipID" Association="VincontrolModel.FK_TradeInComment_DealershipID">
+      <End Role="Dealer" EntitySet="Dealers" />
+      <End Role="TradeInComment" EntitySet="TradeInComments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TradeInCustomer_Dealer" Association="VincontrolModel.FK_TradeInCustomer_Dealer">
+      <End Role="Dealer" EntitySet="Dealers" />
+      <End Role="TradeInCustomer" EntitySet="TradeInCustomers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserNotification_DealershipID" Association="VincontrolModel.FK_UserNotification_DealershipID">
+      <End Role="Dealer" EntitySet="Dealers" />
+      <End Role="UserNotification" EntitySet="UserNotifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_DealershipID" Association="VincontrolModel.FK_Users_DealershipID">
+      <End Role="Dealer" EntitySet="Dealers" />
+      <End Role="UserPermission" EntitySet="UserPermissions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_WarrantyType_DealershipId" Association="VincontrolModel.FK_WarrantyType_DealershipId">
+      <End Role="Dealer" EntitySet="Dealers" />
+      <End Role="WarrantyType" EntitySet="WarrantyTypes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DealerActivity_DealerActivity" Association="VincontrolModel.FK_DealerActivity_DealerActivity">
+      <End Role="DealerActivitySubTypeCode" EntitySet="DealerActivitySubTypeCodes" />
+      <End Role="InventoryDealerActivity" EntitySet="InventoryDealerActivities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserDealerActivity_DealerActivitySubTypeCode" Association="VincontrolModel.FK_UserDealerActivity_DealerActivitySubTypeCode">
+      <End Role="DealerActivitySubTypeCode" EntitySet="DealerActivitySubTypeCodes" />
+      <End Role="UserDealerActivity" EntitySet="UserDealerActivities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_vincontroldealershipbuttons_vincontrolgroups" Association="VincontrolModel.FK_vincontroldealershipbuttons_vincontrolgroups">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="DealerButton" EntitySet="DealerButtons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_DealerGroup" Association="VincontrolModel.FK_User_DealerGroup">
+      <End Role="DealerGroup" EntitySet="DealerGroups" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inventory_DescriptionTemplate" Association="VincontrolModel.FK_Inventory_DescriptionTemplate">
+      <End Role="DescriptionTemplate" EntitySet="DescriptionTemplates" />
+      <End Role="Inventory" EntitySet="Inventories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EbayAd_InventoryId" Association="VincontrolModel.FK_EbayAd_InventoryId">
+      <End Role="Inventory" EntitySet="Inventories" />
+      <End Role="Ebay" EntitySet="Ebays" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FlyerShareDealerActivity_User" Association="VincontrolModel.FK_FlyerShareDealerActivity_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="FlyerShareDealerActivity" EntitySet="FlyerShareDealerActivities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inventory_InventoryStatusCode" Association="VincontrolModel.FK_Inventory_InventoryStatusCode">
+      <End Role="InventoryStatusCode" EntitySet="InventoryStatusCodes" />
+      <End Role="Inventory" EntitySet="Inventories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inventory_User" Association="VincontrolModel.FK_Inventory_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="Inventory" EntitySet="Inventories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Inventory_Vehicle" Association="VincontrolModel.FK_Inventory_Vehicle">
+      <End Role="Vehicle" EntitySet="Vehicles" />
+      <End Role="Inventory" EntitySet="Inventories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InventoryDealerActivity_User" Association="VincontrolModel.FK_InventoryDealerActivity_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="InventoryDealerActivity" EntitySet="InventoryDealerActivities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SoldoutInventory_VehicleStatusCode1" Association="VincontrolModel.FK_SoldoutInventory_VehicleStatusCode1">
+      <End Role="InventoryStatusCode" EntitySet="InventoryStatusCodes" />
+      <End Role="SoldoutInventory" EntitySet="SoldoutInventories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KellyBlueBook_VehicleStatusCode" Association="VincontrolModel.FK_KellyBlueBook_VehicleStatusCode">
+      <End Role="VehicleStatusCode" EntitySet="VehicleStatusCodes" />
+      <End Role="KellyBlueBook" EntitySet="KellyBlueBooks" />
+    </AssociationSet>
+    <AssociationSet Name="FK_YearMakes_Makes" Association="VincontrolModel.FK_YearMakes_Makes">
+      <End Role="Make" EntitySet="Makes" />
+      <End Role="YearMake" EntitySet="YearMakes" />
+    </AssociationSet>
+    <AssociationSet Name="manheimyearmakes_makeId" Association="VincontrolModel.manheimyearmakes_makeId">
+      <End Role="ManheimMake" EntitySet="ManheimMakes" />
+      <End Role="ManheimYearMake" EntitySet="ManheimYearMakes" />
+    </AssociationSet>
+    <AssociationSet Name="manheimmakemodels_model" Association="VincontrolModel.manheimmakemodels_model">
+      <End Role="ManheimModel" EntitySet="ManheimModels" />
+      <End Role="ManheimMakeModel" EntitySet="ManheimMakeModels" />
+    </AssociationSet>
+    <AssociationSet Name="manheimmakemodels_yearmake" Association="VincontrolModel.manheimmakemodels_yearmake">
+      <End Role="ManheimYearMake" EntitySet="ManheimYearMakes" />
+      <End Role="ManheimMakeModel" EntitySet="ManheimMakeModels" />
+    </AssociationSet>
+    <AssociationSet Name="manheimmodeltrims_makemodel" Association="VincontrolModel.manheimmodeltrims_makemodel">
+      <End Role="ManheimMakeModel" EntitySet="ManheimMakeModels" />
+      <End Role="ManheimModelTrim" EntitySet="ManheimModelTrims" />
+    </AssociationSet>
+    <AssociationSet Name="manheimmodeltrims_trim" Association="VincontrolModel.manheimmodeltrims_trim">
+      <End Role="ManheimTrim" EntitySet="ManheimTrims" />
+      <End Role="ManheimModelTrim" EntitySet="ManheimModelTrims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ManheimValue_VehicleStatusCode" Association="VincontrolModel.FK_ManheimValue_VehicleStatusCode">
+      <End Role="VehicleStatusCode" EntitySet="VehicleStatusCodes" />
+      <End Role="ManheimValue" EntitySet="ManheimValues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Models_YearMakes" Association="VincontrolModel.FK_Models_YearMakes">
+      <End Role="YearMake" EntitySet="YearMakes" />
+      <End Role="Model" EntitySet="Models" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Trims_Models" Association="VincontrolModel.FK_Trims_Models">
+      <End Role="Model" EntitySet="Models" />
+      <End Role="Trim" EntitySet="Trims" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TrimOption_Option" Association="VincontrolModel.FK_TrimOption_Option">
+      <End Role="Option" EntitySet="Options" />
+      <End Role="TrimOption" EntitySet="TrimOptions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TrimPackages_Trims" Association="VincontrolModel.FK_TrimPackages_Trims">
+      <End Role="Package" EntitySet="Packages" />
+      <End Role="TrimPackage" EntitySet="TrimPackages" />
+    </AssociationSet>
+    <AssociationSet Name="vincontrolgrouppermissions_fk_grouppermission_permissioncodes" Association="VincontrolModel.vincontrolgrouppermissions_fk_grouppermission_permissioncodes">
+      <End Role="PermissionCode" EntitySet="PermissionCodes" />
+      <End Role="RolePermission" EntitySet="RolePermissions" />
+    </AssociationSet>
+    <AssociationSet Name="vincontrolgrouppermissions_fk_grouppermission_permissionvalue" Association="VincontrolModel.vincontrolgrouppermissions_fk_grouppermission_permissionvalue">
+      <End Role="PermissionValue" EntitySet="PermissionValues" />
+      <End Role="RolePermission" EntitySet="RolePermissions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PriceChangeHistory_VehicleStatusCode" Association="VincontrolModel.FK_PriceChangeHistory_VehicleStatusCode">
+      <End Role="VehicleStatusCode" EntitySet="VehicleStatusCodes" />
+      <End Role="PriceChangeHistory" EntitySet="PriceChangeHistories" />
+    </AssociationSet>
+    <AssociationSet Name="vincontrolquestions_fk_questions_questiontype" Association="VincontrolModel.vincontrolquestions_fk_questions_questiontype">
+      <End Role="QuestionType" EntitySet="QuestionTypes" />
+      <End Role="Question" EntitySet="Questions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserInfo_Group" Association="VincontrolModel.FK_UserInfo_Group">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="UserPermission" EntitySet="UserPermissions" />
+    </AssociationSet>
+    <AssociationSet Name="vincontrolgrouppermissions_fk_grouppermission_group" Association="VincontrolModel.vincontrolgrouppermissions_fk_grouppermission_group">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="RolePermission" EntitySet="RolePermissions" />
+    </AssociationSet>
+    <AssociationSet Name="vincontrolsentence_fk_sentence_type" Association="VincontrolModel.vincontrolsentence_fk_sentence_type">
+      <End Role="SentenceType" EntitySet="SentenceTypes" />
+      <End Role="Sentence" EntitySet="Sentences" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SoldoutInventory_DealershipID" Association="VincontrolModel.FK_SoldoutInventory_DealershipID">
+      <End Role="Vehicle" EntitySet="Vehicles" />
+      <End Role="SoldoutInventory" EntitySet="SoldoutInventories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SoldoutInventory_SoldoutInventory" Association="VincontrolModel.FK_SoldoutInventory_SoldoutInventory">
+      <End Role="User" EntitySet="Users" />
+      <End Role="SoldoutInventory" EntitySet="SoldoutInventories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TrimOptions_Trims" Association="VincontrolModel.FK_TrimOptions_Trims">
+      <End Role="Trim" EntitySet="Trims" />
+      <End Role="TrimOption" EntitySet="TrimOptions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserDealerActivity_User" Association="VincontrolModel.FK_UserDealerActivity_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserDealerActivity" EntitySet="UserDealerActivities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserDealerActivity_User1" Association="VincontrolModel.FK_UserDealerActivity_User1">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserDealerActivity" EntitySet="UserDealerActivities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserNotification_User" Association="VincontrolModel.FK_UserNotification_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserNotification" EntitySet="UserNotifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserPermission_User" Association="VincontrolModel.FK_UserPermission_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="UserPermission" EntitySet="UserPermissions" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Answer">
+    <Key>
+      <PropertyRef Name="AnswerId" />
+    </Key>
+    <Property Type="Int32" Name="AnswerId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="AppraisalId" Nullable="false" />
+    <Property Type="Int32" Name="QuestionId" Nullable="false" />
+    <Property Type="String" Name="Answer1" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Comment" MaxLength="455" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Appraisal" Relationship="VincontrolModel.vincontrolanswers_fk_answers_appraisals" FromRole="Answer" ToRole="Appraisal" />
+    <NavigationProperty Name="Question" Relationship="VincontrolModel.vincontrolanswers_fk_answers_questions" FromRole="Answer" ToRole="Question" />
+  </EntityType>
+  <EntityType Name="Appraisal">
+    <Key>
+      <PropertyRef Name="AppraisalId" />
+    </Key>
+    <Property Type="Int32" Name="AppraisalId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="PackageDescription" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PhotoUrl" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AppraisalType" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Note" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="AppraisalStatusCodeId" />
+    <Property Type="Boolean" Name="VinGenie" />
+    <Property Type="Int32" Name="VinGenieUserId" />
+    <Property Type="String" Name="DeviceId" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DeviceName" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="KarPowerEntryId" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Location" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="AppraisalCustomerId" />
+    <Property Type="Int32" Name="AppraisalById" />
+    <Property Type="DateTime" Name="VinGenieAppraisalDate" />
+    <Property Type="DateTime" Name="AppraisalDate" />
+    <Property Type="Int32" Name="OldAppraisalId" />
+    <Property Type="String" Name="Stock" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="SalePrice" Precision="18" Scale="0" />
+    <Property Type="Int64" Name="Mileage" />
+    <Property Type="String" Name="ExteriorColor" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="Certified" />
+    <Property Type="String" Name="AdditionalOptions" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AdditionalPackages" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Descriptions" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="DealerId" Nullable="false" />
+    <Property Type="Int32" Name="CarRanking" />
+    <Property Type="String" Name="MarketTrim" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="MarketRange" />
+    <Property Type="DateTime" Name="LastUpdated" />
+    <Property Type="Int32" Name="CARFAXOwner" />
+    <Property Type="Decimal" Name="ACV" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="DealerCost" Precision="18" Scale="0" />
+    <Property Type="Int32" Name="VehicleId" Nullable="false" />
+    <Property Type="String" Name="ThumbnailUrl" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PackageDescriptions" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Answers" Relationship="VincontrolModel.vincontrolanswers_fk_answers_appraisals" FromRole="Appraisal" ToRole="Answer" />
+    <NavigationProperty Name="AppraisalStatusCode" Relationship="VincontrolModel.FK_Appraisal_AppraisalStatusCode" FromRole="Appraisal" ToRole="AppraisalStatusCode" />
+    <NavigationProperty Name="Dealer" Relationship="VincontrolModel.FK_Appraisal_Dealer" FromRole="Appraisal" ToRole="Dealer" />
+    <NavigationProperty Name="AppraisalCustomer" Relationship="VincontrolModel.FK_Appraisal_DealershipId" FromRole="Appraisal" ToRole="AppraisalCustomer" />
+    <NavigationProperty Name="User" Relationship="VincontrolModel.FK_Appraisal_User" FromRole="Appraisal" ToRole="User" />
+    <NavigationProperty Name="User1" Relationship="VincontrolModel.FK_Appraisal_User1" FromRole="Appraisal" ToRole="User" />
+    <NavigationProperty Name="Vehicle" Relationship="VincontrolModel.FK_Appraisal_Vehicle" FromRole="Appraisal" ToRole="Vehicle" />
+    <NavigationProperty Name="Inventories" Relationship="VincontrolModel.FK_Inventory_Appraisal" FromRole="Appraisal" ToRole="Inventory" />
+    <NavigationProperty Name="Walkarounds" Relationship="VincontrolModel.vincontrolwalkaround_fk_walkaround_appraisal" FromRole="Appraisal" ToRole="Walkaround" />
+  </EntityType>
+  <EntityType Name="AppraisalCustomer">
+    <Key>
+      <PropertyRef Name="AppraisalCustomerId" />
+    </Key>
+    <Property Type="String" Name="FirstName" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Address" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="State" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ZipCode" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Phone" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Street" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="AppraisalCustomerId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="SignatureUrl" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Appraisals" Relationship="VincontrolModel.FK_Appraisal_DealershipId" FromRole="AppraisalCustomer" ToRole="Appraisal" />
+  </EntityType>
+  <EntityType Name="AppraisalDealerActivity">
+    <Key>
+      <PropertyRef Name="AppraisalDealerActivityId" />
+    </Key>
+    <Property Type="Int32" Name="AppraisalDealerActivityId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Detail" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="AppraisalId" />
+    <Property Type="Int32" Name="DealerId" Nullable="false" />
+    <Property Type="DateTime" Name="DateStamp" Nullable="false" />
+    <Property Type="Int16" Name="DealerActivitySubTypeCodeId" Nullable="false" />
+    <Property Type="String" Name="VIN" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Stock" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Year" />
+    <Property Type="String" Name="Make" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Model" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Trim" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="UserStampId" Nullable="false" />
+    <NavigationProperty Name="DealerActivitySubTypeCode" Relationship="VincontrolModel.FK_AppraisalDealerActivity_DealerActivitySubTypeCode1" FromRole="AppraisalDealerActivity" ToRole="DealerActivitySubTypeCode" />
+    <NavigationProperty Name="User" Relationship="VincontrolModel.FK_AppraisalDealerActivity_User" FromRole="AppraisalDealerActivity" ToRole="User" />
+  </EntityType>
+  <EntityType Name="AppraisalStatusCode">
+    <Key>
+      <PropertyRef Name="AppraisalStatusCodeId" />
+    </Key>
+    <Property Type="Int16" Name="AppraisalStatusCodeId" Nullable="false" />
+    <Property Type="String" Name="Value" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Appraisals" Relationship="VincontrolModel.FK_Appraisal_AppraisalStatusCode" FromRole="AppraisalStatusCode" ToRole="Appraisal" />
+  </EntityType>
+  <EntityType Name="AutoTrader">
+    <Key>
+      <PropertyRef Name="AutoTraderId" />
+    </Key>
+    <Property Type="Int32" Name="AutoTraderId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="FTPHost" Nullable="false" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="FTPPort" />
+    <Property Type="DateTime" Name="DateStamp" />
+  </EntityType>
+  <EntityType Name="AutoTraderDealer">
+    <Key>
+      <PropertyRef Name="AutoTraderDealerId" />
+    </Key>
+    <Property Type="Int32" Name="AutoTraderDealerId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="AutoTraderDealerServiceId" />
+    <Property Type="String" Name="FTPUsername" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="FTPPassword" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="DealerId" />
+    <Property Type="DateTime" Name="DateStamp" />
+    <NavigationProperty Name="Dealer" Relationship="VincontrolModel.FK_AutoTraderDealer_Dealer" FromRole="AutoTraderDealer" ToRole="Dealer" />
+  </EntityType>
+  <EntityType Name="BlackBook">
+    <Key>
+      <PropertyRef Name="BlackBookId" />
+    </Key>
+    <Property Type="Int32" Name="BlackBookId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Vin" Nullable="false" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Trim" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="TradeInFairPrice" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="TradeInGoodPrice" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="TradeInVeryGoodPrice" Precision="18" Scale="0" />
+    <Property Type="DateTime" Name="DateStamp" />
+    <Property Type="DateTime" Name="Expiration" />
+  </EntityType>
+  <EntityType Name="BucketJumpHistory">
+    <Key>
+      <PropertyRef Name="BucketJumpHistoryId" />
+    </Key>
+    <Property Type="Int32" Name="BucketJumpHistoryId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ListingId" Nullable="false" />
+    <Property Type="Int16" Name="VehicleStatusCodeId" Nullable="false" />
+    <Property Type="String" Name="AttachFile" MaxLength="225" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="SalePrice" Precision="18" Scale="0" />
+    <Property Type="Int32" Name="BucketJumpDayAlert" />
+    <Property Type="DateTime" Name="BucketJumpCompleteDate" />
+    <Property Type="Decimal" Name="RetailPrice" Precision="18" Scale="0" />
+    <Property Type="String" Name="UserStamp" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateStamp" />
+    <Property Type="Int32" Name="OldListingId" />
+    <NavigationProperty Name="VehicleStatusCode" Relationship="VincontrolModel.FK_BucketJumpHistory_VehicleStatusCode" FromRole="BucketJumpHistory" ToRole="VehicleStatusCode" />
+  </EntityType>
+  <EntityType Name="Button">
+    <Key>
+      <PropertyRef Name="ButtonId" />
+    </Key>
+    <Property Type="Int32" Name="ButtonId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Button1" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Screen" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="DealerButtons" Relationship="VincontrolModel.FK_vincontroldealershipbuttons_vincontrolbuttons" FromRole="Button" ToRole="DealerButton" />
+  </EntityType>
+  <EntityType Name="BuyerGuide">
+    <Key>
+      <PropertyRef Name="BuyerGuideId" />
+    </Key>
+    <Property Type="Int32" Name="BuyerGuideId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="Year" />
+    <Property Type="String" Name="Make" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Model" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Vin" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Stock" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="WarrantyType" Nullable="false" />
+    <Property Type="Boolean" Name="IsAsWarranty" />
+    <Property Type="Boolean" Name="IsWarranty" />
+    <Property Type="Boolean" Name="IsFullWarranty" />
+    <Property Type="Boolean" Name="IsLimitedWarranty" />
+    <Property Type="Boolean" Name="IsServiceContract" />
+    <Property Type="String" Name="SystemCovered" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Durations" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Double" Name="PercentageOfLabor" />
+    <Property Type="Double" Name="PercentageOfPart" />
+    <Property Type="String" Name="PriorRental" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="DealerId" Nullable="false" />
+    <Property Type="Boolean" Name="IsMixed" />
+    <Property Type="String" Name="SystemCoveredAndDurations" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="LanguageVersion" />
+  </EntityType>
+  <EntityType Name="Carfax">
+    <Key>
+      <PropertyRef Name="CarfaxId" />
+    </Key>
+    <Property Type="Int32" Name="CarfaxId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Vin" Nullable="false" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Owner" />
+    <Property Type="Int32" Name="ServiceRecord" />
+    <Property Type="String" Name="WindowSticker" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="PriorRental" />
+    <Property Type="Int32" Name="Accident" />
+    <Property Type="DateTime" Name="DateStamp" />
+    <Property Type="DateTime" Name="LastUpdated" />
+    <Property Type="DateTime" Name="Expiration" />
+  </EntityType>
+  <EntityType Name="ChartSelection">
+    <Key>
+      <PropertyRef Name="ChartSelectionId" />
+    </Key>
+    <Property Type="Int32" Name="ChartSelectionId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ListingId" Nullable="false" />
+    <Property Type="Boolean" Name="IsCarsCom" />
+    <Property Type="String" Name="Options" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Trims" MaxLength="550" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsCertified" />
+    <Property Type="Boolean" Name="IsAll" />
+    <Property Type="Boolean" Name="IsFranchise" />
+    <Property Type="Boolean" Name="IsIndependant" />
+    <Property Type="Int16" Name="VehicleStatusCodeId" Nullable="false" />
+    <Property Type="Boolean" Name="IsNationwide" Nullable="false" />
+    <NavigationProperty Name="VehicleStatusCode" Relationship="VincontrolModel.FK_ChartSelection_VehicleStatusCode" FromRole="ChartSelection" ToRole="VehicleStatusCode" />
+  </EntityType>
+  <EntityType Name="DataFeedCompany">
+    <Key>
+      <PropertyRef Name="DataFeedCompanyId" />
+    </Key>
+    <Property Type="Int32" Name="DataFeedCompanyId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CompanyName" Nullable="false" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="FTPUserName" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="FTPPassword" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="FTPHost" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="FTPPort" />
+    <Property Type="DateTime" Name="DateStamp" />
+    <NavigationProperty Name="DataFeedDealers" Relationship="VincontrolModel.FK_DataFeedDealer_DataFeedCompany" FromRole="DataFeedCompany" ToRole="DataFeedDealer" />
+  </EntityType>
+  <EntityType Name="DataFeedDealer">
+    <Key>
+      <PropertyRef Name="DataFeedCompanyId" />
+      <PropertyRef Name="DealerId" />
+    </Key>
+    <Property Type="Int32" Name="DataFeedCompanyId" Nullable="false" />
+    <Property Type="Int32" Name="DealerId" Nullable="false" />
+    <Property Type="String" Name="DepositFileId" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Type="Boolean" Name="Active" />
+    <Property Type="DateTime" Name="DateStamp" />
+    <NavigationProperty Name="DataFeedCompany" Relationship="VincontrolModel.FK_DataFeedDealer_DataFeedCompany" FromRole="DataFeedDealer" ToRole="DataFeedCompany" />
+    <NavigationProperty Name="Dealer" Relationship="VincontrolModel.FK_DataFeedDealer_Dealer" FromRole="DataFeedDealer" ToRole="Dealer" />
+  </EntityType>
+  <EntityType Name="Dealer">
+    <Key>
+      <PropertyRef Name="DealerId" />
+    </Key>
+    <Property Type="Int32" Name="DealerId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Address" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="State" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ZipCode" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Phone" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Lattitude" Precision="9" Scale="6" />
+    <Property Type="Decimal" Name="Longtitude" Precision="9" Scale="6" />
+    <Property Type="Boolean" Name="Active" />
+    <Property Type="String" Name="DealerGroupId" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="ImportFeed" />
+    <Property Type="DateTime" Name="DateStamp" />
+    <NavigationProperty Name="Appraisals" Relationship="VincontrolModel.FK_Appraisal_Dealer" FromRole="Dealer" ToRole="Appraisal" />
+    <NavigationProperty Name="AutoTraderDealers" Relationship="VincontrolModel.FK_AutoTraderDealer_Dealer" FromRole="Dealer" ToRole="AutoTraderDealer" />
+    <NavigationProperty Name="DataFeedDealers" Relationship="VincontrolModel.FK_DataFeedDealer_Dealer" FromRole="Dealer" ToRole="DataFeedDealer" />
+    <NavigationProperty Name="DealerGroup" Relationship="VincontrolModel.FK_Dealership_DealerGroupId" FromRole="Dealer" ToRole="DealerGroup" />
+    <NavigationProperty Name="Ebays" Relationship="VincontrolModel.FK_EbayAd_DealershipID" FromRole="Dealer" ToRole="Ebay" />
+    <NavigationProperty Name="FlyerShareDealerActivities" Relationship="VincontrolModel.FK_FlyerShareDealerActivity_Dealer" FromRole="Dealer" ToRole="FlyerShareDealerActivity" />
+    <NavigationProperty Name="Inventories" Relationship="VincontrolModel.FK_Inventory_Dealer" FromRole="Dealer" ToRole="Inventory" />
+    <NavigationProperty Name="NotificationSetting" Relationship="VincontrolModel.FK_NotificationSetting_DealershipId" FromRole="Dealer" ToRole="NotificationSetting" />
+    <NavigationProperty Name="Rebates" Relationship="VincontrolModel.FK_Rebate_DealershipID" FromRole="Dealer" ToRole="Rebate" />
+    <NavigationProperty Name="Setting" Relationship="VincontrolModel.FK_Setting_DealershipId" FromRole="Dealer" ToRole="Setting" />
+    <NavigationProperty Name="SoldoutInventories" Relationship="VincontrolModel.FK_SoldoutInventory_Dealer" FromRole="Dealer" ToRole="SoldoutInventory" />
+    <NavigationProperty Name="TradeInComments" Relationship="VincontrolModel.FK_TradeInComment_DealershipID" FromRole="Dealer" ToRole="TradeInComment" />
+    <NavigationProperty Name="TradeInCustomers" Relationship="VincontrolModel.FK_TradeInCustomer_Dealer" FromRole="Dealer" ToRole="TradeInCustomer" />
+    <NavigationProperty Name="UserNotifications" Relationship="VincontrolModel.FK_UserNotification_DealershipID" FromRole="Dealer" ToRole="UserNotification" />
+    <NavigationProperty Name="UserPermissions" Relationship="VincontrolModel.FK_Users_DealershipID" FromRole="Dealer" ToRole="UserPermission" />
+    <NavigationProperty Name="WarrantyTypes" Relationship="VincontrolModel.FK_WarrantyType_DealershipId" FromRole="Dealer" ToRole="WarrantyType" />
+  </EntityType>
+  <EntityType Name="DealerActivitySubTypeCode">
+    <Key>
+      <PropertyRef Name="DealerActivitySubTypeCodeId" />
+    </Key>
+    <Property Type="Int16" Name="DealerActivitySubTypeCodeId" Nullable="false" />
+    <Property Type="String" Name="Value" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="AppraisalDealerActivities" Relationship="VincontrolModel.FK_AppraisalDealerActivity_DealerActivitySubTypeCode1" FromRole="DealerActivitySubTypeCode" ToRole="AppraisalDealerActivity" />
+    <NavigationProperty Name="InventoryDealerActivities" Relationship="VincontrolModel.FK_DealerActivity_DealerActivity" FromRole="DealerActivitySubTypeCode" ToRole="InventoryDealerActivity" />
+    <NavigationProperty Name="UserDealerActivities" Relationship="VincontrolModel.FK_UserDealerActivity_DealerActivitySubTypeCode" FromRole="DealerActivitySubTypeCode" ToRole="UserDealerActivity" />
+  </EntityType>
+  <EntityType Name="DealerActivityTypeCode">
+    <Key>
+      <PropertyRef Name="DealerActivityTypeCodeId" />
+    </Key>
+    <Property Type="Int16" Name="DealerActivityTypeCodeId" Nullable="false" />
+    <Property Type="String" Name="Value" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DealerButton">
+    <Key>
+      <PropertyRef Name="DealerButtonId" />
+    </Key>
+    <Property Type="Int32" Name="DealerButtonId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="DealerId" Nullable="false" />
+    <Property Type="Int32" Name="GroupId" Nullable="false" />
+    <Property Type="Int32" Name="ButtonId" Nullable="false" />
+    <Property Type="Boolean" Name="CanSee" Nullable="false" />
+    <NavigationProperty Name="Button" Relationship="VincontrolModel.FK_vincontroldealershipbuttons_vincontrolbuttons" FromRole="DealerButton" ToRole="Button" />
+    <NavigationProperty Name="Role" Relationship="VincontrolModel.FK_vincontroldealershipbuttons_vincontrolgroups" FromRole="DealerButton" ToRole="Role" />
+  </EntityType>
+  <EntityType Name="DealerGroup">
+    <Key>
+      <PropertyRef Name="DealerGroupId" />
+    </Key>
+    <Property Type="String" Name="DealerGroupId" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DealerGroupName" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="DefaultDealerId" Nullable="false" />
+    <NavigationProperty Name="Dealers" Relationship="VincontrolModel.FK_Dealership_DealerGroupId" FromRole="DealerGroup" ToRole="Dealer" />
+    <NavigationProperty Name="Users" Relationship="VincontrolModel.FK_User_DealerGroup" FromRole="DealerGroup" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Description">
+    <Key>
+      <PropertyRef Name="DescriptionId" />
+    </Key>
+    <Property Type="Int32" Name="DescriptionId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Title" Nullable="false" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="YesNo" />
+    <Property Type="String" Name="DescriptionSentence" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DescriptionTemplate">
+    <Key>
+      <PropertyRef Name="DescriptionTemplateId" />
+    </Key>
+    <Property Type="Int32" Name="DescriptionTemplateId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Content" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="String" Name="Type" Nullable="false" MaxLength="7" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Inventories" Relationship="VincontrolModel.FK_Inventory_DescriptionTemplate" FromRole="DescriptionTemplate" ToRole="Inventory" />
+  </EntityType>
+  <EntityType Name="Ebay">
+    <Key>
+      <PropertyRef Name="EbayId" />
+    </Key>
+    <Property Type="Int32" Name="EbayId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="InventoryId" Nullable="false" />
+    <Property Type="String" Name="EbayAdId" Nullable="false" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EbayAdURL" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="DealerId" Nullable="false" />
+    <Property Type="DateTime" Name="Expiration" />
+    <Property Type="DateTime" Name="DateStamp" />
+    <NavigationProperty Name="Dealer" Relationship="VincontrolModel.FK_EbayAd_DealershipID" FromRole="Ebay" ToRole="Dealer" />
+    <NavigationProperty Name="Inventory" Relationship="VincontrolModel.FK_EbayAd_InventoryId" FromRole="Ebay" ToRole="Inventory" />
+  </EntityType>
+  <EntityType Name="EbayCategory">
+    <Key>
+      <PropertyRef Name="EbayCategoryID" />
+    </Key>
+    <Property Type="Int32" Name="EbayCategoryID" Nullable="false" />
+    <Property Type="String" Name="Make" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Model" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="FlyerShareDealerActivity">
+    <Key>
+      <PropertyRef Name="FlyerShareDealerActivityId" />
+    </Key>
+    <Property Type="Int32" Name="FlyerShareDealerActivityId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CustomerName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CustomerEmail" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="UserStampId" Nullable="false" />
+    <Property Type="DateTime" Name="DateStamp" Nullable="false" />
+    <Property Type="Int32" Name="DealerId" Nullable="false" />
+    <NavigationProperty Name="Dealer" Relationship="VincontrolModel.FK_FlyerShareDealerActivity_Dealer" FromRole="FlyerShareDealerActivity" ToRole="Dealer" />
+    <NavigationProperty Name="User" Relationship="VincontrolModel.FK_FlyerShareDealerActivity_User" FromRole="FlyerShareDealerActivity" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Inventory">
+    <Key>
+      <PropertyRef Name="InventoryId" />
+    </Key>
+    <Property Type="Int32" Name="InventoryId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Decimal" Name="DealerMsrp" Precision="18" Scale="0" />
+    <Property Type="Boolean" Name="Certified" />
+    <Property Type="String" Name="ThumbnailUrl" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateInStock" />
+    <Property Type="Boolean" Name="Condition" Nullable="false" />
+    <Property Type="Int32" Name="AddToInventoryById" />
+    <Property Type="Int32" Name="AppraisalId" />
+    <Property Type="Int32" Name="WarrantyInfo" />
+    <Property Type="Decimal" Name="RetailPrice" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="WindowStickerPrice" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="DealerDiscount" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="ManufacturerRebate" Precision="18" Scale="0" />
+    <Property Type="Boolean" Name="PriorRental" />
+    <Property Type="String" Name="Disclaimer" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="DealerDemo" />
+    <Property Type="Boolean" Name="Unwind" />
+    <Property Type="Boolean" Name="IsFeatured" />
+    <Property Type="String" Name="AdditionalTitle" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="EnableAutoDescription" />
+    <Property Type="Int32" Name="DescriptionTemplateId" />
+    <Property Type="Int32" Name="BucketJumpCompleteDay" />
+    <Property Type="Boolean" Name="ACar" />
+    <Property Type="Boolean" Name="BrandedTitle" />
+    <Property Type="Int32" Name="OldInventoryId" />
+    <Property Type="String" Name="OldType" MaxLength="3" FixedLength="false" Unicode="true" />
+    <Property Type="Int16" Name="InventoryStatusCodeId" Nullable="false" />
+    <Property Type="String" Name="Stock" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="SalePrice" Precision="18" Scale="0" />
+    <Property Type="Int64" Name="Mileage" />
+    <Property Type="String" Name="ExteriorColor" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AdditionalOptions" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AdditionalPackages" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Descriptions" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PhotoUrl" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="DealerId" Nullable="false" />
+    <Property Type="Int32" Name="CarRanking" />
+    <Property Type="String" Name="MarketTrim" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="MarketRange" />
+    <Property Type="DateTime" Name="LastUpdated" />
+    <Property Type="Int32" Name="CarfaxOwner" />
+    <Property Type="Decimal" Name="ACV" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="DealerCost" Precision="18" Scale="0" />
+    <Property Type="Int32" Name="OldAppraisalId" />
+    <Property Type="Int32" Name="VehicleId" Nullable="false" />
+    <Property Type="String" Name="PackageDescriptions" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Appraisal" Relationship="VincontrolModel.FK_Inventory_Appraisal" FromRole="Inventory" ToRole="Appraisal" />
+    <NavigationProperty Name="Dealer" Relationship="VincontrolModel.FK_Inventory_Dealer" FromRole="Inventory" ToRole="Dealer" />
+    <NavigationProperty Name="DescriptionTemplate" Relationship="VincontrolModel.FK_Inventory_DescriptionTemplate" FromRole="Inventory" ToRole="DescriptionTemplate" />
+    <NavigationProperty Name="Ebays" Relationship="VincontrolModel.FK_EbayAd_InventoryId" FromRole="Inventory" ToRole="Ebay" />
+    <NavigationProperty Name="InventoryStatusCode" Relationship="VincontrolModel.FK_Inventory_InventoryStatusCode" FromRole="Inventory" ToRole="InventoryStatusCode" />
+    <NavigationProperty Name="User" Relationship="VincontrolModel.FK_Inventory_User" FromRole="Inventory" ToRole="User" />
+    <NavigationProperty Name="Vehicle" Relationship="VincontrolModel.FK_Inventory_Vehicle" FromRole="Inventory" ToRole="Vehicle" />
+  </EntityType>
+  <EntityType Name="InventoryDealerActivity">
+    <Key>
+      <PropertyRef Name="InventoryDealerActivityId" />
+    </Key>
+    <Property Type="Int32" Name="InventoryDealerActivityId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Detail" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="InventoryId" />
+    <Property Type="Int32" Name="DealerId" Nullable="false" />
+    <Property Type="DateTime" Name="DateStamp" Nullable="false" />
+    <Property Type="Int16" Name="DealerActivitySubTypeCodeId" Nullable="false" />
+    <Property Type="String" Name="VIN" MaxLength="17" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Stock" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="Decimal" Name="OldPrice" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="NewPrice" Precision="18" Scale="0" />
+    <Property Type="Int32" Name="AppraisalId" />
+    <Property Type="Int32" Name="Year" />
+    <Property Type="String" Name="Make" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Model" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Trim" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="UserStampId" />
+    <NavigationProperty Name="DealerActivitySubTypeCode" Relationship="VincontrolModel.FK_DealerActivity_DealerActivity" FromRole="InventoryDealerActivity" ToRole="DealerActivitySubTypeCode" />
+    <NavigationProperty Name="User" Relationship="VincontrolModel.FK_InventoryDealerActivity_User" FromRole="InventoryDealerActivity" ToRole="User" />
+  </EntityType>
+  <EntityType Name="InventoryStatusCode">
+    <Key>
+      <PropertyRef Name="InventoryStatusCodeId" />
+    </Key>
+    <Property Type="Int16" Name="InventoryStatusCodeId" Nullable="false" />
+    <Property Type="String" Name="Value" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Inventories" Relationship="VincontrolModel.FK_Inventory_InventoryStatusCode" FromRole="InventoryStatusCode" ToRole="Inventory" />
+    <NavigationProperty Name="SoldoutInventories" Relationship="VincontrolModel.FK_SoldoutInventory_VehicleStatusCode1" FromRole="InventoryStatusCode" ToRole="SoldoutInventory" />
+  </EntityType>
+  <EntityType Name="KellyBlueBook">
+    <Key>
+      <PropertyRef Name="KellyBlueBookId" />
+    </Key>
+    <Property Type="Int32" Name="KellyBlueBookId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Vin" Nullable="false" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Trim" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="TradeInFairPrice" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="TradeInGoodPrice" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="TradeInVeryGoodPrice" Precision="18" Scale="0" />
+    <Property Type="DateTime" Name="LastUpdated" />
+    <Property Type="DateTime" Name="Expiration" />
+    <Property Type="Decimal" Name="BaseWholeSale" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="MileageAdjustment" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="WholeSale" Precision="18" Scale="0" />
+    <Property Type="Int32" Name="TrimId" />
+    <Property Type="Int16" Name="VehicleStatusCodeId" />
+    <Property Type="DateTime" Name="DateStamp" />
+    <NavigationProperty Name="VehicleStatusCode" Relationship="VincontrolModel.FK_KellyBlueBook_VehicleStatusCode" FromRole="KellyBlueBook" ToRole="VehicleStatusCode" />
+  </EntityType>
+  <EntityType Name="Make">
+    <Key>
+      <PropertyRef Name="MakeId" />
+    </Key>
+    <Property Type="Int32" Name="MakeId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Value" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ChromeId" />
+    <Property Type="String" Name="Source" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ManheimServiceId" />
+    <Property Type="Int32" Name="KBBServiceId" />
+    <NavigationProperty Name="YearMakes" Relationship="VincontrolModel.FK_YearMakes_Makes" FromRole="Make" ToRole="YearMake" />
+  </EntityType>
+  <EntityType Name="ManheimMake">
+    <Key>
+      <PropertyRef Name="ManheimMakeId" />
+    </Key>
+    <Property Type="Int32" Name="ManheimMakeId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ServiceId" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ManheimYearMakes" Relationship="VincontrolModel.manheimyearmakes_makeId" FromRole="ManheimMake" ToRole="ManheimYearMake" />
+  </EntityType>
+  <EntityType Name="ManheimMakeModel">
+    <Key>
+      <PropertyRef Name="ManheimMakeModelId" />
+    </Key>
+    <Property Type="Int32" Name="ManheimMakeModelId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="YearMakeId" Nullable="false" />
+    <Property Type="Int32" Name="ModelId" Nullable="false" />
+    <NavigationProperty Name="ManheimModel" Relationship="VincontrolModel.manheimmakemodels_model" FromRole="ManheimMakeModel" ToRole="ManheimModel" />
+    <NavigationProperty Name="ManheimYearMake" Relationship="VincontrolModel.manheimmakemodels_yearmake" FromRole="ManheimMakeModel" ToRole="ManheimYearMake" />
+    <NavigationProperty Name="ManheimModelTrims" Relationship="VincontrolModel.manheimmodeltrims_makemodel" FromRole="ManheimMakeModel" ToRole="ManheimModelTrim" />
+  </EntityType>
+  <EntityType Name="ManheimModel">
+    <Key>
+      <PropertyRef Name="ManheimModelId" />
+    </Key>
+    <Property Type="Int32" Name="ManheimModelId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ServiceId" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ManheimMakeModels" Relationship="VincontrolModel.manheimmakemodels_model" FromRole="ManheimModel" ToRole="ManheimMakeModel" />
+  </EntityType>
+  <EntityType Name="ManheimModelTrim">
+    <Key>
+      <PropertyRef Name="ManheimModelTrimId" />
+    </Key>
+    <Property Type="Int32" Name="ManheimModelTrimId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="MakeModelId" Nullable="false" />
+    <Property Type="Int32" Name="TrimId" Nullable="false" />
+    <NavigationProperty Name="ManheimMakeModel" Relationship="VincontrolModel.manheimmodeltrims_makemodel" FromRole="ManheimModelTrim" ToRole="ManheimMakeModel" />
+    <NavigationProperty Name="ManheimTrim" Relationship="VincontrolModel.manheimmodeltrims_trim" FromRole="ManheimModelTrim" ToRole="ManheimTrim" />
+  </EntityType>
+  <EntityType Name="ManheimTrim">
+    <Key>
+      <PropertyRef Name="ManheimTrimId" />
+    </Key>
+    <Property Type="Int32" Name="ManheimTrimId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ServiceId" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="LowestPrice" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="AveragePrice" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="HighestPrice" Precision="18" Scale="0" />
+    <Property Type="DateTime" Name="ExpirationDate" />
+    <NavigationProperty Name="ManheimModelTrims" Relationship="VincontrolModel.manheimmodeltrims_trim" FromRole="ManheimTrim" ToRole="ManheimModelTrim" />
+  </EntityType>
+  <EntityType Name="ManheimValue">
+    <Key>
+      <PropertyRef Name="ManheimValueId" />
+    </Key>
+    <Property Type="Int32" Name="ManheimValueId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Vin" Nullable="false" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Trim" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="AuctionLowestPrice" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="AuctionAveragePrice" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="AuctionHighestPrice" Precision="18" Scale="0" />
+    <Property Type="DateTime" Name="DateAdded" />
+    <Property Type="DateTime" Name="LastUpdated" />
+    <Property Type="DateTime" Name="Expiration" />
+    <Property Type="Int32" Name="TrimServiceId" />
+    <Property Type="Int32" Name="Year" />
+    <Property Type="Int32" Name="MakeServiceId" />
+    <Property Type="Int32" Name="ModelServiceId" />
+    <Property Type="Int16" Name="VehicleStatusCodeId" />
+    <NavigationProperty Name="VehicleStatusCode" Relationship="VincontrolModel.FK_ManheimValue_VehicleStatusCode" FromRole="ManheimValue" ToRole="VehicleStatusCode" />
+  </EntityType>
+  <EntityType Name="ManheimYearMake">
+    <Key>
+      <PropertyRef Name="ManheimYearMakeId" />
+    </Key>
+    <Property Type="Int32" Name="ManheimYearMakeId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="Year" Nullable="false" />
+    <Property Type="Int32" Name="MakeId" Nullable="false" />
+    <NavigationProperty Name="ManheimMake" Relationship="VincontrolModel.manheimyearmakes_makeId" FromRole="ManheimYearMake" ToRole="ManheimMake" />
+    <NavigationProperty Name="ManheimMakeModels" Relationship="VincontrolModel.manheimmakemodels_yearmake" FromRole="ManheimYearMake" ToRole="ManheimMakeModel" />
+  </EntityType>
+  <EntityType Name="MarketSourceCode">
+    <Key>
+      <PropertyRef Name="MarketSourceCodeId" />
+    </Key>
+    <Property Type="Int16" Name="MarketSourceCodeId" Nullable="false" />
+    <Property Type="String" Name="Value" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Model">
+    <Key>
+      <PropertyRef Name="ModelId" />
+    </Key>
+    <Property Type="Int32" Name="ModelId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Value" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ChromeId" />
+    <Property Type="Int32" Name="YearMakeId" Nullable="false" />
+    <Property Type="String" Name="Source" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ManheimServiceId" />
+    <Property Type="Int32" Name="KBBServiceId" />
+    <NavigationProperty Name="YearMake" Relationship="VincontrolModel.FK_Models_YearMakes" FromRole="Model" ToRole="YearMake" />
+    <NavigationProperty Name="Trims" Relationship="VincontrolModel.FK_Trims_Models" FromRole="Model" ToRole="Trim" />
+  </EntityType>
+  <EntityType Name="NotificationSetting">
+    <Key>
+      <PropertyRef Name="DealerId" />
+    </Key>
+    <Property Type="Int32" Name="DealerId" Nullable="false" />
+    <Property Type="Boolean" Name="AppraisalNotified" Nullable="false" />
+    <Property Type="Boolean" Name="WholesaleNotified" Nullable="false" />
+    <Property Type="Boolean" Name="InventoryNotified" Nullable="false" />
+    <Property Type="Boolean" Name="C24hNotified" Nullable="false" />
+    <Property Type="Boolean" Name="NoteNotified" Nullable="false" />
+    <Property Type="Boolean" Name="PriceChangeNotified" Nullable="false" />
+    <Property Type="Boolean" Name="AgingNotified" Nullable="false" />
+    <Property Type="Boolean" Name="BucketJumpNotified" Nullable="false" />
+    <Property Type="Boolean" Name="MarketPriceRangeNotified" Nullable="false" />
+    <Property Type="Boolean" Name="ImageUploadNotified" Nullable="false" />
+    <NavigationProperty Name="Dealer" Relationship="VincontrolModel.FK_NotificationSetting_DealershipId" FromRole="NotificationSetting" ToRole="Dealer" />
+  </EntityType>
+  <EntityType Name="NotificationTypeCode">
+    <Key>
+      <PropertyRef Name="NotificationTypeCodeId" />
+    </Key>
+    <Property Type="Int32" Name="NotificationTypeCodeId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Value" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Option">
+    <Key>
+      <PropertyRef Name="OptionId" />
+    </Key>
+    <Property Type="Int32" Name="OptionId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ChromeId" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Value" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="Price" Nullable="false" Precision="10" Scale="2" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FullValue" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TrimOptions" Relationship="VincontrolModel.FK_TrimOption_Option" FromRole="Option" ToRole="TrimOption" />
+  </EntityType>
+  <EntityType Name="Package">
+    <Key>
+      <PropertyRef Name="PackageId" />
+    </Key>
+    <Property Type="Int32" Name="PackageId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ChromeId" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Value" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Type="Decimal" Name="Price" Nullable="false" Precision="10" Scale="2" />
+    <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FullValue" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="TrimPackages" Relationship="VincontrolModel.FK_TrimPackages_Trims" FromRole="Package" ToRole="TrimPackage" />
+  </EntityType>
+  <EntityType Name="PermissionCode">
+    <Key>
+      <PropertyRef Name="PermissionCodeId" />
+    </Key>
+    <Property Type="Int32" Name="PermissionCodeId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="PermissionCodeText" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PermissionText" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PermissionCategory" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Indent" Nullable="false" />
+    <Property Type="Int32" Name="ScreenOrder" Nullable="false" />
+    <Property Type="String" Name="UserStamp" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateStamp" Nullable="false" />
+    <NavigationProperty Name="RolePermissions" Relationship="VincontrolModel.vincontrolgrouppermissions_fk_grouppermission_permissioncodes" FromRole="PermissionCode" ToRole="RolePermission" />
+  </EntityType>
+  <EntityType Name="PermissionValue">
+    <Key>
+      <PropertyRef Name="PermissionValueId" />
+    </Key>
+    <Property Type="Int32" Name="PermissionValueId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="PermissionValueText" Nullable="false" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="UserStamp" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateStamp" Nullable="false" />
+    <NavigationProperty Name="RolePermissions" Relationship="VincontrolModel.vincontrolgrouppermissions_fk_grouppermission_permissionvalue" FromRole="PermissionValue" ToRole="RolePermission" />
+  </EntityType>
+  <EntityType Name="PriceChangeHistory">
+    <Key>
+      <PropertyRef Name="PriceChangeHistoryId" />
+    </Key>
+    <Property Type="Int32" Name="PriceChangeHistoryId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Decimal" Name="OldPrice" Precision="11" Scale="0" />
+    <Property Type="Decimal" Name="NewPrice" Precision="11" Scale="0" />
+    <Property Type="String" Name="AttachFile" MaxLength="225" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ListingId" Nullable="false" />
+    <Property Type="Int16" Name="VehicleStatusCodeId" Nullable="false" />
+    <Property Type="String" Name="UserStamp" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateStamp" />
+    <NavigationProperty Name="VehicleStatusCode" Relationship="VincontrolModel.FK_PriceChangeHistory_VehicleStatusCode" FromRole="PriceChangeHistory" ToRole="VehicleStatusCode" />
+  </EntityType>
+  <EntityType Name="Question">
+    <Key>
+      <PropertyRef Name="QuestionId" />
+    </Key>
+    <Property Type="Int32" Name="QuestionId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Title" Nullable="false" MaxLength="455" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="QuestionTypeId" Nullable="false" />
+    <Property Type="String" Name="ShortDesciption" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Order" />
+    <NavigationProperty Name="Answers" Relationship="VincontrolModel.vincontrolanswers_fk_answers_questions" FromRole="Question" ToRole="Answer" />
+    <NavigationProperty Name="QuestionType" Relationship="VincontrolModel.vincontrolquestions_fk_questions_questiontype" FromRole="Question" ToRole="QuestionType" />
+  </EntityType>
+  <EntityType Name="QuestionType">
+    <Key>
+      <PropertyRef Name="QuestionTypeId" />
+    </Key>
+    <Property Type="Int32" Name="QuestionTypeId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Description" MaxLength="145" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Option" MaxLength="145" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Code" />
+    <Property Type="String" Name="Unit" MaxLength="10" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Questions" Relationship="VincontrolModel.vincontrolquestions_fk_questions_questiontype" FromRole="QuestionType" ToRole="Question" />
+  </EntityType>
+  <EntityType Name="Rebate">
+    <Key>
+      <PropertyRef Name="RebateId" />
+    </Key>
+    <Property Type="Int32" Name="RebateId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="Year" Nullable="false" />
+    <Property Type="String" Name="Make" Nullable="false" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Model" Nullable="false" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Trim" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BodyType" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ManufactureReabte" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Disclaimer" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="DealerId" Nullable="false" />
+    <Property Type="DateTime" Name="DateStamp" />
+    <NavigationProperty Name="Dealer" Relationship="VincontrolModel.FK_Rebate_DealershipID" FromRole="Rebate" ToRole="Dealer" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Type="Int32" Name="RoleId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="RoleName" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="RoleNote" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="UserStamp" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateStamp" Nullable="false" />
+    <NavigationProperty Name="DealerButtons" Relationship="VincontrolModel.FK_vincontroldealershipbuttons_vincontrolgroups" FromRole="Role" ToRole="DealerButton" />
+    <NavigationProperty Name="UserPermissions" Relationship="VincontrolModel.FK_UserInfo_Group" FromRole="Role" ToRole="UserPermission" />
+    <NavigationProperty Name="RolePermissions" Relationship="VincontrolModel.vincontrolgrouppermissions_fk_grouppermission_group" FromRole="Role" ToRole="RolePermission" />
+  </EntityType>
+  <EntityType Name="RolePermission">
+    <Key>
+      <PropertyRef Name="RolePermissionId" />
+    </Key>
+    <Property Type="Int32" Name="RolePermissionId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="RoleId" Nullable="false" />
+    <Property Type="Int32" Name="PermissionCodeId" Nullable="false" />
+    <Property Type="Int32" Name="PermissionValueId" Nullable="false" />
+    <Property Type="String" Name="UserStamp" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateStamp" Nullable="false" />
+    <NavigationProperty Name="PermissionCode" Relationship="VincontrolModel.vincontrolgrouppermissions_fk_grouppermission_permissioncodes" FromRole="RolePermission" ToRole="PermissionCode" />
+    <NavigationProperty Name="PermissionValue" Relationship="VincontrolModel.vincontrolgrouppermissions_fk_grouppermission_permissionvalue" FromRole="RolePermission" ToRole="PermissionValue" />
+    <NavigationProperty Name="Role" Relationship="VincontrolModel.vincontrolgrouppermissions_fk_grouppermission_group" FromRole="RolePermission" ToRole="Role" />
+  </EntityType>
+  <EntityType Name="Sentence">
+    <Key>
+      <PropertyRef Name="SentenceId" />
+    </Key>
+    <Property Type="Int32" Name="SentenceId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Sentence1" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="SentenceTypeId" Nullable="false" />
+    <NavigationProperty Name="SentenceType" Relationship="VincontrolModel.vincontrolsentence_fk_sentence_type" FromRole="Sentence" ToRole="SentenceType" />
+  </EntityType>
+  <EntityType Name="SentenceType">
+    <Key>
+      <PropertyRef Name="SentenceTypeId" />
+    </Key>
+    <Property Type="Int32" Name="SentenceTypeId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="225" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Sentences" Relationship="VincontrolModel.vincontrolsentence_fk_sentence_type" FromRole="SentenceType" ToRole="Sentence" />
+  </EntityType>
+  <EntityType Name="Setting">
+    <Key>
+      <PropertyRef Name="DealerId" />
+    </Key>
+    <Property Type="String" Name="InventorySorting" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SoldOut" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="DealerId" Nullable="false" />
+    <Property Type="String" Name="Ebay" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EbayPassword" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CarFax" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CarFaxPassword" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Manheim" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ManheimPassword" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="KellyBlueBook" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="KellyPassword" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BlackBook" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BlackBookPassword" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AutoCheck" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AutoCheckPassword" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DefaultStockImageUrl" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="OverideStockImage" />
+    <Property Type="String" Name="DealerInfo" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DealerWarranty" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TermsAndCondition" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EbayToken" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EbayInventoryUrl" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CreditUrl" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="WebSiteUrl" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ContactUsUrl" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FacebookUrl" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LogoUrl" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ContactPerson" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="RetailPrice" />
+    <Property Type="Boolean" Name="DealerDiscount" />
+    <Property Type="Boolean" Name="ManufacturerReabte" />
+    <Property Type="Boolean" Name="SalePrice" />
+    <Property Type="String" Name="ShippingInfo" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AsIsWarranty" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AsIsWarrantySpanish" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="StartDescriptionSentence" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EndDescriptionSentence" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AuctionSentence" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LoanerSentence" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="FirstTimeRangeBucketJump" />
+    <Property Type="Int32" Name="SecondTimeRangeBucketJump" />
+    <Property Type="Int32" Name="IntervalBucketJump" />
+    <Property Type="String" Name="RetailPriceText" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DealerDiscountText" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ManufactureReabateText" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SalePriceText" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="HeaderOverlayURL" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FooterOverlayURL" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="KellyBlueBookAccessRight" />
+    <Property Type="Boolean" Name="AutoDescription" />
+    <Property Type="Boolean" Name="AutoDescriptionSubscribe" />
+    <Property Type="Int16" Name="EmailFormat" />
+    <Property Type="Decimal" Name="PriceVariance" Precision="8" Scale="0" />
+    <Property Type="Boolean" Name="CanViewBucketJump" />
+    <Property Type="String" Name="EbayContactInfoName" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EbayContactInfoPhone" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="EbayContactInfoEmail" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Dealer" Relationship="VincontrolModel.FK_Setting_DealershipId" FromRole="Setting" ToRole="Dealer" />
+  </EntityType>
+  <EntityType Name="SoldoutInventory">
+    <Key>
+      <PropertyRef Name="SoldoutInventoryId" />
+    </Key>
+    <Property Type="Int32" Name="SoldoutInventoryId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Stock" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="SalePrice" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="DealerMsrp" Precision="18" Scale="0" />
+    <Property Type="Int64" Name="Mileage" />
+    <Property Type="String" Name="ExteriorColor" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="Certified" />
+    <Property Type="String" Name="AdditionalOptions" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AdditionalPackages" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Descriptions" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="PhotoUrl" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ThumbnailUrl" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateInStock" />
+    <Property Type="DateTime" Name="LastUpdated" />
+    <Property Type="DateTime" Name="DateRemoved" />
+    <Property Type="Int32" Name="DealerId" Nullable="false" />
+    <Property Type="Decimal" Name="DealerCost" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="ACV" Precision="18" Scale="0" />
+    <Property Type="Boolean" Name="Condition" Nullable="false" />
+    <Property Type="String" Name="RemoveBy" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="AddToInventoryById" />
+    <Property Type="Int32" Name="AppraisalId" />
+    <Property Type="Boolean" Name="DataFeed" />
+    <Property Type="String" Name="FirstName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Address" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="State" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ZipCode" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="WarrantyInfo" />
+    <Property Type="Decimal" Name="RetailPrice" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="WindowStickerPrice" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="DealerDiscount" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="ManufacturerRebate" Precision="18" Scale="0" />
+    <Property Type="Boolean" Name="PriorRental" />
+    <Property Type="Int32" Name="CarFaxOwner" />
+    <Property Type="String" Name="Disclaimer" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="DealerDemo" />
+    <Property Type="Boolean" Name="Unwind" />
+    <Property Type="Int32" Name="CarRanking" />
+    <Property Type="String" Name="AdditionalTitle" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Country" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="EnableAutoDescription" />
+    <Property Type="Int32" Name="Template" />
+    <Property Type="String" Name="PackageDescriptions" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="BucketJumpCompleteDay" />
+    <Property Type="String" Name="MarketTrim" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="ACar" />
+    <Property Type="Int32" Name="TempOldListingId" />
+    <Property Type="Boolean" Name="IsFeatured" />
+    <Property Type="Boolean" Name="BrandedTitle" />
+    <Property Type="Int16" Name="InventoryStatusCodeId" />
+    <Property Type="Int32" Name="VehicleId" Nullable="false" />
+    <NavigationProperty Name="Dealer" Relationship="VincontrolModel.FK_SoldoutInventory_Dealer" FromRole="SoldoutInventory" ToRole="Dealer" />
+    <NavigationProperty Name="InventoryStatusCode" Relationship="VincontrolModel.FK_SoldoutInventory_VehicleStatusCode1" FromRole="SoldoutInventory" ToRole="InventoryStatusCode" />
+    <NavigationProperty Name="Vehicle" Relationship="VincontrolModel.FK_SoldoutInventory_DealershipID" FromRole="SoldoutInventory" ToRole="Vehicle" />
+    <NavigationProperty Name="User" Relationship="VincontrolModel.FK_SoldoutInventory_SoldoutInventory" FromRole="SoldoutInventory" ToRole="User" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Type="String" Name="name" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="principal_id" Nullable="false" />
+    <Property Type="Int32" Name="diagram_id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="version" />
+    <Property Type="Binary" Name="definition" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="TradeInComment">
+    <Key>
+      <PropertyRef Name="TradeInCommentId" />
+    </Key>
+    <Property Type="Int32" Name="TradeInCommentId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Content" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Name" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="State" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="DealerId" Nullable="false" />
+    <Property Type="DateTime" Name="CommentDate" />
+    <Property Type="DateTime" Name="LastUpdated" />
+    <NavigationProperty Name="Dealer" Relationship="VincontrolModel.FK_TradeInComment_DealershipID" FromRole="TradeInComment" ToRole="Dealer" />
+  </EntityType>
+  <EntityType Name="TradeInCustomer">
+    <Key>
+      <PropertyRef Name="TradeInCustomerId" />
+    </Key>
+    <Property Type="Int32" Name="TradeInCustomerId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="FirstName" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Phone" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Year" />
+    <Property Type="String" Name="Make" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Model" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Trim" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Mileage" />
+    <Property Type="String" Name="Vin" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="SelectedOptions" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Condition" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ChromeTrimId" />
+    <Property Type="Decimal" Name="TradeInFairValue" Precision="18" Scale="0" />
+    <Property Type="Decimal" Name="TradeInMaxValue" Precision="18" Scale="0" />
+    <Property Type="Int32" Name="DealerId" Nullable="false" />
+    <Property Type="Decimal" Name="VarianceValue" Precision="18" Scale="0" />
+    <Property Type="String" Name="Source" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TradeInStatus" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateStamp" />
+    <NavigationProperty Name="Dealer" Relationship="VincontrolModel.FK_TradeInCustomer_Dealer" FromRole="TradeInCustomer" ToRole="Dealer" />
+  </EntityType>
+  <EntityType Name="Trim">
+    <Key>
+      <PropertyRef Name="TrimId" />
+    </Key>
+    <Property Type="Int32" Name="TrimId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="StyleName" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int64" Name="ChromeId" Nullable="false" />
+    <Property Type="Int32" Name="ModelId" Nullable="false" />
+    <Property Type="Boolean" Name="IsDefault" Nullable="false" />
+    <Property Type="Int32" Name="KBBTrimId" />
+    <Property Type="Int32" Name="ManheimTrimId" />
+    <Property Type="String" Name="DefaultImageUrl" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TrimName" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Code" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Model" Relationship="VincontrolModel.FK_Trims_Models" FromRole="Trim" ToRole="Model" />
+    <NavigationProperty Name="TrimOptions" Relationship="VincontrolModel.FK_TrimOptions_Trims" FromRole="Trim" ToRole="TrimOption" />
+  </EntityType>
+  <EntityType Name="TrimOption">
+    <Key>
+      <PropertyRef Name="TrimOptionId" />
+    </Key>
+    <Property Type="Int32" Name="TrimOptionId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="TrimId" Nullable="false" />
+    <Property Type="Int32" Name="OptionId" Nullable="false" />
+    <NavigationProperty Name="Option" Relationship="VincontrolModel.FK_TrimOption_Option" FromRole="TrimOption" ToRole="Option" />
+    <NavigationProperty Name="Trim" Relationship="VincontrolModel.FK_TrimOptions_Trims" FromRole="TrimOption" ToRole="Trim" />
+  </EntityType>
+  <EntityType Name="TrimPackage">
+    <Key>
+      <PropertyRef Name="TrimPackageId" />
+    </Key>
+    <Property Type="Int32" Name="TrimPackageId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="TrimId" Nullable="false" />
+    <Property Type="Int32" Name="PackageId" Nullable="false" />
+    <NavigationProperty Name="Package" Relationship="VincontrolModel.FK_TrimPackages_Trims" FromRole="TrimPackage" ToRole="Package" />
+  </EntityType>
+  <EntityType Name="TruckCategory">
+    <Key>
+      <PropertyRef Name="TruckCategoryId" />
+    </Key>
+    <Property Type="Int32" Name="TruckCategoryId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CategoryName" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TruckType" Nullable="false" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="DateStamp" />
+  </EntityType>
+  <EntityType Name="UsaZipCode">
+    <Key>
+      <PropertyRef Name="UsaZipCodeId" />
+    </Key>
+    <Property Type="Int32" Name="UsaZipCodeId" Nullable="false" />
+    <Property Type="String" Name="ZIPType" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CityName" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CityType" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CountyName" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CountyFIPS" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="StateName" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="StateAbbr" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="StateFIPS" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="MSACode" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="AreaCode" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="TimeZone" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="UTC" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DST" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Latitude" Precision="9" Scale="6" />
+    <Property Type="Decimal" Name="Longitude" Precision="9" Scale="6" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Type="Int32" Name="UserId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="UserName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Expiration" Nullable="false" />
+    <Property Type="String" Name="Password" Nullable="false" MaxLength="25" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Name" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CellPhone" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="Active" />
+    <Property Type="Int32" Name="DefaultLogin" />
+    <Property Type="String" Name="DealerGroupId" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="OldUserId" />
+    <NavigationProperty Name="Appraisals" Relationship="VincontrolModel.FK_Appraisal_User" FromRole="User" ToRole="Appraisal" />
+    <NavigationProperty Name="Appraisals1" Relationship="VincontrolModel.FK_Appraisal_User1" FromRole="User" ToRole="Appraisal" />
+    <NavigationProperty Name="AppraisalDealerActivities" Relationship="VincontrolModel.FK_AppraisalDealerActivity_User" FromRole="User" ToRole="AppraisalDealerActivity" />
+    <NavigationProperty Name="DealerGroup" Relationship="VincontrolModel.FK_User_DealerGroup" FromRole="User" ToRole="DealerGroup" />
+    <NavigationProperty Name="FlyerShareDealerActivities" Relationship="VincontrolModel.FK_FlyerShareDealerActivity_User" FromRole="User" ToRole="FlyerShareDealerActivity" />
+    <NavigationProperty Name="Inventories" Relationship="VincontrolModel.FK_Inventory_User" FromRole="User" ToRole="Inventory" />
+    <NavigationProperty Name="InventoryDealerActivities" Relationship="VincontrolModel.FK_InventoryDealerActivity_User" FromRole="User" ToRole="InventoryDealerActivity" />
+    <NavigationProperty Name="SoldoutInventories" Relationship="VincontrolModel.FK_SoldoutInventory_SoldoutInventory" FromRole="User" ToRole="SoldoutInventory" />
+    <NavigationProperty Name="UserDealerActivities" Relationship="VincontrolModel.FK_UserDealerActivity_User" FromRole="User" ToRole="UserDealerActivity" />
+    <NavigationProperty Name="UserDealerActivities1" Relationship="VincontrolModel.FK_UserDealerActivity_User1" FromRole="User" ToRole="UserDealerActivity" />
+    <NavigationProperty Name="UserNotifications" Relationship="VincontrolModel.FK_UserNotification_User" FromRole="User" ToRole="UserNotification" />
+    <NavigationProperty Name="UserPermissions" Relationship="VincontrolModel.FK_UserPermission_User" FromRole="User" ToRole="UserPermission" />
+  </EntityType>
+  <EntityType Name="UserDealerActivity">
+    <Key>
+      <PropertyRef Name="UserDealerActivityId" />
+    </Key>
+    <Property Type="Int32" Name="UserDealerActivityId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Detail" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="UserId" />
+    <Property Type="Int32" Name="DealerId" Nullable="false" />
+    <Property Type="DateTime" Name="DateStamp" Nullable="false" />
+    <Property Type="Int16" Name="DealerActivitySubTypeCodeId" Nullable="false" />
+    <Property Type="String" Name="UserName" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Email" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Phone" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Role" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="UserStampId" Nullable="false" />
+    <NavigationProperty Name="DealerActivitySubTypeCode" Relationship="VincontrolModel.FK_UserDealerActivity_DealerActivitySubTypeCode" FromRole="UserDealerActivity" ToRole="DealerActivitySubTypeCode" />
+    <NavigationProperty Name="User" Relationship="VincontrolModel.FK_UserDealerActivity_User" FromRole="UserDealerActivity" ToRole="User" />
+    <NavigationProperty Name="User1" Relationship="VincontrolModel.FK_UserDealerActivity_User1" FromRole="UserDealerActivity" ToRole="User" />
+  </EntityType>
+  <EntityType Name="UserNotification">
+    <Key>
+      <PropertyRef Name="UserNotificationId" />
+    </Key>
+    <Property Type="Int32" Name="UserNotificationId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="Int32" Name="DealerId" Nullable="false" />
+    <Property Type="DateTime" Name="DateStamp" />
+    <Property Type="Boolean" Name="AppraisalNotified" Nullable="false" />
+    <Property Type="Boolean" Name="WholesaleNotified" Nullable="false" />
+    <Property Type="Boolean" Name="InventoryNotified" Nullable="false" />
+    <Property Type="Boolean" Name="C24hNotified" Nullable="false" />
+    <Property Type="Boolean" Name="NoteNotified" Nullable="false" />
+    <Property Type="Boolean" Name="PriceChangeNotified" Nullable="false" />
+    <Property Type="Boolean" Name="AgingNotified" Nullable="false" />
+    <Property Type="Boolean" Name="BucketJumpNotified" Nullable="false" />
+    <Property Type="Boolean" Name="MarketPriceRangeNotified" Nullable="false" />
+    <Property Type="Boolean" Name="ImageUploadNotified" Nullable="false" />
+    <NavigationProperty Name="Dealer" Relationship="VincontrolModel.FK_UserNotification_DealershipID" FromRole="UserNotification" ToRole="Dealer" />
+    <NavigationProperty Name="User" Relationship="VincontrolModel.FK_UserNotification_User" FromRole="UserNotification" ToRole="User" />
+  </EntityType>
+  <EntityType Name="UserPermission">
+    <Key>
+      <PropertyRef Name="UserPermissionId" />
+    </Key>
+    <Property Type="Int32" Name="UserPermissionId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="DealerId" Nullable="false" />
+    <Property Type="Int32" Name="RoleId" Nullable="false" />
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <NavigationProperty Name="Dealer" Relationship="VincontrolModel.FK_Users_DealershipID" FromRole="UserPermission" ToRole="Dealer" />
+    <NavigationProperty Name="Role" Relationship="VincontrolModel.FK_UserInfo_Group" FromRole="UserPermission" ToRole="Role" />
+    <NavigationProperty Name="User" Relationship="VincontrolModel.FK_UserPermission_User" FromRole="UserPermission" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Vehicle">
+    <Key>
+      <PropertyRef Name="VehicleId" />
+    </Key>
+    <Property Type="Int32" Name="VehicleId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="Year" />
+    <Property Type="String" Name="Make" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Model" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Trim" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Vin" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Decimal" Name="Msrp" Precision="18" Scale="0" />
+    <Property Type="String" Name="InteriorColor" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="BodyType" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Cylinders" />
+    <Property Type="Double" Name="Litter" />
+    <Property Type="String" Name="EngineType" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="DriveTrain" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FuelType" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Tranmission" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Doors" />
+    <Property Type="String" Name="FuelEconomyCity" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="FuelEconomyHighWay" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="StandardOptions" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="KBBEngineId" />
+    <Property Type="Int32" Name="KBBTransmissionId" />
+    <Property Type="Int32" Name="KBBDriveTrainId" />
+    <Property Type="String" Name="KBBOptionsId" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="KBBTrimId" />
+    <Property Type="Decimal" Name="MarketLowestPrice" Precision="11" Scale="0" />
+    <Property Type="Decimal" Name="MarketAveragePrice" Precision="11" Scale="0" />
+    <Property Type="Decimal" Name="MarketHighestPrice" Precision="11" Scale="0" />
+    <Property Type="String" Name="ColorCode" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="NumberOfCar" />
+    <Property Type="String" Name="ChromeStyleId" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ChromeModelId" MaxLength="45" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ManheimTrimId" />
+    <Property Type="Int16" Name="VehicleType" />
+    <Property Type="String" Name="DefaultStockImage" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="OldIsWholesale" />
+    <Property Type="Int32" Name="OldAppraisalId" />
+    <Property Type="Int32" Name="OldInventoryId" />
+    <Property Type="Int32" Name="OldSoldoutInventoryId" />
+    <NavigationProperty Name="Appraisals" Relationship="VincontrolModel.FK_Appraisal_Vehicle" FromRole="Vehicle" ToRole="Appraisal" />
+    <NavigationProperty Name="Inventories" Relationship="VincontrolModel.FK_Inventory_Vehicle" FromRole="Vehicle" ToRole="Inventory" />
+    <NavigationProperty Name="SoldoutInventories" Relationship="VincontrolModel.FK_SoldoutInventory_DealershipID" FromRole="Vehicle" ToRole="SoldoutInventory" />
+  </EntityType>
+  <EntityType Name="VehicleStatusCode">
+    <Key>
+      <PropertyRef Name="VehicleStatusCodeId" />
+    </Key>
+    <Property Type="Int16" Name="VehicleStatusCodeId" Nullable="false" />
+    <Property Type="String" Name="Value" Nullable="false" MaxLength="20" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="BucketJumpHistories" Relationship="VincontrolModel.FK_BucketJumpHistory_VehicleStatusCode" FromRole="VehicleStatusCode" ToRole="BucketJumpHistory" />
+    <NavigationProperty Name="ChartSelections" Relationship="VincontrolModel.FK_ChartSelection_VehicleStatusCode" FromRole="VehicleStatusCode" ToRole="ChartSelection" />
+    <NavigationProperty Name="KellyBlueBooks" Relationship="VincontrolModel.FK_KellyBlueBook_VehicleStatusCode" FromRole="VehicleStatusCode" ToRole="KellyBlueBook" />
+    <NavigationProperty Name="ManheimValues" Relationship="VincontrolModel.FK_ManheimValue_VehicleStatusCode" FromRole="VehicleStatusCode" ToRole="ManheimValue" />
+    <NavigationProperty Name="PriceChangeHistories" Relationship="VincontrolModel.FK_PriceChangeHistory_VehicleStatusCode" FromRole="VehicleStatusCode" ToRole="PriceChangeHistory" />
+  </EntityType>
+  <EntityType Name="VPContactInfo">
+    <Key>
+      <PropertyRef Name="VPContactInfoId" />
+    </Key>
+    <Property Type="Int32" Name="VPContactInfoId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="DealerId" Nullable="false" />
+    <Property Type="String" Name="FirstName" MaxLength="125" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="MiddleName" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="LastName" MaxLength="125" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="FriendName" MaxLength="125" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="ContactPrefer" MaxLength="125" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="ContactType" />
+    <Property Type="String" Name="Address" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="City" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="State" MaxLength="125" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="Postal" />
+    <Property Type="String" Name="Email" MaxLength="125" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="FriendEmail" MaxLength="125" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Phone" MaxLength="125" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Vin" MaxLength="125" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Stock" MaxLength="125" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="Year" />
+    <Property Type="String" Name="Make" MaxLength="125" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Model" MaxLength="125" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Engine" MaxLength="125" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Trim" MaxLength="125" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Transmission" MaxLength="125" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="ExteriorColor" MaxLength="125" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="Mileage" />
+    <Property Type="String" Name="Condition" MaxLength="125" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="Options" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="ServiceType" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="OfferValue" />
+    <Property Type="String" Name="JobTitle" MaxLength="125" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="SpecialId" />
+    <Property Type="String" Name="SpecialCategory" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="TemplateType" />
+    <Property Type="String" Name="CL" MaxLength="125" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="CV" MaxLength="125" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Comment" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Notes" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="ScheduleDate" />
+    <Property Type="String" Name="ScheduleTime" MaxLength="125" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="RequestLink" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Type="Boolean" Name="SubmitFlag" />
+    <Property Type="Boolean" Name="ReadFlag" />
+    <Property Type="Boolean" Name="FavoriteFlag" />
+    <Property Type="Boolean" Name="DeleteFlag" />
+    <Property Type="DateTime" Name="RegisterDate" />
+  </EntityType>
+  <EntityType Name="Walkaround">
+    <Key>
+      <PropertyRef Name="WalkaroundId" />
+    </Key>
+    <Property Type="Int32" Name="WalkaroundId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="Order" />
+    <Property Type="Double" Name="X" />
+    <Property Type="Double" Name="Y" />
+    <Property Type="String" Name="Note" MaxLength="455" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="AppraisalId" Nullable="false" />
+    <Property Type="Int32" Name="OldAppraisalId" />
+    <NavigationProperty Name="Appraisal" Relationship="VincontrolModel.vincontrolwalkaround_fk_walkaround_appraisal" FromRole="Walkaround" ToRole="Appraisal" />
+  </EntityType>
+  <EntityType Name="WarrantyType">
+    <Key>
+      <PropertyRef Name="WarrantyTypeId" />
+    </Key>
+    <Property Type="Int32" Name="WarrantyTypeId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" MaxLength="225" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="DealerId" Nullable="false" />
+    <Property Type="Boolean" Name="IsActive" />
+    <Property Type="Int32" Name="Category" />
+    <NavigationProperty Name="Dealer" Relationship="VincontrolModel.FK_WarrantyType_DealershipId" FromRole="WarrantyType" ToRole="Dealer" />
+  </EntityType>
+  <EntityType Name="YearMake">
+    <Key>
+      <PropertyRef Name="YearMakeId" />
+    </Key>
+    <Property Type="Int32" Name="YearMakeId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="MakeId" Nullable="false" />
+    <Property Type="Int32" Name="Year" Nullable="false" />
+    <NavigationProperty Name="Make" Relationship="VincontrolModel.FK_YearMakes_Makes" FromRole="YearMake" ToRole="Make" />
+    <NavigationProperty Name="Models" Relationship="VincontrolModel.FK_Models_YearMakes" FromRole="YearMake" ToRole="Model" />
+  </EntityType>
+  <Association Name="vincontrolanswers_fk_answers_appraisals">
+    <End Type="VincontrolModel.Appraisal" Role="Appraisal" Multiplicity="1" />
+    <End Type="VincontrolModel.Answer" Role="Answer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Appraisal">
+        <PropertyRef Name="AppraisalId" />
+      </Principal>
+      <Dependent Role="Answer">
+        <PropertyRef Name="AppraisalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vincontrolanswers_fk_answers_questions">
+    <End Type="VincontrolModel.Question" Role="Question" Multiplicity="1" />
+    <End Type="VincontrolModel.Answer" Role="Answer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Question">
+        <PropertyRef Name="QuestionId" />
+      </Principal>
+      <Dependent Role="Answer">
+        <PropertyRef Name="QuestionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Appraisal_AppraisalStatusCode">
+    <End Type="VincontrolModel.AppraisalStatusCode" Role="AppraisalStatusCode" Multiplicity="0..1" />
+    <End Type="VincontrolModel.Appraisal" Role="Appraisal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AppraisalStatusCode">
+        <PropertyRef Name="AppraisalStatusCodeId" />
+      </Principal>
+      <Dependent Role="Appraisal">
+        <PropertyRef Name="AppraisalStatusCodeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Appraisal_Dealer">
+    <End Type="VincontrolModel.Dealer" Role="Dealer" Multiplicity="1" />
+    <End Type="VincontrolModel.Appraisal" Role="Appraisal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="Appraisal">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Appraisal_DealershipId">
+    <End Type="VincontrolModel.AppraisalCustomer" Role="AppraisalCustomer" Multiplicity="0..1" />
+    <End Type="VincontrolModel.Appraisal" Role="Appraisal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AppraisalCustomer">
+        <PropertyRef Name="AppraisalCustomerId" />
+      </Principal>
+      <Dependent Role="Appraisal">
+        <PropertyRef Name="AppraisalCustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Appraisal_User">
+    <End Type="VincontrolModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="VincontrolModel.Appraisal" Role="Appraisal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Appraisal">
+        <PropertyRef Name="VinGenieUserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Appraisal_User1">
+    <End Type="VincontrolModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="VincontrolModel.Appraisal" Role="Appraisal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Appraisal">
+        <PropertyRef Name="AppraisalById" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Appraisal_Vehicle">
+    <End Type="VincontrolModel.Vehicle" Role="Vehicle" Multiplicity="1" />
+    <End Type="VincontrolModel.Appraisal" Role="Appraisal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicle">
+        <PropertyRef Name="VehicleId" />
+      </Principal>
+      <Dependent Role="Appraisal">
+        <PropertyRef Name="VehicleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inventory_Appraisal">
+    <End Type="VincontrolModel.Appraisal" Role="Appraisal" Multiplicity="0..1" />
+    <End Type="VincontrolModel.Inventory" Role="Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Appraisal">
+        <PropertyRef Name="AppraisalId" />
+      </Principal>
+      <Dependent Role="Inventory">
+        <PropertyRef Name="AppraisalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vincontrolwalkaround_fk_walkaround_appraisal">
+    <End Type="VincontrolModel.Appraisal" Role="Appraisal" Multiplicity="1" />
+    <End Type="VincontrolModel.Walkaround" Role="Walkaround" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Appraisal">
+        <PropertyRef Name="AppraisalId" />
+      </Principal>
+      <Dependent Role="Walkaround">
+        <PropertyRef Name="AppraisalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AppraisalDealerActivity_DealerActivitySubTypeCode1">
+    <End Type="VincontrolModel.DealerActivitySubTypeCode" Role="DealerActivitySubTypeCode" Multiplicity="1" />
+    <End Type="VincontrolModel.AppraisalDealerActivity" Role="AppraisalDealerActivity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DealerActivitySubTypeCode">
+        <PropertyRef Name="DealerActivitySubTypeCodeId" />
+      </Principal>
+      <Dependent Role="AppraisalDealerActivity">
+        <PropertyRef Name="DealerActivitySubTypeCodeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AppraisalDealerActivity_User">
+    <End Type="VincontrolModel.User" Role="User" Multiplicity="1" />
+    <End Type="VincontrolModel.AppraisalDealerActivity" Role="AppraisalDealerActivity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="AppraisalDealerActivity">
+        <PropertyRef Name="UserStampId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AutoTraderDealer_Dealer">
+    <End Type="VincontrolModel.Dealer" Role="Dealer" Multiplicity="0..1" />
+    <End Type="VincontrolModel.AutoTraderDealer" Role="AutoTraderDealer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="AutoTraderDealer">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BucketJumpHistory_VehicleStatusCode">
+    <End Type="VincontrolModel.VehicleStatusCode" Role="VehicleStatusCode" Multiplicity="1" />
+    <End Type="VincontrolModel.BucketJumpHistory" Role="BucketJumpHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VehicleStatusCode">
+        <PropertyRef Name="VehicleStatusCodeId" />
+      </Principal>
+      <Dependent Role="BucketJumpHistory">
+        <PropertyRef Name="VehicleStatusCodeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_vincontroldealershipbuttons_vincontrolbuttons">
+    <End Type="VincontrolModel.Button" Role="Button" Multiplicity="1" />
+    <End Type="VincontrolModel.DealerButton" Role="DealerButton" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Button">
+        <PropertyRef Name="ButtonId" />
+      </Principal>
+      <Dependent Role="DealerButton">
+        <PropertyRef Name="ButtonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ChartSelection_VehicleStatusCode">
+    <End Type="VincontrolModel.VehicleStatusCode" Role="VehicleStatusCode" Multiplicity="1" />
+    <End Type="VincontrolModel.ChartSelection" Role="ChartSelection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VehicleStatusCode">
+        <PropertyRef Name="VehicleStatusCodeId" />
+      </Principal>
+      <Dependent Role="ChartSelection">
+        <PropertyRef Name="VehicleStatusCodeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DataFeedDealer_DataFeedCompany">
+    <End Type="VincontrolModel.DataFeedCompany" Role="DataFeedCompany" Multiplicity="1" />
+    <End Type="VincontrolModel.DataFeedDealer" Role="DataFeedDealer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DataFeedCompany">
+        <PropertyRef Name="DataFeedCompanyId" />
+      </Principal>
+      <Dependent Role="DataFeedDealer">
+        <PropertyRef Name="DataFeedCompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DataFeedDealer_Dealer">
+    <End Type="VincontrolModel.Dealer" Role="Dealer" Multiplicity="1" />
+    <End Type="VincontrolModel.DataFeedDealer" Role="DataFeedDealer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="DataFeedDealer">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Dealership_DealerGroupId">
+    <End Type="VincontrolModel.DealerGroup" Role="DealerGroup" Multiplicity="0..1" />
+    <End Type="VincontrolModel.Dealer" Role="Dealer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DealerGroup">
+        <PropertyRef Name="DealerGroupId" />
+      </Principal>
+      <Dependent Role="Dealer">
+        <PropertyRef Name="DealerGroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EbayAd_DealershipID">
+    <End Type="VincontrolModel.Dealer" Role="Dealer" Multiplicity="1" />
+    <End Type="VincontrolModel.Ebay" Role="Ebay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="Ebay">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FlyerShareDealerActivity_Dealer">
+    <End Type="VincontrolModel.Dealer" Role="Dealer" Multiplicity="1" />
+    <End Type="VincontrolModel.FlyerShareDealerActivity" Role="FlyerShareDealerActivity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="FlyerShareDealerActivity">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inventory_Dealer">
+    <End Type="VincontrolModel.Dealer" Role="Dealer" Multiplicity="1" />
+    <End Type="VincontrolModel.Inventory" Role="Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="Inventory">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NotificationSetting_DealershipId">
+    <End Type="VincontrolModel.Dealer" Role="Dealer" Multiplicity="1" />
+    <End Type="VincontrolModel.NotificationSetting" Role="NotificationSetting" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="NotificationSetting">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Rebate_DealershipID">
+    <End Type="VincontrolModel.Dealer" Role="Dealer" Multiplicity="1" />
+    <End Type="VincontrolModel.Rebate" Role="Rebate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="Rebate">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Setting_DealershipId">
+    <End Type="VincontrolModel.Dealer" Role="Dealer" Multiplicity="1" />
+    <End Type="VincontrolModel.Setting" Role="Setting" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="Setting">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SoldoutInventory_Dealer">
+    <End Type="VincontrolModel.Dealer" Role="Dealer" Multiplicity="1" />
+    <End Type="VincontrolModel.SoldoutInventory" Role="SoldoutInventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="SoldoutInventory">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TradeInComment_DealershipID">
+    <End Type="VincontrolModel.Dealer" Role="Dealer" Multiplicity="1" />
+    <End Type="VincontrolModel.TradeInComment" Role="TradeInComment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="TradeInComment">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TradeInCustomer_Dealer">
+    <End Type="VincontrolModel.Dealer" Role="Dealer" Multiplicity="1" />
+    <End Type="VincontrolModel.TradeInCustomer" Role="TradeInCustomer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="TradeInCustomer">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserNotification_DealershipID">
+    <End Type="VincontrolModel.Dealer" Role="Dealer" Multiplicity="1" />
+    <End Type="VincontrolModel.UserNotification" Role="UserNotification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="UserNotification">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_DealershipID">
+    <End Type="VincontrolModel.Dealer" Role="Dealer" Multiplicity="1" />
+    <End Type="VincontrolModel.UserPermission" Role="UserPermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="UserPermission">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_WarrantyType_DealershipId">
+    <End Type="VincontrolModel.Dealer" Role="Dealer" Multiplicity="1" />
+    <End Type="VincontrolModel.WarrantyType" Role="WarrantyType" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dealer">
+        <PropertyRef Name="DealerId" />
+      </Principal>
+      <Dependent Role="WarrantyType">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DealerActivity_DealerActivity">
+    <End Type="VincontrolModel.DealerActivitySubTypeCode" Role="DealerActivitySubTypeCode" Multiplicity="1" />
+    <End Type="VincontrolModel.InventoryDealerActivity" Role="InventoryDealerActivity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DealerActivitySubTypeCode">
+        <PropertyRef Name="DealerActivitySubTypeCodeId" />
+      </Principal>
+      <Dependent Role="InventoryDealerActivity">
+        <PropertyRef Name="DealerActivitySubTypeCodeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserDealerActivity_DealerActivitySubTypeCode">
+    <End Type="VincontrolModel.DealerActivitySubTypeCode" Role="DealerActivitySubTypeCode" Multiplicity="1" />
+    <End Type="VincontrolModel.UserDealerActivity" Role="UserDealerActivity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DealerActivitySubTypeCode">
+        <PropertyRef Name="DealerActivitySubTypeCodeId" />
+      </Principal>
+      <Dependent Role="UserDealerActivity">
+        <PropertyRef Name="DealerActivitySubTypeCodeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_vincontroldealershipbuttons_vincontrolgroups">
+    <End Type="VincontrolModel.Role" Role="Role" Multiplicity="1" />
+    <End Type="VincontrolModel.DealerButton" Role="DealerButton" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="DealerButton">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_DealerGroup">
+    <End Type="VincontrolModel.DealerGroup" Role="DealerGroup" Multiplicity="0..1" />
+    <End Type="VincontrolModel.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DealerGroup">
+        <PropertyRef Name="DealerGroupId" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="DealerGroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inventory_DescriptionTemplate">
+    <End Type="VincontrolModel.DescriptionTemplate" Role="DescriptionTemplate" Multiplicity="0..1" />
+    <End Type="VincontrolModel.Inventory" Role="Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DescriptionTemplate">
+        <PropertyRef Name="DescriptionTemplateId" />
+      </Principal>
+      <Dependent Role="Inventory">
+        <PropertyRef Name="DescriptionTemplateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EbayAd_InventoryId">
+    <End Type="VincontrolModel.Inventory" Role="Inventory" Multiplicity="1" />
+    <End Type="VincontrolModel.Ebay" Role="Ebay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Inventory">
+        <PropertyRef Name="InventoryId" />
+      </Principal>
+      <Dependent Role="Ebay">
+        <PropertyRef Name="InventoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FlyerShareDealerActivity_User">
+    <End Type="VincontrolModel.User" Role="User" Multiplicity="1" />
+    <End Type="VincontrolModel.FlyerShareDealerActivity" Role="FlyerShareDealerActivity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="FlyerShareDealerActivity">
+        <PropertyRef Name="UserStampId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inventory_InventoryStatusCode">
+    <End Type="VincontrolModel.InventoryStatusCode" Role="InventoryStatusCode" Multiplicity="1" />
+    <End Type="VincontrolModel.Inventory" Role="Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="InventoryStatusCode">
+        <PropertyRef Name="InventoryStatusCodeId" />
+      </Principal>
+      <Dependent Role="Inventory">
+        <PropertyRef Name="InventoryStatusCodeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inventory_User">
+    <End Type="VincontrolModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="VincontrolModel.Inventory" Role="Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Inventory">
+        <PropertyRef Name="AddToInventoryById" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Inventory_Vehicle">
+    <End Type="VincontrolModel.Vehicle" Role="Vehicle" Multiplicity="1" />
+    <End Type="VincontrolModel.Inventory" Role="Inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicle">
+        <PropertyRef Name="VehicleId" />
+      </Principal>
+      <Dependent Role="Inventory">
+        <PropertyRef Name="VehicleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InventoryDealerActivity_User">
+    <End Type="VincontrolModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="VincontrolModel.InventoryDealerActivity" Role="InventoryDealerActivity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="InventoryDealerActivity">
+        <PropertyRef Name="UserStampId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SoldoutInventory_VehicleStatusCode1">
+    <End Type="VincontrolModel.InventoryStatusCode" Role="InventoryStatusCode" Multiplicity="0..1" />
+    <End Type="VincontrolModel.SoldoutInventory" Role="SoldoutInventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="InventoryStatusCode">
+        <PropertyRef Name="InventoryStatusCodeId" />
+      </Principal>
+      <Dependent Role="SoldoutInventory">
+        <PropertyRef Name="InventoryStatusCodeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KellyBlueBook_VehicleStatusCode">
+    <End Type="VincontrolModel.VehicleStatusCode" Role="VehicleStatusCode" Multiplicity="0..1" />
+    <End Type="VincontrolModel.KellyBlueBook" Role="KellyBlueBook" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VehicleStatusCode">
+        <PropertyRef Name="VehicleStatusCodeId" />
+      </Principal>
+      <Dependent Role="KellyBlueBook">
+        <PropertyRef Name="VehicleStatusCodeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_YearMakes_Makes">
+    <End Type="VincontrolModel.Make" Role="Make" Multiplicity="1" />
+    <End Type="VincontrolModel.YearMake" Role="YearMake" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Make">
+        <PropertyRef Name="MakeId" />
+      </Principal>
+      <Dependent Role="YearMake">
+        <PropertyRef Name="MakeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="manheimyearmakes_makeId">
+    <End Type="VincontrolModel.ManheimMake" Role="ManheimMake" Multiplicity="1" />
+    <End Type="VincontrolModel.ManheimYearMake" Role="ManheimYearMake" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ManheimMake">
+        <PropertyRef Name="ManheimMakeId" />
+      </Principal>
+      <Dependent Role="ManheimYearMake">
+        <PropertyRef Name="MakeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="manheimmakemodels_model">
+    <End Type="VincontrolModel.ManheimModel" Role="ManheimModel" Multiplicity="1" />
+    <End Type="VincontrolModel.ManheimMakeModel" Role="ManheimMakeModel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ManheimModel">
+        <PropertyRef Name="ManheimModelId" />
+      </Principal>
+      <Dependent Role="ManheimMakeModel">
+        <PropertyRef Name="ModelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="manheimmakemodels_yearmake">
+    <End Type="VincontrolModel.ManheimYearMake" Role="ManheimYearMake" Multiplicity="1" />
+    <End Type="VincontrolModel.ManheimMakeModel" Role="ManheimMakeModel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ManheimYearMake">
+        <PropertyRef Name="ManheimYearMakeId" />
+      </Principal>
+      <Dependent Role="ManheimMakeModel">
+        <PropertyRef Name="YearMakeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="manheimmodeltrims_makemodel">
+    <End Type="VincontrolModel.ManheimMakeModel" Role="ManheimMakeModel" Multiplicity="1" />
+    <End Type="VincontrolModel.ManheimModelTrim" Role="ManheimModelTrim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ManheimMakeModel">
+        <PropertyRef Name="ManheimMakeModelId" />
+      </Principal>
+      <Dependent Role="ManheimModelTrim">
+        <PropertyRef Name="MakeModelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="manheimmodeltrims_trim">
+    <End Type="VincontrolModel.ManheimTrim" Role="ManheimTrim" Multiplicity="1" />
+    <End Type="VincontrolModel.ManheimModelTrim" Role="ManheimModelTrim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ManheimTrim">
+        <PropertyRef Name="ManheimTrimId" />
+      </Principal>
+      <Dependent Role="ManheimModelTrim">
+        <PropertyRef Name="TrimId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ManheimValue_VehicleStatusCode">
+    <End Type="VincontrolModel.VehicleStatusCode" Role="VehicleStatusCode" Multiplicity="0..1" />
+    <End Type="VincontrolModel.ManheimValue" Role="ManheimValue" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VehicleStatusCode">
+        <PropertyRef Name="VehicleStatusCodeId" />
+      </Principal>
+      <Dependent Role="ManheimValue">
+        <PropertyRef Name="VehicleStatusCodeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Models_YearMakes">
+    <End Type="VincontrolModel.YearMake" Role="YearMake" Multiplicity="1" />
+    <End Type="VincontrolModel.Model" Role="Model" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="YearMake">
+        <PropertyRef Name="YearMakeId" />
+      </Principal>
+      <Dependent Role="Model">
+        <PropertyRef Name="YearMakeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Trims_Models">
+    <End Type="VincontrolModel.Model" Role="Model" Multiplicity="1" />
+    <End Type="VincontrolModel.Trim" Role="Trim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Model">
+        <PropertyRef Name="ModelId" />
+      </Principal>
+      <Dependent Role="Trim">
+        <PropertyRef Name="ModelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TrimOption_Option">
+    <End Type="VincontrolModel.Option" Role="Option" Multiplicity="1" />
+    <End Type="VincontrolModel.TrimOption" Role="TrimOption" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Option">
+        <PropertyRef Name="OptionId" />
+      </Principal>
+      <Dependent Role="TrimOption">
+        <PropertyRef Name="OptionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TrimPackages_Trims">
+    <End Type="VincontrolModel.Package" Role="Package" Multiplicity="1" />
+    <End Type="VincontrolModel.TrimPackage" Role="TrimPackage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Package">
+        <PropertyRef Name="PackageId" />
+      </Principal>
+      <Dependent Role="TrimPackage">
+        <PropertyRef Name="PackageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vincontrolgrouppermissions_fk_grouppermission_permissioncodes">
+    <End Type="VincontrolModel.PermissionCode" Role="PermissionCode" Multiplicity="1" />
+    <End Type="VincontrolModel.RolePermission" Role="RolePermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PermissionCode">
+        <PropertyRef Name="PermissionCodeId" />
+      </Principal>
+      <Dependent Role="RolePermission">
+        <PropertyRef Name="PermissionCodeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vincontrolgrouppermissions_fk_grouppermission_permissionvalue">
+    <End Type="VincontrolModel.PermissionValue" Role="PermissionValue" Multiplicity="1" />
+    <End Type="VincontrolModel.RolePermission" Role="RolePermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PermissionValue">
+        <PropertyRef Name="PermissionValueId" />
+      </Principal>
+      <Dependent Role="RolePermission">
+        <PropertyRef Name="PermissionValueId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PriceChangeHistory_VehicleStatusCode">
+    <End Type="VincontrolModel.VehicleStatusCode" Role="VehicleStatusCode" Multiplicity="1" />
+    <End Type="VincontrolModel.PriceChangeHistory" Role="PriceChangeHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VehicleStatusCode">
+        <PropertyRef Name="VehicleStatusCodeId" />
+      </Principal>
+      <Dependent Role="PriceChangeHistory">
+        <PropertyRef Name="VehicleStatusCodeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vincontrolquestions_fk_questions_questiontype">
+    <End Type="VincontrolModel.QuestionType" Role="QuestionType" Multiplicity="1" />
+    <End Type="VincontrolModel.Question" Role="Question" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="QuestionType">
+        <PropertyRef Name="QuestionTypeId" />
+      </Principal>
+      <Dependent Role="Question">
+        <PropertyRef Name="QuestionTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserInfo_Group">
+    <End Type="VincontrolModel.Role" Role="Role" Multiplicity="1" />
+    <End Type="VincontrolModel.UserPermission" Role="UserPermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="UserPermission">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vincontrolgrouppermissions_fk_grouppermission_group">
+    <End Type="VincontrolModel.Role" Role="Role" Multiplicity="1" />
+    <End Type="VincontrolModel.RolePermission" Role="RolePermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="RolePermission">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vincontrolsentence_fk_sentence_type">
+    <End Type="VincontrolModel.SentenceType" Role="SentenceType" Multiplicity="1" />
+    <End Type="VincontrolModel.Sentence" Role="Sentence" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SentenceType">
+        <PropertyRef Name="SentenceTypeId" />
+      </Principal>
+      <Dependent Role="Sentence">
+        <PropertyRef Name="SentenceTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SoldoutInventory_DealershipID">
+    <End Type="VincontrolModel.Vehicle" Role="Vehicle" Multiplicity="1" />
+    <End Type="VincontrolModel.SoldoutInventory" Role="SoldoutInventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicle">
+        <PropertyRef Name="VehicleId" />
+      </Principal>
+      <Dependent Role="SoldoutInventory">
+        <PropertyRef Name="VehicleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SoldoutInventory_SoldoutInventory">
+    <End Type="VincontrolModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="VincontrolModel.SoldoutInventory" Role="SoldoutInventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="SoldoutInventory">
+        <PropertyRef Name="AddToInventoryById" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TrimOptions_Trims">
+    <End Type="VincontrolModel.Trim" Role="Trim" Multiplicity="1" />
+    <End Type="VincontrolModel.TrimOption" Role="TrimOption" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Trim">
+        <PropertyRef Name="TrimId" />
+      </Principal>
+      <Dependent Role="TrimOption">
+        <PropertyRef Name="TrimId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserDealerActivity_User">
+    <End Type="VincontrolModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="VincontrolModel.UserDealerActivity" Role="UserDealerActivity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserDealerActivity">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserDealerActivity_User1">
+    <End Type="VincontrolModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="VincontrolModel.UserDealerActivity" Role="UserDealerActivity" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserDealerActivity">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserNotification_User">
+    <End Type="VincontrolModel.User" Role="User" Multiplicity="1" />
+    <End Type="VincontrolModel.UserNotification" Role="UserNotification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserNotification">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserPermission_User">
+    <End Type="VincontrolModel.User" Role="User" Multiplicity="1" />
+    <End Type="VincontrolModel.UserPermission" Role="UserPermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="UserPermission">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

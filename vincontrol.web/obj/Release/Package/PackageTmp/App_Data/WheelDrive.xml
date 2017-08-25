@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<WheelDrive>
+  <Drive Name="1042" Value="Front Wheel Drive" Short="FWD"></Drive>
+  <Drive Name="1043" Value="Rear Wheel Drive"  Short="RWD"></Drive>
+  <Drive Name="1040" Value="Four Wheel Drive"  Short="4WD"></Drive>
+  <Drive Name="1041" Value="All Wheel Drive"   Short="AWD"></Drive>
+  <Drive Name="1044" Value="Dual Rear Wheels"  Short="Dual-RWD"></Drive>
+</WheelDrive>

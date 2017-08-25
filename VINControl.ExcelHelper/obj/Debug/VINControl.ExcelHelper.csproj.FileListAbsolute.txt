@@ -1,0 +1,7 @@
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.ExcelHelper\bin\Debug\VINControl.ExcelHelper.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.ExcelHelper\bin\Debug\VINControl.ExcelHelper.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.ExcelHelper\bin\Debug\ClosedXML.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.ExcelHelper\bin\Debug\DocumentFormat.OpenXml.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.ExcelHelper\bin\Debug\ClosedXML.xml
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.ExcelHelper\obj\Debug\VINControl.ExcelHelper.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.ExcelHelper\obj\Debug\VINControl.ExcelHelper.pdb

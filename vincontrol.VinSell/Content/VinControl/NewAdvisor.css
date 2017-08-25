@@ -1,0 +1,130 @@
+.ap_advisor_holder_v2 {
+    padding-left: 20px;
+    height: 600px;
+    overflow: auto;
+    width: 1039px;
+}
+
+#ap_advisor_table {
+	table-layout: fixed;
+	border-collapse: collapse;
+	width: 1022px;
+}
+
+.apa_table_header {
+	position: relative;
+	padding-top: 10px;
+	height: 25px;
+	background-color: #BEBEBE;
+	margin-left: 20px;
+}
+
+.apa_condition {
+	width: 55px;
+	text-align: center;
+}
+
+.apa_age {
+	width: 40px;
+	text-align: center;
+}
+
+.apa_year {
+	width: 50px;
+	text-align: center;
+}
+
+.apa_make {
+	width: 70px;
+	text-align: center;
+}
+
+.apa_model {
+	width: 80px;
+	text-align: center;
+}
+.apa_trim {
+	width: 77px;
+	text-align: center;
+}
+#ap_advisor_table tr:nth-child(odd) {
+
+}
+#ap_advisor_table tr:nth-child(even) {
+	background-color: white;
+}
+
+#ap_advisor_table td, #ap_advisor_table th {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /* Firefox */
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 0px 4px;
+	white-space: nowrap;
+	text-align: left;
+    font-size: 13px;
+}
+.apa_client {
+	width: 130px;
+	text-align: center;
+}
+
+.apa_email {
+	width: 130px;
+	text-align: center;
+}
+
+.apa_phone {
+	width: 90px;
+	text-align: center;
+}
+#ap_advisor_table tr {
+	height: 35px;
+}
+.apa_value {
+	width: 80px;
+}
+
+.apa_acv {
+	width: 130px;
+}
+
+.apa_status {
+	width: 90px;
+}
+
+.apa_condition img {
+
+}
+.apa_acv label {
+
+}
+.apa_acv_input {
+	height:16px;
+	border: 1px solid #008000;
+	margin: 0px;
+	width: 67px!important;
+	font-size: 12px;
+	padding-left: 4px;
+	display: block;
+	float: left;
+}
+.apa_acv_button {
+	 border: 1px solid #008000;
+    cursor: pointer;
+    font-size: 12px;
+    height: 20px;
+    margin: 0 0 0 -1px;
+    padding: 0;
+    width: 46px;
+}
+.apa_status_select {
+width: 98%;
+border: 1px solid #808080;
+}
+
+.apa_value input {
+	border: 1px solid #008000;
+	width: 65px;
+	text-align: center;
+}

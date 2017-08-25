@@ -1,0 +1,9 @@
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.TaskScheduler\bin\Debug\vincontrol.TaskScheduler.dll
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.TaskScheduler\bin\Debug\vincontrol.TaskScheduler.pdb
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.TaskScheduler\obj\Debug\vincontrol.TaskScheduler.dll
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.TaskScheduler\obj\Debug\vincontrol.TaskScheduler.pdb
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.TaskScheduler\obj\Debug\Vincontrol.TaskScheduler.csprojResolveAssemblyReference.cache
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.TaskScheduler\bin\Debug\vincontrol.TaskScheduler.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.TaskScheduler\bin\Debug\vincontrol.TaskScheduler.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.TaskScheduler\obj\Debug\vincontrol.TaskScheduler.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.TaskScheduler\obj\Debug\vincontrol.TaskScheduler.pdb

@@ -1,0 +1,7 @@
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.StockingGuide.DataService.Test\bin\Debug\vincontrol.StockingGuide.DataService.Test.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.StockingGuide.DataService.Test\bin\Debug\vincontrol.StockingGuide.DataService.Test.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.StockingGuide.DataService.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.StockingGuide.DataService.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.StockingGuide.DataService.Test\obj\Debug\vincontrol.StockingGuide.DataService.Test.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.StockingGuide.DataService.Test\obj\Debug\vincontrol.StockingGuide.DataService.Test.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.StockingGuide.DataService.Test\obj\Debug\vincontrol.StockingGuide.DataService.Test.csprojResolveAssemblyReference.cache

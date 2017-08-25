@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D27B4024-D4B4-44F8-9CF8-877A9D20F4BD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vincontrol.Marketing</RootNamespace>
+    <AssemblyName>Vincontrol.Marketing</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HiQPdf">
+      <HintPath>..\Package\HiQPdf.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\Package\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MVC 4.0\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IMarketing.cs" />
+    <Compile Include="Marketing.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\vincontrol.Application\vincontrol.Application.csproj">
+      <Project>{7f0f1443-be02-4bad-8e5c-34aded92dca3}</Project>
+      <Name>vincontrol.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.CarFax\vincontrol.CarFax.csproj">
+      <Project>{e5c5fbb2-88d1-4dc3-ae3a-4ca4e3e4c75e}</Project>
+      <Name>vincontrol.CarFax</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.Constant\vincontrol.Constant.csproj">
+      <Project>{ad3324ca-2044-4c68-be5d-ccb63ad12897}</Project>
+      <Name>vincontrol.Constant</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.Data\vincontrol.Data.csproj">
+      <Project>{7d76e800-c9d8-407a-8844-a775ee6d5a65}</Project>
+      <Name>vincontrol.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.EmailHelper\vincontrol.EmailHelper.csproj">
+      <Project>{b54c9c64-f5b1-4e8b-8f4e-d269fbd9cef2}</Project>
+      <Name>vincontrol.EmailHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.Helper\vincontrol.Helper.csproj">
+      <Project>{9b02affb-392b-46d8-a75d-a0a5d521222c}</Project>
+      <Name>vincontrol.Helper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

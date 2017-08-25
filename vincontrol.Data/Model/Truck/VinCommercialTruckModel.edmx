@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="VinCommercialTruckModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="VinCommercialTruckModelStoreContainer">
+          <EntitySet Name="CommercialTruck" EntityType="VinCommercialTruckModel.Store.CommercialTruck" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CommercialTruckDealer" EntityType="VinCommercialTruckModel.Store.CommercialTruckDealer" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CommercialTruckSoldOut" EntityType="VinCommercialTruckModel.Store.CommercialTruckSoldOut" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_CommercialTruck_CommercialTruck" Association="VinCommercialTruckModel.Store.FK_CommercialTruck_CommercialTruck">
+            <End Role="CommercialTruckDealer" EntitySet="CommercialTruckDealer" />
+            <End Role="CommercialTruck" EntitySet="CommercialTruck" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CommercialTruckSoldOut_CommercialTruckSoldOut" Association="VinCommercialTruckModel.Store.FK_CommercialTruckSoldOut_CommercialTruckSoldOut">
+            <End Role="CommercialTruckDealer" EntitySet="CommercialTruckDealer" />
+            <End Role="CommercialTruckSoldOut" EntitySet="CommercialTruckSoldOut" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="CommercialTruck">
+          <Key>
+            <PropertyRef Name="TruckId" />
+          </Key>
+          <Property Name="TruckId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CommercialTruckId" Type="int" Nullable="false" />
+          <Property Name="DealerId" Type="int" />
+          <Property Name="Year" Type="int" Nullable="false" />
+          <Property Name="Make" Type="nvarchar" Nullable="false" MaxLength="250" />
+          <Property Name="Model" Type="nvarchar" Nullable="false" MaxLength="250" />
+          <Property Name="Trim" Type="nvarchar" MaxLength="250" />
+          <Property Name="Vin" Type="nvarchar" MaxLength="250" />
+          <Property Name="Stock" Type="nvarchar" MaxLength="250" />
+          <Property Name="ExteriorColor" Type="nvarchar" MaxLength="250" />
+          <Property Name="InteriorColor" Type="nvarchar" MaxLength="250" />
+          <Property Name="BodyStyle" Type="nvarchar" MaxLength="250" />
+          <Property Name="Engine" Type="nvarchar" MaxLength="250" />
+          <Property Name="Fuel" Type="nvarchar" MaxLength="250" />
+          <Property Name="Transmission" Type="nvarchar" MaxLength="250" />
+          <Property Name="DriveTrain" Type="nvarchar" MaxLength="250" />
+          <Property Name="Price" Type="int" Nullable="false" />
+          <Property Name="Mileage" Type="int" Nullable="false" />
+          <Property Name="Description" Type="ntext" />
+          <Property Name="Package" Type="ntext" />
+          <Property Name="IsNew" Type="bit" Nullable="false" />
+          <Property Name="DateStamp" Type="datetime" Nullable="false" />
+          <Property Name="Images" Type="ntext" />
+          <Property Name="Category" Type="nvarchar" MaxLength="250" />
+          <Property Name="Class" Type="nvarchar" MaxLength="250" />
+          <Property Name="Url" Type="nvarchar" MaxLength="250" />
+          <Property Name="Litter" Type="nvarchar" MaxLength="250" />
+          <Property Name="Updated" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CommercialTruckDealer">
+          <Key>
+            <PropertyRef Name="DealerId" />
+          </Key>
+          <Property Name="DealerId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CommercialTruckDealerId" Type="int" Nullable="false" />
+          <Property Name="DealerGroupId" Type="nvarchar" MaxLength="10" />
+          <Property Name="Name" Type="nvarchar" MaxLength="150" />
+          <Property Name="Address" Type="nvarchar" MaxLength="150" />
+          <Property Name="City" Type="nvarchar" MaxLength="150" />
+          <Property Name="State" Type="nvarchar" MaxLength="150" />
+          <Property Name="ZipCode" Type="int" Nullable="false" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="150" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="Latitude" Type="float" />
+          <Property Name="Longitude" Type="float" />
+          <Property Name="DateStamp" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CommercialTruckSoldOut">
+          <Key>
+            <PropertyRef Name="SoldOutTruckId" />
+          </Key>
+          <Property Name="SoldOutTruckId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="TruckId" Type="int" Nullable="false" />
+          <Property Name="CommercialTruckId" Type="int" Nullable="false" />
+          <Property Name="DealerId" Type="int" />
+          <Property Name="Year" Type="int" Nullable="false" />
+          <Property Name="Make" Type="nvarchar" Nullable="false" MaxLength="250" />
+          <Property Name="Model" Type="nvarchar" Nullable="false" MaxLength="250" />
+          <Property Name="Trim" Type="nvarchar" MaxLength="250" />
+          <Property Name="Vin" Type="nvarchar" MaxLength="250" />
+          <Property Name="Stock" Type="nvarchar" MaxLength="250" />
+          <Property Name="ExteriorColor" Type="nvarchar" MaxLength="250" />
+          <Property Name="InteriorColor" Type="nvarchar" MaxLength="250" />
+          <Property Name="BodyStyle" Type="nvarchar" MaxLength="250" />
+          <Property Name="Engine" Type="nvarchar" MaxLength="250" />
+          <Property Name="Fuel" Type="nvarchar" MaxLength="250" />
+          <Property Name="Transmission" Type="nvarchar" MaxLength="250" />
+          <Property Name="DriveTrain" Type="nvarchar" MaxLength="250" />
+          <Property Name="Price" Type="int" Nullable="false" />
+          <Property Name="Mileage" Type="int" Nullable="false" />
+          <Property Name="Description" Type="ntext" />
+          <Property Name="Package" Type="ntext" />
+          <Property Name="IsNew" Type="bit" Nullable="false" />
+          <Property Name="DateStamp" Type="datetime" Nullable="false" />
+          <Property Name="Images" Type="ntext" />
+          <Property Name="Category" Type="nvarchar" MaxLength="250" />
+          <Property Name="Class" Type="nvarchar" MaxLength="250" />
+          <Property Name="Url" Type="nvarchar" MaxLength="250" />
+          <Property Name="Litter" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <Association Name="FK_CommercialTruck_CommercialTruck">
+          <End Role="CommercialTruckDealer" Type="VinCommercialTruckModel.Store.CommercialTruckDealer" Multiplicity="0..1" />
+          <End Role="CommercialTruck" Type="VinCommercialTruckModel.Store.CommercialTruck" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CommercialTruckDealer">
+              <PropertyRef Name="DealerId" />
+            </Principal>
+            <Dependent Role="CommercialTruck">
+              <PropertyRef Name="DealerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CommercialTruckSoldOut_CommercialTruckSoldOut">
+          <End Role="CommercialTruckDealer" Type="VinCommercialTruckModel.Store.CommercialTruckDealer" Multiplicity="0..1" />
+          <End Role="CommercialTruckSoldOut" Type="VinCommercialTruckModel.Store.CommercialTruckSoldOut" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CommercialTruckDealer">
+              <PropertyRef Name="DealerId" />
+            </Principal>
+            <Dependent Role="CommercialTruckSoldOut">
+              <PropertyRef Name="DealerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="VinCommercialTruckModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="VinCommercialTruckEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CommercialTrucks" EntityType="VinCommercialTruckModel.CommercialTruck" />
+          <EntitySet Name="CommercialTruckSoldOuts" EntityType="VinCommercialTruckModel.CommercialTruckSoldOut" />
+          <EntitySet Name="CommercialTruckDealers" EntityType="VinCommercialTruckModel.CommercialTruckDealer" />
+          <AssociationSet Name="FK_CommercialTruck_CommercialTruck" Association="VinCommercialTruckModel.FK_CommercialTruck_CommercialTruck">
+            <End Role="CommercialTruckDealer" EntitySet="CommercialTruckDealers" />
+            <End Role="CommercialTruck" EntitySet="CommercialTrucks" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CommercialTruckSoldOut_CommercialTruckSoldOut" Association="VinCommercialTruckModel.FK_CommercialTruckSoldOut_CommercialTruckSoldOut">
+            <End Role="CommercialTruckDealer" EntitySet="CommercialTruckDealers" />
+            <End Role="CommercialTruckSoldOut" EntitySet="CommercialTruckSoldOuts" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="CommercialTruck">
+          <Key>
+            <PropertyRef Name="TruckId" />
+          </Key>
+          <Property Name="TruckId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CommercialTruckId" Type="Int32" Nullable="false" />
+          <Property Name="DealerId" Type="Int32" />
+          <Property Name="Year" Type="Int32" Nullable="false" />
+          <Property Name="Make" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Model" Type="String" Nullable="false" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Trim" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Vin" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Stock" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="ExteriorColor" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="InteriorColor" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="BodyStyle" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Engine" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Fuel" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Transmission" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="DriveTrain" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Price" Type="Int32" Nullable="false" />
+          <Property Name="Mileage" Type="Int32" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Package" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="IsNew" Type="Boolean" Nullable="false" />
+          <Property Name="DateStamp" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Images" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Category" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Class" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Url" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Name="Litter" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <Property Type="DateTime" Name="Updated" Nullable="false" Precision="3" />
+          <NavigationProperty Name="CommercialTruckDealer" Relationship="VinCommercialTruckModel.FK_CommercialTruck_CommercialTruck" FromRole="CommercialTruck" ToRole="CommercialTruckDealer" />
+        </EntityType>
+        <EntityType Name="CommercialTruckSoldOut">
+          <Key>
+            <PropertyRef Name="SoldOutTruckId" />
+          </Key>
+          <Property Type="Int32" Name="SoldOutTruckId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="TruckId" Nullable="false" />
+          <Property Type="Int32" Name="CommercialTruckId" Nullable="false" />
+          <Property Type="Int32" Name="DealerId" />
+          <Property Type="Int32" Name="Year" Nullable="false" />
+          <Property Type="String" Name="Make" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Model" Nullable="false" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Trim" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Vin" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Stock" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="ExteriorColor" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="InteriorColor" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="BodyStyle" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Engine" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Fuel" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Transmission" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="DriveTrain" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="Price" Nullable="false" />
+          <Property Type="Int32" Name="Mileage" Nullable="false" />
+          <Property Type="String" Name="Description" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Package" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="Boolean" Name="IsNew" Nullable="false" />
+          <Property Type="DateTime" Name="DateStamp" Nullable="false" Precision="3" />
+          <Property Type="String" Name="Images" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Category" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Class" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Url" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Litter" MaxLength="250" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="CommercialTruckDealer" Relationship="VinCommercialTruckModel.FK_CommercialTruckSoldOut_CommercialTruckSoldOut" FromRole="CommercialTruckSoldOut" ToRole="CommercialTruckDealer" />
+        </EntityType>
+        <EntityType Name="CommercialTruckDealer">
+          <Key>
+            <PropertyRef Name="DealerId" />
+          </Key>
+          <Property Type="Int32" Name="DealerId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="Int32" Name="CommercialTruckDealerId" Nullable="false" />
+          <Property Type="String" Name="DealerGroupId" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Name" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Address" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="City" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="State" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="ZipCode" Nullable="false" />
+          <Property Type="String" Name="Phone" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Email" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Double" Name="Latitude" />
+          <Property Type="Double" Name="Longitude" />
+          <Property Type="DateTime" Name="DateStamp" Nullable="false" Precision="3" />
+          <NavigationProperty Name="CommercialTrucks" Relationship="VinCommercialTruckModel.FK_CommercialTruck_CommercialTruck" FromRole="CommercialTruckDealer" ToRole="CommercialTruck" />
+          <NavigationProperty Name="CommercialTruckSoldOuts" Relationship="VinCommercialTruckModel.FK_CommercialTruckSoldOut_CommercialTruckSoldOut" FromRole="CommercialTruckDealer" ToRole="CommercialTruckSoldOut" />
+        </EntityType>
+        <Association Name="FK_CommercialTruck_CommercialTruck">
+          <End Type="VinCommercialTruckModel.CommercialTruckDealer" Role="CommercialTruckDealer" Multiplicity="0..1" />
+          <End Type="VinCommercialTruckModel.CommercialTruck" Role="CommercialTruck" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CommercialTruckDealer">
+              <PropertyRef Name="DealerId" />
+            </Principal>
+            <Dependent Role="CommercialTruck">
+              <PropertyRef Name="DealerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CommercialTruckSoldOut_CommercialTruckSoldOut">
+          <End Type="VinCommercialTruckModel.CommercialTruckDealer" Role="CommercialTruckDealer" Multiplicity="0..1" />
+          <End Type="VinCommercialTruckModel.CommercialTruckSoldOut" Role="CommercialTruckSoldOut" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CommercialTruckDealer">
+              <PropertyRef Name="DealerId" />
+            </Principal>
+            <Dependent Role="CommercialTruckSoldOut">
+              <PropertyRef Name="DealerId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="VinCommercialTruckModelStoreContainer" CdmEntityContainer="VinCommercialTruckEntities">
+          <EntitySetMapping Name="CommercialTrucks">
+            <EntityTypeMapping TypeName="VinCommercialTruckModel.CommercialTruck">
+              <MappingFragment StoreEntitySet="CommercialTruck">
+                <ScalarProperty Name="Updated" ColumnName="Updated" />
+                <ScalarProperty Name="TruckId" ColumnName="TruckId" />
+                <ScalarProperty Name="CommercialTruckId" ColumnName="CommercialTruckId" />
+                <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+                <ScalarProperty Name="Year" ColumnName="Year" />
+                <ScalarProperty Name="Make" ColumnName="Make" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="Trim" ColumnName="Trim" />
+                <ScalarProperty Name="Vin" ColumnName="Vin" />
+                <ScalarProperty Name="Stock" ColumnName="Stock" />
+                <ScalarProperty Name="ExteriorColor" ColumnName="ExteriorColor" />
+                <ScalarProperty Name="InteriorColor" ColumnName="InteriorColor" />
+                <ScalarProperty Name="BodyStyle" ColumnName="BodyStyle" />
+                <ScalarProperty Name="Engine" ColumnName="Engine" />
+                <ScalarProperty Name="Fuel" ColumnName="Fuel" />
+                <ScalarProperty Name="Transmission" ColumnName="Transmission" />
+                <ScalarProperty Name="DriveTrain" ColumnName="DriveTrain" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="Mileage" ColumnName="Mileage" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Package" ColumnName="Package" />
+                <ScalarProperty Name="IsNew" ColumnName="IsNew" />
+                <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+                <ScalarProperty Name="Images" ColumnName="Images" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="Class" ColumnName="Class" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="Litter" ColumnName="Litter" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CommercialTruckSoldOuts">
+            <EntityTypeMapping TypeName="VinCommercialTruckModel.CommercialTruckSoldOut">
+              <MappingFragment StoreEntitySet="CommercialTruckSoldOut">
+                <ScalarProperty Name="Litter" ColumnName="Litter" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="Class" ColumnName="Class" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="Images" ColumnName="Images" />
+                <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+                <ScalarProperty Name="IsNew" ColumnName="IsNew" />
+                <ScalarProperty Name="Package" ColumnName="Package" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Mileage" ColumnName="Mileage" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="DriveTrain" ColumnName="DriveTrain" />
+                <ScalarProperty Name="Transmission" ColumnName="Transmission" />
+                <ScalarProperty Name="Fuel" ColumnName="Fuel" />
+                <ScalarProperty Name="Engine" ColumnName="Engine" />
+                <ScalarProperty Name="BodyStyle" ColumnName="BodyStyle" />
+                <ScalarProperty Name="InteriorColor" ColumnName="InteriorColor" />
+                <ScalarProperty Name="ExteriorColor" ColumnName="ExteriorColor" />
+                <ScalarProperty Name="Stock" ColumnName="Stock" />
+                <ScalarProperty Name="Vin" ColumnName="Vin" />
+                <ScalarProperty Name="Trim" ColumnName="Trim" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="Make" ColumnName="Make" />
+                <ScalarProperty Name="Year" ColumnName="Year" />
+                <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+                <ScalarProperty Name="CommercialTruckId" ColumnName="CommercialTruckId" />
+                <ScalarProperty Name="TruckId" ColumnName="TruckId" />
+                <ScalarProperty Name="SoldOutTruckId" ColumnName="SoldOutTruckId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CommercialTruckDealers">
+            <EntityTypeMapping TypeName="VinCommercialTruckModel.CommercialTruckDealer">
+              <MappingFragment StoreEntitySet="CommercialTruckDealer">
+                <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+                <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+                <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="DealerGroupId" ColumnName="DealerGroupId" />
+                <ScalarProperty Name="CommercialTruckDealerId" ColumnName="CommercialTruckDealerId" />
+                <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Default" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram DiagramId="b2b74678f3a2499eb854c539faebe072" Name="Diagram1">
+        <EntityTypeShape EntityType="VinCommercialTruckModel.CommercialTruck" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="VinCommercialTruckModel.CommercialTruckSoldOut" Width="1.5" PointX="5.9813584210264308" PointY="25.748703923890695" />
+        <EntityTypeShape EntityType="VinCommercialTruckModel.CommercialTruckDealer" Width="1.5" PointX="4.1690910086823116" PointY="1.2878424531257908" />
+        <AssociationConnector Association="VinCommercialTruckModel.FK_CommercialTruck_CommercialTruck" />
+        <AssociationConnector Association="VinCommercialTruckModel.FK_CommercialTruckSoldOut_CommercialTruckSoldOut" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

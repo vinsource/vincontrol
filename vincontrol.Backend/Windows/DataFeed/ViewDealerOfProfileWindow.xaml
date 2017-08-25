@@ -1,0 +1,120 @@
+﻿<Window x:Class="vincontrol.Backend.Windows.DataFeed.ViewDealerOfProfileWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        WindowStartupLocation="CenterScreen" 
+        xmlns:my="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Input.Toolkit"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" xmlns:helper="clr-namespace:vincontrol.Backend.Helper"
+        Title="Dealer Management for Importing Profile" Height="700" Width="1000">
+    <Grid Height="711" HorizontalAlignment="Stretch">
+        <StackPanel Margin="0,0,0,54">
+            <DataGrid helper:DataGridExtensions.DataContextForColumns="{Binding Mode=OneWay}"  CanUserAddRows="False" AutoGenerateColumns="False" Height="315" HorizontalAlignment="Stretch" ItemsSource="{Binding SelectedDealers}" FontSize="12">
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn >
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Width="40" Height="20" Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}, Path= DataContext.DeleteImportDealerCommand}" CommandParameter="{Binding}" HorizontalAlignment="Right" VerticalAlignment="Top" Name="linkDelete" IsTabStop="False" >
+                                    <Button.Content>
+                                        <Image Margin="5,0,5,0" VerticalAlignment="Center" Stretch="Uniform"  Cursor="Hand" Source="../../../Images/delete.png" />
+                                    </Button.Content>
+                                </Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn  Width="75"  Header="Discontinue" >
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <CheckBox IsChecked="{Binding Discontinued, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></CheckBox>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTextColumn Header="Dealer Name" Width="120"  Binding="{Binding Path=DealerName}" FontSize="13"/>
+                    <DataGridTemplateColumn  Width="270"  Header="Feed Url" >
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBox Text="{Binding FeedUrl, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTextColumn Header="Last Deposited Date" Width="200" Visibility= "{Binding DataContext.IsBundle,RelativeSource={RelativeSource Self},  Converter={StaticResource HiddenConverter}}" Binding="{Binding Path=LastDepositedDate}"/>
+                    <!--<DataGridTextColumn Header="File URL" Visibility= "{Binding DataContext.IsBundle,RelativeSource={RelativeSource Self},  Converter={StaticResource HiddenConverter}}"  Width="150"  Binding="{Binding Path=FileUrl}"/>-->
+                    <DataGridTemplateColumn Width="150" Header="File URL" Visibility= "{Binding DataContext.IsBundle,RelativeSource={RelativeSource Self},  Converter={StaticResource HiddenConverter}}" >
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Height="23"   Width="150" Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}, Path= DataContext.DownloadFileCommand}" CommandParameter="{Binding FileUrl}" Content="{Binding FileUrl}"></Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <!--<DataGridTemplateColumn  Width="90" >
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="Test Import" Width="90" Height="20" Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}, Path= DataContext.TestImportCommand}" CommandParameter="{Binding}" HorizontalAlignment="Right" VerticalAlignment="Top" Name="linkDelete" IsTabStop="False" >
+                                </Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>-->
+                    <!--<DataGridTemplateColumn Visibility= "{Binding DataContext.IsBundle,RelativeSource={RelativeSource Self},  Converter={StaticResource HiddenConverter}}" Width="150"  Header="File Name" >
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Height="23"  Width="100" Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}, Path= DataContext.OpenFileNameDealerWindowCommand}" CommandParameter="{Binding}" Content="{Binding FileName.Value}"></Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>-->
+                    <!--<DataGridTemplateColumn  Width="90" >
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="Save Setting" Width="90" Height="20" Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}, Path= DataContext.SaveDealerExportProfileCommand}" CommandParameter="{Binding}" HorizontalAlignment="Right" VerticalAlignment="Top" IsTabStop="False" >
+                                </Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>-->
+                    <!--</DataGridTemplateColumn>-->
+
+                </DataGrid.Columns>
+            </DataGrid>
+            <WrapPanel Height="8" Name="wrapPanel1" Width="844"></WrapPanel>
+            <WrapPanel Height="26" Name="wrapPanel2" Width="845">
+                <!--<Button Content="Test Import" Width="134" Command="{Binding TestImportCommand}" FontSize="16"></Button>-->
+                <Button Content="Import Manually" Width="134" Command="{Binding ImportManuallyCommand}" FontSize="16"></Button>
+                <Button Content="ShowHistory" Width="134" Command="{Binding ShowHistoryCommand}" FontSize="16"></Button>
+
+                <Button Content="Apply" Width="134" FontSize="16" Command="{Binding ApplyCommand}" Visibility="{Binding TaskExisted, Converter={StaticResource HiddenConverter}}"></Button>
+                <Button Content="Save Changes" Width="134" FontSize="16" Command="{Binding SaveDealerImportProfileCommand}" Visibility="{Binding TaskExisted, Converter={StaticResource VisibilityConverter}}"></Button>
+            </WrapPanel>
+            <Border Margin="0 20 0 0 " Background="Gray" Height="292">
+                <StackPanel >
+                    <TextBlock Text="Search Dealer" FontWeight="Bold" FontSize="15"></TextBlock>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox Text="{Binding SearchContent, UpdateSourceTrigger=PropertyChanged}" Width="200" Margin="5" FontSize="14" Name="txtSearch">
+                            <TextBox.InputBindings>
+                                <KeyBinding Key="Enter" Command="{Binding SearchDealerCommand}" ></KeyBinding>
+                            </TextBox.InputBindings>
+                        </TextBox>
+                        <Button Content="Search" Command="{Binding SearchDealerCommand}"  Width="100" Margin="5" FontSize="14" Name="btnSearch" ></Button>
+                    </StackPanel>
+
+                    <DataGrid CanUserAddRows="False" AutoGenerateColumns="False" Height="224"  Width="836" ItemsSource="{Binding SearchResultDealers}">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Dealer Name" Width="300" FontSize="14"   Binding="{Binding Path=Name}"/>
+                            <DataGridTemplateColumn Width="150"   >
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <Button Content="Add Dealer" Width="100" Height="20" Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}, Path= DataContext.AssignDealerToProfileCommand}" CommandParameter="{Binding}" HorizontalAlignment="Right" VerticalAlignment="Top"  IsTabStop="False" >
+                                        </Button>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                    <!--<Button Content="Add a Dealer" Width="200" Command="{Binding AssignDealerToProfileCommand}"></Button>-->
+                    <!--<ComboBox  ItemsSource="{Binding Dealers}" SelectedValuePath="Id"  DisplayMemberPath="Name" SelectedItem="{Binding AddedDealer, ValidatesOnDataErrors=True, NotifyOnValidationError=True}"></ComboBox>-->
+
+                </StackPanel>
+            </Border>
+            <!--<toolKit:BusyIndicator  Width="700" VerticalAlignment="Stretch"  HorizontalAlignment="Stretch" Margin="10,10,10,20" IsBusy="{Binding IsBusy}"  />-->
+
+        </StackPanel>
+        <xctk:BusyIndicator VerticalAlignment="Stretch"  HorizontalAlignment="Stretch" Margin="6,0,6,66" IsBusy="{Binding IsBusy}"></xctk:BusyIndicator>
+    </Grid>
+
+
+</Window>

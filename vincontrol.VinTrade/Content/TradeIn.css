@@ -1,0 +1,621 @@
+﻿/* common */
+body
+{
+    background-color: #EEEEEE;
+    width: 1280px;
+    margin: 0px auto;
+    font-family: MS Reference Sans Serif;
+}
+
+.tradeIn_container
+{
+    width: 980px;
+    margin: 15px auto;
+}
+.tradeInHeader
+{
+    margin-top: 10px;
+    position: relative;
+    width: 1280px;
+    height: 199px;
+    background-image: url("/Content/Images/TradeInStep/nag.png");
+}
+.tradeInHeader_steps
+{
+    cursor: pointer;
+    position: absolute;
+    width: 129px;
+    background-repeat: no-repeat;
+    top: 153px;
+    height: 15px;
+    background-image: url("/Content/Images/TradeInStep/text.png");
+    left: 419px;
+}
+
+.tradeIn_links
+{
+    text-decoration: none;
+}
+.tradeInHeader_step1Btn
+{
+    cursor: pointer;
+    position: absolute;
+    width: 183px;
+    top: 145px;
+    height: 28px;
+    background-image: url("/Content/Images/TradeInStep/st1-1.png");
+    left: 583px;
+}
+
+.tradeInHeader_step1Btn_active
+{
+    background-image: url("/Content/Images/TradeInStep/st1.png") !important;
+}
+
+.tradeInHeader_step2Btn
+{
+    cursor: pointer;
+    position: absolute;
+    width: 183px;
+    top: 145px;
+    height: 28px;
+    background-image: url("/Content/Images/TradeInStep/st2-2.png");
+    left: 764px;
+}
+
+.tradeInHeader_step2Btn_active
+{
+    background-image: url("/Content/Images/TradeInStep/st2.png") !important;
+}
+
+.tradeInHeader_step3Btn
+{
+    cursor: pointer;
+    position: absolute;
+    width: 183px;
+    top: 145px;
+    height: 28px;
+    background-image: url("/Content/Images/TradeInStep/st3-3.png");
+    left: 947px;
+}
+
+.tradeInHeader_step3Btn_active
+{
+    background-image: url("/Content/Images/TradeInStep/st3.png") !important;
+}
+
+.tradeIn_step_goto
+{
+    clear: both;
+    color: #FFF;
+    text-align: center;
+    background-color: #039;
+    font-size: 43px;
+    font-style: italic;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.tradeIn_step_goto:hover
+{
+    background-color: Blue;
+}
+
+/* end common*/
+
+/* step 1 */
+#tstep1_condition
+{
+    background-color: #F5AA00;
+    color: #000;
+}
+#tradeIn_step1_holder
+{
+}
+.tradeIn_step1_top
+{
+}
+
+.tstep1_top_title
+{
+    font-style: italic;
+    color: #039;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.tstep1_top_content
+{
+    font-weight: bold;
+    margin-top: 4px;
+    padding: 6px;
+    color: #039;
+    border-radius: 10px;
+    border: 3px solid #333;
+    font-size: 15px;
+}
+
+.tradeIn_step1_bottom
+{
+    margin-top: 40px;
+}
+.tstep1_content_holder
+{
+    margin-top: 4px;
+    padding: 15px;
+    border: 3px solid #333;
+    border-radius: 10px;
+}
+
+.tstep1_vehicle_information
+{
+}
+
+.tstep1_VH_img
+{
+    margin-top: 40px;
+    float: left;
+}
+
+.tstep1_vh_info_holder
+{
+    width: 43%;
+    float: left;
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+.tstep1_vh_info_items
+{
+    clear: both;
+    height: 40px;
+}
+
+.tstep1_vh_info_items label
+{
+    color: #039;
+    font-weight: bold;
+    width: 115px;
+    display: block;
+    font-size: 16px;
+    font-style: italic;
+    float: left;
+}
+
+.tstep1_vh_info_items input
+{
+    width: 68%;
+    float: left;
+    height: 23px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 18px;
+    color: #444;
+}
+
+.tstep1_vh_info_items select
+{
+    font-style: italic;
+    width: 68%;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    height: 30px;
+    font-weight: bold;
+    color: #444;
+}
+
+.tstep1_or
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #039;
+    height: 38px;
+    font-style: italic;
+}
+
+
+
+.tstep1_condition
+{
+}
+
+/* end step 1 */
+
+
+/* step 2 */
+#tradeIn_step2_holder
+{
+    display: none;
+    border-radius: 10px;
+    padding: 10px;
+    border: 3px solid #333;
+}
+
+.tstep2_items_holder
+{
+    width: 31%;
+    float: left;
+    overflow: hidden;
+    font-size: 13px;
+    margin-right: 3px;
+    padding: 15px 8px;
+    border: 1px solid #333;
+    margin-top: 1px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tstep2_items_text
+{
+}
+
+.tstep2_items_text label
+{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.tstep2_items_text input
+{
+}
+.tstep2_items_list
+{
+    padding: 0px 20px;
+}
+/* end step2
+
+/* step 3 */
+
+#tradeIn_step3_holder
+{
+    display: none;
+    padding: 7px;
+    border: 3px solid #333;
+    border-radius: 10px;
+}
+.tstep3_content_holder
+{
+    padding: 20px;
+}
+
+.tstep3_content_left
+{
+    float: left;
+    width: 48%;
+    margin-top: 20px;
+}
+.tstep3_left_vh
+{
+    font-size: 20px;
+    color: #039;
+    font-style: italic;
+    font-weight: bold;
+}
+.tstep_ad_img
+{
+    margin-left: 60px;
+    margin-top: -70px;
+}
+.tstep3_car_img
+{
+    height: 300px;
+    width: 100%;
+    border: 1px solid #CDCDCD;
+}
+
+.tstep3_car_img img
+{
+    width: inherit;
+    margin-top: 45px;
+}
+.tstep3_left_img
+{
+    margin-top: 10px;
+}
+
+.tstep3_content_right
+{
+    float: right;
+    width: 48%;
+}
+.tstep3_right_title
+{
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    color: #039;
+    margin-bottom: 20px;
+}
+
+.tstep3_input_items
+{
+    margin-top: 15px;
+}
+
+.tstep3_input_items label
+{
+    font-size: 13px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 3px;
+}
+.tstep3_input_items input
+{
+    width: 96%;
+    height: 30px;
+    padding-left: 5px;
+    font-size: 18px;
+}
+
+/* end step 3 */
+
+/* vehicle value */
+.tvehicle_tradein_img
+{
+    position: absolute;
+    background-size: 94%;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 265px;
+    background-image: url("/Content/images/TradeInStep/chart.jpg");
+}
+
+.tradeinVehicleValue
+{
+}
+
+.tvehiclevalue
+{
+    margin-bottom: 40px;
+}
+
+.tvehiclevalue_content
+{
+    padding: 15px 35px;
+    border: 3px solid #333;
+    border-radius: 10px;
+}
+
+.tvehiclevalue_tradein_left
+{
+    float: left;
+    width: 50%;
+}
+
+.tvehicle_tradein_title
+{
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-style: italic;
+    color: #039;
+    font-weight: bold;
+}
+.tvehicle_tradein_lowprice
+{
+    position: absolute;
+    top: 227px;
+    left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tvehicle_tradein_equalprice
+{
+    position: absolute;
+    top: 227px;
+    left: 194px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tvehicle_tradein_hightprice
+{
+    position: absolute;
+    top: 227px;
+    left: 371px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tvehicle_tradein_smalltext
+{
+    font-size: 10px;
+    text-align: center;
+}
+
+.tvehiclevalue_tradein_right
+{
+    float: right;
+    width: 47%;
+}
+.tvehicle_tradein_info_holder
+{
+    background-color: #FFF;
+    padding: 10px;
+    margin-top: 3px;
+    font-size: 15px;
+    border: 1px solid #CDCDCD;
+    font-weight: bold;
+}
+
+.vh_comparison_top
+{
+}
+.vh_comparison_top_header
+{
+    height: 50px;
+}
+
+.vh_comparison_top_header .vh_comparison_top_items
+{
+    text-align: center;
+    background-color: Black;
+    color: White;
+    border: 4px solid #444;
+    border-radius: 7px;
+}
+
+.vh_comparison_top_row
+{
+    height: 50px;
+}
+.vh_comparison_top_row .vh_comparison_top_items
+{
+    background-color: White;
+    border: 2px solid #CDCDCD;
+    width: 22.5%;
+}
+.vh_comparison_top_items
+{
+    float: left;
+    width: 22%;
+    height: 25px;
+    margin-right: 5px;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.vh_comparison_tooltip
+{
+    clear: both;
+    background-color: #6685C2;
+    text-align: center;
+    font-size: 13px;
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+.vh_comparison_others
+{
+    clear: both;
+    margin-top: 20px;
+}
+.vh_comparison_others_items
+{
+    clear: both;
+}
+.vh_comparison_others_img
+{
+    float: left;
+    width: 23%;
+    height: 150px;
+    clear: both;
+}
+
+.vh_comparison_others_title
+{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.vh_comparison_others_img_holder
+{
+    height: 100px;
+    background-color: #FFF;
+    width: 63%;
+    margin: 2px auto;
+    border: 1px solid #CDCDCD;
+}
+.vh_comparison_others_info
+{
+    float: left;
+    width: 22%;
+    font-weight: bold;
+    font-size: 19px;
+    padding: 8px;
+    background-color: #FFF;
+    margin-right: 12px;
+    border: 2px solid #CDCDCD;
+    margin-top: 47px;
+}
+
+
+.dealership_review_vh
+{
+    font-size: 15px;
+    float: right;
+}
+
+.dealership_review
+{
+    padding-bottom: 10px;
+    font-size: 13px;
+}
+
+.review_items_odd
+{
+    margin-top: 3px;
+    background-color: #9BAED2;
+}
+.dealership_review_name
+{
+    font-weight: bold;
+    display: block;
+    padding-right: 30px;
+    text-align: right;
+}
+
+.dealership_review_content
+{
+    padding: 10px;
+    margin: 0px;
+}
+
+.tvehiclevalue_btns
+{
+    height: 150px;
+}
+.tvehiclevalue_btns > div
+{
+    text-align: center;
+    background-color: white;
+    font-weight: bold;
+    font-size: 55px;
+    font-style: italic;
+    float: left;
+    margin-left: 20px;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tvehiclevalue_btns > div:hover
+{
+    background-color: white;
+}
+
+.tbacktotop
+{
+    font-size: 14px;
+    float: right;
+    clear: both;
+    background-color: #222;
+    text-align: center;
+    padding: 5px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: #FFF;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.tbacktotop:hover
+{
+    background-color: #333;
+}

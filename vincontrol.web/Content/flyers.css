@@ -1,0 +1,184 @@
+body {
+	font-family: Arial;
+	margin: 0px;
+}
+
+.flyer-container {
+	width: 1100px;
+	margin: 0px auto;
+	padding-bottom: 30px;
+}
+.flyer_content_holder {
+
+}
+
+.bottom_line {
+	border-bottom: 2.5px solid gray;
+}
+.top_line {
+	border-top: 2.5px solid #333;
+	margin-top: 2px;
+}
+
+.flyer_header_right {
+	float: right;
+	width: 45%;
+	text-align: right;
+	padding-right: 10px;
+	padding-top: 25px;
+}
+
+.flyer_header_left {
+	font-size: 26px;
+	color: #555;
+	float: left;
+	width: 50%;
+	font-weight: bold;
+	padding: 24px 5px;
+}
+.flyer_header {
+	height: 80px;
+	background-color: #F8F8F8;
+}
+
+.flyer_header_name {
+	display: block;
+	font-size: 19px;
+	font-weight: bold;
+	color: #555;
+}
+.flyer_content_left {
+	float: left;
+	width: 40%;
+}
+.flyer_title {
+	font-size: 22px;
+	height: 35px;
+	font-weight: bold;
+	color: #777;
+}
+
+.flyer_content_right {
+	padding: 5px;
+	float: right;
+	width: 58%;
+	position: relative;
+}
+.flyer_dealer_address_bottom{
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	font-weight:bold;
+	font-size: 17px;
+	color: #555555;
+}
+.center_line {
+	border-left: 2.5px solid #333;
+}
+.flyer_cardes {
+	line-height: 21px;
+	font-size: 12px;
+	padding-left: 28px;
+}
+.flyer_content_holder {
+	padding-top: 5px;
+}
+
+.flyer_mainImg {
+
+}
+.flyer_content_right > div {
+	padding: 20px;
+}
+
+.flyer_mainImg > img {
+	width: 100%;
+}
+.flyer_carfax_info ul {
+	list-style-type: none;
+	padding-left: 20px;
+	margin: 10px 0px;
+}
+
+.flyer_carfax_info ul li {
+	font-size: 13px;
+	padding-bottom: 5px;
+}
+
+.flyer_carfax_logo {
+	margin-top: 10px;
+}
+.flyer_list_imgs {
+
+}
+
+.flyer_list_imgs_item {
+	width: 31%;
+	float: left;
+	margin-right: 5px;
+	margin-top: 2px;
+}
+.flyer_list_imgs_item > img {
+	width: 100%;
+}
+
+.flyer_ymm {
+	font-size: 30px;
+	font-weight: bold;
+	color: #555;
+}
+.flyer_dealer_address {
+	line-height: 26px;
+	font-size: 19px !important;
+}
+.flyer_carinfo {
+
+}
+.flyer_carinfo ul {
+	list-style-type: none;
+	padding-left: 20px;
+}
+.flyer_carinfo ul li {
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.flyer_carinfo nobr {
+	font-size: 15px;
+	font-weight: bold;
+	color: #444;
+}
+.flyer_noadditional {
+	padding: 15px;
+}
+.flyer_noadditional label {
+	display: block;
+	text-align: center;
+	font-size: 28px;
+	color: #555;
+}
+
+.flyer_noadditional ul {
+	list-style-type: none;
+	margin: 0px 10px;
+	padding-left: 15px;
+}
+
+.flyer_noadditional li {
+	font-size: 13px;
+	margin-bottom: 5px;
+	color: #444444;
+}
+
+.flyer_map_holder {
+	margin-top: 5px;
+}
+
+.flyer_map_holder small a {
+	text-align: center !important;
+	display: block;
+	padding-top: 5px;
+	font-size: 22px;
+	color: #333;
+	text-decoration: none;
+}

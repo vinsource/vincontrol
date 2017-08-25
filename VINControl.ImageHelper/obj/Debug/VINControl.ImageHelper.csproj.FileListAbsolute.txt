@@ -1,0 +1,17 @@
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.ImageHelper\bin\Debug\VINControl.ImageHelper.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.ImageHelper\bin\Debug\VINControl.ImageHelper.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.ImageHelper\bin\Debug\HiQPdf.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.ImageHelper\bin\Debug\vincontrol.Data.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.ImageHelper\bin\Debug\DapperExtensions.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.ImageHelper\bin\Debug\vincontrol.DomainObject.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.ImageHelper\bin\Debug\Dapper.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.ImageHelper\bin\Debug\vincontrol.Constant.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.ImageHelper\bin\Debug\vincontrol.Data.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.ImageHelper\bin\Debug\HiQPdf.xml
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.ImageHelper\bin\Debug\vincontrol.DomainObject.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.ImageHelper\bin\Debug\Dapper.xml
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.ImageHelper\bin\Debug\vincontrol.Constant.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.ImageHelper\bin\Debug\HiQPdf.dep
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.ImageHelper\obj\Debug\VINControl.ImageHelper.csprojResolveAssemblyReference.cache
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.ImageHelper\obj\Debug\VINControl.ImageHelper.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.ImageHelper\obj\Debug\VINControl.ImageHelper.pdb

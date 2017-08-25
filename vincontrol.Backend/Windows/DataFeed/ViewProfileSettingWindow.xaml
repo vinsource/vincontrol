@@ -1,0 +1,73 @@
+﻿<Window x:Class="vincontrol.Backend.Windows.DataFeed.ViewProfileSettingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:WPFVINControl="clr-namespace:vincontrol.Backend.Controls"
+        WindowStartupLocation="CenterScreen"
+        Title="ViewProfileSettingWindow" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Export="clr-namespace:vincontrol.Backend.Controls.DataFeed.Export"
+        xmlns:import="clr-namespace:vincontrol.Backend.Controls.DataFeed.Import" Height="700" Width="1000" >
+
+    <Viewbox>
+        <Grid Height="334" Width="712">
+
+            <!--<TabControl Height="407" HorizontalAlignment="Left" Margin="0,2,0,0" Name="tabControl17" VerticalAlignment="Top" Width="644" Background="#FFF0FFED">-->
+            <!--<TabItem Header="Last deposited feed" Name="tabItem336">
+                    </TabItem>-->
+            <!--<TabItem Header="Template Incoming" HorizontalAlignment="Left" Name="tabItem2" VerticalAlignment="Top">-->
+            <import:IncomingProfileTemplateMapping ></import:IncomingProfileTemplateMapping>
+                <!--</TabItem>-->
+            <!--</TabControl>-->
+
+        </Grid>
+
+        <!--<TabItem Header="OutGoing" Name="tabItem19">
+            <Grid>
+                <TabControl Height="425" HorizontalAlignment="Left" Margin="0,2,0,0" Name="tabControl7" VerticalAlignment="Top" Width="644" Background="#2E008F10">
+                        <TabItem Header="Template Mapping" Name="tabItem3141">
+                        <Export:ExportProfileTemplateMapping></Export:ExportProfileTemplateMapping>
+                            <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" OpacityMask="#FF996800">
+                                <Grid.Background>
+                                    <ImageBrush />
+                                </Grid.Background>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="124*" />
+                                    <ColumnDefinition Width="514*" />
+                                </Grid.ColumnDefinitions>
+                                <Label Content="Profile" Height="28" HorizontalAlignment="Left" Margin="5,4,0,0" Name="label2" VerticalAlignment="Top" Width="64" />
+                                <CheckBox Content="Header" Height="16" HorizontalAlignment="Left" Margin="47,8,0,0" Name="checkBox2" VerticalAlignment="Top" Grid.Column="1" />
+                                <TextBox Height="23" HorizontalAlignment="Left" Margin="46,6,0,0" Name="textBox2" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" />
+                                <Label Content="Format" Height="28" HorizontalAlignment="Left" Margin="2,36,0,0" Name="label3" VerticalAlignment="Top" />
+                                <ComboBox Height="23" HorizontalAlignment="Left" Margin="49,36,0,0" Name="comboBox1" VerticalAlignment="Top" Width="177" Grid.ColumnSpan="2" />
+                                <Label Content="File Name" Height="28" HorizontalAlignment="Left" Margin="160,3,0,0" Name="label4" VerticalAlignment="Top" Grid.Column="1" />
+                                <TextBox Height="23" HorizontalAlignment="Left" Margin="222,4,0,0" Name="textBox3" VerticalAlignment="Top" Width="120" Grid.Column="1" />
+                                <CheckBox Content="Bundle" Height="16" HorizontalAlignment="Left" Margin="353,10,0,0" Name="checkBox3" VerticalAlignment="Top" Grid.Column="1" />
+                                <StackPanel Height="88" Margin="165,33,8,0" Name="stackPanel1" VerticalAlignment="Top" Grid.Column="1">
+                                    <WrapPanel Height="29" Name="wrapPanel2" Width="340">
+                                        <Label Content="FTP Host" Height="28" Name="label5" />
+                                        <TextBox Height="23" Name="textBox4" Width="278" />
+                                    </WrapPanel>
+                                    <WrapPanel Height="29" Name="wrapPanel3" Width="340">
+                                        <Label Content="Login" Height="28" Name="label6" />
+                                        <TextBox Height="23" Name="textBox5" Width="170" />
+                                    </WrapPanel>
+                                    <WrapPanel Height="29" Name="wrapPanel4" Width="340">
+                                        <Label Content="Password" Height="28" Name="label7" />
+                                        <TextBox Height="23" Name="textBox6" Width="149" />
+                                    </WrapPanel>
+                                </StackPanel>
+                                <Label Content="Frequency" Height="28" HorizontalAlignment="Left" Margin="3,64,0,0" Name="label8" VerticalAlignment="Top" />
+                                <ComboBox Height="23" HorizontalAlignment="Left" Margin="70,68,0,0" Name="comboBox2" VerticalAlignment="Top" Width="211" Grid.ColumnSpan="2" />
+                                <DataGrid AutoGenerateColumns="False" Height="206" HorizontalAlignment="Left" Margin="10,137,0,0" Name="dataGrid1" VerticalAlignment="Top" Width="625" Grid.ColumnSpan="2" />
+                                <Button Content="Save Profile" Height="23" HorizontalAlignment="Right" Margin="0,350,6,0" Name="button1" VerticalAlignment="Top" Width="75" Grid.Column="1" />
+                                <CheckBox Content="Discontinue " Height="16" HorizontalAlignment="Left" Margin="10,352,0,0" Name="checkBox4" VerticalAlignment="Top" />
+                                <Label Content="Time" Height="28" HorizontalAlignment="Left" Margin="5,98,0,0" Name="label9" VerticalAlignment="Top" />
+                                <ComboBox Height="23" HorizontalAlignment="Left" Margin="45,101,0,0" Name="comboBox3" VerticalAlignment="Top" Width="119" Grid.ColumnSpan="2" />
+                            </Grid>
+                        </TabItem>
+                </TabControl>
+            </Grid>
+        </TabItem>-->
+    </Viewbox>
+    <!--<Window.WindowState>Maximized</Window.WindowState>-->
+
+</Window>

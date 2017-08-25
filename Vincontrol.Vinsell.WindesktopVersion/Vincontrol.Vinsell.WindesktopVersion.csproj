@@ -1,0 +1,665 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8F6A88E6-2314-4785-8BD6-08E319A8009F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vincontrol.Vinsell.WindesktopVersion</RootNamespace>
+    <AssemblyName>Vincontrol.Vinsell.WindesktopVersion</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>ftp://vinclapp.net/vinsell/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://vinclapp.net/vinsell/</InstallUrl>
+    <UpdateUrl>http://vinclapp.net/vinsell/</UpdateUrl>
+    <MinimumRequiredVersion>1.0.0.10</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>20</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>sell.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>881376DDEE5756956FD4858603BA99089395429F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Vincontrol.Vinsell.WindesktopVersion_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\Package\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.2.1.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Database\htmlFree\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="SharpCompress">
+      <HintPath>..\packages\sharpcompress.0.10.3\lib\net40\SharpCompress.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WebKitBrowser">
+      <HintPath>D:\ShareLibrary\WebKitBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CarfaxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CarfaxForm.Designer.cs">
+      <DependentUpon>CarfaxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FavouriteVehicleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FavouriteVehicleForm.Designer.cs">
+      <DependentUpon>FavouriteVehicleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\ChromeAutoService.cs" />
+    <Compile Include="Helper\DataHelper.cs" />
+    <Compile Include="Helper\SessionVar.cs" />
+    <Compile Include="Helper\VinDecodeHelper.cs" />
+    <Compile Include="Helper\WebDataExtractHelper.cs" />
+    <Compile Include="KBBForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KBBForm.Designer.cs">
+      <DependentUpon>KBBForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoadingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadingForm.Designer.cs">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManheimDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManheimDetailForm.Designer.cs">
+      <DependentUpon>ManheimDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManheimForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManheimForm.Designer.cs">
+      <DependentUpon>ManheimForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarketForm.Designer.cs">
+      <DependentUpon>MarketForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\BaseModel.cs" />
+    <Compile Include="Models\CarfaxModel.cs" />
+    <Compile Include="Models\KBBModel.cs" />
+    <Compile Include="Models\MainheimModel.cs" />
+    <Compile Include="Models\MarketModel.cs" />
+    <Compile Include="Models\MarketValue.cs" />
+    <Compile Include="NoteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoteForm.Designer.cs">
+      <DependentUpon>NoteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintForm.Designer.cs">
+      <DependentUpon>PrintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\AutomativeDescriptionService7\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="StartLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartLoginForm.Designer.cs">
+      <DependentUpon>StartLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TablessTabControl.cs" />
+    <EmbeddedResource Include="CarfaxForm.resx">
+      <DependentUpon>CarfaxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FavouriteVehicleForm.resx">
+      <DependentUpon>FavouriteVehicleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KBBForm.resx">
+      <DependentUpon>KBBForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadingForm.resx">
+      <DependentUpon>LoadingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManheimDetailForm.resx">
+      <DependentUpon>ManheimDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManheimForm.resx">
+      <DependentUpon>ManheimForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarketForm.resx">
+      <DependentUpon>MarketForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoteForm.resx">
+      <DependentUpon>NoteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintForm.resx">
+      <DependentUpon>PrintForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartLoginForm.resx">
+      <DependentUpon>StartLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\AutomativeDescriptionService7\Description7a.wsdl" />
+    <None Include="Service References\AutomativeDescriptionService7\Vincontrol.Vinsell.WindesktopVersion.AutomativeDescriptionService7.CategoryDefinitions.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AutomativeDescriptionService7\Vincontrol.Vinsell.WindesktopVersion.AutomativeDescriptionService7.Divisions.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AutomativeDescriptionService7\Vincontrol.Vinsell.WindesktopVersion.AutomativeDescriptionService7.Models.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AutomativeDescriptionService7\Vincontrol.Vinsell.WindesktopVersion.AutomativeDescriptionService7.ModelYears.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AutomativeDescriptionService7\Vincontrol.Vinsell.WindesktopVersion.AutomativeDescriptionService7.Styles.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AutomativeDescriptionService7\Vincontrol.Vinsell.WindesktopVersion.AutomativeDescriptionService7.Subdivisions.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AutomativeDescriptionService7\Vincontrol.Vinsell.WindesktopVersion.AutomativeDescriptionService7.TechnicalSpecificationDefinitions.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AutomativeDescriptionService7\Vincontrol.Vinsell.WindesktopVersion.AutomativeDescriptionService7.VehicleDescription.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AutomativeDescriptionService7\Vincontrol.Vinsell.WindesktopVersion.AutomativeDescriptionService7.VersionInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backButton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carfax-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accident-found.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mmr-ico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidebar-bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manheim-head.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kbb-head.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\market-head.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\add-favorite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\add-notes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\above.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avrg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\below.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avrg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\AutomativeDescriptionService7\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\AutomativeDescriptionService7\configuration.svcinfo" />
+    <None Include="Service References\AutomativeDescriptionService7\configuration91.svcinfo" />
+    <None Include="Resources\forward.png" />
+    <None Include="Resources\1580.jpg" />
+    <None Include="Resources\Independant.png" />
+    <None Include="Resources\Franchise.png" />
+    <None Include="Resources\all.png" />
+    <None Include="Resources\Nation.png" />
+    <None Include="Resources\500.png" />
+    <None Include="Resources\250.png" />
+    <None Include="Resources\100.png" />
+    <None Include="Resources\Carscom.png" />
+    <None Include="Resources\AutoTrader.png" />
+    <None Include="Resources\forward-disabled.png" />
+    <None Include="Resources\back.png" />
+    <None Include="Resources\Miles.png" />
+    <None Include="Resources\dividerbar.png" />
+    <None Include="Resources\Vehicle Info.png" />
+    <None Include="Resources\Transmission.png" />
+    <None Include="Resources\DriveTrain.png" />
+    <None Include="Resources\getvalue.png" />
+    <None Include="Resources\Report.png" />
+    <None Include="Resources\LendingRetailBreakdown.png" />
+    <None Include="Resources\printbutton.png" />
+    <None Include="Resources\VINSell_Logo.png" />
+    <None Include="Resources\LoginBar.png" />
+    <None Include="Resources\Login_Box.png" />
+    <None Include="Resources\VINSell_Logo1.png" />
+    <None Include="Resources\LoginBar1.png" />
+    <Content Include="Libs\HiQPdf.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Libs\itextsharp.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ajax-loader-mainform.gif" />
+    <None Include="Resources\autotrader-com.jpg" />
+    <Resource Include="Resources\remove-favorite.png" />
+    <Resource Include="Resources\remove-notes.png" />
+    <None Include="Resources\ajax-loader11.gif" />
+    <Content Include="Resources\loading.png" />
+    <None Include="Resources\print.png" />
+    <Content Include="sell.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\vincontrol.Application\vincontrol.Application.csproj">
+      <Project>{7F0F1443-BE02-4BAD-8E5C-34ADED92DCA3}</Project>
+      <Name>vincontrol.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.CarFax\vincontrol.CarFax.csproj">
+      <Project>{e5c5fbb2-88d1-4dc3-ae3a-4ca4e3e4c75e}</Project>
+      <Name>vincontrol.CarFax</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.Data\vincontrol.Data.csproj">
+      <Project>{7D76E800-C9D8-407A-8844-A775EE6D5A65}</Project>
+      <Name>vincontrol.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.DomainObject\vincontrol.DomainObject.csproj">
+      <Project>{E5A9809F-55E2-4E2E-9696-48042DDF4305}</Project>
+      <Name>vincontrol.DomainObject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.Helper\vincontrol.Helper.csproj">
+      <Project>{9B02AFFB-392B-46D8-A75D-A0A5D521222C}</Project>
+      <Name>vincontrol.Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.KBB\vincontrol.KBB.csproj">
+      <Project>{b1b5a625-8c49-48e1-87c7-63cf76fc4a1d}</Project>
+      <Name>vincontrol.KBB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.Manheim\vincontrol.Manheim.csproj">
+      <Project>{0fab8214-efd2-43a2-9a93-4c79d3e7ee2d}</Project>
+      <Name>vincontrol.Manheim</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vincontrol.Vinsell.WPFLibrary\Vincontrol.Vinsell.WPFLibrary.csproj">
+      <Project>{a46b8be5-1d8b-4582-b42b-a33886c66838}</Project>
+      <Name>Vincontrol.Vinsell.WPFLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controls\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AutomativeDescriptionService7\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="HtmlAgilityPack.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Libs\HiQPdf.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Libs\itextsharp.dll">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="vincontrol.Application.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="vincontrol.CarFax.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="vincontrol.ChromeAutoService.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="vincontrol.ConfigurationManagement.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="vincontrol.Constant.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="vincontrol.Data.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="vincontrol.DomainObject.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="vincontrol.EmailHelper.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="vincontrol.Helper.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="vincontrol.KBB.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="VINControl.Logging.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="vincontrol.Manheim.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="vincontrol.PdfHelper.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Vincontrol.Vinsell.WindesktopVersion.pdb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

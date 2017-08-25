@@ -1,0 +1,8 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="vincontrol.Silverlight.NewLayout" EntryPointType="vincontrol.Silverlight.NewLayout.App" RuntimeVersion="5.0.61118.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="vincontrol.Silverlight.NewLayout" Source="vincontrol.Silverlight.NewLayout.dll" />
+    <AssemblyPart x:Name="System.Runtime.Serialization.Json" Source="System.Runtime.Serialization.Json.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls" Source="System.Windows.Controls.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Toolkit" Source="System.Windows.Controls.Toolkit.dll" />
+  </Deployment.Parts>
+</Deployment>

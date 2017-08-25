@@ -1,0 +1,1663 @@
+/* new */
+#inventory_back_tab
+{
+    position: relative;
+    border: 1px solid #FFF;
+    color: #FFF;
+    cursor: pointer;
+    margin: 17px 5px 5px 5px;
+    float: right;
+    background-color: #3366cc;
+    padding: 6px 14px;
+    box-shadow: 5px 1px 7px #888;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+    #inventory_back_tab:hover
+    {
+        background-color: #4F59EE;
+    }
+
+.nav_long
+{
+    width: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.nav_first
+{
+    width: 28px;
+}
+
+.age_text
+{
+    width: 37px;
+    text-align: center;
+    height: 16px;
+    padding: 2px 0px;
+    float: left;
+    color: #FFF;
+}
+
+.age_text_border
+{
+    width: 37px;
+    text-align: center;
+    height: 16px;
+    padding: 0px 0px;
+    float: left;
+    color: black;
+}
+
+.border_color
+{
+    border: solid 2px black;
+}
+
+.orange_color
+{
+    background-color: #D12C00;
+}
+
+.blue_color
+{
+    background-color: #0062A1;
+}
+
+.green_color
+{
+    background-color: #458C00;
+}
+
+.black_color
+{
+    background-color: #000000;
+}
+
+.vin_viewprofile img
+{
+    width: 15px !important;
+    height: 20px !important;
+    float: left;
+}
+
+.inventory_action_btns
+{
+    float: right !important;
+    margin-right: 10px !important;
+    width: 98px !important;
+}
+
+.contain_list .right_content_items_owners_new
+{
+    width: 29px !important;
+    height: 15px;
+    margin: 5px 15px;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 7px;
+    background: url(owners-bg.png) top left no-repeat;
+    font-weight: bold;
+    font-family: arial, sans-serif;
+}
+
+div.num-owners
+{
+    margin: 0;
+    padding: 0;
+    width: 23px;
+    height: 15px;
+    padding-top: 3px;
+    padding-bottom: 7px;
+    padding-right: 2px;
+    text-align: center;
+    background: url(owners-bg.png) top left no-repeat;
+    font-weight: bold;
+}
+
+
+.invent_expanded_action_holder
+{
+    position: absolute;
+    bottom: 12px;
+    left: 20%;
+}
+
+.invent_expanded_date_holder
+{
+    position: absolute;
+    bottom: 12px;
+    left: 6%;
+}
+
+.inventory_action_bg
+{
+    margin-left: 4px !important;
+}
+
+.invent_expanded_recon
+{
+    float: left;
+    margin-right: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #444;
+    margin-top: -3px;
+    cursor: pointer;
+}
+
+.invent_expanded_date
+{
+    float: left;
+    margin-right: 10px;
+    font-size: 13px;
+    color: #444;
+    margin-top: -3px;
+    font-style: italic;
+}
+/* end new */
+
+
+.inventory_action_btns
+{
+    float: left;
+    width: 92px;
+    margin-top: 9px;
+    height: 25px;
+}
+
+.inventory_action_btnsExpand
+{
+    float: left;
+    width: 92px;
+    margin-top: 9px;
+    height: 25px;
+    position: absolute;
+    top: 29px;
+    right: 5px;
+}
+
+    .inventory_action_btnsExpand > a
+    {
+        background-color: #5C5C5C;
+        color: #FFFFFF;
+        cursor: pointer;
+        float: left;
+        font-size: 12px;
+        margin-left: 3px;
+        padding: 3px;
+    }
+
+        .inventory_action_btnsExpand > a > div
+        {
+            color: #FFFFFF;
+        }
+
+
+.inventory_action_bg
+{
+    margin-left: 0px !important;
+}
+
+.inventory_action_btns > a
+{
+    float: left;
+    padding: 3px;
+    background-color: #5C5C5C;
+    font-size: 12px;
+    color: white;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+    .inventory_action_btns > a > div
+    {
+        color: white;
+    }
+
+.right_content_nav
+{
+    position: relative;
+    padding-top: 10px;
+    height: 25px;
+    background-color: gray;
+    margin-left: 20px;
+    width: 95%;
+}
+
+    .right_content_nav > div
+    {
+        font-size: 15px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+.vehicle_price input
+{
+    border: 1px solid green;
+    width: 89% !important;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.vehicle_miles input
+{
+    width: 61px !important;
+    margin-top: 0px;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+.nav_middle input
+{
+    width: 63px !important;
+    margin-top: 0px;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+.nav_middle_Appraisal input
+{
+    width: 63px !important;
+    margin-top: 0px;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+.vehicle_miles_Search input
+{
+    width: 54px !important;
+    margin-top: 0px;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+#switch-view
+{
+    float: right;
+    margin-right: 17px;
+}
+
+.right_content_nav > div > a
+{
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+    .right_content_nav > div > a:hover
+    {
+        color: #0063DC;
+    }
+
+.right_content_nav_items
+{
+    font-weight: bold;
+}
+
+    .right_content_nav_items:hover
+    {
+        color: #0063DC;
+    }
+
+.contain_list
+{
+    clear: both;
+    padding-bottom: 4px;
+    position: relative;
+    background-color: white;
+}
+
+.vehicle_miles
+{
+}
+
+.vehicle_price
+{
+}
+
+.right_content_nav_items
+{
+    float: left;
+    /*text-align: center;*/
+    margin-right: 5px;
+    height: 20px;
+    padding-left: 8px;
+}
+
+.right_content_items
+{
+    font-size: 13px;
+    float: left;
+    /*text-align: center;*/
+    margin-right: 5px;
+    margin-top: 12px;
+    padding-left: 8px;
+}
+
+.right_content_items_blue
+{
+    font-size: 13px;
+    float: left;
+    /*text-align: center;*/
+    margin-right: 5px;
+    margin-top: 12px;
+    padding-left: 8px;
+}
+/*
+.right_content_items_maket {
+	width: 100px !important;
+}
+*/
+
+.right_content_items_vin
+{
+    width: 65px !important;
+}
+
+.list_odd
+{
+    background-color: white;
+}
+
+.list_odd_detail
+{
+    background-color: #cdcdcd;
+}
+
+.right_content_items_owners
+{
+    width: 70px !important;
+}
+
+.list_even
+{
+    background-color: #DCDEDE;
+}
+
+.right_content_items > img
+{
+    width: 16px;
+}
+
+    .right_content_items > img.AdvanceSearch
+    {
+        width: 14px;
+    }
+
+.nav_short
+{
+    width: 50px;
+}
+
+
+
+.nav_middle
+{
+    width: 45px;
+}
+
+.nav_middle_Appraisal
+{
+    width: 68px;
+}
+
+.nav_middle_Miles
+{
+    width: 60px;
+}
+
+.vin_listVehicle_holder
+{
+    height: 535px;
+    overflow: auto;
+    padding-left: 20px;
+    width: 96%;
+    height: 490px;
+}
+
+.vin_listVehicle_wishListDetail_holder
+{
+    overflow: auto;
+    padding-left: 20px;
+    width: 95%;
+    height: 450px;
+}
+
+.inventory_tab_holder
+{
+    display: none;
+}
+
+.invent_today_bucket_jump
+{
+    border: 2px solid white;
+    width: 150px!important;
+}
+
+.invent_bucket_jump
+{
+    border: 2px solid white;
+    width: 150px!important;
+}
+
+.invent_acars
+{
+    border: 2px solid #13DC00;
+    width: 70px!important;
+}
+
+.invent_used_new
+{
+    border: 2px solid white;
+    width: 70px!important;
+}
+
+.invent_missiing_content
+{
+    border: 2px solid #C5EB1D;
+    width: 100px!important;
+}
+
+.invent_no_content
+{
+    border: 2px solid #DC0001;
+    width: 70px!important;
+}
+
+.number_below
+{
+    padding-top: 3px;
+    margin-left: -14px;
+    width: 100%;
+    background-color: #BEBEBE;
+    height: 20px;
+    position: absolute;
+    bottom: 0px;
+    color: #3366cc;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    display: none;
+}
+
+.inventory_list_icon
+{
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    width: 16px;
+    height: 17px;
+    float: right;
+    background-image: url("images/inventory_list.png");
+}
+
+.right_header_btns
+{
+    cursor: pointer;
+    color: #FFF;
+    float: right;
+    margin-right: 10px;
+    font-size: 13px;
+    padding: 3px 10px;
+    margin-top: 10px;
+    font-weight: normal;
+    text-align: center;
+}
+
+    .right_header_btns a
+    {
+        color: #FFF;
+    }
+
+    .right_header_btns > a:hover
+    {
+        font-weight: bold;
+    }
+
+.inventory_content_holder
+{
+    float: left;
+    border-right: 1px solid gray;
+    background-color: white;
+    width: 33%;
+    height: 100%;
+}
+
+#inventory_top_btns_holder
+{
+    float: left;
+    clear: both;
+    height: 55px;
+    padding-left: 15px;
+}
+
+.inventory_top_btns
+{
+    cursor: pointer;
+    margin: 17px 5px 5px 5px;
+    float: left;
+    background-color: white;
+    padding: 6px;
+    box-shadow: 4px 0px 5px #888;
+    font-size: 23px;
+}
+
+.inventory_top_btns_active
+{
+    padding-top: 15px !important;
+    height: 36px !important;
+    margin-top: 0px !important;
+}
+
+.container_right_btns_buttons
+{
+    color: #FFF;
+    font-weight: bold;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 2px 7px;
+    border: none;
+    background-color: #5C5C5C;
+}
+
+.market_logo
+{
+    float: left;
+}
+
+.right_cont_column_one
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 25%;
+    height: 100%;
+    float: left;
+}
+
+.right_cont_column_two
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 33%;
+    height: 100%;
+    float: left;
+}
+
+.right_cont_column_three
+{
+    margin-left: 10px;
+    margin-right: 15px;
+    width: 35%;
+    height: 100%;
+    float: left;
+}
+
+.datetime
+{
+    padding-top: 4px;
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 16px;
+    font-size: 13px;
+}
+
+.column_one_part
+{
+    border: 1px solid;
+    margin-bottom: 10px;
+    background-color: #D8D8D8;
+}
+
+.column_one_items
+{
+    height: 25px;
+    clear: both;
+}
+
+.column_two_items
+{
+    clear: both;
+    font-size: 13px;
+    height: 25px;
+}
+
+.column_one_items > label
+{
+    margin-left: 10px;
+    margin-top: 5px;
+    display: block;
+    width: 22%;
+    float: left;
+    font-size: 12px;
+}
+
+.column_one_items > div > label
+{
+    margin-left: 10px;
+    margin-top: 5px;
+    display: block;
+    width: 22%;
+    float: left;
+    font-size: 12px;
+}
+
+.column_two_items label
+{
+    padding-left: 12px;
+    margin-top: 5px;
+    display: block;
+    width: 35%;
+    float: left;
+    font-size: 12px;
+}
+
+.column_two_items label
+{
+    font-size: 13px;
+}
+
+.column_one_input
+{
+    float: right;
+    margin-right: 10px!important;
+    width: 151px;
+}
+
+.readonly
+{
+    background-color: gray;
+}
+
+.column_two_part
+{
+    clear: both;
+    border: 1px solid;
+    margin-top: 10px;
+    background-color: #D8D8D8;
+}
+
+.column_one_items input
+{
+    border: 1px solid black;
+    margin-right: 10px;
+    width: 151px;
+}
+
+.column_one_items select
+{
+    border: 1px solid black;
+    float: right;
+    margin-right: 10px;
+    width: 158px;
+}
+
+.column_two_part input, .column_two_part select
+{
+    border: 1px solid black;
+}
+
+.others
+{
+    margin-top: 1px;
+    font-style: italic;
+    font-size: 13px;
+    float: right;
+    width: 204px;
+}
+
+    .others input
+    {
+        height: 20px;
+        width: 147px;
+        margin-right: 10px;
+    }
+
+.others_left
+{
+    margin-top: 1px;
+    font-style: italic;
+    font-size: 13px;
+    float: right;
+}
+
+    .others_left input
+    {
+        height: 20px;
+        width: 112px;
+        margin-right: 10px;
+    }
+
+#msrp_wrapper > label
+{
+    font-size: 13px;
+    display: block;
+    width: 95px;
+    float: left;
+}
+
+#packages_header
+{
+    width: 100%;
+    height: 20px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+#packages_container
+{
+    overflow: auto;
+    background-color: #D8D8D8;
+    width: 100%;
+    height: 140px;
+    border: 1px solid;
+    margin-bottom: 10px;
+}
+
+#options_header
+{
+    width: 100%;
+    height: 20px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+#appraisal_finish
+{
+    float: right;
+    margin-right: 20px;
+}
+
+#options_container
+{
+    overflow: auto;
+    background-color: #D8D8D8;
+    width: 100%;
+    height: 355px;
+    border: 1px solid;
+}
+
+#descriptions_header
+{
+    padding: 5px;
+    font-size: 22px;
+}
+
+#descriptions_nav
+{
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.in_adding_pricing input
+{
+    height: 20px;
+    border: 1px solid black;
+    width: 150px !important;
+    float: right;
+}
+
+.pkc_items
+{
+    height: 16px;
+    clear: both;
+    padding: 4px 5px;
+}
+
+    .pkc_items .pkc_items_text
+    {
+        float: left;
+        font-size: 13px;
+        margin-left: 10px;
+    }
+
+    .pkc_items input
+    {
+        float: left;
+    }
+
+.des_nav_items
+{
+    font-size: 13px;
+    padding: 4px 1px;
+    cursor: pointer;
+    float: left;
+    margin-right: 5px;
+    background-color: #5C5C5C;
+    width: 30%;
+    text-align: center;
+    font-weight: bold;
+    color: #FFF;
+}
+
+#descriptions_container
+{
+    border: 1px solid;
+    overflow: auto;
+    height: 122px;
+}
+
+#show_images
+{
+    float: right;
+    padding-bottom: 10px;
+}
+
+#manage_images
+{
+    float: right;
+}
+
+#save_change_profile
+{
+    float: right;
+}
+
+#cancel_change_profile
+{
+    float: right;
+}
+
+#pricing_header
+{
+    font-weight: bold;
+}
+
+#vehicle_yearmakemodel
+{
+    font-size: 25px;
+    margin-left: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#vehicle_trim
+{
+    float: right;
+    margin-right: 95px;
+    font-size: 20px;
+}
+
+.vin_editProfile:hover
+{
+    color: red;
+}
+
+.vin_editProfile
+{
+    color: black;
+}
+
+.vin_viewprofile
+{
+    width: 12px;
+    height: 14px;
+}
+
+.right_content_items > a
+{
+    color: black;
+}
+
+.right_content_items > a:hover
+{
+    color: red;
+}
+
+.right_content_items_blue > a
+{
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.right_content_items_blue > a:hover
+{
+    color: red;
+}
+
+.vin_viewprofile img
+{
+    width: inherit;
+    height: inherit;
+}
+
+.list_show
+{
+    background-image: url("images/inventory_list_expanded.png") !important;
+}
+
+/* expanded */
+.invent_expanded
+{
+    display: none;
+}
+
+.invent_expanded_img
+{
+    width: 65px;
+}
+
+    .invent_expanded_img img
+    {
+        width: 92%;
+    }
+
+.invent_expanded_recon
+{
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: -3px;
+    cursor: pointer;
+}
+
+.invent_expanded_recon
+{
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: -3px;
+    cursor: pointer;
+}
+
+.invent_expanded_wholesale
+{
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: -3px;
+    cursor: pointer;
+}
+
+.invent_expanded_auction
+{
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: -3px;
+    cursor: pointer;
+}
+
+.invent_expanded_loaner
+{
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: -3px;
+    cursor: pointer;
+}
+
+.invent_expanded_tradenotclear
+{
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: -3px;
+    cursor: pointer;
+}
+
+
+.invent_expanded_sold
+{
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: -3px;
+    cursor: pointer;
+}
+
+
+.invent_expanded_ebay
+{
+    float: left;
+    width: 45px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+    .invent_expanded_ebay img
+    {
+        width: 100%;
+    }
+
+.invent_expanded_bg
+{
+    float: left;
+    font-size: 13px;
+    margin-left: 32px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    .invent_expanded_bg > a
+    {
+        color: black;
+    }
+
+        .invent_expanded_bg > a:hover
+        {
+            color: red;
+        }
+
+.invent_expanded_ws
+{
+    float: left;
+    font-weight: bold;
+    font-size: 13px;
+    margin-left: 41px;
+    cursor: pointer;
+}
+
+    .invent_expanded_ws > a:hover
+    {
+        color: red;
+    }
+/* end */
+
+/*Liem Add*/
+.number_belowActive
+{
+    display: block;
+}
+
+.DDLEdit
+{
+    width: 60%;
+    float: right;
+    margin-right: 10px;
+}
+
+.DDLEditColum2
+{
+    width: 196px;
+    float: right;
+    margin-right: 10px;
+}
+
+.column_one_input_Column2
+{
+    float: right;
+    margin-right: 10px!important;
+    width: 189px;
+}
+
+.edit_profile_manual
+{
+    float: right;
+    font-size: 14px;
+    margin: 5px;
+}
+
+#packages_container label
+{
+    font-size: 13px;
+}
+
+#options_container label
+{
+    font-size: 13px;
+}
+
+#packages_container ul
+{
+    margin: 5;
+    padding-left: 10px;
+}
+
+#options_container ul
+{
+    margin: 5;
+    padding-left: 10px;
+}
+
+#packages_container li
+{
+    list-style-type: none;
+}
+
+#options_container li
+{
+    list-style-type: none;
+}
+
+#show_images
+{
+    float: right;
+}
+
+#CancelIProfile
+{
+    float: right;
+}
+
+#SaveIProfile
+{
+    float: right;
+}
+
+.invent_expanded_ws > a
+{
+    color: black;
+}
+
+.errorEdit
+{
+    display: none;
+    color: red;
+    margin-right: 3px;
+    font-weight: bold;
+}
+
+.inventory_fixed_title
+{
+    color: #FFFFFF;
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 10px 10px 20px;
+}
+
+#right_content_nav > a
+{
+    color: black;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+    #right_content_nav > a:hover
+    {
+        color: #0063DC;
+    }
+/*End Liem Add*/
+
+.nav_middle_MilesAppraisal
+{
+    width: 73px;
+}
+
+.nav_long_ACV_Appaisal
+{
+    width: 85px;
+}
+
+.vehicle_price_appraisal input
+{
+    border: 1px solid green;
+    width: 70px !important;
+    margin-top: 0px;
+    text-align: center;
+}
+
+textarea
+{
+    resize: none;
+}
+
+
+/*Brochure*/
+#vincontrol_brochure_container
+{
+    width: 1000px;
+    height: 600px;
+}
+
+.vinbrochure_carinfo_holder
+{
+    height: 400px;
+    padding: 10px;
+    margin: 35px;
+}
+
+.vinbrochure_carimg_holder
+{
+    width: 70%;
+    float: left;
+}
+
+.vinbrochure_cartitle
+{
+    font-weight: bold;
+    font-size: 17px;
+    padding-bottom: 2px;
+}
+
+.vinbrochure_carimg
+{
+    height: 375px;
+    width: 600px;
+}
+
+.vinbrochure_ymm_holder
+{
+    width: 30%;
+    float: right;
+}
+
+.vinbrochure_ymm_select
+{
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.vinbrochure_select_items
+{
+}
+
+    .vinbrochure_select_items > select
+    {
+        width: 200px;
+        font-weight: bold;
+        height: 25px;
+        background-color: #EEE;
+        margin-top: 10px;
+        color: #555;
+    }
+
+.vinbrochure_customer_info
+{
+    padding: 10px;
+}
+
+.vinbrochure_customer_info_items
+{
+    margin-bottom: 15px;
+}
+
+.vinbrochure_customer_title
+{
+    padding-bottom: 2px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.vinbrochure_customer_info_items > input
+{
+    width: 200px;
+    height: 25px;
+}
+
+.vinbrochure_btns_holder
+{
+    padding: 5px;
+    height: 50px;
+    margin: 35px;
+}
+
+.vinbrochure_btns_items
+{
+    width: 50%;
+    float: left;
+}
+
+.vinbrochure_btns_style:hover
+{
+    background-color: #003CB3;
+}
+
+.vinbrochure_btns_items_holder
+{
+}
+
+.vinbrochure_btns_style
+{
+    float: left;
+    width: 70px;
+    text-align: center;
+    background-color: #039;
+    color: #FFF;
+    margin-left: 5px;
+    padding: 4px;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 2px;
+    height: 22px;
+}
+
+.vinbrochure_btns_text
+{
+    font-size: 18px;
+    padding: 5px 10px;
+    float: left;
+    color: #444;
+}
+
+.btnSendBrochure
+{
+    background: transparent;
+    border: 0;
+    color: white;
+    font-size: 17px;
+    height: 22px;
+}
+
+.errorBrochure
+{
+    color: red;
+    padding: 5px;
+    font-size: 14px;
+}
+/*End Brochure*/
+
+.nav_Year {
+    width: 50px;
+}
+.nav_Make
+{
+    width: 90px;
+}
+
+.nav_Market_Make
+{
+    width: 60px;
+}
+
+.nav_Model
+{
+    width: 80px;
+}
+
+.nav_Market_Model
+{
+    width: 60px;
+}
+
+.nav_Trim
+{
+    width: 120px;
+}
+
+
+
+.nav_Market_Trim {
+    width: 60px;
+}
+
+.nav_OnMarket
+{
+    width: 80px;
+}
+
+.nav_AtAuction
+{
+    width: 80px;
+}
+
+.nav_InAppraisal
+{
+    width: 90px;
+}
+
+.nav_Vin
+{
+    width: 70px;
+}
+
+.nav_Color {
+    width: 100px;
+}
+.nav_Market
+{
+    width: 80px;
+}
+
+.nav_Highest
+{
+    width: 70px;
+}
+
+.nav_Turn
+{
+    width: 40px;
+}
+
+.nav_Seller {
+    width: 170px;
+}
+
+.nav_Distance {
+    width: 70px;
+}
+
+.nav_Age {
+    width: 80px;
+}
+
+.nav_Price {
+    width: 80px;
+}
+
+.nav_Mileage {
+    width: 80px;
+}
+
+.nav_Market_Mileage {
+    width: 69px;
+}
+
+.divWishListInfo
+{
+    position: relative;
+    padding-top: 10px;
+    height: 110px;
+    margin-left: 20px;
+    width: 94.82%;
+    border: solid 1px black;
+    margin-bottom: 10px;
+}
+
+.divWishListInfoLeft
+{
+    width: 20%;
+    padding: 0px 10px;
+    float: left;
+}
+
+.WishListInfoHeader
+{
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+    margin: 5px 0px;
+    color: #3366cc;
+}
+
+.WishListInfoHeaderRight
+{
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+    margin: 5px 0px;
+}
+
+.WishListInfoContent
+{
+    width: 100%;
+}
+
+.WishListInfoContentLeft
+{
+    width: 100%;
+    float: left;
+    font-size: 13px;
+}
+
+.WishListInfoContentRight
+{
+    width: 54%;
+    float: right;
+    font-size: 13px;
+}
+
+.divWishListInfoMiddle
+{
+    width: 31.3%;
+    float: left;
+}
+
+.divWishListInfoRight
+{
+    width: 45%;
+    float: left;
+}
+
+.divWishListStatistics
+{
+    border: solid 1px black;
+    height: 60px;
+    width: 100%;
+}
+
+.divWishListStatisticsHeader
+{
+    background-color: #ddd;
+    width: 96.8%;
+    float: left;
+    padding: 7px 7px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.divWishListStatisticsContent
+{
+    width: 100%;
+    float: left;
+    padding: 9px 7px;
+    font-size: 13px;
+}
+
+.divHighest
+{
+    width: 23%;
+    float: left;
+    color: black;
+}
+
+.divAverage
+{
+    width: 23%;
+    float: left;
+    color: black;
+}
+
+.divLowest
+{
+    width: 23%;
+    float: left;
+    color: black;
+}
+
+.divTurn
+{
+    width: 14%;
+    float: left;
+    color: black;
+}
+
+.divHistory
+{
+    width: 16%;
+    float: left;
+    color: black;
+}
+
+.divHighestContent
+{
+    width: 23%;
+    float: left;
+    color: #d12c00;
+    font-weight: bold;
+}
+
+.divAverageContent
+{
+    width: 23%;
+    float: left;
+    color: #458c00;
+    font-weight: bold;
+}
+
+.divLowestContent
+{
+    width: 23%;
+    float: left;
+    color: #0062a1;
+    font-weight: bold;
+}
+
+.divTurnContent
+{
+    width: 14%;
+    float: left;
+    color: black;
+}
+
+.divHistoryContent
+{
+    width: 16%;
+    float: left;
+    color: black;
+}
+
+
+.WishListMarket
+{
+    cursor: pointer;
+    color: #FFF;
+    font-size: 13px;    
+    text-align: center;
+    background-color: #666666;
+    float: left;
+    margin-top: 5px;
+    padding: 5px 20px;
+    margin-left: 20px;
+}
+
+.WishListAuction
+{
+    cursor: pointer;
+    color: #FFF;
+    font-size: 13px;    
+    text-align: center;
+    background-color: #666666;
+    float: left;
+    margin-top: 5px;
+    padding: 5px 20px;
+    margin-left: 5px;
+}
+
+.WishListMarket_tabActive {
+    background-color: #039!important;
+}
+
+.contentLeft {
+    float: left;
+    width: 120px;
+    font-size: 14px;
+font-weight: bold;
+}
+
+.contentRight {
+    float: left;
+    font-size: 14px;
+font-weight: bold;
+}
+
+.borderBottom {
+    border-bottom: solid 1px #cdcdcd;
+    padding: 10px 0px;
+}
+
+#auction_right_content_nav {
+    display: none;
+}

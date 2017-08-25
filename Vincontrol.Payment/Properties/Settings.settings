@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Vincontrol.Payment.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Vincontrol_Payment_com_securenet_certify_SPOSServer" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://certify.securenet.com/spos/sposserver.asmx</Value>
+    </Setting>
+    <Setting Name="Vincontrol_Payment_com_securenet_extendedServices_SERVICE" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://certify.securenet.com/API/DATA/SERVICE.svc/soap</Value>
+    </Setting>
+    <Setting Name="Vincontrol_Payment_com_securenet_gateway_Gateway" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://certify.securenet.com/API/Gateway.svc/soap</Value>
+    </Setting>
+    <Setting Name="Vincontrol_Payment_com_securenet_transactionServices_TRANSACTION" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://certify.securenet.com/API/DATA/TRANSACTION.svc/wsHttp</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

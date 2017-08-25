@@ -1,0 +1,343 @@
+﻿body
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.kpi_print_options
+{
+}
+
+    .kpi_print_options > img
+    {
+        cursor: pointer;
+        margin: 10px 20px;
+    }
+
+.kpi_print_title
+{
+    background-color: #3366cc;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    color: white;
+    text-align: left !important;
+}
+
+.status_btn_holder
+{
+}
+
+.status_change
+{
+}
+
+.status_vh
+{
+    font-size: 22px !important;
+}
+
+.status_current
+{
+}
+
+.status_btn_holder > div:hover
+{
+    background-color: #444444;
+}
+
+.status_btn_holder > div
+{
+    background-color: #515151;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    height: 26px;
+    margin: 10px;
+    padding-top: 5px;
+    text-align: center;
+    width: 100px;
+}
+
+#status_transfer
+{
+}
+
+#status_cancel
+{
+}
+
+#status_popup_holder > label
+{
+    display: block;
+    padding: 5px 20px;
+    font-size: 19px;
+}
+
+.btns_shadow
+{
+    box-shadow: 3px 2px 3px #333333;
+}
+
+.status_change_select
+{
+    margin-left: 30px;
+}
+
+    .status_change_select select
+    {
+        background-color: #CDCDCD;
+        border: 1px solid;
+        width: 70%;
+    }
+
+#fsquareContainer
+{
+    width: 1100px;
+    font-size: 14px;
+    margin: 0px auto;
+    background-color: #FAFAFA;
+    font-weight: bold;
+    color: #555;
+}
+
+.fsquareLogo
+{
+    background-color: white;
+    margin-left: 250px;
+}
+
+
+
+.fsquareHeaderLeft
+{
+    float: right;
+    width: 40%;
+}
+
+.fsqRow
+{
+    min-height: 30px;
+    clear: both;
+    border-bottom: 2px solid #CDCDCD;
+    padding-bottom: 4px;
+    margin-top: 5px;
+}
+
+.fsqFloatLeft
+{
+    margin-right: 5px;
+    float: left;
+}
+
+.fsqLabel
+{
+}
+
+    .fsqLabel.fsqFloatLeft
+    {
+        width: 64px;
+    }
+
+#fsquareInfo
+{
+    clear: both;
+    margin-top: 30px;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.fsqInpuText[type="text"]
+{
+    margin-top: 0px;
+    width: 100%;
+    padding-left: 7px;
+    font-size: 15px;
+}
+
+    .fsqInpuText[type="text"].fsqFont
+    {
+        font-size: 30px;
+    }
+
+.fsquareInfoLeft
+{
+    float: left;
+    width: 50%;
+    border-right: 2px solid #808080;
+}
+
+.fsqInput.fsqFloatLeft
+{
+    width: 65%;
+}
+
+.fsqCheck .fsqInput
+{
+    width: 27px !important;
+}
+
+.fsqCheck .fsqLabel
+{
+    width: 40px !important;
+}
+
+div, input
+{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+}
+
+.loFancybox, .loFancybox div
+{
+    box-sizing: inherit !important;
+    -moz-box-sizing: inherit !important; /* Firefox */
+}
+.leoCustom {
+    box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important; /* Firefox */
+}
+.smHeight1
+{
+    height: 85px;
+}
+
+.sqrPayments
+{
+    height: 30px;
+    float: left;
+}
+
+.smHeight2
+{
+    height: 71px;
+}
+
+.sqrPaymentText
+{
+    font-size: 18px;
+    font-weight: bold;
+    float: left;
+    text-align: left;
+    width: 200px;
+}
+
+.sqrPaymentRight
+{
+    float: right;
+    margin-right: 60px;
+    margin-top: 20px;
+}
+
+.salePriceBig
+{
+    padding: 15px;
+    font-size: 50px;
+}
+
+.loCalculateItems
+{
+    height: 52px;
+}
+
+.loInvalidMessage
+{
+    display: none;
+    clear: both;
+    font-size: 13px;
+    font-style: italic;
+    text-align: right;
+    padding-right: 20px;
+    color: #F00;
+}
+
+.borderBottom
+{
+    border-bottom: 2px solid #808080;
+}
+
+.smHeight3
+{
+    height: 52px;
+}
+
+.smHeight4
+{
+    height: 300px;
+}
+
+.smHeight5
+{
+    height: 300px;
+}
+
+.smHeight6
+{
+    height: 150px;
+}
+
+.sqrSignLabel
+{
+    float: left;
+}
+
+.sqrBottomText
+{
+    padding: 10px 30px 0px;
+    height: 70px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.sqrBottomSign
+{
+    padding: 0px 30px;
+    height: 30px;
+}
+
+.sqrSignInput
+{
+    float: left;
+    width: 200px;
+    border-bottom: 2px solid #808080;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.textCentered
+{
+    text-align: center;
+}
+
+.loExistButton
+{
+    float: right;
+    margin: 5px;
+    padding: 5px 10px;
+    background-color: #555;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    .loExistButton:hover
+    {
+        background-color: #444;
+    }
+
+#loExistInInventoryBtn
+{
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.loCalculateItems .fsqInput.fsqFloatLeft
+{
+    width: 97% !important;
+}

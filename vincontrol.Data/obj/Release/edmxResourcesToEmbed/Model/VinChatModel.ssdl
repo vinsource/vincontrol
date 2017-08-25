@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VinChatModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="VinChatModelStoreContainer">
+    <EntitySet Name="last" EntityType="VinChatModel.Store.last" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="privacy_default_list" EntityType="VinChatModel.Store.privacy_default_list" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="privacy_list" EntityType="VinChatModel.Store.privacy_list" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="privacy_list_data" EntityType="VinChatModel.Store.privacy_list_data" store:Type="Tables" store:Schema="dbo" store:Name="privacy_list_data">
+      <DefiningQuery>SELECT 
+      [privacy_list_data].[id] AS [id], 
+      [privacy_list_data].[t] AS [t], 
+      [privacy_list_data].[value] AS [value], 
+      [privacy_list_data].[action] AS [action], 
+      [privacy_list_data].[ord] AS [ord], 
+      [privacy_list_data].[match_all] AS [match_all], 
+      [privacy_list_data].[match_iq] AS [match_iq], 
+      [privacy_list_data].[match_message] AS [match_message], 
+      [privacy_list_data].[match_presence_in] AS [match_presence_in], 
+      [privacy_list_data].[match_presence_out] AS [match_presence_out]
+      FROM [dbo].[privacy_list_data] AS [privacy_list_data]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="private_storage" EntityType="VinChatModel.Store.private_storage" store:Type="Tables" store:Schema="dbo" store:Name="private_storage">
+      <DefiningQuery>SELECT 
+      [private_storage].[username] AS [username], 
+      [private_storage].[namespace] AS [namespace], 
+      [private_storage].[data] AS [data]
+      FROM [dbo].[private_storage] AS [private_storage]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="pubsub_node" EntityType="VinChatModel.Store.pubsub_node" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="pubsub_state" EntityType="VinChatModel.Store.pubsub_state" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="roster_version" EntityType="VinChatModel.Store.roster_version" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="rostergroups" EntityType="VinChatModel.Store.rostergroups" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="rosterusers" EntityType="VinChatModel.Store.rosterusers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="spool" EntityType="VinChatModel.Store.spool" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="users" EntityType="VinChatModel.Store.users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vcard" EntityType="VinChatModel.Store.vcard" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vcard_search" EntityType="VinChatModel.Store.vcard_search" store:Type="Tables" store:Schema="dbo" store:Name="vcard_search">
+      <DefiningQuery>SELECT 
+      [vcard_search].[username] AS [username], 
+      [vcard_search].[lusername] AS [lusername], 
+      [vcard_search].[fn] AS [fn], 
+      [vcard_search].[lfn] AS [lfn], 
+      [vcard_search].[family] AS [family], 
+      [vcard_search].[lfamily] AS [lfamily], 
+      [vcard_search].[given] AS [given], 
+      [vcard_search].[lgiven] AS [lgiven], 
+      [vcard_search].[middle] AS [middle], 
+      [vcard_search].[lmiddle] AS [lmiddle], 
+      [vcard_search].[nickname] AS [nickname], 
+      [vcard_search].[lnickname] AS [lnickname], 
+      [vcard_search].[bday] AS [bday], 
+      [vcard_search].[lbday] AS [lbday], 
+      [vcard_search].[ctry] AS [ctry], 
+      [vcard_search].[lctry] AS [lctry], 
+      [vcard_search].[locality] AS [locality], 
+      [vcard_search].[llocality] AS [llocality], 
+      [vcard_search].[email] AS [email], 
+      [vcard_search].[lemail] AS [lemail], 
+      [vcard_search].[orgname] AS [orgname], 
+      [vcard_search].[lorgname] AS [lorgname], 
+      [vcard_search].[orgunit] AS [orgunit], 
+      [vcard_search].[lorgunit] AS [lorgunit]
+      FROM [dbo].[vcard_search] AS [vcard_search]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_pubsub_state" Association="VinChatModel.Store.FK_pubsub_state">
+      <End Role="pubsub_node" EntitySet="pubsub_node" />
+      <End Role="pubsub_state" EntitySet="pubsub_state" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="last">
+    <Key>
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="username" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="seconds" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="state" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Modify_Date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="privacy_default_list">
+    <Key>
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="username" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="privacy_list">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="username" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="name" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'VinChat.dbo.privacy_list_data' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="privacy_list_data">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="t" />
+      <PropertyRef Name="value" />
+      <PropertyRef Name="action" />
+      <PropertyRef Name="ord" />
+      <PropertyRef Name="match_all" />
+      <PropertyRef Name="match_iq" />
+      <PropertyRef Name="match_message" />
+      <PropertyRef Name="match_presence_in" />
+      <PropertyRef Name="match_presence_out" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="t" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="value" Type="text" Nullable="false" />
+    <Property Name="action" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ord" Type="numeric" Nullable="false" />
+    <Property Name="match_all" Type="bit" Nullable="false" />
+    <Property Name="match_iq" Type="bit" Nullable="false" />
+    <Property Name="match_message" Type="bit" Nullable="false" />
+    <Property Name="match_presence_in" Type="bit" Nullable="false" />
+    <Property Name="match_presence_out" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'VinChat.dbo.private_storage' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="private_storage">
+    <Key>
+      <PropertyRef Name="username" />
+      <PropertyRef Name="namespace" />
+      <PropertyRef Name="data" />
+    </Key>
+    <Property Name="username" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="namespace" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="data" Type="text" Nullable="false" />
+  </EntityType>
+  <EntityType Name="pubsub_node">
+    <Key>
+      <PropertyRef Name="nodeid" />
+    </Key>
+    <Property Name="host" Type="varchar" MaxLength="250" />
+    <Property Name="node" Type="varchar" MaxLength="250" />
+    <Property Name="parent" Type="varchar" MaxLength="250" />
+    <Property Name="type" Type="varchar" MaxLength="250" />
+    <Property Name="nodeid" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="pubsub_state">
+    <Key>
+      <PropertyRef Name="stateid" />
+    </Key>
+    <Property Name="nodeid" Type="bigint" />
+    <Property Name="jid" Type="varchar" MaxLength="250" />
+    <Property Name="affiliation" Type="char" MaxLength="1" />
+    <Property Name="subscriptions" Type="text" />
+    <Property Name="stateid" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="roster_version">
+    <Key>
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="username" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="version" Type="text" Nullable="false" />
+  </EntityType>
+  <EntityType Name="rostergroups">
+    <Key>
+      <PropertyRef Name="username" />
+      <PropertyRef Name="jid" />
+      <PropertyRef Name="grp" />
+    </Key>
+    <Property Name="username" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="jid" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="grp" Type="varchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="rosterusers">
+    <Key>
+      <PropertyRef Name="username" />
+      <PropertyRef Name="jid" />
+    </Key>
+    <Property Name="username" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="jid" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="nick" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="subscription" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="ask" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="askmessage" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="server" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="subscribe" Type="varchar" MaxLength="200" />
+    <Property Name="type" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="spool">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="id" Type="numeric" Nullable="false" Precision="19" StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="xml" Type="text" Nullable="false" />
+    <Property Name="notifyprocessed" Type="bit" />
+    <Property Name="created" Type="datetime" />
+    <Property Name="MustDelete" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="username" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="password" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="created" Type="datetime" />
+  </EntityType>
+  <EntityType Name="vcard">
+    <Key>
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="username" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="vcard" Type="text" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'VinChat.dbo.vcard_search' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="vcard_search">
+    <Key>
+      <PropertyRef Name="username" />
+      <PropertyRef Name="lusername" />
+      <PropertyRef Name="fn" />
+      <PropertyRef Name="lfn" />
+      <PropertyRef Name="family" />
+      <PropertyRef Name="lfamily" />
+      <PropertyRef Name="given" />
+      <PropertyRef Name="lgiven" />
+      <PropertyRef Name="middle" />
+      <PropertyRef Name="lmiddle" />
+      <PropertyRef Name="nickname" />
+      <PropertyRef Name="lnickname" />
+      <PropertyRef Name="bday" />
+      <PropertyRef Name="lbday" />
+      <PropertyRef Name="ctry" />
+      <PropertyRef Name="lctry" />
+      <PropertyRef Name="locality" />
+      <PropertyRef Name="llocality" />
+      <PropertyRef Name="email" />
+      <PropertyRef Name="lemail" />
+      <PropertyRef Name="orgname" />
+      <PropertyRef Name="lorgname" />
+      <PropertyRef Name="orgunit" />
+      <PropertyRef Name="lorgunit" />
+    </Key>
+    <Property Name="username" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="lusername" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="fn" Type="text" Nullable="false" />
+    <Property Name="lfn" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="family" Type="text" Nullable="false" />
+    <Property Name="lfamily" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="given" Type="text" Nullable="false" />
+    <Property Name="lgiven" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="middle" Type="text" Nullable="false" />
+    <Property Name="lmiddle" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="nickname" Type="text" Nullable="false" />
+    <Property Name="lnickname" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="bday" Type="text" Nullable="false" />
+    <Property Name="lbday" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="ctry" Type="text" Nullable="false" />
+    <Property Name="lctry" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="locality" Type="text" Nullable="false" />
+    <Property Name="llocality" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="email" Type="text" Nullable="false" />
+    <Property Name="lemail" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="orgname" Type="text" Nullable="false" />
+    <Property Name="lorgname" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="orgunit" Type="text" Nullable="false" />
+    <Property Name="lorgunit" Type="varchar" Nullable="false" MaxLength="250" />
+  </EntityType>
+  <Association Name="FK_pubsub_state">
+    <End Role="pubsub_node" Type="VinChatModel.Store.pubsub_node" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="pubsub_state" Type="VinChatModel.Store.pubsub_state" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pubsub_node">
+        <PropertyRef Name="nodeid" />
+      </Principal>
+      <Dependent Role="pubsub_state">
+        <PropertyRef Name="nodeid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <!--Errors Found During Generation:
+      warning 6013: The table/view 'VinChat.dbo.pubsub_item' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="pubsub_item">
+        <Property Name="nodeid" Type="bigint" />
+        <Property Name="itemid" Type="varchar" MaxLength="250" />
+        <Property Name="publisher" Type="text" />
+        <Property Name="creation" Type="text" />
+        <Property Name="modification" Type="text" />
+        <Property Name="payload" Type="text" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'VinChat.dbo.pubsub_node_option' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="pubsub_node_option">
+        <Property Name="nodeid" Type="bigint" />
+        <Property Name="name" Type="varchar" MaxLength="250" />
+        <Property Name="val" Type="varchar" MaxLength="250" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'VinChat.dbo.pubsub_node_owner' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="pubsub_node_owner">
+        <Property Name="nodeid" Type="bigint" />
+        <Property Name="owner" Type="varchar" MaxLength="250" />
+      </EntityType>
+      Errors Found During Generation:
+      warning 6013: The table/view 'VinChat.dbo.pubsub_subscription_opt' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+      
+      <EntityType Name="pubsub_subscription_opt">
+        <Property Name="subid" Type="varchar" MaxLength="250" />
+        <Property Name="opt_name" Type="varchar" MaxLength="32" />
+        <Property Name="opt_value" Type="text" />
+      </EntityType>-->
+</Schema>

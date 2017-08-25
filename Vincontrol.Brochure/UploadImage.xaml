@@ -1,0 +1,88 @@
+﻿<Window x:Class="Vincontrol.Brochure.UploadImage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        Title="UploadImage" Height="450" Width="500">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Width="300" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="10" DataContext="{Binding TradeinValueModel}" >
+
+                <TextBlock Text="Year*"></TextBlock>
+                <ComboBox ItemsSource="{Binding Years}" x:Name="YearList"  SelectedValue="{Binding Year, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}"  >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="SelectionChanged">
+                            <i:InvokeCommandAction Command="{Binding YearChangeCommand}" CommandParameter="{Binding ElementName=YearList, Path=SelectedItem}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </ComboBox>
+
+                <TextBlock Text="Make*"/>
+                <ComboBox ItemsSource="{Binding Makes}" DisplayMemberPath="MakeValue" SelectedValuePath="YearMakeId"  x:Name="MakeList"   SelectedValue="{Binding Make, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="SelectionChanged">
+                            <i:InvokeCommandAction Command="{Binding MakeChangeCommand}" CommandParameter="{Binding ElementName=MakeList, Path=SelectedItem}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </ComboBox>
+
+                <TextBlock Text="Model*"/>
+                <ComboBox ItemsSource="{Binding Models}" DisplayMemberPath="ModelValue" SelectedValuePath="ModelId" x:Name="ModelList" SelectedValue="{Binding Model, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="SelectionChanged">
+                            <i:InvokeCommandAction Command="{Binding ModelChangeCommand}" CommandParameter="{Binding ElementName=ModelList, Path=SelectedItem}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </ComboBox>
+
+
+                <TextBlock Text="Trim*"/>
+                <ComboBox ItemsSource="{Binding Trims}" DisplayMemberPath="TrimValue" SelectedValuePath="TrimId" x:Name="TrimList"   SelectedValue="{Binding Trim, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}" >
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="SelectionChanged">
+                            <i:InvokeCommandAction Command="{Binding TrimChangeCommand}" CommandParameter="{Binding ElementName=TrimList, Path=SelectedItem}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </ComboBox>
+
+                <TextBlock Text="Estimated Mileage*"/>
+                <TextBox Name="EstimatedMileage" IsEnabled="False" Text="{Binding EstimatedMileage}"></TextBox>
+
+
+                <TextBlock Text="Trade In Value*"/>
+                <TextBox Name="TradeInValue" Text="{Binding TradeinValue, Mode=TwoWay, ValidatesOnDataErrors=True, NotifyOnValidationError=True, UpdateSourceTrigger=PropertyChanged}"></TextBox>
+
+
+                <TextBlock Text="Sample Vin"/>
+                <TextBox Name="SampleVin" Text="{Binding SampleVin}"></TextBox>
+
+
+                <TextBlock Text="Brochure Name"/>
+                <StackPanel Orientation="Horizontal">
+                    <Button Width="70" Name="UpLoadImageBtn" Command="{Binding UploadBrochureCommand}" >Upload</Button>
+                    <TextBox Width="150" Name="TxtFileName"></TextBox>
+                </StackPanel>
+
+                <TextBlock Name="ErrorMessage" Foreground="Red" >
+
+                </TextBlock>
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <Button  Width="70" Margin="10">Previous</Button>
+                    <Button  Width="70" Margin="10">Next</Button>
+                    <Button  Width="70" Margin="10" Command="{Binding SaveConditionListCommand}">Save</Button>
+                </StackPanel>
+                <!--<StackPanel Orientation="Horizontal">
+              <CheckBox> Override file if existed?</CheckBox>
+
+            </StackPanel>-->
+
+
+            </StackPanel>
+            <Border Background="Gray" Margin="10"></Border>
+            <StackPanel Margin="10">
+                <TextBlock><Run Text="Report"/></TextBlock>
+                <Button  Margin="10" Click="Button_Click_1" Content="Trade In Report"/>
+                <Button  Margin="10" Click="Button_Click_2" Content="Sample Vin Report"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

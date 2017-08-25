@@ -1,0 +1,5 @@
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.FileUpload\bin\Debug\vincontrol.FileUpload.dll
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.FileUpload\bin\Debug\vincontrol.FileUpload.pdb
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.FileUpload\obj\Debug\ResolveAssemblyReference.cache
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.FileUpload\obj\Debug\vincontrol.FileUpload.dll
+C:\NetTeam\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.FileUpload\obj\Debug\vincontrol.FileUpload.pdb

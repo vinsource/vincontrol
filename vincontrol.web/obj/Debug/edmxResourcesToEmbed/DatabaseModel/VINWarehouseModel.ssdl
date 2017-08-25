@@ -1,0 +1,1687 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="vincontrolwarehouseModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="vincontrolwarehouseModelStoreContainer">
+    <EntitySet Name="alerts" EntityType="vincontrolwarehouseModel.Store.alerts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="answers" EntityType="vincontrolwarehouseModel.Store.answers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="autotradertrims" EntityType="vincontrolwarehouseModel.Store.autotradertrims" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="bannercustomers" EntityType="vincontrolwarehouseModel.Store.bannercustomers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="bb_kbb" EntityType="vincontrolwarehouseModel.Store.bb_kbb" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="bb_kbb_kbb" EntityType="vincontrolwarehouseModel.Store.bb_kbb_kbb" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="buyerguides" EntityType="vincontrolwarehouseModel.Store.buyerguides" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="carfaxes" EntityType="vincontrolwarehouseModel.Store.carfaxes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="carscomtrims" EntityType="vincontrolwarehouseModel.Store.carscomtrims" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="chartselections" EntityType="vincontrolwarehouseModel.Store.chartselections" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="customers" EntityType="vincontrolwarehouseModel.Store.customers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="datafeedcredentials" EntityType="vincontrolwarehouseModel.Store.datafeedcredentials" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="datafeedlookups" EntityType="vincontrolwarehouseModel.Store.datafeedlookups" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="datafeedprofiles" EntityType="vincontrolwarehouseModel.Store.datafeedprofiles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="dealergroups" EntityType="vincontrolwarehouseModel.Store.dealergroups" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="dealers" EntityType="vincontrolwarehouseModel.Store.dealers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="dealers_dealersetting" EntityType="vincontrolwarehouseModel.Store.dealers_dealersetting" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="descriptions" EntityType="vincontrolwarehouseModel.Store.descriptions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ebays" EntityType="vincontrolwarehouseModel.Store.ebays" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="exportdataprofilemappings" EntityType="vincontrolwarehouseModel.Store.exportdataprofilemappings" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="fueltypes" EntityType="vincontrolwarehouseModel.Store.fueltypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="grouppermissions" EntityType="vincontrolwarehouseModel.Store.grouppermissions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="groups" EntityType="vincontrolwarehouseModel.Store.groups" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="importdatafeedprofiles" EntityType="vincontrolwarehouseModel.Store.importdatafeedprofiles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="importfeeds" EntityType="vincontrolwarehouseModel.Store.importfeeds" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="inventory" EntityType="vincontrolwarehouseModel.Store.inventory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="inventory_appraisalinfo" EntityType="vincontrolwarehouseModel.Store.inventory_appraisalinfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="inventory_inventoryinfo" EntityType="vincontrolwarehouseModel.Store.inventory_inventoryinfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="inventoryhistories" EntityType="vincontrolwarehouseModel.Store.inventoryhistories" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="kbboptions" EntityType="vincontrolwarehouseModel.Store.kbboptions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="kbbpackages" EntityType="vincontrolwarehouseModel.Store.kbbpackages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="kbbtrimoptions" EntityType="vincontrolwarehouseModel.Store.kbbtrimoptions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="kbbtrimpackages" EntityType="vincontrolwarehouseModel.Store.kbbtrimpackages" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="kbbtrims" EntityType="vincontrolwarehouseModel.Store.kbbtrims" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="manheimvalues" EntityType="vincontrolwarehouseModel.Store.manheimvalues" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="notes" EntityType="vincontrolwarehouseModel.Store.notes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="permissioncodes" EntityType="vincontrolwarehouseModel.Store.permissioncodes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="permissionvalues" EntityType="vincontrolwarehouseModel.Store.permissionvalues" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="questions" EntityType="vincontrolwarehouseModel.Store.questions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="questiontypes" EntityType="vincontrolwarehouseModel.Store.questiontypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="rebates" EntityType="vincontrolwarehouseModel.Store.rebates" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="status" EntityType="vincontrolwarehouseModel.Store.status" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="styles" EntityType="vincontrolwarehouseModel.Store.styles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tradeinbannercomments" EntityType="vincontrolwarehouseModel.Store.tradeinbannercomments" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="transactions" EntityType="vincontrolwarehouseModel.Store.transactions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="transactiontypes" EntityType="vincontrolwarehouseModel.Store.transactiontypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="truckcategories" EntityType="vincontrolwarehouseModel.Store.truckcategories" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="truckclasses" EntityType="vincontrolwarehouseModel.Store.truckclasses" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="trucktypes" EntityType="vincontrolwarehouseModel.Store.trucktypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="useralerts" EntityType="vincontrolwarehouseModel.Store.useralerts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="userdealers" EntityType="vincontrolwarehouseModel.Store.userdealers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="users" EntityType="vincontrolwarehouseModel.Store.users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vehicles" EntityType="vincontrolwarehouseModel.Store.vehicles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vehicles_truck" EntityType="vincontrolwarehouseModel.Store.vehicles_truck" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vehicletypes" EntityType="vincontrolwarehouseModel.Store.vehicletypes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="walkarounds" EntityType="vincontrolwarehouseModel.Store.walkarounds" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="answers$fk_answers_questions" Association="vincontrolwarehouseModel.Store.answers$fk_answers_questions">
+      <End Role="questions" EntitySet="questions" />
+      <End Role="answers" EntitySet="answers" />
+    </AssociationSet>
+    <AssociationSet Name="answers$FK_AppraisalInfoAnswer" Association="vincontrolwarehouseModel.Store.answers$FK_AppraisalInfoAnswer">
+      <End Role="inventory_appraisalinfo" EntitySet="inventory_appraisalinfo" />
+      <End Role="answers" EntitySet="answers" />
+    </AssociationSet>
+    <AssociationSet Name="bannercustomers$FK_DealerBannerCustomer" Association="vincontrolwarehouseModel.Store.bannercustomers$FK_DealerBannerCustomer">
+      <End Role="dealers" EntitySet="dealers" />
+      <End Role="bannercustomers" EntitySet="bannercustomers" />
+    </AssociationSet>
+    <AssociationSet Name="bb_kbb_kbb$FK_KBB_inherits_BB_KBB" Association="vincontrolwarehouseModel.Store.bb_kbb_kbb$FK_KBB_inherits_BB_KBB">
+      <End Role="bb_kbb" EntitySet="bb_kbb" />
+      <End Role="bb_kbb_kbb" EntitySet="bb_kbb_kbb" />
+    </AssociationSet>
+    <AssociationSet Name="buyerguides$FK_DealerBuyerGuide" Association="vincontrolwarehouseModel.Store.buyerguides$FK_DealerBuyerGuide">
+      <End Role="dealers" EntitySet="dealers" />
+      <End Role="buyerguides" EntitySet="buyerguides" />
+    </AssociationSet>
+    <AssociationSet Name="carfaxes$FK_CarFaxVehicles" Association="vincontrolwarehouseModel.Store.carfaxes$FK_CarFaxVehicles">
+      <End Role="vehicles" EntitySet="vehicles" />
+      <End Role="carfaxes" EntitySet="carfaxes" />
+    </AssociationSet>
+    <AssociationSet Name="chartselections$FK_InventoryChartSelection" Association="vincontrolwarehouseModel.Store.chartselections$FK_InventoryChartSelection">
+      <End Role="inventory" EntitySet="inventory" />
+      <End Role="chartselections" EntitySet="chartselections" />
+    </AssociationSet>
+    <AssociationSet Name="datafeedcredentials$FK_DataFeedLookupDataFeedCredential" Association="vincontrolwarehouseModel.Store.datafeedcredentials$FK_DataFeedLookupDataFeedCredential">
+      <End Role="datafeedlookups" EntitySet="datafeedlookups" />
+      <End Role="datafeedcredentials" EntitySet="datafeedcredentials" />
+    </AssociationSet>
+    <AssociationSet Name="datafeedlookups$FK_DataFeedLookupDealer" Association="vincontrolwarehouseModel.Store.datafeedlookups$FK_DataFeedLookupDealer">
+      <End Role="dealers" EntitySet="dealers" />
+      <End Role="datafeedlookups" EntitySet="datafeedlookups" />
+    </AssociationSet>
+    <AssociationSet Name="datafeedlookups$FK_DataFeedProfileDataFeedLookup" Association="vincontrolwarehouseModel.Store.datafeedlookups$FK_DataFeedProfileDataFeedLookup">
+      <End Role="datafeedprofiles" EntitySet="datafeedprofiles" />
+      <End Role="datafeedlookups" EntitySet="datafeedlookups" />
+    </AssociationSet>
+    <AssociationSet Name="datafeedlookups$FK_ExportDataProfileMappingDataFeedLookup" Association="vincontrolwarehouseModel.Store.datafeedlookups$FK_ExportDataProfileMappingDataFeedLookup">
+      <End Role="exportdataprofilemappings" EntitySet="exportdataprofilemappings" />
+      <End Role="datafeedlookups" EntitySet="datafeedlookups" />
+    </AssociationSet>
+    <AssociationSet Name="datafeedprofiles$FK_ExportDataProfileMappingDataFeedProfile" Association="vincontrolwarehouseModel.Store.datafeedprofiles$FK_ExportDataProfileMappingDataFeedProfile">
+      <End Role="exportdataprofilemappings" EntitySet="exportdataprofilemappings" />
+      <End Role="datafeedprofiles" EntitySet="datafeedprofiles" />
+    </AssociationSet>
+    <AssociationSet Name="dealers$FK_DealerGroupDealer" Association="vincontrolwarehouseModel.Store.dealers$FK_DealerGroupDealer">
+      <End Role="dealergroups" EntitySet="dealergroups" />
+      <End Role="dealers" EntitySet="dealers" />
+    </AssociationSet>
+    <AssociationSet Name="dealers_dealersetting$FK_DealerSetting_inherits_Dealer" Association="vincontrolwarehouseModel.Store.dealers_dealersetting$FK_DealerSetting_inherits_Dealer">
+      <End Role="dealers" EntitySet="dealers" />
+      <End Role="dealers_dealersetting" EntitySet="dealers_dealersetting" />
+    </AssociationSet>
+    <AssociationSet Name="ebays$FK_EbayInventory" Association="vincontrolwarehouseModel.Store.ebays$FK_EbayInventory">
+      <End Role="inventory" EntitySet="inventory" />
+      <End Role="ebays" EntitySet="ebays" />
+    </AssociationSet>
+    <AssociationSet Name="grouppermissions$fk_grouppermission_group" Association="vincontrolwarehouseModel.Store.grouppermissions$fk_grouppermission_group">
+      <End Role="groups" EntitySet="groups" />
+      <End Role="grouppermissions" EntitySet="grouppermissions" />
+    </AssociationSet>
+    <AssociationSet Name="grouppermissions$fk_grouppermission_permissioncodes" Association="vincontrolwarehouseModel.Store.grouppermissions$fk_grouppermission_permissioncodes">
+      <End Role="permissioncodes" EntitySet="permissioncodes" />
+      <End Role="grouppermissions" EntitySet="grouppermissions" />
+    </AssociationSet>
+    <AssociationSet Name="grouppermissions$fk_grouppermission_permissionvalue" Association="vincontrolwarehouseModel.Store.grouppermissions$fk_grouppermission_permissionvalue">
+      <End Role="permissionvalues" EntitySet="permissionvalues" />
+      <End Role="grouppermissions" EntitySet="grouppermissions" />
+    </AssociationSet>
+    <AssociationSet Name="importfeeds$FK_DealerImportFeed" Association="vincontrolwarehouseModel.Store.importfeeds$FK_DealerImportFeed">
+      <End Role="dealers" EntitySet="dealers" />
+      <End Role="importfeeds" EntitySet="importfeeds" />
+    </AssociationSet>
+    <AssociationSet Name="importfeeds$FK_ImportDataFeedProfileImportFeed" Association="vincontrolwarehouseModel.Store.importfeeds$FK_ImportDataFeedProfileImportFeed">
+      <End Role="importdatafeedprofiles" EntitySet="importdatafeedprofiles" />
+      <End Role="importfeeds" EntitySet="importfeeds" />
+    </AssociationSet>
+    <AssociationSet Name="inventory$FK_DealerDealerInventory" Association="vincontrolwarehouseModel.Store.inventory$FK_DealerDealerInventory">
+      <End Role="dealers" EntitySet="dealers" />
+      <End Role="inventory" EntitySet="inventory" />
+    </AssociationSet>
+    <AssociationSet Name="inventory$FK_StatusInventory" Association="vincontrolwarehouseModel.Store.inventory$FK_StatusInventory">
+      <End Role="status" EntitySet="status" />
+      <End Role="inventory" EntitySet="inventory" />
+    </AssociationSet>
+    <AssociationSet Name="inventory$FK_VehiclesDealerInventory" Association="vincontrolwarehouseModel.Store.inventory$FK_VehiclesDealerInventory">
+      <End Role="vehicles" EntitySet="vehicles" />
+      <End Role="inventory" EntitySet="inventory" />
+    </AssociationSet>
+    <AssociationSet Name="inventory_appraisalinfo$FK_AppraisalInfo_inherits_Inventory" Association="vincontrolwarehouseModel.Store.inventory_appraisalinfo$FK_AppraisalInfo_inherits_Inventory">
+      <End Role="inventory" EntitySet="inventory" />
+      <End Role="inventory_appraisalinfo" EntitySet="inventory_appraisalinfo" />
+    </AssociationSet>
+    <AssociationSet Name="inventory_inventoryinfo$FK_InventoryInfo_inherits_Inventory" Association="vincontrolwarehouseModel.Store.inventory_inventoryinfo$FK_InventoryInfo_inherits_Inventory">
+      <End Role="inventory" EntitySet="inventory" />
+      <End Role="inventory_inventoryinfo" EntitySet="inventory_inventoryinfo" />
+    </AssociationSet>
+    <AssociationSet Name="inventoryhistories$FK_InventoryInventoryHistory" Association="vincontrolwarehouseModel.Store.inventoryhistories$FK_InventoryInventoryHistory">
+      <End Role="inventory" EntitySet="inventory" />
+      <End Role="inventoryhistories" EntitySet="inventoryhistories" />
+    </AssociationSet>
+    <AssociationSet Name="kbbtrimoptions$FK_OptionTrimOption1" Association="vincontrolwarehouseModel.Store.kbbtrimoptions$FK_OptionTrimOption1">
+      <End Role="kbboptions" EntitySet="kbboptions" />
+      <End Role="kbbtrimoptions" EntitySet="kbbtrimoptions" />
+    </AssociationSet>
+    <AssociationSet Name="kbbtrimoptions$FK_TrimTrimOption1" Association="vincontrolwarehouseModel.Store.kbbtrimoptions$FK_TrimTrimOption1">
+      <End Role="kbbtrims" EntitySet="kbbtrims" />
+      <End Role="kbbtrimoptions" EntitySet="kbbtrimoptions" />
+    </AssociationSet>
+    <AssociationSet Name="kbbtrimpackages$FK_PackageTrimPackage1" Association="vincontrolwarehouseModel.Store.kbbtrimpackages$FK_PackageTrimPackage1">
+      <End Role="kbbpackages" EntitySet="kbbpackages" />
+      <End Role="kbbtrimpackages" EntitySet="kbbtrimpackages" />
+    </AssociationSet>
+    <AssociationSet Name="kbbtrimpackages$FK_TrimTrimPackage1" Association="vincontrolwarehouseModel.Store.kbbtrimpackages$FK_TrimTrimPackage1">
+      <End Role="kbbtrims" EntitySet="kbbtrims" />
+      <End Role="kbbtrimpackages" EntitySet="kbbtrimpackages" />
+    </AssociationSet>
+    <AssociationSet Name="notes$FK_DealerInventoryNote" Association="vincontrolwarehouseModel.Store.notes$FK_DealerInventoryNote">
+      <End Role="inventory" EntitySet="inventory" />
+      <End Role="notes" EntitySet="notes" />
+    </AssociationSet>
+    <AssociationSet Name="notes$FK_NoteStatus" Association="vincontrolwarehouseModel.Store.notes$FK_NoteStatus">
+      <End Role="status" EntitySet="status" />
+      <End Role="notes" EntitySet="notes" />
+    </AssociationSet>
+    <AssociationSet Name="notes$FK_UserNote" Association="vincontrolwarehouseModel.Store.notes$FK_UserNote">
+      <End Role="users" EntitySet="users" />
+      <End Role="notes" EntitySet="notes" />
+    </AssociationSet>
+    <AssociationSet Name="questions$fk_questions_questiontype" Association="vincontrolwarehouseModel.Store.questions$fk_questions_questiontype">
+      <End Role="questiontypes" EntitySet="questiontypes" />
+      <End Role="questions" EntitySet="questions" />
+    </AssociationSet>
+    <AssociationSet Name="rebates$FK_DealerRebate" Association="vincontrolwarehouseModel.Store.rebates$FK_DealerRebate">
+      <End Role="dealers" EntitySet="dealers" />
+      <End Role="rebates" EntitySet="rebates" />
+    </AssociationSet>
+    <AssociationSet Name="tradeinbannercomments$FK_DealerTradeinBannerComment" Association="vincontrolwarehouseModel.Store.tradeinbannercomments$FK_DealerTradeinBannerComment">
+      <End Role="dealers" EntitySet="dealers" />
+      <End Role="tradeinbannercomments" EntitySet="tradeinbannercomments" />
+    </AssociationSet>
+    <AssociationSet Name="transactions$FK_CustomerTransaction" Association="vincontrolwarehouseModel.Store.transactions$FK_CustomerTransaction">
+      <End Role="customers" EntitySet="customers" />
+      <End Role="transactions" EntitySet="transactions" />
+    </AssociationSet>
+    <AssociationSet Name="transactions$FK_DealerInventoryTransaction" Association="vincontrolwarehouseModel.Store.transactions$FK_DealerInventoryTransaction">
+      <End Role="inventory" EntitySet="inventory" />
+      <End Role="transactions" EntitySet="transactions" />
+    </AssociationSet>
+    <AssociationSet Name="transactions$FK_TransactionTypeTransaction" Association="vincontrolwarehouseModel.Store.transactions$FK_TransactionTypeTransaction">
+      <End Role="transactiontypes" EntitySet="transactiontypes" />
+      <End Role="transactions" EntitySet="transactions" />
+    </AssociationSet>
+    <AssociationSet Name="transactions$FK_UserTransaction" Association="vincontrolwarehouseModel.Store.transactions$FK_UserTransaction">
+      <End Role="users" EntitySet="users" />
+      <End Role="transactions" EntitySet="transactions" />
+    </AssociationSet>
+    <AssociationSet Name="truckcategories$FK_TruckTypeTruckCategory" Association="vincontrolwarehouseModel.Store.truckcategories$FK_TruckTypeTruckCategory">
+      <End Role="trucktypes" EntitySet="trucktypes" />
+      <End Role="truckcategories" EntitySet="truckcategories" />
+    </AssociationSet>
+    <AssociationSet Name="useralerts$FK_UserAlertAlert" Association="vincontrolwarehouseModel.Store.useralerts$FK_UserAlertAlert">
+      <End Role="alerts" EntitySet="alerts" />
+      <End Role="useralerts" EntitySet="useralerts" />
+    </AssociationSet>
+    <AssociationSet Name="useralerts$FK_UserUserAlert" Association="vincontrolwarehouseModel.Store.useralerts$FK_UserUserAlert">
+      <End Role="users" EntitySet="users" />
+      <End Role="useralerts" EntitySet="useralerts" />
+    </AssociationSet>
+    <AssociationSet Name="userdealers$FK_DealerUserDealer" Association="vincontrolwarehouseModel.Store.userdealers$FK_DealerUserDealer">
+      <End Role="dealers" EntitySet="dealers" />
+      <End Role="userdealers" EntitySet="userdealers" />
+    </AssociationSet>
+    <AssociationSet Name="userdealers$FK_UserUserDealer" Association="vincontrolwarehouseModel.Store.userdealers$FK_UserUserDealer">
+      <End Role="users" EntitySet="users" />
+      <End Role="userdealers" EntitySet="userdealers" />
+    </AssociationSet>
+    <AssociationSet Name="users$FK_DealerUser" Association="vincontrolwarehouseModel.Store.users$FK_DealerUser">
+      <End Role="dealers" EntitySet="dealers" />
+      <End Role="users" EntitySet="users" />
+    </AssociationSet>
+    <AssociationSet Name="users$FK_GroupUser" Association="vincontrolwarehouseModel.Store.users$FK_GroupUser">
+      <End Role="groups" EntitySet="groups" />
+      <End Role="users" EntitySet="users" />
+    </AssociationSet>
+    <AssociationSet Name="vehicles$FK_FuelTypeVehicle" Association="vincontrolwarehouseModel.Store.vehicles$FK_FuelTypeVehicle">
+      <End Role="fueltypes" EntitySet="fueltypes" />
+      <End Role="vehicles" EntitySet="vehicles" />
+    </AssociationSet>
+    <AssociationSet Name="vehicles$FK_VehicleTypeVehicle" Association="vincontrolwarehouseModel.Store.vehicles$FK_VehicleTypeVehicle">
+      <End Role="vehicletypes" EntitySet="vehicletypes" />
+      <End Role="vehicles" EntitySet="vehicles" />
+    </AssociationSet>
+    <AssociationSet Name="vehicles_truck$FK_Truck_inherits_Vehicle" Association="vincontrolwarehouseModel.Store.vehicles_truck$FK_Truck_inherits_Vehicle">
+      <End Role="vehicles" EntitySet="vehicles" />
+      <End Role="vehicles_truck" EntitySet="vehicles_truck" />
+    </AssociationSet>
+    <AssociationSet Name="vehicles_truck$FK_TruckCategoryTruck" Association="vincontrolwarehouseModel.Store.vehicles_truck$FK_TruckCategoryTruck">
+      <End Role="truckcategories" EntitySet="truckcategories" />
+      <End Role="vehicles_truck" EntitySet="vehicles_truck" />
+    </AssociationSet>
+    <AssociationSet Name="vehicles_truck$FK_TruckClassTruck" Association="vincontrolwarehouseModel.Store.vehicles_truck$FK_TruckClassTruck">
+      <End Role="truckclasses" EntitySet="truckclasses" />
+      <End Role="vehicles_truck" EntitySet="vehicles_truck" />
+    </AssociationSet>
+    <AssociationSet Name="walkarounds$FK_AppraisalInfoWalkaround" Association="vincontrolwarehouseModel.Store.walkarounds$FK_AppraisalInfoWalkaround">
+      <End Role="inventory_appraisalinfo" EntitySet="inventory_appraisalinfo" />
+      <End Role="walkarounds" EntitySet="walkarounds" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="alerts">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AlertType" Type="varchar" Nullable="false" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="answers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="QuestionId" Type="int" />
+    <Property Name="AnswerContent" Type="varchar" MaxLength="45" />
+    <Property Name="Comment" Type="varchar" MaxLength="455" />
+    <Property Name="AppraisalInfoId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="autotradertrims">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="AutoTraderId" Type="bigint" Nullable="false" />
+    <Property Name="ModelId" Type="int" Nullable="false" />
+    <Property Name="TrimId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bannercustomers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="varchar" MaxLength="255" />
+    <Property Name="LastName" Type="varchar" MaxLength="255" />
+    <Property Name="Email" Type="varchar" MaxLength="255" />
+    <Property Name="Phone" Type="varchar" MaxLength="45" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="varchar" MaxLength="45" />
+    <Property Name="Model" Type="varchar" MaxLength="45" />
+    <Property Name="Trim" Type="varchar" MaxLength="45" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="SelectedOptions" Type="varchar(max)" />
+    <Property Name="Condition" Type="varchar" MaxLength="45" />
+    <Property Name="KBBVehicelId" Type="int" />
+    <Property Name="Vin" Type="varchar" MaxLength="45" />
+    <Property Name="TradeInFairValue" Type="varchar" MaxLength="45" />
+    <Property Name="TradeInMaxValue" Type="varchar" MaxLength="45" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="0" />
+    <Property Name="VarianceValue" Type="varchar" MaxLength="45" />
+    <Property Name="Source" Type="varchar" MaxLength="255" />
+    <Property Name="TradeInStatus" Type="varchar" MaxLength="10" />
+    <Property Name="EmailContent" Type="varchar(max)" />
+    <Property Name="ADFEmailContent" Type="varchar(max)" />
+    <Property Name="Receivers" Type="varchar" MaxLength="2000" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bb_kbb">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="TrimName" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="FairPrice" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="GoodPrice" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="DateAdded" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="Type" Type="smallint" Nullable="false" />
+    <Property Name="LastUpdated" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="ExpiredDate" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="VeryGoodPrice" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Vin" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="MigrateAutoId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bb_kbb_kbb">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="BaseWholeSale" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="MileageAdjustment" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="WholeSale" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="TrimId" Type="int" Nullable="false" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="buyerguides">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Make" Type="varchar" MaxLength="45" />
+    <Property Name="Model" Type="varchar" MaxLength="45" />
+    <Property Name="Year" Type="varchar" MaxLength="45" />
+    <Property Name="VinNumber" Type="varchar" MaxLength="45" />
+    <Property Name="StockNumber" Type="varchar" MaxLength="45" />
+    <Property Name="WarrantyType" Type="varchar" MaxLength="45" />
+    <Property Name="IsAsWarranty" Type="bit" />
+    <Property Name="IsWarranty" Type="bit" />
+    <Property Name="IsFullWarranty" Type="bit" />
+    <Property Name="IsLimitedWarranty" Type="bit" />
+    <Property Name="IsServiceContract" Type="bit" />
+    <Property Name="SystemCovered" Type="varchar(max)" />
+    <Property Name="Durations" Type="varchar(max)" />
+    <Property Name="PercentageOfLabor" Type="float" />
+    <Property Name="PercentageOfPart" Type="float" />
+    <Property Name="PriorRental" Type="varchar" MaxLength="45" />
+    <Property Name="IsMixed" Type="bit" />
+    <Property Name="SystemCoveredAndDurations" Type="varchar(max)" />
+    <Property Name="LanguageVersion" Type="int" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="carfaxes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Vin" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Owner" Type="int" Nullable="false" />
+    <Property Name="ServiceRecord" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="WindowSticker" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="DateAdded" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="ExpiredDate" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="Vehicle_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="carscomtrims">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="CarscomId" Type="bigint" Nullable="false" />
+    <Property Name="ModelId" Type="int" Nullable="false" />
+    <Property Name="TrimId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="chartselections">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="IsCarsCom" Type="bit" />
+    <Property Name="Options" Type="varchar" MaxLength="255" />
+    <Property Name="Trims" Type="varchar" MaxLength="550" />
+    <Property Name="IsCertified" Type="bit" />
+    <Property Name="IsAll" Type="bit" />
+    <Property Name="IsFranchise" Type="bit" />
+    <Property Name="IsIndependant" Type="bit" />
+    <Property Name="Screen" Type="varchar" MaxLength="45" />
+    <Property Name="SourceType" Type="varchar" MaxLength="45" />
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="InventoryId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="customers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="varchar" MaxLength="1000" />
+    <Property Name="LastName" Type="varchar" MaxLength="1000" />
+    <Property Name="Street" Type="varchar" MaxLength="1000" />
+    <Property Name="State" Type="varchar" MaxLength="1000" />
+    <Property Name="Country" Type="varchar" MaxLength="1000" />
+    <Property Name="ZipPostal" Type="varchar" MaxLength="1000" />
+    <Property Name="Phone" Type="varchar" MaxLength="1000" />
+    <Property Name="Email" Type="varchar" MaxLength="1000" />
+    <Property Name="Address" Type="varchar" MaxLength="1000" />
+    <Property Name="City" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="datafeedcredentials">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Password" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="DataFeedLookup_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="datafeedlookups">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DataFeedProfileId" Type="int" Nullable="false" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="PartnerId" Type="varchar" MaxLength="1000" />
+    <Property Name="UseSpecificMapping" Type="bit" Nullable="false" />
+    <Property Name="ExportDataProfileMapping_Id" Type="int" />
+  </EntityType>
+  <EntityType Name="datafeedprofiles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyName" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="FTPServer" Type="varchar" MaxLength="1000" />
+    <Property Name="DefaultUserName" Type="varchar" MaxLength="1000" />
+    <Property Name="DefaultPassword" Type="varchar" MaxLength="1000" />
+    <Property Name="Frequency" Type="int" />
+    <Property Name="ExportDataProfileMapping_Id" Type="int" />
+  </EntityType>
+  <EntityType Name="dealergroups">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="GroupAbbr" Type="varchar" MaxLength="100" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="DateAdded" Type="datetime2" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="dealers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DealerGroupId" Type="varchar" MaxLength="10" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Address" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="City" Type="varchar" MaxLength="1000" />
+    <Property Name="State" Type="varchar" MaxLength="1000" />
+    <Property Name="Country" Type="varchar" MaxLength="1000" />
+    <Property Name="ZipPostal" Type="varchar" MaxLength="1000" />
+    <Property Name="Phone" Type="varchar" MaxLength="1000" />
+    <Property Name="LeadsEmail" Type="varchar" MaxLength="1000" />
+    <Property Name="EmailFormatId" Type="smallint" />
+    <Property Name="Latitude" Type="varchar" MaxLength="1000" />
+    <Property Name="Longtitude" Type="varchar" MaxLength="1000" />
+    <Property Name="WebPageUrl" Type="varchar" MaxLength="1000" />
+    <Property Name="WebInventoryUrl" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="dealers_dealersetting">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="InventorySorting" Type="varchar" MaxLength="45" />
+    <Property Name="SoldOut" Type="varchar" MaxLength="45" />
+    <Property Name="DealershipId" Type="int" />
+    <Property Name="Cragislist" Type="varchar" MaxLength="100" />
+    <Property Name="CraigslistPassword" Type="varchar" MaxLength="45" />
+    <Property Name="Ebay" Type="varchar" MaxLength="100" />
+    <Property Name="EbayPassword" Type="varchar" MaxLength="45" />
+    <Property Name="CarFax" Type="varchar" MaxLength="100" />
+    <Property Name="CarFaxPassword" Type="varchar" MaxLength="45" />
+    <Property Name="Manheim" Type="varchar" MaxLength="100" />
+    <Property Name="ManheimPassword" Type="varchar" MaxLength="45" />
+    <Property Name="KellyBlueBook" Type="varchar" MaxLength="100" />
+    <Property Name="KellyPassword" Type="varchar" MaxLength="45" />
+    <Property Name="BlackBook" Type="varchar" MaxLength="100" />
+    <Property Name="BlackBookPassword" Type="varchar" MaxLength="45" />
+    <Property Name="AutoCheck" Type="varchar" MaxLength="100" />
+    <Property Name="AutoCheckPassword" Type="varchar" MaxLength="45" />
+    <Property Name="AppraisalNotification" Type="bit" />
+    <Property Name="WholeNotification" Type="bit" />
+    <Property Name="InventoryNotification" Type="bit" />
+    <Property Name="C24Hnotification" Type="bit" />
+    <Property Name="NoteNotification" Type="bit" />
+    <Property Name="PriceChangeNotification" Type="bit" />
+    <Property Name="AgeingBucketNotification" Type="bit" />
+    <Property Name="DefaultStockImageUrl" Type="varchar" MaxLength="255" />
+    <Property Name="OverideStockImage" Type="bit" />
+    <Property Name="DealerInfo" Type="varchar(max)" />
+    <Property Name="DealerWarranty" Type="varchar(max)" />
+    <Property Name="TermsAndCondition" Type="varchar(max)" />
+    <Property Name="EbayToken" Type="varchar(max)" />
+    <Property Name="EbayInventoryURL" Type="varchar(max)" />
+    <Property Name="CreditURL" Type="varchar(max)" />
+    <Property Name="WebSiteURL" Type="varchar(max)" />
+    <Property Name="ContactUsURL" Type="varchar(max)" />
+    <Property Name="FacebookURL" Type="varchar(max)" />
+    <Property Name="LogoURL" Type="varchar(max)" />
+    <Property Name="ContactPerson" Type="varchar(max)" />
+    <Property Name="RetailPrice" Type="bit" />
+    <Property Name="DealerDiscount" Type="bit" />
+    <Property Name="ManufacturerReabte" Type="bit" />
+    <Property Name="SalePrice" Type="bit" />
+    <Property Name="ManufacturerWarranty" Type="varchar(max)" />
+    <Property Name="ManufacturerWarrantySpanish" Type="varchar(max)" />
+    <Property Name="ManufacturerWarrantyDuration" Type="varchar(max)" />
+    <Property Name="DealerCertified" Type="varchar(max)" />
+    <Property Name="DealerCertifiedSpanish" Type="varchar(max)" />
+    <Property Name="DealerCertifiedDuration" Type="varchar(max)" />
+    <Property Name="ManufacturerCertified" Type="varchar(max)" />
+    <Property Name="ManufacturerCertifiedSpanish" Type="varchar(max)" />
+    <Property Name="ManufacturerCertifiedDuration" Type="varchar(max)" />
+    <Property Name="ShippingInfo" Type="varchar(max)" />
+    <Property Name="AsIsWarranty" Type="varchar(max)" />
+    <Property Name="AsIsWarrantySpanish" Type="varchar(max)" />
+    <Property Name="StartDescriptionSentence" Type="varchar(max)" />
+    <Property Name="EndDescriptionSentence" Type="varchar(max)" />
+    <Property Name="AuctionSentence" Type="varchar(max)" />
+    <Property Name="FirstTimeRangeBucketJump" Type="int" />
+    <Property Name="SecondTimeRangeBucketJump" Type="int" />
+    <Property Name="IntervalBucketJump" Type="int" />
+    <Property Name="RetailPriceText" Type="varchar" MaxLength="255" />
+    <Property Name="DealerDiscountText" Type="varchar" MaxLength="255" />
+    <Property Name="ManufactureReabateText" Type="varchar" MaxLength="255" />
+    <Property Name="SalePriceText" Type="varchar" MaxLength="255" />
+    <Property Name="HeaderOverlayURL" Type="varchar" MaxLength="255" />
+    <Property Name="FooterOverlayURL" Type="varchar" MaxLength="255" />
+    <Property Name="MarketPriceRangeChangeNotification" Type="bit" />
+    <Property Name="PriceVariance" Type="decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="descriptions">
+    <Key>
+      <PropertyRef Name="VinControlDescriptionId" />
+    </Key>
+    <Property Name="VinControlDescriptionId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="varchar" MaxLength="45" />
+    <Property Name="YesNo" Type="bit" />
+    <Property Name="DescriptionSentence" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="ebays">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="ServiceId" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="AdUrl" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="StartTime" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="EndTime" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Inventory_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="exportdataprofilemappings">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Mapping" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="UseHeader" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="fueltypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="grouppermissions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="GroupId" Type="int" Nullable="false" />
+    <Property Name="PermissionCode" Type="int" Nullable="false" />
+    <Property Name="PermissionValue" Type="int" Nullable="false" />
+    <Property Name="UserStamp" Type="varchar" Nullable="false" MaxLength="25" />
+    <Property Name="DateStamp" Type="datetime2" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="groups">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="GroupName" Type="varchar" Nullable="false" MaxLength="25" />
+    <Property Name="GroupNote" Type="varchar" MaxLength="150" />
+    <Property Name="UserStamp" Type="varchar" Nullable="false" MaxLength="25" />
+    <Property Name="DateStamp" Type="datetime2" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="importdatafeedprofiles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DealerId" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="CompanyName" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Mapping" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Delimited" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="UseHeader" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="importfeeds">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FeedUrl" Type="varchar" MaxLength="1000" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="ImportDataFeedProfileId" Type="int" />
+  </EntityType>
+  <EntityType Name="inventory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="StockNumber" Type="varchar" MaxLength="1000" />
+    <Property Name="MSRP" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="Mileage" Type="bigint" Nullable="false" />
+    <Property Name="ACV" Type="decimal" Precision="20" Scale="2" />
+    <Property Name="DealerCost" Type="decimal" Precision="20" Scale="2" />
+    <Property Name="SalePrice" Type="decimal" Precision="20" Scale="2" />
+    <Property Name="ExteriorColor" Type="varchar" MaxLength="1000" />
+    <Property Name="InteriorColor" Type="varchar" MaxLength="1000" />
+    <Property Name="Options" Type="varchar(max)" />
+    <Property Name="Packages" Type="varchar(max)" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="Images" Type="varchar(max)" Nullable="false" />
+    <Property Name="Condition" Type="varchar" MaxLength="1000" />
+    <Property Name="VehicleId" Type="int" Nullable="false" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="Certified" Type="bit" Nullable="false" />
+    <Property Name="CarFaxOwner" Type="smallint" />
+    <Property Name="KBBOptionsId" Type="varchar" MaxLength="1000" />
+    <Property Name="KBBTrimsId" Type="bigint" />
+    <Property Name="AddedBy" Type="varchar" MaxLength="1000" />
+    <Property Name="AddedDate" Type="datetime2" Precision="0" />
+    <Property Name="LastModifiedBy" Type="varchar" MaxLength="1000" />
+    <Property Name="LastModifiedDate" Type="datetime2" Precision="0" />
+    <Property Name="MigrateListingId" Type="int" Nullable="false" />
+    <Property Name="MigrateAppraisalId" Type="int" Nullable="false" />
+    <Property Name="MigrateSoldoutListingId" Type="int" Nullable="false" />
+    <Property Name="MigrateWholesaleListingId" Type="int" Nullable="false" />
+    <Property Name="StatusId" Type="char" Nullable="false" MaxLength="5" />
+    <Property Name="ColorCode" Type="varchar" MaxLength="1000" />
+    <Property Name="MarketRange" Type="smallint" />
+    <Property Name="MarketLowestPrice" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="MarketHighestPrice" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="MarketAveragePrice" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="NumberOfCar" Type="int" />
+    <Property Name="Timestamp" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="IsAppraisal" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="inventory_appraisalinfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="PackageDescription" Type="varchar(max)" />
+    <Property Name="InventoryAdd" Type="varchar" MaxLength="1000" />
+    <Property Name="AppraisalType" Type="varchar" MaxLength="1000" />
+    <Property Name="Note" Type="varchar(max)" />
+    <Property Name="Signature" Type="varbinary(max)" />
+    <Property Name="UserStamp" Type="varchar" MaxLength="1000" />
+    <Property Name="DateStamp" Type="datetime2" Precision="0" />
+    <Property Name="Photo" Type="varbinary(max)" />
+    <Property Name="SignatureURL" Type="varchar" MaxLength="1000" />
+    <Property Name="IsFromVinGenie" Type="bit" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="inventory_inventoryinfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="DealershipZipCode" Type="varchar" MaxLength="1000" />
+    <Property Name="WarrantyInfo" Type="varchar" MaxLength="1000" />
+    <Property Name="RetailPrice" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="WindowStickerPrice" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="DealerDiscount" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="ManufacturerRebate" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="PriorRental" Type="bit" />
+    <Property Name="Recon" Type="bit" />
+    <Property Name="Disclaimer" Type="varchar" MaxLength="1000" />
+    <Property Name="DealerDemo" Type="bit" />
+    <Property Name="Unwind" Type="bit" />
+    <Property Name="IsFeatured" Type="bit" />
+    <Property Name="Thumnails" Type="varchar(max)" />
+    <Property Name="DateInStock" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="CarRanking" Type="int" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="inventoryhistories">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="StockNumber" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="MSRP" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="Mileage" Type="bigint" Nullable="false" />
+    <Property Name="ACV" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="DealerCost" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="SalePrice" Type="decimal" Precision="10" Scale="2" />
+    <Property Name="ExteriorColor" Type="varchar" MaxLength="1000" />
+    <Property Name="InteriorColor" Type="varchar" MaxLength="1000" />
+    <Property Name="Options" Type="varchar(max)" />
+    <Property Name="Packages" Type="varchar(max)" />
+    <Property Name="Description" Type="varchar(max)" />
+    <Property Name="Images" Type="varchar(max)" Nullable="false" />
+    <Property Name="Thumbnails" Type="varchar(max)" Nullable="false" />
+    <Property Name="LastUpdated" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="Condition" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="VehicleId" Type="int" Nullable="false" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="StatusId" Type="int" Nullable="false" />
+    <Property Name="Certified" Type="bit" Nullable="false" />
+    <Property Name="CarFaxOwner" Type="smallint" Nullable="false" />
+    <Property Name="KBBOptionsId" Type="varchar" MaxLength="1000" />
+    <Property Name="KBBTrimsId" Type="varchar" MaxLength="1000" />
+    <Property Name="AddedBy" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="AddedDate" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="LastModifiedBy" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="LastModifiedDate" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="InventoryId" Type="int" Nullable="false" />
+    <Property Name="Timestamp" Type="datetime2" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="kbboptions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="KBBId" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="kbbpackages">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="KBBId" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="kbbtrimoptions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TrimId" Type="int" Nullable="false" />
+    <Property Name="OptionId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="kbbtrimpackages">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TrimId" Type="int" Nullable="false" />
+    <Property Name="PackageId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="kbbtrims">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="KBBId" Type="bigint" Nullable="false" />
+    <Property Name="ModelId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="manheimvalues">
+    <Key>
+      <PropertyRef Name="AutoId" />
+    </Key>
+    <Property Name="AutoId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Vin" Type="varchar" MaxLength="45" />
+    <Property Name="Trim" Type="varchar" MaxLength="45" />
+    <Property Name="AuctionLowestPrice" Type="varchar" MaxLength="45" />
+    <Property Name="AuctionAveragePrice" Type="varchar" MaxLength="45" />
+    <Property Name="AuctionHighestPrice" Type="varchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="ExpiredDate" Type="datetime2" Precision="0" />
+    <Property Name="TrimServiceId" Type="int" />
+    <Property Name="Year" Type="int" />
+    <Property Name="MakeServiceId" Type="int" />
+    <Property Name="ModelServiceId" Type="int" />
+  </EntityType>
+  <EntityType Name="notes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="InventoryId" Type="int" Nullable="false" />
+    <Property Name="Content" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="AddedDate" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="StatusId" Type="char" Nullable="false" MaxLength="5" />
+    <Property Name="Timestamp" Type="datetime2" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="permissioncodes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="PermissionText" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="PermissionCategory" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Indent" Type="int" Nullable="false" />
+    <Property Name="ScreenOrder" Type="int" Nullable="false" />
+    <Property Name="UserStamp" Type="varchar" Nullable="false" MaxLength="25" />
+    <Property Name="DateStamp" Type="datetime2" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="permissionvalues">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="UserStamp" Type="varchar" Nullable="false" MaxLength="25" />
+    <Property Name="DateStamp" Type="datetime2" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="questions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="varchar" MaxLength="455" />
+    <Property Name="QuestionTypeId" Type="int" />
+    <Property Name="ShortDescription" Type="varchar" MaxLength="300" />
+    <Property Name="Order" Type="int" />
+  </EntityType>
+  <EntityType Name="questiontypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" MaxLength="45" />
+    <Property Name="Description" Type="varchar" MaxLength="145" />
+    <Property Name="Option" Type="varchar" MaxLength="145" />
+    <Property Name="Code" Type="int" />
+    <Property Name="Unit" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="rebates">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="varchar" MaxLength="45" />
+    <Property Name="Model" Type="varchar" MaxLength="45" />
+    <Property Name="Trim" Type="varchar" MaxLength="45" />
+    <Property Name="BodyType" Type="varchar" MaxLength="45" />
+    <Property Name="ManufactureReabte" Type="varchar" MaxLength="45" />
+    <Property Name="Disclaimer" Type="varchar(max)" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="status">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="char" Nullable="false" MaxLength="5" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="styles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="StyleWithoutTrim" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="TrimId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tradeinbannercomments">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Content" Type="varchar(max)" />
+    <Property Name="Name" Type="varchar" MaxLength="255" />
+    <Property Name="City" Type="varchar" MaxLength="255" />
+    <Property Name="State" Type="varchar" MaxLength="45" />
+    <Property Name="DateComment" Type="datetime2" Precision="0" />
+    <Property Name="DateUpdated" Type="datetime2" Precision="0" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="transactions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TransactionDate" Type="varchar" MaxLength="1000" />
+    <Property Name="CustomerId" Type="int" />
+    <Property Name="UserId" Type="int" />
+    <Property Name="InventoryId" Type="int" Nullable="false" />
+    <Property Name="TransactionTypeId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="transactiontypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Type" Type="varchar" Nullable="false" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="truckcategories">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="TruckTypeId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="truckclasses">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Text" Type="varchar" Nullable="false" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="trucktypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="varchar" Nullable="false" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="useralerts">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AlertId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="userdealers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="users">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Password" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="1000" />
+    <Property Name="Email" Type="varchar" MaxLength="1000" />
+    <Property Name="CellPhone" Type="varchar" MaxLength="1000" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="ExpirationDate" Type="datetime2" Precision="0" />
+    <Property Name="MigrateUserId" Type="int" />
+    <Property Name="GroupId" Type="int" Nullable="false" />
+    <Property Name="DefaultDealership" Type="int" />
+  </EntityType>
+  <EntityType Name="vehicles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="VIN" Type="varchar" MaxLength="1000" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Body" Type="varchar" MaxLength="1000" />
+    <Property Name="Cylinder" Type="varchar" MaxLength="1000" />
+    <Property Name="Engine" Type="varchar" MaxLength="1000" />
+    <Property Name="DriveTrain" Type="varchar" MaxLength="1000" />
+    <Property Name="Transmission" Type="varchar" MaxLength="1000" />
+    <Property Name="Door" Type="smallint" />
+    <Property Name="FuelEconomyCity" Type="smallint" />
+    <Property Name="FuelEconomyHighway" Type="smallint" />
+    <Property Name="StandardOptions" Type="varchar(max)" />
+    <Property Name="TrimId" Type="int" />
+    <Property Name="MakeId" Type="int" />
+    <Property Name="DefaultImageURL" Type="varchar" MaxLength="1000" />
+    <Property Name="Liters" Type="varchar" MaxLength="45" />
+    <Property Name="ModelId" Type="int" />
+    <Property Name="MigrateListingId" Type="int" Nullable="false" />
+    <Property Name="MigrateAppraisalId" Type="int" Nullable="false" />
+    <Property Name="StandardPackages" Type="varchar(max)" />
+    <Property Name="MigrateSoldoutListingId" Type="int" Nullable="false" />
+    <Property Name="MigrateWholesaleListingId" Type="int" Nullable="false" />
+    <Property Name="VehicleTypeId" Type="int" />
+    <Property Name="FuelId" Type="int" />
+    <Property Name="MakeValue" Type="varchar" MaxLength="1000" />
+    <Property Name="ModelValue" Type="varchar" MaxLength="1000" />
+    <Property Name="TrimValue" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="vehicles_truck">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="TruckClassId" Type="int" />
+    <Property Name="TruckCategoryId" Type="int" />
+    <Property Name="Id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vehicletypes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Type" Type="varchar" Nullable="false" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="walkarounds">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Order" Type="int" />
+    <Property Name="X" Type="float" />
+    <Property Name="Y" Type="float" />
+    <Property Name="Note" Type="varchar" MaxLength="455" />
+    <Property Name="AppraisalInfoId" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="answers$fk_answers_questions">
+    <End Role="questions" Type="vincontrolwarehouseModel.Store.questions" Multiplicity="0..1" />
+    <End Role="answers" Type="vincontrolwarehouseModel.Store.answers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="questions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="answers">
+        <PropertyRef Name="QuestionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="answers$FK_AppraisalInfoAnswer">
+    <End Role="inventory_appraisalinfo" Type="vincontrolwarehouseModel.Store.inventory_appraisalinfo" Multiplicity="1" />
+    <End Role="answers" Type="vincontrolwarehouseModel.Store.answers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inventory_appraisalinfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="answers">
+        <PropertyRef Name="AppraisalInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="bannercustomers$FK_DealerBannerCustomer">
+    <End Role="dealers" Type="vincontrolwarehouseModel.Store.dealers" Multiplicity="1" />
+    <End Role="bannercustomers" Type="vincontrolwarehouseModel.Store.bannercustomers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dealers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="bannercustomers">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="bb_kbb_kbb$FK_KBB_inherits_BB_KBB">
+    <End Role="bb_kbb" Type="vincontrolwarehouseModel.Store.bb_kbb" Multiplicity="1" />
+    <End Role="bb_kbb_kbb" Type="vincontrolwarehouseModel.Store.bb_kbb_kbb" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="bb_kbb">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="bb_kbb_kbb">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="buyerguides$FK_DealerBuyerGuide">
+    <End Role="dealers" Type="vincontrolwarehouseModel.Store.dealers" Multiplicity="1" />
+    <End Role="buyerguides" Type="vincontrolwarehouseModel.Store.buyerguides" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dealers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="buyerguides">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="carfaxes$FK_CarFaxVehicles">
+    <End Role="vehicles" Type="vincontrolwarehouseModel.Store.vehicles" Multiplicity="1" />
+    <End Role="carfaxes" Type="vincontrolwarehouseModel.Store.carfaxes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vehicles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="carfaxes">
+        <PropertyRef Name="Vehicle_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="chartselections$FK_InventoryChartSelection">
+    <End Role="inventory" Type="vincontrolwarehouseModel.Store.inventory" Multiplicity="1" />
+    <End Role="chartselections" Type="vincontrolwarehouseModel.Store.chartselections" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inventory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="chartselections">
+        <PropertyRef Name="InventoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="datafeedcredentials$FK_DataFeedLookupDataFeedCredential">
+    <End Role="datafeedlookups" Type="vincontrolwarehouseModel.Store.datafeedlookups" Multiplicity="1" />
+    <End Role="datafeedcredentials" Type="vincontrolwarehouseModel.Store.datafeedcredentials" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="datafeedlookups">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="datafeedcredentials">
+        <PropertyRef Name="DataFeedLookup_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="datafeedlookups$FK_DataFeedLookupDealer">
+    <End Role="dealers" Type="vincontrolwarehouseModel.Store.dealers" Multiplicity="1" />
+    <End Role="datafeedlookups" Type="vincontrolwarehouseModel.Store.datafeedlookups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dealers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="datafeedlookups">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="datafeedlookups$FK_DataFeedProfileDataFeedLookup">
+    <End Role="datafeedprofiles" Type="vincontrolwarehouseModel.Store.datafeedprofiles" Multiplicity="1" />
+    <End Role="datafeedlookups" Type="vincontrolwarehouseModel.Store.datafeedlookups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="datafeedprofiles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="datafeedlookups">
+        <PropertyRef Name="DataFeedProfileId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="datafeedlookups$FK_ExportDataProfileMappingDataFeedLookup">
+    <End Role="exportdataprofilemappings" Type="vincontrolwarehouseModel.Store.exportdataprofilemappings" Multiplicity="0..1" />
+    <End Role="datafeedlookups" Type="vincontrolwarehouseModel.Store.datafeedlookups" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="exportdataprofilemappings">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="datafeedlookups">
+        <PropertyRef Name="ExportDataProfileMapping_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="datafeedprofiles$FK_ExportDataProfileMappingDataFeedProfile">
+    <End Role="exportdataprofilemappings" Type="vincontrolwarehouseModel.Store.exportdataprofilemappings" Multiplicity="0..1" />
+    <End Role="datafeedprofiles" Type="vincontrolwarehouseModel.Store.datafeedprofiles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="exportdataprofilemappings">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="datafeedprofiles">
+        <PropertyRef Name="ExportDataProfileMapping_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="dealers$FK_DealerGroupDealer">
+    <End Role="dealergroups" Type="vincontrolwarehouseModel.Store.dealergroups" Multiplicity="0..1" />
+    <End Role="dealers" Type="vincontrolwarehouseModel.Store.dealers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dealergroups">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="dealers">
+        <PropertyRef Name="DealerGroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="dealers_dealersetting$FK_DealerSetting_inherits_Dealer">
+    <End Role="dealers" Type="vincontrolwarehouseModel.Store.dealers" Multiplicity="1" />
+    <End Role="dealers_dealersetting" Type="vincontrolwarehouseModel.Store.dealers_dealersetting" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="dealers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="dealers_dealersetting">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ebays$FK_EbayInventory">
+    <End Role="inventory" Type="vincontrolwarehouseModel.Store.inventory" Multiplicity="1" />
+    <End Role="ebays" Type="vincontrolwarehouseModel.Store.ebays" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inventory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ebays">
+        <PropertyRef Name="Inventory_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="grouppermissions$fk_grouppermission_group">
+    <End Role="groups" Type="vincontrolwarehouseModel.Store.groups" Multiplicity="1" />
+    <End Role="grouppermissions" Type="vincontrolwarehouseModel.Store.grouppermissions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="groups">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="grouppermissions">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="grouppermissions$fk_grouppermission_permissioncodes">
+    <End Role="permissioncodes" Type="vincontrolwarehouseModel.Store.permissioncodes" Multiplicity="1" />
+    <End Role="grouppermissions" Type="vincontrolwarehouseModel.Store.grouppermissions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="permissioncodes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="grouppermissions">
+        <PropertyRef Name="PermissionCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="grouppermissions$fk_grouppermission_permissionvalue">
+    <End Role="permissionvalues" Type="vincontrolwarehouseModel.Store.permissionvalues" Multiplicity="1" />
+    <End Role="grouppermissions" Type="vincontrolwarehouseModel.Store.grouppermissions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="permissionvalues">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="grouppermissions">
+        <PropertyRef Name="PermissionValue" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="importfeeds$FK_DealerImportFeed">
+    <End Role="dealers" Type="vincontrolwarehouseModel.Store.dealers" Multiplicity="1" />
+    <End Role="importfeeds" Type="vincontrolwarehouseModel.Store.importfeeds" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dealers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="importfeeds">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="importfeeds$FK_ImportDataFeedProfileImportFeed">
+    <End Role="importdatafeedprofiles" Type="vincontrolwarehouseModel.Store.importdatafeedprofiles" Multiplicity="0..1" />
+    <End Role="importfeeds" Type="vincontrolwarehouseModel.Store.importfeeds" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="importdatafeedprofiles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="importfeeds">
+        <PropertyRef Name="ImportDataFeedProfileId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="inventory$FK_DealerDealerInventory">
+    <End Role="dealers" Type="vincontrolwarehouseModel.Store.dealers" Multiplicity="1" />
+    <End Role="inventory" Type="vincontrolwarehouseModel.Store.inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dealers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="inventory">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="inventory$FK_StatusInventory">
+    <End Role="status" Type="vincontrolwarehouseModel.Store.status" Multiplicity="1" />
+    <End Role="inventory" Type="vincontrolwarehouseModel.Store.inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="inventory">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="inventory$FK_VehiclesDealerInventory">
+    <End Role="vehicles" Type="vincontrolwarehouseModel.Store.vehicles" Multiplicity="1" />
+    <End Role="inventory" Type="vincontrolwarehouseModel.Store.inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vehicles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="inventory">
+        <PropertyRef Name="VehicleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="inventory_appraisalinfo$FK_AppraisalInfo_inherits_Inventory">
+    <End Role="inventory" Type="vincontrolwarehouseModel.Store.inventory" Multiplicity="1" />
+    <End Role="inventory_appraisalinfo" Type="vincontrolwarehouseModel.Store.inventory_appraisalinfo" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="inventory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="inventory_appraisalinfo">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="inventory_inventoryinfo$FK_InventoryInfo_inherits_Inventory">
+    <End Role="inventory" Type="vincontrolwarehouseModel.Store.inventory" Multiplicity="1" />
+    <End Role="inventory_inventoryinfo" Type="vincontrolwarehouseModel.Store.inventory_inventoryinfo" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="inventory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="inventory_inventoryinfo">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="inventoryhistories$FK_InventoryInventoryHistory">
+    <End Role="inventory" Type="vincontrolwarehouseModel.Store.inventory" Multiplicity="1" />
+    <End Role="inventoryhistories" Type="vincontrolwarehouseModel.Store.inventoryhistories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inventory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="inventoryhistories">
+        <PropertyRef Name="InventoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="kbbtrimoptions$FK_OptionTrimOption1">
+    <End Role="kbboptions" Type="vincontrolwarehouseModel.Store.kbboptions" Multiplicity="1" />
+    <End Role="kbbtrimoptions" Type="vincontrolwarehouseModel.Store.kbbtrimoptions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kbboptions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="kbbtrimoptions">
+        <PropertyRef Name="OptionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="kbbtrimoptions$FK_TrimTrimOption1">
+    <End Role="kbbtrims" Type="vincontrolwarehouseModel.Store.kbbtrims" Multiplicity="1" />
+    <End Role="kbbtrimoptions" Type="vincontrolwarehouseModel.Store.kbbtrimoptions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kbbtrims">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="kbbtrimoptions">
+        <PropertyRef Name="TrimId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="kbbtrimpackages$FK_PackageTrimPackage1">
+    <End Role="kbbpackages" Type="vincontrolwarehouseModel.Store.kbbpackages" Multiplicity="1" />
+    <End Role="kbbtrimpackages" Type="vincontrolwarehouseModel.Store.kbbtrimpackages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kbbpackages">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="kbbtrimpackages">
+        <PropertyRef Name="PackageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="kbbtrimpackages$FK_TrimTrimPackage1">
+    <End Role="kbbtrims" Type="vincontrolwarehouseModel.Store.kbbtrims" Multiplicity="1" />
+    <End Role="kbbtrimpackages" Type="vincontrolwarehouseModel.Store.kbbtrimpackages" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kbbtrims">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="kbbtrimpackages">
+        <PropertyRef Name="TrimId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="notes$FK_DealerInventoryNote">
+    <End Role="inventory" Type="vincontrolwarehouseModel.Store.inventory" Multiplicity="1" />
+    <End Role="notes" Type="vincontrolwarehouseModel.Store.notes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inventory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="notes">
+        <PropertyRef Name="InventoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="notes$FK_NoteStatus">
+    <End Role="status" Type="vincontrolwarehouseModel.Store.status" Multiplicity="1" />
+    <End Role="notes" Type="vincontrolwarehouseModel.Store.notes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="notes">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="notes$FK_UserNote">
+    <End Role="users" Type="vincontrolwarehouseModel.Store.users" Multiplicity="1" />
+    <End Role="notes" Type="vincontrolwarehouseModel.Store.notes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="notes">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="questions$fk_questions_questiontype">
+    <End Role="questiontypes" Type="vincontrolwarehouseModel.Store.questiontypes" Multiplicity="0..1" />
+    <End Role="questions" Type="vincontrolwarehouseModel.Store.questions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="questiontypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="questions">
+        <PropertyRef Name="QuestionTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="rebates$FK_DealerRebate">
+    <End Role="dealers" Type="vincontrolwarehouseModel.Store.dealers" Multiplicity="1" />
+    <End Role="rebates" Type="vincontrolwarehouseModel.Store.rebates" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dealers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="rebates">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tradeinbannercomments$FK_DealerTradeinBannerComment">
+    <End Role="dealers" Type="vincontrolwarehouseModel.Store.dealers" Multiplicity="1" />
+    <End Role="tradeinbannercomments" Type="vincontrolwarehouseModel.Store.tradeinbannercomments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dealers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tradeinbannercomments">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="transactions$FK_CustomerTransaction">
+    <End Role="customers" Type="vincontrolwarehouseModel.Store.customers" Multiplicity="0..1" />
+    <End Role="transactions" Type="vincontrolwarehouseModel.Store.transactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="transactions">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="transactions$FK_DealerInventoryTransaction">
+    <End Role="inventory" Type="vincontrolwarehouseModel.Store.inventory" Multiplicity="1" />
+    <End Role="transactions" Type="vincontrolwarehouseModel.Store.transactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inventory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="transactions">
+        <PropertyRef Name="InventoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="transactions$FK_TransactionTypeTransaction">
+    <End Role="transactiontypes" Type="vincontrolwarehouseModel.Store.transactiontypes" Multiplicity="1" />
+    <End Role="transactions" Type="vincontrolwarehouseModel.Store.transactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="transactiontypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="transactions">
+        <PropertyRef Name="TransactionTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="transactions$FK_UserTransaction">
+    <End Role="users" Type="vincontrolwarehouseModel.Store.users" Multiplicity="0..1" />
+    <End Role="transactions" Type="vincontrolwarehouseModel.Store.transactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="transactions">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="truckcategories$FK_TruckTypeTruckCategory">
+    <End Role="trucktypes" Type="vincontrolwarehouseModel.Store.trucktypes" Multiplicity="1" />
+    <End Role="truckcategories" Type="vincontrolwarehouseModel.Store.truckcategories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="trucktypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="truckcategories">
+        <PropertyRef Name="TruckTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="useralerts$FK_UserAlertAlert">
+    <End Role="alerts" Type="vincontrolwarehouseModel.Store.alerts" Multiplicity="1" />
+    <End Role="useralerts" Type="vincontrolwarehouseModel.Store.useralerts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="alerts">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="useralerts">
+        <PropertyRef Name="AlertId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="useralerts$FK_UserUserAlert">
+    <End Role="users" Type="vincontrolwarehouseModel.Store.users" Multiplicity="1" />
+    <End Role="useralerts" Type="vincontrolwarehouseModel.Store.useralerts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="useralerts">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="userdealers$FK_DealerUserDealer">
+    <End Role="dealers" Type="vincontrolwarehouseModel.Store.dealers" Multiplicity="1" />
+    <End Role="userdealers" Type="vincontrolwarehouseModel.Store.userdealers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dealers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="userdealers">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="userdealers$FK_UserUserDealer">
+    <End Role="users" Type="vincontrolwarehouseModel.Store.users" Multiplicity="1" />
+    <End Role="userdealers" Type="vincontrolwarehouseModel.Store.userdealers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="userdealers">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="users$FK_DealerUser">
+    <End Role="dealers" Type="vincontrolwarehouseModel.Store.dealers" Multiplicity="0..1" />
+    <End Role="users" Type="vincontrolwarehouseModel.Store.users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dealers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="users">
+        <PropertyRef Name="DefaultDealership" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="users$FK_GroupUser">
+    <End Role="groups" Type="vincontrolwarehouseModel.Store.groups" Multiplicity="1" />
+    <End Role="users" Type="vincontrolwarehouseModel.Store.users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="groups">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="users">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vehicles$FK_FuelTypeVehicle">
+    <End Role="fueltypes" Type="vincontrolwarehouseModel.Store.fueltypes" Multiplicity="0..1" />
+    <End Role="vehicles" Type="vincontrolwarehouseModel.Store.vehicles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="fueltypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="vehicles">
+        <PropertyRef Name="FuelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vehicles$FK_VehicleTypeVehicle">
+    <End Role="vehicletypes" Type="vincontrolwarehouseModel.Store.vehicletypes" Multiplicity="0..1" />
+    <End Role="vehicles" Type="vincontrolwarehouseModel.Store.vehicles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vehicletypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="vehicles">
+        <PropertyRef Name="VehicleTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vehicles_truck$FK_Truck_inherits_Vehicle">
+    <End Role="vehicles" Type="vincontrolwarehouseModel.Store.vehicles" Multiplicity="1" />
+    <End Role="vehicles_truck" Type="vincontrolwarehouseModel.Store.vehicles_truck" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="vehicles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="vehicles_truck">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vehicles_truck$FK_TruckCategoryTruck">
+    <End Role="truckcategories" Type="vincontrolwarehouseModel.Store.truckcategories" Multiplicity="0..1" />
+    <End Role="vehicles_truck" Type="vincontrolwarehouseModel.Store.vehicles_truck" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="truckcategories">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="vehicles_truck">
+        <PropertyRef Name="TruckCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vehicles_truck$FK_TruckClassTruck">
+    <End Role="truckclasses" Type="vincontrolwarehouseModel.Store.truckclasses" Multiplicity="0..1" />
+    <End Role="vehicles_truck" Type="vincontrolwarehouseModel.Store.vehicles_truck" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="truckclasses">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="vehicles_truck">
+        <PropertyRef Name="TruckClassId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="walkarounds$FK_AppraisalInfoWalkaround">
+    <End Role="inventory_appraisalinfo" Type="vincontrolwarehouseModel.Store.inventory_appraisalinfo" Multiplicity="1" />
+    <End Role="walkarounds" Type="vincontrolwarehouseModel.Store.walkarounds" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inventory_appraisalinfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="walkarounds">
+        <PropertyRef Name="AppraisalInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

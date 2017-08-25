@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="VinReviewModelStoreContainer" CdmEntityContainer="VinReviewEntities">
+    <EntitySetMapping Name="AdditionalDealerReviews">
+      <EntityTypeMapping TypeName="VinReviewModel.AdditionalDealerReview">
+        <MappingFragment StoreEntitySet="AdditionalDealerReview">
+          <ScalarProperty Name="OverallFacilities" ColumnName="OverallFacilities" />
+          <ScalarProperty Name="BuyingProcess" ColumnName="BuyingProcess" />
+          <ScalarProperty Name="Pricing" ColumnName="Pricing" />
+          <ScalarProperty Name="OverallExperience" ColumnName="OverallExperience" />
+          <ScalarProperty Name="Friendliness" ColumnName="Friendliness" />
+          <ScalarProperty Name="QualityOfWork" ColumnName="QualityOfWork" />
+          <ScalarProperty Name="CustomerService" ColumnName="CustomerService" />
+          <ScalarProperty Name="DealerReviewId" ColumnName="DealerReviewId" />
+          <ScalarProperty Name="AdditionalDealerReviewId" ColumnName="AdditionalDealerReviewId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdditionalUserReviews">
+      <EntityTypeMapping TypeName="VinReviewModel.AdditionalUserReview">
+        <MappingFragment StoreEntitySet="AdditionalUserReview">
+          <ScalarProperty Name="PurchasedAVehicle" ColumnName="PurchasedAVehicle" />
+          <ScalarProperty Name="RecommendThisDealer" ColumnName="RecommendThisDealer" />
+          <ScalarProperty Name="ReasonForVisit" ColumnName="ReasonForVisit" />
+          <ScalarProperty Name="OverallFacilities" ColumnName="OverallFacilities" />
+          <ScalarProperty Name="BuyingProcess" ColumnName="BuyingProcess" />
+          <ScalarProperty Name="Pricing" ColumnName="Pricing" />
+          <ScalarProperty Name="OverallExperience" ColumnName="OverallExperience" />
+          <ScalarProperty Name="Friendliness" ColumnName="Friendliness" />
+          <ScalarProperty Name="QualityOfWork" ColumnName="QualityOfWork" />
+          <ScalarProperty Name="CustomerService" ColumnName="CustomerService" />
+          <ScalarProperty Name="UserReviewId" ColumnName="UserReviewId" />
+          <ScalarProperty Name="AdditionalUserReviewId" ColumnName="AdditionalUserReviewId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategoryReviews">
+      <EntityTypeMapping TypeName="VinReviewModel.CategoryReview">
+        <MappingFragment StoreEntitySet="CategoryReview">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CategoryReviewId" ColumnName="CategoryReviewId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Comments">
+      <EntityTypeMapping TypeName="VinReviewModel.Comment">
+        <MappingFragment StoreEntitySet="Comment">
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="SurveyId" ColumnName="SurveyId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="CommentId" ColumnName="CommentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Communications">
+      <EntityTypeMapping TypeName="VinReviewModel.Communication">
+        <MappingFragment StoreEntitySet="Communication">
+          <ScalarProperty Name="SurveyResult" ColumnName="SurveyResult" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="ManagerId" ColumnName="ManagerId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Call" ColumnName="Call" />
+          <ScalarProperty Name="NoteTypeId" ColumnName="NoteTypeId" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="CommunicationStatusId" ColumnName="CommunicationStatusId" />
+          <ScalarProperty Name="ScriptId" ColumnName="ScriptId" />
+          <ScalarProperty Name="CommunicationTypeId" ColumnName="CommunicationTypeId" />
+          <ScalarProperty Name="Datestamp" ColumnName="Datestamp" />
+          <ScalarProperty Name="SurveyId" ColumnName="SurveyId" />
+          <ScalarProperty Name="CommunicationId" ColumnName="CommunicationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CommunicationStatus">
+      <EntityTypeMapping TypeName="VinReviewModel.CommunicationStatu">
+        <MappingFragment StoreEntitySet="CommunicationStatus">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CommunicationStatusId" ColumnName="CommunicationStatusId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CommunicationTypes">
+      <EntityTypeMapping TypeName="VinReviewModel.CommunicationType">
+        <MappingFragment StoreEntitySet="CommunicationType">
+          <ScalarProperty Name="IsSystemType" ColumnName="IsSystemType" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CommunicationTypeId" ColumnName="CommunicationTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="VinReviewModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="CustomerLevelId" ColumnName="CustomerLevelId" />
+          <ScalarProperty Name="HomeNumber" ColumnName="HomeNumber" />
+          <ScalarProperty Name="CellNumber" ColumnName="CellNumber" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerAnswers">
+      <EntityTypeMapping TypeName="VinReviewModel.CustomerAnswer">
+        <MappingFragment StoreEntitySet="CustomerAnswer">
+          <ScalarProperty Name="SurveyAnswerId" ColumnName="SurveyAnswerId" />
+          <ScalarProperty Name="SurveyQuestionId" ColumnName="SurveyQuestionId" />
+          <ScalarProperty Name="SurveyId" ColumnName="SurveyId" />
+          <ScalarProperty Name="CustomerAnswerId" ColumnName="CustomerAnswerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerLevels">
+      <EntityTypeMapping TypeName="VinReviewModel.CustomerLevel">
+        <MappingFragment StoreEntitySet="CustomerLevel">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CustomerLevelId" ColumnName="CustomerLevelId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerVehicles">
+      <EntityTypeMapping TypeName="VinReviewModel.CustomerVehicle">
+        <MappingFragment StoreEntitySet="CustomerVehicle">
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="Trim" ColumnName="Trim" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Make" ColumnName="Make" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="CustomerVehicleId" ColumnName="CustomerVehicleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DailyLogReviews">
+      <EntityTypeMapping TypeName="VinReviewModel.DailyLogReview">
+        <MappingFragment StoreEntitySet="DailyLogReview">
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="StackTrace" ColumnName="StackTrace" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="DealerReviewId" ColumnName="DealerReviewId" />
+          <ScalarProperty Name="SiteName" ColumnName="SiteName" />
+          <ScalarProperty Name="DailyLogId" ColumnName="DailyLogId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DealerReviews">
+      <EntityTypeMapping TypeName="VinReviewModel.DealerReview">
+        <MappingFragment StoreEntitySet="DealerReview">
+          <ScalarProperty Name="CategoryReviewId" ColumnName="CategoryReviewId" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="OverallScore" ColumnName="OverallScore" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="SiteId" ColumnName="SiteId" />
+          <ScalarProperty Name="About" ColumnName="About" />
+          <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+          <ScalarProperty Name="DealerReviewId" ColumnName="DealerReviewId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FBCredentials">
+      <EntityTypeMapping TypeName="VinReviewModel.FBCredential">
+        <MappingFragment StoreEntitySet="FBCredential">
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="About" ColumnName="About" />
+          <ScalarProperty Name="PageUrl" ColumnName="PageUrl" />
+          <ScalarProperty Name="ExpiredDate" ColumnName="ExpiredDate" />
+          <ScalarProperty Name="AccessToken" ColumnName="AccessToken" />
+          <ScalarProperty Name="PageId" ColumnName="PageId" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+          <ScalarProperty Name="FBCredentialId" ColumnName="FBCredentialId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FBPosts">
+      <EntityTypeMapping TypeName="VinReviewModel.FBPost">
+        <MappingFragment StoreEntitySet="FBPost">
+          <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+          <ScalarProperty Name="LocationId" ColumnName="LocationId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="RealPostId" ColumnName="RealPostId" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+          <ScalarProperty Name="FBSharedWithId" ColumnName="FBSharedWithId" />
+          <ScalarProperty Name="PublishDate" ColumnName="PublishDate" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="FBPostId" ColumnName="FBPostId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FBSharedWiths">
+      <EntityTypeMapping TypeName="VinReviewModel.FBSharedWith">
+        <MappingFragment StoreEntitySet="FBSharedWith">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="FBSharedWithId" ColumnName="FBSharedWithId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Scripts">
+      <EntityTypeMapping TypeName="VinReviewModel.Script">
+        <MappingFragment StoreEntitySet="Script">
+          <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CommunicationTypeId" ColumnName="CommunicationTypeId" />
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+          <ScalarProperty Name="ScriptId" ColumnName="ScriptId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SiteReviews">
+      <EntityTypeMapping TypeName="VinReviewModel.SiteReview">
+        <MappingFragment StoreEntitySet="SiteReview">
+          <ScalarProperty Name="Banner" ColumnName="Banner" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SiteId" ColumnName="SiteId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Surveys">
+      <EntityTypeMapping TypeName="VinReviewModel.Survey">
+        <MappingFragment StoreEntitySet="Survey">
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="SurveyTemplateId" ColumnName="SurveyTemplateId" />
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+          <ScalarProperty Name="BDCId" ColumnName="BDCId" />
+          <ScalarProperty Name="ManagerId" ColumnName="ManagerId" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="SurveyStatusId" ColumnName="SurveyStatusId" />
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="SurveyId" ColumnName="SurveyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SurveyAnswers">
+      <EntityTypeMapping TypeName="VinReviewModel.SurveyAnswer">
+        <MappingFragment StoreEntitySet="SurveyAnswer">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="SurveyAnswerId" ColumnName="SurveyAnswerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SurveyGoals">
+      <EntityTypeMapping TypeName="VinReviewModel.SurveyGoal">
+        <MappingFragment StoreEntitySet="SurveyGoal">
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="Goal" ColumnName="Goal" />
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+          <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+          <ScalarProperty Name="SurveyGoalId" ColumnName="SurveyGoalId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SurveyQuestions">
+      <EntityTypeMapping TypeName="VinReviewModel.SurveyQuestion">
+        <MappingFragment StoreEntitySet="SurveyQuestions">
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="Point" ColumnName="Point" />
+          <ScalarProperty Name="SurveyTemplateId" ColumnName="SurveyTemplateId" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="SurveyQuestionId" ColumnName="SurveyQuestionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SurveyStatus">
+      <EntityTypeMapping TypeName="VinReviewModel.SurveyStatu">
+        <MappingFragment StoreEntitySet="SurveyStatus">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SurveyStatusId" ColumnName="SurveyStatusId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SurveyTemplates">
+      <EntityTypeMapping TypeName="VinReviewModel.SurveyTemplate">
+        <MappingFragment StoreEntitySet="SurveyTemplate">
+          <ScalarProperty Name="TotalPoints" ColumnName="TotalPoints" />
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="EmailContent" ColumnName="EmailContent" />
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+          <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="SurveyTemplateId" ColumnName="SurveyTemplateId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserReviews">
+      <EntityTypeMapping TypeName="VinReviewModel.UserReview">
+        <MappingFragment StoreEntitySet="UserReview">
+          <ScalarProperty Name="DepartmentId" ColumnName="DepartmentId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="CategoryReviewId" ColumnName="CategoryReviewId" />
+          <ScalarProperty Name="IsFilterred" ColumnName="IsFilterred" />
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="ReviewDate" ColumnName="ReviewDate" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="DealerReviewId" ColumnName="DealerReviewId" />
+          <ScalarProperty Name="UserReviewId" ColumnName="UserReviewId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="YoutubeAccounts">
+      <EntityTypeMapping TypeName="VinReviewModel.YoutubeAccount">
+        <MappingFragment StoreEntitySet="YoutubeAccount">
+          <ScalarProperty Name="YoutubeUserId" ColumnName="YoutubeUserId" />
+          <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+          <ScalarProperty Name="YoutubeAccountId" ColumnName="YoutubeAccountId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="YoutubeVideos">
+      <EntityTypeMapping TypeName="VinReviewModel.YoutubeVideo">
+        <MappingFragment StoreEntitySet="YoutubeVideo">
+          <ScalarProperty Name="Rating" ColumnName="Rating" />
+          <ScalarProperty Name="DislikeCounts" ColumnName="DislikeCounts" />
+          <ScalarProperty Name="LikeCounts" ColumnName="LikeCounts" />
+          <ScalarProperty Name="CommentCounts" ColumnName="CommentCounts" />
+          <ScalarProperty Name="ViewCounts" ColumnName="ViewCounts" />
+          <ScalarProperty Name="Categories" ColumnName="Categories" />
+          <ScalarProperty Name="Thumbnail" ColumnName="Thumbnail" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="VideoId" ColumnName="VideoId" />
+          <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+          <ScalarProperty Name="YoutubeVideoId" ColumnName="YoutubeVideoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

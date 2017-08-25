@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+h1, h2, h3, span, p, li, ul {margin: 0; padding: 0;}
+html {font-family:"Trebuchet MS", Arial, Helvetica, sans-serif !important;}
+body, #container {width: 1482px; height: 860px; position: absolute;}
+#container {overflow: hidden; top: 0; left: 0;}
+li {width: 380px; none; verflow: hidden; list-style-type: none; white-space:nowrap; overflow:hidden; text-overflow: ellipsis;}
+#header {width: 1482px;  height: 75px; position: absolute; left: 0; top: 0;}
+#logo {position: absolute; width: 260px; height: 57px; top: 10px; left: 10px;}
+#logo p {margin: 0; padding: 0;}
+#carInfoTop {position:absolute; width: 1192px; height: 57px; overflow: hidden; right: 10px; top: 10px;}
+#carInfoTop h1 {margin-top: 10px; margin-left: 10px;}
+#carInfoTop p {position: absolute; right: 0; top: 0; width: 550px;}
+#carInfoTop p span {float: left; clear: right; margin-right: 1em; margin-top: 10px;}
+#main {position: absolute; top: 76px; left: 10px; width: 1463px; height: 774px;}
+#equipment {position: absolute; top: 0; left: 0; width: 1173px; height: 518px; overflow: hidden; font-size: .9em;}
+
+.break {margin-top: 1em;}
+.listHead { font-weight: bold !important; font-style: italic !important; width: 100% !important;}
+#equipment .column1 {position: relative;}
+#equipment .column2 {position: relative; left:390px;}
+#equipment .column3 {position: relative; left:780px;}
+#equipment .coltopper {margin-top: 0em;}
+
+#mpg {position: absolute; left: 0; top: 540px; height: 159px; width:1194px; }
+#c2 {position: absolute; left: 1204px; top: 0; width: 259px; height: 774px;}
+#pInfo { height: 631px;}
+#pInfo h3 {margin: 10px;}
+#pInfo ul {margin-left: 10px; width: 100%;}
+#pInfo li {float: left; clear: right; width: 170px;}
+#pInfo li.pricing {float: right; width: 50px; text-align: right; }
+#MSRP {position: absolute; bottom: 0; left:45px;}
+#price2 {position: absolute; right: 12px; bottom: 74px;}
+#price1 {position: absolute; bottom: 0; width:1194px; height: 62px;}

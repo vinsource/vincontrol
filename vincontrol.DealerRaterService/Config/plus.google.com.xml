@@ -1,0 +1,57 @@
+﻿<reviewSite name="plus.google.com" url="plus.google.com">
+  <namespaces>
+    <namespace name="ns" value="http://www.w3.org/1999/xhtml"/>
+  </namespaces>
+  <pages>
+    <reviewPage name="" dealerId="0" url="" hasAdditionalDealerReview="false" hasAdditionalUserReview="false" hasDetailUserReview="false" category="Sales">
+      <about context="//div[@class='Jya']"/>
+      <overallScore context="//span[@class='SNJ03']"/>
+      <additionalReview>
+        <customerService context=""/>
+        <qualityOfWork context=""/>
+        <friendliness context=""/>
+        <overallExperience context=""/>
+        <pricing context=""/>
+        <buyingProcess context=""/>
+        <overallFacilities context=""/>
+      </additionalReview>
+    </reviewPage>
+
+  </pages>
+
+  <reviews>
+    <reviewNode context="//div[@class='Hwa']/div/div[@class='r6Rtbe bh0S9e']"/>
+    
+    <reviewUrl context=""/>
+    <reviewAuthor context="./div/div[2]/span/a/text()"/>
+    <reviewDate context="./div/div[2]/div/div[2]/span">
+      <replace>
+        <filter original="reviewed" replace=""></filter>
+        <filter original="ago" replace=""></filter>
+        <filter isExpression="true" original="a month" replace="System.DateTime.Now.AddMonths(-1).ToShortDateString()"></filter>
+        <filter isExpression="true" original="2 months" replace="System.DateTime.Now.AddMonths(-2).ToShortDateString()"></filter>
+        <filter isExpression="true" original="a year" replace="System.DateTime.Now.AddYears(-1).ToShortDateString()"></filter>
+        <filter isExpression="true" original="2 years" replace="System.DateTime.Now.AddYears(-2).ToShortDateString()"></filter>
+      </replace>
+    </reviewDate>
+    <reviewContent context="./div/div[2]/div[2]/span"/>
+    <reviewDetailContent context=""/>
+    <reviewRating context="./div/div[2]/div/div/div/meta/@content"/>
+    <additionalReview>
+      <customerService context=""/>
+      <qualityOfWork context=""/>
+      <friendliness context=""/>
+      <overallExperience context=""/>
+      <pricing context=""/>
+      <buyingProcess context=""/>
+      <overallFacilities context=""/>
+      <reasonForVisit context=""/>
+      <recommendThisDealer context=""/>
+      <purchasedAVehicle context=""/>
+    </additionalReview>
+    
+    <nextPageUrl context="//span[@class='highlight2']/following-sibling::*[1]/@href">
+      
+    </nextPageUrl>
+  </reviews>
+</reviewSite>

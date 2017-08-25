@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+
+div {display: block; }
+
+div.label {width: 110px; float: left; clear: right; margin: 0; margin-top: 2px; padding: 0;
+clear: both;}
+/*span.test {float: right;}*/
+
+html {width: 100%; padding: 0; margin: 0; font-family: Tahoma, Geneva, sans-serif;}
+
+#nav {height: 22px;}
+#nav a {color: #555; text-decoration: none;}
+#nav a:hover {color: #111;}
+#nav ul {margin: 0; padding: 0; margin-left: 1em; height: 22px;}
+#nav li{list-style-type: none; float: left; clear: right; margin-right: .9em; height: 22px;}
+
+body {padding: 0; margin: 0;}
+
+#container {width: 965px; margin: 0 auto; padding-right: 0;}
+
+table {background: #222; width: 523px;}
+td {padding-right: 1em;}
+td {padding-left: 5px;}
+tr {background: #888888; margin-top: 4px;}
+tr.top {background: #222222; color: white;}
+
+.column {float: left; clear: right; margin-right: .2em;}
+#c1 {width: 260px; height: 439px; background: #c4c4c4;}
+
+#request {width: 169px; height: 216px; background: #c4c4c4; margin-top: -2.4em;}
+
+#location {width: 169px; height: 261px; background: #c4c4c4; margin-top: .3em;}
+
+.clear {clear: both; width: 0px; height: 0px;}
+
+#footer {background: black; padding: .4em; color: white; width: 949px; margin-top: .3em;}
+#footer span {margin: 0 auto;}
+
+#form1 {width: 500px;}
+#form1 form{margin: .3em; margin-bottom: 0;}

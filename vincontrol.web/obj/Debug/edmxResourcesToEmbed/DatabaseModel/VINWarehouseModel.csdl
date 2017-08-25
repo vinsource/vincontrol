@@ -1,0 +1,1793 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="vincontrolwarehouseModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="vincontrolwarehouseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="alerts" EntityType="vincontrolwarehouseModel.alert" />
+    <EntitySet Name="answers" EntityType="vincontrolwarehouseModel.answer" />
+    <EntitySet Name="autotradertrims" EntityType="vincontrolwarehouseModel.autotradertrim" />
+    <EntitySet Name="bannercustomers" EntityType="vincontrolwarehouseModel.bannercustomer" />
+    <EntitySet Name="bb_kbb" EntityType="vincontrolwarehouseModel.bb_kbb" />
+    <EntitySet Name="bb_kbb_kbb" EntityType="vincontrolwarehouseModel.bb_kbb_kbb" />
+    <EntitySet Name="buyerguides" EntityType="vincontrolwarehouseModel.buyerguide" />
+    <EntitySet Name="carfaxes" EntityType="vincontrolwarehouseModel.carfax" />
+    <EntitySet Name="carscomtrims" EntityType="vincontrolwarehouseModel.carscomtrim" />
+    <EntitySet Name="chartselections" EntityType="vincontrolwarehouseModel.chartselection" />
+    <EntitySet Name="customers" EntityType="vincontrolwarehouseModel.customer" />
+    <EntitySet Name="datafeedcredentials" EntityType="vincontrolwarehouseModel.datafeedcredential" />
+    <EntitySet Name="datafeedlookups" EntityType="vincontrolwarehouseModel.datafeedlookup" />
+    <EntitySet Name="datafeedprofiles" EntityType="vincontrolwarehouseModel.datafeedprofile" />
+    <EntitySet Name="dealergroups" EntityType="vincontrolwarehouseModel.dealergroup" />
+    <EntitySet Name="dealers" EntityType="vincontrolwarehouseModel.dealer" />
+    <EntitySet Name="dealers_dealersetting" EntityType="vincontrolwarehouseModel.dealers_dealersetting" />
+    <EntitySet Name="descriptions" EntityType="vincontrolwarehouseModel.description" />
+    <EntitySet Name="ebays" EntityType="vincontrolwarehouseModel.ebay" />
+    <EntitySet Name="exportdataprofilemappings" EntityType="vincontrolwarehouseModel.exportdataprofilemapping" />
+    <EntitySet Name="fueltypes" EntityType="vincontrolwarehouseModel.fueltype" />
+    <EntitySet Name="grouppermissions" EntityType="vincontrolwarehouseModel.grouppermission" />
+    <EntitySet Name="groups" EntityType="vincontrolwarehouseModel.group" />
+    <EntitySet Name="importdatafeedprofiles" EntityType="vincontrolwarehouseModel.importdatafeedprofile" />
+    <EntitySet Name="importfeeds" EntityType="vincontrolwarehouseModel.importfeed" />
+    <EntitySet Name="inventories" EntityType="vincontrolwarehouseModel.inventory" />
+    <EntitySet Name="inventory_appraisalinfo" EntityType="vincontrolwarehouseModel.inventory_appraisalinfo" />
+    <EntitySet Name="inventory_inventoryinfo" EntityType="vincontrolwarehouseModel.inventory_inventoryinfo" />
+    <EntitySet Name="inventoryhistories" EntityType="vincontrolwarehouseModel.inventoryhistory" />
+    <EntitySet Name="kbboptions" EntityType="vincontrolwarehouseModel.kbboption" />
+    <EntitySet Name="kbbpackages" EntityType="vincontrolwarehouseModel.kbbpackage" />
+    <EntitySet Name="kbbtrimoptions" EntityType="vincontrolwarehouseModel.kbbtrimoption" />
+    <EntitySet Name="kbbtrimpackages" EntityType="vincontrolwarehouseModel.kbbtrimpackage" />
+    <EntitySet Name="kbbtrims" EntityType="vincontrolwarehouseModel.kbbtrim" />
+    <EntitySet Name="manheimvalues" EntityType="vincontrolwarehouseModel.manheimvalue" />
+    <EntitySet Name="notes" EntityType="vincontrolwarehouseModel.note" />
+    <EntitySet Name="permissioncodes" EntityType="vincontrolwarehouseModel.permissioncode" />
+    <EntitySet Name="permissionvalues" EntityType="vincontrolwarehouseModel.permissionvalue" />
+    <EntitySet Name="questions" EntityType="vincontrolwarehouseModel.question" />
+    <EntitySet Name="questiontypes" EntityType="vincontrolwarehouseModel.questiontype" />
+    <EntitySet Name="rebates" EntityType="vincontrolwarehouseModel.rebate" />
+    <EntitySet Name="status" EntityType="vincontrolwarehouseModel.status" />
+    <EntitySet Name="styles" EntityType="vincontrolwarehouseModel.style" />
+    <EntitySet Name="tradeinbannercomments" EntityType="vincontrolwarehouseModel.tradeinbannercomment" />
+    <EntitySet Name="transactions" EntityType="vincontrolwarehouseModel.transaction" />
+    <EntitySet Name="transactiontypes" EntityType="vincontrolwarehouseModel.transactiontype" />
+    <EntitySet Name="truckcategories" EntityType="vincontrolwarehouseModel.truckcategory" />
+    <EntitySet Name="truckclasses" EntityType="vincontrolwarehouseModel.truckclass" />
+    <EntitySet Name="trucktypes" EntityType="vincontrolwarehouseModel.trucktype" />
+    <EntitySet Name="useralerts" EntityType="vincontrolwarehouseModel.useralert" />
+    <EntitySet Name="userdealers" EntityType="vincontrolwarehouseModel.userdealer" />
+    <EntitySet Name="users" EntityType="vincontrolwarehouseModel.user" />
+    <EntitySet Name="vehicles" EntityType="vincontrolwarehouseModel.vehicle" />
+    <EntitySet Name="vehicles_truck" EntityType="vincontrolwarehouseModel.vehicles_truck" />
+    <EntitySet Name="vehicletypes" EntityType="vincontrolwarehouseModel.vehicletype" />
+    <EntitySet Name="walkarounds" EntityType="vincontrolwarehouseModel.walkaround" />
+    <AssociationSet Name="useralerts_FK_UserAlertAlert" Association="vincontrolwarehouseModel.useralerts_FK_UserAlertAlert">
+      <End Role="alerts" EntitySet="alerts" />
+      <End Role="useralerts" EntitySet="useralerts" />
+    </AssociationSet>
+    <AssociationSet Name="answers_fk_answers_questions" Association="vincontrolwarehouseModel.answers_fk_answers_questions">
+      <End Role="questions" EntitySet="questions" />
+      <End Role="answers" EntitySet="answers" />
+    </AssociationSet>
+    <AssociationSet Name="answers_FK_AppraisalInfoAnswer" Association="vincontrolwarehouseModel.answers_FK_AppraisalInfoAnswer">
+      <End Role="inventory_appraisalinfo" EntitySet="inventory_appraisalinfo" />
+      <End Role="answers" EntitySet="answers" />
+    </AssociationSet>
+    <AssociationSet Name="bannercustomers_FK_DealerBannerCustomer" Association="vincontrolwarehouseModel.bannercustomers_FK_DealerBannerCustomer">
+      <End Role="dealers" EntitySet="dealers" />
+      <End Role="bannercustomers" EntitySet="bannercustomers" />
+    </AssociationSet>
+    <AssociationSet Name="bb_kbb_kbb_FK_KBB_inherits_BB_KBB" Association="vincontrolwarehouseModel.bb_kbb_kbb_FK_KBB_inherits_BB_KBB">
+      <End Role="bb_kbb" EntitySet="bb_kbb" />
+      <End Role="bb_kbb_kbb" EntitySet="bb_kbb_kbb" />
+    </AssociationSet>
+    <AssociationSet Name="buyerguides_FK_DealerBuyerGuide" Association="vincontrolwarehouseModel.buyerguides_FK_DealerBuyerGuide">
+      <End Role="dealers" EntitySet="dealers" />
+      <End Role="buyerguides" EntitySet="buyerguides" />
+    </AssociationSet>
+    <AssociationSet Name="carfaxes_FK_CarFaxVehicles" Association="vincontrolwarehouseModel.carfaxes_FK_CarFaxVehicles">
+      <End Role="vehicles" EntitySet="vehicles" />
+      <End Role="carfaxes" EntitySet="carfaxes" />
+    </AssociationSet>
+    <AssociationSet Name="chartselections_FK_InventoryChartSelection" Association="vincontrolwarehouseModel.chartselections_FK_InventoryChartSelection">
+      <End Role="inventory" EntitySet="inventories" />
+      <End Role="chartselections" EntitySet="chartselections" />
+    </AssociationSet>
+    <AssociationSet Name="transactions_FK_CustomerTransaction" Association="vincontrolwarehouseModel.transactions_FK_CustomerTransaction">
+      <End Role="customers" EntitySet="customers" />
+      <End Role="transactions" EntitySet="transactions" />
+    </AssociationSet>
+    <AssociationSet Name="datafeedcredentials_FK_DataFeedLookupDataFeedCredential" Association="vincontrolwarehouseModel.datafeedcredentials_FK_DataFeedLookupDataFeedCredential">
+      <End Role="datafeedlookups" EntitySet="datafeedlookups" />
+      <End Role="datafeedcredentials" EntitySet="datafeedcredentials" />
+    </AssociationSet>
+    <AssociationSet Name="datafeedlookups_FK_DataFeedLookupDealer" Association="vincontrolwarehouseModel.datafeedlookups_FK_DataFeedLookupDealer">
+      <End Role="dealers" EntitySet="dealers" />
+      <End Role="datafeedlookups" EntitySet="datafeedlookups" />
+    </AssociationSet>
+    <AssociationSet Name="datafeedlookups_FK_DataFeedProfileDataFeedLookup" Association="vincontrolwarehouseModel.datafeedlookups_FK_DataFeedProfileDataFeedLookup">
+      <End Role="datafeedprofiles" EntitySet="datafeedprofiles" />
+      <End Role="datafeedlookups" EntitySet="datafeedlookups" />
+    </AssociationSet>
+    <AssociationSet Name="datafeedlookups_FK_ExportDataProfileMappingDataFeedLookup" Association="vincontrolwarehouseModel.datafeedlookups_FK_ExportDataProfileMappingDataFeedLookup">
+      <End Role="exportdataprofilemappings" EntitySet="exportdataprofilemappings" />
+      <End Role="datafeedlookups" EntitySet="datafeedlookups" />
+    </AssociationSet>
+    <AssociationSet Name="datafeedprofiles_FK_ExportDataProfileMappingDataFeedProfile" Association="vincontrolwarehouseModel.datafeedprofiles_FK_ExportDataProfileMappingDataFeedProfile">
+      <End Role="exportdataprofilemappings" EntitySet="exportdataprofilemappings" />
+      <End Role="datafeedprofiles" EntitySet="datafeedprofiles" />
+    </AssociationSet>
+    <AssociationSet Name="dealers_FK_DealerGroupDealer" Association="vincontrolwarehouseModel.dealers_FK_DealerGroupDealer">
+      <End Role="dealergroups" EntitySet="dealergroups" />
+      <End Role="dealers" EntitySet="dealers" />
+    </AssociationSet>
+    <AssociationSet Name="dealers_dealersetting_FK_DealerSetting_inherits_Dealer" Association="vincontrolwarehouseModel.dealers_dealersetting_FK_DealerSetting_inherits_Dealer">
+      <End Role="dealers" EntitySet="dealers" />
+      <End Role="dealers_dealersetting" EntitySet="dealers_dealersetting" />
+    </AssociationSet>
+    <AssociationSet Name="importfeeds_FK_DealerImportFeed" Association="vincontrolwarehouseModel.importfeeds_FK_DealerImportFeed">
+      <End Role="dealers" EntitySet="dealers" />
+      <End Role="importfeeds" EntitySet="importfeeds" />
+    </AssociationSet>
+    <AssociationSet Name="inventory_FK_DealerDealerInventory" Association="vincontrolwarehouseModel.inventory_FK_DealerDealerInventory">
+      <End Role="dealers" EntitySet="dealers" />
+      <End Role="inventory" EntitySet="inventories" />
+    </AssociationSet>
+    <AssociationSet Name="rebates_FK_DealerRebate" Association="vincontrolwarehouseModel.rebates_FK_DealerRebate">
+      <End Role="dealers" EntitySet="dealers" />
+      <End Role="rebates" EntitySet="rebates" />
+    </AssociationSet>
+    <AssociationSet Name="tradeinbannercomments_FK_DealerTradeinBannerComment" Association="vincontrolwarehouseModel.tradeinbannercomments_FK_DealerTradeinBannerComment">
+      <End Role="dealers" EntitySet="dealers" />
+      <End Role="tradeinbannercomments" EntitySet="tradeinbannercomments" />
+    </AssociationSet>
+    <AssociationSet Name="userdealers_FK_DealerUserDealer" Association="vincontrolwarehouseModel.userdealers_FK_DealerUserDealer">
+      <End Role="dealers" EntitySet="dealers" />
+      <End Role="userdealers" EntitySet="userdealers" />
+    </AssociationSet>
+    <AssociationSet Name="users_FK_DealerUser" Association="vincontrolwarehouseModel.users_FK_DealerUser">
+      <End Role="dealers" EntitySet="dealers" />
+      <End Role="users" EntitySet="users" />
+    </AssociationSet>
+    <AssociationSet Name="ebays_FK_EbayInventory" Association="vincontrolwarehouseModel.ebays_FK_EbayInventory">
+      <End Role="inventory" EntitySet="inventories" />
+      <End Role="ebays" EntitySet="ebays" />
+    </AssociationSet>
+    <AssociationSet Name="vehicles_FK_FuelTypeVehicle" Association="vincontrolwarehouseModel.vehicles_FK_FuelTypeVehicle">
+      <End Role="fueltypes" EntitySet="fueltypes" />
+      <End Role="vehicles" EntitySet="vehicles" />
+    </AssociationSet>
+    <AssociationSet Name="grouppermissions_fk_grouppermission_group" Association="vincontrolwarehouseModel.grouppermissions_fk_grouppermission_group">
+      <End Role="groups" EntitySet="groups" />
+      <End Role="grouppermissions" EntitySet="grouppermissions" />
+    </AssociationSet>
+    <AssociationSet Name="grouppermissions_fk_grouppermission_permissioncodes" Association="vincontrolwarehouseModel.grouppermissions_fk_grouppermission_permissioncodes">
+      <End Role="permissioncodes" EntitySet="permissioncodes" />
+      <End Role="grouppermissions" EntitySet="grouppermissions" />
+    </AssociationSet>
+    <AssociationSet Name="grouppermissions_fk_grouppermission_permissionvalue" Association="vincontrolwarehouseModel.grouppermissions_fk_grouppermission_permissionvalue">
+      <End Role="permissionvalues" EntitySet="permissionvalues" />
+      <End Role="grouppermissions" EntitySet="grouppermissions" />
+    </AssociationSet>
+    <AssociationSet Name="users_FK_GroupUser" Association="vincontrolwarehouseModel.users_FK_GroupUser">
+      <End Role="groups" EntitySet="groups" />
+      <End Role="users" EntitySet="users" />
+    </AssociationSet>
+    <AssociationSet Name="importfeeds_FK_ImportDataFeedProfileImportFeed" Association="vincontrolwarehouseModel.importfeeds_FK_ImportDataFeedProfileImportFeed">
+      <End Role="importdatafeedprofiles" EntitySet="importdatafeedprofiles" />
+      <End Role="importfeeds" EntitySet="importfeeds" />
+    </AssociationSet>
+    <AssociationSet Name="inventory_FK_StatusInventory" Association="vincontrolwarehouseModel.inventory_FK_StatusInventory">
+      <End Role="status" EntitySet="status" />
+      <End Role="inventory" EntitySet="inventories" />
+    </AssociationSet>
+    <AssociationSet Name="inventory_FK_VehiclesDealerInventory" Association="vincontrolwarehouseModel.inventory_FK_VehiclesDealerInventory">
+      <End Role="vehicles" EntitySet="vehicles" />
+      <End Role="inventory" EntitySet="inventories" />
+    </AssociationSet>
+    <AssociationSet Name="inventory_appraisalinfo_FK_AppraisalInfo_inherits_Inventory" Association="vincontrolwarehouseModel.inventory_appraisalinfo_FK_AppraisalInfo_inherits_Inventory">
+      <End Role="inventory" EntitySet="inventories" />
+      <End Role="inventory_appraisalinfo" EntitySet="inventory_appraisalinfo" />
+    </AssociationSet>
+    <AssociationSet Name="inventory_inventoryinfo_FK_InventoryInfo_inherits_Inventory" Association="vincontrolwarehouseModel.inventory_inventoryinfo_FK_InventoryInfo_inherits_Inventory">
+      <End Role="inventory" EntitySet="inventories" />
+      <End Role="inventory_inventoryinfo" EntitySet="inventory_inventoryinfo" />
+    </AssociationSet>
+    <AssociationSet Name="inventoryhistories_FK_InventoryInventoryHistory" Association="vincontrolwarehouseModel.inventoryhistories_FK_InventoryInventoryHistory">
+      <End Role="inventory" EntitySet="inventories" />
+      <End Role="inventoryhistories" EntitySet="inventoryhistories" />
+    </AssociationSet>
+    <AssociationSet Name="notes_FK_DealerInventoryNote" Association="vincontrolwarehouseModel.notes_FK_DealerInventoryNote">
+      <End Role="inventory" EntitySet="inventories" />
+      <End Role="notes" EntitySet="notes" />
+    </AssociationSet>
+    <AssociationSet Name="transactions_FK_DealerInventoryTransaction" Association="vincontrolwarehouseModel.transactions_FK_DealerInventoryTransaction">
+      <End Role="inventory" EntitySet="inventories" />
+      <End Role="transactions" EntitySet="transactions" />
+    </AssociationSet>
+    <AssociationSet Name="walkarounds_FK_AppraisalInfoWalkaround" Association="vincontrolwarehouseModel.walkarounds_FK_AppraisalInfoWalkaround">
+      <End Role="inventory_appraisalinfo" EntitySet="inventory_appraisalinfo" />
+      <End Role="walkarounds" EntitySet="walkarounds" />
+    </AssociationSet>
+    <AssociationSet Name="kbbtrimoptions_FK_OptionTrimOption1" Association="vincontrolwarehouseModel.kbbtrimoptions_FK_OptionTrimOption1">
+      <End Role="kbboptions" EntitySet="kbboptions" />
+      <End Role="kbbtrimoptions" EntitySet="kbbtrimoptions" />
+    </AssociationSet>
+    <AssociationSet Name="kbbtrimpackages_FK_PackageTrimPackage1" Association="vincontrolwarehouseModel.kbbtrimpackages_FK_PackageTrimPackage1">
+      <End Role="kbbpackages" EntitySet="kbbpackages" />
+      <End Role="kbbtrimpackages" EntitySet="kbbtrimpackages" />
+    </AssociationSet>
+    <AssociationSet Name="kbbtrimoptions_FK_TrimTrimOption1" Association="vincontrolwarehouseModel.kbbtrimoptions_FK_TrimTrimOption1">
+      <End Role="kbbtrims" EntitySet="kbbtrims" />
+      <End Role="kbbtrimoptions" EntitySet="kbbtrimoptions" />
+    </AssociationSet>
+    <AssociationSet Name="kbbtrimpackages_FK_TrimTrimPackage1" Association="vincontrolwarehouseModel.kbbtrimpackages_FK_TrimTrimPackage1">
+      <End Role="kbbtrims" EntitySet="kbbtrims" />
+      <End Role="kbbtrimpackages" EntitySet="kbbtrimpackages" />
+    </AssociationSet>
+    <AssociationSet Name="notes_FK_NoteStatus" Association="vincontrolwarehouseModel.notes_FK_NoteStatus">
+      <End Role="status" EntitySet="status" />
+      <End Role="notes" EntitySet="notes" />
+    </AssociationSet>
+    <AssociationSet Name="notes_FK_UserNote" Association="vincontrolwarehouseModel.notes_FK_UserNote">
+      <End Role="users" EntitySet="users" />
+      <End Role="notes" EntitySet="notes" />
+    </AssociationSet>
+    <AssociationSet Name="questions_fk_questions_questiontype" Association="vincontrolwarehouseModel.questions_fk_questions_questiontype">
+      <End Role="questiontypes" EntitySet="questiontypes" />
+      <End Role="questions" EntitySet="questions" />
+    </AssociationSet>
+    <AssociationSet Name="transactions_FK_TransactionTypeTransaction" Association="vincontrolwarehouseModel.transactions_FK_TransactionTypeTransaction">
+      <End Role="transactiontypes" EntitySet="transactiontypes" />
+      <End Role="transactions" EntitySet="transactions" />
+    </AssociationSet>
+    <AssociationSet Name="transactions_FK_UserTransaction" Association="vincontrolwarehouseModel.transactions_FK_UserTransaction">
+      <End Role="users" EntitySet="users" />
+      <End Role="transactions" EntitySet="transactions" />
+    </AssociationSet>
+    <AssociationSet Name="truckcategories_FK_TruckTypeTruckCategory" Association="vincontrolwarehouseModel.truckcategories_FK_TruckTypeTruckCategory">
+      <End Role="trucktypes" EntitySet="trucktypes" />
+      <End Role="truckcategories" EntitySet="truckcategories" />
+    </AssociationSet>
+    <AssociationSet Name="vehicles_truck_FK_TruckCategoryTruck" Association="vincontrolwarehouseModel.vehicles_truck_FK_TruckCategoryTruck">
+      <End Role="truckcategories" EntitySet="truckcategories" />
+      <End Role="vehicles_truck" EntitySet="vehicles_truck" />
+    </AssociationSet>
+    <AssociationSet Name="vehicles_truck_FK_TruckClassTruck" Association="vincontrolwarehouseModel.vehicles_truck_FK_TruckClassTruck">
+      <End Role="truckclasses" EntitySet="truckclasses" />
+      <End Role="vehicles_truck" EntitySet="vehicles_truck" />
+    </AssociationSet>
+    <AssociationSet Name="useralerts_FK_UserUserAlert" Association="vincontrolwarehouseModel.useralerts_FK_UserUserAlert">
+      <End Role="users" EntitySet="users" />
+      <End Role="useralerts" EntitySet="useralerts" />
+    </AssociationSet>
+    <AssociationSet Name="userdealers_FK_UserUserDealer" Association="vincontrolwarehouseModel.userdealers_FK_UserUserDealer">
+      <End Role="users" EntitySet="users" />
+      <End Role="userdealers" EntitySet="userdealers" />
+    </AssociationSet>
+    <AssociationSet Name="vehicles_FK_VehicleTypeVehicle" Association="vincontrolwarehouseModel.vehicles_FK_VehicleTypeVehicle">
+      <End Role="vehicletypes" EntitySet="vehicletypes" />
+      <End Role="vehicles" EntitySet="vehicles" />
+    </AssociationSet>
+    <AssociationSet Name="vehicles_truck_FK_Truck_inherits_Vehicle" Association="vincontrolwarehouseModel.vehicles_truck_FK_Truck_inherits_Vehicle">
+      <End Role="vehicles" EntitySet="vehicles" />
+      <End Role="vehicles_truck" EntitySet="vehicles_truck" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="alert">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AlertType" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="useralerts" Relationship="vincontrolwarehouseModel.useralerts_FK_UserAlertAlert" FromRole="alerts" ToRole="useralerts" />
+  </EntityType>
+  <EntityType Name="answer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="QuestionId" Type="Int32" />
+    <Property Name="AnswerContent" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Comment" Type="String" MaxLength="455" Unicode="false" FixedLength="false" />
+    <Property Name="AppraisalInfoId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="question" Relationship="vincontrolwarehouseModel.answers_fk_answers_questions" FromRole="answers" ToRole="questions" />
+    <NavigationProperty Name="inventory_appraisalinfo" Relationship="vincontrolwarehouseModel.answers_FK_AppraisalInfoAnswer" FromRole="answers" ToRole="inventory_appraisalinfo" />
+  </EntityType>
+  <EntityType Name="autotradertrim">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="AutoTraderId" Type="Int64" Nullable="false" />
+    <Property Name="ModelId" Type="Int32" Nullable="false" />
+    <Property Name="TrimId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bannercustomer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="LastName" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Year" Type="Int32" />
+    <Property Name="Make" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Model" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Trim" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Mileage" Type="Int32" />
+    <Property Name="SelectedOptions" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Condition" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="KBBVehicelId" Type="Int32" />
+    <Property Name="Vin" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="TradeInFairValue" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="TradeInMaxValue" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" />
+    <Property Name="VarianceValue" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Source" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="TradeInStatus" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="EmailContent" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ADFEmailContent" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Receivers" Type="String" MaxLength="2000" Unicode="false" FixedLength="false" />
+    <Property Name="DealerId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="dealer" Relationship="vincontrolwarehouseModel.bannercustomers_FK_DealerBannerCustomer" FromRole="bannercustomers" ToRole="dealers" />
+  </EntityType>
+  <EntityType Name="bb_kbb">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="TrimName" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="FairPrice" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="GoodPrice" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="DateAdded" Type="DateTime" Nullable="false" />
+    <Property Name="Type" Type="Int16" Nullable="false" />
+    <Property Name="LastUpdated" Type="DateTime" Nullable="false" />
+    <Property Name="ExpiredDate" Type="DateTime" Nullable="false" />
+    <Property Name="VeryGoodPrice" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Vin" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="MigrateAutoId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="bb_kbb_kbb" Relationship="vincontrolwarehouseModel.bb_kbb_kbb_FK_KBB_inherits_BB_KBB" FromRole="bb_kbb" ToRole="bb_kbb_kbb" />
+  </EntityType>
+  <EntityType Name="bb_kbb_kbb">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="BaseWholeSale" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="MileageAdjustment" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="WholeSale" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="TrimId" Type="Int32" Nullable="false" />
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="bb_kbb" Relationship="vincontrolwarehouseModel.bb_kbb_kbb_FK_KBB_inherits_BB_KBB" FromRole="bb_kbb_kbb" ToRole="bb_kbb" />
+  </EntityType>
+  <EntityType Name="buyerguide">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Make" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Model" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Year" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="VinNumber" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="StockNumber" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="WarrantyType" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="IsAsWarranty" Type="Boolean" />
+    <Property Name="IsWarranty" Type="Boolean" />
+    <Property Name="IsFullWarranty" Type="Boolean" />
+    <Property Name="IsLimitedWarranty" Type="Boolean" />
+    <Property Name="IsServiceContract" Type="Boolean" />
+    <Property Name="SystemCovered" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Durations" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="PercentageOfLabor" Type="Double" />
+    <Property Name="PercentageOfPart" Type="Double" />
+    <Property Name="PriorRental" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="IsMixed" Type="Boolean" />
+    <Property Name="SystemCoveredAndDurations" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="LanguageVersion" Type="Int32" />
+    <Property Name="DealerId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="dealer" Relationship="vincontrolwarehouseModel.buyerguides_FK_DealerBuyerGuide" FromRole="buyerguides" ToRole="dealers" />
+  </EntityType>
+  <EntityType Name="carfax">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Vin" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Owner" Type="Int32" Nullable="false" />
+    <Property Name="ServiceRecord" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="WindowSticker" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="DateAdded" Type="DateTime" Nullable="false" />
+    <Property Name="LastUpdated" Type="DateTime" Nullable="false" />
+    <Property Name="ExpiredDate" Type="DateTime" Nullable="false" />
+    <Property Name="Vehicle_Id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="vehicle" Relationship="vincontrolwarehouseModel.carfaxes_FK_CarFaxVehicles" FromRole="carfaxes" ToRole="vehicles" />
+  </EntityType>
+  <EntityType Name="carscomtrim">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="CarscomId" Type="Int64" Nullable="false" />
+    <Property Name="ModelId" Type="Int32" Nullable="false" />
+    <Property Name="TrimId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="chartselection">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="IsCarsCom" Type="Boolean" />
+    <Property Name="Options" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Trims" Type="String" MaxLength="550" Unicode="false" FixedLength="false" />
+    <Property Name="IsCertified" Type="Boolean" />
+    <Property Name="IsAll" Type="Boolean" />
+    <Property Name="IsFranchise" Type="Boolean" />
+    <Property Name="IsIndependant" Type="Boolean" />
+    <Property Name="Screen" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="SourceType" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="InventoryId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="inventory" Relationship="vincontrolwarehouseModel.chartselections_FK_InventoryChartSelection" FromRole="chartselections" ToRole="inventory" />
+  </EntityType>
+  <EntityType Name="customer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="LastName" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Street" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="State" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Country" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="ZipPostal" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Address" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="City" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="transactions" Relationship="vincontrolwarehouseModel.transactions_FK_CustomerTransaction" FromRole="customers" ToRole="transactions" />
+  </EntityType>
+  <EntityType Name="datafeedcredential">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="DataFeedLookup_Id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="datafeedlookup" Relationship="vincontrolwarehouseModel.datafeedcredentials_FK_DataFeedLookupDataFeedCredential" FromRole="datafeedcredentials" ToRole="datafeedlookups" />
+  </EntityType>
+  <EntityType Name="datafeedlookup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DataFeedProfileId" Type="Int32" Nullable="false" />
+    <Property Name="DealerId" Type="Int32" Nullable="false" />
+    <Property Name="PartnerId" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="UseSpecificMapping" Type="Boolean" Nullable="false" />
+    <Property Name="ExportDataProfileMapping_Id" Type="Int32" />
+    <NavigationProperty Name="datafeedcredentials" Relationship="vincontrolwarehouseModel.datafeedcredentials_FK_DataFeedLookupDataFeedCredential" FromRole="datafeedlookups" ToRole="datafeedcredentials" />
+    <NavigationProperty Name="dealer" Relationship="vincontrolwarehouseModel.datafeedlookups_FK_DataFeedLookupDealer" FromRole="datafeedlookups" ToRole="dealers" />
+    <NavigationProperty Name="datafeedprofile" Relationship="vincontrolwarehouseModel.datafeedlookups_FK_DataFeedProfileDataFeedLookup" FromRole="datafeedlookups" ToRole="datafeedprofiles" />
+    <NavigationProperty Name="exportdataprofilemapping" Relationship="vincontrolwarehouseModel.datafeedlookups_FK_ExportDataProfileMappingDataFeedLookup" FromRole="datafeedlookups" ToRole="exportdataprofilemappings" />
+  </EntityType>
+  <EntityType Name="datafeedprofile">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyName" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="FTPServer" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="DefaultUserName" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="DefaultPassword" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Frequency" Type="Int32" />
+    <Property Name="ExportDataProfileMapping_Id" Type="Int32" />
+    <NavigationProperty Name="datafeedlookups" Relationship="vincontrolwarehouseModel.datafeedlookups_FK_DataFeedProfileDataFeedLookup" FromRole="datafeedprofiles" ToRole="datafeedlookups" />
+    <NavigationProperty Name="exportdataprofilemapping" Relationship="vincontrolwarehouseModel.datafeedprofiles_FK_ExportDataProfileMappingDataFeedProfile" FromRole="datafeedprofiles" ToRole="exportdataprofilemappings" />
+  </EntityType>
+  <EntityType Name="dealergroup">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="GroupAbbr" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="DateAdded" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="dealers" Relationship="vincontrolwarehouseModel.dealers_FK_DealerGroupDealer" FromRole="dealergroups" ToRole="dealers" />
+  </EntityType>
+  <EntityType Name="dealer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DealerGroupId" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="City" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="State" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Country" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="ZipPostal" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="LeadsEmail" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="EmailFormatId" Type="Int16" />
+    <Property Name="Latitude" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Longtitude" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="WebPageUrl" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="WebInventoryUrl" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="bannercustomers" Relationship="vincontrolwarehouseModel.bannercustomers_FK_DealerBannerCustomer" FromRole="dealers" ToRole="bannercustomers" />
+    <NavigationProperty Name="buyerguides" Relationship="vincontrolwarehouseModel.buyerguides_FK_DealerBuyerGuide" FromRole="dealers" ToRole="buyerguides" />
+    <NavigationProperty Name="datafeedlookups" Relationship="vincontrolwarehouseModel.datafeedlookups_FK_DataFeedLookupDealer" FromRole="dealers" ToRole="datafeedlookups" />
+    <NavigationProperty Name="dealergroup" Relationship="vincontrolwarehouseModel.dealers_FK_DealerGroupDealer" FromRole="dealers" ToRole="dealergroups" />
+    <NavigationProperty Name="dealers_dealersetting" Relationship="vincontrolwarehouseModel.dealers_dealersetting_FK_DealerSetting_inherits_Dealer" FromRole="dealers" ToRole="dealers_dealersetting" />
+    <NavigationProperty Name="importfeeds" Relationship="vincontrolwarehouseModel.importfeeds_FK_DealerImportFeed" FromRole="dealers" ToRole="importfeeds" />
+    <NavigationProperty Name="inventories" Relationship="vincontrolwarehouseModel.inventory_FK_DealerDealerInventory" FromRole="dealers" ToRole="inventory" />
+    <NavigationProperty Name="rebates" Relationship="vincontrolwarehouseModel.rebates_FK_DealerRebate" FromRole="dealers" ToRole="rebates" />
+    <NavigationProperty Name="tradeinbannercomments" Relationship="vincontrolwarehouseModel.tradeinbannercomments_FK_DealerTradeinBannerComment" FromRole="dealers" ToRole="tradeinbannercomments" />
+    <NavigationProperty Name="userdealers" Relationship="vincontrolwarehouseModel.userdealers_FK_DealerUserDealer" FromRole="dealers" ToRole="userdealers" />
+    <NavigationProperty Name="users" Relationship="vincontrolwarehouseModel.users_FK_DealerUser" FromRole="dealers" ToRole="users" />
+  </EntityType>
+  <EntityType Name="dealers_dealersetting">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="InventorySorting" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="SoldOut" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="DealershipId" Type="Int32" />
+    <Property Name="Cragislist" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="CraigslistPassword" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Ebay" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="EbayPassword" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="CarFax" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="CarFaxPassword" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Manheim" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="ManheimPassword" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="KellyBlueBook" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="KellyPassword" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="BlackBook" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="BlackBookPassword" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="AutoCheck" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="AutoCheckPassword" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="AppraisalNotification" Type="Boolean" />
+    <Property Name="WholeNotification" Type="Boolean" />
+    <Property Name="InventoryNotification" Type="Boolean" />
+    <Property Name="C24Hnotification" Type="Boolean" />
+    <Property Name="NoteNotification" Type="Boolean" />
+    <Property Name="PriceChangeNotification" Type="Boolean" />
+    <Property Name="AgeingBucketNotification" Type="Boolean" />
+    <Property Name="DefaultStockImageUrl" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="OverideStockImage" Type="Boolean" />
+    <Property Name="DealerInfo" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="DealerWarranty" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="TermsAndCondition" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="EbayToken" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="EbayInventoryURL" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="CreditURL" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="WebSiteURL" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ContactUsURL" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="FacebookURL" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="LogoURL" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ContactPerson" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="RetailPrice" Type="Boolean" />
+    <Property Name="DealerDiscount" Type="Boolean" />
+    <Property Name="ManufacturerReabte" Type="Boolean" />
+    <Property Name="SalePrice" Type="Boolean" />
+    <Property Name="ManufacturerWarranty" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ManufacturerWarrantySpanish" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ManufacturerWarrantyDuration" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="DealerCertified" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="DealerCertifiedSpanish" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="DealerCertifiedDuration" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ManufacturerCertified" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ManufacturerCertifiedSpanish" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ManufacturerCertifiedDuration" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ShippingInfo" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="AsIsWarranty" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="AsIsWarrantySpanish" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="StartDescriptionSentence" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="EndDescriptionSentence" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="AuctionSentence" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="FirstTimeRangeBucketJump" Type="Int32" />
+    <Property Name="SecondTimeRangeBucketJump" Type="Int32" />
+    <Property Name="IntervalBucketJump" Type="Int32" />
+    <Property Name="RetailPriceText" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="DealerDiscountText" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="ManufactureReabateText" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="SalePriceText" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="HeaderOverlayURL" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="FooterOverlayURL" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="MarketPriceRangeChangeNotification" Type="Boolean" />
+    <Property Name="PriceVariance" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="dealer" Relationship="vincontrolwarehouseModel.dealers_dealersetting_FK_DealerSetting_inherits_Dealer" FromRole="dealers_dealersetting" ToRole="dealers" />
+  </EntityType>
+  <EntityType Name="description">
+    <Key>
+      <PropertyRef Name="VinControlDescriptionId" />
+    </Key>
+    <Property Name="VinControlDescriptionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="YesNo" Type="Boolean" />
+    <Property Name="DescriptionSentence" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ebay">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="ServiceId" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="AdUrl" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="StartTime" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="EndTime" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Inventory_Id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="inventory" Relationship="vincontrolwarehouseModel.ebays_FK_EbayInventory" FromRole="ebays" ToRole="inventory" />
+  </EntityType>
+  <EntityType Name="exportdataprofilemapping">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Mapping" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="UseHeader" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="datafeedlookups" Relationship="vincontrolwarehouseModel.datafeedlookups_FK_ExportDataProfileMappingDataFeedLookup" FromRole="exportdataprofilemappings" ToRole="datafeedlookups" />
+    <NavigationProperty Name="datafeedprofiles" Relationship="vincontrolwarehouseModel.datafeedprofiles_FK_ExportDataProfileMappingDataFeedProfile" FromRole="exportdataprofilemappings" ToRole="datafeedprofiles" />
+  </EntityType>
+  <EntityType Name="fueltype">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="vehicles" Relationship="vincontrolwarehouseModel.vehicles_FK_FuelTypeVehicle" FromRole="fueltypes" ToRole="vehicles" />
+  </EntityType>
+  <EntityType Name="grouppermission">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GroupId" Type="Int32" Nullable="false" />
+    <Property Name="PermissionCode" Type="Int32" Nullable="false" />
+    <Property Name="PermissionValue" Type="Int32" Nullable="false" />
+    <Property Name="UserStamp" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+    <Property Name="DateStamp" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="group" Relationship="vincontrolwarehouseModel.grouppermissions_fk_grouppermission_group" FromRole="grouppermissions" ToRole="groups" />
+    <NavigationProperty Name="permissioncode1" Relationship="vincontrolwarehouseModel.grouppermissions_fk_grouppermission_permissioncodes" FromRole="grouppermissions" ToRole="permissioncodes" />
+    <NavigationProperty Name="permissionvalue1" Relationship="vincontrolwarehouseModel.grouppermissions_fk_grouppermission_permissionvalue" FromRole="grouppermissions" ToRole="permissionvalues" />
+  </EntityType>
+  <EntityType Name="group">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GroupName" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+    <Property Name="GroupNote" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="UserStamp" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+    <Property Name="DateStamp" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="grouppermissions" Relationship="vincontrolwarehouseModel.grouppermissions_fk_grouppermission_group" FromRole="groups" ToRole="grouppermissions" />
+    <NavigationProperty Name="users" Relationship="vincontrolwarehouseModel.users_FK_GroupUser" FromRole="groups" ToRole="users" />
+  </EntityType>
+  <EntityType Name="importdatafeedprofile">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DealerId" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="CompanyName" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Mapping" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Delimited" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="UseHeader" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="importfeeds" Relationship="vincontrolwarehouseModel.importfeeds_FK_ImportDataFeedProfileImportFeed" FromRole="importdatafeedprofiles" ToRole="importfeeds" />
+  </EntityType>
+  <EntityType Name="importfeed">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FeedUrl" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="DealerId" Type="Int32" Nullable="false" />
+    <Property Name="ImportDataFeedProfileId" Type="Int32" />
+    <NavigationProperty Name="dealer" Relationship="vincontrolwarehouseModel.importfeeds_FK_DealerImportFeed" FromRole="importfeeds" ToRole="dealers" />
+    <NavigationProperty Name="importdatafeedprofile" Relationship="vincontrolwarehouseModel.importfeeds_FK_ImportDataFeedProfileImportFeed" FromRole="importfeeds" ToRole="importdatafeedprofiles" />
+  </EntityType>
+  <EntityType Name="inventory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StockNumber" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="MSRP" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="Mileage" Type="Int64" Nullable="false" />
+    <Property Name="ACV" Type="Decimal" Precision="20" Scale="2" />
+    <Property Name="DealerCost" Type="Decimal" Precision="20" Scale="2" />
+    <Property Name="SalePrice" Type="Decimal" Precision="20" Scale="2" />
+    <Property Name="ExteriorColor" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="InteriorColor" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Options" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Packages" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Images" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Condition" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="VehicleId" Type="Int32" Nullable="false" />
+    <Property Name="DealerId" Type="Int32" Nullable="false" />
+    <Property Name="Certified" Type="Boolean" Nullable="false" />
+    <Property Name="CarFaxOwner" Type="Int16" />
+    <Property Name="KBBOptionsId" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="KBBTrimsId" Type="Int64" />
+    <Property Name="AddedBy" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="AddedDate" Type="DateTime" />
+    <Property Name="LastModifiedBy" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="LastModifiedDate" Type="DateTime" />
+    <Property Name="MigrateListingId" Type="Int32" Nullable="false" />
+    <Property Name="MigrateAppraisalId" Type="Int32" Nullable="false" />
+    <Property Name="MigrateSoldoutListingId" Type="Int32" Nullable="false" />
+    <Property Name="MigrateWholesaleListingId" Type="Int32" Nullable="false" />
+    <Property Name="StatusId" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="true" />
+    <Property Name="ColorCode" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="MarketRange" Type="Int16" />
+    <Property Name="MarketLowestPrice" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="MarketHighestPrice" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="MarketAveragePrice" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="NumberOfCar" Type="Int32" />
+    <Property Name="Timestamp" Type="DateTime" Nullable="false" />
+    <Property Name="IsAppraisal" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="chartselections" Relationship="vincontrolwarehouseModel.chartselections_FK_InventoryChartSelection" FromRole="inventory" ToRole="chartselections" />
+    <NavigationProperty Name="dealer" Relationship="vincontrolwarehouseModel.inventory_FK_DealerDealerInventory" FromRole="inventory" ToRole="dealers" />
+    <NavigationProperty Name="ebays" Relationship="vincontrolwarehouseModel.ebays_FK_EbayInventory" FromRole="inventory" ToRole="ebays" />
+    <NavigationProperty Name="status" Relationship="vincontrolwarehouseModel.inventory_FK_StatusInventory" FromRole="inventory" ToRole="status" />
+    <NavigationProperty Name="vehicle" Relationship="vincontrolwarehouseModel.inventory_FK_VehiclesDealerInventory" FromRole="inventory" ToRole="vehicles" />
+    <NavigationProperty Name="inventory_appraisalinfo" Relationship="vincontrolwarehouseModel.inventory_appraisalinfo_FK_AppraisalInfo_inherits_Inventory" FromRole="inventory" ToRole="inventory_appraisalinfo" />
+    <NavigationProperty Name="inventory_inventoryinfo" Relationship="vincontrolwarehouseModel.inventory_inventoryinfo_FK_InventoryInfo_inherits_Inventory" FromRole="inventory" ToRole="inventory_inventoryinfo" />
+    <NavigationProperty Name="inventoryhistories" Relationship="vincontrolwarehouseModel.inventoryhistories_FK_InventoryInventoryHistory" FromRole="inventory" ToRole="inventoryhistories" />
+    <NavigationProperty Name="notes" Relationship="vincontrolwarehouseModel.notes_FK_DealerInventoryNote" FromRole="inventory" ToRole="notes" />
+    <NavigationProperty Name="transactions" Relationship="vincontrolwarehouseModel.transactions_FK_DealerInventoryTransaction" FromRole="inventory" ToRole="transactions" />
+  </EntityType>
+  <EntityType Name="inventory_appraisalinfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="PackageDescription" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="InventoryAdd" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="AppraisalType" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Note" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Signature" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="UserStamp" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="DateStamp" Type="DateTime" />
+    <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="SignatureURL" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="IsFromVinGenie" Type="Boolean" />
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="answers" Relationship="vincontrolwarehouseModel.answers_FK_AppraisalInfoAnswer" FromRole="inventory_appraisalinfo" ToRole="answers" />
+    <NavigationProperty Name="inventory" Relationship="vincontrolwarehouseModel.inventory_appraisalinfo_FK_AppraisalInfo_inherits_Inventory" FromRole="inventory_appraisalinfo" ToRole="inventory" />
+    <NavigationProperty Name="walkarounds" Relationship="vincontrolwarehouseModel.walkarounds_FK_AppraisalInfoWalkaround" FromRole="inventory_appraisalinfo" ToRole="walkarounds" />
+  </EntityType>
+  <EntityType Name="inventory_inventoryinfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="DealershipZipCode" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="WarrantyInfo" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="RetailPrice" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="WindowStickerPrice" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="DealerDiscount" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="ManufacturerRebate" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="PriorRental" Type="Boolean" />
+    <Property Name="Recon" Type="Boolean" />
+    <Property Name="Disclaimer" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="DealerDemo" Type="Boolean" />
+    <Property Name="Unwind" Type="Boolean" />
+    <Property Name="IsFeatured" Type="Boolean" />
+    <Property Name="Thumnails" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="DateInStock" Type="DateTime" Nullable="false" />
+    <Property Name="CarRanking" Type="Int32" />
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="inventory" Relationship="vincontrolwarehouseModel.inventory_inventoryinfo_FK_InventoryInfo_inherits_Inventory" FromRole="inventory_inventoryinfo" ToRole="inventory" />
+  </EntityType>
+  <EntityType Name="inventoryhistory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StockNumber" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="MSRP" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="Mileage" Type="Int64" Nullable="false" />
+    <Property Name="ACV" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="DealerCost" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="SalePrice" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="ExteriorColor" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="InteriorColor" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Options" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Packages" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Images" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Thumbnails" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="LastUpdated" Type="DateTime" Nullable="false" />
+    <Property Name="Condition" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="VehicleId" Type="Int32" Nullable="false" />
+    <Property Name="DealerId" Type="Int32" Nullable="false" />
+    <Property Name="StatusId" Type="Int32" Nullable="false" />
+    <Property Name="Certified" Type="Boolean" Nullable="false" />
+    <Property Name="CarFaxOwner" Type="Int16" Nullable="false" />
+    <Property Name="KBBOptionsId" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="KBBTrimsId" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="AddedBy" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="AddedDate" Type="DateTime" Nullable="false" />
+    <Property Name="LastModifiedBy" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="LastModifiedDate" Type="DateTime" Nullable="false" />
+    <Property Name="InventoryId" Type="Int32" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="inventory" Relationship="vincontrolwarehouseModel.inventoryhistories_FK_InventoryInventoryHistory" FromRole="inventoryhistories" ToRole="inventory" />
+  </EntityType>
+  <EntityType Name="kbboption">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KBBId" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="kbbtrimoptions" Relationship="vincontrolwarehouseModel.kbbtrimoptions_FK_OptionTrimOption1" FromRole="kbboptions" ToRole="kbbtrimoptions" />
+  </EntityType>
+  <EntityType Name="kbbpackage">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KBBId" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="kbbtrimpackages" Relationship="vincontrolwarehouseModel.kbbtrimpackages_FK_PackageTrimPackage1" FromRole="kbbpackages" ToRole="kbbtrimpackages" />
+  </EntityType>
+  <EntityType Name="kbbtrimoption">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TrimId" Type="Int32" Nullable="false" />
+    <Property Name="OptionId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="kbboption" Relationship="vincontrolwarehouseModel.kbbtrimoptions_FK_OptionTrimOption1" FromRole="kbbtrimoptions" ToRole="kbboptions" />
+    <NavigationProperty Name="kbbtrim" Relationship="vincontrolwarehouseModel.kbbtrimoptions_FK_TrimTrimOption1" FromRole="kbbtrimoptions" ToRole="kbbtrims" />
+  </EntityType>
+  <EntityType Name="kbbtrimpackage">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TrimId" Type="Int32" Nullable="false" />
+    <Property Name="PackageId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="kbbpackage" Relationship="vincontrolwarehouseModel.kbbtrimpackages_FK_PackageTrimPackage1" FromRole="kbbtrimpackages" ToRole="kbbpackages" />
+    <NavigationProperty Name="kbbtrim" Relationship="vincontrolwarehouseModel.kbbtrimpackages_FK_TrimTrimPackage1" FromRole="kbbtrimpackages" ToRole="kbbtrims" />
+  </EntityType>
+  <EntityType Name="kbbtrim">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="KBBId" Type="Int64" Nullable="false" />
+    <Property Name="ModelId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="kbbtrimoptions" Relationship="vincontrolwarehouseModel.kbbtrimoptions_FK_TrimTrimOption1" FromRole="kbbtrims" ToRole="kbbtrimoptions" />
+    <NavigationProperty Name="kbbtrimpackages" Relationship="vincontrolwarehouseModel.kbbtrimpackages_FK_TrimTrimPackage1" FromRole="kbbtrims" ToRole="kbbtrimpackages" />
+  </EntityType>
+  <EntityType Name="manheimvalue">
+    <Key>
+      <PropertyRef Name="AutoId" />
+    </Key>
+    <Property Name="AutoId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Vin" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Trim" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="AuctionLowestPrice" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="AuctionAveragePrice" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="AuctionHighestPrice" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="DateAdded" Type="DateTime" />
+    <Property Name="LastUpdated" Type="DateTime" />
+    <Property Name="ExpiredDate" Type="DateTime" />
+    <Property Name="TrimServiceId" Type="Int32" />
+    <Property Name="Year" Type="Int32" />
+    <Property Name="MakeServiceId" Type="Int32" />
+    <Property Name="ModelServiceId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="note">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="InventoryId" Type="Int32" Nullable="false" />
+    <Property Name="Content" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="AddedDate" Type="DateTime" Nullable="false" />
+    <Property Name="StatusId" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="true" />
+    <Property Name="Timestamp" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="inventory" Relationship="vincontrolwarehouseModel.notes_FK_DealerInventoryNote" FromRole="notes" ToRole="inventory" />
+    <NavigationProperty Name="status" Relationship="vincontrolwarehouseModel.notes_FK_NoteStatus" FromRole="notes" ToRole="status" />
+    <NavigationProperty Name="user" Relationship="vincontrolwarehouseModel.notes_FK_UserNote" FromRole="notes" ToRole="users" />
+  </EntityType>
+  <EntityType Name="permissioncode">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="PermissionText" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="PermissionCategory" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Indent" Type="Int32" Nullable="false" />
+    <Property Name="ScreenOrder" Type="Int32" Nullable="false" />
+    <Property Name="UserStamp" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+    <Property Name="DateStamp" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="grouppermissions" Relationship="vincontrolwarehouseModel.grouppermissions_fk_grouppermission_permissioncodes" FromRole="permissioncodes" ToRole="grouppermissions" />
+  </EntityType>
+  <EntityType Name="permissionvalue">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="UserStamp" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+    <Property Name="DateStamp" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="grouppermissions" Relationship="vincontrolwarehouseModel.grouppermissions_fk_grouppermission_permissionvalue" FromRole="permissionvalues" ToRole="grouppermissions" />
+  </EntityType>
+  <EntityType Name="question">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="455" Unicode="false" FixedLength="false" />
+    <Property Name="QuestionTypeId" Type="Int32" />
+    <Property Name="ShortDescription" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="Order" Type="Int32" />
+    <NavigationProperty Name="answers" Relationship="vincontrolwarehouseModel.answers_fk_answers_questions" FromRole="questions" ToRole="answers" />
+    <NavigationProperty Name="questiontype" Relationship="vincontrolwarehouseModel.questions_fk_questions_questiontype" FromRole="questions" ToRole="questiontypes" />
+  </EntityType>
+  <EntityType Name="questiontype">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="145" Unicode="false" FixedLength="false" />
+    <Property Name="Option" Type="String" MaxLength="145" Unicode="false" FixedLength="false" />
+    <Property Name="Code" Type="Int32" />
+    <Property Name="Unit" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="questions" Relationship="vincontrolwarehouseModel.questions_fk_questions_questiontype" FromRole="questiontypes" ToRole="questions" />
+  </EntityType>
+  <EntityType Name="rebate">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="Int32" />
+    <Property Name="Make" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Model" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Trim" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="BodyType" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ManufactureReabte" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Disclaimer" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="DateAdded" Type="DateTime" />
+    <Property Name="LastUpdated" Type="DateTime" />
+    <Property Name="DealerId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="dealer" Relationship="vincontrolwarehouseModel.rebates_FK_DealerRebate" FromRole="rebates" ToRole="dealers" />
+  </EntityType>
+  <EntityType Name="status">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="inventories" Relationship="vincontrolwarehouseModel.inventory_FK_StatusInventory" FromRole="status" ToRole="inventory" />
+    <NavigationProperty Name="notes" Relationship="vincontrolwarehouseModel.notes_FK_NoteStatus" FromRole="status" ToRole="notes" />
+  </EntityType>
+  <EntityType Name="style">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="StyleWithoutTrim" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="TrimId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tradeinbannercomment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Content" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="City" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="State" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="DateComment" Type="DateTime" />
+    <Property Name="DateUpdated" Type="DateTime" />
+    <Property Name="DealerId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="dealer" Relationship="vincontrolwarehouseModel.tradeinbannercomments_FK_DealerTradeinBannerComment" FromRole="tradeinbannercomments" ToRole="dealers" />
+  </EntityType>
+  <EntityType Name="transaction">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TransactionDate" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="CustomerId" Type="Int32" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="InventoryId" Type="Int32" Nullable="false" />
+    <Property Name="TransactionTypeId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="customer" Relationship="vincontrolwarehouseModel.transactions_FK_CustomerTransaction" FromRole="transactions" ToRole="customers" />
+    <NavigationProperty Name="inventory" Relationship="vincontrolwarehouseModel.transactions_FK_DealerInventoryTransaction" FromRole="transactions" ToRole="inventory" />
+    <NavigationProperty Name="transactiontype" Relationship="vincontrolwarehouseModel.transactions_FK_TransactionTypeTransaction" FromRole="transactions" ToRole="transactiontypes" />
+    <NavigationProperty Name="user" Relationship="vincontrolwarehouseModel.transactions_FK_UserTransaction" FromRole="transactions" ToRole="users" />
+  </EntityType>
+  <EntityType Name="transactiontype">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Type" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="transactions" Relationship="vincontrolwarehouseModel.transactions_FK_TransactionTypeTransaction" FromRole="transactiontypes" ToRole="transactions" />
+  </EntityType>
+  <EntityType Name="truckcategory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="TruckTypeId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="trucktype" Relationship="vincontrolwarehouseModel.truckcategories_FK_TruckTypeTruckCategory" FromRole="truckcategories" ToRole="trucktypes" />
+    <NavigationProperty Name="vehicles_truck" Relationship="vincontrolwarehouseModel.vehicles_truck_FK_TruckCategoryTruck" FromRole="truckcategories" ToRole="vehicles_truck" />
+  </EntityType>
+  <EntityType Name="truckclass">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Text" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="vehicles_truck" Relationship="vincontrolwarehouseModel.vehicles_truck_FK_TruckClassTruck" FromRole="truckclasses" ToRole="vehicles_truck" />
+  </EntityType>
+  <EntityType Name="trucktype">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="truckcategories" Relationship="vincontrolwarehouseModel.truckcategories_FK_TruckTypeTruckCategory" FromRole="trucktypes" ToRole="truckcategories" />
+  </EntityType>
+  <EntityType Name="useralert">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AlertId" Type="Int32" Nullable="false" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="alert" Relationship="vincontrolwarehouseModel.useralerts_FK_UserAlertAlert" FromRole="useralerts" ToRole="alerts" />
+    <NavigationProperty Name="user" Relationship="vincontrolwarehouseModel.useralerts_FK_UserUserAlert" FromRole="useralerts" ToRole="users" />
+  </EntityType>
+  <EntityType Name="userdealer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="DealerId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="dealer" Relationship="vincontrolwarehouseModel.userdealers_FK_DealerUserDealer" FromRole="userdealers" ToRole="dealers" />
+    <NavigationProperty Name="user" Relationship="vincontrolwarehouseModel.userdealers_FK_UserUserDealer" FromRole="userdealers" ToRole="users" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="CellPhone" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Active" Type="Boolean" />
+    <Property Name="DateAdded" Type="DateTime" />
+    <Property Name="ExpirationDate" Type="DateTime" />
+    <Property Name="MigrateUserId" Type="Int32" />
+    <Property Name="GroupId" Type="Int32" Nullable="false" />
+    <Property Name="DefaultDealership" Type="Int32" />
+    <NavigationProperty Name="dealer" Relationship="vincontrolwarehouseModel.users_FK_DealerUser" FromRole="users" ToRole="dealers" />
+    <NavigationProperty Name="group" Relationship="vincontrolwarehouseModel.users_FK_GroupUser" FromRole="users" ToRole="groups" />
+    <NavigationProperty Name="notes" Relationship="vincontrolwarehouseModel.notes_FK_UserNote" FromRole="users" ToRole="notes" />
+    <NavigationProperty Name="transactions" Relationship="vincontrolwarehouseModel.transactions_FK_UserTransaction" FromRole="users" ToRole="transactions" />
+    <NavigationProperty Name="useralerts" Relationship="vincontrolwarehouseModel.useralerts_FK_UserUserAlert" FromRole="users" ToRole="useralerts" />
+    <NavigationProperty Name="userdealers" Relationship="vincontrolwarehouseModel.userdealers_FK_UserUserDealer" FromRole="users" ToRole="userdealers" />
+  </EntityType>
+  <EntityType Name="vehicle">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VIN" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Year" Type="Int32" />
+    <Property Name="Body" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Cylinder" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Engine" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="DriveTrain" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Transmission" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Door" Type="Int16" />
+    <Property Name="FuelEconomyCity" Type="Int16" />
+    <Property Name="FuelEconomyHighway" Type="Int16" />
+    <Property Name="StandardOptions" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="TrimId" Type="Int32" />
+    <Property Name="MakeId" Type="Int32" />
+    <Property Name="DefaultImageURL" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Liters" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ModelId" Type="Int32" />
+    <Property Name="MigrateListingId" Type="Int32" Nullable="false" />
+    <Property Name="MigrateAppraisalId" Type="Int32" Nullable="false" />
+    <Property Name="StandardPackages" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="MigrateSoldoutListingId" Type="Int32" Nullable="false" />
+    <Property Name="MigrateWholesaleListingId" Type="Int32" Nullable="false" />
+    <Property Name="VehicleTypeId" Type="Int32" />
+    <Property Name="FuelId" Type="Int32" />
+    <Property Name="MakeValue" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="ModelValue" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="TrimValue" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="carfaxes" Relationship="vincontrolwarehouseModel.carfaxes_FK_CarFaxVehicles" FromRole="vehicles" ToRole="carfaxes" />
+    <NavigationProperty Name="fueltype" Relationship="vincontrolwarehouseModel.vehicles_FK_FuelTypeVehicle" FromRole="vehicles" ToRole="fueltypes" />
+    <NavigationProperty Name="inventories" Relationship="vincontrolwarehouseModel.inventory_FK_VehiclesDealerInventory" FromRole="vehicles" ToRole="inventory" />
+    <NavigationProperty Name="vehicletype" Relationship="vincontrolwarehouseModel.vehicles_FK_VehicleTypeVehicle" FromRole="vehicles" ToRole="vehicletypes" />
+    <NavigationProperty Name="vehicles_truck" Relationship="vincontrolwarehouseModel.vehicles_truck_FK_Truck_inherits_Vehicle" FromRole="vehicles" ToRole="vehicles_truck" />
+  </EntityType>
+  <EntityType Name="vehicles_truck">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="TruckClassId" Type="Int32" />
+    <Property Name="TruckCategoryId" Type="Int32" />
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="truckcategory" Relationship="vincontrolwarehouseModel.vehicles_truck_FK_TruckCategoryTruck" FromRole="vehicles_truck" ToRole="truckcategories" />
+    <NavigationProperty Name="truckclass" Relationship="vincontrolwarehouseModel.vehicles_truck_FK_TruckClassTruck" FromRole="vehicles_truck" ToRole="truckclasses" />
+    <NavigationProperty Name="vehicle" Relationship="vincontrolwarehouseModel.vehicles_truck_FK_Truck_inherits_Vehicle" FromRole="vehicles_truck" ToRole="vehicles" />
+  </EntityType>
+  <EntityType Name="vehicletype">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Type" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="vehicles" Relationship="vincontrolwarehouseModel.vehicles_FK_VehicleTypeVehicle" FromRole="vehicletypes" ToRole="vehicles" />
+  </EntityType>
+  <EntityType Name="walkaround">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Order" Type="Int32" />
+    <Property Name="X" Type="Double" />
+    <Property Name="Y" Type="Double" />
+    <Property Name="Note" Type="String" MaxLength="455" Unicode="false" FixedLength="false" />
+    <Property Name="AppraisalInfoId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="inventory_appraisalinfo" Relationship="vincontrolwarehouseModel.walkarounds_FK_AppraisalInfoWalkaround" FromRole="walkarounds" ToRole="inventory_appraisalinfo" />
+  </EntityType>
+  <Association Name="useralerts_FK_UserAlertAlert">
+    <End Role="alerts" Type="vincontrolwarehouseModel.alert" Multiplicity="1" />
+    <End Role="useralerts" Type="vincontrolwarehouseModel.useralert" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="alerts">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="useralerts">
+        <PropertyRef Name="AlertId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="answers_fk_answers_questions">
+    <End Role="questions" Type="vincontrolwarehouseModel.question" Multiplicity="0..1" />
+    <End Role="answers" Type="vincontrolwarehouseModel.answer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="questions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="answers">
+        <PropertyRef Name="QuestionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="answers_FK_AppraisalInfoAnswer">
+    <End Role="inventory_appraisalinfo" Type="vincontrolwarehouseModel.inventory_appraisalinfo" Multiplicity="1" />
+    <End Role="answers" Type="vincontrolwarehouseModel.answer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inventory_appraisalinfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="answers">
+        <PropertyRef Name="AppraisalInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="bannercustomers_FK_DealerBannerCustomer">
+    <End Role="dealers" Type="vincontrolwarehouseModel.dealer" Multiplicity="1" />
+    <End Role="bannercustomers" Type="vincontrolwarehouseModel.bannercustomer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dealers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="bannercustomers">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="bb_kbb_kbb_FK_KBB_inherits_BB_KBB">
+    <End Role="bb_kbb" Type="vincontrolwarehouseModel.bb_kbb" Multiplicity="1" />
+    <End Role="bb_kbb_kbb" Type="vincontrolwarehouseModel.bb_kbb_kbb" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="bb_kbb">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="bb_kbb_kbb">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="buyerguides_FK_DealerBuyerGuide">
+    <End Role="dealers" Type="vincontrolwarehouseModel.dealer" Multiplicity="1" />
+    <End Role="buyerguides" Type="vincontrolwarehouseModel.buyerguide" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dealers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="buyerguides">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="carfaxes_FK_CarFaxVehicles">
+    <End Role="vehicles" Type="vincontrolwarehouseModel.vehicle" Multiplicity="1" />
+    <End Role="carfaxes" Type="vincontrolwarehouseModel.carfax" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vehicles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="carfaxes">
+        <PropertyRef Name="Vehicle_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="chartselections_FK_InventoryChartSelection">
+    <End Role="inventory" Type="vincontrolwarehouseModel.inventory" Multiplicity="1" />
+    <End Role="chartselections" Type="vincontrolwarehouseModel.chartselection" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inventory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="chartselections">
+        <PropertyRef Name="InventoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="transactions_FK_CustomerTransaction">
+    <End Role="customers" Type="vincontrolwarehouseModel.customer" Multiplicity="0..1" />
+    <End Role="transactions" Type="vincontrolwarehouseModel.transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="customers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="transactions">
+        <PropertyRef Name="CustomerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="datafeedcredentials_FK_DataFeedLookupDataFeedCredential">
+    <End Role="datafeedlookups" Type="vincontrolwarehouseModel.datafeedlookup" Multiplicity="1" />
+    <End Role="datafeedcredentials" Type="vincontrolwarehouseModel.datafeedcredential" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="datafeedlookups">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="datafeedcredentials">
+        <PropertyRef Name="DataFeedLookup_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="datafeedlookups_FK_DataFeedLookupDealer">
+    <End Role="dealers" Type="vincontrolwarehouseModel.dealer" Multiplicity="1" />
+    <End Role="datafeedlookups" Type="vincontrolwarehouseModel.datafeedlookup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dealers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="datafeedlookups">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="datafeedlookups_FK_DataFeedProfileDataFeedLookup">
+    <End Role="datafeedprofiles" Type="vincontrolwarehouseModel.datafeedprofile" Multiplicity="1" />
+    <End Role="datafeedlookups" Type="vincontrolwarehouseModel.datafeedlookup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="datafeedprofiles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="datafeedlookups">
+        <PropertyRef Name="DataFeedProfileId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="datafeedlookups_FK_ExportDataProfileMappingDataFeedLookup">
+    <End Role="exportdataprofilemappings" Type="vincontrolwarehouseModel.exportdataprofilemapping" Multiplicity="0..1" />
+    <End Role="datafeedlookups" Type="vincontrolwarehouseModel.datafeedlookup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="exportdataprofilemappings">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="datafeedlookups">
+        <PropertyRef Name="ExportDataProfileMapping_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="datafeedprofiles_FK_ExportDataProfileMappingDataFeedProfile">
+    <End Role="exportdataprofilemappings" Type="vincontrolwarehouseModel.exportdataprofilemapping" Multiplicity="0..1" />
+    <End Role="datafeedprofiles" Type="vincontrolwarehouseModel.datafeedprofile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="exportdataprofilemappings">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="datafeedprofiles">
+        <PropertyRef Name="ExportDataProfileMapping_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="dealers_FK_DealerGroupDealer">
+    <End Role="dealergroups" Type="vincontrolwarehouseModel.dealergroup" Multiplicity="0..1" />
+    <End Role="dealers" Type="vincontrolwarehouseModel.dealer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dealergroups">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="dealers">
+        <PropertyRef Name="DealerGroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="dealers_dealersetting_FK_DealerSetting_inherits_Dealer">
+    <End Role="dealers" Type="vincontrolwarehouseModel.dealer" Multiplicity="1" />
+    <End Role="dealers_dealersetting" Type="vincontrolwarehouseModel.dealers_dealersetting" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="dealers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="dealers_dealersetting">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="importfeeds_FK_DealerImportFeed">
+    <End Role="dealers" Type="vincontrolwarehouseModel.dealer" Multiplicity="1" />
+    <End Role="importfeeds" Type="vincontrolwarehouseModel.importfeed" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dealers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="importfeeds">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="inventory_FK_DealerDealerInventory">
+    <End Role="dealers" Type="vincontrolwarehouseModel.dealer" Multiplicity="1" />
+    <End Role="inventory" Type="vincontrolwarehouseModel.inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dealers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="inventory">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="rebates_FK_DealerRebate">
+    <End Role="dealers" Type="vincontrolwarehouseModel.dealer" Multiplicity="1" />
+    <End Role="rebates" Type="vincontrolwarehouseModel.rebate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dealers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="rebates">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tradeinbannercomments_FK_DealerTradeinBannerComment">
+    <End Role="dealers" Type="vincontrolwarehouseModel.dealer" Multiplicity="1" />
+    <End Role="tradeinbannercomments" Type="vincontrolwarehouseModel.tradeinbannercomment" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dealers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="tradeinbannercomments">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="userdealers_FK_DealerUserDealer">
+    <End Role="dealers" Type="vincontrolwarehouseModel.dealer" Multiplicity="1" />
+    <End Role="userdealers" Type="vincontrolwarehouseModel.userdealer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dealers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="userdealers">
+        <PropertyRef Name="DealerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="users_FK_DealerUser">
+    <End Role="dealers" Type="vincontrolwarehouseModel.dealer" Multiplicity="0..1" />
+    <End Role="users" Type="vincontrolwarehouseModel.user" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="dealers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="users">
+        <PropertyRef Name="DefaultDealership" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="ebays_FK_EbayInventory">
+    <End Role="inventory" Type="vincontrolwarehouseModel.inventory" Multiplicity="1" />
+    <End Role="ebays" Type="vincontrolwarehouseModel.ebay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inventory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ebays">
+        <PropertyRef Name="Inventory_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vehicles_FK_FuelTypeVehicle">
+    <End Role="fueltypes" Type="vincontrolwarehouseModel.fueltype" Multiplicity="0..1" />
+    <End Role="vehicles" Type="vincontrolwarehouseModel.vehicle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="fueltypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="vehicles">
+        <PropertyRef Name="FuelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="grouppermissions_fk_grouppermission_group">
+    <End Role="groups" Type="vincontrolwarehouseModel.group" Multiplicity="1" />
+    <End Role="grouppermissions" Type="vincontrolwarehouseModel.grouppermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="groups">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="grouppermissions">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="grouppermissions_fk_grouppermission_permissioncodes">
+    <End Role="permissioncodes" Type="vincontrolwarehouseModel.permissioncode" Multiplicity="1" />
+    <End Role="grouppermissions" Type="vincontrolwarehouseModel.grouppermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="permissioncodes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="grouppermissions">
+        <PropertyRef Name="PermissionCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="grouppermissions_fk_grouppermission_permissionvalue">
+    <End Role="permissionvalues" Type="vincontrolwarehouseModel.permissionvalue" Multiplicity="1" />
+    <End Role="grouppermissions" Type="vincontrolwarehouseModel.grouppermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="permissionvalues">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="grouppermissions">
+        <PropertyRef Name="PermissionValue" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="users_FK_GroupUser">
+    <End Role="groups" Type="vincontrolwarehouseModel.group" Multiplicity="1" />
+    <End Role="users" Type="vincontrolwarehouseModel.user" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="groups">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="users">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="importfeeds_FK_ImportDataFeedProfileImportFeed">
+    <End Role="importdatafeedprofiles" Type="vincontrolwarehouseModel.importdatafeedprofile" Multiplicity="0..1" />
+    <End Role="importfeeds" Type="vincontrolwarehouseModel.importfeed" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="importdatafeedprofiles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="importfeeds">
+        <PropertyRef Name="ImportDataFeedProfileId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="inventory_FK_StatusInventory">
+    <End Role="status" Type="vincontrolwarehouseModel.status" Multiplicity="1" />
+    <End Role="inventory" Type="vincontrolwarehouseModel.inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="inventory">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="inventory_FK_VehiclesDealerInventory">
+    <End Role="vehicles" Type="vincontrolwarehouseModel.vehicle" Multiplicity="1" />
+    <End Role="inventory" Type="vincontrolwarehouseModel.inventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vehicles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="inventory">
+        <PropertyRef Name="VehicleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="inventory_appraisalinfo_FK_AppraisalInfo_inherits_Inventory">
+    <End Role="inventory" Type="vincontrolwarehouseModel.inventory" Multiplicity="1" />
+    <End Role="inventory_appraisalinfo" Type="vincontrolwarehouseModel.inventory_appraisalinfo" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="inventory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="inventory_appraisalinfo">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="inventory_inventoryinfo_FK_InventoryInfo_inherits_Inventory">
+    <End Role="inventory" Type="vincontrolwarehouseModel.inventory" Multiplicity="1" />
+    <End Role="inventory_inventoryinfo" Type="vincontrolwarehouseModel.inventory_inventoryinfo" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="inventory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="inventory_inventoryinfo">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="inventoryhistories_FK_InventoryInventoryHistory">
+    <End Role="inventory" Type="vincontrolwarehouseModel.inventory" Multiplicity="1" />
+    <End Role="inventoryhistories" Type="vincontrolwarehouseModel.inventoryhistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inventory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="inventoryhistories">
+        <PropertyRef Name="InventoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="notes_FK_DealerInventoryNote">
+    <End Role="inventory" Type="vincontrolwarehouseModel.inventory" Multiplicity="1" />
+    <End Role="notes" Type="vincontrolwarehouseModel.note" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inventory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="notes">
+        <PropertyRef Name="InventoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="transactions_FK_DealerInventoryTransaction">
+    <End Role="inventory" Type="vincontrolwarehouseModel.inventory" Multiplicity="1" />
+    <End Role="transactions" Type="vincontrolwarehouseModel.transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inventory">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="transactions">
+        <PropertyRef Name="InventoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="walkarounds_FK_AppraisalInfoWalkaround">
+    <End Role="inventory_appraisalinfo" Type="vincontrolwarehouseModel.inventory_appraisalinfo" Multiplicity="1" />
+    <End Role="walkarounds" Type="vincontrolwarehouseModel.walkaround" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="inventory_appraisalinfo">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="walkarounds">
+        <PropertyRef Name="AppraisalInfoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="kbbtrimoptions_FK_OptionTrimOption1">
+    <End Role="kbboptions" Type="vincontrolwarehouseModel.kbboption" Multiplicity="1" />
+    <End Role="kbbtrimoptions" Type="vincontrolwarehouseModel.kbbtrimoption" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kbboptions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="kbbtrimoptions">
+        <PropertyRef Name="OptionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="kbbtrimpackages_FK_PackageTrimPackage1">
+    <End Role="kbbpackages" Type="vincontrolwarehouseModel.kbbpackage" Multiplicity="1" />
+    <End Role="kbbtrimpackages" Type="vincontrolwarehouseModel.kbbtrimpackage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kbbpackages">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="kbbtrimpackages">
+        <PropertyRef Name="PackageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="kbbtrimoptions_FK_TrimTrimOption1">
+    <End Role="kbbtrims" Type="vincontrolwarehouseModel.kbbtrim" Multiplicity="1" />
+    <End Role="kbbtrimoptions" Type="vincontrolwarehouseModel.kbbtrimoption" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kbbtrims">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="kbbtrimoptions">
+        <PropertyRef Name="TrimId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="kbbtrimpackages_FK_TrimTrimPackage1">
+    <End Role="kbbtrims" Type="vincontrolwarehouseModel.kbbtrim" Multiplicity="1" />
+    <End Role="kbbtrimpackages" Type="vincontrolwarehouseModel.kbbtrimpackage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="kbbtrims">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="kbbtrimpackages">
+        <PropertyRef Name="TrimId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="notes_FK_NoteStatus">
+    <End Role="status" Type="vincontrolwarehouseModel.status" Multiplicity="1" />
+    <End Role="notes" Type="vincontrolwarehouseModel.note" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="status">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="notes">
+        <PropertyRef Name="StatusId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="notes_FK_UserNote">
+    <End Role="users" Type="vincontrolwarehouseModel.user" Multiplicity="1" />
+    <End Role="notes" Type="vincontrolwarehouseModel.note" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="notes">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="questions_fk_questions_questiontype">
+    <End Role="questiontypes" Type="vincontrolwarehouseModel.questiontype" Multiplicity="0..1" />
+    <End Role="questions" Type="vincontrolwarehouseModel.question" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="questiontypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="questions">
+        <PropertyRef Name="QuestionTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="transactions_FK_TransactionTypeTransaction">
+    <End Role="transactiontypes" Type="vincontrolwarehouseModel.transactiontype" Multiplicity="1" />
+    <End Role="transactions" Type="vincontrolwarehouseModel.transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="transactiontypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="transactions">
+        <PropertyRef Name="TransactionTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="transactions_FK_UserTransaction">
+    <End Role="users" Type="vincontrolwarehouseModel.user" Multiplicity="0..1" />
+    <End Role="transactions" Type="vincontrolwarehouseModel.transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="transactions">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="truckcategories_FK_TruckTypeTruckCategory">
+    <End Role="trucktypes" Type="vincontrolwarehouseModel.trucktype" Multiplicity="1" />
+    <End Role="truckcategories" Type="vincontrolwarehouseModel.truckcategory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="trucktypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="truckcategories">
+        <PropertyRef Name="TruckTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vehicles_truck_FK_TruckCategoryTruck">
+    <End Role="truckcategories" Type="vincontrolwarehouseModel.truckcategory" Multiplicity="0..1" />
+    <End Role="vehicles_truck" Type="vincontrolwarehouseModel.vehicles_truck" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="truckcategories">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="vehicles_truck">
+        <PropertyRef Name="TruckCategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vehicles_truck_FK_TruckClassTruck">
+    <End Role="truckclasses" Type="vincontrolwarehouseModel.truckclass" Multiplicity="0..1" />
+    <End Role="vehicles_truck" Type="vincontrolwarehouseModel.vehicles_truck" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="truckclasses">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="vehicles_truck">
+        <PropertyRef Name="TruckClassId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="useralerts_FK_UserUserAlert">
+    <End Role="users" Type="vincontrolwarehouseModel.user" Multiplicity="1" />
+    <End Role="useralerts" Type="vincontrolwarehouseModel.useralert" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="useralerts">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="userdealers_FK_UserUserDealer">
+    <End Role="users" Type="vincontrolwarehouseModel.user" Multiplicity="1" />
+    <End Role="userdealers" Type="vincontrolwarehouseModel.userdealer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="users">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="userdealers">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vehicles_FK_VehicleTypeVehicle">
+    <End Role="vehicletypes" Type="vincontrolwarehouseModel.vehicletype" Multiplicity="0..1" />
+    <End Role="vehicles" Type="vincontrolwarehouseModel.vehicle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vehicletypes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="vehicles">
+        <PropertyRef Name="VehicleTypeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vehicles_truck_FK_Truck_inherits_Vehicle">
+    <End Role="vehicles" Type="vincontrolwarehouseModel.vehicle" Multiplicity="1" />
+    <End Role="vehicles_truck" Type="vincontrolwarehouseModel.vehicles_truck" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="vehicles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="vehicles_truck">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

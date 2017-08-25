@@ -1,0 +1,215 @@
+/* Leo Fixbug Appraisal*/
+div#recentAppraisals
+{
+    height: 560px;
+    overflow: auto;
+    padding-left: 20px;
+}
+/* end leo*/
+
+.appraisals_title
+{
+    color: #FFF;
+    float: left;
+    width: 200px;
+    padding: 20px 10px;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.appraisal_fixed_title
+{
+    width: 20%;
+    float: left;
+    padding: 10px 10px 10px 20px;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+}
+
+.appraisals_tradein_logo img
+{
+    width: inherit;
+}
+
+.appraisals_tradein_logo
+{
+    margin: 10px;
+    float: left;
+    width: 248px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.collum_long
+{
+    width: 200px !important;
+}
+
+.collum_bold
+{
+    font-size: 20px !important;
+    font-weight: bold;
+    padding: 0px !important;
+}
+
+.appraisals_acv_input
+{
+    width: 80px;
+    background-color: #D1D7D4;
+    height: 20px;
+    border: 1px solid black;
+}
+
+.appraisals_list_container
+{
+    border: 2px solid #CDCDCD;
+    clear: both;
+    margin: 0px 7px;
+    overflow: auto;
+    border-radius: 5px;
+}
+
+.admin_top_btns
+{
+    text-align: center;
+    margin-top: 18px;
+    padding: 7px 5px;
+}
+
+.appraisals_number_below
+{
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.hasNum
+{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.appraisal_time_btns_holder
+{
+    float: right;
+    margin-right: 10px;
+    width: 75%;
+    margin-top: 13px;
+}
+
+.appraisal_time_btns
+{
+    cursor: pointer;
+    float: right;
+    margin-left: 5px;
+    border: 2px solid #FFF;
+    color: #FFF;
+    text-align: center;
+    font-size: 13px;
+    padding: 3px;
+    width: 11%;
+}
+
+    .appraisal_time_btns:hover
+    {
+        font-weight: bold;
+    }
+
+.right_content_items_appraiser
+{
+    width: 180px !important;
+    word-break: break-all;
+}
+
+.appraisals_list_email
+{
+    width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.right_content_items_client
+{
+    width: 120px !important;
+}
+
+.admin_top_btns_active
+{
+    height: 42px !important;
+}
+
+.right_content_items_img
+{
+    margin-left: 5px;
+    width: 50px;
+    margin-top: 2px !important;
+}
+
+    .right_content_items_img img
+    {
+        width: 100% !important;
+        max-height: 63px;
+    }
+
+.contain_list
+{
+    /*height: 46px !important;*/
+    padding: 2px 0px 2px 0px;
+    background-color: #fffff0;
+    min-height: 65px;
+}
+
+.active_padding
+{
+    padding: 7px 5px !important;
+}
+
+#appraisal_tradein_tab
+{
+    width: 100px;
+    padding: 0px;
+}
+
+    #appraisal_tradein_tab img
+    {
+        width: 100px;
+        margin-top: -1px;
+        height: 40px;
+    }
+
+.appraisal_tradein_tab_active
+{
+    background-color: #6AB163;
+    height: 56px;
+    margin-top: 0px;
+}
+
+    .appraisal_tradein_tab_active img
+    {
+        height: 59px !important;
+    }
+
+.imgLoadingAppraisal
+{
+    position: absolute;
+    top: 3px;
+    left: 60px;
+    display: none;
+}
+
+.imgLoadingPendingAppraisal
+{
+    position: absolute;
+    top: 3px;
+    left: 54px;
+    display: none;
+}
+
+
+/*Liem Add*/
+.appraisal_time_btns > a
+{
+    color: #FFF;
+}
+/*End Liem Add*/

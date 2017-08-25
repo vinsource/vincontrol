@@ -1,0 +1,115 @@
+﻿.inv_statistics_container
+{
+    float: left;
+    height: 550px;
+    border: black solid 1px;
+    /*padding: 5px;*/
+}
+
+.inv_statistics_yourvalues
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.inv_statistics_header
+{
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
+
+.inv_statistics_item_container > div
+{
+    padding: 4px 0px;
+    height: 20px;
+    font-size: 13px;
+}
+
+.inv_statistics_items_gross_container > div
+{
+    text-align: right;
+    /*padding: 4px 20px;*/
+}
+
+    .inv_statistics_items_gross_container > div > span
+    {
+        background-color: #e6e6e6;
+        display: block;
+        padding: 5px 10px;
+    }
+
+.inv_statistics_items_values_container > div
+{
+    text-align: center;
+}
+
+    .inv_statistics_items_values_container > div > input
+    {
+        text-align: center;
+        height: 14px;
+        width: 120px;
+        margin: 3px 10px;
+    }
+
+
+.inv_statistics_items_stats_container > div > span
+{
+    text-align: center;
+    background-color: #e6e6e6;
+    display: block;
+    padding: 5px 0px;
+}
+
+.inv_statistics_black_background
+{
+    background-color: black;
+}
+
+.inv_statistics_blue_background
+{
+    background-color: #003399;
+}
+
+.inv_statistics_green_background
+{
+    background-color: #019343;
+}
+
+.inv_statistics_title
+{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.inv_statistics_subtitle
+{
+    margin-bottom: 10px;
+}
+
+.btnSaveInventoryStatistic
+{
+    height: 22px!important;
+}
+
+.input_opt
+{
+    padding: 0px;
+    margin: 3px 20px;
+    height: 15px;
+    width: 120px;
+    text-align: center;
+}
+
+.divValue
+{
+    position: relative;
+}
+
+.imgLoading
+{
+    position: absolute;
+    top: 7px;
+    left: 117px;
+    /*display: none;*/
+}

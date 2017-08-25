@@ -1,0 +1,20 @@
+﻿<Window x:Class="vincontrol.Backend.Windows.DataFeed.Import.PopupChildWindow.ExpressionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ExpressionWindow" Height="700" Width="1000">
+    <Window.Resources>
+    </Window.Resources>
+    <Grid>
+        <ScrollViewer>
+            <StackPanel>
+                <!--<TextBox MinWidth="50" Margin="5" Text="{Binding Expression.DBField1 , ValidatesOnDataErrors=True, NotifyOnValidationError=True}"></TextBox>-->
+                <ComboBox Margin="5" MinWidth="70" Width="200" ItemsSource="{Binding DBFields}" DisplayMemberPath="Text" SelectedValuePath="Text" SelectedValue="{Binding Expression.DBField1, ValidatesOnDataErrors=True, NotifyOnValidationError=True}"></ComboBox>
+                <ComboBox Margin="5" MinWidth="70" Width="200" ItemsSource="{Binding OperatorList}" SelectedValuePath="Key"  DisplayMemberPath="Value" SelectedValue="{Binding Expression.Operator1, ValidatesOnDataErrors=True, NotifyOnValidationError=True}"></ComboBox>
+                <ComboBox Margin="5" MinWidth="70" Width="200" ItemsSource="{Binding DBFields}" DisplayMemberPath="Text" SelectedValuePath="Text"  SelectedValue="{Binding Expression.DBField2, ValidatesOnDataErrors=True, NotifyOnValidationError=True}"></ComboBox>
+                <ComboBox Margin="5" MinWidth="70" Width="200" ItemsSource="{Binding OperatorList}" SelectedValuePath="Key"  DisplayMemberPath="Value" SelectedValue="{Binding Expression.Operator2}"></ComboBox>
+                <ComboBox Margin="5" MinWidth="70" Width="200" ItemsSource="{Binding DBFields}" DisplayMemberPath="Text" SelectedValuePath="Text"  SelectedValue="{Binding Expression.DBField3}"></ComboBox>
+                <Button Margin="5" Command="{Binding SaveExpressionCommand}" Content="Save Changes" Width="150"  Padding="5" ></Button>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

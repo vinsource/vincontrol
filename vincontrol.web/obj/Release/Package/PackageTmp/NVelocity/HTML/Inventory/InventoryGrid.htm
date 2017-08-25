@@ -1,0 +1,145 @@
+﻿<style>
+    .contain_list
+    {
+        min-height: 69px !important;
+    }
+</style>
+#set ($i=0)
+<!--<div class="vin_listVehicle_holder">-->
+    #foreach($car in $Inventories) #set ($i=$i+1) #set ($j=$i%2) #if($j==1)
+    <div class="contain_list list_even">
+        #else
+        <div class="contain_list list_odd">
+            #end
+            <div class="right_content_items nav_first">
+                #if($car.IsFeatured==true)
+                <input type="checkbox" title="Is featured car?" name="IsFeatured_$car.ListingId"
+                    id="IsFeatured_$car.ListingId" value="true" checked="checked" />
+                #else
+                <input type="checkbox" title="Is featured car?" name="IsFeatured_$car.ListingId"
+                    id="IsFeatured_$car.ListingId" value="true" />
+                #end
+            </div>
+            <a class="vin_editProfile invent_expanded" href="$car.URLDetail" style="display: inline;">
+                <div class="right_content_items  invent_expanded invent_expanded_img" style="display: block;">
+                    $!car.UrlImage
+                </div>
+            </a>
+            <div class="right_content_items nav_middle">
+                 
+                #if ($car.MarketRange == 3)
+                <div class="age_text orange_color">
+                    $!car.DaysInInvenotry
+                </div>
+                <a class="vin_viewprofile " href="$car.URLDetail">
+                    <img src="/Content/images/market_higher.gif" /></a> #elseif ($car.MarketRange
+                == 2)
+                <div class="age_text green_color">
+                    $!car.DaysInInvenotry
+                </div>
+                <a class="vin_viewprofile " href="$car.URLDetail">
+                    <img src="/Content/images/market_equal.gif" /></a> #elseif ($car.MarketRange ==
+                1)
+                <div class="age_text blue_color">
+                    $!car.DaysInInvenotry
+                </div>
+                <a class="vin_viewprofile" href="$car.URLDetail">
+                    <img src="/Content/images/market_lower.gif" /></a> #else
+                <div class="age_text black_color">
+                    $!car.DaysInInvenotry
+                </div>
+                <a class="vin_viewprofile " href="$car.URLDetail">
+                    <img src="/Content/images/market_question.gif" /></a> #end
+            </div>
+            <div class="right_content_items right_content_items_maket nav_middle">
+                $!car.MarketData
+            </div>
+            <a class="vin_editProfile" href="$car.URLDetail" title="$!car.Vin">
+                <div class="right_content_items right_content_items_vin nav_long">
+                    $!car.SortVin
+                </div>
+            </a><a class="vin_editProfile" href="$car.URLDetail">
+                <div class="right_content_items nav_long">
+                    $!car.Stock
+                </div>
+            </a><a class="vin_editProfile" href="$car.URLDetail">
+                <div class="right_content_items nav_middle">
+                    $!car.ModelYear
+                </div>
+            </a><a class="vin_editProfile" href="$car.URLDetail" title="$!car.Make">
+                <div class="right_content_items nav_long" style="width: 63px;">
+                    $!car.ShortMake
+                </div>
+            </a><a class="vin_editProfile" href="$car.URLDetail" title="$!car.Model">
+                <div class="right_content_items nav_long">
+                    $!car.ShortModel
+                </div>
+            </a><a class="vin_editProfile" href="$car.URLDetail" title="$!car.Trim">
+                <div class="right_content_items nav_long" style="width: 63px;">
+                    $!car.StrTrim
+                </div>
+            </a>
+            <div class="right_content_items nav_middle" title="$!car.ExteriorColor">
+                $!car.StrExteriorColor
+            </div>
+            <div class="right_content_items nav_long vehicle_miles">
+                <input type="text" id="Text1" name="odometer" class="sForm" onblur="javascript:updateMileage(this);"
+                    maxlength="18" value="$car.StrMileage" />
+            </div>
+            <div class="right_content_items nav_long vehicle_price">
+                <input type="text" id="Text2" name="price" class="sForm" onblur="javascript:updateSalePrice(this);"
+                    maxlength="18" value="$car.StrSalePrice" />
+            </div>
+            <div class="right_content_items right_content_items_owners_new nav_short">
+                $!car.CarFaxOwner
+            </div>
+            #if ($car.Type < 9)
+            <div class="inventory_action_btns">
+                <div class="btns_shadow inventory_action_bg">
+                    <a title="Buyer's Guide" class="iframe" href="$car.URLBG">BG</a>
+                </div>
+                <div class="btns_shadow inventory_action_ws">
+                    <a title="Window Sticker" class="iframe" href="$car.URLWS">WS</a>
+                </div>
+                <div class="btns_shadow inventory_action_ebay">
+                    #if($car.Type==0||$car.Type==1||$car.Type==8) #if($car.Reconstatus==false) <a title="eBay" class="iframe"
+                        href="$car.URLEbay">eBay</a> #end #end
+                </div>
+            </div>
+            #end
+            <div class="invent_expanded_action_holder invent_expanded" style="display: block;">
+                <label class="invent_expanded_recon">
+                    #if($car.Reconstatus==true)
+                    <input type="checkbox" id="$car.ListingId" name="reconcheckbox" checked="checked"
+                        onclick="javascript:updateReconStatus(this);" />
+                    #else
+                    <input type="checkbox" id="$car.ListingId" name="reconcheckbox" onclick="javascript:updateReconStatus(this);" />
+                    #end Recon
+                </label>
+                <label class="invent_expanded_recon">
+                    <input type="checkbox" />
+                    Wholesale
+                </label>
+                <label class="invent_expanded_recon">
+                    <input type="checkbox" />
+                    Auction
+                </label>
+                <label class="invent_expanded_recon">
+                    <input type="checkbox" />
+                    Loaner
+                </label>
+                <label class="invent_expanded_recon">
+                    <input type="checkbox" />
+                    Sold
+                </label>
+                 <label class="invent_expanded_recon">
+                    <input type="checkbox" />
+                    Trade Not Clear
+                </label>
+            </div>
+            <div style="clear: both">
+            </div>
+        </div>
+        #end
+    </div>
+<!--</div>-->

@@ -1,0 +1,14 @@
+﻿<Window x:Class="VINCapture.UploadImage.View.StartupWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Upload Image" Height="475" Width="900" 
+         Style="{DynamicResource MessageBox}"
+      WindowStyle="None" ResizeMode="NoResize" Name="VinUpload">
+    <!--WindowStyle="None" AllowsTransparency="True" ResizeMode="NoResize"-->
+    <Grid>
+        <Image Name="image1" Stretch="Fill" Source="../Image/bg.png"/>
+        <DockPanel>
+            <Frame x:Name="_mainFrame" />
+        </DockPanel>
+    </Grid>
+</Window>

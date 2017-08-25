@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="VinCommercialTruckModelStoreContainer" CdmEntityContainer="VinCommercialTruckEntities">
+    <EntitySetMapping Name="CommercialTrucks">
+      <EntityTypeMapping TypeName="VinCommercialTruckModel.CommercialTruck">
+        <MappingFragment StoreEntitySet="CommercialTruck">
+          <ScalarProperty Name="Updated" ColumnName="Updated" />
+          <ScalarProperty Name="TruckId" ColumnName="TruckId" />
+          <ScalarProperty Name="CommercialTruckId" ColumnName="CommercialTruckId" />
+          <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Make" ColumnName="Make" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Trim" ColumnName="Trim" />
+          <ScalarProperty Name="Vin" ColumnName="Vin" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+          <ScalarProperty Name="ExteriorColor" ColumnName="ExteriorColor" />
+          <ScalarProperty Name="InteriorColor" ColumnName="InteriorColor" />
+          <ScalarProperty Name="BodyStyle" ColumnName="BodyStyle" />
+          <ScalarProperty Name="Engine" ColumnName="Engine" />
+          <ScalarProperty Name="Fuel" ColumnName="Fuel" />
+          <ScalarProperty Name="Transmission" ColumnName="Transmission" />
+          <ScalarProperty Name="DriveTrain" ColumnName="DriveTrain" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Mileage" ColumnName="Mileage" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Package" ColumnName="Package" />
+          <ScalarProperty Name="IsNew" ColumnName="IsNew" />
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="Images" ColumnName="Images" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Litter" ColumnName="Litter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CommercialTruckSoldOuts">
+      <EntityTypeMapping TypeName="VinCommercialTruckModel.CommercialTruckSoldOut">
+        <MappingFragment StoreEntitySet="CommercialTruckSoldOut">
+          <ScalarProperty Name="Litter" ColumnName="Litter" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Class" ColumnName="Class" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Images" ColumnName="Images" />
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="IsNew" ColumnName="IsNew" />
+          <ScalarProperty Name="Package" ColumnName="Package" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Mileage" ColumnName="Mileage" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="DriveTrain" ColumnName="DriveTrain" />
+          <ScalarProperty Name="Transmission" ColumnName="Transmission" />
+          <ScalarProperty Name="Fuel" ColumnName="Fuel" />
+          <ScalarProperty Name="Engine" ColumnName="Engine" />
+          <ScalarProperty Name="BodyStyle" ColumnName="BodyStyle" />
+          <ScalarProperty Name="InteriorColor" ColumnName="InteriorColor" />
+          <ScalarProperty Name="ExteriorColor" ColumnName="ExteriorColor" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+          <ScalarProperty Name="Vin" ColumnName="Vin" />
+          <ScalarProperty Name="Trim" ColumnName="Trim" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Make" ColumnName="Make" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+          <ScalarProperty Name="CommercialTruckId" ColumnName="CommercialTruckId" />
+          <ScalarProperty Name="TruckId" ColumnName="TruckId" />
+          <ScalarProperty Name="SoldOutTruckId" ColumnName="SoldOutTruckId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CommercialTruckDealers">
+      <EntityTypeMapping TypeName="VinCommercialTruckModel.CommercialTruckDealer">
+        <MappingFragment StoreEntitySet="CommercialTruckDealer">
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DealerGroupId" ColumnName="DealerGroupId" />
+          <ScalarProperty Name="CommercialTruckDealerId" ColumnName="CommercialTruckDealerId" />
+          <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,80 @@
+.column_one_part {
+	background-color: white !important;
+	border: none !important;
+	margin-bottom: 0px !important;
+}
+
+.column_two_part {
+	border: none !important;
+	padding: 10px 0px;
+}
+
+.column_one_items > label {
+	width: 29% !important;
+}
+
+.right_cont_column_two, .right_cont_column_one {
+	margin-top: 25px;
+	height: 385px;
+}
+.right_cont_column_three {
+	height: 372px;
+}
+.edit_appraisals_carinfo {
+	color: white;
+	font-size: 22px;
+	position: absolute;
+	padding: 10px 20px;
+	
+}
+
+.column_one_items input {
+	/*border: none;*/
+}
+
+#options_container {
+	height: 209px;
+}
+
+#descriptions_container {
+	border: 1px solid #CDCDCD;
+	height: 135px;
+	overflow: auto;
+	margin: 0px 10px;
+}
+#descriptions_container textarea{
+	width: 99%;
+	height: 97%;
+	border: none;
+}
+
+.column_two_items select {
+	margin-left: 5px;
+	width: 57% !important;
+}
+
+.column_two_items input {
+	width: 55%;
+	margin-left: 5px;
+}
+
+.others input {
+	float: right !important;
+    width: 142px!important;
+}
+
+.edit_appraisals_img {
+	width: 245px;
+	
+	margin: 5px auto;
+	margin-bottom: 14px;
+	border: 1px solid #CDCDCD;
+}
+
+.edit_appraisals_img img{
+	width: 100%;
+}
+
+.DDLStyle {
+    width: 59%;
+}

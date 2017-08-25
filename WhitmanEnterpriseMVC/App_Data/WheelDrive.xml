@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<WheelDrive>
+  <Drive Name="FrontWheelDrive" Value="Front Wheel Drive" Short="FWD"></Drive>
+  <Drive Name="RearWheelDrive" Value="Rear Wheel Drive"  Short="RWD"></Drive>
+  <Drive Name="FourWheelDrive" Value="Four Wheel Drive"  Short="4WD"></Drive>
+  <Drive Name="AllWheelDrive" Value="All Wheel Drive"   Short="AWD"></Drive>
+</WheelDrive>

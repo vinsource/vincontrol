@@ -1,0 +1,646 @@
+﻿@charset 'UTF-8';
+
+.border {
+  border: 1px solid black;
+}
+
+body, html {
+  background: #e8eaef;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: "Arial";
+  color: #414342;
+}
+
+p {
+  font-family: "Georgia";
+  color: #414342;
+}
+
+.container {
+  width: 980px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background: url(../img/bg-repeat.jpg) top left repeat-y;
+  overflow: hidden;
+}
+
+.left-bar {
+  width: 275px;
+  padding-right: 20px;
+  height: 100%;
+  position: fixed;
+  background: transparent url(../img/sidebar-line.png) top right no-repeat;
+  z-index: 1000;
+}
+
+.main-content-container {
+  width: 640px;
+  padding-left: 320px;
+  position: relative;
+  z-index: 0;
+}
+
+.main-content {
+  padding-top: 20px;
+}
+
+.content-box {
+  padding: 20px;
+  position: relative;
+  -webkit-box-shadow: inset 2px 2px 3px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 2px 2px 3px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: white;
+  font-size: 10pt;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.content-box.with-header {
+  padding-top: 60px;
+}
+
+.content-box > h3 {
+  background: -webkit-linear-gradient(to bottom, #72a1e4 0%,#0c2ba5 99%);
+  background: -moz-linear-gradient(to bottom, #72a1e4 0%,#0c2ba5 99%);
+  background: -o-linear-gradient(to bottom, #72a1e4 0%,#0c2ba5 99%);
+  background: -ms-linear-gradient(to bottom, #72a1e4 0%,#0c2ba5 99%);
+  background: linear-gradient(to bottom, #72a1e4 0%,#0c2ba5 99%);
+  color: white;
+  display: block;
+  position: absolute;
+  padding: 10px;
+  top: 0;
+  left: 0;
+  padding-left: 20px;
+  width: 100%;
+}
+
+.navigation button {
+  display: block;
+  border: 1px solid #EEEEEE;
+
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+  padding: 2px 0px;
+  width: 250px;
+  margin-right: 1px;
+  margin-bottom: -1px;
+  float: right;
+  clear: right;
+
+  background: -webkit-linear-gradient(to bottom, #818382 0%,#151615 99%);
+  background: -moz-linear-gradient(to bottom, #818382 0%,#151615 99%);
+  background: -o-linear-gradient(to bottom, #818382 0%,#151615 99%);
+  background: -ms-linear-gradient(to bottom, #818382 0%,#151615 99%);
+  background: linear-gradient(to bottom, #818382 0%,#151615 99%);
+  font-size: .8em;
+}
+
+button.green-btn {
+  background: -webkit-linear-gradient(to bottom, #85bd00 0%,#154f00 99%);
+  background: -moz-linear-gradient(to bottom, #85bd00 0%,#154f00 99%);
+  background: -o-linear-gradient(to bottom, #85bd00 0%,#154f00 99%);
+  background: -ms-linear-gradient(to bottom, #85bd00 0%,#154f00 99%);
+  background: linear-gradient(to bottom, #85bd00 0%,#154f00 99%);
+}
+
+button.blue-btn {
+  background: -webkit-linear-gradient(to bottom, #72a1e4 0%,#0c2ba5 99%);
+  background: -moz-linear-gradient(to bottom, #72a1e4 0%,#0c2ba5 99%);
+  background: -o-linear-gradient(to bottom, #72a1e4 0%,#0c2ba5 99%);
+  background: -ms-linear-gradient(to bottom, #72a1e4 0%,#0c2ba5 99%);
+  background: linear-gradient(to bottom, #72a1e4 0%,#0c2ba5 99%);
+}
+
+button.blue-btn:hover {
+  background: #3366cc !important;
+}
+
+button.green-btn:hover {
+  background: #458c00 !important;
+}
+
+.navigation button:hover {
+  background: #414342;
+}
+
+.navigation button.active {
+  background: -webkit-linear-gradient(to bottom, #7c7c7c 0%,#d3d3d3 99%);
+  background: -moz-linear-gradient(to bottom, #7c7c7c 0%,#d3d3d3 99%);
+  background: -o-linear-gradient(to bottom, #7c7c7c 0%,#d3d3d3 99%);
+  background: -ms-linear-gradient(to bottom, #7c7c7c 0%,#d3d3d3 99%);
+  background: linear-gradient(to bottom, #7c7c7c 0%,#d3d3d3 99%);
+  color: black;
+
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.dealer-info {
+  border-radius: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  width: 230px;
+  font-size: 9pt;
+  color: #333;
+  margin-bottom: 10px;
+  float: right;
+}
+
+.dealer-info h3 {
+  margin: 0;
+  font-size: 12pt;
+  margin-bottom: 10px;
+}
+
+.dealer-info ul.dealer-details span.dealer-detail-label {
+  display: inline-block;
+  width: 55px;
+}
+
+.dealer-info ul.dealer-details div.dealer-detail-text {
+  display: inline-block;
+}
+
+.dealer-info ul.dealer-details {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dealer-info ul.dealer-details div.dealer-detail-address-one {
+  display: inline-block;
+}
+
+.dealer-info ul.dealer-details div.dealer-detail-address-two {
+  position: relative;
+  left: 60px;
+}
+
+.logo h1 {
+  display: none;
+}
+
+.logo {
+  background: url(../img/logo.png) top left no-repeat;
+  width: 272px;
+  height: 93px;
+  margin-bottom: 35px;
+}
+
+.content-box h3 {
+  margin: 0px;
+  padding-bottom: 5px;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  font-size: 18pt;
+  margin-bottom: 20px;
+}
+
+.content-box:nth-child(1n+2) h3 {
+  font-size: 13pt;
+}
+
+.profile-img {
+  width: 245px;
+  height: 190px;
+  overflow: hidden;
+  display: table;
+  float: left;
+  position: relative;
+}
+
+.profile-img-row {
+  display: table-row;
+}
+
+.profile-img-cell {
+  overflow: hidden;
+  width: 245px;
+  height: 180px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.profile-img-cell img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.highlights {
+  width: 290px;
+  height: 190px;
+  background: #d8d8d8;
+  overflow: hidden;
+  position: relative;
+  left: 20px;
+  border: 1px solid grey;
+  border-radius: 10px;
+
+  -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+
+.highlights .pricing {
+  padding: 10px;
+  background: white;
+  border-bottom: 2px solid green;
+
+  -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+  padding-bottom: 0px;
+}
+
+.highlights .pricing .label {
+  font-size: 14pt;
+  color: black;
+  display: inline-block;
+  width: 130px;
+  position: relative;
+  top: -5px;
+}
+
+.highlights .pricing .price {
+  display: inline-block;
+  width: 130px;
+  text-align: right;
+  color: red;
+  font-size: 24pt;
+  font-weight: bold;
+}
+
+.highlights .highlight-item {
+  margin-left: 15px;
+  margin-top: 15px;
+  display: inline-block;
+  width: 120px;
+  background: #3366cc;
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+.price-drop-alerts {
+  background: #ffddab;
+  padding: 10px;
+  padding-top: 20px;
+  width: 230px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  float: right;
+  margin-top: 10px;
+  font-size: .8em;
+  line-height: 18pt;
+  border-radius: 10px;
+}
+
+.price-drop-alerts button {
+  background: -webkit-linear-gradient(to bottom, orange 0%,darkorange 99%);
+  background: -moz-linear-gradient(to bottom, orange 0%,darkorange 99%);
+  background: -o-linear-gradient(to bottom, orange 0%,darkorange 99%);
+  background: -ms-linear-gradient(to bottom, orange 0%,darkorange 99%);
+  background: linear-gradient(to bottom, orange 0%,darkorange 99%);
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+}
+
+.price-drop-alerts h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.price-drop-alerts input[type="text"] {
+  float: right;
+}
+
+.thumb-wrap {
+  display: table;
+  width: 133px;
+  margin-left: 11px;
+  height: 100px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  float: left;
+}
+
+.thumb-row {
+  display: table-row;
+}
+
+.thumb-cell {
+  display: table-cell;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.thumb-cell img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#vehicle-images {
+  position: relative;
+}
+
+#vehicle-images .slider {
+  position: relative;
+  left: 5px;
+  overflow: hidden;
+}
+
+#vehicle-images .prev-btn {
+  position: absolute;
+  left: 15px;
+  top: 65px;
+}
+
+#vehicle-images .next-btn {
+  position: absolute;
+  right: 15px;
+  top: 65px;
+}
+
+#car-info ul.vehicle-details {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+div.description p {
+  font-size: 8pt;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+#car-info ul.vehicle-details li {
+  display: inline-block;
+  width: 45%;
+}
+
+#car-info ul li .vehicle-details-label {
+  display: inline-block;
+  width: 75px;
+}
+
+#car-info ul li .vehicle-details-text {
+  display: inline-block;
+}
+
+div.options-and-packages-wrap {
+  display: inline-block;
+  width: 297px;
+  float: left;
+  overflow: hidden;
+}
+
+div.options-and-packages-wrap div.scrollable-list {
+  border: 5px solid #003399;
+  width: 278px;
+  height: 150px;
+
+  -ms-overflow-x: hidden;
+  overflow-x: hidden;
+}
+
+div#packages {
+  float: right;
+}
+
+.reviews div.scrollable-list {
+  height: 500px;
+  padding: 10px;
+  width: 567px;
+  overflow: hidden;
+
+  -ms-overflow-y: auto;
+  overflow-y: auto;
+  border: 5px solid #555;
+  position: relative;
+}
+
+ul.reviews-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.reviews p {
+  font-size: .9em;
+  margin: 0;
+}
+
+ul.reviews-list li {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+ul.reviews-list div.rating {
+  height: 27px;
+  display: block;
+}
+
+ul.reviews-list div.review-user-name {
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+.reviews div.overall-rating {
+  display: inline-block;
+  height: 27px;
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  z-index: 500;
+}
+
+div.star {
+  width: 27px;
+  height: 27px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+div.star.full {
+  background: url(../img/stars.png) top left no-repeat;
+}
+
+div.star.half {
+  background: url(../img/stars.png) top no-repeat;
+}
+
+div.star.none {
+  background: url(../img/stars.png) top right no-repeat;
+}
+
+div.fixed-right-menu {
+  position: absolute;
+  overflow: hidden;
+  right: -650px;
+  top: -1px;
+}
+
+div.fixed-right-menu div.fixed-btn {
+  cursor: pointer;
+}
+
+div#carfax {
+  position: relative;
+}
+
+div.carfax-logo-and-button {
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  z-index: 500;
+}
+
+div.carfax-logo-and-button button {
+  margin-left: 7px;
+  background: #222;
+  border: white 1px solid;
+  box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.5);
+  padding: 1px 10px;
+  color: white;
+  position: relative;
+  top: -18px;
+  font-size: .8em;
+}
+
+div.carfax-report {
+  width: 600px;
+  float: right;
+  overflow: hidden;
+}
+
+div.carfax-report .header div{
+  display: inline-block;
+}
+
+div.carfax-report .header {
+  background: #222;
+  color: white;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-top: 11px;
+  overflow: hidden;
+}
+
+div.carfax-report .service-records,
+div.carfax-report .owner-number {
+  background: white;
+  float: right;
+  position: relative;
+  top: -5px;
+  right: 10px;
+  margin-left: 10px;
+}
+
+div.carfax-report .label {
+  padding: 5px;
+  padding-left: 10px;
+  color: black;
+  font-size: 9pt;
+}
+
+div.carfax-report .owner-count {
+  background: #d12c00;
+  padding: 5px;
+}
+
+div.carfax-report .services-count {
+  background: #458c00;
+  padding: 5px;
+}
+
+div.carfax-report-item > div{
+  display: inline-block;
+  float: left;
+}
+
+div.carfax-report-item {
+  overflow: hidden;
+  width: 290px;
+  background: #e8eaef;
+  border-bottom: 1px solid #999;
+  padding: 5px;
+  display: inline-block;
+  float: left;
+
+}
+
+div.carfax-report-item .report-item-label {
+  padding-top: 7px;
+  padding-left: 5px;
+  background: white;
+  height: 18px;
+  width: 260px;
+  font-size: .8em;
+}
+
+div.dealer-info-box iframe{
+  float: left;
+  border: 1px solid rgba(0, 0, 0, 0.3)
+}
+
+div.dealer-hours-of-operation {
+  overflow: hidden;
+  background: #eeeeee;
+  padding: 20px;
+  border-radius: 10px;
+  float: right;
+  width: 240px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.3)
+}
+
+div.dealer-hours-of-operation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: .9em;
+}
+
+div.dealer-hours-of-operation ul li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+div.dealer-hours-of-operation h4 {
+  margin: 0;
+}
+
+div.dealer-hours-of-operation button {
+  border: 1px solid #EEEEEE;
+  -webkit-box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 0px 2px rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+}
+

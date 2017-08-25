@@ -1,0 +1,1528 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="whitmanenterprisewarehouseModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="whitmanenterprisewarehouseModelStoreContainer">
+    <EntitySet Name="manheimmakemodels" EntityType="whitmanenterprisewarehouseModel.Store.manheimmakemodels" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="manheimmakes" EntityType="whitmanenterprisewarehouseModel.Store.manheimmakes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="manheimmodels" EntityType="whitmanenterprisewarehouseModel.Store.manheimmodels" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="manheimmodeltrims" EntityType="whitmanenterprisewarehouseModel.Store.manheimmodeltrims" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="manheimtrims" EntityType="whitmanenterprisewarehouseModel.Store.manheimtrims" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="manheimyearmakes" EntityType="whitmanenterprisewarehouseModel.Store.manheimyearmakes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontrolanswers" EntityType="whitmanenterprisewarehouseModel.Store.vincontrolanswers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontrolbannercustomer" EntityType="whitmanenterprisewarehouseModel.Store.vincontrolbannercustomer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontrolbucketjumphistory" EntityType="whitmanenterprisewarehouseModel.Store.vincontrolbucketjumphistory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontrolbuttons" EntityType="whitmanenterprisewarehouseModel.Store.vincontrolbuttons" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontrolbuyerguide" EntityType="whitmanenterprisewarehouseModel.Store.vincontrolbuyerguide" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontrolchartselection" EntityType="whitmanenterprisewarehouseModel.Store.vincontrolchartselection" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontroldealershipactivity" EntityType="whitmanenterprisewarehouseModel.Store.vincontroldealershipactivity" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontroldealershipbuttons" EntityType="whitmanenterprisewarehouseModel.Store.vincontroldealershipbuttons" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontroldescription" EntityType="whitmanenterprisewarehouseModel.Store.vincontroldescription" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontroldescriptiontemplate" EntityType="whitmanenterprisewarehouseModel.Store.vincontroldescriptiontemplate" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontrolexportlist" EntityType="whitmanenterprisewarehouseModel.Store.vincontrolexportlist" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontrolgrouppermissions" EntityType="whitmanenterprisewarehouseModel.Store.vincontrolgrouppermissions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontrolgroups" EntityType="whitmanenterprisewarehouseModel.Store.vincontrolgroups" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontrolmanheimvalue" EntityType="whitmanenterprisewarehouseModel.Store.vincontrolmanheimvalue" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontrolpermission" EntityType="whitmanenterprisewarehouseModel.Store.vincontrolpermission" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontrolpermissioncodes" EntityType="whitmanenterprisewarehouseModel.Store.vincontrolpermissioncodes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontrolpermissionvalue" EntityType="whitmanenterprisewarehouseModel.Store.vincontrolpermissionvalue" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontrolpricechangeshistory" EntityType="whitmanenterprisewarehouseModel.Store.vincontrolpricechangeshistory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontrolquestions" EntityType="whitmanenterprisewarehouseModel.Store.vincontrolquestions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontrolquestiontype" EntityType="whitmanenterprisewarehouseModel.Store.vincontrolquestiontype" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontrolrebate" EntityType="whitmanenterprisewarehouseModel.Store.vincontrolrebate" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontrolsentence" EntityType="whitmanenterprisewarehouseModel.Store.vincontrolsentence" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontrolsentencetype" EntityType="whitmanenterprisewarehouseModel.Store.vincontrolsentencetype" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontrolsouthcoastmitsubishi" EntityType="whitmanenterprisewarehouseModel.Store.vincontrolsouthcoastmitsubishi" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontrolsouthcoastmitsubishisetting" EntityType="whitmanenterprisewarehouseModel.Store.vincontrolsouthcoastmitsubishisetting" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontrolsouthcoastmitsubishivin" EntityType="whitmanenterprisewarehouseModel.Store.vincontrolsouthcoastmitsubishivin" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontroltradeinbannercomment" EntityType="whitmanenterprisewarehouseModel.Store.vincontroltradeinbannercomment" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontroltruckcategory" EntityType="whitmanenterprisewarehouseModel.Store.vincontroltruckcategory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontrolusergroup" EntityType="whitmanenterprisewarehouseModel.Store.vincontrolusergroup" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontrolusers" EntityType="whitmanenterprisewarehouseModel.Store.vincontrolusers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontrolwalkaround" EntityType="whitmanenterprisewarehouseModel.Store.vincontrolwalkaround" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontrolwarrantytype" EntityType="whitmanenterprisewarehouseModel.Store.vincontrolwarrantytype" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontrolwholesaleinventory" EntityType="whitmanenterprisewarehouseModel.Store.vincontrolwholesaleinventory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="vincontrondnsimportlist" EntityType="whitmanenterprisewarehouseModel.Store.vincontrondnsimportlist" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="whitmanenteprisecarfax" EntityType="whitmanenterprisewarehouseModel.Store.whitmanenteprisecarfax" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="whitmanenterpriseappraisal" EntityType="whitmanenterprisewarehouseModel.Store.whitmanenterpriseappraisal" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="whitmanenterprisebayads" EntityType="whitmanenterprisewarehouseModel.Store.whitmanenterprisebayads" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="whitmanenterprisebb" EntityType="whitmanenterprisewarehouseModel.Store.whitmanenterprisebb" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="whitmanenterpriseclientinfo" EntityType="whitmanenterprisewarehouseModel.Store.whitmanenterpriseclientinfo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="whitmanenterprisedealergroup" EntityType="whitmanenterprisewarehouseModel.Store.whitmanenterprisedealergroup" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="whitmanenterprisedealership" EntityType="whitmanenterprisewarehouseModel.Store.whitmanenterprisedealership" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="whitmanenterprisedealershipinventory" EntityType="whitmanenterprisewarehouseModel.Store.whitmanenterprisedealershipinventory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="whitmanenterprisedealershipinventorysoldout" EntityType="whitmanenterprisewarehouseModel.Store.whitmanenterprisedealershipinventorysoldout" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="whitmanenterpriseebayvehiclecategory" EntityType="whitmanenterprisewarehouseModel.Store.whitmanenterpriseebayvehiclecategory" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="whitmanenterprisekbb" EntityType="whitmanenterprisewarehouseModel.Store.whitmanenterprisekbb" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="whitmanenterprisesetting" EntityType="whitmanenterprisewarehouseModel.Store.whitmanenterprisesetting" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="whitmanenterpriseusazipcode" EntityType="whitmanenterprisewarehouseModel.Store.whitmanenterpriseusazipcode" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="whitmanenterpriseusers" EntityType="whitmanenterprisewarehouseModel.Store.whitmanenterpriseusers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="whitmanenterpriseusersnotification" EntityType="whitmanenterprisewarehouseModel.Store.whitmanenterpriseusersnotification" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="whitmanenterprisevehiclecategory" EntityType="whitmanenterprisewarehouseModel.Store.whitmanenterprisevehiclecategory" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_vincontroldealershipbuttons_vincontrolbuttons" Association="whitmanenterprisewarehouseModel.Store.FK_vincontroldealershipbuttons_vincontrolbuttons">
+      <End Role="vincontrolbuttons" EntitySet="vincontrolbuttons" />
+      <End Role="vincontroldealershipbuttons" EntitySet="vincontroldealershipbuttons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_vincontroldealershipbuttons_vincontrolgroups" Association="whitmanenterprisewarehouseModel.Store.FK_vincontroldealershipbuttons_vincontrolgroups">
+      <End Role="vincontrolgroups" EntitySet="vincontrolgroups" />
+      <End Role="vincontroldealershipbuttons" EntitySet="vincontroldealershipbuttons" />
+    </AssociationSet>
+    <AssociationSet Name="manheimmakemodels$model" Association="whitmanenterprisewarehouseModel.Store.manheimmakemodels$model">
+      <End Role="manheimmodels" EntitySet="manheimmodels" />
+      <End Role="manheimmakemodels" EntitySet="manheimmakemodels" />
+    </AssociationSet>
+    <AssociationSet Name="manheimmakemodels$yearmake" Association="whitmanenterprisewarehouseModel.Store.manheimmakemodels$yearmake">
+      <End Role="manheimyearmakes" EntitySet="manheimyearmakes" />
+      <End Role="manheimmakemodels" EntitySet="manheimmakemodels" />
+    </AssociationSet>
+    <AssociationSet Name="manheimmodeltrims$makemodel" Association="whitmanenterprisewarehouseModel.Store.manheimmodeltrims$makemodel">
+      <End Role="manheimmakemodels" EntitySet="manheimmakemodels" />
+      <End Role="manheimmodeltrims" EntitySet="manheimmodeltrims" />
+    </AssociationSet>
+    <AssociationSet Name="manheimmodeltrims$trim" Association="whitmanenterprisewarehouseModel.Store.manheimmodeltrims$trim">
+      <End Role="manheimtrims" EntitySet="manheimtrims" />
+      <End Role="manheimmodeltrims" EntitySet="manheimmodeltrims" />
+    </AssociationSet>
+    <AssociationSet Name="manheimyearmakes$makeId" Association="whitmanenterprisewarehouseModel.Store.manheimyearmakes$makeId">
+      <End Role="manheimmakes" EntitySet="manheimmakes" />
+      <End Role="manheimyearmakes" EntitySet="manheimyearmakes" />
+    </AssociationSet>
+    <AssociationSet Name="vincontrolanswers$fk_answers_appraisals" Association="whitmanenterprisewarehouseModel.Store.vincontrolanswers$fk_answers_appraisals">
+      <End Role="whitmanenterpriseappraisal" EntitySet="whitmanenterpriseappraisal" />
+      <End Role="vincontrolanswers" EntitySet="vincontrolanswers" />
+    </AssociationSet>
+    <AssociationSet Name="vincontrolanswers$fk_answers_questions" Association="whitmanenterprisewarehouseModel.Store.vincontrolanswers$fk_answers_questions">
+      <End Role="vincontrolquestions" EntitySet="vincontrolquestions" />
+      <End Role="vincontrolanswers" EntitySet="vincontrolanswers" />
+    </AssociationSet>
+    <AssociationSet Name="vincontrolgrouppermissions$fk_grouppermission_group" Association="whitmanenterprisewarehouseModel.Store.vincontrolgrouppermissions$fk_grouppermission_group">
+      <End Role="vincontrolgroups" EntitySet="vincontrolgroups" />
+      <End Role="vincontrolgrouppermissions" EntitySet="vincontrolgrouppermissions" />
+    </AssociationSet>
+    <AssociationSet Name="vincontrolgrouppermissions$fk_grouppermission_permissioncodes" Association="whitmanenterprisewarehouseModel.Store.vincontrolgrouppermissions$fk_grouppermission_permissioncodes">
+      <End Role="vincontrolpermissioncodes" EntitySet="vincontrolpermissioncodes" />
+      <End Role="vincontrolgrouppermissions" EntitySet="vincontrolgrouppermissions" />
+    </AssociationSet>
+    <AssociationSet Name="vincontrolgrouppermissions$fk_grouppermission_permissionvalue" Association="whitmanenterprisewarehouseModel.Store.vincontrolgrouppermissions$fk_grouppermission_permissionvalue">
+      <End Role="vincontrolpermissionvalue" EntitySet="vincontrolpermissionvalue" />
+      <End Role="vincontrolgrouppermissions" EntitySet="vincontrolgrouppermissions" />
+    </AssociationSet>
+    <AssociationSet Name="vincontrolquestions$fk_questions_questiontype" Association="whitmanenterprisewarehouseModel.Store.vincontrolquestions$fk_questions_questiontype">
+      <End Role="vincontrolquestiontype" EntitySet="vincontrolquestiontype" />
+      <End Role="vincontrolquestions" EntitySet="vincontrolquestions" />
+    </AssociationSet>
+    <AssociationSet Name="vincontrolsentence$fk_sentence_type" Association="whitmanenterprisewarehouseModel.Store.vincontrolsentence$fk_sentence_type">
+      <End Role="vincontrolsentencetype" EntitySet="vincontrolsentencetype" />
+      <End Role="vincontrolsentence" EntitySet="vincontrolsentence" />
+    </AssociationSet>
+    <AssociationSet Name="vincontrolsouthcoastmitsubishivin$fk_vin_customer" Association="whitmanenterprisewarehouseModel.Store.vincontrolsouthcoastmitsubishivin$fk_vin_customer">
+      <End Role="vincontrolsouthcoastmitsubishi" EntitySet="vincontrolsouthcoastmitsubishi" />
+      <End Role="vincontrolsouthcoastmitsubishivin" EntitySet="vincontrolsouthcoastmitsubishivin" />
+    </AssociationSet>
+    <AssociationSet Name="vincontrolusergroup$fk_usergroup_groups" Association="whitmanenterprisewarehouseModel.Store.vincontrolusergroup$fk_usergroup_groups">
+      <End Role="vincontrolgroups" EntitySet="vincontrolgroups" />
+      <End Role="vincontrolusergroup" EntitySet="vincontrolusergroup" />
+    </AssociationSet>
+    <AssociationSet Name="vincontrolusergroup$fk_usergroup_users" Association="whitmanenterprisewarehouseModel.Store.vincontrolusergroup$fk_usergroup_users">
+      <End Role="vincontrolusers" EntitySet="vincontrolusers" />
+      <End Role="vincontrolusergroup" EntitySet="vincontrolusergroup" />
+    </AssociationSet>
+    <AssociationSet Name="vincontrolwalkaround$fk_walkaround_appraisal" Association="whitmanenterprisewarehouseModel.Store.vincontrolwalkaround$fk_walkaround_appraisal">
+      <End Role="whitmanenterpriseappraisal" EntitySet="whitmanenterpriseappraisal" />
+      <End Role="vincontrolwalkaround" EntitySet="vincontrolwalkaround" />
+    </AssociationSet>
+    <AssociationSet Name="whitmanenterprisedealershipinventory$Template" Association="whitmanenterprisewarehouseModel.Store.whitmanenterprisedealershipinventory$Template">
+      <End Role="vincontroldescriptiontemplate" EntitySet="vincontroldescriptiontemplate" />
+      <End Role="whitmanenterprisedealershipinventory" EntitySet="whitmanenterprisedealershipinventory" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="manheimmakemodels">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="yearmakeId" Type="int" />
+    <Property Name="modelId" Type="int" />
+  </EntityType>
+  <EntityType Name="manheimmakes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="serviceId" Type="int" />
+    <Property Name="name" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="manheimmodels">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="serviceId" Type="int" />
+    <Property Name="name" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="manheimmodeltrims">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="makemodelId" Type="int" />
+    <Property Name="trimId" Type="int" />
+  </EntityType>
+  <EntityType Name="manheimtrims">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="serviceId" Type="int" />
+    <Property Name="name" Type="nvarchar" MaxLength="100" />
+    <Property Name="lowestPrice" Type="nvarchar" MaxLength="45" />
+    <Property Name="averagePrice" Type="nvarchar" MaxLength="45" />
+    <Property Name="highestPrice" Type="nvarchar" MaxLength="45" />
+    <Property Name="expirationDate" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="manheimyearmakes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="year" Type="int" />
+    <Property Name="makeId" Type="int" />
+  </EntityType>
+  <EntityType Name="vincontrolanswers">
+    <Key>
+      <PropertyRef Name="answerid" />
+    </Key>
+    <Property Name="answerid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="appraisalid" Type="int" />
+    <Property Name="questionid" Type="int" />
+    <Property Name="answer" Type="nvarchar" MaxLength="45" />
+    <Property Name="comment" Type="nvarchar" MaxLength="455" />
+  </EntityType>
+  <EntityType Name="vincontrolbannercustomer">
+    <Key>
+      <PropertyRef Name="TradeInCustomerId" />
+    </Key>
+    <Property Name="TradeInCustomerId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="255" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="255" />
+    <Property Name="Email" Type="nvarchar" MaxLength="255" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="45" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="45" />
+    <Property Name="Model" Type="nvarchar" MaxLength="45" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="45" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="SelectedOptions" Type="nvarchar(max)" />
+    <Property Name="Condition" Type="nvarchar" MaxLength="45" />
+    <Property Name="KBBVehicelId" Type="int" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="45" />
+    <Property Name="TradeInFairValue" Type="nvarchar" MaxLength="45" />
+    <Property Name="TradeInMaxValue" Type="nvarchar" MaxLength="45" />
+    <Property Name="DealerId" Type="int" />
+    <Property Name="CreatedDate" Type="datetime2" Precision="0" />
+    <Property Name="VarianceValue" Type="nvarchar" MaxLength="45" />
+    <Property Name="Source" Type="nvarchar" MaxLength="255" />
+    <Property Name="TradeInStatus" Type="nvarchar" MaxLength="10" />
+    <Property Name="EmailContent" Type="nvarchar(max)" />
+    <Property Name="ADFEmailContent" Type="nvarchar(max)" />
+    <Property Name="Receivers" Type="nvarchar" MaxLength="2000" />
+  </EntityType>
+  <EntityType Name="vincontrolbucketjumphistory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserStamp" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateStamp" Type="datetime2" Precision="0" />
+    <Property Name="ListingId" Type="int" />
+    <Property Name="Type" Type="nvarchar" MaxLength="45" />
+    <Property Name="AttachFile" Type="nvarchar" MaxLength="225" />
+    <Property Name="SalePrice" Type="decimal" Precision="11" />
+    <Property Name="BucketJumpDayAlert" Type="int" />
+    <Property Name="BucketJumpCompleteDate" Type="datetime2" Precision="0" />
+    <Property Name="RetailPrice" Type="decimal" Precision="10" />
+  </EntityType>
+  <EntityType Name="vincontrolbuttons">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Button" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="Screen" Type="nvarchar" Nullable="false" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="vincontrolbuyerguide">
+    <Key>
+      <PropertyRef Name="buyerguideid" />
+    </Key>
+    <Property Name="buyerguideid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="make" Type="nvarchar" MaxLength="45" />
+    <Property Name="model" Type="nvarchar" MaxLength="45" />
+    <Property Name="year" Type="nvarchar" MaxLength="45" />
+    <Property Name="vinNumber" Type="nvarchar" MaxLength="45" />
+    <Property Name="stockNumber" Type="nvarchar" MaxLength="45" />
+    <Property Name="warrantyType" Type="int" />
+    <Property Name="isAsWarranty" Type="bit" />
+    <Property Name="isWarranty" Type="bit" />
+    <Property Name="isFullWarranty" Type="bit" />
+    <Property Name="isLimitedWarranty" Type="bit" />
+    <Property Name="isServiceContract" Type="bit" />
+    <Property Name="systemCovered" Type="nvarchar(max)" />
+    <Property Name="durations" Type="nvarchar(max)" />
+    <Property Name="percentageOfLabor" Type="float" />
+    <Property Name="percentageOfPart" Type="float" />
+    <Property Name="priorRental" Type="nvarchar" MaxLength="45" />
+    <Property Name="dealershipId" Type="int" />
+    <Property Name="isMixed" Type="bit" />
+    <Property Name="systemCoveredAndDurations" Type="nvarchar(max)" />
+    <Property Name="LanguageVersion" Type="int" />
+  </EntityType>
+  <EntityType Name="vincontrolchartselection">
+    <Key>
+      <PropertyRef Name="chartselectionid" />
+    </Key>
+    <Property Name="chartselectionid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="listingId" Type="int" />
+    <Property Name="isCarsCom" Type="bit" />
+    <Property Name="options" Type="nvarchar" MaxLength="255" />
+    <Property Name="trims" Type="nvarchar" MaxLength="550" />
+    <Property Name="isCertified" Type="bit" />
+    <Property Name="isAll" Type="bit" />
+    <Property Name="isFranchise" Type="bit" />
+    <Property Name="isIndependant" Type="bit" />
+    <Property Name="screen" Type="nvarchar" MaxLength="45" />
+    <Property Name="sourceType" Type="nvarchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="vincontroldealershipactivity">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DealerId" Type="int" />
+    <Property Name="UserStamp" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateStamp" Type="datetime2" Precision="0" />
+    <Property Name="Type" Type="nvarchar" MaxLength="225" />
+    <Property Name="Title" Type="nvarchar" MaxLength="225" />
+    <Property Name="Detail" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="vincontroldealershipbuttons">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DealershipId" Type="int" Nullable="false" />
+    <Property Name="GroupId" Type="int" Nullable="false" />
+    <Property Name="ButtonId" Type="int" Nullable="false" />
+    <Property Name="CanSee" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vincontroldescription">
+    <Key>
+      <PropertyRef Name="VinControlDescriptionId" />
+    </Key>
+    <Property Name="VinControlDescriptionId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar" MaxLength="45" />
+    <Property Name="YesNo" Type="bit" />
+    <Property Name="DescriptionSentence" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="vincontroldescriptiontemplate">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" MaxLength="2000" />
+    <Property Name="Content" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="2000" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vincontrolexportlist">
+    <Key>
+      <PropertyRef Name="DealerId" />
+    </Key>
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="45" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="Email" Type="nvarchar(max)" />
+    <Property Name="InventoryURL" Type="nvarchar(max)" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoBytelId" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoBytel" Type="bit" />
+    <Property Name="AutoTraderId" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTrader" Type="bit" />
+    <Property Name="AutoTraderFTPUsername" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoTraderFTPPassword" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsComId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsCom" Type="bit" />
+    <Property Name="CUDLId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CUDL" Type="bit" />
+    <Property Name="DealerComId" Type="nvarchar" MaxLength="45" />
+    <Property Name="DealerCom" Type="bit" />
+    <Property Name="HomenetId" Type="nvarchar" MaxLength="45" />
+    <Property Name="Homenet" Type="bit" />
+    <Property Name="VastId" Type="nvarchar" MaxLength="45" />
+    <Property Name="Vast" Type="bit" />
+    <Property Name="DMIId" Type="nvarchar" MaxLength="45" />
+    <Property Name="DMI" Type="bit" />
+    <Property Name="LTTFID" Type="nvarchar" MaxLength="45" />
+    <Property Name="LTTF" Type="bit" />
+    <Property Name="CostcoId" Type="nvarchar" MaxLength="45" />
+    <Property Name="Costco" Type="bit" />
+    <Property Name="CommericalTruckId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CommericalTruck" Type="bit" />
+    <Property Name="CobaltId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CobaltFeed" Type="bit" />
+    <Property Name="RecycleId" Type="nvarchar" MaxLength="45" />
+    <Property Name="RecycleFeed" Type="bit" />
+    <Property Name="PixelId" Type="nvarchar" MaxLength="45" />
+    <Property Name="PixelNationFeed" Type="bit" />
+    <Property Name="CarWeekId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarWeekFeed" Type="bit" />
+    <Property Name="Web2CarId" Type="nvarchar" MaxLength="45" />
+    <Property Name="Web2CarFeed" Type="bit" />
+    <Property Name="IseeCarId" Type="nvarchar" MaxLength="45" />
+    <Property Name="IseeCarFeed" Type="bit" />
+    <Property Name="AutoPaymentFinderId" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoPaymentFeed" Type="bit" />
+    <Property Name="EDriveAutosId" Type="nvarchar" MaxLength="45" />
+    <Property Name="EDriveAutoFed" Type="bit" />
+    <Property Name="AutoFerretId" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoFerretFeed" Type="bit" />
+    <Property Name="DealerRaterId" Type="nvarchar" MaxLength="45" />
+    <Property Name="DealerRaterFeed" Type="bit" />
+    <Property Name="SamClubId" Type="nvarchar" MaxLength="45" />
+    <Property Name="SamClubFeed" Type="bit" />
+    <Property Name="TripleAId" Type="nvarchar" MaxLength="45" />
+    <Property Name="TripleAFeed" Type="bit" />
+    <Property Name="DealerForum" Type="nvarchar" MaxLength="45" />
+    <Property Name="DealerForumFeed" Type="bit" />
+    <Property Name="DealerLink" Type="nvarchar" MaxLength="45" />
+    <Property Name="DealerLinkFeed" Type="bit" />
+    <Property Name="CommericalTruckAdId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CommercialTruckAdFeed" Type="bit" />
+    <Property Name="ManheimOVEId" Type="nvarchar" MaxLength="45" />
+    <Property Name="ManheimOVEFeed" Type="bit" />
+    <Property Name="GabrielId" Type="nvarchar" MaxLength="45" />
+    <Property Name="GabrielFeed" Type="bit" />
+    <Property Name="GlobalAutoSportsId" Type="nvarchar" MaxLength="45" />
+    <Property Name="GlobalAutoSportsFeed" Type="bit" />
+    <Property Name="OddleId" Type="nvarchar" MaxLength="45" />
+    <Property Name="OddleFeed" Type="bit" />
+    <Property Name="IntelliFusionID" Type="nvarchar" MaxLength="45" />
+    <Property Name="IntelliFusionFeed" Type="bit" />
+    <Property Name="CarsForSaleId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarsForSaleFeed" Type="bit" />
+    <Property Name="CommercialWebServiceId" Type="nvarchar" MaxLength="45" />
+    <Property Name="CommercialWebServiceFeed" Type="bit" />
+    <Property Name="Active" Type="bit" />
+  </EntityType>
+  <EntityType Name="vincontrolgrouppermissions">
+    <Key>
+      <PropertyRef Name="grouppermissionid" />
+    </Key>
+    <Property Name="grouppermissionid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="groupid" Type="int" Nullable="false" />
+    <Property Name="permissioncode" Type="int" Nullable="false" />
+    <Property Name="permissionvalue" Type="int" Nullable="false" />
+    <Property Name="userstamp" Type="nvarchar" Nullable="false" MaxLength="25" />
+    <Property Name="datestamp" Type="datetime2" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="vincontrolgroups">
+    <Key>
+      <PropertyRef Name="groupid" />
+    </Key>
+    <Property Name="groupid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="groupname" Type="nvarchar" Nullable="false" MaxLength="25" />
+    <Property Name="groupnote" Type="nvarchar" MaxLength="150" />
+    <Property Name="userstamp" Type="nvarchar" Nullable="false" MaxLength="25" />
+    <Property Name="datestamp" Type="datetime2" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="vincontrolmanheimvalue">
+    <Key>
+      <PropertyRef Name="AutoId" />
+    </Key>
+    <Property Name="AutoId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="45" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="45" />
+    <Property Name="AuctionLowestPrice" Type="nvarchar" MaxLength="45" />
+    <Property Name="AuctionAveragePrice" Type="nvarchar" MaxLength="45" />
+    <Property Name="AuctionHighestPrice" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="ExpiredDate" Type="datetime2" Precision="0" />
+    <Property Name="TrimServiceId" Type="int" />
+    <Property Name="Year" Type="int" />
+    <Property Name="MakeServiceId" Type="int" />
+    <Property Name="ModelServiceId" Type="int" />
+    <Property Name="Type" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="vincontrolpermission">
+    <Key>
+      <PropertyRef Name="permissionid" />
+    </Key>
+    <Property Name="permissionid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="permissionname" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="userstamp" Type="nvarchar" Nullable="false" MaxLength="25" />
+    <Property Name="datestamp" Type="datetime2" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="vincontrolpermissioncodes">
+    <Key>
+      <PropertyRef Name="permissioncodeid" />
+    </Key>
+    <Property Name="permissioncodeid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="permissioncode" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="permissiontext" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="permissioncategory" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="indent" Type="int" Nullable="false" />
+    <Property Name="screenorder" Type="int" Nullable="false" />
+    <Property Name="userstamp" Type="nvarchar" Nullable="false" MaxLength="25" />
+    <Property Name="datestamp" Type="datetime2" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="vincontrolpermissionvalue">
+    <Key>
+      <PropertyRef Name="permissionvalueid" />
+    </Key>
+    <Property Name="permissionvalueid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="permissionvalue" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="userstamp" Type="nvarchar" Nullable="false" MaxLength="25" />
+    <Property Name="datestamp" Type="datetime2" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="vincontrolpricechangeshistory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OldPrice" Type="decimal" Precision="11" />
+    <Property Name="NewPrice" Type="decimal" Precision="11" />
+    <Property Name="AttachFile" Type="nvarchar" MaxLength="225" />
+    <Property Name="UserStamp" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateStamp" Type="datetime2" Precision="0" />
+    <Property Name="ListingId" Type="int" />
+    <Property Name="Type" Type="nvarchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="vincontrolquestions">
+    <Key>
+      <PropertyRef Name="questionid" />
+    </Key>
+    <Property Name="questionid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="nvarchar" MaxLength="455" />
+    <Property Name="questiontypeid" Type="int" />
+    <Property Name="shortdescription" Type="nvarchar" MaxLength="300" />
+    <Property Name="order" Type="int" />
+  </EntityType>
+  <EntityType Name="vincontrolquestiontype">
+    <Key>
+      <PropertyRef Name="questiontypeid" />
+    </Key>
+    <Property Name="questiontypeid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" MaxLength="45" />
+    <Property Name="description" Type="nvarchar" MaxLength="145" />
+    <Property Name="option" Type="nvarchar" MaxLength="145" />
+    <Property Name="code" Type="int" />
+    <Property Name="unit" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="vincontrolrebate">
+    <Key>
+      <PropertyRef Name="vincontrolrebateid" />
+    </Key>
+    <Property Name="vincontrolrebateid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="45" />
+    <Property Name="Model" Type="nvarchar" MaxLength="45" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="45" />
+    <Property Name="BodyType" Type="nvarchar" MaxLength="45" />
+    <Property Name="ManufactureReabte" Type="nvarchar" MaxLength="45" />
+    <Property Name="Disclaimer" Type="nvarchar(max)" />
+    <Property Name="DealerId" Type="int" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="vincontrolsentence">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="sentence" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="typeId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vincontrolsentencetype">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="225" />
+  </EntityType>
+  <EntityType Name="vincontrolsouthcoastmitsubishi">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="vin" Type="nvarchar" MaxLength="20" />
+    <Property Name="lastName" Type="nvarchar" MaxLength="45" />
+    <Property Name="firstName" Type="nvarchar" MaxLength="45" />
+    <Property Name="address" Type="nvarchar" MaxLength="255" />
+    <Property Name="year" Type="int" />
+    <Property Name="make" Type="nvarchar" MaxLength="45" />
+    <Property Name="model" Type="nvarchar" MaxLength="45" />
+    <Property Name="email" Type="nvarchar" MaxLength="255" />
+    <Property Name="phone" Type="nvarchar" MaxLength="45" />
+    <Property Name="title" Type="nvarchar" MaxLength="10" />
+    <Property Name="city" Type="nvarchar" MaxLength="45" />
+    <Property Name="state" Type="nvarchar" MaxLength="45" />
+    <Property Name="zip" Type="nvarchar" MaxLength="45" />
+    <Property Name="street" Type="nvarchar" MaxLength="125" />
+    <Property Name="password" Type="nvarchar" MaxLength="45" />
+    <Property Name="dealerId" Type="int" />
+  </EntityType>
+  <EntityType Name="vincontrolsouthcoastmitsubishisetting">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="deviceId" Type="nvarchar" MaxLength="255" />
+    <Property Name="email" Type="bit" />
+    <Property Name="notification" Type="bit" />
+    <Property Name="sms" Type="bit" />
+    <Property Name="customerId" Type="int" />
+    <Property Name="type" Type="nvarchar" MaxLength="45" />
+    <Property Name="dateStamp" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="vincontrolsouthcoastmitsubishivin">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="year" Type="int" Nullable="false" />
+    <Property Name="make" Type="nvarchar" Nullable="false" MaxLength="45" />
+    <Property Name="model" Type="nvarchar" Nullable="false" MaxLength="45" />
+    <Property Name="customerId" Type="int" Nullable="false" />
+    <Property Name="vin" Type="nvarchar" Nullable="false" MaxLength="45" />
+    <Property Name="lastAppointment" Type="nvarchar" MaxLength="45" />
+    <Property Name="mileage" Type="nvarchar" MaxLength="15" />
+    <Property Name="imageUrl" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="vincontroltradeinbannercomment">
+    <Key>
+      <PropertyRef Name="SmartCommentId" />
+    </Key>
+    <Property Name="SmartCommentId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Content" Type="nvarchar(max)" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="255" />
+    <Property Name="State" Type="nvarchar" MaxLength="45" />
+    <Property Name="DealerId" Type="int" />
+    <Property Name="DateComment" Type="datetime2" Precision="0" />
+    <Property Name="DateUpdated" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="vincontroltruckcategory">
+    <Key>
+      <PropertyRef Name="Vincontroltruckcategoryid" />
+    </Key>
+    <Property Name="Vincontroltruckcategoryid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryName" Type="nvarchar" MaxLength="100" />
+    <Property Name="TruckType" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="vincontrolusergroup">
+    <Key>
+      <PropertyRef Name="usergroupid" />
+    </Key>
+    <Property Name="usergroupid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="userid" Type="int" Nullable="false" />
+    <Property Name="groupid" Type="int" Nullable="false" />
+    <Property Name="userstamp" Type="nvarchar" Nullable="false" MaxLength="25" />
+    <Property Name="datestamp" Type="datetime2" Nullable="false" Precision="0" />
+  </EntityType>
+  <EntityType Name="vincontrolusers">
+    <Key>
+      <PropertyRef Name="userid" />
+    </Key>
+    <Property Name="userid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="expirationdate" Type="datetime2" Nullable="false" Precision="0" />
+    <Property Name="accountstatus" Type="bit" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="25" />
+    <Property Name="rolename" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="vincontrolwalkaround">
+    <Key>
+      <PropertyRef Name="walkaroundid" />
+    </Key>
+    <Property Name="walkaroundid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="order" Type="int" />
+    <Property Name="x" Type="float" />
+    <Property Name="y" Type="float" />
+    <Property Name="note" Type="nvarchar" MaxLength="455" />
+    <Property Name="appraisalid" Type="int" />
+  </EntityType>
+  <EntityType Name="vincontrolwarrantytype">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" MaxLength="225" />
+    <Property Name="DealerId" Type="int" />
+    <Property Name="IsActive" Type="bit" />
+    <Property Name="Category" Type="int" />
+  </EntityType>
+  <EntityType Name="vincontrolwholesaleinventory">
+    <Key>
+      <PropertyRef Name="ListingID" />
+    </Key>
+    <Property Name="ListingID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ModelYear" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="VINNumber" Type="nvarchar" MaxLength="100" />
+    <Property Name="StockNumber" Type="nvarchar" MaxLength="100" />
+    <Property Name="SalePrice" Type="nvarchar" MaxLength="100" />
+    <Property Name="MSRP" Type="nvarchar" MaxLength="100" />
+    <Property Name="DealerMSRP" Type="nvarchar" MaxLength="100" />
+    <Property Name="Mileage" Type="nvarchar" MaxLength="100" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="100" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="100" />
+    <Property Name="InteriorSurface" Type="nvarchar" MaxLength="100" />
+    <Property Name="BodyType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Cylinders" Type="nvarchar" MaxLength="45" />
+    <Property Name="Liters" Type="nvarchar" MaxLength="45" />
+    <Property Name="EngineType" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveTrain" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="200" />
+    <Property Name="Doors" Type="nvarchar" MaxLength="45" />
+    <Property Name="FuelEconomyCity" Type="nvarchar" MaxLength="45" />
+    <Property Name="FuelEconomyHighWay" Type="nvarchar" MaxLength="45" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="StandardOptions" Type="nvarchar(max)" />
+    <Property Name="CarsOptions" Type="nvarchar(max)" />
+    <Property Name="CarsPackages" Type="nvarchar(max)" />
+    <Property Name="Descriptions" Type="nvarchar(max)" />
+    <Property Name="CarImageUrl" Type="nvarchar(max)" />
+    <Property Name="ThumbnailImageURL" Type="nvarchar(max)" />
+    <Property Name="DateInStock" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="DealershipId" Type="int" />
+    <Property Name="DealershipName" Type="nvarchar" MaxLength="200" />
+    <Property Name="DealershipAddress" Type="nvarchar" MaxLength="250" />
+    <Property Name="DealershipCity" Type="nvarchar" MaxLength="100" />
+    <Property Name="DealershipState" Type="nvarchar" MaxLength="10" />
+    <Property Name="DealershipPhone" Type="nvarchar" MaxLength="100" />
+    <Property Name="DealershipZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="DealerCost" Type="nvarchar" MaxLength="45" />
+    <Property Name="ACV" Type="nvarchar" MaxLength="45" />
+    <Property Name="DefaultImageUrl" Type="nvarchar(max)" />
+    <Property Name="NewUsed" Type="nvarchar" MaxLength="10" />
+    <Property Name="AddToInventoryBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="AppraisalID" Type="nvarchar" MaxLength="45" />
+    <Property Name="VehicleType" Type="nvarchar" MaxLength="100" />
+    <Property Name="TruckClass" Type="nvarchar" MaxLength="100" />
+    <Property Name="TruckType" Type="nvarchar" MaxLength="100" />
+    <Property Name="TruckCategory" Type="nvarchar" MaxLength="100" />
+    <Property Name="WarrantyInfo" Type="int" />
+    <Property Name="RetailPrice" Type="nvarchar" MaxLength="45" />
+    <Property Name="WindowStickerPrice" Type="nvarchar" MaxLength="45" />
+    <Property Name="DealerDiscount" Type="nvarchar" MaxLength="45" />
+    <Property Name="ManufacturerRebate" Type="nvarchar" MaxLength="45" />
+    <Property Name="MarketRange" Type="int" />
+    <Property Name="Recon" Type="bit" />
+    <Property Name="PriorRental" Type="bit" />
+    <Property Name="CarFaxOwner" Type="int" />
+    <Property Name="KBBOptionsId" Type="nvarchar(max)" />
+    <Property Name="KBBTrimId" Type="int" />
+    <Property Name="Disclaimer" Type="nvarchar(max)" />
+    <Property Name="DealerDemo" Type="bit" />
+    <Property Name="Unwind" Type="bit" />
+    <Property Name="NumberOfCar" Type="int" />
+    <Property Name="CarRanking" Type="int" />
+    <Property Name="MarketLowestPrice" Type="decimal" Precision="11" />
+    <Property Name="MarketAveragePrice" Type="decimal" Precision="11" />
+    <Property Name="MarketHighestPrice" Type="decimal" Precision="11" />
+    <Property Name="ColorCode" Type="nvarchar" MaxLength="30" />
+    <Property Name="AdditionalTitle" Type="nvarchar" MaxLength="255" />
+    <Property Name="ChromeStyleId" Type="nvarchar" MaxLength="45" />
+    <Property Name="ChromeModelId" Type="nvarchar" MaxLength="45" />
+    <Property Name="EnableAutoDescription" Type="bit" />
+    <Property Name="Template" Type="int" />
+    <Property Name="PackageDescriptions" Type="nvarchar(max)" />
+    <Property Name="Loaner" Type="bit" />
+    <Property Name="Auction" Type="bit" />
+    <Property Name="BucketJumpCompleteDay" Type="int" />
+    <Property Name="ManheimTrimId" Type="int" />
+    <Property Name="MarketTrim" Type="nvarchar" MaxLength="45" />
+    <Property Name="ACar" Type="bit" />
+    <Property Name="IsFeatured" Type="bit" />
+  </EntityType>
+  <EntityType Name="vincontrondnsimportlist">
+    <Key>
+      <PropertyRef Name="DealerId" />
+    </Key>
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="45" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="45" />
+    <Property Name="Active" Type="bit" />
+  </EntityType>
+  <EntityType Name="whitmanenteprisecarfax">
+    <Key>
+      <PropertyRef Name="AutoId" />
+    </Key>
+    <Property Name="AutoId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="45" />
+    <Property Name="Owner" Type="int" />
+    <Property Name="ServiceRecord" Type="nvarchar" MaxLength="45" />
+    <Property Name="WindowSticker" Type="nvarchar(max)" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="ExpiredDate" Type="datetime2" Precision="0" />
+    <Property Name="PriorRental" Type="bit" />
+    <Property Name="Accident" Type="int" />
+  </EntityType>
+  <EntityType Name="whitmanenterpriseappraisal">
+    <Key>
+      <PropertyRef Name="idAppraisal" />
+    </Key>
+    <Property Name="idAppraisal" Type="int" Nullable="false" />
+    <Property Name="ModelYear" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="VINNumber" Type="nvarchar" MaxLength="100" />
+    <Property Name="StockNumber" Type="nvarchar" MaxLength="100" />
+    <Property Name="SalePrice" Type="nvarchar" MaxLength="100" />
+    <Property Name="MSRP" Type="nvarchar" MaxLength="100" />
+    <Property Name="Mileage" Type="nvarchar" MaxLength="100" />
+    <Property Name="Cylinders" Type="nvarchar" MaxLength="45" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="100" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="100" />
+    <Property Name="InteriorSurface" Type="nvarchar" MaxLength="100" />
+    <Property Name="BodyType" Type="nvarchar" MaxLength="100" />
+    <Property Name="EngineType" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveTrain" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="200" />
+    <Property Name="Liters" Type="nvarchar" MaxLength="45" />
+    <Property Name="Doors" Type="nvarchar" MaxLength="45" />
+    <Property Name="FuelEconomyCity" Type="nvarchar" MaxLength="45" />
+    <Property Name="FuelEconomyHighWay" Type="nvarchar" MaxLength="45" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="CarsOptions" Type="nvarchar(max)" />
+    <Property Name="CarsPackages" Type="nvarchar(max)" />
+    <Property Name="PackageDescription" Type="nvarchar(max)" />
+    <Property Name="Descriptions" Type="nvarchar(max)" />
+    <Property Name="CarImageUrl" Type="nvarchar(max)" />
+    <Property Name="DealershipName" Type="nvarchar" MaxLength="200" />
+    <Property Name="DealershipAddress" Type="nvarchar" MaxLength="250" />
+    <Property Name="DealershipCity" Type="nvarchar" MaxLength="100" />
+    <Property Name="DealershipState" Type="nvarchar" MaxLength="10" />
+    <Property Name="DealershipPhone" Type="nvarchar" MaxLength="100" />
+    <Property Name="DealershipId" Type="int" />
+    <Property Name="DealerCost" Type="nvarchar" MaxLength="45" />
+    <Property Name="ACV" Type="nvarchar" MaxLength="45" />
+    <Property Name="DefaultImageUrl" Type="nvarchar(max)" />
+    <Property Name="AppraisalDate" Type="datetime2" Precision="0" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="200" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="200" />
+    <Property Name="Address" Type="nvarchar" MaxLength="200" />
+    <Property Name="City" Type="nvarchar" MaxLength="20" />
+    <Property Name="State" Type="nvarchar" MaxLength="20" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="10" />
+    <Property Name="AppraisalBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="InventoryAdd" Type="bit" />
+    <Property Name="AppraisalType" Type="nvarchar" MaxLength="25" />
+    <Property Name="AppraisalID" Type="nvarchar" MaxLength="45" />
+    <Property Name="ChromeModelId" Type="nvarchar" MaxLength="45" />
+    <Property Name="ChromeStyleId" Type="nvarchar" MaxLength="45" />
+    <Property Name="StandardOptions" Type="nvarchar(max)" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="VehicleType" Type="nvarchar" MaxLength="100" />
+    <Property Name="TruckClass" Type="nvarchar" MaxLength="100" />
+    <Property Name="TruckType" Type="nvarchar" MaxLength="100" />
+    <Property Name="TruckCategory" Type="nvarchar" MaxLength="100" />
+    <Property Name="KBBOptionsId" Type="nvarchar(max)" />
+    <Property Name="Note" Type="nvarchar(max)" />
+    <Property Name="Carfaxowner" Type="int" />
+    <Property Name="KBBTrimId" Type="int" />
+    <Property Name="Signature" Type="varbinary(max)" />
+    <Property Name="Email" Type="nvarchar" MaxLength="45" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="45" />
+    <Property Name="Street" Type="nvarchar" MaxLength="255" />
+    <Property Name="Photo" Type="varbinary(max)" />
+    <Property Name="Status" Type="nvarchar" MaxLength="45" />
+    <Property Name="VinGenie" Type="bit" />
+    <Property Name="UserStamp" Type="nvarchar" MaxLength="100" />
+    <Property Name="DateStamp" Type="datetime2" Precision="0" />
+    <Property Name="NumberOfCar" Type="int" />
+    <Property Name="CarRanking" Type="int" />
+    <Property Name="DeviceId" Type="nvarchar" MaxLength="100" />
+    <Property Name="DeviceName" Type="nvarchar" MaxLength="255" />
+    <Property Name="MarketLowestPrice" Type="decimal" Precision="11" />
+    <Property Name="MarketAveragePrice" Type="decimal" Precision="11" />
+    <Property Name="MarketHighestPrice" Type="decimal" Precision="11" />
+    <Property Name="ColorCode" Type="nvarchar" MaxLength="30" />
+    <Property Name="PhotoUrl" Type="nvarchar" MaxLength="255" />
+    <Property Name="SignatureUrl" Type="nvarchar" MaxLength="255" />
+    <Property Name="MarketRange" Type="int" />
+    <Property Name="PackageDescriptions" Type="nvarchar(max)" />
+    <Property Name="KarPowerEntryId" Type="nvarchar" MaxLength="45" />
+    <Property Name="Location" Type="nvarchar" MaxLength="200" />
+    <Property Name="ManheimTrimId" Type="int" />
+    <Property Name="MarketTrim" Type="nvarchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisebayads">
+    <Key>
+      <PropertyRef Name="AutoId" />
+    </Key>
+    <Property Name="AutoId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ListingId" Type="int" Nullable="false" />
+    <Property Name="EbayAdId" Type="nvarchar" MaxLength="45" />
+    <Property Name="EbayAdURL" Type="nvarchar(max)" />
+    <Property Name="EbayAdStartTime" Type="datetime2" Precision="0" />
+    <Property Name="EbayAdEndTime" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisebb">
+    <Key>
+      <PropertyRef Name="AutoId" />
+    </Key>
+    <Property Name="AutoId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="45" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="45" />
+    <Property Name="TradeInFairPrice" Type="nvarchar" MaxLength="45" />
+    <Property Name="TradeInGoodPrice" Type="nvarchar" MaxLength="45" />
+    <Property Name="TradeInVeryGoodPrice" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="ExpiredDate" Type="datetime2" Precision="0" />
+  </EntityType>
+  <EntityType Name="whitmanenterpriseclientinfo">
+    <Key>
+      <PropertyRef Name="idwhitmanenterpriseclientinfo" />
+    </Key>
+    <Property Name="idwhitmanenterpriseclientinfo" Type="int" Nullable="false" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="100" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="45" />
+    <Property Name="Date" Type="nvarchar" MaxLength="45" />
+    <Property Name="Time" Type="nvarchar" MaxLength="45" />
+    <Property Name="Comment" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisedealergroup">
+    <Key>
+      <PropertyRef Name="DealerGroupId" />
+    </Key>
+    <Property Name="DealerGroupId" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="DealerGroupName" Type="nvarchar" MaxLength="255" />
+    <Property Name="MasterUserName" Type="nvarchar" MaxLength="45" />
+    <Property Name="MasterLogin" Type="nvarchar" MaxLength="45" />
+    <Property Name="DefaultDealerID" Type="int" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisedealership">
+    <Key>
+      <PropertyRef Name="idWhitmanenterpriseDealership" />
+    </Key>
+    <Property Name="idWhitmanenterpriseDealership" Type="int" Nullable="false" />
+    <Property Name="DealerPassword" Type="nvarchar" MaxLength="100" />
+    <Property Name="DealershipName" Type="nvarchar" MaxLength="255" />
+    <Property Name="DealershipAddress" Type="nvarchar(max)" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="Lattitude" Type="nvarchar" MaxLength="100" />
+    <Property Name="Longtitude" Type="nvarchar" MaxLength="100" />
+    <Property Name="Address" Type="nvarchar" MaxLength="100" />
+    <Property Name="City" Type="nvarchar" MaxLength="45" />
+    <Property Name="State" Type="nvarchar" MaxLength="45" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="45" />
+    <Property Name="DealerGroupID" Type="nvarchar" MaxLength="45" />
+    <Property Name="Email" Type="nvarchar" MaxLength="255" />
+    <Property Name="EmailFormat" Type="int" />
+    <Property Name="PriceVariance" Type="decimal" Precision="8" />
+    <Property Name="OverideDealerKBBReport" Type="bit" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisedealershipinventory">
+    <Key>
+      <PropertyRef Name="ListingID" />
+    </Key>
+    <Property Name="ListingID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ModelYear" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="VINNumber" Type="nvarchar" MaxLength="100" />
+    <Property Name="StockNumber" Type="nvarchar" MaxLength="100" />
+    <Property Name="SalePrice" Type="nvarchar" MaxLength="100" />
+    <Property Name="MSRP" Type="nvarchar" MaxLength="100" />
+    <Property Name="DealerMSRP" Type="nvarchar" MaxLength="100" />
+    <Property Name="Mileage" Type="nvarchar" MaxLength="100" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="100" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="100" />
+    <Property Name="InteriorSurface" Type="nvarchar" MaxLength="100" />
+    <Property Name="BodyType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Cylinders" Type="nvarchar" MaxLength="45" />
+    <Property Name="Liters" Type="nvarchar" MaxLength="45" />
+    <Property Name="EngineType" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveTrain" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="200" />
+    <Property Name="Doors" Type="nvarchar" MaxLength="45" />
+    <Property Name="FuelEconomyCity" Type="nvarchar" MaxLength="45" />
+    <Property Name="FuelEconomyHighWay" Type="nvarchar" MaxLength="45" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="StandardOptions" Type="nvarchar(max)" />
+    <Property Name="CarsOptions" Type="nvarchar(max)" />
+    <Property Name="CarsPackages" Type="nvarchar(max)" />
+    <Property Name="Descriptions" Type="nvarchar(max)" />
+    <Property Name="CarImageUrl" Type="nvarchar(max)" />
+    <Property Name="ThumbnailImageURL" Type="nvarchar(max)" />
+    <Property Name="DateInStock" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="DealershipId" Type="int" />
+    <Property Name="DealershipName" Type="nvarchar" MaxLength="200" />
+    <Property Name="DealershipAddress" Type="nvarchar" MaxLength="250" />
+    <Property Name="DealershipCity" Type="nvarchar" MaxLength="100" />
+    <Property Name="DealershipState" Type="nvarchar" MaxLength="10" />
+    <Property Name="DealershipPhone" Type="nvarchar" MaxLength="100" />
+    <Property Name="DealershipZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="DealerCost" Type="nvarchar" MaxLength="45" />
+    <Property Name="ACV" Type="nvarchar" MaxLength="45" />
+    <Property Name="DefaultImageUrl" Type="nvarchar(max)" />
+    <Property Name="NewUsed" Type="nvarchar" MaxLength="10" />
+    <Property Name="AddToInventoryBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="AppraisalID" Type="nvarchar" MaxLength="45" />
+    <Property Name="VehicleType" Type="nvarchar" MaxLength="100" />
+    <Property Name="TruckClass" Type="nvarchar" MaxLength="100" />
+    <Property Name="TruckType" Type="nvarchar" MaxLength="100" />
+    <Property Name="TruckCategory" Type="nvarchar" MaxLength="100" />
+    <Property Name="WarrantyInfo" Type="int" />
+    <Property Name="RetailPrice" Type="nvarchar" MaxLength="45" />
+    <Property Name="WindowStickerPrice" Type="nvarchar" MaxLength="45" />
+    <Property Name="DealerDiscount" Type="nvarchar" MaxLength="45" />
+    <Property Name="ManufacturerRebate" Type="nvarchar" MaxLength="45" />
+    <Property Name="MarketRange" Type="int" />
+    <Property Name="Recon" Type="bit" />
+    <Property Name="PriorRental" Type="bit" />
+    <Property Name="CarFaxOwner" Type="int" />
+    <Property Name="KBBOptionsId" Type="nvarchar(max)" />
+    <Property Name="KBBTrimId" Type="int" />
+    <Property Name="PreWholeSale" Type="bit" />
+    <Property Name="Disclaimer" Type="nvarchar(max)" />
+    <Property Name="DealerDemo" Type="bit" />
+    <Property Name="Unwind" Type="bit" />
+    <Property Name="IsFeatured" Type="bit" />
+    <Property Name="NumberOfCar" Type="int" />
+    <Property Name="CarRanking" Type="int" />
+    <Property Name="MarketLowestPrice" Type="decimal" Precision="11" />
+    <Property Name="MarketAveragePrice" Type="decimal" Precision="11" />
+    <Property Name="MarketHighestPrice" Type="decimal" Precision="11" />
+    <Property Name="ColorCode" Type="nvarchar" MaxLength="30" />
+    <Property Name="AdditionalTitle" Type="nvarchar" MaxLength="255" />
+    <Property Name="ChromeStyleId" Type="nvarchar" MaxLength="45" />
+    <Property Name="ChromeModelId" Type="nvarchar" MaxLength="45" />
+    <Property Name="EnableAutoDescription" Type="bit" />
+    <Property Name="Template" Type="int" />
+    <Property Name="PackageDescriptions" Type="nvarchar(max)" />
+    <Property Name="Loaner" Type="bit" />
+    <Property Name="Auction" Type="bit" />
+    <Property Name="BucketJumpCompleteDay" Type="int" />
+    <Property Name="ManheimTrimId" Type="int" />
+    <Property Name="MarketTrim" Type="nvarchar" MaxLength="45" />
+    <Property Name="ACar" Type="bit" />
+    <Property Name="BrandedTitle" Type="bit" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisedealershipinventorysoldout">
+    <Key>
+      <PropertyRef Name="ListingID" />
+    </Key>
+    <Property Name="ListingID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ModelYear" Type="int" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="100" />
+    <Property Name="VINNumber" Type="nvarchar" MaxLength="100" />
+    <Property Name="StockNumber" Type="nvarchar" MaxLength="100" />
+    <Property Name="SalePrice" Type="nvarchar" MaxLength="100" />
+    <Property Name="MSRP" Type="nvarchar" MaxLength="100" />
+    <Property Name="DealerMSRP" Type="nvarchar" MaxLength="100" />
+    <Property Name="Mileage" Type="nvarchar" MaxLength="100" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="100" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="100" />
+    <Property Name="InteriorSurface" Type="nvarchar" MaxLength="100" />
+    <Property Name="BodyType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Cylinders" Type="nvarchar" MaxLength="45" />
+    <Property Name="Liters" Type="nvarchar" MaxLength="45" />
+    <Property Name="EngineType" Type="nvarchar" MaxLength="100" />
+    <Property Name="DriveTrain" Type="nvarchar" MaxLength="100" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="100" />
+    <Property Name="Tranmission" Type="nvarchar" MaxLength="200" />
+    <Property Name="Doors" Type="nvarchar" MaxLength="45" />
+    <Property Name="FuelEconomyCity" Type="nvarchar" MaxLength="45" />
+    <Property Name="FuelEconomyHighWay" Type="nvarchar" MaxLength="45" />
+    <Property Name="Certified" Type="bit" />
+    <Property Name="CarsOptions" Type="nvarchar(max)" />
+    <Property Name="CarsPackages" Type="nvarchar(max)" />
+    <Property Name="Descriptions" Type="nvarchar(max)" />
+    <Property Name="CarImageUrl" Type="nvarchar(max)" />
+    <Property Name="ThumbnailImageURL" Type="nvarchar(max)" />
+    <Property Name="DateInStock" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="DateRemoved" Type="datetime2" Precision="0" />
+    <Property Name="DealershipName" Type="nvarchar" MaxLength="200" />
+    <Property Name="DealershipAddress" Type="nvarchar" MaxLength="250" />
+    <Property Name="DealershipCity" Type="nvarchar" MaxLength="100" />
+    <Property Name="DealershipState" Type="nvarchar" MaxLength="10" />
+    <Property Name="DealershipZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="DealershipPhone" Type="nvarchar" MaxLength="100" />
+    <Property Name="DealershipId" Type="int" />
+    <Property Name="DealerCost" Type="nvarchar" MaxLength="45" />
+    <Property Name="ACV" Type="nvarchar" MaxLength="45" />
+    <Property Name="DefaultImageUrl" Type="nvarchar(max)" />
+    <Property Name="NewUsed" Type="nvarchar" MaxLength="10" />
+    <Property Name="RemoveBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="AddToInventoryBy" Type="nvarchar" MaxLength="100" />
+    <Property Name="AppraisalID" Type="nvarchar" MaxLength="45" />
+    <Property Name="DataFeed" Type="bit" />
+    <Property Name="FirstName" Type="nvarchar" MaxLength="100" />
+    <Property Name="LastName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Address" Type="nvarchar" MaxLength="255" />
+    <Property Name="City" Type="nvarchar" MaxLength="100" />
+    <Property Name="State" Type="nvarchar" MaxLength="45" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="VehicleType" Type="nvarchar" MaxLength="100" />
+    <Property Name="TruckClass" Type="nvarchar" MaxLength="100" />
+    <Property Name="TruckType" Type="nvarchar" MaxLength="100" />
+    <Property Name="TruckCategory" Type="nvarchar" MaxLength="100" />
+    <Property Name="WarrantyInfo" Type="int" />
+    <Property Name="RetailPrice" Type="nvarchar" MaxLength="45" />
+    <Property Name="WindowStickerPrice" Type="nvarchar" MaxLength="45" />
+    <Property Name="DealerDiscount" Type="nvarchar" MaxLength="45" />
+    <Property Name="ManufacturerRebate" Type="nvarchar" MaxLength="45" />
+    <Property Name="Recon" Type="bit" />
+    <Property Name="PriorRental" Type="bit" />
+    <Property Name="StandardOptions" Type="nvarchar(max)" />
+    <Property Name="CarFaxOwner" Type="int" />
+    <Property Name="KBBOptionsId" Type="nvarchar(max)" />
+    <Property Name="KBBTrimId" Type="int" />
+    <Property Name="Disclaimer" Type="nvarchar(max)" />
+    <Property Name="DealerDemo" Type="bit" />
+    <Property Name="Unwind" Type="bit" />
+    <Property Name="NumberOfCar" Type="int" />
+    <Property Name="CarRanking" Type="int" />
+    <Property Name="ColorCode" Type="nvarchar" MaxLength="30" />
+    <Property Name="AdditionalTitle" Type="nvarchar" MaxLength="255" />
+    <Property Name="ChromeStyleId" Type="nvarchar" MaxLength="45" />
+    <Property Name="ChromeModelId" Type="nvarchar" MaxLength="45" />
+    <Property Name="Loaner" Type="bit" />
+    <Property Name="Auction" Type="bit" />
+    <Property Name="Country" Type="nvarchar" MaxLength="45" />
+    <Property Name="EnableAutoDescription" Type="bit" />
+    <Property Name="Template" Type="int" />
+    <Property Name="PackageDescriptions" Type="nvarchar(max)" />
+    <Property Name="BucketJumpCompleteDay" Type="int" />
+    <Property Name="ManheimTrimId" Type="int" />
+    <Property Name="MarketTrim" Type="nvarchar" MaxLength="45" />
+    <Property Name="ACar" Type="bit" />
+    <Property Name="OldListingId" Type="int" />
+    <Property Name="IsFeatured" Type="bit" />
+    <Property Name="BrandedTitle" Type="bit" />
+  </EntityType>
+  <EntityType Name="whitmanenterpriseebayvehiclecategory">
+    <Key>
+      <PropertyRef Name="EbayCategoryID" />
+    </Key>
+    <Property Name="EbayCategoryID" Type="int" Nullable="false" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisekbb">
+    <Key>
+      <PropertyRef Name="AutoId" />
+    </Key>
+    <Property Name="AutoId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="45" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="45" />
+    <Property Name="TradeInFairPrice" Type="nvarchar" MaxLength="45" />
+    <Property Name="TradeInGoodPrice" Type="nvarchar" MaxLength="45" />
+    <Property Name="TradeInVeryGoodPrice" Type="nvarchar" MaxLength="45" />
+    <Property Name="DateAdded" Type="datetime2" Precision="0" />
+    <Property Name="LastUpdated" Type="datetime2" Precision="0" />
+    <Property Name="ExpiredDate" Type="datetime2" Precision="0" />
+    <Property Name="BaseWholeSale" Type="nvarchar" MaxLength="45" />
+    <Property Name="MileageAdjustment" Type="nvarchar" MaxLength="45" />
+    <Property Name="WholeSale" Type="nvarchar" MaxLength="45" />
+    <Property Name="TrimId" Type="int" />
+    <Property Name="Type" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisesetting">
+    <Key>
+      <PropertyRef Name="idwhitmanenterprisesetting" />
+    </Key>
+    <Property Name="idwhitmanenterprisesetting" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="InventorySorting" Type="nvarchar" MaxLength="45" />
+    <Property Name="SoldOut" Type="nvarchar" MaxLength="45" />
+    <Property Name="DealershipId" Type="int" />
+    <Property Name="Cragislist" Type="nvarchar" MaxLength="100" />
+    <Property Name="CraigslistPassword" Type="nvarchar" MaxLength="45" />
+    <Property Name="Ebay" Type="nvarchar" MaxLength="100" />
+    <Property Name="EbayPassword" Type="nvarchar" MaxLength="45" />
+    <Property Name="CarFax" Type="nvarchar" MaxLength="100" />
+    <Property Name="CarFaxPassword" Type="nvarchar" MaxLength="45" />
+    <Property Name="Manheim" Type="nvarchar" MaxLength="100" />
+    <Property Name="ManheimPassword" Type="nvarchar" MaxLength="45" />
+    <Property Name="KellyBlueBook" Type="nvarchar" MaxLength="100" />
+    <Property Name="KellyPassword" Type="nvarchar" MaxLength="45" />
+    <Property Name="BlackBook" Type="nvarchar" MaxLength="100" />
+    <Property Name="BlackBookPassword" Type="nvarchar" MaxLength="45" />
+    <Property Name="AutoCheck" Type="nvarchar" MaxLength="100" />
+    <Property Name="AutoCheckPassword" Type="nvarchar" MaxLength="45" />
+    <Property Name="AppraisalNotification" Type="bit" />
+    <Property Name="WholeNotification" Type="bit" />
+    <Property Name="InventoryNotification" Type="bit" />
+    <Property Name="24Hnotification" Type="bit" />
+    <Property Name="NoteNotification" Type="bit" />
+    <Property Name="PriceChangeNotification" Type="bit" />
+    <Property Name="AgeingBucketNotification" Type="bit" />
+    <Property Name="BucketJumpNotification" Type="bit" />
+    <Property Name="DefaultStockImageUrl" Type="nvarchar" MaxLength="255" />
+    <Property Name="OverideStockImage" Type="bit" />
+    <Property Name="DealerInfo" Type="nvarchar(max)" />
+    <Property Name="DealerWarranty" Type="nvarchar(max)" />
+    <Property Name="TermsAndCondition" Type="nvarchar(max)" />
+    <Property Name="EbayToken" Type="nvarchar(max)" />
+    <Property Name="EbayInventoryURL" Type="nvarchar(max)" />
+    <Property Name="CreditURL" Type="nvarchar(max)" />
+    <Property Name="WebSiteURL" Type="nvarchar(max)" />
+    <Property Name="ContactUsURL" Type="nvarchar(max)" />
+    <Property Name="FacebookURL" Type="nvarchar(max)" />
+    <Property Name="LogoURL" Type="nvarchar(max)" />
+    <Property Name="ContactPerson" Type="nvarchar(max)" />
+    <Property Name="RetailPrice" Type="bit" />
+    <Property Name="DealerDiscount" Type="bit" />
+    <Property Name="ManufacturerReabte" Type="bit" />
+    <Property Name="SalePrice" Type="bit" />
+    <Property Name="ManufacturerWarranty" Type="nvarchar(max)" />
+    <Property Name="ManufacturerWarrantySpanish" Type="nvarchar(max)" />
+    <Property Name="ManufacturerWarrantyDuration" Type="nvarchar(max)" />
+    <Property Name="DealerCertified" Type="nvarchar(max)" />
+    <Property Name="DealerCertifiedSpanish" Type="nvarchar(max)" />
+    <Property Name="DealerCertifiedDuration" Type="nvarchar(max)" />
+    <Property Name="ManufacturerCertified" Type="nvarchar(max)" />
+    <Property Name="ManufacturerCertifiedSpanish" Type="nvarchar(max)" />
+    <Property Name="ManufacturerCertifiedDuration" Type="nvarchar(max)" />
+    <Property Name="ShippingInfo" Type="nvarchar(max)" />
+    <Property Name="AsIsWarranty" Type="nvarchar(max)" />
+    <Property Name="AsIsWarrantySpanish" Type="nvarchar(max)" />
+    <Property Name="StartDescriptionSentence" Type="nvarchar(max)" />
+    <Property Name="EndDescriptionSentence" Type="nvarchar(max)" />
+    <Property Name="AuctionSentence" Type="nvarchar(max)" />
+    <Property Name="LoanerSentence" Type="nvarchar(max)" />
+    <Property Name="FirstTimeRangeBucketJump" Type="int" />
+    <Property Name="SecondTimeRangeBucketJump" Type="int" />
+    <Property Name="IntervalBucketJump" Type="int" />
+    <Property Name="RetailPriceText" Type="nvarchar" MaxLength="255" />
+    <Property Name="DealerDiscountText" Type="nvarchar" MaxLength="255" />
+    <Property Name="ManufactureReabateText" Type="nvarchar" MaxLength="255" />
+    <Property Name="SalePriceText" Type="nvarchar" MaxLength="255" />
+    <Property Name="HeaderOverlayURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="FooterOverlayURL" Type="nvarchar" MaxLength="255" />
+    <Property Name="MarketPriceRangeChangeNotification" Type="bit" />
+    <Property Name="KellyBlueBookAccessRight" Type="bit" />
+    <Property Name="AutoDescription" Type="bit" />
+    <Property Name="AutoDescriptionSubscribe" Type="bit" />
+    <Property Name="ImageUploadNotification" Type="bit" />
+  </EntityType>
+  <EntityType Name="whitmanenterpriseusazipcode">
+    <Key>
+      <PropertyRef Name="ZIPCode" />
+    </Key>
+    <Property Name="ZIPCode" Type="int" Nullable="false" />
+    <Property Name="ZIPType" Type="nvarchar" MaxLength="45" />
+    <Property Name="CityName" Type="nvarchar" MaxLength="45" />
+    <Property Name="CityType" Type="nvarchar" MaxLength="45" />
+    <Property Name="CountyName" Type="nvarchar" MaxLength="45" />
+    <Property Name="CountyFIPS" Type="nvarchar" MaxLength="45" />
+    <Property Name="StateName" Type="nvarchar" MaxLength="45" />
+    <Property Name="StateAbbr" Type="nvarchar" MaxLength="45" />
+    <Property Name="StateFIPS" Type="nvarchar" MaxLength="45" />
+    <Property Name="MSACode" Type="nvarchar" MaxLength="45" />
+    <Property Name="AreaCode" Type="nvarchar" MaxLength="45" />
+    <Property Name="TimeZone" Type="nvarchar" MaxLength="45" />
+    <Property Name="UTC" Type="nvarchar" MaxLength="45" />
+    <Property Name="DST" Type="nvarchar" MaxLength="45" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="45" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="whitmanenterpriseusers">
+    <Key>
+      <PropertyRef Name="idwhitmanenterpriseuser" />
+    </Key>
+    <Property Name="idwhitmanenterpriseuser" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="100" />
+    <Property Name="Password" Type="nvarchar" MaxLength="100" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="Cellphone" Type="nvarchar" MaxLength="100" />
+    <Property Name="RoleName" Type="nvarchar" MaxLength="100" />
+    <Property Name="DealershipID" Type="int" />
+    <Property Name="Active" Type="bit" />
+    <Property Name="DefaultLogin" Type="int" />
+    <Property Name="DealerGroupId" Type="nvarchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="whitmanenterpriseusersnotification">
+    <Key>
+      <PropertyRef Name="idwhitmanenterpriseusersnotification" />
+    </Key>
+    <Property Name="idwhitmanenterpriseusersnotification" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="100" />
+    <Property Name="AppraisalNotification" Type="bit" />
+    <Property Name="WholeNotification" Type="bit" />
+    <Property Name="InventoryNotification" Type="bit" />
+    <Property Name="24Hnotification" Type="bit" />
+    <Property Name="NoteNotification" Type="bit" />
+    <Property Name="PriceChangeNotification" Type="bit" />
+    <Property Name="AgingNotification" Type="bit" />
+    <Property Name="BucketJumpNotification" Type="bit" />
+    <Property Name="DealershipId" Type="int" />
+    <Property Name="MarketPriceRangeNotification" Type="bit" />
+    <Property Name="ImageUploadNotification" Type="bit" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisevehiclecategory">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="NameCompare" Type="nvarchar" MaxLength="100" />
+    <Property Name="Make" Type="nvarchar" MaxLength="100" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Model" Type="nvarchar" MaxLength="100" />
+    <Property Name="LastUpdated" Type="datetime2" Nullable="false" Precision="0" />
+  </EntityType>
+  <Association Name="FK_vincontroldealershipbuttons_vincontrolbuttons">
+    <End Role="vincontrolbuttons" Type="whitmanenterprisewarehouseModel.Store.vincontrolbuttons" Multiplicity="1" />
+    <End Role="vincontroldealershipbuttons" Type="whitmanenterprisewarehouseModel.Store.vincontroldealershipbuttons" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vincontrolbuttons">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="vincontroldealershipbuttons">
+        <PropertyRef Name="ButtonId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_vincontroldealershipbuttons_vincontrolgroups">
+    <End Role="vincontrolgroups" Type="whitmanenterprisewarehouseModel.Store.vincontrolgroups" Multiplicity="1" />
+    <End Role="vincontroldealershipbuttons" Type="whitmanenterprisewarehouseModel.Store.vincontroldealershipbuttons" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vincontrolgroups">
+        <PropertyRef Name="groupid" />
+      </Principal>
+      <Dependent Role="vincontroldealershipbuttons">
+        <PropertyRef Name="GroupId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="manheimmakemodels$model">
+    <End Role="manheimmodels" Type="whitmanenterprisewarehouseModel.Store.manheimmodels" Multiplicity="0..1" />
+    <End Role="manheimmakemodels" Type="whitmanenterprisewarehouseModel.Store.manheimmakemodels" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="manheimmodels">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="manheimmakemodels">
+        <PropertyRef Name="modelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="manheimmakemodels$yearmake">
+    <End Role="manheimyearmakes" Type="whitmanenterprisewarehouseModel.Store.manheimyearmakes" Multiplicity="0..1" />
+    <End Role="manheimmakemodels" Type="whitmanenterprisewarehouseModel.Store.manheimmakemodels" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="manheimyearmakes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="manheimmakemodels">
+        <PropertyRef Name="yearmakeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="manheimmodeltrims$makemodel">
+    <End Role="manheimmakemodels" Type="whitmanenterprisewarehouseModel.Store.manheimmakemodels" Multiplicity="0..1" />
+    <End Role="manheimmodeltrims" Type="whitmanenterprisewarehouseModel.Store.manheimmodeltrims" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="manheimmakemodels">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="manheimmodeltrims">
+        <PropertyRef Name="makemodelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="manheimmodeltrims$trim">
+    <End Role="manheimtrims" Type="whitmanenterprisewarehouseModel.Store.manheimtrims" Multiplicity="0..1" />
+    <End Role="manheimmodeltrims" Type="whitmanenterprisewarehouseModel.Store.manheimmodeltrims" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="manheimtrims">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="manheimmodeltrims">
+        <PropertyRef Name="trimId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="manheimyearmakes$makeId">
+    <End Role="manheimmakes" Type="whitmanenterprisewarehouseModel.Store.manheimmakes" Multiplicity="0..1" />
+    <End Role="manheimyearmakes" Type="whitmanenterprisewarehouseModel.Store.manheimyearmakes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="manheimmakes">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="manheimyearmakes">
+        <PropertyRef Name="makeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vincontrolanswers$fk_answers_appraisals">
+    <End Role="whitmanenterpriseappraisal" Type="whitmanenterprisewarehouseModel.Store.whitmanenterpriseappraisal" Multiplicity="0..1" />
+    <End Role="vincontrolanswers" Type="whitmanenterprisewarehouseModel.Store.vincontrolanswers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="whitmanenterpriseappraisal">
+        <PropertyRef Name="idAppraisal" />
+      </Principal>
+      <Dependent Role="vincontrolanswers">
+        <PropertyRef Name="appraisalid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vincontrolanswers$fk_answers_questions">
+    <End Role="vincontrolquestions" Type="whitmanenterprisewarehouseModel.Store.vincontrolquestions" Multiplicity="0..1" />
+    <End Role="vincontrolanswers" Type="whitmanenterprisewarehouseModel.Store.vincontrolanswers" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vincontrolquestions">
+        <PropertyRef Name="questionid" />
+      </Principal>
+      <Dependent Role="vincontrolanswers">
+        <PropertyRef Name="questionid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vincontrolgrouppermissions$fk_grouppermission_group">
+    <End Role="vincontrolgroups" Type="whitmanenterprisewarehouseModel.Store.vincontrolgroups" Multiplicity="1" />
+    <End Role="vincontrolgrouppermissions" Type="whitmanenterprisewarehouseModel.Store.vincontrolgrouppermissions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vincontrolgroups">
+        <PropertyRef Name="groupid" />
+      </Principal>
+      <Dependent Role="vincontrolgrouppermissions">
+        <PropertyRef Name="groupid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vincontrolgrouppermissions$fk_grouppermission_permissioncodes">
+    <End Role="vincontrolpermissioncodes" Type="whitmanenterprisewarehouseModel.Store.vincontrolpermissioncodes" Multiplicity="1" />
+    <End Role="vincontrolgrouppermissions" Type="whitmanenterprisewarehouseModel.Store.vincontrolgrouppermissions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vincontrolpermissioncodes">
+        <PropertyRef Name="permissioncodeid" />
+      </Principal>
+      <Dependent Role="vincontrolgrouppermissions">
+        <PropertyRef Name="permissioncode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vincontrolgrouppermissions$fk_grouppermission_permissionvalue">
+    <End Role="vincontrolpermissionvalue" Type="whitmanenterprisewarehouseModel.Store.vincontrolpermissionvalue" Multiplicity="1" />
+    <End Role="vincontrolgrouppermissions" Type="whitmanenterprisewarehouseModel.Store.vincontrolgrouppermissions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vincontrolpermissionvalue">
+        <PropertyRef Name="permissionvalueid" />
+      </Principal>
+      <Dependent Role="vincontrolgrouppermissions">
+        <PropertyRef Name="permissionvalue" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vincontrolquestions$fk_questions_questiontype">
+    <End Role="vincontrolquestiontype" Type="whitmanenterprisewarehouseModel.Store.vincontrolquestiontype" Multiplicity="0..1" />
+    <End Role="vincontrolquestions" Type="whitmanenterprisewarehouseModel.Store.vincontrolquestions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vincontrolquestiontype">
+        <PropertyRef Name="questiontypeid" />
+      </Principal>
+      <Dependent Role="vincontrolquestions">
+        <PropertyRef Name="questiontypeid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vincontrolsentence$fk_sentence_type">
+    <End Role="vincontrolsentencetype" Type="whitmanenterprisewarehouseModel.Store.vincontrolsentencetype" Multiplicity="1" />
+    <End Role="vincontrolsentence" Type="whitmanenterprisewarehouseModel.Store.vincontrolsentence" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vincontrolsentencetype">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="vincontrolsentence">
+        <PropertyRef Name="typeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vincontrolsouthcoastmitsubishivin$fk_vin_customer">
+    <End Role="vincontrolsouthcoastmitsubishi" Type="whitmanenterprisewarehouseModel.Store.vincontrolsouthcoastmitsubishi" Multiplicity="1" />
+    <End Role="vincontrolsouthcoastmitsubishivin" Type="whitmanenterprisewarehouseModel.Store.vincontrolsouthcoastmitsubishivin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vincontrolsouthcoastmitsubishi">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="vincontrolsouthcoastmitsubishivin">
+        <PropertyRef Name="customerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vincontrolusergroup$fk_usergroup_groups">
+    <End Role="vincontrolgroups" Type="whitmanenterprisewarehouseModel.Store.vincontrolgroups" Multiplicity="1" />
+    <End Role="vincontrolusergroup" Type="whitmanenterprisewarehouseModel.Store.vincontrolusergroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vincontrolgroups">
+        <PropertyRef Name="groupid" />
+      </Principal>
+      <Dependent Role="vincontrolusergroup">
+        <PropertyRef Name="groupid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vincontrolusergroup$fk_usergroup_users">
+    <End Role="vincontrolusers" Type="whitmanenterprisewarehouseModel.Store.vincontrolusers" Multiplicity="1" />
+    <End Role="vincontrolusergroup" Type="whitmanenterprisewarehouseModel.Store.vincontrolusergroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vincontrolusers">
+        <PropertyRef Name="userid" />
+      </Principal>
+      <Dependent Role="vincontrolusergroup">
+        <PropertyRef Name="userid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="vincontrolwalkaround$fk_walkaround_appraisal">
+    <End Role="whitmanenterpriseappraisal" Type="whitmanenterprisewarehouseModel.Store.whitmanenterpriseappraisal" Multiplicity="0..1" />
+    <End Role="vincontrolwalkaround" Type="whitmanenterprisewarehouseModel.Store.vincontrolwalkaround" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="whitmanenterpriseappraisal">
+        <PropertyRef Name="idAppraisal" />
+      </Principal>
+      <Dependent Role="vincontrolwalkaround">
+        <PropertyRef Name="appraisalid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="whitmanenterprisedealershipinventory$Template">
+    <End Role="vincontroldescriptiontemplate" Type="whitmanenterprisewarehouseModel.Store.vincontroldescriptiontemplate" Multiplicity="0..1" />
+    <End Role="whitmanenterprisedealershipinventory" Type="whitmanenterprisewarehouseModel.Store.whitmanenterprisedealershipinventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vincontroldescriptiontemplate">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="whitmanenterprisedealershipinventory">
+        <PropertyRef Name="Template" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

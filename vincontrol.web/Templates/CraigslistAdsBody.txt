@@ -1,0 +1,23 @@
+﻿<div style="font-family: 'Times New Roman'; font-size: medium; vertical-align: baseline;">
+<b>Seller: </b>@@DealerName<br/>
+<b>@@Address</b><br/>
+<b>Contact Number: </b>@@Phone<br/>
+<b>Please visit us at <a href="@@DealerWebsite">@@DealerWebsite</a></b><br/>
+<br/>
+<b>Vehicle Year: </b>@@Year<br/>
+<b>Vehicle Make: </b>@@Make<br/>
+<b>Vehicle Model: </b>@@Model<br/>
+<b>Vehicle Trim: </b>@@Trim<br/>
+<b>Exterior Color: </b>@@ExteriorColor<br/>
+<b>Transmission: </b>@@Transmission<br/>
+<b>Stock: </b>@@Stock<br/>
+<b>Vin: </b>@@Vin<br/>
+<br/>
+<b>Options</b><br/>
+<br/>
+@@Option<br/>
+@@Description<br/>
+If you have any questions, please contact us by clicking the 'reply' button at the top of this ad.<br/>
+<br/>
+<div>@@EndingSentence</div>
+</div>

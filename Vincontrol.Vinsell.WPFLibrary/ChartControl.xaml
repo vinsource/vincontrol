@@ -1,0 +1,229 @@
+﻿<UserControl x:Class="Vincontrol.Vinsell.WPFLibrary.ChartControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+              xmlns:chartingToolkit="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
+             xmlns:local="clr-namespace:Vincontrol.Vinsell.WPFLibrary.Converters"
+             xmlns:visualizationToolkit="clr-namespace:System.Windows.Controls.DataVisualization;assembly=System.Windows.Controls.DataVisualization.Toolkit"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="1000">
+  
+    <UserControl.Resources>
+        <Style x:Key="PlotStyle" TargetType="{x:Type chartingToolkit:Chart}" >
+            <Setter Property="PlotAreaStyle">
+                <Setter.Value>
+                    <Style TargetType="{x:Type Grid}">
+                        <Setter Property="Background">
+                            <Setter.Value>
+                                <SolidColorBrush Color="Red" Opacity="0.1"></SolidColorBrush>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <SolidColorBrush x:Key="OverYellowBrush" Color="Yellow" Opacity="0.3"  />
+        <SolidColorBrush x:Key="OverGreenBrush" Color="Green" Opacity="0.7"/>
+        <SolidColorBrush x:Key="UnderYellowBrush" Color="Yellow" />
+        <SolidColorBrush x:Key="UnderRed" Color="Red"  />
+
+        <Style x:Key="ScatterPositive"
+  			   TargetType="chartingToolkit:ScatterDataPoint">
+
+            <Setter Property="Template">
+
+                <Setter.Value>
+
+                    <ControlTemplate TargetType="chartingToolkit:ScatterDataPoint">
+                        <Ellipse Fill='Black' Stroke="Gray" StrokeThickness="1" />
+                    </ControlTemplate>
+
+                </Setter.Value>
+
+            </Setter>
+
+        </Style>
+        <Style x:Key="ComparedPoint"
+  			   TargetType="chartingToolkit:ScatterDataPoint">
+            <Setter Property="Width" Value="20" />
+            <Setter Property="Height" Value="20" />
+
+        </Style>
+        <local:FormatMileageConverter x:Key="FormatMileage" />
+        <local:FormatPriceConverter x:Key="FormatPrice" />
+       
+
+    </UserControl.Resources>
+    
+    <Grid Height="921" Background="DarkGray">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="220"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <chartingToolkit:Chart Name="lineChart"  VerticalAlignment="Top" Margin="1,2,0,0" Height="440"   >
+            <chartingToolkit:Chart.LegendStyle>
+                <Style TargetType="Control">
+                    <Setter Property="Height" Value="0" />
+                    <Setter Property="Width" Value="0" />
+                </Style>
+            </chartingToolkit:Chart.LegendStyle>
+            <chartingToolkit:Chart.Axes>
+                <chartingToolkit:LinearAxis Orientation="Y" Minimum="0" Title="Price($)" FontSize="16">
+                    <chartingToolkit:LinearAxis.AxisLabelStyle>
+                        <Style TargetType="chartingToolkit:AxisLabel">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="chartingToolkit:AxisLabel">
+                                        <TextBlock  Text="{TemplateBinding FormattedContent, Converter={StaticResource FormatPrice}}"/>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </chartingToolkit:LinearAxis.AxisLabelStyle>
+                </chartingToolkit:LinearAxis>
+                <chartingToolkit:LinearAxis Orientation="X" Minimum="0" Title="Odometer(Miles)" FontSize="16"  >
+                    <chartingToolkit:LinearAxis.AxisLabelStyle>
+                        <Style TargetType="chartingToolkit:AxisLabel">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="chartingToolkit:AxisLabel">
+                                        <TextBlock  Text="{TemplateBinding FormattedContent, Converter={StaticResource FormatMileage}}"/>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </chartingToolkit:LinearAxis.AxisLabelStyle>
+                </chartingToolkit:LinearAxis>
+            </chartingToolkit:Chart.Axes>
+
+            <chartingToolkit:LineSeries   DependentValuePath="Price" Background="Red"
+                    IndependentValuePath="Mileage" ItemsSource="{Binding [0]}" 
+                    IsSelectionEnabled="True"/>
+            <chartingToolkit:LineSeries   DependentValuePath="Price" Background="Yellow"
+                    IndependentValuePath="Mileage" ItemsSource="{Binding [1]}" 
+                    IsSelectionEnabled="True"/>
+            <chartingToolkit:LineSeries   Background="Green" DependentValuePath="Price"  
+                    IndependentValuePath="Mileage" ItemsSource="{Binding [2]}" 
+                    IsSelectionEnabled="True"/>
+            <chartingToolkit:LineSeries   DependentValuePath="Price"   Background="Yellow"
+                    IndependentValuePath="Mileage" ItemsSource="{Binding [3]}" 
+                    IsSelectionEnabled="True">
+            </chartingToolkit:LineSeries>
+            <chartingToolkit:LineSeries    DependentValuePath="Price"   Background="Red"
+                    IndependentValuePath="Mileage" ItemsSource="{Binding [4]}" 
+                    IsSelectionEnabled="True">
+            </chartingToolkit:LineSeries>
+            <chartingToolkit:ScatterSeries Background="Gray"  DependentValuePath="Price" 
+                    IndependentValuePath="Mileage" ItemsSource="{Binding [5]}"  
+                    IsSelectionEnabled="True"  DataPointStyle="{StaticResource ScatterPositive}" 
+                                           SelectionChanged="DataPointSeries_OnSelectionChanged">
+            </chartingToolkit:ScatterSeries>
+            <chartingToolkit:ScatterSeries ItemsSource="{Binding [6]}" DataPointStyle="{StaticResource ComparedPoint}"  DependentValuePath="Price" 
+                    IndependentValuePath="Mileage" >
+                
+            </chartingToolkit:ScatterSeries>
+            <chartingToolkit:Chart.Palette>
+                <visualizationToolkit:ResourceDictionaryCollection>
+                    <ResourceDictionary>
+                        <Style x:Key="DataPointStyle" TargetType="Control">
+                            <Setter Property="Background" Value="Red"/>
+                        </Style>
+                    </ResourceDictionary>
+                    <ResourceDictionary>
+                        <Style x:Key="DataPointStyle" TargetType="Control">
+                            <Setter Property="Background" Value="Yellow"/>
+                        </Style>
+                    </ResourceDictionary>
+                    <ResourceDictionary>
+                        <Style x:Key="DataPointStyle" TargetType="Control">
+                            <Setter Property="Background" Value="Green"/>
+                        </Style>
+                    </ResourceDictionary>
+                    <ResourceDictionary>
+                        <Style x:Key="DataPointStyle" TargetType="Control">
+                            <Setter Property="Background"  Value="Yellow"/>
+                        </Style>
+                    </ResourceDictionary>
+                    <ResourceDictionary>
+                        <Style x:Key="DataPointStyle" TargetType="Control">
+                            <Setter Property="Background" Value="Red"/>
+                        </Style>
+                    </ResourceDictionary>
+                    <ResourceDictionary>
+                        <Style x:Key="DataPointStyle" TargetType="Control">
+                            <Setter Property="Background" Value="Black"/>
+                        </Style>
+                    </ResourceDictionary>
+
+                </visualizationToolkit:ResourceDictionaryCollection>
+            </chartingToolkit:Chart.Palette>
+        </chartingToolkit:Chart>
+        <StackPanel Background="LightGray"  Grid.Column="1"  >
+            <Border BorderThickness="5" BorderBrush="LightBlue" x:Name="VehicleDetail">
+                <WrapPanel Orientation="Vertical">
+                    <StackPanel  Background="White" Orientation="Horizontal" >
+                        <WrapPanel  Margin="5" Orientation="Horizontal" Width="199" >
+                            <TextBlock FontSize="15" Text="{Binding Title}" TextWrapping="Wrap" ></TextBlock>
+                        </WrapPanel>
+                    </StackPanel>
+                    <StackPanel Background="White"  Orientation="Horizontal" >
+                        <Image  Margin="5" Source="{Binding ThumbnailURL}" Width="150" Height="100"></Image>
+                    </StackPanel>
+                    <StackPanel Background="White">
+                        <TextBlock  Margin="5" TextWrapping="Wrap">
+                    <Hyperlink NavigateUri="{Binding AutoTraderListingURL}" >AutoTrader Listing</Hyperlink>
+                        </TextBlock>
+
+                    </StackPanel>
+                    <StackPanel  Background="White" Orientation="Horizontal" VerticalAlignment="Center">
+                        <TextBlock Text="Price: " Width="61" Margin="5" FontSize="15"></TextBlock>
+                        <TextBlock TextWrapping="Wrap" Width="138" Text="{Binding Price}" ></TextBlock>
+                    </StackPanel>
+                    <StackPanel Background="White" Orientation="Horizontal" VerticalAlignment="Center">
+
+                        <TextBlock  Margin="5" TextWrapping="Wrap" Foreground="Red" Text="Miles: " Width="61" FontSize="15"></TextBlock>
+                            <TextBlock Width="138" TextWrapping="Wrap" Foreground="Red" Text="{Binding Mileage}"></TextBlock>
+                       
+                    </StackPanel>
+
+                    <StackPanel Background="White"  Orientation="Horizontal" VerticalAlignment="Center">
+                        <TextBlock  Margin="5" TextWrapping="Wrap" Text="Seller: " Width="61" FontSize="15"></TextBlock>
+                        <TextBlock TextWrapping="Wrap" Width="138" Text="{Binding Seller}"></TextBlock>
+                    </StackPanel>
+
+                    <StackPanel Background="White"  Orientation="Horizontal" VerticalAlignment="Center">
+                        <TextBlock  Margin="5" TextWrapping="Wrap" Text="Address: " Width="61" FontSize="15"></TextBlock>
+                        <TextBlock TextWrapping="Wrap" Width="138" Text="{Binding SellerAddress}" ></TextBlock>
+                    </StackPanel>
+
+                    <StackPanel Background="White"  Orientation="Horizontal" VerticalAlignment="Center">
+                        <TextBlock  Margin="5" Text="Distance: "  Width="61" FontSize="15"></TextBlock>
+                        <TextBlock TextWrapping="Wrap" Width="138" Text="{Binding Distance}" ></TextBlock>
+                    </StackPanel>
+                </WrapPanel>
+            </Border>
+            <Border BorderThickness="5" BorderBrush="LightBlue" x:Name="CurrentVehicle">
+                <WrapPanel Background="White" Orientation="Horizontal" >
+                    <StackPanel  Background="White" Orientation="Vertical">
+                        <WrapPanel   Margin="5" Orientation="Horizontal" Width="199">
+                            <TextBlock FontSize="15"  TextWrapping="Wrap"  Text="{Binding Title}"></TextBlock>
+                        </WrapPanel>
+                        <StackPanel  Background="White" Orientation="Horizontal" VerticalAlignment="Center">
+                            <TextBlock FontSize="15"  Margin="5" Text="Price: " Width="61"></TextBlock>
+                            <TextBlock TextWrapping="Wrap" Width="138" Text="{Binding Price}" ></TextBlock>
+                        </StackPanel>
+                        <StackPanel Background="White" Orientation="Horizontal" VerticalAlignment="Center">
+
+                            <TextBlock FontSize="15" Margin="5" TextWrapping="Wrap"  Text="Miles: " Width="61"></TextBlock>
+                            <TextBlock Width="138" TextWrapping="Wrap" Text="{Binding Mileage}"></TextBlock>
+
+                        </StackPanel>
+                    </StackPanel>
+                </WrapPanel>
+            </Border>
+
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VinChatModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="VinChatEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="lasts" EntityType="VinChatModel.last" />
+    <EntitySet Name="privacy_default_list" EntityType="VinChatModel.privacy_default_list" />
+    <EntitySet Name="privacy_list" EntityType="VinChatModel.privacy_list" />
+    <EntitySet Name="privacy_list_data" EntityType="VinChatModel.privacy_list_data" />
+    <EntitySet Name="private_storage" EntityType="VinChatModel.private_storage" />
+    <EntitySet Name="pubsub_node" EntityType="VinChatModel.pubsub_node" />
+    <EntitySet Name="pubsub_state" EntityType="VinChatModel.pubsub_state" />
+    <EntitySet Name="roster_version" EntityType="VinChatModel.roster_version" />
+    <EntitySet Name="rostergroups" EntityType="VinChatModel.rostergroup" />
+    <EntitySet Name="rosterusers" EntityType="VinChatModel.rosteruser" />
+    <EntitySet Name="spools" EntityType="VinChatModel.spool" />
+    <EntitySet Name="users" EntityType="VinChatModel.user" />
+    <EntitySet Name="vcards" EntityType="VinChatModel.vcard" />
+    <EntitySet Name="vcard_search" EntityType="VinChatModel.vcard_search" />
+    <AssociationSet Name="FK_pubsub_state" Association="VinChatModel.FK_pubsub_state">
+      <End Role="pubsub_node" EntitySet="pubsub_node" />
+      <End Role="pubsub_state" EntitySet="pubsub_state" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="last">
+    <Key>
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="username" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="seconds" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="state" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Modify_Date" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="privacy_default_list">
+    <Key>
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="username" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="privacy_list">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="username" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="id" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+  </EntityType>
+  <EntityType Name="privacy_list_data">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="t" />
+      <PropertyRef Name="value" />
+      <PropertyRef Name="action" />
+      <PropertyRef Name="ord" />
+      <PropertyRef Name="match_all" />
+      <PropertyRef Name="match_iq" />
+      <PropertyRef Name="match_message" />
+      <PropertyRef Name="match_presence_in" />
+      <PropertyRef Name="match_presence_out" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="t" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="value" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="action" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="ord" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="match_all" Type="Boolean" Nullable="false" />
+    <Property Name="match_iq" Type="Boolean" Nullable="false" />
+    <Property Name="match_message" Type="Boolean" Nullable="false" />
+    <Property Name="match_presence_in" Type="Boolean" Nullable="false" />
+    <Property Name="match_presence_out" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="private_storage">
+    <Key>
+      <PropertyRef Name="username" />
+      <PropertyRef Name="namespace" />
+      <PropertyRef Name="data" />
+    </Key>
+    <Property Name="username" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="namespace" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="data" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="pubsub_node">
+    <Key>
+      <PropertyRef Name="nodeid" />
+    </Key>
+    <Property Name="host" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="node" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="parent" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="type" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="nodeid" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="pubsub_state" Relationship="VinChatModel.FK_pubsub_state" FromRole="pubsub_node" ToRole="pubsub_state" />
+  </EntityType>
+  <EntityType Name="pubsub_state">
+    <Key>
+      <PropertyRef Name="stateid" />
+    </Key>
+    <Property Name="nodeid" Type="Int64" />
+    <Property Name="jid" Type="String" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="affiliation" Type="String" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="subscriptions" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="stateid" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="pubsub_node" Relationship="VinChatModel.FK_pubsub_state" FromRole="pubsub_state" ToRole="pubsub_node" />
+  </EntityType>
+  <EntityType Name="roster_version">
+    <Key>
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="username" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="version" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="rostergroup">
+    <Key>
+      <PropertyRef Name="username" />
+      <PropertyRef Name="jid" />
+      <PropertyRef Name="grp" />
+    </Key>
+    <Property Name="username" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="jid" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="grp" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="rosteruser">
+    <Key>
+      <PropertyRef Name="username" />
+      <PropertyRef Name="jid" />
+    </Key>
+    <Property Name="username" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="jid" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="nick" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="subscription" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="ask" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="askmessage" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="server" Type="String" Nullable="false" MaxLength="1" Unicode="false" FixedLength="true" />
+    <Property Name="subscribe" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="type" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="spool">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="id" Type="Decimal" Nullable="false" Precision="19" Scale="0" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="xml" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="notifyprocessed" Type="Boolean" />
+    <Property Name="created" Type="DateTime" Precision="3" />
+    <Property Name="MustDelete" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="username" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="created" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="vcard">
+    <Key>
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="username" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="vcard1" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="vcard_search">
+    <Key>
+      <PropertyRef Name="username" />
+      <PropertyRef Name="lusername" />
+      <PropertyRef Name="fn" />
+      <PropertyRef Name="lfn" />
+      <PropertyRef Name="family" />
+      <PropertyRef Name="lfamily" />
+      <PropertyRef Name="given" />
+      <PropertyRef Name="lgiven" />
+      <PropertyRef Name="middle" />
+      <PropertyRef Name="lmiddle" />
+      <PropertyRef Name="nickname" />
+      <PropertyRef Name="lnickname" />
+      <PropertyRef Name="bday" />
+      <PropertyRef Name="lbday" />
+      <PropertyRef Name="ctry" />
+      <PropertyRef Name="lctry" />
+      <PropertyRef Name="locality" />
+      <PropertyRef Name="llocality" />
+      <PropertyRef Name="email" />
+      <PropertyRef Name="lemail" />
+      <PropertyRef Name="orgname" />
+      <PropertyRef Name="lorgname" />
+      <PropertyRef Name="orgunit" />
+      <PropertyRef Name="lorgunit" />
+    </Key>
+    <Property Name="username" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="lusername" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="fn" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="lfn" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="family" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="lfamily" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="given" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="lgiven" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="middle" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="lmiddle" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="nickname" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="lnickname" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="bday" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="lbday" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="ctry" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="lctry" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="locality" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="llocality" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="email" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="lemail" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="orgname" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="lorgname" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+    <Property Name="orgunit" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="lorgunit" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_pubsub_state">
+    <End Role="pubsub_node" Type="VinChatModel.pubsub_node" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="pubsub_state" Type="VinChatModel.pubsub_state" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="pubsub_node">
+        <PropertyRef Name="nodeid" />
+      </Principal>
+      <Dependent Role="pubsub_state">
+        <PropertyRef Name="nodeid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

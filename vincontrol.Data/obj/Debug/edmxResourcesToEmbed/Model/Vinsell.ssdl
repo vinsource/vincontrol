@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="VinsellModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="VinsellModelStoreContainer">
+    <EntitySet Name="dailylogmanheim" EntityType="VinsellModel.Store.dailylogmanheim" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="manheim_auctions" EntityType="VinsellModel.Store.manheim_auctions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="manheim_bodystyles" EntityType="VinsellModel.Store.manheim_bodystyles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="manheim_Carfax" EntityType="VinsellModel.Store.manheim_Carfax" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="manheim_exteriorcolors" EntityType="VinsellModel.Store.manheim_exteriorcolors" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="manheim_favorites" EntityType="VinsellModel.Store.manheim_favorites" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="manheim_kbbtrims" EntityType="VinsellModel.Store.manheim_kbbtrims" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="manheim_KellyBlueBook" EntityType="VinsellModel.Store.manheim_KellyBlueBook" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="manheim_makes" EntityType="VinsellModel.Store.manheim_makes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="manheim_ManheimValue" EntityType="VinsellModel.Store.manheim_ManheimValue" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="manheim_markettrim" EntityType="VinsellModel.Store.manheim_markettrim" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="manheim_models" EntityType="VinsellModel.Store.manheim_models" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="manheim_notes" EntityType="VinsellModel.Store.manheim_notes" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="manheim_notifications" EntityType="VinsellModel.Store.manheim_notifications" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="manheim_regions" EntityType="VinsellModel.Store.manheim_regions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="manheim_sellers" EntityType="VinsellModel.Store.manheim_sellers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="manheim_states" EntityType="VinsellModel.Store.manheim_states" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="manheim_trims" EntityType="VinsellModel.Store.manheim_trims" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="manheim_urls" EntityType="VinsellModel.Store.manheim_urls" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="manheim_vehicles" EntityType="VinsellModel.Store.manheim_vehicles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="manheim_vehicles_sold" EntityType="VinsellModel.Store.manheim_vehicles_sold" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="manheim_yearmakemodel" EntityType="VinsellModel.Store.manheim_yearmakemodel" store:Type="Tables" store:Schema="dbo" store:Name="manheim_yearmakemodel">
+      <DefiningQuery>SELECT 
+      [manheim_yearmakemodel].[manheim_yearmakemodel_id] AS [manheim_yearmakemodel_id], 
+      [manheim_yearmakemodel].[year] AS [year], 
+      [manheim_yearmakemodel].[make] AS [make], 
+      [manheim_yearmakemodel].[model] AS [model], 
+      [manheim_yearmakemodel].[datestamp] AS [datestamp]
+      FROM [dbo].[manheim_yearmakemodel] AS [manheim_yearmakemodel]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="manheim_years" EntityType="VinsellModel.Store.manheim_years" store:Type="Tables" store:Schema="dbo" store:Name="manheim_years">
+      <DefiningQuery>SELECT 
+      [manheim_years].[Year] AS [Year]
+      FROM [dbo].[manheim_years] AS [manheim_years]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="manheimchartselection" EntityType="VinsellModel.Store.manheimchartselection" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ManheimCredentials" EntityType="VinsellModel.Store.ManheimCredentials" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_manheim_favorites_manheim_vehicles" Association="VinsellModel.Store.FK_manheim_favorites_manheim_vehicles">
+      <End Role="manheim_vehicles" EntitySet="manheim_vehicles" />
+      <End Role="manheim_favorites" EntitySet="manheim_favorites" />
+    </AssociationSet>
+    <AssociationSet Name="FK_manheim_favorites_manheim_vehicles_sold" Association="VinsellModel.Store.FK_manheim_favorites_manheim_vehicles_sold">
+      <End Role="manheim_vehicles_sold" EntitySet="manheim_vehicles_sold" />
+      <End Role="manheim_favorites" EntitySet="manheim_favorites" />
+    </AssociationSet>
+    <AssociationSet Name="FK_manheim_notes_manheim_vehicles" Association="VinsellModel.Store.FK_manheim_notes_manheim_vehicles">
+      <End Role="manheim_vehicles" EntitySet="manheim_vehicles" />
+      <End Role="manheim_notes" EntitySet="manheim_notes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_manheim_notes_manheim_vehicles_sold" Association="VinsellModel.Store.FK_manheim_notes_manheim_vehicles_sold">
+      <End Role="manheim_vehicles_sold" EntitySet="manheim_vehicles_sold" />
+      <End Role="manheim_notes" EntitySet="manheim_notes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="dailylogmanheim">
+    <Key>
+      <PropertyRef Name="Logid" />
+    </Key>
+    <Property Name="Logid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PowerSearchLink" Type="nchar" MaxLength="255" />
+    <Property Name="ErrorMessage" Type="nvarchar(max)" />
+    <Property Name="DateStamp" Type="datetime" />
+  </EntityType>
+  <EntityType Name="manheim_auctions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="State" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="DateStamp" Type="datetime" />
+    <Property Name="Code" Type="nvarchar" MaxLength="50" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="50" />
+    <Property Name="StreetAddress" Type="nvarchar" MaxLength="100" />
+    <Property Name="CityAddress" Type="nvarchar" MaxLength="200" />
+    <Property Name="Longitude" Type="nvarchar" MaxLength="50" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="50" />
+    <Property Name="Region" Type="nchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="manheim_bodystyles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="manheim_Carfax">
+    <Key>
+      <PropertyRef Name="CarfaxId" />
+    </Key>
+    <Property Name="CarfaxId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Vin" Type="nvarchar" Nullable="false" MaxLength="45" />
+    <Property Name="Owner" Type="int" />
+    <Property Name="ServiceRecord" Type="int" />
+    <Property Name="WindowSticker" Type="nvarchar(max)" />
+    <Property Name="PriorRental" Type="bit" />
+    <Property Name="Accident" Type="int" />
+    <Property Name="DateStamp" Type="datetime" />
+    <Property Name="LastUpdated" Type="datetime" />
+    <Property Name="Expiration" Type="datetime" />
+    <Property Name="VehicleId" Type="int" />
+  </EntityType>
+  <EntityType Name="manheim_exteriorcolors">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="manheim_favorites">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="VehicleId" Type="int" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="UserStamp" Type="int" Nullable="false" />
+    <Property Name="DateStamp" Type="datetime" Nullable="false" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="20" />
+    <Property Name="SoldVehicleId" Type="int" />
+  </EntityType>
+  <EntityType Name="manheim_kbbtrims">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DealershipId" Type="int" Nullable="false" />
+    <Property Name="Vin" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="TrimId" Type="int" Nullable="false" />
+    <Property Name="Options" Type="nvarchar" MaxLength="500" />
+    <Property Name="TransmissionId" Type="int" />
+    <Property Name="DriveTrainId" Type="int" />
+    <Property Name="DateStamp" Type="datetime" />
+  </EntityType>
+  <EntityType Name="manheim_KellyBlueBook">
+    <Key>
+      <PropertyRef Name="KellyBlueBookId" />
+    </Key>
+    <Property Name="KellyBlueBookId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Vin" Type="nvarchar" Nullable="false" MaxLength="45" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="45" />
+    <Property Name="TradeInFairPrice" Type="decimal" />
+    <Property Name="TradeInGoodPrice" Type="decimal" />
+    <Property Name="TradeInVeryGoodPrice" Type="decimal" />
+    <Property Name="LastUpdated" Type="datetime" />
+    <Property Name="Expiration" Type="datetime" />
+    <Property Name="BaseWholeSale" Type="decimal" />
+    <Property Name="MileageAdjustment" Type="decimal" />
+    <Property Name="WholeSale" Type="decimal" />
+    <Property Name="TrimId" Type="int" />
+    <Property Name="VehicleStatusCodeId" Type="smallint" />
+    <Property Name="DateStamp" Type="datetime" />
+    <Property Name="VehicleId" Type="int" />
+    <Property Name="ModelId" Type="int" />
+  </EntityType>
+  <EntityType Name="manheim_makes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="Year" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="manheim_ManheimValue">
+    <Key>
+      <PropertyRef Name="ManheimValueId" />
+    </Key>
+    <Property Name="ManheimValueId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Vin" Type="nvarchar" Nullable="false" MaxLength="45" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="45" />
+    <Property Name="AuctionLowestPrice" Type="decimal" />
+    <Property Name="AuctionAveragePrice" Type="decimal" />
+    <Property Name="AuctionHighestPrice" Type="decimal" />
+    <Property Name="DateAdded" Type="datetime" />
+    <Property Name="LastUpdated" Type="datetime" />
+    <Property Name="Expiration" Type="datetime" />
+    <Property Name="TrimServiceId" Type="int" />
+    <Property Name="Year" Type="int" />
+    <Property Name="MakeServiceId" Type="int" />
+    <Property Name="ModelServiceId" Type="int" />
+    <Property Name="VehicleStatusCodeId" Type="smallint" />
+    <Property Name="VehicleId" Type="int" />
+  </EntityType>
+  <EntityType Name="manheim_markettrim">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Vin" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="Trim" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="DateStamp" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="manheim_models">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="Make" Type="nvarchar" MaxLength="150" />
+    <Property Name="Year" Type="int" />
+  </EntityType>
+  <EntityType Name="manheim_notes">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="VehicleId" Type="int" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="UserStamp" Type="int" Nullable="false" />
+    <Property Name="DateStamp" Type="datetime" Nullable="false" />
+    <Property Name="Note" Type="text" />
+    <Property Name="Vin" Type="nvarchar" MaxLength="20" />
+    <Property Name="SoldVehicleId" Type="int" />
+  </EntityType>
+  <EntityType Name="manheim_notifications">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="UserStamp" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="DateStamp" Type="datetime" Nullable="false" />
+    <Property Name="Auction" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="manheim_regions">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="manheim_sellers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="Auction" Type="nvarchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="manheim_states">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Region" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="manheim_trims">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="150" />
+    <Property Name="Model" Type="nvarchar" MaxLength="150" />
+    <Property Name="Make" Type="nvarchar" MaxLength="150" />
+    <Property Name="Year" Type="int" />
+  </EntityType>
+  <EntityType Name="manheim_urls">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AuctionCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="Url" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="manheim_vehicles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Vin" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="Make" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Model" Type="nvarchar" MaxLength="150" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="150" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="150" />
+    <Property Name="Engine" Type="nvarchar" MaxLength="150" />
+    <Property Name="Litters" Type="nvarchar" MaxLength="50" />
+    <Property Name="Doors" Type="int" Nullable="false" />
+    <Property Name="BodyStyle" Type="nvarchar" MaxLength="150" />
+    <Property Name="VehicleType" Type="nvarchar" MaxLength="50" />
+    <Property Name="DriveTrain" Type="nvarchar" MaxLength="150" />
+    <Property Name="Transmission" Type="nvarchar" MaxLength="150" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="150" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="150" />
+    <Property Name="AsIs" Type="bit" />
+    <Property Name="Cr" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mmr" Type="int" Nullable="false" />
+    <Property Name="Lane" Type="int" />
+    <Property Name="Run" Type="int" />
+    <Property Name="SaleDate" Type="datetime" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="Auction" Type="nvarchar" MaxLength="150" />
+    <Property Name="Url" Type="nvarchar" MaxLength="500" />
+    <Property Name="DateStamp" Type="datetime" />
+    <Property Name="Images" Type="text" />
+    <Property Name="Seller" Type="nvarchar" MaxLength="250" />
+    <Property Name="Equipment" Type="nvarchar(max)" />
+    <Property Name="MmrAbove" Type="int" />
+    <Property Name="MmrBelow" Type="int" />
+    <Property Name="Stereo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Airbags" Type="nvarchar" MaxLength="50" />
+    <Property Name="InteriorType" Type="nvarchar" MaxLength="50" />
+    <Property Name="Comment" Type="text" />
+    <Property Name="Category" Type="nvarchar" MaxLength="150" />
+    <Property Name="LaneDescription" Type="nvarchar" MaxLength="500" />
+    <Property Name="CrUrl" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="manheim_vehicles_sold">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Vin" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Year" Type="int" Nullable="false" />
+    <Property Name="Make" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Model" Type="nvarchar" MaxLength="150" />
+    <Property Name="Trim" Type="nvarchar" MaxLength="150" />
+    <Property Name="Mileage" Type="int" />
+    <Property Name="FuelType" Type="nvarchar" MaxLength="150" />
+    <Property Name="Engine" Type="nvarchar" MaxLength="150" />
+    <Property Name="Litters" Type="nvarchar" MaxLength="50" />
+    <Property Name="Doors" Type="int" Nullable="false" />
+    <Property Name="BodyStyle" Type="nvarchar" MaxLength="150" />
+    <Property Name="VehicleType" Type="nvarchar" MaxLength="50" />
+    <Property Name="DriveTrain" Type="nvarchar" MaxLength="150" />
+    <Property Name="Transmission" Type="nvarchar" MaxLength="150" />
+    <Property Name="ExteriorColor" Type="nvarchar" MaxLength="150" />
+    <Property Name="InteriorColor" Type="nvarchar" MaxLength="150" />
+    <Property Name="AsIs" Type="bit" />
+    <Property Name="Cr" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mmr" Type="int" Nullable="false" />
+    <Property Name="Lane" Type="int" />
+    <Property Name="Run" Type="int" />
+    <Property Name="SaleDate" Type="datetime" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="Auction" Type="nvarchar" MaxLength="150" />
+    <Property Name="Url" Type="nvarchar" MaxLength="500" />
+    <Property Name="DateStamp" Type="datetime" />
+    <Property Name="DateStampSold" Type="datetime" />
+    <Property Name="Images" Type="text" />
+    <Property Name="Seller" Type="nvarchar" MaxLength="250" />
+    <Property Name="Equipment" Type="nvarchar(max)" />
+    <Property Name="MmrAbove" Type="int" />
+    <Property Name="MmrBelow" Type="int" />
+    <Property Name="Stereo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Airbags" Type="nvarchar" MaxLength="50" />
+    <Property Name="InteriorType" Type="nvarchar" MaxLength="50" />
+    <Property Name="VehicleId" Type="int" />
+    <Property Name="Comment" Type="text" />
+    <Property Name="Category" Type="nvarchar" MaxLength="150" />
+    <Property Name="LaneDescription" Type="nvarchar" MaxLength="500" />
+    <Property Name="CrUrl" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Vinsell.dbo.manheim_yearmakemodel' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="manheim_yearmakemodel">
+    <Key>
+      <PropertyRef Name="manheim_yearmakemodel_id" />
+    </Key>
+    <Property Name="manheim_yearmakemodel_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="year" Type="int" />
+    <Property Name="make" Type="nchar" MaxLength="100" />
+    <Property Name="model" Type="nchar" MaxLength="200" />
+    <Property Name="datestamp" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Vinsell.dbo.manheim_years' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="manheim_years">
+    <Key>
+      <PropertyRef Name="Year" />
+    </Key>
+    <Property Name="Year" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="manheimchartselection">
+    <Key>
+      <PropertyRef Name="chartselectionid" />
+    </Key>
+    <Property Name="chartselectionid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="vin" Type="nvarchar" MaxLength="18" />
+    <Property Name="dealerId" Type="int" />
+    <Property Name="isCarsCom" Type="bit" />
+    <Property Name="options" Type="nvarchar" MaxLength="255" />
+    <Property Name="trims" Type="nvarchar" MaxLength="550" />
+    <Property Name="isCertified" Type="bit" />
+    <Property Name="isAll" Type="bit" />
+    <Property Name="isFranchise" Type="bit" />
+    <Property Name="isIndependant" Type="bit" />
+    <Property Name="screen" Type="nvarchar" MaxLength="45" />
+    <Property Name="sourceType" Type="nvarchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="ManheimCredentials">
+    <Key>
+      <PropertyRef Name="CredentialId" />
+    </Key>
+    <Property Name="CredentialId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CredentialUsername" Type="nchar" MaxLength="100" />
+    <Property Name="CredentialPassword" Type="nchar" MaxLength="100" />
+    <Property Name="DateStamp" Type="datetime" />
+  </EntityType>
+  <Association Name="FK_manheim_favorites_manheim_vehicles">
+    <End Role="manheim_vehicles" Type="VinsellModel.Store.manheim_vehicles" Multiplicity="0..1" />
+    <End Role="manheim_favorites" Type="VinsellModel.Store.manheim_favorites" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="manheim_vehicles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="manheim_favorites">
+        <PropertyRef Name="VehicleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_manheim_favorites_manheim_vehicles_sold">
+    <End Role="manheim_vehicles_sold" Type="VinsellModel.Store.manheim_vehicles_sold" Multiplicity="0..1" />
+    <End Role="manheim_favorites" Type="VinsellModel.Store.manheim_favorites" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="manheim_vehicles_sold">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="manheim_favorites">
+        <PropertyRef Name="SoldVehicleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_manheim_notes_manheim_vehicles">
+    <End Role="manheim_vehicles" Type="VinsellModel.Store.manheim_vehicles" Multiplicity="0..1" />
+    <End Role="manheim_notes" Type="VinsellModel.Store.manheim_notes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="manheim_vehicles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="manheim_notes">
+        <PropertyRef Name="VehicleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_manheim_notes_manheim_vehicles_sold">
+    <End Role="manheim_vehicles_sold" Type="VinsellModel.Store.manheim_vehicles_sold" Multiplicity="0..1" />
+    <End Role="manheim_notes" Type="VinsellModel.Store.manheim_notes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="manheim_vehicles_sold">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="manheim_notes">
+        <PropertyRef Name="SoldVehicleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="e3c335a9-94b0-45e3-ba5f-9d11cfa819b2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://idws.syndication.kbb.com/3.0/VehicleInformationService2008R2.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="VehicleInformationService2008R2.xsd" MetadataType="Schema" ID="1ecacf9b-c6bc-49e6-b6f7-7eb3426836c4" SourceId="1" SourceUrl="http://idws.syndication.kbb.com/3.0/VehicleInformationService2008R2.svc?xsd=xsd2" />
+    <MetadataFile FileName="VehicleInformationService2008R2.wsdl" MetadataType="Wsdl" ID="f1fbd42e-70d8-4f2f-a035-d7c8849b8f9e" SourceId="1" SourceUrl="http://idws.syndication.kbb.com/3.0/VehicleInformationService2008R2.svc?wsdl" />
+    <MetadataFile FileName="VehicleInformationService2008R21.xsd" MetadataType="Schema" ID="1857c70c-a7f7-4f51-9214-69ea4f5da516" SourceId="1" SourceUrl="http://idws.syndication.kbb.com/3.0/VehicleInformationService2008R2.svc?xsd=xsd0" />
+    <MetadataFile FileName="VehicleInformationService2008R21.wsdl" MetadataType="Wsdl" ID="0fac4cae-9d3c-4a75-9d70-d6f3c33b329b" SourceId="1" SourceUrl="http://idws.syndication.kbb.com/3.0/VehicleInformationService2008R2.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="VehicleInformationService2008R22.xsd" MetadataType="Schema" ID="5b57cd66-5087-45d4-bce7-716db1919c05" SourceId="1" SourceUrl="http://idws.syndication.kbb.com/3.0/VehicleInformationService2008R2.svc?xsd=xsd4" />
+    <MetadataFile FileName="VehicleInformationService2008R23.xsd" MetadataType="Schema" ID="8d1c6ab9-6b30-49ff-8804-190bc5b35d95" SourceId="1" SourceUrl="http://idws.syndication.kbb.com/3.0/VehicleInformationService2008R2.svc?xsd=xsd3" />
+    <MetadataFile FileName="VehicleInformationService2008R24.xsd" MetadataType="Schema" ID="b6640afe-c001-4039-b9ea-6adfe0851e8c" SourceId="1" SourceUrl="http://idws.syndication.kbb.com/3.0/VehicleInformationService2008R2.svc?xsd=xsd1" />
+    <MetadataFile FileName="VehicleInformationService2008R2.disco" MetadataType="Disco" ID="232c7d34-8264-4641-ae22-69ae969761fc" SourceId="1" SourceUrl="http://idws.syndication.kbb.com/3.0/VehicleInformationService2008R2.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

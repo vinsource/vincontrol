@@ -1,0 +1,79 @@
+﻿<reviewSite name="local.yahoo.com" url="local.yahoo.com">
+  <namespaces>
+    <namespace name="ns" value="http://www.w3.org/1999/xhtml"/>
+  </namespaces>
+  <pages>
+    <reviewPage name="" dealerId="0" url="" hasAdditionalDealerReview="false" hasAdditionalUserReview="false" hasDetailUserReview="false" category="Sales">
+      <about context="//ns:ul[@id='attrs-ul']/ns:li[2]/ns:span[2]"/>
+      <overallScore context="//ns:span[@id='yl_biz_rnr']/@class">
+        <replace>
+          <filter original="yl-biz-rnr" replace=""></filter>
+          <filter original="yl-spritemulti" replace=""></filter>
+          <filter original="star1" replace="1"></filter>
+          <filter original="star2" replace="2"></filter>
+          <filter original="star3" replace="3"></filter>
+          <filter original="star4" replace="4"></filter>
+          <filter original="star5" replace="5"></filter>
+          <filter original="star6" replace="6"></filter>
+          <filter original="star7" replace="7"></filter>
+          <filter original="star8" replace="8"></filter>
+          <filter original="star9" replace="9"></filter>
+          <filter original="star10" replace="10"></filter>
+        </replace>
+      </overallScore>
+      <additionalReview>
+        <customerService context=""/>
+        <qualityOfWork context=""/>
+        <friendliness context=""/>
+        <overallExperience context=""/>
+        <pricing context=""/>
+        <buyingProcess context=""/>
+        <overallFacilities context=""/>
+      </additionalReview>
+    </reviewPage>
+
+  </pages>
+
+  <reviews>
+    <reviewNode context="//ns:ul[@id='user-detail-list-ul']/ns:li"/>
+    
+    <reviewUrl context=""/>
+    <reviewAuthor context="./ns:div[2]/ns:div/ns:div/ns:a"/>
+    <reviewDate context="./ns:div[2]/ns:div/ns:span">
+      <replace>
+        <filter original="Created on" replace=""></filter>
+        <filter original="/13" replace="/2013"></filter>
+        <filter original="/12" replace="/2012"></filter>
+        <filter original="/11" replace="/2011"></filter>
+      </replace>
+    </reviewDate>
+    <reviewContent context="./ns:div[2]/ns:div[4]"/>
+    <reviewDetailContent context=""/>
+    <reviewRating context="./ns:div[2]/ns:div[2]/@class">
+      <replace>
+        <filter original="yl-spritemulti yl-starmin rating-star" replace=""></filter>
+        <filter original="yl-rate1" replace="1"></filter>
+        <filter original="yl-rate2" replace="2"></filter>
+        <filter original="yl-rate3" replace="3"></filter>
+        <filter original="yl-rate4" replace="4"></filter>
+        <filter original="yl-rate5" replace="5"></filter>
+      </replace>
+    </reviewRating>
+    <additionalReview>
+      <customerService context=""/>
+      <qualityOfWork context=""/>
+      <friendliness context=""/>
+      <overallExperience context=""/>
+      <pricing context=""/>
+      <buyingProcess context=""/>
+      <overallFacilities context=""/>
+      <reasonForVisit context=""/>
+      <recommendThisDealer context=""/>
+      <purchasedAVehicle context=""/>
+    </additionalReview>
+    
+    <nextPageUrl context="//span[@class='highlight2']/following-sibling::*[1]/@href">
+      
+    </nextPageUrl>
+  </reviews>
+</reviewSite>

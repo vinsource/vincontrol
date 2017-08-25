@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2FF9C39B-CDFC-4024-962A-AB8EE0613316}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>vincontrol.StockingGuide.Repository</RootNamespace>
+    <AssemblyName>vincontrol.StockingGuide.Repository</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interfaces\ICommercialTruckUnitOfWork.cs" />
+    <Compile Include="Interfaces\IAppraisalRepository.cs" />
+    <Compile Include="Interfaces\IDataDealerExportRepository.cs" />
+    <Compile Include="Interfaces\IDealerBrandSelectionRepository.cs" />
+    <Compile Include="Interfaces\IChromeRepository.cs" />
+    <Compile Include="Interfaces\IDealerBrandRepository.cs" />
+    <Compile Include="Interfaces\IDealerRepository.cs" />
+    <Compile Include="Interfaces\IDealerSegmentRepository.cs" />
+    <Compile Include="Interfaces\IInventorySegmentDetailRepository.cs" />
+    <Compile Include="Interfaces\IInventoryStatisticsRepository.cs" />
+    <Compile Include="Interfaces\IMakeRepository.cs" />
+    <Compile Include="Interfaces\IManheimAuctionRepository.cs" />
+    <Compile Include="Interfaces\IManheimVehicleRepository.cs" />
+    <Compile Include="Interfaces\IMarketDetailWithTrimRepository.cs" />
+    <Compile Include="Interfaces\IMarketSegmentDetailRepository.cs" />
+    <Compile Include="Interfaces\IMarketTruckRepository.cs" />
+    <Compile Include="Interfaces\IMarketVehicleRepository.cs" />
+    <Compile Include="Interfaces\IModelRepository.cs" />
+    <Compile Include="Interfaces\ISegmentRepository.cs" />
+    <Compile Include="Interfaces\ISettingRepository.cs" />
+    <Compile Include="Interfaces\ISoldInventoryRepository.cs" />
+    <Compile Include="Interfaces\ISoldMarketTruckRepository.cs" />
+    <Compile Include="Interfaces\ISoldMarketVehicleRepository.cs" />
+    <Compile Include="Interfaces\IStateRepository.cs" />
+    <Compile Include="Interfaces\ITrimRepository.cs" />
+    <Compile Include="Interfaces\IVinmarketUnitOfWork.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Interfaces\IVincontrolUnitOfWork.cs" />
+    <Compile Include="Interfaces\IWeeklyTurnOverRepository.cs" />
+    <Compile Include="Interfaces\IInventoryRepository.cs" />
+    <Compile Include="Repositories\AppraisalRepository.cs" />
+    <Compile Include="Repositories\DataDealerExportRepository.cs" />
+    <Compile Include="Repositories\DealerBrandSelectionRepository.cs" />
+    <Compile Include="Repositories\DealerBrandRepository.cs" />
+    <Compile Include="Repositories\DealerRepository.cs" />
+    <Compile Include="Repositories\DealerSegmentRepository.cs" />
+    <Compile Include="Repositories\InventoryRepository.cs" />
+    <Compile Include="Repositories\InventorySegmentDetailRepository.cs" />
+    <Compile Include="Repositories\InventoryStatisticsRepository.cs" />
+    <Compile Include="Repositories\MakeRepository.cs" />
+    <Compile Include="Repositories\ManheimAuctionRepository.cs" />
+    <Compile Include="Repositories\ManheimVehicleRepository.cs" />
+    <Compile Include="Repositories\MarketDetailWithTrimRepository.cs" />
+    <Compile Include="Repositories\MarketSegmentDetailRepository.cs" />
+    <Compile Include="Repositories\MarketTruckRepository.cs" />
+    <Compile Include="Repositories\MarketVehicleRepository.cs" />
+    <Compile Include="Repositories\ModelRepository.cs" />
+    <Compile Include="Repositories\SegmentRepository.cs" />
+    <Compile Include="Repositories\SettingRepository.cs" />
+    <Compile Include="Repositories\SoldInventoryRepository.cs" />
+    <Compile Include="Repositories\SoldMarketTruckRepository.cs" />
+    <Compile Include="Repositories\SoldMarketVehicleRepository.cs" />
+    <Compile Include="Repositories\SqlRepository.cs" />
+    <Compile Include="Repositories\StateRepository.cs" />
+    <Compile Include="Repositories\TrimRepository.cs" />
+    <Compile Include="Repositories\VehicleRepository.cs" />
+    <Compile Include="Repositories\WeeklyTurnOverRepository.cs" />
+    <Compile Include="Interfaces\IVehicleRepository.cs" />
+    <Compile Include="Interfaces\IVinsellUnitOfWork.cs" />
+    <Compile Include="UnitOfWorks\CommercialTruckUnitOfWork.cs" />
+    <Compile Include="UnitOfWorks\VincontrolUnitOfWork.cs" />
+    <Compile Include="UnitOfWorks\VinmarketUnitOfWork.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitOfWorks\VinsellUnitOfWork.cs" />
+    <Compile Include="Utility\MakeComparer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\vincontrol.Data\vincontrol.Data.csproj">
+      <Project>{7d76e800-c9d8-407a-8844-a775ee6d5a65}</Project>
+      <Name>vincontrol.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.StockingGuide.Common\vincontrol.StockingGuide.Common.csproj">
+      <Project>{9E733EBD-792E-4A82-80D8-13F4ADCC0F96}</Project>
+      <Name>vincontrol.StockingGuide.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.StockingGuide.Entity\vincontrol.StockingGuide.Entity.csproj">
+      <Project>{A1B6BD0C-0B9D-438D-8E7D-BF0BCB001673}</Project>
+      <Name>vincontrol.StockingGuide.Entity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

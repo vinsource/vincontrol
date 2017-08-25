@@ -1,0 +1,12 @@
+﻿Hello Everyone, 
+<br/>
+<br/> 
+@@UserFullName at @@DealerName has shared the information on this @@Year @@Make @@Model @@Trim with you! 
+<br/> 
+A full report on this car and its features can be found inside the .PDF attached to this email, or you can view this car online at <a href="@@LandingPageURL">this link</a>.
+<br/> 
+For more information or to schedule a test drive, give @@UserFullName a call at @@Phone or visit them at @@Address.
+<br/> 
+<br/>
+<br/> 
+Powered by VINControl

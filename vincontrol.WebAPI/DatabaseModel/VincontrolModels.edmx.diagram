@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e900afa53fea4696b5e4558053854c07" Name="Diagram1">
+        <EntityTypeShape EntityType="VINcontrolModel.Answer" Width="1.5" PointX="4.5564509241638937" PointY="22.018898974181571" />
+        <EntityTypeShape EntityType="VINcontrolModel.Appraisal" Width="1.5" PointX="0.59430632767933722" PointY="7.3819805418057278" />
+        <EntityTypeShape EntityType="VINcontrolModel.AppraisalCustomer" Width="1.5" PointX="8.3966086154787831" PointY="15.543397865976857" />
+        <EntityTypeShape EntityType="VINcontrolModel.AppraisalDealerActivity" Width="1.5" PointX="10.461671092762458" PointY="21.43933630987971" />
+        <EntityTypeShape EntityType="VINcontrolModel.AppraisalStatusCode" Width="1.5" PointX="2.3390807501688045" PointY="10.715878163797724" />
+        <EntityTypeShape EntityType="VINcontrolModel.AutoTrader" Width="1.5" PointX="7.0581653169627145" PointY="7.7400427794736082" />
+        <EntityTypeShape EntityType="VINcontrolModel.AutoTraderDealer" Width="1.5" PointX="11.218359225996938" PointY="17.151967146038995" />
+        <EntityTypeShape EntityType="VINcontrolModel.BlackBook" Width="1.5" PointX="0.42914463040844752" PointY="30.870439648102241" />
+        <EntityTypeShape EntityType="VINcontrolModel.BucketJumpHistory" Width="1.5" PointX="7.3472131077885692" PointY="18.165813782329586" />
+        <EntityTypeShape EntityType="VINcontrolModel.Button" Width="1.5" PointX="7.7160150314290146" PointY="8.4767671266928168" />
+        <EntityTypeShape EntityType="VINcontrolModel.BuyerGuide" Width="1.5" PointX="1.9769807895538305" PointY="15.613930113433828" />
+        <EntityTypeShape EntityType="VINcontrolModel.Carfax" Width="1.5" PointX="8.7711838822677652" PointY="10.176539455622686" />
+        <EntityTypeShape EntityType="VINcontrolModel.ChartSelection" Width="1.5" PointX="8.7279632746837859" PointY="31.494868397477486" />
+        <EntityTypeShape EntityType="VINcontrolModel.DataFeedCompany" Width="1.5" PointX="9.8299452000437046" PointY="28.430712131983931" />
+        <EntityTypeShape EntityType="VINcontrolModel.DataFeedDealer" Width="1.5" PointX="6.8663015248562678" PointY="8.9347335588814385" />
+        <EntityTypeShape EntityType="VINcontrolModel.Dealer" Width="1.5" PointX="9.8738005356275469" PointY="23.331998865740374" />
+        <EntityTypeShape EntityType="VINcontrolModel.DealerActivitySubTypeCode" Width="1.5" PointX="8.9209623899874089" PointY="28.260339437173837" />
+        <EntityTypeShape EntityType="VINcontrolModel.DealerActivityTypeCode" Width="1.5" PointX="2.697430446137409" PointY="6.1844743071982986" />
+        <EntityTypeShape EntityType="VINcontrolModel.DealerButton" Width="1.5" PointX="6.3544384289320739" PointY="19.386327573743802" />
+        <EntityTypeShape EntityType="VINcontrolModel.DealerGroup" Width="1.5" PointX="8.5009690376468789" PointY="4.1172878165344189" />
+        <EntityTypeShape EntityType="VINcontrolModel.Description" Width="1.5" PointX="0.1733474974396394" PointY="20.132603580193877" />
+        <EntityTypeShape EntityType="VINcontrolModel.DescriptionTemplate" Width="1.5" PointX="7.143355415735094" PointY="5.5585874642983955" />
+        <EntityTypeShape EntityType="VINcontrolModel.Ebay" Width="1.5" PointX="10.049476978392097" PointY="5.7840225723497678" />
+        <EntityTypeShape EntityType="VINcontrolModel.EbayCategory" Width="1.5" PointX="1.3359617299102069" PointY="1.9083615699356242" />
+        <EntityTypeShape EntityType="VINcontrolModel.FlyerShareDealerActivity" Width="1.5" PointX="4.8391986530456688" PointY="19.67083137653341" />
+        <EntityTypeShape EntityType="VINcontrolModel.Inventory" Width="1.5" PointX="2.8460520891687144" PointY="27.13882316422594" />
+        <EntityTypeShape EntityType="VINcontrolModel.InventoryDealerActivity" Width="1.5" PointX="2.2594410023928808" PointY="19.06990737610958" />
+        <EntityTypeShape EntityType="VINcontrolModel.InventoryStatusCode" Width="1.5" PointX="10.406438022109885" PointY="28.536605684336557" />
+        <EntityTypeShape EntityType="VINcontrolModel.KellyBlueBook" Width="1.5" PointX="11.485903233050323" PointY="23.408277418188881" />
+        <EntityTypeShape EntityType="VINcontrolModel.Make" Width="1.5" PointX="6.0402794284933616" PointY="22.896087910465937" />
+        <EntityTypeShape EntityType="VINcontrolModel.ManheimMake" Width="1.5" PointX="7.9988289996976167" PointY="31.467077448715958" />
+        <EntityTypeShape EntityType="VINcontrolModel.ManheimMakeModel" Width="1.5" PointX="1.1734495913486227" PointY="29.302815108235375" />
+        <EntityTypeShape EntityType="VINcontrolModel.ManheimModel" Width="1.5" PointX="6.1446537757965984" PointY="27.489775312826865" />
+        <EntityTypeShape EntityType="VINcontrolModel.ManheimModelTrim" Width="1.5" PointX="5.9815536523151929" PointY="1.6552851654846619" />
+        <EntityTypeShape EntityType="VINcontrolModel.ManheimTrim" Width="1.5" PointX="3.7345572336272141" PointY="26.959911373890897" />
+        <EntityTypeShape EntityType="VINcontrolModel.ManheimValue" Width="1.5" PointX="5.2219764391062675" PointY="0.20624071369238231" />
+        <EntityTypeShape EntityType="VINcontrolModel.ManheimYearMake" Width="1.5" PointX="10.311211130726715" PointY="16.458752267276289" />
+        <EntityTypeShape EntityType="VINcontrolModel.MarketSourceCode" Width="1.5" PointX="3.0054401750701665" PointY="17.139345191949673" />
+        <EntityTypeShape EntityType="VINcontrolModel.Model" Width="1.5" PointX="10.711868376802592" PointY="17.831236221748981" />
+        <EntityTypeShape EntityType="VINcontrolModel.NotificationSetting" Width="1.5" PointX="5.7667253174664106" PointY="17.49054616014033" />
+        <EntityTypeShape EntityType="VINcontrolModel.NotificationTypeCode" Width="1.5" PointX="10.474613919143851" PointY="24.304825630180922" />
+        <EntityTypeShape EntityType="VINcontrolModel.Option" Width="1.5" PointX="5.8223183964483063" PointY="30.639306023083304" />
+        <EntityTypeShape EntityType="VINcontrolModel.Package" Width="1.5" PointX="0.50447299541182489" PointY="31.191311597447523" />
+        <EntityTypeShape EntityType="VINcontrolModel.PermissionCode" Width="1.5" PointX="6.490058572259759" PointY="4.7193256638568482" />
+        <EntityTypeShape EntityType="VINcontrolModel.PermissionValue" Width="1.5" PointX="0.19118926683030524" PointY="10.656542172029868" />
+        <EntityTypeShape EntityType="VINcontrolModel.PriceChangeHistory" Width="1.5" PointX="2.8332746321490383" PointY="25.536891725629982" />
+        <EntityTypeShape EntityType="VINcontrolModel.Question" Width="1.5" PointX="1.2295934116605638" PointY="31.773162856592407" />
+        <EntityTypeShape EntityType="VINcontrolModel.QuestionType" Width="1.5" PointX="5.5451539315027905" PointY="0.99518254445641419" />
+        <EntityTypeShape EntityType="VINcontrolModel.Rebate" Width="1.5" PointX="6.37627675122408" PointY="21.746132667058209" />
+        <EntityTypeShape EntityType="VINcontrolModel.Role" Width="1.5" PointX="7.9398165233152991" PointY="31.308829962885394" />
+        <EntityTypeShape EntityType="VINcontrolModel.RolePermission" Width="1.5" PointX="8.18745481231597" PointY="1.9072794476092232" />
+        <EntityTypeShape EntityType="VINcontrolModel.Sentence" Width="1.5" PointX="8.9810783550986457" PointY="17.944618367564221" />
+        <EntityTypeShape EntityType="VINcontrolModel.SentenceType" Width="1.5" PointX="2.1545853270937623" PointY="7.3832315240908564" />
+        <EntityTypeShape EntityType="VINcontrolModel.Setting" Width="1.5" PointX="11.865847555858011" PointY="21.566423739104728" />
+        <EntityTypeShape EntityType="VINcontrolModel.SoldoutInventory" Width="1.5" PointX="4.1457750909709254" PointY="10.61115620034335" />
+        <EntityTypeShape EntityType="VINcontrolModel.sysdiagram" Width="1.5" PointX="11.989358754823618" PointY="12.797839066385217" />
+        <EntityTypeShape EntityType="VINcontrolModel.TradeInComment" Width="1.5" PointX="3.0113787143544193" PointY="30.616865649175303" />
+        <EntityTypeShape EntityType="VINcontrolModel.TradeInCustomer" Width="1.5" PointX="10.111419047280876" PointY="29.025385035679388" />
+        <EntityTypeShape EntityType="VINcontrolModel.TradeInPriceAlert" Width="1.5" PointX="5.9778356468201785" PointY="4.48989288717969" />
+        <EntityTypeShape EntityType="VINcontrolModel.Trim" Width="1.5" PointX="10.48408267017644" PointY="17.194431804676743" />
+        <EntityTypeShape EntityType="VINcontrolModel.TrimOption" Width="1.5" PointX="3.8186071700503152" PointY="11.231484075650332" />
+        <EntityTypeShape EntityType="VINcontrolModel.TrimPackage" Width="1.5" PointX="0.429542670226443" PointY="31.302277117642703" />
+        <EntityTypeShape EntityType="VINcontrolModel.TruckCategory" Width="1.5" PointX="7.2766921330600471" PointY="20.388378778653397" />
+        <EntityTypeShape EntityType="VINcontrolModel.UsaZipCode" Width="1.5" PointX="10.84774685597408" PointY="27.723400158678835" />
+        <EntityTypeShape EntityType="VINcontrolModel.User" Width="1.5" PointX="0.62687816872581759" PointY="7.0193245890640306" />
+        <EntityTypeShape EntityType="VINcontrolModel.UserDealerActivity" Width="1.5" PointX="0.050977695757047137" PointY="6.8188496710820354" />
+        <EntityTypeShape EntityType="VINcontrolModel.UserNotification" Width="1.5" PointX="10.746897059840569" PointY="16.069104217025036" />
+        <EntityTypeShape EntityType="VINcontrolModel.UserPermission" Width="1.5" PointX="10.371499997736652" PointY="26.025024336774379" />
+        <EntityTypeShape EntityType="VINcontrolModel.Vehicle" Width="1.5" PointX="0.13323125621920046" PointY="29.581564022964596" />
+        <EntityTypeShape EntityType="VINcontrolModel.VehicleStatusCode" Width="1.5" PointX="9.3351544315624775" PointY="25.962029797007343" />
+        <EntityTypeShape EntityType="VINcontrolModel.VincaptureDesktopTool" Width="1.5" PointX="11.830894293184809" PointY="27.740399120254629" />
+        <EntityTypeShape EntityType="VINcontrolModel.VPContactInfo" Width="1.5" PointX="9.6239720329753915" PointY="21.898681844537464" />
+        <EntityTypeShape EntityType="VINcontrolModel.Walkaround" Width="1.5" PointX="4.0068445596875826" PointY="26.757559952678886" />
+        <EntityTypeShape EntityType="VINcontrolModel.WarrantyType" Width="1.5" PointX="6.5649556827568238" PointY="4.6620501152528684" />
+        <EntityTypeShape EntityType="VINcontrolModel.YearMake" Width="1.5" PointX="1.8035170239412772" PointY="17.76169211499472" />
+        <AssociationConnector Association="VINcontrolModel.vincontrolanswers_fk_answers_appraisals" />
+        <AssociationConnector Association="VINcontrolModel.vincontrolanswers_fk_answers_questions" />
+        <AssociationConnector Association="VINcontrolModel.FK_Appraisal_AppraisalStatusCode" />
+        <AssociationConnector Association="VINcontrolModel.FK_Appraisal_Dealer" />
+        <AssociationConnector Association="VINcontrolModel.FK_Appraisal_DealershipId" />
+        <AssociationConnector Association="VINcontrolModel.FK_Appraisal_User" />
+        <AssociationConnector Association="VINcontrolModel.FK_Appraisal_User1" />
+        <AssociationConnector Association="VINcontrolModel.FK_Appraisal_Vehicle" />
+        <AssociationConnector Association="VINcontrolModel.vincontrolwalkaround_fk_walkaround_appraisal" />
+        <AssociationConnector Association="VINcontrolModel.FK_AppraisalDealerActivity_DealerActivitySubTypeCode1" />
+        <AssociationConnector Association="VINcontrolModel.FK_AppraisalDealerActivity_User" />
+        <AssociationConnector Association="VINcontrolModel.FK_AutoTraderDealer_Dealer" />
+        <AssociationConnector Association="VINcontrolModel.FK_BucketJumpHistory_VehicleStatusCode" />
+        <AssociationConnector Association="VINcontrolModel.FK_vincontroldealershipbuttons_vincontrolbuttons" />
+        <AssociationConnector Association="VINcontrolModel.FK_ChartSelection_VehicleStatusCode" />
+        <AssociationConnector Association="VINcontrolModel.FK_DataFeedDealer_DataFeedCompany" />
+        <AssociationConnector Association="VINcontrolModel.FK_DataFeedDealer_Dealer" />
+        <AssociationConnector Association="VINcontrolModel.FK_Dealership_DealerGroupId" />
+        <AssociationConnector Association="VINcontrolModel.FK_EbayAd_DealershipID" />
+        <AssociationConnector Association="VINcontrolModel.FK_FlyerShareDealerActivity_Dealer" />
+        <AssociationConnector Association="VINcontrolModel.FK_Inventory_Dealer" />
+        <AssociationConnector Association="VINcontrolModel.FK_NotificationSetting_DealershipId" />
+        <AssociationConnector Association="VINcontrolModel.FK_Rebate_DealershipID" />
+        <AssociationConnector Association="VINcontrolModel.FK_Setting_DealershipId" />
+        <AssociationConnector Association="VINcontrolModel.FK_SoldoutInventory_Dealer" />
+        <AssociationConnector Association="VINcontrolModel.FK_TradeInComment_DealershipID" />
+        <AssociationConnector Association="VINcontrolModel.FK_TradeInCustomer_Dealer" />
+        <AssociationConnector Association="VINcontrolModel.FK_UserNotification_DealershipID" />
+        <AssociationConnector Association="VINcontrolModel.FK_Users_DealershipID" />
+        <AssociationConnector Association="VINcontrolModel.FK_WarrantyType_DealershipId" />
+        <AssociationConnector Association="VINcontrolModel.FK_DealerActivity_DealerActivity" />
+        <AssociationConnector Association="VINcontrolModel.FK_UserDealerActivity_DealerActivitySubTypeCode" />
+        <AssociationConnector Association="VINcontrolModel.FK_vincontroldealershipbuttons_vincontrolgroups" />
+        <AssociationConnector Association="VINcontrolModel.FK_User_DealerGroup" />
+        <AssociationConnector Association="VINcontrolModel.FK_EbayAd_InventoryId" />
+        <AssociationConnector Association="VINcontrolModel.FK_FlyerShareDealerActivity_User" />
+        <AssociationConnector Association="VINcontrolModel.FK_Inventory_InventoryStatusCode" />
+        <AssociationConnector Association="VINcontrolModel.FK_Inventory_User" />
+        <AssociationConnector Association="VINcontrolModel.FK_Inventory_Vehicle" />
+        <AssociationConnector Association="VINcontrolModel.FK_InventoryDealerActivity_User" />
+        <AssociationConnector Association="VINcontrolModel.FK_SoldoutInventory_VehicleStatusCode1" />
+        <AssociationConnector Association="VINcontrolModel.FK_KellyBlueBook_VehicleStatusCode" />
+        <AssociationConnector Association="VINcontrolModel.FK_YearMakes_Makes" />
+        <AssociationConnector Association="VINcontrolModel.manheimyearmakes_makeId" />
+        <AssociationConnector Association="VINcontrolModel.manheimmakemodels_model" />
+        <AssociationConnector Association="VINcontrolModel.manheimmakemodels_yearmake" />
+        <AssociationConnector Association="VINcontrolModel.manheimmodeltrims_makemodel" />
+        <AssociationConnector Association="VINcontrolModel.manheimmodeltrims_trim" />
+        <AssociationConnector Association="VINcontrolModel.FK_ManheimValue_VehicleStatusCode" />
+        <AssociationConnector Association="VINcontrolModel.FK_Models_YearMakes" />
+        <AssociationConnector Association="VINcontrolModel.FK_Trims_Models" />
+        <AssociationConnector Association="VINcontrolModel.FK_TrimOption_Option" />
+        <AssociationConnector Association="VINcontrolModel.FK_TrimPackages_Trims" />
+        <AssociationConnector Association="VINcontrolModel.vincontrolgrouppermissions_fk_grouppermission_permissioncodes" />
+        <AssociationConnector Association="VINcontrolModel.vincontrolgrouppermissions_fk_grouppermission_permissionvalue" />
+        <AssociationConnector Association="VINcontrolModel.FK_PriceChangeHistory_VehicleStatusCode" />
+        <AssociationConnector Association="VINcontrolModel.vincontrolquestions_fk_questions_questiontype" />
+        <AssociationConnector Association="VINcontrolModel.FK_UserInfo_Group" />
+        <AssociationConnector Association="VINcontrolModel.vincontrolgrouppermissions_fk_grouppermission_group" />
+        <AssociationConnector Association="VINcontrolModel.vincontrolsentence_fk_sentence_type" />
+        <AssociationConnector Association="VINcontrolModel.FK_SoldoutInventory_DealershipID" />
+        <AssociationConnector Association="VINcontrolModel.FK_SoldoutInventory_SoldoutInventory" />
+        <AssociationConnector Association="VINcontrolModel.FK_TradeInPriceAlert_Vehicle" />
+        <AssociationConnector Association="VINcontrolModel.FK_TrimOptions_Trims" />
+        <AssociationConnector Association="VINcontrolModel.FK_UserDealerActivity_User" />
+        <AssociationConnector Association="VINcontrolModel.FK_UserDealerActivity_User1" />
+        <AssociationConnector Association="VINcontrolModel.FK_UserNotification_User" />
+        <AssociationConnector Association="VINcontrolModel.FK_UserPermission_User" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

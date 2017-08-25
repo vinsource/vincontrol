@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7D76E800-C9D8-407A-8844-A775EE6D5A65}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>vincontrol.Data</RootNamespace>
+    <AssemblyName>vincontrol.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper">
+      <HintPath>..\..\NewVINCONTROL.Services\packages\Dapper.1.42\lib\net40\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="DapperExtensions">
+      <HintPath>..\..\NewVINCONTROL.Services\packages\DapperExtensions.1.4.4\lib\net40\DapperExtensions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\ShareLibrary\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constant.cs" />
+    <Compile Include="DapperSqlHelper.cs" />
+    <Compile Include="Interface\IBaseEntity.cs" />
+    <Compile Include="Interface\IBaseRepository.cs" />
+    <Compile Include="Interface\IUnitOfWork.cs" />
+    <Compile Include="LinqExtendedHelper.cs" />
+    <Compile Include="Model\DataCommonHelper.cs" />
+    <Compile Include="Model\ExtendedEntities.cs" />
+    <Compile Include="Model\Truck\ExtendedEntities.cs" />
+    <Compile Include="Model\VehicleStandardModel.cs" />
+    <Compile Include="Model\VinChatModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VinChatModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Truck\VinCommercialTruckModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VinCommercialTruckModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VinControlDealer.cs" />
+    <Compile Include="Model\VincontrolModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VincontrolModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\VinControlVehicle.cs" />
+    <Compile Include="Model\VinMarketModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VinMarketModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Vinsell.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Vinsell.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Vinsell.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Vinsell.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Query\CarMaxQuery.cs" />
+    <Compile Include="Query\MarketDataQuery.cs" />
+    <Compile Include="Repository\BaseRepository.cs" />
+    <Compile Include="Repository\Implementation\AdminRepository.cs" />
+    <Compile Include="Repository\Implementation\AppraisalRepository.cs" />
+    <Compile Include="Repository\Implementation\BucketJumpWaitingListRepository.cs" />
+    <Compile Include="Repository\Implementation\CarFaxRepository.cs" />
+    <Compile Include="Repository\Implementation\CommonRepository.cs" />
+    <Compile Include="Repository\Implementation\EmailWaitingListRepository.cs" />
+    <Compile Include="Repository\Implementation\FacebookRepository.cs" />
+    <Compile Include="Repository\Implementation\NotificationRepository.cs" />
+    <Compile Include="Repository\Implementation\VehicleLogRepository.cs" />
+    <Compile Include="Repository\Implementation\VideoTrackingRepository.cs" />
+    <Compile Include="Repository\Implementation\YoutubeRepository.cs" />
+    <Compile Include="Repository\Interface\IBucketJumpWaitingListRepository.cs" />
+    <Compile Include="Repository\Interface\IEmailWaitingListRepository.cs" />
+    <Compile Include="Repository\Interface\INotificationRepository.cs" />
+    <Compile Include="Repository\Interface\IVehicleLogRepository.cs" />
+    <Compile Include="Repository\Interface\IVideoTrackingRepository.cs" />
+    <Compile Include="Repository\Interface\IYoutubeRepository.cs" />
+    <Compile Include="Repository\Vinchat\Implementation\CommonRepository.cs" />
+    <Compile Include="Repository\Vinchat\Interface\ICommonRepository.cs" />
+    <Compile Include="Repository\VinMarket\Implementation\CommonRepository.cs" />
+    <Compile Include="Repository\VinMarket\Interface\ICommonRepository.cs" />
+    <Compile Include="Repository\Vinsocial\Implementation\CommonRepository.cs" />
+    <Compile Include="Repository\Vinsocial\Implementation\ContactReposity.cs" />
+    <Compile Include="Repository\Vinsocial\Implementation\CustomerRepository.cs" />
+    <Compile Include="Repository\Vinsocial\Implementation\DepartmentRepository.cs" />
+    <Compile Include="Repository\Vinsocial\Implementation\ReviewRepository.cs" />
+    <Compile Include="Repository\Implementation\TradeInRepository.cs" />
+    <Compile Include="Repository\Implementation\DealerRepository.cs" />
+    <Compile Include="Repository\Implementation\InventoryRepository.cs" />
+    <Compile Include="Repository\Implementation\KBBRepository.cs" />
+    <Compile Include="Repository\Implementation\ManheimAuctionRepository.cs" />
+    <Compile Include="Repository\Implementation\ExtendedUserRepository.cs" />
+    <Compile Include="Repository\Implementation\GroupPermissionRepository.cs" />
+    <Compile Include="Repository\Implementation\ManheimRepository.cs" />
+    <Compile Include="Repository\Implementation\UserRepository.cs" />
+    <Compile Include="Repository\Interface\IFacebookRepository.cs" />
+    <Compile Include="Repository\Vinsocial\Implementation\SurveyRepository.cs" />
+    <Compile Include="Repository\Vinsocial\Implementation\TeamRepository.cs" />
+    <Compile Include="Repository\Vinsocial\Implementation\TemplateRepository.cs" />
+    <Compile Include="Repository\Vinsocial\Interface\ICommonRepository.cs" />
+    <Compile Include="Repository\Vinsocial\Interface\IContactReposity.cs" />
+    <Compile Include="Repository\Vinsocial\Interface\ICustomerRepository.cs" />
+    <Compile Include="Repository\Vinsocial\Interface\IDepartmentRepository.cs" />
+    <Compile Include="Repository\Vinsocial\Interface\IReviewRepository.cs" />
+    <Compile Include="Repository\Interface\ITradeInRepository.cs" />
+    <Compile Include="Repository\Interface\ICommonRepository.cs" />
+    <Compile Include="Repository\Interface\IDealerRepository.cs" />
+    <Compile Include="Repository\Interface\IAppraisalRepository.cs" />
+    <Compile Include="Repository\Interface\IAdminRepository.cs" />
+    <Compile Include="Repository\Interface\ICarFaxRepository.cs" />
+    <Compile Include="Repository\Interface\IInventoryRepository.cs" />
+    <Compile Include="Repository\Interface\IKBBRepository.cs" />
+    <Compile Include="Repository\Interface\IManheimAuctionRepository.cs" />
+    <Compile Include="Repository\Interface\IExtendedUserRepository.cs" />
+    <Compile Include="Repository\Interface\IGroupPermissionRepository.cs" />
+    <Compile Include="Repository\Interface\IManheimRepository.cs" />
+    <Compile Include="Repository\Interface\IUserRepository.cs" />
+    <Compile Include="Repository\SqlUnitOfWork.cs" />
+    <Compile Include="Model\VinReviewModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VinReviewModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\Vinsocial\Interface\ISurveyRepository.cs" />
+    <Compile Include="Repository\Vinsocial\Interface\ITeamRepository.cs" />
+    <Compile Include="Repository\Vinsocial\Interface\ITemplateRepository.cs" />
+    <Compile Include="VINControlSqlHelper.cs" />
+    <Compile Include="VINMarketSqlHelper.cs" />
+    <Compile Include="VINSellSqlHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\vincontrol.Constant\vincontrol.Constant.csproj">
+      <Project>{AD3324CA-2044-4C68-BE5D-CCB63AD12897}</Project>
+      <Name>vincontrol.Constant</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.DomainObject\vincontrol.DomainObject.csproj">
+      <Project>{E5A9809F-55E2-4E2E-9696-48042DDF4305}</Project>
+      <Name>vincontrol.DomainObject</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="Model\VincontrolModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>VincontrolModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="Model\VinMarketModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>VinMarketModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="Model\VinReviewModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>VinReviewModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="Model\VinChatModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>VinChatModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="Model\Truck\VinCommercialTruckModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>VinCommercialTruckModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="Model\Vinsell.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Vinsell.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model\Vinsell.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Vinsell.cs</LastGenOutput>
+      <DependentUpon>Vinsell.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\vincontrol.Data.Model.Truck.VinCommercialTruckEntities.datasource" />
+    <None Include="Properties\DataSources\vincontrol.Data.Model.VinChatEntities.datasource" />
+    <None Include="Properties\DataSources\vincontrol.Data.Model.VincontrolEntities.datasource" />
+    <None Include="Properties\DataSources\vincontrol.Data.Model.vincontrolwarehouseEntities.datasource" />
+    <None Include="Properties\DataSources\vincontrol.Data.Model.VinMarketEntities.datasource" />
+    <None Include="Properties\DataSources\vincontrol.Data.Model.VinReviewEntities.datasource" />
+    <None Include="Properties\DataSources\vincontrol.Data.Model.VinsellEntities.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\CarMax\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

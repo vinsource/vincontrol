@@ -1,0 +1,380 @@
+body {
+	font-family: 'Trebuchet MS', Arial, sans-serif !important;
+}
+
+.mp_v2_right_header {
+	text-align: center;
+	background-color: #039;
+	color: #FFF;
+	font-weight: bold;
+	padding: 8px;
+}
+
+.mp_v2_right_carinfo {
+
+}
+
+.mp_v2_rc_ymm {
+	line-height: 17px;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 13px;
+}
+.mp_v2_rc_img img {
+	margin: 0px auto;
+	display: block;
+}
+.mp_v2_rc_img {
+	margin-top: 5px;
+}
+.mp_v2_rc_comparison_holder {
+
+}
+.mp_v2_cp_items {
+
+}
+.mp_v2_cp_items_left {
+	width: 50%;
+	float: left;
+}
+.mpv2_cp_items_title {
+	display: block;
+	font-size: 13px;
+	padding: 5px 25px;
+	font-weight: bold;
+}
+.mpv2_cp_items_value {
+	display: block;
+	font-size: 13px;
+	padding: 0px 25px;
+}
+.mpv2_rc_dealer_info {
+	clear: both;
+	padding-top: 5px;
+}
+.mpv2_rc_dealer_name {
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+}
+.mpv2_rc_dealer_address {
+	padding: 0px 25px;
+	font-size: 13px;
+	text-align: center;
+}
+.mpv2_rc_distance {
+	padding: 5px 25px;
+	text-align: center;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.mpv2_rc_market_info {
+
+}
+.mpv2_rc_mi_items {
+	height: 20px;
+	padding: 5px;
+}
+.mpv2_rcmi_items_left {
+
+}
+.mpv2_rcmi_items_right {
+	float: right;
+	width: 48%;
+	font-size: 13px;
+}
+.mpv2_rcmi_items_legent {
+	width: 14px;
+	height: 14px;
+	float: left;
+	margin-left: 13px;
+	border: 1px solid #FFF;
+	margin: 3px 9px;
+}
+.mpv2_rcmi_items_legent_hight {
+	background-color: #D12C00;
+}
+.mpv2_rcmi_items_left > label {
+	width: 50%;
+	display: block;
+	float: left;
+	font-size: 10px;
+	font-weight: bold;
+}
+.mpv2_rcmi_items_height {
+	color: #D12C00;
+	font-weight: bold;
+}
+.mpv2_rcmi_items_legent_equals {
+	background-color: #458C00;
+}
+.mpv2_rcmi_items_equals {
+	color: #458C00;
+	font-weight: bold;
+}
+.mpv2_rcmi_items_legent_low {
+	background-color: #0062A1;
+}
+.mpv2_rcmi_items_low {
+	color: #0062A1;
+	font-weight: bold;
+}
+.mp_v2_cl_btns {
+	background-color: #B1B1B1;
+	margin-left: 0px;
+	width: 80px;
+	color: #000;
+    cursor: pointer;
+}
+.mp_v2_cl_fi_all {
+	width: 40px;
+	background-color: #414342;
+	text-align: center;
+	color: #FFF;
+	font-weight: bold;
+}
+.mp_v2_cl_fi_all_new {
+	background-color: #B1B1B1;
+	margin-left: 0px;
+	width: 40px;
+	color: #000;
+    cursor: pointer;
+}
+.mp_v2_cl_trim input {
+	margin: 0px;
+    float: left;
+	border: 1px solid #222;
+	background-color: #B1B1B1;
+    margin: 2px 5px 0px 2px;
+}
+.mp_v2_cl_save_setting {
+	float: left;
+margin-top: 14px;
+background-color: #039;
+font-size: 12px;
+color: #FFF;
+text-align: center;
+font-weight: bold;
+height: 18px;
+cursor: pointer;
+}
+.market_popup_holder_v2 {
+	width: 982px;
+	border: 1px solid #cdcdcd;
+}
+.mp_v2_cl_items {
+	float: left;
+	margin-top: 13px;
+	margin-left: 8px;
+	font-size: 12px;
+}
+.mp_v2_cl_items > div {
+	float: left;
+	cursor: pointer;
+	text-align: center;
+	border: 1px solid #EEE;
+}
+
+.mp_v2_header {
+	position: relative;
+	background-color: #36C;
+	height: 50px;
+}
+
+.mp_v2_header_left {
+	width: 77%;
+	height: 50px;
+	float: left;
+}
+
+.mp_v2_header_right {
+	width: 23%;
+	height: 50px;
+	float: right;
+	position: relative;
+}
+
+.mp_v2_hr_info {
+	position: absolute;
+	bottom: 5px;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+}
+
+.mp_v2_content_holder {
+	clear: both;
+}
+
+#vehicle-list td {
+	padding: .3em .7em .3em .7em;
+	border-bottom: 1px #BBB solid;
+}
+.mp_v2_hl_nummeric {
+	position: absolute;
+	bottom: 0px;
+	left: 10px;
+}
+
+.mp_v2_hl_carinfo {
+	position: absolute;
+	left: 350px;
+	color: #FFF;
+	font-size: 16px;
+	bottom: 5px;
+	font-weight: bold;
+}
+.mp_v2_hl_items {
+	float: left;
+	width: 60px;
+	padding-top: 2px;
+	height: 19px;
+	text-align: center;
+	background-color: #039;
+	margin-right: 2px;
+	color: white;
+	font-size: 12px;
+	cursor: pointer;
+	font-weight: bold;
+}
+.mp_v2_hl_items_active, .mp_v2_hl_items.selected {
+	background-color: white;
+	color: black;
+}
+.mp_v2_content_left {
+	width: 77%;
+	float: left;
+	height: 510px;
+}
+
+.mp_v2_content_right {
+	width: 22%;
+	padding-left: 1%;
+	float: right;
+	height: 590px;
+	background-color: #D8D8D8;
+}
+
+.mp_v2_cl_header {
+	height: 50px;
+	background-color: #D8D8D8;
+}
+
+.mp_v2_scroll_holder {
+	height: 540px;
+	overflow: auto;
+}
+#vehicle-list tr:nth-child(2n + 2) td {
+	background: #CCC;
+}
+#graph-title-bar {
+	position: relative;
+	height: 50px !important;
+	max-height: 50px !important;
+	overflow: hidden;
+	width: 99%;
+	display: block;
+}
+
+#graph-title-bar h2 {
+	display: inline-block;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+#graph-title-bar a {
+	margin-left: 20px;
+	padding: .2em .5em .2em .5em;
+	background: #36C;
+	color: #FFF;
+	position: relative;
+	top: -3px;
+	font-size: .9em;
+	cursor: pointer;
+}
+#vehicle-list table {
+	font-size: 1.1em;
+}
+#graph-title-bar a {
+	margin-left: 20px;
+	padding: .2em .5em .2em .5em;
+	background: #36C;
+	color: #FFF;
+	position: relative;
+	top: -3px;
+	font-size: .9em;
+	cursor: pointer;
+}
+
+#vehicle-list table {
+	width: 100%;
+	overflow: hidden;
+	font-size: 1.1em;
+}
+
+/*
+  Hide radio button (the round disc)
+  we will use just the label to create pushbutton effect
+*/
+input.tab_radio {
+    display:none; 
+    margin:10px;
+}
+ 
+/*
+  Change the look'n'feel of labels (which are adjacent to radiobuttons).
+  Add some margin, padding to label
+*/
+input.tab_radio + label {
+    display:inline-block;
+    width: 80px;
+}
+/*
+ Change background color for label next to checked radio button
+ to make it look like highlighted button
+*/
+input.tab_radio:checked + label { 
+   background-image: none;
+  background-color: #414342;
+text-align: center;
+color: #FFF;
+font-weight: bold;
+    width: 100%;
+}
+
+input.tab_radio_All {
+    display:none; 
+    margin:10px;
+}
+ 
+/*
+  Change the look'n'feel of labels (which are adjacent to radiobuttons).
+  Add some margin, padding to label
+*/
+input.tab_radio_All + label {
+    display:inline-block;
+    width: 40px;
+}
+/*
+ Change background color for label next to checked radio button
+ to make it look like highlighted button
+*/
+input.tab_radio_All:checked + label { 
+   background-image: none;
+  background-color: #414342;
+text-align: center;
+color: #FFF;
+font-weight: bold;
+    width: 100%;
+}
+
+.btnSaveSelection {
+    background: transparent;
+border: 0px;
+color: white;
+height: 19px;
+}

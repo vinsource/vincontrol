@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{93777CAD-211A-42F8-BE08-A3EFC8FF8E1E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>vincontrol.DealerRaterService</RootNamespace>
+    <AssemblyName>vincontrol.DealerRaterService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SgmlReaderDll">
+      <HintPath>..\Package\SgmlReaderDll.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\vincontrol.Data\App.Config">
+      <Link>App.Config</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\vincontrol.ConfigurationManagement\vincontrol.ConfigurationManagement.csproj">
+      <Project>{ebcbf920-a03a-431f-a6ed-40210a37228e}</Project>
+      <Name>vincontrol.ConfigurationManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.Crawler\vincontrol.Crawler.csproj">
+      <Project>{48BDAF13-427E-43E7-AF7D-5DD3C7FB69CB}</Project>
+      <Name>vincontrol.Crawler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.Data\vincontrol.Data.csproj">
+      <Project>{7D76E800-C9D8-407A-8844-A775EE6D5A65}</Project>
+      <Name>vincontrol.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\cars.com.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Config\edmunds.com.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Config\local.yahoo.com.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Config\orangecounty.citysearch.com.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Config\citygrid.com.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Config\plus.google.com.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Config\dealerrater.com.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Config\yelp.com.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

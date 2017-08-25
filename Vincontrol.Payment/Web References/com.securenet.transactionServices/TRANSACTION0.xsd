@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://gateway.securenet.com/API/DATA/" elementFormDefault="qualified" targetNamespace="http://gateway.securenet.com/API/DATA/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://certify.securenet.com/API/DATA/TRANSACTION.svc?xsd=xsd2" namespace="http://gateway.securenet.com/API/Contracts" />
+  <xs:element name="GetTransactions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://gateway.securenet.com/API/Contracts" minOccurs="0" name="MerchantKey" nillable="true" type="q1:MERCHANT_KEY" />
+        <xs:element minOccurs="0" name="StartDate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="EndDate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ExcludeDate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CustomerID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Amount" type="xs:decimal" />
+        <xs:element minOccurs="0" name="RBOnly" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTransactionsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://gateway.securenet.com/API/Contracts" minOccurs="0" name="GetTransactionsResult" nillable="true" type="q2:ArrayOfTRANSACTIONRESPONSE" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTransactionByTransactionID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://gateway.securenet.com/API/Contracts" minOccurs="0" name="MerchantKey" nillable="true" type="q3:MERCHANT_KEY" />
+        <xs:element minOccurs="0" name="TransactionID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTransactionByTransactionIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://gateway.securenet.com/API/Contracts" minOccurs="0" name="GetTransactionByTransactionIDResult" nillable="true" type="q4:TRANSACTIONRESPONSE" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTransactionByOrderID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://gateway.securenet.com/API/Contracts" minOccurs="0" name="MerchantKey" nillable="true" type="q5:MERCHANT_KEY" />
+        <xs:element minOccurs="0" name="OrderID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTransactionByOrderIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://gateway.securenet.com/API/Contracts" minOccurs="0" name="GetTransactionByOrderIDResult" nillable="true" type="q6:TRANSACTIONRESPONSE" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBatchTransactions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://gateway.securenet.com/API/Contracts" minOccurs="0" name="MerchantKey" nillable="true" type="q7:MERCHANT_KEY" />
+        <xs:element minOccurs="0" name="BatchID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetBatchTransactionsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://gateway.securenet.com/API/Contracts" minOccurs="0" name="GetBatchTransactionsResult" nillable="true" type="q8:ArrayOfTRANSACTIONRESPONSE" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentBatchID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://gateway.securenet.com/API/Contracts" minOccurs="0" name="MerchantKey" nillable="true" type="q9:MERCHANT_KEY" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentBatchIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCurrentBatchIDResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

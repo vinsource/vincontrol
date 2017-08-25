@@ -1,0 +1,120 @@
+﻿
+/*body
+{
+    background: #eeeeee;
+    font-family: 'Trebuchet MS' , Arial, sans-serif !important;
+}*/
+.mkexpend_save
+{
+    background-color: #5C5C5C;
+    color: white !important;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 2px;
+    text-align: center;
+    border: none;
+}
+.mkexpend_viewmap
+{
+    background-color: #5C5C5C;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+    width: 70px;
+}
+.mkexpend_viewmap > a
+{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.btns_shadow
+{
+    box-shadow: 3px 2px 3px #333333;
+}
+.btns_shadow:hover
+{
+    background-color: #333333;
+}
+
+#carInfo > span > a
+{
+    color: white;
+}
+
+.ui-dropdownchecklist-selector
+{
+    background: none repeat scroll 0 0 #D1D7D4 !important;
+    color: black !important;
+}
+
+#result
+{
+    font-family: "Trebuchet MS" , Helvetica, sans-serif;
+}
+.hidden
+{
+    display: none;
+}
+#side-nav-wrap
+{
+    position: fixed;
+    top: 175px;
+    right: 20px;
+    overflow: hidden;
+    width: 220px;
+}
+#rangeNav span
+{
+    /*display: inline-block;
+    width: 50px;
+    text-align: center;
+    padding: .3em .7em .3em .7em;
+    background: #222222;
+    color: white;*/
+}
+#rangeNav span.selected
+{
+    background-color: white;
+color: black;
+    /*font-weight: bold;
+    background-color: #3366cc;*/
+}
+#graphWrap
+{
+    width: 300px;
+    height: 143px;
+    display: inline-block;
+    float: left;
+    /*margin-bottom: 50px;*/
+}
+#carInfo
+{
+    /*display: inline-block;
+    padding: 10px;
+    background-color: #3366cc;
+    color: white;
+    width: 200px;
+    font-size: .8em;*/
+}
+#filter-wrap
+{
+    background: #3366cc;
+    padding: .5em;
+    color: white;
+    width: 98%;
+}
+input[type="radio"]
+{
+    background: transparent;
+}
+
+#googleVINMap
+{
+    height: 143px;
+    width: 100%;
+}
+
+

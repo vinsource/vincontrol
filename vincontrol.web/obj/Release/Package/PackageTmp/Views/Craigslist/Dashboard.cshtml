@@ -1,0 +1,272 @@
+﻿@using Vincontrol.Web.Handlers
+@using vincontrol.Helper
+@{
+    ViewBag.Title = "VINControl | Craigslist Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section css{
+    <link rel="stylesheet" href="@Url.Content("~/Content/inventory.css")" type="text/css" />
+    <style type="text/css">
+        .contain_list
+        {
+            background-color: #E8EAEF;
+        }
+        .list_odd
+        {
+            background-color: white;
+        }
+        .white
+        {
+            border: 2px solid white;
+            /*width: 150px!important;*/
+        }
+    </style>
+}
+
+@section scripts{
+    <script type="text/javascript" src="@Url.Content("~/js/ckeditor/ckeditor.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/js/ckeditor/adapters/jquery.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/js/fancybox/jquery.fancybox-1.3.4.pack.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/js/underscore.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/js/jsrender.js")"></script>
+    @*<script type="text/javascript" src="@Url.Content("~/js/Vincontrol/inventory.js")"></script>*@
+    <script type="text/javascript">        
+        
+        $(document).ready(function () {
+            CKEDITOR.replace('EndingSentence',
+            {
+                height: 235,
+                //toolbar: 'Custom',
+                toolbarCanCollapse: false,
+                toolbar_Custom: []
+            });
+        });
+
+        var bIsShowingFilterPanel = false;
+        function toggleFilterPanel() {
+            bIsShowingFilterPanel = !bIsShowingFilterPanel;
+
+            if (bIsShowingFilterPanel) {
+                $("#filterPanel").show();
+                $(".vin_listVehicle_holder").css("height", 220);
+            }
+            else {
+                $("#filterPanel").hide();
+                $(".vin_listVehicle_holder").css("height", 300);
+            }
+        }
+    </script>
+}
+
+@section SubMenu {
+    <div id="admin_top_btns_holder">
+        <h2>Craigslist</h2>        
+    </div>    
+}
+
+<div id="container_right_content" style="min-height:663px;">
+    <div style="display:inline-block;width:100%;">
+        <div style="float: left; display: inline-block;">
+            <div style="font-size: 12px;">
+                <select id="craigslistState" style="width: 140px;">
+                    <option value="0">-- Choose state --</option>
+                </select>
+                <select id="craigslistCity" style="width: 140px;">
+                    <option value="0">-- Choose city --</option>
+                </select>
+                <select id="craigslistLocation" style="width: 140px;">
+                    <option value="0">-- Choose location --</option>
+                </select>
+                Specific Location &nbsp;<input type="text" />
+            </div>
+            <div style="">
+                <textarea rows="10" cols="80" id="EndingSentence" name="EndingSentence"></textarea>
+            </div>
+        </div>
+        <div style="display: inline-block; background-color: #ddd; float: right;">
+            &nbsp;&nbsp;Account Balance<br />
+            &nbsp;&nbsp;Pending Credit
+        </div>
+    </div>
+    <div>
+        
+        <div id="right_content_nav" class="right_content_nav" style="margin-left: 0px;">
+            <div class="right_content_nav_items nav_first">
+            </div>            
+            <div class="right_content_nav_items right_content_items_vin nav_long" value="vin">
+                <a href="javascript:void(0)">VIN</a>
+                <img class="imgSort" id="imgSortVin" src="" width="12px" style="display: none;">
+            </div>
+            <div class="right_content_nav_items nav_long" value="stock">
+                <a href="javascript:void(0)">Stock</a>
+                <img class="imgSort" id="imgSortStock" src="" width="12px" style="display: none;">
+            </div>
+            <div class="right_content_nav_items nav_long" value="year">
+                <a href="javascript:void(0)">Year</a>
+                <img class="imgSort" id="imgSortYear" src="" width="12px" style="display: none;">
+            </div>
+            <div class="right_content_nav_items nav_long" value="make" style="width: 120px;">
+                <a href="javascript:void(0)">Make</a>
+                <img class="imgSort" id="imgSortMake" src="../Content/images/vincontrol/up.png" width="12px" style="display: inline;">
+            </div>
+            <div class="right_content_nav_items nav_long" value="model" style="width: 120px;">
+                <a href="javascript:void(0)">Model</a>
+                <img class="imgSort" id="imgSortModel" src="" width="12px" style="display: none;">
+            </div>
+            <div class="right_content_nav_items nav_long" value="trim" style="width: 120px;">
+                <a href="javascript:void(0)">Trim</a>
+                <img class="imgSort" id="imgSortTrim" src="" width="12px" style="display: none;">
+            </div>
+            <div class="right_content_nav_items nav_long" value="lastPosted" style="width: 120px;">
+                <a href="javascript:void(0)">Last Posted</a>
+                <img class="imgSort" id="imgSortLastPosted" src="" width="12px" style="display: none;">
+            </div>
+            <div class="right_content_nav_items nav_long" value="numberOfAds" style="width: 120px;">
+                <a href="javascript:void(0)">Number Of Ads</a>
+                <img class="imgSort" id="imgSortNumberOfAds" src="" width="12px" style="display: none;">
+            </div>
+            <div class="right_content_nav_items nav_first">
+            </div> 
+            <div class="right_content_nav_filter_item" onclick="toggleFilterPanel();">
+                Filter
+                <span style="display: inline-block; float: none;" class="right_content_nav_filter_item_arrow_down"></span>
+            </div>
+        </div>
+        <div id="filterPanel" class="filterPanel" style="margin-left: 0px;">
+            <div style="display: inline-block; float: right; width: 100%;">
+                <div id="MissingImage" class="right_header_btns white">
+                    <a href="javascript:;">Missing image</a>
+                </div>
+                <div id="MissingPrice" class="right_header_btns white">
+                    <a href="javascript:;">Missing price</a>
+                </div>
+                <div id="MissingDescription" class="right_header_btns white">
+                    <a href="javascript:;">Missing description</a>
+                </div>
+                <div id="HaveNotPosted30Days" class="right_header_btns white">
+                    <a href="javascript:;">Haven't posted last 30 days</a>
+                </div>
+            </div>
+            <div>
+                <div class="filter_item_holder">
+                    <div class="filter_item_label">Year</div>
+                    <select id="selectYear"></select>
+                </div>
+                <div class="filter_item_holder">
+                    <div class="filter_item_label">Make</div>
+                    <select id="selectMake"></select>
+                </div>
+                <div class="filter_item_holder">
+                    <div class="filter_item_label">Model</div>
+                    <select id="selectModel"></select>
+                </div>
+                <div class="filter_item_holder">
+                    <div class="filter_item_label">Trim</div>
+                    <select id="selectTrim"></select>
+                </div>
+            </div>
+            
+        </div>
+        <div class="vin_listVehicle_holder" style="padding-left: 0px; height: 300px;">
+            @{ for (var i = 1; i <= 10; i ++){
+            <div class="contain_list list_odd">
+                <div class="right_content_items nav_first">
+                    <input type="checkbox" title="Is featured car?" name="IsFeatured_135538" id="IsFeatured_135538" value="true">
+                </div>                
+                <a class="vin_editProfile" href="/Inventory/EditIProfile?ListingID=135538" title="SCFBF03B68GC08282">
+                    <div class="right_content_items right_content_items_vin nav_long">
+                        8GC08282
+                    </div>
+                </a>
+                <a class="vin_editProfile" href="/Inventory/EditIProfile?ListingID=135538">
+                    <div class="right_content_items nav_long">
+                        4510
+                    </div>
+                </a>
+                <a class="vin_editProfile" href="/Inventory/EditIProfile?ListingID=135538">
+                    <div class="right_content_items nav_long">
+                        2008
+                    </div>
+                </a>
+                <a class="vin_editProfile" href="/Inventory/EditIProfile?ListingID=135538" title="Aston Martin">
+                    <div class="right_content_items nav_long" style="width: 120px;">
+                        Aston Martin
+                    </div>
+                </a>
+                <a class="vin_editProfile" href="/Inventory/EditIProfile?ListingID=135538" title="Vantage">
+                    <div class="right_content_items nav_long" style="width: 120px;">
+                        Vantage
+                    </div>
+                </a>
+                <a class="vin_editProfile" href="/Inventory/EditIProfile?ListingID=135538" title="4.3L V8">
+                    <div class="right_content_items nav_long" style="width: 120px;">
+                        4.3L V8
+                    </div>
+                </a>
+                <div class="right_content_items nav_long" style="width: 120px;">
+                    @DateTime.Now.ToString("MM/dd/yyyy HH:mm")
+                </div>
+                <div class="right_content_items right_content_items_owners_new nav_long">
+                    0
+                </div>
+                                
+                <div style="">
+                    <a title="View" href="javascript:;">
+                        <img src="../content/images/vincontrol/Craigslist.png" id="btnCraigslist_134471" style="margin-top: 5px;">
+                    </a>
+                </div>
+            </div>
+            <div class="contain_list">
+                <div class="right_content_items nav_first">
+                    <input type="checkbox" title="Is featured car?" name="IsFeatured_135538" id="IsFeatured_135538" value="true">
+                </div>                
+                <a class="vin_editProfile" href="/Inventory/EditIProfile?ListingID=135538" title="SCFBF03B68GC08282">
+                    <div class="right_content_items right_content_items_vin nav_long">
+                        8GC08282
+                    </div>
+                </a>
+                <a class="vin_editProfile" href="/Inventory/EditIProfile?ListingID=135538">
+                    <div class="right_content_items nav_long">
+                        4510
+                    </div>
+                </a>
+                <a class="vin_editProfile" href="/Inventory/EditIProfile?ListingID=135538">
+                    <div class="right_content_items nav_long">
+                        2008
+                    </div>
+                </a>
+                <a class="vin_editProfile" href="/Inventory/EditIProfile?ListingID=135538" title="Aston Martin">
+                    <div class="right_content_items nav_long" style="width: 120px;">
+                        Aston Martin
+                    </div>
+                </a>
+                <a class="vin_editProfile" href="/Inventory/EditIProfile?ListingID=135538" title="Vantage">
+                    <div class="right_content_items nav_long" style="width: 120px;">
+                        Vantage
+                    </div>
+                </a>
+                <a class="vin_editProfile" href="/Inventory/EditIProfile?ListingID=135538" title="4.3L V8">
+                    <div class="right_content_items nav_long" style="width: 120px;">
+                        4.3L V8
+                    </div>
+                </a>
+                <div class="right_content_items nav_long" style="width: 120px;">
+                    @DateTime.Now.ToString("MM/dd/yyyy HH:mm")
+                </div>
+                <div class="right_content_items right_content_items_owners_new nav_long">
+                    0
+                </div>
+                                
+                <div style="">
+                    <a title="View" href="javascript:;">
+                        <img src="../content/images/vincontrol/Craigslist.png" id="btnCraigslist_134471" style="margin-top: 5px;">
+                    </a>
+                </div>
+            </div>
+            }}
+        </div>
+    </div>
+</div>
+
+

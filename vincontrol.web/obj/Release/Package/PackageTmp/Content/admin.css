@@ -1,0 +1,1435 @@
+/* new 20/8/2013*/
+  /* tooltip styling. by default the element to be styled is .tooltip  */
+  .tooltip {
+    display:none;
+    background:transparent url(/media/img/tooltip/black_arrow.png);
+    font-size:12px;
+    height:70px;
+    width:160px;
+    padding:25px;
+    color:#eee;
+  }
+  #btnUploadImage {
+      width: 75px;
+      height: 33px;
+      float: right;
+      margin-right: 75px;
+      display: block;
+
+  }
+  
+.adu_label_name {
+    font-size: 9px
+}
+
+.adu_label_username {
+    font-size: 12px
+}
+
+.bg_edit_done_bg {
+   color: white; 
+   padding: 0px 5px; 
+   background-color: #161e8a !important;
+   display: inline;
+}
+.bg_add_holder {
+    position: relative;
+}
+.bg_edit_btns {
+    height: 25px;
+padding: 10px;
+}
+.bg_edit_btns > div {
+    padding: 5px 15px;
+cursor: pointer;
+color: #FFF;
+background-color: #5C5C5C;
+float: right;
+font-size: 13px;
+margin-right: 5px;
+}
+.bg_edit_content .bg_add_content 
+{
+ 
+    background-color: #FFF;
+height: 50px;
+margin: 0px;
+padding: 8px;
+font-size: 13px;
+}
+.content_new_bg {
+    display: none;
+z-index: 100;
+right: 80px;
+position: absolute;
+width: 400px;
+border: 2px solid #808080;
+background-color: #CDCDCD;
+}
+.ac_inventory_btns {
+	cursor: pointer;
+	background-color: #5C5C5C;
+	color: #FFF;
+	text-align: center;
+	padding: 4px 6px 5px;
+	font-size: 13px;
+	font-weight: bold;
+	position: absolute;
+	top: 3px;
+	right: 19px;
+	width: 125px !important;
+}
+.admin_content_dealerinfo {
+	margin: 0px 10px;
+	height: 150px;
+}
+.admin_content_info {
+	float: left;
+	background-color: #E8EAEF;
+	width: 30%;
+	height: inherit;
+	border: 1px solid #CDCDCD;
+	padding: 2px 8px;
+	border-right: none;
+	-moz-box-sizing: border-box; /* Firefox */
+	box-sizing: border-box;
+}
+.admin_content_info:last-child {
+	border-right: 1px solid #CDCDCD;
+}
+.admin_content_info_title {
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+.admin_content_info_text {
+
+}
+.admin_content_info_title img {
+	cursor: pointer;
+}
+.admin_content_ws_des {
+
+	margin: 10px 10px;
+	height: 185px;
+}
+.admin_content_ws_des > div {
+	float: left;
+	border: 1px solid #CDCDCD;
+	height: inherit;
+	padding: 2px 8px;
+	background-color: #E8EAEF;
+	-moz-box-sizing: border-box; /* Firefox */
+	box-sizing: border-box;
+}
+.admin_content_ws_holder {
+	border-right: 0px !important;
+	width: 40%;
+}
+.admin_content_des_holder {
+	width: 60%;
+}
+.admin_content_bg {
+
+	margin: 10px 10px;
+	height: 210px;
+}
+.admin_content_bg .admin_content_info_title {
+	padding: 3px 3px;
+	position: relative;
+	border: 1px solid #CDCDCD;
+	background-color: #E8EAEF;
+}
+.ac_dealer_info label {
+	display: block;
+	width: 80%;
+	margin: 0px auto;
+	font-size: 14px;
+}
+.ac_dealerinfo_address {
+
+}
+.ac_preferences {
+
+}
+.admin_content_prefer_items {
+
+}
+.admin_content_prefer_items > label {
+	width: 182px;
+	display: block;
+	float: left;
+	font-size: 14px;
+}
+.admin_content_prefer_items > select {
+	width: 150px;
+	border: 1px solid #444;
+}
+.admin_content_prefer_items > input {
+	margin: 1px 0px;
+	width: 150px;
+	-moz-box-sizing: border-box; /* Firefox */
+	box-sizing: border-box;
+	border: 1px solid #444;
+}
+.ac_uploadimg_left {
+	float: left;
+	width: 63%;
+	-moz-box-sizing: border-box; /* Firefox */
+	box-sizing: border-box;
+}
+.ac_uploadimg_left small {
+	font-size: 11px;
+	font-style: italic;
+	color: #555;
+}
+.ac_uploadimg_btns_holder {
+	margin-top: 20px;
+	margin-left: 30px;
+}
+.ac_uploadimg_btns_cb {
+
+}
+.ac_uploadimg_btns_file {
+	cursor: pointer;
+	bottom: 2px;
+	background-color: #5C5C5C;
+	color: #FFF;
+	text-align: center;
+	border: none;
+	width: 80px;
+	font-size: 13px;
+	padding: 2px 5px 3px;
+	font-weight: bold;
+}
+.ac_uploadimg_right {
+	-moz-box-sizing: border-box; /* Firefox */
+	box-sizing: border-box;
+	float: right;
+	width: 30%;
+}
+.ac_uploadimg_img {
+	width: 94px;
+	height: 94px;
+}
+.ac_ws_title {
+	font-size: 14px;
+}
+.ac_ws_list {
+
+}
+.ac_ws_items {
+	margin-top: 4px;
+}
+.ac_ws_items input[type="checkbox"] {
+
+}
+.ac_ws_items input[type="text"] {
+	border: 1px solid #444;
+}
+.ac_ws_items label {
+
+}
+.admin_content_ws_holder .admin_content_info_text {
+	margin: 5px 35px;
+}
+.ac_des_left {
+	width: 50%;
+	-moz-box-sizing: border-box; /* Firefox */
+	box-sizing: border-box;
+	float: left;
+}
+.ac_des_left_title {
+	margin-bottom: 5px;
+	font-size: 17px;
+	font-weight: bold;
+	color: #444;
+}
+.ac_des_right {
+	width: 50%;
+	-moz-box-sizing: border-box; /* Firefox */
+	box-sizing: border-box;
+	float: right;
+}
+.ac_des_right_top {
+
+}
+.ac_des_right_items {
+	clear: both;
+	height: 19px;
+	margin-left: 10px;
+    position: relative;
+}
+.acd_right_items_left {
+	float: left;
+	width: 60%;
+	-moz-box-sizing: border-box; /* Firefox */
+	box-sizing: border-box;
+	font-size: 13px;
+}
+.acd_right_items_right {
+	float: right;
+	width: 40%;
+	-moz-box-sizing: border-box; /* Firefox */
+	box-sizing: border-box;
+}
+.acd_right_btns {
+	float: left;
+	font-size: 13px;
+	width: 35px;
+	cursor: pointer;
+	text-align: center;
+}
+.acd_right_separated {
+	float: left;
+	font-size: 13px;
+}
+.ac_bg_content {
+	height: 183px;
+	overflow: auto;
+}
+.ac_bg_items {
+	clear: both;
+	height: 19px;
+	padding: 7px;
+}
+.ac_bg_items_odd {
+	background-color: #E8EAEF;
+}
+.ac_bg_content_left {
+	float: left;
+	width: 70%;
+}
+.acd_right_btns:hover {
+	color: #800;
+}
+.ac_bg_delete {
+	float: left;
+	width: 20px;
+	cursor: pointer;
+}
+.ac_bg_name {
+	float: left;
+	font-size: 14px;
+}
+.ac_bg_content_right {
+	float: right;
+	width: 23%;
+}
+.ac_bg_edit {
+	float: left;
+	width: 50px;
+	cursor: pointer;
+	font-size: 14px;
+}
+.ac_bg_eng {
+	float: left;
+	width: 57px;
+	font-size: 14px;
+	cursor: pointer;
+}
+.ac_bg_separated {
+	float: left;
+	font-size: 14px;
+}
+.ac_bg_spanish {
+	font-size: 14px;
+	cursor: pointer;
+	float: left;
+	width: 102px;
+	margin-left: 5px;
+}
+.ac_bg_content_right > div:hover {
+	font-weight: bold;
+}
+/* end new 20/8/2013 */
+
+
+input:not([type="image"]), textarea
+{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+}
+#txtVin {
+    box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important; /* Firefox */
+}
+
+.content_view
+{
+    display: none;
+    z-index: 100;
+    right: 120px;
+    position: absolute;
+    width: 200px;
+    border: 2px solid #808080;
+    background-color: #CDCDCD;
+}
+
+.content_view_title
+{
+    padding-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid #808080;
+    height: 25px;
+}
+.content_view_content p
+{
+    background-color: #FFF;
+    margin: 0px;
+    padding: 8px;
+    font-size: 13px;
+    height: 200px;
+    overflow-y: scroll;
+}
+.content_edit
+{
+    display: none;
+    z-index: 100;
+    right: 230px;
+    position: absolute;
+    width: 600px;
+    border: 2px solid #808080;
+    background-color: #CDCDCD;
+}
+.content_edit_content textarea
+{
+    background-color: #FFF;
+    height: 300px;
+    margin: 0px;
+    width: 100%;
+    padding: 8px;
+    font-size: 13px;
+}
+
+.content_view_content textarea
+{
+    background-color: #FFF;
+    height: 300px;
+    margin: 0px;
+    width: 100%;
+    padding: 8px;
+    font-size: 13px;
+}
+.content_edit_btns
+{
+    height: 25px;
+    padding: 10px;
+}
+
+.content_edit_btns div
+{
+    padding: 5px 15px;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #5C5C5C;
+    float: right;
+    font-size: 13px;
+    margin-right: 5px;
+}
+.rebate_list_holder input
+{
+    border: 1px solid black;
+    float: left;
+    margin-right: 4px;
+    margin-top: 0px;
+ 
+}
+
+.rebate_edit_disclaimer
+{
+    display: none;
+    z-index: 100;
+    right: 205px;
+    position: absolute;
+    width: 200px;
+    border: 2px solid gray;
+    background-color: #CDCDCD;
+}
+.rebate_view_disclaimer
+{
+    display: none;
+    z-index: 100;
+    right: 246px;
+    position: absolute;
+    width: 200px;
+    border: 2px solid gray;
+    background-color: #CDCDCD;
+}
+.rebate_disclaimer_edit_btns
+{
+    height: 25px;
+    padding: 10px;
+}
+.rebate_disclaimer_edit_btns div
+{
+    padding: 5px 15px;
+    cursor: pointer;
+    color: white;
+    background-color: #5C5C5C;
+    float: right;
+    font-size: 13px;
+    margin-right: 5px;
+}
+.rebate_disclaimer_edit_content textarea
+{
+    background-color: #FFF;
+    height: 150px;
+    margin: 0px;
+    padding: 8px;
+    font-size: 13px;
+}
+.rebate_disclaimer_content p
+{
+    background-color: #FFF;
+    margin: 0px;
+    padding: 8px;
+    font-size: 13px;
+}
+.rebate_disclaimer_title
+{
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+    height: 25px;
+}
+.rebate_disclaimer_manage
+{
+    padding-left: 10px;
+    border: 1px solid #000;
+    float: left;
+    width: 12.8%;
+    background-color: #FFF;
+}
+.rebate_disclaimer_manage > div:hover
+{
+}
+.rebate_disclaimer_manage > div
+{
+    float: left;
+    cursor: pointer;
+    padding: 2px 3px;
+    font-size: 12px;
+}
+.admin_notifications_manage_holder
+{
+    max-height: 200px;
+    width: 65%;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    background-color: #333;
+    clear: both;
+    display: none;
+    overflow: auto;
+}
+.admin_notifications_manage_holder label
+{
+    display: block;
+    color: white;
+    padding: 1px 15px;
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.admin_3rdparty_button
+{
+    cursor: pointer;
+    color: white
+}
+.admin_3rdparty_holder
+{
+    display: none;
+}
+
+.admin_3rdparty_container
+{
+}
+
+.admin_3rdparty_title
+{
+    background-color: #FFC;
+    font-family: time;
+    padding: 10px;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-left: 20px;
+    font-style: italic;
+    border: 1px solid;
+}
+
+.admin_3rdparty_items_holder
+{
+    padding: 25px;
+}
+
+.admin_3rdparty_items
+{
+    clear: both;
+    height: 25px;
+}
+.admin_3rdparty_items input
+{
+    height: 20px;
+    border: 1px solid #000;
+}
+.admin_3rdparty_items > div
+{
+    float: left;
+}
+.admin_3rdparty_header
+{
+    font-size: 18px;
+    font-weight: bold;
+    padding: 25px 15px 0px;
+    height: 30px;
+}
+.admin_3rdparty_items_text
+{
+    width: 150px;
+    font-size: 15px;
+}
+
+.admin_3rdparty_items_name
+{
+}
+
+.admin_3rdparty_items_pass
+{
+}
+
+.admin_mockupActive_header_left
+{
+    float: left;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.admin_mockupActive_header_date
+{
+    float: right;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.admin_mockupActive_content
+{
+    clear: both;
+    width: 92%;
+    margin: 0px auto;
+    border: 2px solid #212121;
+    height: 480px;
+}
+
+.admin_fixed_title {
+	padding: 10px 16px;
+	font-weight: bold;
+	font-size: 25px;
+	color: white
+}
+
+.admin_credentials_holder
+{
+    float: right;
+    margin-right: 20px;
+}
+.admin_credentials_holder > div
+{
+    width: 160px;
+    border: 1px solid #000;
+    margin-top: 17px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+.admin_save_change
+{
+    cursor: pointer;
+    position: absolute;
+    bottom: 2px;
+    margin-left: 850px;
+    background-color: #5C5C5C;
+    color: #FFF;
+    text-align: center;
+    width: 175px;
+    font-size: 19px;
+    padding: 2px 5px 3px;
+    font-weight: bold;
+}
+.admin_content_holder
+{
+    float: left;
+    border-right: 1px solid #CCCCCC;
+    background-color: white;
+    width: 33%;
+    height: 585px;
+}
+.admin_content_headers
+{
+    padding: 6px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+}
+
+.admin_content_title
+{
+    padding-left: 5px;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+}
+.admin_content_inventory_info
+{
+    margin-top: 5px;
+    padding-left: 30px;
+}
+.aci_info_address
+{
+    top: 0px;
+    position: absolute;
+    right: 0px;
+    height: 160px;
+    width: 160px;
+    padding-left: 5px;
+}
+.ac_inventory_info_title
+{
+    font-size: 13px;
+    font-weight: bold;
+}
+.ac_inventory_info_value
+{
+    font-size: 13px;
+    padding-left: 10px;
+}
+.ac_inventory_select_items
+{
+    margin-top: 10px;
+    height: 20px;
+}
+.ac_inventory_select_title
+{
+    float: left;
+    font-size: 14px;
+    padding-left: 6px;
+}
+.ac_inventory_select_input
+{
+}
+.ac_inventory_select_input select
+{
+    margin-right: 5px;
+    float: right;
+    background-color: #D1D7D4;
+    width: 140px;
+}
+.ac_input
+{
+    height: 20px;
+    width: 140px;
+    float: right;
+    margin-right: 5px;
+    background-color: #D1D7D4;
+    border: 1px solid;
+}
+.ac_inventory_btns_holder
+{
+    margin-top: 5px;
+    height: 25px;
+}
+.ac_inventory_btns
+{
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: #5C5C5C;
+    color: #FFF;
+    text-align: center;
+    width: 75px;
+    padding: 2px 5px 3px;
+    float: right;
+    font-size: 13px;
+    font-weight: bold;
+}
+.ac_inventory_upload_holder
+{
+    clear: both;
+    margin-top: 15px;
+}
+.ac_inventory_upload_left
+{
+    float: left;
+    width: 57%;
+}
+.ac_inventory_upload_right
+{
+    float: right;
+    width: 43%;
+}
+.ac_inventory_upload_left p
+{
+    padding: 10px;
+    font-size: 11px;
+    font-style: italic;
+    clear: both;
+}
+.ac_inventory_stockImg
+{
+    margin-right: 5px;
+    float: right;
+    margin-top: 10px;
+    clear: both;
+    width: 94px;
+    height: 94px;
+}
+.ac_inventory_upload_right input
+{
+    float: right;
+}
+
+.admin_content_windowDes_title
+{
+    margin: 0px 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.ac_window_price_holder
+{
+    margin-bottom: 40px;
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+.ac_window_price_items input
+{
+    float: left !important;
+}
+.ac_window_price_items
+{
+    height: 25px;
+}
+.ac_window_price_items label
+{
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+.ac_window_price_items .ac_input
+{
+    height: 18px;
+    width: 160px;
+    margin-top: 2px;
+}
+
+.ac_buyGuide_holder
+{
+}
+
+.ac_buyGuide_items
+{
+    padding-left: 10px;
+    height: 25px;
+}
+
+.ac_buyGuide_items > div
+{
+    float: left;
+}
+
+.ac_buyGuide_item_name
+{
+    font-size: 13px;
+    width: 45%;
+}
+
+.ac_buyGuide_item_lang
+{
+    font-size: 13px;
+    cursor: pointer;
+    padding: 0px 3px;
+}
+
+.ac_buyGuide_item_langFist
+{
+}
+
+.ac_buyGuide_item_btn
+{
+    margin: 4px 2px;
+    width: 10px;
+    height: 10px;
+}
+
+.ac_window_addNew_holder .ac_inventory_btns
+{
+    margin-left: 25px;
+    width: 200px;
+    float: left;
+}
+.ac_des_contact_holder
+{
+    height: 100px;
+}
+.ac_des_contact_holder label
+{
+    padding: 0px 10px;
+    margin-top: 10px;
+    font-size: 13px;
+    display: block;
+}
+
+.ac_des_contact_item .ac_input
+{
+    clear: both;
+    float: left;
+    margin-left: 10px;
+    width: 180px;
+    height: 18px;
+    margin-top: 5px;
+}
+
+.ac_des_dealerAction_holder
+{
+    position: relative;
+    height: 25px;
+    clear: both;
+    padding: 0px 10px;
+}
+.ac_des_dealerAction_items
+{
+}
+.ac_window_price_holder > label
+{
+    font-size: 13px;
+}
+
+.ac_des_dealerAction_name
+{
+    float: left;
+    font-size: 13px;
+}
+
+.acd_dealerAction_btns_holder
+{
+    float: right;
+}
+
+.acd_dealerAction_btns_holder div
+{
+    cursor: pointer;
+    float: left;
+    padding: 0px 3px;
+    font-size: 13px;
+}
+
+.acd_dealerAction_btns_clear
+{
+    border-right: 0px !important;
+}
+
+
+
+.au_notifications_items
+{
+    clear: both;
+    height: 25px;
+    margin-bottom: 5px;
+}
+.au_notifications_header > div
+{
+    text-align: center;
+    font-weight: bold;
+    background-color: #C1C1C1;
+    color: black !important;
+}
+.au_notifications_items > div
+{
+    float: left;
+    margin-right: 4px;
+    font-size: 13px;
+    
+}
+.au_notifications_header
+{
+}
+
+.aun_type
+{
+    width: 32%;
+    float: left;
+}
+
+.aun_select
+{
+    width: 20%;
+    float: left;
+}
+
+.aun_user
+{
+    padding-bottom: 2px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #5C5C5C;
+    width: 13%;
+    float: left;
+    color: white;
+}
+
+.au_notifications_table
+{
+    margin: 0px 10px;
+}
+
+.auageing_holder
+{
+    margin: 10px;
+}
+
+.auageing_items
+{
+    height: 27px;
+    clear: both;
+}
+
+.auageing_items label
+{
+    font-size: 13px;
+    float: left;
+    width: 170px;
+}
+
+.auageing_items input
+{
+    height: 20px;
+    float: left;
+    border: 1px solid black;
+}
+
+.auageing_items select
+{
+    width: 155px;
+    float: left;
+    margin-left: 2px;
+    border: 1px solid black;
+}
+
+.admin_noftifications_adduser_btns
+{
+    cursor: pointer;
+    width: 100px;
+    margin: 10px 50px;
+    float: right;
+    color: #FFF;
+    background-color: #5C5C5C;
+    text-align: center;
+    font-weight: 900;
+    padding: 2px 0px;
+    font-size: 13px;
+}
+
+.admin_rebates_header
+{
+}
+
+.admin_rebates_header div
+{
+    font-weight: 700;
+    background-color: #C1C1C1;
+}
+
+.admin_rebates_collumn
+{
+    color: #333333;
+    margin-left: 4px;
+    float: left;
+    font-size: 13px;
+    width: 10%;
+    text-align: center;
+}
+
+.admin_rebates_items
+{
+    position: relative;
+    clear: both;
+}
+
+.admin_rebates_manufact
+{
+    width: 5.3%;
+}
+
+.admin_rebates_expiration
+{
+    width: 7.1%;
+}
+
+.admin_rebates_create
+{
+    width: 7.1%;
+}
+
+.admin_rebates_disclaimer
+{
+    width: 14%;
+}
+
+.admin_rebates_table
+{
+    margin-left: 20px;
+    overflow: hidden;
+    overflow-y: auto;
+    height: 520px
+   
+}
+
+.admin_rebate_select
+{
+    width: 10%;
+    border: 1px solid black;
+}
+
+.admin_rebates_bodytype
+{
+    width: 12%;
+}
+
+.admin_rebate_manufactory
+{
+    width: 5.5%;
+    margin: 0px;
+    border: 1px solid black;
+}
+
+.admin_rebate_expiration
+{
+    width: 7.1%;
+    margin: 0px;
+    border: 1px solid black;
+}
+
+.admin_rebate_create
+{
+    width: 7.1%;
+    margin: 0px;
+    border: 1px solid black;
+}
+
+.admin_rebate_disclaimer
+{
+    width: 14%;
+    margin: 3px 0px;
+    border: 1px solid black;
+}
+
+.admin_rebates_add_btn, .admin_rebates_delete_btn
+{
+    font-weight: bold;
+    background-color: #5C5C5C;
+    margin-right: 45px;
+    width: 55px;
+    padding: 2px;
+    float: right;
+   
+    font-size: 13px;
+    text-align: center;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.admin_rebates_add_btn
+{
+    margin-top: 3px;
+}
+
+.admin_ur_permissions_holder
+{
+    margin: 0px 10px;
+}
+.admin_ur_permissions_items
+{
+    clear: both;
+}
+.admin_ur_permissions_items label
+{
+    font-size: 13px;
+    padding: 0px 6px;
+    float: left;
+}
+.admin_ur_permissions_header
+{
+    width: 100px;
+}
+
+.admin_userrights_holder
+{
+    margin: 0px 10px;
+}
+
+.admin_userrights_headerAdd
+{
+    padding: 5px;
+    height: 45px;
+    border: 2px solid #808080;
+}
+
+.admin_userrights_items
+{
+    clear: both;
+}
+.admin_userrights_header div
+{
+    background-color: #C1C1C1;
+    text-align: center;
+}
+.admin_userrights_header
+{
+}
+
+.adu_collumn
+{
+    font-weight: bold;
+    width: 12%;
+    font-size: 13px;
+    float: left;
+    margin-right: 5px;
+}
+
+
+.adu_collumn input
+{
+    margin-top: 3px;
+    height: 20px;
+    width: 100%;
+    border: 1px solid #000;
+}
+
+.adu_collumn div {
+    background-color: wheat;
+     margin-top: 3px;
+    min-height: 15px;
+    padding-left: 5px;
+    padding-top: 5px;
+     /*width: 100%;*/
+   
+}
+
+.adu_collumn select
+{
+    margin-top: 3px;
+    height: 20px;
+    width: 100%;
+    border: 1px solid #000;
+}
+
+.adu_collumnNew
+{
+    font-weight: bold;
+    width: 12%;
+    font-size: 13px;
+    float: left;
+    margin-right: 5px;
+}
+
+
+.adu_collumnNew input
+{
+    margin-top: 3px;
+    height: 20px;
+    width: 100%;
+    border: 1px solid #000;
+}
+
+.adu_collumnNew div {
+     margin-top: 3px;
+     width: 100%;
+   
+}
+
+.adu_collumnNew select
+{
+    margin-top: 3px;
+    height: 20px;
+    width: 100%;
+    border: 1px solid #000;
+}
+
+.adu_addUser_btn
+{
+    padding: 2px 0px;
+    width: 11% !important;
+    margin-top: 2px;
+    background-color: #5C5C5C;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.admin_userrights_search_holder
+{
+    clear: both;
+    height: 22px;
+    padding: 10px 0px;
+}
+
+.admin_userrights_search_holder input
+{
+    height: 20px;
+    float: right;
+    border: 1px solid #000;
+}
+
+.adu_search_btn
+{
+    padding: 2px 0px;
+    font-size: 13px;
+    cursor: pointer;
+    background-color: #5C5C5C;
+    float: right;
+    width: 100px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+}
+
+.admin_userrights_list
+{
+    height: 220px;
+    padding: 5px;
+    border: 2px solid #808080;
+    overflow: auto;
+}
+textarea {
+    resize: none;
+}
+
+.admin_stockingguide_brand_average
+{
+    margin: 0px 10px;
+}
+
+.admin_stockingguide_brand_title
+{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #DCDEDE;
+    padding: 5px 10px;
+    border-bottom: 1px solid #BEBEBE;
+}
+
+.admin_stockingguide_brand_holder
+{
+    width: 30%;
+    float: left;
+    border: 1px solid #BEBEBE;
+}
+
+.admin_stockingguide_average_holder
+{
+    width: 50%;
+    float: left;
+    margin-left: 20px;
+}
+
+.admin_stockingguide_average_holder span {
+    width: 200px;
+    display: inline-block;
+}
+
+.admin_stockingguide_average_holder span.span1s {
+    width: 100px;
+}
+
+.admin_stockingguide_average_holder .smallspan {
+    width: 20px;
+}
+
+.admin_stockingguide_average_holder input[type="radio"].smallspan {
+    margin: 0px;
+}
+
+.admin_stockingguide_average_holder input[type="text"].span2s {
+    width: 205px;
+   
+}
+
+
+
+.admin_stockingguide_average_holder input[type="text"] {
+    width: 100px;
+}
+
+
+.admin_stockguide_average_item
+{
+    padding: 5px 0px 5px 70px;
+    margin-bottom: 10px;
+}
+
+.admin_stockguide_average_item label
+{
+    width: 150px;
+    padding-top: 5px;
+    float: left;
+}
+
+.admin_stockguide_average_item input[type="text"]
+{
+    width: 150px;
+    float: right;
+    text-align: right;
+    border: 1px solid;
+    padding-right: 5px;
+}
+
+.admin_stockguide_average_item input[type="radio"]
+{
+    float: right;
+    margin-top: 7px;
+}
+
+.admin_stockingguide_brand_list
+{
+    height: 530px;
+    overflow: auto;
+
+}
+
+.admin_stockingguide_brand_odd_item
+{
+    background-color: #DCDEDE;
+    padding: 2px 0px 5px 1px;
+}
+
+.admin_stockingguide_brand_even_item
+{
+    padding: 2px 0px 5px 1px;
+}
+
+.admin_stockingguide_brand_item_check
+{
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.admin_stockingguide_brand_item_label
+{
+    padding-top: 2px;
+    margin-left: 40px;
+}
+
+.subOpt
+{
+    padding-left: 35px!important;
+}
+
+.readonly {
+    background-color: gray;
+}

@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://www.kbb.com/2011/01/25/VehicleInformationService" elementFormDefault="qualified" targetNamespace="http://www.kbb.com/2011/01/25/VehicleInformationService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://idws.syndication.kbb.com/3.0/VehicleInformationService2008R2.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://idws.syndication.kbb.com/3.0/VehicleInformationService2008R2.svc?xsd=xsd3" namespace="http://www.kbb.com/VehicleInformationService/2008/09" />
+  <xs:import schemaLocation="http://idws.syndication.kbb.com/3.0/VehicleInformationService2008R2.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/KBB.VIS.Web.Service.R3.DataContract" />
+  <xs:element name="Login">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LoginResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetYears">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VehicleClass" type="tns:VehicleClass" />
+        <xs:element minOccurs="0" name="ApplicationCategory" type="tns:ApplicationCategory" />
+        <xs:element minOccurs="0" name="VersionDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="VehicleClass">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NewCar" />
+      <xs:enumeration value="UsedCar" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="VehicleClass" nillable="true" type="tns:VehicleClass" />
+  <xs:simpleType name="ApplicationCategory">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Consumer" />
+      <xs:enumeration value="Dealer" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ApplicationCategory" nillable="true" type="tns:ApplicationCategory" />
+  <xs:element name="GetYearsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetYearsResult" nillable="true" type="tns:ArrayOfIdStringPair" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfIdStringPair">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="IdStringPair" nillable="true" type="tns:IdStringPair" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfIdStringPair" nillable="true" type="tns:ArrayOfIdStringPair" />
+  <xs:complexType name="IdStringPair">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IdStringPair" nillable="true" type="tns:IdStringPair" />
+  <xs:element name="GetYearsByModel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VehicleClass" type="tns:VehicleClass" />
+        <xs:element minOccurs="0" name="ApplicationCategory" type="tns:ApplicationCategory" />
+        <xs:element minOccurs="0" name="ModelId" type="xs:int" />
+        <xs:element minOccurs="0" name="VersionDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetYearsByModelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetYearsByModelResult" nillable="true" type="tns:ArrayOfIdStringPair" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="DateOutOfRangeFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DateOutOfRangeFault" nillable="true" type="tns:DateOutOfRangeFault" />
+  <xs:complexType name="InternalOperationFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InternalOperationFault" nillable="true" type="tns:InternalOperationFault" />
+  <xs:complexType name="SecurityFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SecurityFault" nillable="true" type="tns:SecurityFault" />
+  <xs:complexType name="ModelIdNotFoundFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ModelIdNotFoundFault" nillable="true" type="tns:ModelIdNotFoundFault" />
+  <xs:element name="GetModelsByYearAndMake">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VehicleClass" type="tns:VehicleClass" />
+        <xs:element minOccurs="0" name="ApplicationCategory" type="tns:ApplicationCategory" />
+        <xs:element minOccurs="0" name="MakeId" type="xs:int" />
+        <xs:element minOccurs="0" name="YearId" type="xs:int" />
+        <xs:element minOccurs="0" name="VersionDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetModelsByYearAndMakeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetModelsByYearAndMakeResult" nillable="true" type="tns:ArrayOfIdStringPair" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="MakeIdNotFoundFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MakeIdNotFoundFault" nillable="true" type="tns:MakeIdNotFoundFault" />
+  <xs:complexType name="YearIdNotFoundFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="YearIdNotFoundFault" nillable="true" type="tns:YearIdNotFoundFault" />
+  <xs:element name="GetModelsByMakeAcrossAllYears">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VehicleClass" type="tns:VehicleClass" />
+        <xs:element minOccurs="0" name="ApplicationCategory" type="tns:ApplicationCategory" />
+        <xs:element minOccurs="0" name="MakeId" type="xs:int" />
+        <xs:element minOccurs="0" name="VersionDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetModelsByMakeAcrossAllYearsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetModelsByMakeAcrossAllYearsResult" nillable="true" type="tns:ArrayOfIdStringPair" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrimsAndVehicleIdsByYearAndModel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VehicleClass" type="tns:VehicleClass" />
+        <xs:element minOccurs="0" name="ApplicationCategory" type="tns:ApplicationCategory" />
+        <xs:element minOccurs="0" name="ModelId" type="xs:int" />
+        <xs:element minOccurs="0" name="YearId" type="xs:int" />
+        <xs:element minOccurs="0" name="VersionDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTrimsAndVehicleIdsByYearAndModelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTrimsAndVehicleIdsByYearAndModelResult" nillable="true" type="tns:ArrayOfVehicleTrim" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfVehicleTrim">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VehicleTrim" nillable="true" type="tns:VehicleTrim" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVehicleTrim" nillable="true" type="tns:ArrayOfVehicleTrim" />
+  <xs:complexType name="VehicleTrim">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AdditionalData" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BedLength" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DefaultDrivetrain" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DefaultEngine" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DefaultTransmission" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DisplayName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="ManufacturerCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MarketName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumberOfDoors" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OEMBodyStyle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VehicleId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VehicleTrim" nillable="true" type="tns:VehicleTrim" />
+  <xs:element name="GetEnginesByVehicleId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApplicationCategory" type="tns:ApplicationCategory" />
+        <xs:element minOccurs="0" name="VehicleId" type="xs:int" />
+        <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VersionDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEnginesByVehicleIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetEnginesByVehicleIdResult" nillable="true" type="tns:ArrayOfIdStringPair" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="InvalidZipCodeFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InvalidZipCodeFault" nillable="true" type="tns:InvalidZipCodeFault" />
+  <xs:complexType name="VehicleIdNotFoundFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VehicleIdNotFoundFault" nillable="true" type="tns:VehicleIdNotFoundFault" />
+  <xs:element name="GetTransmissionsByVehicleId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApplicationCategory" type="tns:ApplicationCategory" />
+        <xs:element minOccurs="0" name="VehicleId" type="xs:int" />
+        <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VersionDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTransmissionsByVehicleIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTransmissionsByVehicleIdResult" nillable="true" type="tns:ArrayOfIdStringPair" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDrivetrainsByVehicleId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApplicationCategory" type="tns:ApplicationCategory" />
+        <xs:element minOccurs="0" name="VehicleId" type="xs:int" />
+        <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VersionDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDrivetrainsByVehicleIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDrivetrainsByVehicleIdResult" nillable="true" type="tns:ArrayOfIdStringPair" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompetitiveSetByVehicleId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApplicationCategory" type="tns:ApplicationCategory" />
+        <xs:element minOccurs="0" name="VehicleId" type="xs:int" />
+        <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VersionDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompetitiveSetByVehicleIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCompetitiveSetByVehicleIdResult" nillable="true" type="tns:ArrayOfCompetitiveVehicle" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfCompetitiveVehicle">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CompetitiveVehicle" nillable="true" type="tns:CompetitiveVehicle" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCompetitiveVehicle" nillable="true" type="tns:ArrayOfCompetitiveVehicle" />
+  <xs:complexType name="CompetitiveVehicle">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Year" nillable="true" type="tns:IdStringPair" />
+      <xs:element minOccurs="0" name="Make" nillable="true" type="tns:IdStringPair" />
+      <xs:element minOccurs="0" name="Model" nillable="true" type="tns:IdStringPair" />
+      <xs:element minOccurs="0" name="DisplayName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VehicleId" type="xs:int" />
+      <xs:element minOccurs="0" name="NumberOfDoors" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OEMBodyStyle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DefaultEngine" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DefaultDrivetrain" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DefaultTransmission" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AdditionalData" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MarketName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BedLength" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CompetitiveVehicle" nillable="true" type="tns:CompetitiveVehicle" />
+  <xs:element name="GetReleaseVersionByVersionDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VersionDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReleaseVersionByVersionDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetReleaseVersionByVersionDateResult" nillable="true" type="tns:ReleaseVersion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ReleaseVersion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Edition" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="NewCarReleaseVersion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="UsedCarReleaseVersion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ReleaseVersion" nillable="true" type="tns:ReleaseVersion" />
+  <xs:element name="GetEquipmentOptionsByVehicleId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApplicationCategory" type="tns:ApplicationCategory" />
+        <xs:element minOccurs="0" name="VehicleId" type="xs:int" />
+        <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VersionDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEquipmentOptionsByVehicleIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetEquipmentOptionsByVehicleIdResult" nillable="true" type="tns:ArrayOfEquipmentOption" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfEquipmentOption">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EquipmentOption" nillable="true" type="tns:EquipmentOption" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEquipmentOption" nillable="true" type="tns:ArrayOfEquipmentOption" />
+  <xs:complexType name="EquipmentOption">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DisplayName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VehicleOptionId" type="xs:int" />
+      <xs:element minOccurs="0" name="IsSelected" type="xs:boolean" />
+      <xs:element minOccurs="0" name="OptionTypeDisplayName" type="tns:OptionType" />
+      <xs:element minOccurs="0" name="OptionGroupName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DisplayNameAdditionalData" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ManufactureCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OptionAvailabilityDisplayName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsDefaultConfiguration" type="xs:boolean" />
+      <xs:element minOccurs="0" name="DetailName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NonBoldName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Footer" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SortOrder" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EquipmentOption" nillable="true" type="tns:EquipmentOption" />
+  <xs:simpleType name="OptionType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Option" />
+      <xs:enumeration value="Engine" />
+      <xs:enumeration value="DriveTrain" />
+      <xs:enumeration value="Transmission" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="OptionType" nillable="true" type="tns:OptionType" />
+  <xs:element name="GetUpdatedEquipmentOptionsByVehicleId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApplicationCategory" type="tns:ApplicationCategory" />
+        <xs:element minOccurs="0" name="ChangedOptions" nillable="true" type="tns:ArrayOfEquipmentOption" />
+        <xs:element minOccurs="0" name="VehicleId" type="xs:int" />
+        <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VersionDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUpdatedEquipmentOptionsByVehicleIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetUpdatedEquipmentOptionsByVehicleIdResult" nillable="true" type="tns:ArrayOfEquipmentOption" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateUpdatedEquipmentOptionsByVehicleId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApplicationCategory" type="tns:ApplicationCategory" />
+        <xs:element minOccurs="0" name="ChangedOptions" nillable="true" type="tns:ArrayOfEquipmentOption" />
+        <xs:element minOccurs="0" name="VehicleId" type="xs:int" />
+        <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VersionDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateUpdatedEquipmentOptionsByVehicleIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateUpdatedEquipmentOptionsByVehicleIdResult" nillable="true" type="tns:ValidationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ValidationResponse">
+    <xs:sequence>
+      <xs:element name="ResponseType" type="tns:ValidationType" />
+      <xs:element name="ChooseRequiredOptions" nillable="true" type="tns:ArrayOfEquipmentOption" />
+      <xs:element name="ChangedOptions" nillable="true" type="tns:ArrayOfEquipmentOption" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ValidationResponse" nillable="true" type="tns:ValidationResponse" />
+  <xs:simpleType name="ValidationType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="RequiredOption" />
+      <xs:enumeration value="ChangeOption" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ValidationType" nillable="true" type="tns:ValidationType" />
+  <xs:element name="GetVehicleConfigurationByVIN">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VIN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VersionDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVehicleConfigurationByVINResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetVehicleConfigurationByVINResult" nillable="true" type="tns:ArrayOfVehicleConfiguration" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfVehicleConfiguration">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VehicleConfiguration" nillable="true" type="tns:VehicleConfiguration" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVehicleConfiguration" nillable="true" type="tns:ArrayOfVehicleConfiguration" />
+  <xs:complexType name="VehicleConfiguration">
+    <xs:sequence>
+      <xs:element name="Id" type="xs:int" />
+      <xs:element name="VIN" nillable="true" type="xs:string" />
+      <xs:element name="Year" nillable="true" type="tns:IdStringPair" />
+      <xs:element name="Make" nillable="true" type="tns:IdStringPair" />
+      <xs:element name="Model" nillable="true" type="tns:IdStringPair" />
+      <xs:element name="Trim" nillable="true" type="tns:IdStringPair" />
+      <xs:element name="Mileage" type="xs:int" />
+      <xs:element name="OptionalEquipment" nillable="true" type="tns:ArrayOfEquipmentOption" />
+      <xs:element name="ConfiguredDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VehicleConfiguration" nillable="true" type="tns:VehicleConfiguration" />
+  <xs:complexType name="VINValidationTooLongFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MaximumVINLength" type="xs:int" />
+      <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VINValidationTooLongFault" nillable="true" type="tns:VINValidationTooLongFault" />
+  <xs:complexType name="VINValidationTooShortFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MinimumVINLength" type="xs:int" />
+      <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VINValidationTooShortFault" nillable="true" type="tns:VINValidationTooShortFault" />
+  <xs:complexType name="VINValidationInvalidCharactersFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="InvalidPositions" nillable="true" type="q1:ArrayOfint" />
+      <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValidVINCharacters" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VINValidationInvalidCharactersFault" nillable="true" type="tns:VINValidationInvalidCharactersFault" />
+  <xs:complexType name="VINValidationInvalidCheckDigitFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VINValidationInvalidCheckDigitFault" nillable="true" type="tns:VINValidationInvalidCheckDigitFault" />
+  <xs:complexType name="VINValidationInvalidPatternFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="InvalidPositions" nillable="true" type="q2:ArrayOfint" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="PositionsChecked" nillable="true" type="q3:ArrayOfint" />
+      <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ValidPatternCharacters" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VINValidationInvalidPatternFault" nillable="true" type="tns:VINValidationInvalidPatternFault" />
+  <xs:element name="GetVehicleConfigurationByVehicleId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ApplicationCategory" type="tns:ApplicationCategory" />
+        <xs:element minOccurs="0" name="VehicleId" type="xs:int" />
+        <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VersionDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVehicleConfigurationByVehicleIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetVehicleConfigurationByVehicleIdResult" nillable="true" type="tns:VehicleConfiguration" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateVIN">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VIN" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateVINResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ValidateVINResult" type="tns:VINStatus" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="VINStatus">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="I" />
+      <xs:enumeration value="V" />
+      <xs:enumeration value="N" />
+      <xs:enumeration value="E" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="VINStatus" nillable="true" type="tns:VINStatus" />
+  <xs:complexType name="InvalidValueFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reason" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InvalidValueFault" nillable="true" type="tns:InvalidValueFault" />
+  <xs:element name="GetZeroPointMileageByYear">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VehicleClass" type="tns:VehicleClass" />
+        <xs:element minOccurs="0" name="YearId" type="xs:int" />
+        <xs:element minOccurs="0" name="VersionDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="ApplicationCategory" type="tns:ApplicationCategory" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetZeroPointMileageByYearResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetZeroPointMileageByYearResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReviewsByVehicleId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VehicleId" type="xs:int" />
+        <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VersionDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReviewsByVehicleIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetReviewsByVehicleIdResult" nillable="true" type="tns:VehicleReview" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="VehicleReview">
+    <xs:sequence>
+      <xs:element name="ReviewItems" nillable="true" type="tns:ArrayOfVehicleReviewItem" />
+      <xs:element name="Vehicle" nillable="true" type="tns:VehicleConfiguration" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VehicleReview" nillable="true" type="tns:VehicleReview" />
+  <xs:complexType name="ArrayOfVehicleReviewItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="VehicleReviewItem" nillable="true" type="tns:VehicleReviewItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVehicleReviewItem" nillable="true" type="tns:ArrayOfVehicleReviewItem" />
+  <xs:complexType name="VehicleReviewItem">
+    <xs:sequence>
+      <xs:element name="ReviewText" nillable="true" type="xs:string" />
+      <xs:element name="SectionHeader" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VehicleReviewItem" nillable="true" type="tns:VehicleReviewItem" />
+  <xs:element name="GetVehicleValuesByVehicleConfiguration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VehicleConfiguration" nillable="true" type="tns:VehicleConfiguration" />
+        <xs:element minOccurs="0" name="ApplicationCategory" type="tns:ApplicationCategory" />
+        <xs:element minOccurs="0" name="VehicleCondition" type="tns:VehicleCondition" />
+        <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VersionDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:simpleType name="VehicleCondition">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Excellent" />
+      <xs:enumeration value="Good" />
+      <xs:enumeration value="Fair" />
+      <xs:enumeration value="Poor" />
+      <xs:enumeration value="VeryGood" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="VehicleCondition" nillable="true" type="tns:VehicleCondition" />
+  <xs:element name="GetVehicleValuesByVehicleConfigurationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetVehicleValuesByVehicleConfigurationResult" nillable="true" type="tns:VehicleValuation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="VehicleValuation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IsInsufficientMarketData" type="xs:boolean" />
+      <xs:element minOccurs="0" name="IsLimitedProduction" type="xs:boolean" />
+      <xs:element minOccurs="0" name="MileageAdjustment" type="xs:decimal" />
+      <xs:element minOccurs="0" name="MileageZeroPoint" type="xs:int" />
+      <xs:element minOccurs="0" name="ValuationPrices" nillable="true" type="tns:ArrayOfValuation" />
+      <xs:element minOccurs="0" name="ValuationZipCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="VehicleValuation" nillable="true" type="tns:VehicleValuation" />
+  <xs:complexType name="ArrayOfValuation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Valuation" nillable="true" type="tns:Valuation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfValuation" nillable="true" type="tns:ArrayOfValuation" />
+  <xs:complexType name="Valuation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="IsMaxDeductApplied" type="xs:boolean" />
+      <xs:element xmlns:q4="http://www.kbb.com/VehicleInformationService/2008/09" minOccurs="0" name="PriceType" type="q4:PriceType" />
+      <xs:element minOccurs="0" name="Value" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Valuation" nillable="true" type="tns:Valuation" />
+  <xs:element name="GetVehicleValuesByVehicleConfigurationAllConditions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VehicleConfiguration" nillable="true" type="tns:VehicleConfiguration" />
+        <xs:element minOccurs="0" name="ApplicationCategory" type="tns:ApplicationCategory" />
+        <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VersionDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVehicleValuesByVehicleConfigurationAllConditionsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetVehicleValuesByVehicleConfigurationAllConditionsResult" nillable="true" type="tns:VehicleValuation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEquipmentOptionsValueByVehicleId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VehicleId" type="xs:int" />
+        <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+        <xs:element xmlns:q5="http://www.kbb.com/VehicleInformationService/2008/09" minOccurs="0" name="PriceType" type="q5:PriceType" />
+        <xs:element minOccurs="0" name="VersionDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="ApplicationCategory" type="tns:ApplicationCategory" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEquipmentOptionsValueByVehicleIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/KBB.VIS.Web.Service.R3.DataContract" minOccurs="0" name="GetEquipmentOptionsValueByVehicleIdResult" nillable="true" type="q6:ArrayOfOptionValuation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMakes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VehicleClass" type="tns:VehicleClass" />
+        <xs:element minOccurs="0" name="ApplicationCategory" type="tns:ApplicationCategory" />
+        <xs:element minOccurs="0" name="VersionDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMakesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetMakesResult" nillable="true" type="tns:ArrayOfIdStringPair" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMakesByYear">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VehicleClass" type="tns:VehicleClass" />
+        <xs:element minOccurs="0" name="ApplicationCategory" type="tns:ApplicationCategory" />
+        <xs:element minOccurs="0" name="YearId" type="xs:int" />
+        <xs:element minOccurs="0" name="VersionDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMakesByYearResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetMakesByYearResult" nillable="true" type="tns:ArrayOfIdStringPair" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCPOPrograms">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VersionDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCPOProgramsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCPOProgramsResult" nillable="true" type="tns:ArrayOfCPOMake" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfCPOMake">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CPOMake" nillable="true" type="tns:CPOMake" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCPOMake" nillable="true" type="tns:ArrayOfCPOMake" />
+  <xs:complexType name="CPOMake">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Make" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Programs" nillable="true" type="tns:ArrayOfCPOProgram" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CPOMake" nillable="true" type="tns:CPOMake" />
+  <xs:complexType name="ArrayOfCPOProgram">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CPOProgram" nillable="true" type="tns:CPOProgram" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCPOProgram" nillable="true" type="tns:ArrayOfCPOProgram" />
+  <xs:complexType name="CPOProgram">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="SectionHeader" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContentText" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sequence" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CPOProgram" nillable="true" type="tns:CPOProgram" />
+  <xs:element name="GetVehicleSpecificationsByVehicleId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="VehicleId" type="xs:int" />
+        <xs:element minOccurs="0" name="VersionDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetVehicleSpecificationsByVehicleIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetVehicleSpecificationsByVehicleIdResult" nillable="true" type="tns:ArrayOfSpecification" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="ArrayOfSpecification">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Specification" nillable="true" type="tns:Specification" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSpecification" nillable="true" type="tns:ArrayOfSpecification" />
+  <xs:complexType name="Specification">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Category" nillable="true" type="tns:SpecificationCat" />
+      <xs:element minOccurs="0" name="CategoryHeirarchy" nillable="true" type="tns:ArrayOfSpecificationCat" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OptionAvailability" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Units" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Specification" nillable="true" type="tns:Specification" />
+  <xs:complexType name="SpecificationCat">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Depth" type="xs:int" />
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SpecificationCat" nillable="true" type="tns:SpecificationCat" />
+  <xs:complexType name="ArrayOfSpecificationCat">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SpecificationCat" nillable="true" type="tns:SpecificationCat" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSpecificationCat" nillable="true" type="tns:ArrayOfSpecificationCat" />
+  <xs:element name="GetAvailableMethods">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAvailableMethodsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetAvailableMethodsResult" nillable="true" type="q7:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConversionDataByVersionDate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AuthenticationKey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ConfiguredVehicle" nillable="true" type="tns:VehicleConfiguration" />
+        <xs:element minOccurs="0" name="SourceVersionId" type="xs:int" />
+        <xs:element minOccurs="0" name="TargetVersionDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetConversionDataByVersionDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetConversionDataByVersionDateResult" nillable="true" type="tns:Conversion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="Conversion">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:VehicleConfiguration">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ConversionAction" type="tns:ConversionAction" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Conversion" nillable="true" type="tns:Conversion" />
+  <xs:simpleType name="ConversionAction">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unchanged" />
+      <xs:enumeration value="Added" />
+      <xs:enumeration value="Removed" />
+      <xs:enumeration value="Replaced" />
+      <xs:enumeration value="Updated" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ConversionAction" nillable="true" type="tns:ConversionAction" />
+</xs:schema>

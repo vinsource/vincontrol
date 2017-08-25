@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/KBB.VIS.Web.Service.R3.DataContract" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/KBB.VIS.Web.Service.R3.DataContract" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://idws.syndication.kbb.com/3.0/VehicleInformationService2008R2.svc?xsd=xsd3" namespace="http://www.kbb.com/VehicleInformationService/2008/09" />
+  <xs:complexType name="ArrayOfOptionValuation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="OptionValuation" nillable="true" type="tns:OptionValuation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfOptionValuation" nillable="true" type="tns:ArrayOfOptionValuation" />
+  <xs:complexType name="OptionValuation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="Price" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PriceAdjustment" type="xs:decimal" />
+      <xs:element xmlns:q1="http://www.kbb.com/VehicleInformationService/2008/09" minOccurs="0" name="PriceType" type="q1:PriceType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OptionValuation" nillable="true" type="tns:OptionValuation" />
+</xs:schema>

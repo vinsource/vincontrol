@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DB1DA1D7-44B1-4F02-9CA1-D97FA57D1FB5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Vincontrol.Payment</RootNamespace>
+    <AssemblyName>Vincontrol.Payment</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\MerchantData.cs" />
+    <Compile Include="Model\SNData.cs" />
+    <Compile Include="Model\SPOSParamsModel.cs" />
+    <Compile Include="PaymentService.cs" />
+    <Compile Include="IPaymentService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\com.securenet.certify\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\com.securenet.extendedServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\com.securenet.gateway\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\com.securenet.transactionServices\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://certify.securenet.com/spos/sposserver.asmx%3fWSDL&amp;CSRT=17850673768359960084">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\com.securenet.certify\</RelPath>
+      <UpdateFromURL>http://certify.securenet.com/spos/sposserver.asmx%3fWSDL&amp;CSRT=17850673768359960084</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Vincontrol_Payment_com_securenet_certify_SPOSServer</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://certify.securenet.com/API/Data/SERVICE.svc%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\com.securenet.extendedServices\</RelPath>
+      <UpdateFromURL>https://certify.securenet.com/API/Data/SERVICE.svc%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Vincontrol_Payment_com_securenet_extendedServices_SERVICE</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://certify.securenet.com/API/Data/TRANSACTION.svc%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\com.securenet.transactionServices\</RelPath>
+      <UpdateFromURL>https://certify.securenet.com/API/Data/TRANSACTION.svc%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Vincontrol_Payment_com_securenet_transactionServices_TRANSACTION</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://certify.securenet.com/API/Gateway.svc%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\com.securenet.gateway\</RelPath>
+      <UpdateFromURL>https://certify.securenet.com/API/Gateway.svc%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Vincontrol_Payment_com_securenet_gateway_Gateway</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\com.securenet.certify\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\com.securenet.certify\SPOSParams.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.securenet.certify\sposserver.wsdl" />
+    <None Include="Web References\com.securenet.certify\TransactionResponseData.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.securenet.extendedServices\ACCOUNT_VAULT.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.securenet.extendedServices\CUSTOMER_VAULT.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.securenet.extendedServices\P2PRESPONSE.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.securenet.extendedServices\PLAN_AB.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.securenet.extendedServices\PLAN_AB_EXT.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.securenet.extendedServices\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\com.securenet.extendedServices\SERVICE.wsdl" />
+    <None Include="Web References\com.securenet.extendedServices\SERVICE.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.securenet.extendedServices\SERVICE0.wsdl" />
+    <None Include="Web References\com.securenet.extendedServices\SERVICE0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.securenet.extendedServices\SERVICE1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.securenet.gateway\BATCHDATA.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.securenet.gateway\Gateway.wsdl" />
+    <None Include="Web References\com.securenet.gateway\Gateway.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.securenet.gateway\Gateway0.wsdl" />
+    <None Include="Web References\com.securenet.gateway\Gateway0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.securenet.gateway\GATEWAYRESPONSE.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.securenet.gateway\IMAGERESPONSE.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\com.securenet.gateway\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\com.securenet.transactionServices\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\com.securenet.transactionServices\TRANSACTION.wsdl" />
+    <None Include="Web References\com.securenet.transactionServices\TRANSACTION.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.securenet.transactionServices\TRANSACTION0.wsdl" />
+    <None Include="Web References\com.securenet.transactionServices\TRANSACTION0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.securenet.transactionServices\TRANSACTION1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\com.securenet.transactionServices\TRANSACTIONRESPONSE.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\vincontrol.ConfigurationManagement\vincontrol.ConfigurationManagement.csproj">
+      <Project>{ebcbf920-a03a-431f-a6ed-40210a37228e}</Project>
+      <Name>vincontrol.ConfigurationManagement</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

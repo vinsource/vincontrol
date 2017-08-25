@@ -1,0 +1,8 @@
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.StockingGuide.Common\bin\Release\vincontrol.StockingGuide.Common.dll.config
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.StockingGuide.Common\bin\Release\vincontrol.StockingGuide.Common.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.StockingGuide.Common\bin\Release\vincontrol.StockingGuide.Common.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.StockingGuide.Common\bin\Release\log4net.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.StockingGuide.Common\bin\Release\log4net.xml
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.StockingGuide.Common\obj\Release\vincontrol.StockingGuide.Common.csprojResolveAssemblyReference.cache
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.StockingGuide.Common\obj\Release\vincontrol.StockingGuide.Common.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.StockingGuide.Common\obj\Release\vincontrol.StockingGuide.Common.pdb

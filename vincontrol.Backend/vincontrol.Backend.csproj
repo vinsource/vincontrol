@@ -1,0 +1,607 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EB5F434B-3D05-434C-9E6B-5D5F55F00C08}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>vincontrol.Backend</RootNamespace>
+    <AssemblyName>vincontrol.Backend</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>ftp://vinclapp.net/VincontrolBackend/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://vinclapp.net/VincontrolBackend/</InstallUrl>
+    <UpdateUrl>http://vinclapp.net/VincontrolBackend/</UpdateUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>19</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>54BEA1E645E28CFC4A90AAA89A979DED0A36BA12</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>vincontrol.Backend_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LumenWorks.Framework.IO, Version=3.8.0.0, Culture=neutral, PublicKeyToken=5ad3ea2f85776344, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.5.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\ShareLibrary\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Controls.Input.Toolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Resources\System.Windows.Controls.Input.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Layout.Toolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Resources\System.Windows.Controls.Layout.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="VIBlendWPFEditors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=5f568d4f9cd901f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Resources\VIBlendWPFEditors.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Resources\WPFToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=1.9.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Resources\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Commands\CommandBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\OrderChangedCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\DataFeed\Export\ExportProfileTemplateMapping.xaml.cs">
+      <DependentUpon>ExportProfileTemplateMapping.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\DataFeed\Import\IncomingProfileTemplateMapping.xaml.cs">
+      <DependentUpon>IncomingProfileTemplateMapping.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomControls\NumericControl.xaml.cs">
+      <DependentUpon>NumericControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\TimePicker.xaml.cs">
+      <DependentUpon>TimePicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\BackgroundConverter.cs" />
+    <Compile Include="Helper\BindingProxy.cs" />
+    <Compile Include="Helper\BoundPasswordBox.cs" />
+    <Compile Include="Helper\Common.cs" />
+    <Compile Include="Helper\Constansts.cs" />
+    <Compile Include="Helper\DataGridExtensions.cs" />
+    <Compile Include="Helper\EmailHelper.cs" />
+    <Compile Include="Helper\ExpressionBackgroundConverter.cs" />
+    <Compile Include="Helper\PermissionBehavior.cs" />
+    <Compile Include="Helper\PermissionConverter.cs" />
+    <Compile Include="Helper\RevertConvertor.cs" />
+    <Compile Include="Helper\HiddenConvertor.cs" />
+    <Compile Include="Helper\DataHelper.cs" />
+    <Compile Include="Helper\MappingHelper.cs" />
+    <Compile Include="Helper\RelayCommand.cs" />
+    <Compile Include="Helper\RoleToVisibilityConverter.cs" />
+    <Compile Include="Helper\SelectorExtenders.cs" />
+    <Compile Include="Helper\TimeExtensions.cs" />
+    <Compile Include="Helper\Tracking.cs" />
+    <Compile Include="Helper\ValidationHelper.cs" />
+    <Compile Include="Helper\VisibilityConvertor.cs" />
+    <Compile Include="Interface\IEditView.cs" />
+    <Compile Include="Pages\DataFeedAdminPage.xaml.cs">
+      <DependentUpon>DataFeedAdminPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ExportManagementPage.xaml.cs">
+      <DependentUpon>ExportManagementPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ImportManagementPage.xaml.cs">
+      <DependentUpon>ImportManagementPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TrackingPage.xaml.cs">
+      <DependentUpon>TrackingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\TrackingPageViewModel.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="ViewModels\ExpressionListViewModel.cs" />
+    <Compile Include="ViewModels\Export\ExportFilenameFormatViewModel.cs" />
+    <Compile Include="ViewModels\Export\ExportProfileManagementViewModel.cs" />
+    <Compile Include="ViewModels\Export\ExportProfileTemplateViewModel.cs" />
+    <Compile Include="ViewModels\Export\ExportProfileViewModel.cs" />
+    <Compile Include="ViewModels\Export\ViewExportDealerOfProfileViewModel.cs" />
+    <Compile Include="ViewModels\Import\IncomingProfileTemplateViewModel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewModels\Import\ViewDealerOfProfileViewModel.cs" />
+    <Compile Include="ViewModels\ViewModelBase.cs" />
+    <Compile Include="ViewModels\ViewProfileSettingViewModel.cs" />
+    <Compile Include="Windows\DataFeed\Export\ExportFilenameFormatWindow.xaml.cs">
+      <DependentUpon>ExportFilenameFormatWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\DataFeed\Export\ExportProfileTemplateMappingWindow.xaml.cs">
+      <DependentUpon>ExportProfileTemplateMappingWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\DataFeed\Export\ViewExportDealerOfProfileWindow.xaml.cs">
+      <DependentUpon>ViewExportDealerOfProfileWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\Export\ViewExportHistoryViewModel.cs" />
+    <Compile Include="Windows\DataFeed\Export\ViewExportHistoryWindow.xaml.cs">
+      <DependentUpon>ViewExportHistoryWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\DataFeed\Import\AddImportProfileWindow.xaml.cs">
+      <DependentUpon>AddImportProfileWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewModels\Import\ImportDataHistoryViewModel.cs" />
+    <Compile Include="ViewModels\AttachDescriptionViewModel.cs" />
+    <Compile Include="Windows\DataFeed\Import\AttachDescriptionWindow.xaml.cs">
+      <DependentUpon>AttachDescriptionWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\DataFeed\Import\ImportHistoryWindow.xaml.cs">
+      <DependentUpon>ImportHistoryWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\DataFeed\Import\IncomingProfileTemplateMappingWindow.xaml.cs">
+      <DependentUpon>IncomingProfileTemplateMappingWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\DataFeed\Import\PopupChildWindow\ConditionWindow.xaml.cs">
+      <DependentUpon>ConditionWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DealerGroupManagement.xaml.cs">
+      <DependentUpon>DealerGroupManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DealerSettingContent.xaml.cs">
+      <DependentUpon>DealerSettingContent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DataFeed\Import\IncomingProfileManagement.xaml.cs">
+      <DependentUpon>IncomingProfileManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DataFeed\Import\IncomingProfileSetting.xaml.cs">
+      <DependentUpon>IncomingProfileSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DataFeed\Export\OutgoingProfileManagement.xaml.cs">
+      <DependentUpon>OutgoingProfileManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\DataFeed\Import\AddIncomingProfileWindow.xaml.cs">
+      <DependentUpon>AddIncomingProfileWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\DataFeed\Import\PopupChildWindow\ExpressionWindow.xaml.cs">
+      <DependentUpon>ExpressionWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\DataFeed\Import\ViewDealershipWindow.xaml.cs">
+      <DependentUpon>ViewDealershipWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\DataFeed\ViewDealerGroupDatafeedWindow.xaml.cs">
+      <DependentUpon>ViewDealerGroupDatafeedWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\DataFeed\ViewDealerWindow.xaml.cs">
+      <DependentUpon>ViewDealerWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\IView.cs" />
+    <Compile Include="Windows\DataFeed\Import\PopupChildWindow\ReplaceWindow.xaml.cs">
+      <DependentUpon>ReplaceWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModels\ConditionListViewModel.cs" />
+    <Compile Include="Models\ConditionModel.cs" />
+    <Compile Include="ViewModels\ReplaceListViewModel.cs" />
+    <Compile Include="Models\ReplaceModel.cs" />
+    <Compile Include="ViewModels\Import\ProfileViewModel.cs" />
+    <Compile Include="ViewModels\Import\IncomingProfileManagementViewModel.cs" />
+    <Compile Include="ViewModels\Import\ProfileMappingViewModel.cs" />
+    <Compile Include="Windows\DataFeed\ViewDealerOfProfileWindow.xaml.cs">
+      <DependentUpon>ViewDealerOfProfileWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\DataFeed\ViewProfileSettingWindow.xaml.cs">
+      <DependentUpon>ViewProfileSettingWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Controls\DataFeed\Export\ExportProfileTemplateMapping.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\DataFeed\Import\IncomingProfileTemplateMapping.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomControls\NumericControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomControls\TimePicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\DataFeedAdminPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ExportManagementPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ImportManagementPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\TrackingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\DataFeed\AddDealerGroupWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\DataFeed\AddDealerWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\DataFeed\Export\ExportFilenameFormatWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\DataFeed\Export\ExportProfileTemplateMappingWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\DataFeed\Export\ViewExportDealerOfProfileWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\DataFeed\Export\ViewExportHistoryWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\DataFeed\Import\AddImportProfileWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\DataFeed\Import\AttachDescriptionWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\DataFeed\Import\ImportHistoryWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\DataFeed\Import\IncomingProfileTemplateMappingWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\DataFeed\Import\PopupChildWindow\ConditionWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\DealerGroupManagement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\DealerSettingContent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\DataFeed\Import\IncomingProfileManagement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\DataFeed\Import\IncomingProfileSetting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\DataFeed\Export\OutgoingProfileManagement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\DataFeed\Import\AddIncomingProfileWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\DataFeed\Export\AddExportProfileWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="Windows\DataFeed\AddDealerGroupWindow.xaml.cs">
+      <DependentUpon>AddDealerGroupWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\DataFeed\AddDealerWindow.xaml.cs">
+      <DependentUpon>AddDealerWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\DataFeed\Export\AddExportProfileWindow.xaml.cs">
+      <DependentUpon>AddExportProfileWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Windows\DataFeed\Import\PopupChildWindow\ExpressionWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\DataFeed\Import\ViewDealershipWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\DataFeed\ViewDealerGroupDatafeedWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\DataFeed\ViewDealerWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\DataFeed\Import\PopupChildWindow\ReplaceWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\DataFeed\ViewDealerOfProfileWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\DataFeed\ViewProfileSettingWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+    <None Include="vincontrol.Backend_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\vincontrol.Backend.Data\vincontrol.Backend.Data.csproj">
+      <Project>{47C95BEB-99DA-4D93-94F6-0B4E5DB0FDD9}</Project>
+      <Name>vincontrol.Backend.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.Backend.Model\vincontrol.Backend.Model.csproj">
+      <Project>{583FD08A-00A7-4992-B675-15C08E41BE28}</Project>
+      <Name>vincontrol.Backend.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.DataFeed\vincontrol.DataFeed.csproj">
+      <Project>{43B03EE3-6ADF-4FB2-BECC-F769ED49EC23}</Project>
+      <Name>vincontrol.DataFeed</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.Data\vincontrol.Data.csproj">
+      <Project>{7D76E800-C9D8-407A-8844-A775EE6D5A65}</Project>
+      <Name>vincontrol.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.TaskScheduler\vincontrol.TaskScheduler.csproj">
+      <Project>{103BD6F6-0F5B-40B6-9B0B-68F7AADA6B39}</Project>
+      <Name>vincontrol.TaskScheduler</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Validations\" />
+    <Folder Include="Windows\DataFeed\Export\PopupChildWindow\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Time.png" />
+    <Resource Include="Images\import.png" />
+    <Resource Include="Images\export.png" />
+    <Resource Include="Images\pause.png" />
+    <Resource Include="Images\play.png" />
+    <Content Include="Resources\System.Windows.Controls.Layout.Toolkit.dll" />
+    <Content Include="Resources\VIBlendWPFEditors.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Microsoft.Windows.Design">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="MySql.Data">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="MySql.Data.CF">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="MySql.Data.Entity">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="MySql.Web">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WhitmanEnterpriseMVC.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="WhitmanEnterpriseMVC_com_nationalautoresearch_www_UsedCarWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.nationalautoresearch.com/WebServices/UsedCarWS.asmx</Value>
+    </Setting>
+    <Setting Name="WhitmanEnterpriseMVC_com_chromedata_services_Description7a_Description7a" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://services.chromedata.com:80/Description/7a</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

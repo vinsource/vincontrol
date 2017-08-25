@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vincontrol.StockingGuide.WindowService", "vincontrol.StockingGuide.WindowService.csproj", "{A7D6509E-2F8E-4B69-A5A5-BC3E65A6ECA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vincontrol.StockingGuide.DataService", "..\vincontrol.StockingGuide\vincontrol.StockingGuide.DataService.csproj", "{C8EA26FD-1BD6-409C-8B0D-0086F7F03D98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vincontrol.StockingGuide.Common", "..\vincontrol.StockingGuide.Common\vincontrol.StockingGuide.Common.csproj", "{9E733EBD-792E-4A82-80D8-13F4ADCC0F96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vincontrol.StockingGuide.DataService.Test", "..\vincontrol.StockingGuide.DataService.Test\vincontrol.StockingGuide.DataService.Test.csproj", "{F305C5D2-75FA-4A55-8E8D-37AF191791C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vincontrol.StockingGuide.Entity", "..\vincontrol.StockingGuide.Entity\vincontrol.StockingGuide.Entity.csproj", "{A1B6BD0C-0B9D-438D-8E7D-BF0BCB001673}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vincontrol.Data", "..\vincontrol.Data\vincontrol.Data.csproj", "{7D76E800-C9D8-407A-8844-A775EE6D5A65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vincontrol.StockingGuide.Repository", "..\vincontrol.StockingGuide.Repository\vincontrol.StockingGuide.Repository.csproj", "{2FF9C39B-CDFC-4024-962A-AB8EE0613316}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vincontrol.StockingGuide.Repository.UnitTest", "..\vincontrol.StockingGuide.Repository.UnitTest\vincontrol.StockingGuide.Repository.UnitTest.csproj", "{47A2310F-B8BF-4DB8-B145-BA412083331B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vincontrol.StockingGuide.Process", "..\vincontrol.StockingGuide.Service\vincontrol.StockingGuide.Process.csproj", "{EE7D6E2D-0BDE-474A-9D55-793BAB74B85B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vincontrol.StockingGuide.UnitTest", "..\vincontrol.StockingGuide.UnitTest\vincontrol.StockingGuide.UnitTest.csproj", "{5E44092B-811F-4C16-9FF9-CF5CCBA1ABA9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7D6509E-2F8E-4B69-A5A5-BC3E65A6ECA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7D6509E-2F8E-4B69-A5A5-BC3E65A6ECA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7D6509E-2F8E-4B69-A5A5-BC3E65A6ECA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7D6509E-2F8E-4B69-A5A5-BC3E65A6ECA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8EA26FD-1BD6-409C-8B0D-0086F7F03D98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8EA26FD-1BD6-409C-8B0D-0086F7F03D98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8EA26FD-1BD6-409C-8B0D-0086F7F03D98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8EA26FD-1BD6-409C-8B0D-0086F7F03D98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E733EBD-792E-4A82-80D8-13F4ADCC0F96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E733EBD-792E-4A82-80D8-13F4ADCC0F96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E733EBD-792E-4A82-80D8-13F4ADCC0F96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E733EBD-792E-4A82-80D8-13F4ADCC0F96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F305C5D2-75FA-4A55-8E8D-37AF191791C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F305C5D2-75FA-4A55-8E8D-37AF191791C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F305C5D2-75FA-4A55-8E8D-37AF191791C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F305C5D2-75FA-4A55-8E8D-37AF191791C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1B6BD0C-0B9D-438D-8E7D-BF0BCB001673}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B6BD0C-0B9D-438D-8E7D-BF0BCB001673}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B6BD0C-0B9D-438D-8E7D-BF0BCB001673}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B6BD0C-0B9D-438D-8E7D-BF0BCB001673}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D76E800-C9D8-407A-8844-A775EE6D5A65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D76E800-C9D8-407A-8844-A775EE6D5A65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D76E800-C9D8-407A-8844-A775EE6D5A65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D76E800-C9D8-407A-8844-A775EE6D5A65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FF9C39B-CDFC-4024-962A-AB8EE0613316}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FF9C39B-CDFC-4024-962A-AB8EE0613316}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FF9C39B-CDFC-4024-962A-AB8EE0613316}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FF9C39B-CDFC-4024-962A-AB8EE0613316}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47A2310F-B8BF-4DB8-B145-BA412083331B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47A2310F-B8BF-4DB8-B145-BA412083331B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47A2310F-B8BF-4DB8-B145-BA412083331B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47A2310F-B8BF-4DB8-B145-BA412083331B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE7D6E2D-0BDE-474A-9D55-793BAB74B85B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE7D6E2D-0BDE-474A-9D55-793BAB74B85B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE7D6E2D-0BDE-474A-9D55-793BAB74B85B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE7D6E2D-0BDE-474A-9D55-793BAB74B85B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E44092B-811F-4C16-9FF9-CF5CCBA1ABA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E44092B-811F-4C16-9FF9-CF5CCBA1ABA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E44092B-811F-4C16-9FF9-CF5CCBA1ABA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E44092B-811F-4C16-9FF9-CF5CCBA1ABA9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

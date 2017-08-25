@@ -1,0 +1,65 @@
+﻿<reviewSite name="citygrid.com" url="www.citygrid.com">
+  <namespaces>
+    <namespace name="ns" value="http://www.w3.org/1999/xhtml"/>
+  </namespaces>
+  <pages>
+    <reviewPage name="" dealerId="0" url="" hasAdditionalDealerReview="false" hasAdditionalUserReview="false" hasDetailUserReview="false" category="Sales">
+      <about context="//div[@class='section about']/p"/>
+      <overallScore context=""/>
+      <additionalReview>
+        <customerService context=""/>
+        <qualityOfWork context=""/>
+        <friendliness context=""/>
+        <overallExperience context=""/>
+        <pricing context=""/>
+        <buyingProcess context=""/>
+        <overallFacilities context=""/>
+      </additionalReview>
+    </reviewPage>
+
+  </pages>
+
+  <reviews>
+    <reviewNode context="//ul[@id='reviews_container']/li"/>
+    
+    <reviewUrl context="//p[2]/a/@href"/>
+    <reviewAuthor context="./p/a"/>
+    <reviewDate context="./p/text()[2]">
+      <replace>
+        <filter original="about" replace=""></filter>
+        <filter original="ago" replace=""></filter>
+        <filter original="on" replace=""></filter>
+        <filter isExpression="true" original="a month" replace="System.DateTime.Now.AddMonths(-1).ToShortDateString()"></filter>
+        <filter isExpression="true" original="2 months" replace="System.DateTime.Now.AddMonths(-2).ToShortDateString()"></filter>
+        <filter isExpression="true" original="a year" replace="System.DateTime.Now.AddYears(-1).ToShortDateString()"></filter>
+        <filter isExpression="true" original="2 years" replace="System.DateTime.Now.AddYears(-2).ToShortDateString()"></filter>
+        <filter isExpression="true" original="3 years" replace="System.DateTime.Now.AddYears(-3).ToShortDateString()"></filter>
+      </replace>
+    </reviewDate>
+    <reviewContent context="./div/div[2]/p[@class='review_comment ieSucks']"/>
+    <reviewDetailContent context="//span[@class='description']"/>
+    <reviewRating context="./div/div/div[2]/@style">
+      <replace>
+        <filter original="width:" replace=""></filter>
+        <filter original="0%" replace=""></filter>
+        
+      </replace>
+    </reviewRating>
+    <additionalReview>
+      <customerService context=""/>
+      <qualityOfWork context=""/>
+      <friendliness context=""/>
+      <overallExperience context=""/>
+      <pricing context=""/>
+      <buyingProcess context=""/>
+      <overallFacilities context=""/>
+      <reasonForVisit context=""/>
+      <recommendThisDealer context=""/>
+      <purchasedAVehicle context=""/>
+    </additionalReview>
+    
+    <nextPageUrl context="//span[@class='highlight2']/following-sibling::*[1]/@href">
+      
+    </nextPageUrl>
+  </reviews>
+</reviewSite>

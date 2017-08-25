@@ -1,0 +1,14 @@
+﻿Hello @@CustomerName,
+<br/>
+<br/> 
+@@UserFullName at @@DealerName has shared a brochure with you about the new @@Year @@Make @@Model!
+<br/> 
+To view the PDF brochure on this car, click here <a href="@@BrochureURL">@@Year @@Make @@Model</a>.
+<br/> 
+Also, attached to this email is a .PDF document with various points of contact within the dealership.
+<br/> 
+For more information or to schedule a test drive, give @@UserFullName a call at @@Phone or visit them at @@Address.
+<br/> 
+<br/>
+<br/> 
+Powered by VINControl

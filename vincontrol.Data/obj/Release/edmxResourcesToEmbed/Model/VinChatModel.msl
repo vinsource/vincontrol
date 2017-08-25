@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="VinChatModelStoreContainer" CdmEntityContainer="VinChatEntities">
+    <EntitySetMapping Name="lasts">
+      <EntityTypeMapping TypeName="VinChatModel.last">
+        <MappingFragment StoreEntitySet="last">
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="seconds" ColumnName="seconds" />
+          <ScalarProperty Name="state" ColumnName="state" />
+          <ScalarProperty Name="Modify_Date" ColumnName="Modify_Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="privacy_default_list">
+      <EntityTypeMapping TypeName="VinChatModel.privacy_default_list">
+        <MappingFragment StoreEntitySet="privacy_default_list">
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="privacy_list">
+      <EntityTypeMapping TypeName="VinChatModel.privacy_list">
+        <MappingFragment StoreEntitySet="privacy_list">
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="privacy_list_data">
+      <EntityTypeMapping TypeName="VinChatModel.privacy_list_data">
+        <MappingFragment StoreEntitySet="privacy_list_data">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="t" ColumnName="t" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="action" ColumnName="action" />
+          <ScalarProperty Name="ord" ColumnName="ord" />
+          <ScalarProperty Name="match_all" ColumnName="match_all" />
+          <ScalarProperty Name="match_iq" ColumnName="match_iq" />
+          <ScalarProperty Name="match_message" ColumnName="match_message" />
+          <ScalarProperty Name="match_presence_in" ColumnName="match_presence_in" />
+          <ScalarProperty Name="match_presence_out" ColumnName="match_presence_out" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="private_storage">
+      <EntityTypeMapping TypeName="VinChatModel.private_storage">
+        <MappingFragment StoreEntitySet="private_storage">
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="namespace" ColumnName="namespace" />
+          <ScalarProperty Name="data" ColumnName="data" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pubsub_node">
+      <EntityTypeMapping TypeName="VinChatModel.pubsub_node">
+        <MappingFragment StoreEntitySet="pubsub_node">
+          <ScalarProperty Name="host" ColumnName="host" />
+          <ScalarProperty Name="node" ColumnName="node" />
+          <ScalarProperty Name="parent" ColumnName="parent" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="nodeid" ColumnName="nodeid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="pubsub_state">
+      <EntityTypeMapping TypeName="VinChatModel.pubsub_state">
+        <MappingFragment StoreEntitySet="pubsub_state">
+          <ScalarProperty Name="nodeid" ColumnName="nodeid" />
+          <ScalarProperty Name="jid" ColumnName="jid" />
+          <ScalarProperty Name="affiliation" ColumnName="affiliation" />
+          <ScalarProperty Name="subscriptions" ColumnName="subscriptions" />
+          <ScalarProperty Name="stateid" ColumnName="stateid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="roster_version">
+      <EntityTypeMapping TypeName="VinChatModel.roster_version">
+        <MappingFragment StoreEntitySet="roster_version">
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="version" ColumnName="version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rostergroups">
+      <EntityTypeMapping TypeName="VinChatModel.rostergroup">
+        <MappingFragment StoreEntitySet="rostergroups">
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="jid" ColumnName="jid" />
+          <ScalarProperty Name="grp" ColumnName="grp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rosterusers">
+      <EntityTypeMapping TypeName="VinChatModel.rosteruser">
+        <MappingFragment StoreEntitySet="rosterusers">
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="jid" ColumnName="jid" />
+          <ScalarProperty Name="nick" ColumnName="nick" />
+          <ScalarProperty Name="subscription" ColumnName="subscription" />
+          <ScalarProperty Name="ask" ColumnName="ask" />
+          <ScalarProperty Name="askmessage" ColumnName="askmessage" />
+          <ScalarProperty Name="server" ColumnName="server" />
+          <ScalarProperty Name="subscribe" ColumnName="subscribe" />
+          <ScalarProperty Name="type" ColumnName="type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="spools">
+      <EntityTypeMapping TypeName="VinChatModel.spool">
+        <MappingFragment StoreEntitySet="spool">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="xml" ColumnName="xml" />
+          <ScalarProperty Name="notifyprocessed" ColumnName="notifyprocessed" />
+          <ScalarProperty Name="created" ColumnName="created" />
+          <ScalarProperty Name="MustDelete" ColumnName="MustDelete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="VinChatModel.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="created" ColumnName="created" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vcards">
+      <EntityTypeMapping TypeName="VinChatModel.vcard">
+        <MappingFragment StoreEntitySet="vcard">
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="vcard1" ColumnName="vcard" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vcard_search">
+      <EntityTypeMapping TypeName="VinChatModel.vcard_search">
+        <MappingFragment StoreEntitySet="vcard_search">
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="lusername" ColumnName="lusername" />
+          <ScalarProperty Name="fn" ColumnName="fn" />
+          <ScalarProperty Name="lfn" ColumnName="lfn" />
+          <ScalarProperty Name="family" ColumnName="family" />
+          <ScalarProperty Name="lfamily" ColumnName="lfamily" />
+          <ScalarProperty Name="given" ColumnName="given" />
+          <ScalarProperty Name="lgiven" ColumnName="lgiven" />
+          <ScalarProperty Name="middle" ColumnName="middle" />
+          <ScalarProperty Name="lmiddle" ColumnName="lmiddle" />
+          <ScalarProperty Name="nickname" ColumnName="nickname" />
+          <ScalarProperty Name="lnickname" ColumnName="lnickname" />
+          <ScalarProperty Name="bday" ColumnName="bday" />
+          <ScalarProperty Name="lbday" ColumnName="lbday" />
+          <ScalarProperty Name="ctry" ColumnName="ctry" />
+          <ScalarProperty Name="lctry" ColumnName="lctry" />
+          <ScalarProperty Name="locality" ColumnName="locality" />
+          <ScalarProperty Name="llocality" ColumnName="llocality" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="lemail" ColumnName="lemail" />
+          <ScalarProperty Name="orgname" ColumnName="orgname" />
+          <ScalarProperty Name="lorgname" ColumnName="lorgname" />
+          <ScalarProperty Name="orgunit" ColumnName="orgunit" />
+          <ScalarProperty Name="lorgunit" ColumnName="lorgunit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,38 @@
+﻿<Window x:Class="vincontrol.Backend.Windows.DataFeed.Export.ViewExportHistoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ViewExportHistoryWindow" Width="900"   WindowStartupLocation="CenterScreen" >
+    <ScrollViewer>
+        <StackPanel HorizontalAlignment="Stretch">
+            <!--<StackPanel Orientation="Horizontal" HorizontalAlignment="Right"></StackPanel>-->
+            <ComboBox Width="200" HorizontalAlignment="Right" Margin="0 0 0 20" ItemsSource="{Binding Dealers}" SelectedValuePath="Key"  DisplayMemberPath="Value" SelectedValue="{Binding SelectedDealer}">
+            </ComboBox>
+            <DataGrid CanUserAddRows="False" AutoGenerateColumns="False" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" ItemsSource="{Binding Files}" FontSize="14">
+                <DataGrid.Columns>
+                    <!--<DataGridTextColumn Header="File Url"  Binding="{Binding Path=FileUrl}"/>-->
+
+                    <DataGridTemplateColumn Header="File URL">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="{Binding FileUrl}" Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}},  Path= DataContext.DownloadFileCommand}"  CommandParameter="{Binding FileUrl}"></Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTextColumn Header="Last Deposited Date"  Binding="{Binding Path=LastDepositedDate}"/>
+                    <DataGridTextColumn Header="DealerName"  Binding="{Binding Path=DealerName}"/>
+                </DataGrid.Columns>
+                <!--<DataGridTemplateColumn Header="Company Name">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock>Carscom</TextBlock>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>-->
+
+            </DataGrid>
+
+        </StackPanel>
+    </ScrollViewer>
+</Window>

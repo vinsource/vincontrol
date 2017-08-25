@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E5AB2684-87F4-4717-A886-0D57072ED501}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>vincontrol.VinSocial</RootNamespace>
+    <AssemblyName>vincontrol.VinSocial</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNetOpenAuth">
+      <HintPath>..\Package\Youtube\DotNetOpenAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis">
+      <HintPath>..\Package\Youtube\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Authentication.OAuth2">
+      <HintPath>..\Package\Youtube\Google.Apis.Authentication.OAuth2.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Youtube.v3">
+      <HintPath>..\Package\Youtube\Google.Apis.Youtube.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Package\Youtube\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\Package\Youtube\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\Package\Youtube\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Package\Youtube\System.Net.Http.WebRequest.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\CSIController.cs" />
+    <Compile Include="Controllers\FacebookController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ReportsController.cs" />
+    <Compile Include="Controllers\ReviewsController.cs" />
+    <Compile Include="Controllers\YoutubeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="YoutubeHelper\AppData.cs" />
+    <Compile Include="YoutubeHelper\AuthorizationMgr.cs" />
+    <Compile Include="YoutubeHelper\CommandLine.cs" />
+    <Compile Include="YoutubeHelper\INativeAuthorizationFlow.cs" />
+    <Compile Include="YoutubeHelper\LoopbackServerAuthorizationFlow.cs" />
+    <Compile Include="YoutubeHelper\PromptingClientCredentials.cs" />
+    <Compile Include="YoutubeHelper\ReflectionUtils.cs" />
+    <Compile Include="YoutubeHelper\UserOption.cs" />
+    <Compile Include="YoutubeHelper\Util.cs" />
+    <Compile Include="YoutubeHelper\WindowTitleNativeAuthorizationFlow.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\auction.css" />
+    <Content Include="Content\Images\admin\arrow.png" />
+    <Content Include="Content\Images\admin\delete-lage.png" />
+    <Content Include="Content\Images\admin\delete.png" />
+    <Content Include="Content\Images\admin\download.png" />
+    <Content Include="Content\Images\admin\facebook.png" />
+    <Content Include="Content\Images\admin\fb.png" />
+    <Content Include="Content\Images\admin\google_plus.png" />
+    <Content Include="Content\Images\admin\plus.png" />
+    <Content Include="Content\Images\admin\preview.png" />
+    <Content Include="Content\Images\admin\search.png" />
+    <Content Include="Content\Images\admin\youtube.png" />
+    <Content Include="Content\Images\ajax-loader1.gif" />
+    <Content Include="Content\Images\bg-border.png" />
+    <Content Include="Content\Images\bg-bottom-cap.png" />
+    <Content Include="Content\Images\bg-repeat.jpg" />
+    <Content Include="Content\Images\bLogo.png" />
+    <Content Include="Content\Images\bullet.gif" />
+    <Content Include="Content\Images\login-logo.png" />
+    <Content Include="Content\Images\logo.jpg" />
+    <Content Include="Content\Images\social\activity-feed-placeholder.jpg" />
+    <Content Include="Content\Images\social\bg-border.png" />
+    <Content Include="Content\Images\social\bg-repeat.jpg" />
+    <Content Include="Content\Images\social\bottom-cap.png" />
+    <Content Include="Content\Images\social\car-control-left.jpg" />
+    <Content Include="Content\Images\social\car-control-right.jpg" />
+    <Content Include="Content\Images\social\carfax.jpg" />
+    <Content Include="Content\Images\social\cars-com-icon.png" />
+    <Content Include="Content\Images\social\cs-icon.png" />
+    <Content Include="Content\Images\social\data-box-left.jpg" />
+    <Content Include="Content\Images\social\data-box-right.jpg" />
+    <Content Include="Content\Images\social\default-profile.jpg" />
+    <Content Include="Content\Images\social\edmunds-icon.png" />
+    <Content Include="Content\Images\social\facebook-sml.png" />
+    <Content Include="Content\Images\social\fb-logo.png" />
+    <Content Include="Content\Images\social\feeling.gif" />
+    <Content Include="Content\Images\social\five-star.png" />
+    <Content Include="Content\Images\social\four-half-star.png" />
+    <Content Include="Content\Images\social\four-star.png" />
+    <Content Include="Content\Images\social\gplus-icon.png" />
+    <Content Include="Content\Images\social\graph-sample.jpg" />
+    <Content Include="Content\Images\social\half-star.png" />
+    <Content Include="Content\Images\social\list_report_icon.jpg" />
+    <Content Include="Content\Images\social\logo.jpg" />
+    <Content Include="Content\Images\social\market-high.jpg" />
+    <Content Include="Content\Images\social\market-low.jpg" />
+    <Content Include="Content\Images\social\market-mid.jpg" />
+    <Content Include="Content\Images\social\next-month.png" />
+    <Content Include="Content\Images\social\no-stars.png" />
+    <Content Include="Content\Images\social\one-half-star.png" />
+    <Content Include="Content\Images\social\one-star.png" />
+    <Content Include="Content\Images\social\Orange-Circle.png" />
+    <Content Include="Content\Images\social\parts-ico.gif" />
+    <Content Include="Content\Images\social\photo.gif" />
+    <Content Include="Content\Images\social\placeholder-graph.jpg" />
+    <Content Include="Content\Images\social\prev-month.png" />
+    <Content Include="Content\Images\social\Red-Circle.png" />
+    <Content Include="Content\Images\social\report_expended_icon.png" />
+    <Content Include="Content\Images\social\report_minimize_icon.png" />
+    <Content Include="Content\Images\social\sales-icon.gif" />
+    <Content Include="Content\Images\social\sample-video-thumb.jpg" />
+    <Content Include="Content\Images\social\service-icon.gif" />
+    <Content Include="Content\Images\social\sidebar-bg.jpg" />
+    <Content Include="Content\Images\social\stars-sprite.png" />
+    <Content Include="Content\Images\social\tag.gif" />
+    <Content Include="Content\Images\social\three-half-star.png" />
+    <Content Include="Content\Images\social\three-star.png" />
+    <Content Include="Content\Images\social\triangle-down.png" />
+    <Content Include="Content\Images\social\triangle.png" />
+    <Content Include="Content\Images\social\twitter-sml.jpg" />
+    <Content Include="Content\Images\social\twitter-sml.png" />
+    <Content Include="Content\Images\social\two-half-star.png" />
+    <Content Include="Content\Images\social\two-star.png" />
+    <Content Include="Content\Images\social\Yellow-Circle.png" />
+    <Content Include="Content\Images\social\yelp-icon.png" />
+    <Content Include="Content\Images\social\youtube-sml.png" />
+    <Content Include="Content\social\admin.css" />
+    <Content Include="Content\social\csi.css" />
+    <Content Include="Content\social\facebook.css" />
+    <Content Include="Content\social\ie.css" />
+    <Content Include="Content\social\reports.css" />
+    <Content Include="Content\social\reviews.css" />
+    <Content Include="Content\social\social.css" />
+    <Content Include="Content\social\style.css" />
+    <Content Include="Content\social\video.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\accounting.js" />
+    <Content Include="Scripts\fancybox\blank.gif" />
+    <Content Include="Scripts\fancybox\fancybox-x.png" />
+    <Content Include="Scripts\fancybox\fancybox-y.png" />
+    <Content Include="Scripts\fancybox\fancybox.png" />
+    <Content Include="Scripts\fancybox\fancybox_loading%402x.gif" />
+    <Content Include="Scripts\fancybox\fancybox_loading.gif" />
+    <Content Include="Scripts\fancybox\fancybox_overlay.png" />
+    <Content Include="Scripts\fancybox\fancybox_sprite%402x.png" />
+    <Content Include="Scripts\fancybox\fancybox_sprite.png" />
+    <Content Include="Scripts\fancybox\fancy_close.png" />
+    <Content Include="Scripts\fancybox\fancy_loading.png" />
+    <Content Include="Scripts\fancybox\fancy_nav_left.png" />
+    <Content Include="Scripts\fancybox\fancy_nav_right.png" />
+    <Content Include="Scripts\fancybox\fancy_shadow_e.png" />
+    <Content Include="Scripts\fancybox\fancy_shadow_n.png" />
+    <Content Include="Scripts\fancybox\fancy_shadow_ne.png" />
+    <Content Include="Scripts\fancybox\fancy_shadow_nw.png" />
+    <Content Include="Scripts\fancybox\fancy_shadow_s.png" />
+    <Content Include="Scripts\fancybox\fancy_shadow_se.png" />
+    <Content Include="Scripts\fancybox\fancy_shadow_sw.png" />
+    <Content Include="Scripts\fancybox\fancy_shadow_w.png" />
+    <Content Include="Scripts\fancybox\fancy_title_left.png" />
+    <Content Include="Scripts\fancybox\fancy_title_main.png" />
+    <Content Include="Scripts\fancybox\fancy_title_over.png" />
+    <Content Include="Scripts\fancybox\fancy_title_right.png" />
+    <Content Include="Scripts\fancybox\helpers\fancybox_buttons.png" />
+    <Content Include="Scripts\fancybox\helpers\jquery.fancybox-buttons.css" />
+    <Content Include="Scripts\fancybox\helpers\jquery.fancybox-buttons.js" />
+    <Content Include="Scripts\fancybox\helpers\jquery.fancybox-media.js" />
+    <Content Include="Scripts\fancybox\helpers\jquery.fancybox-thumbs.css" />
+    <Content Include="Scripts\fancybox\helpers\jquery.fancybox-thumbs.js" />
+    <Content Include="Scripts\fancybox\jquery.easing-1.3.pack.js" />
+    <Content Include="Scripts\fancybox\jquery.fancybox-1.3.4.css" />
+    <Content Include="Scripts\fancybox\jquery.fancybox-1.3.4.js" />
+    <Content Include="Scripts\fancybox\jquery.fancybox-1.3.4.pack.js" />
+    <Content Include="Scripts\fancybox\jquery.fancybox.css" />
+    <Content Include="Scripts\fancybox\jquery.fancybox.js" />
+    <Content Include="Scripts\fancybox\jquery.fancybox.pack.js" />
+    <Content Include="Scripts\fancybox\jquery.mousewheel-3.0.4.pack.js" />
+    <Content Include="Scripts\jquery-1.6.4.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.16.custom.min.js" />
+    <Content Include="Scripts\jquery.alerts.css" />
+    <Content Include="Scripts\jquery.alerts.js" />
+    <Content Include="Scripts\jquery.blockUI.js" />
+    <Content Include="Scripts\jquery.numeric.js" />
+    <Content Include="Scripts\scripts.js" />
+    <Content Include="Scripts\social\admin.js" />
+    <Content Include="Scripts\social\calendar.js" />
+    <Content Include="Scripts\social\common.js" />
+    <Content Include="Scripts\social\csi.js" />
+    <Content Include="Scripts\social\jquery1.10.1.js" />
+    <Content Include="Scripts\social\jquery2.0.0.js" />
+    <Content Include="Scripts\social\scripts.js" />
+    <Content Include="Scripts\StyleSheet1.css" />
+    <Content Include="Scripts\tablesorter\jquery.metadata.js" />
+    <Content Include="Scripts\tablesorter\jquery.tablesorter.js" />
+    <Content Include="Scripts\tablesorter\jquery.tablesorter.min.js" />
+    <Content Include="Scripts\util.js" />
+    <Content Include="Views\Admin\Index.aspx" />
+    <Content Include="Views\Admin\Notifications.ascx" />
+    <Content Include="Views\Admin\Teams.ascx" />
+    <Content Include="Views\Admin\ThirdParty.ascx" />
+    <Content Include="Views\Admin\Users.ascx" />
+    <Content Include="Views\Admin\VideoSettings.ascx" />
+    <Content Include="Views\CSI\Customer.ascx" />
+    <Content Include="Views\CSI\Index.aspx" />
+    <Content Include="Views\CSI\Overview.ascx" />
+    <Content Include="Views\Facebook\Index.aspx" />
+    <Content Include="Views\Reviews\Index.aspx" />
+    <Content Include="Views\Reviews\Manager\Dashboard.ascx" />
+    <Content Include="Views\Reviews\Manager\ReviewsList.ascx" />
+    <Content Include="Views\Reviews\Manager\Surveys.ascx" />
+    <Content Include="Views\Reviews\Manager\SurveysList.ascx" />
+    <Content Include="Views\Reviews\Manager\Team.ascx" />
+    <Content Include="Views\Reviews\ReviewManager.aspx" />
+    <Content Include="Views\Youtube\Index.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Home\Index.aspx" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\Shared\Site.Master" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Views\Report\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\fancybox\index.php" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\vincontrol.Data\vincontrol.Data.csproj">
+      <Project>{7D76E800-C9D8-407A-8844-A775EE6D5A65}</Project>
+      <Name>vincontrol.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50557</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,665 @@
+<%@ Page Title="Trade In" Language="C#" Inherits="System.Web.Mvc.ViewPage<WhitmanEnterpriseMVC.Models.TradeInVehicleModel>" %>
+<%@ Import Namespace="WhitmanEnterpriseMVC.HelperClass" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="Head1" runat="server">
+    <title>Trade-In Value</title>
+     <style type="text/css">
+ html {
+	font-family: 'Trebuchet MS', Arial, Sans-Serif;
+	padding-top: 20px;
+	background: #eeeeee;
+}
+
+.slide-wrapper{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	opacity: 0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	width: 1000px;
+	position: relative;
+}
+
+.info-box {
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 962px;
+	padding-left: 15px;
+	padding-right: 15px;
+	overflow: hidden;
+	border: 4px solid #99b189;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+.info-wrap {
+	opacity: 0;
+}
+
+.description-header {
+	margin: 0;
+	margin-top: 20px;
+	margin-bottom: -5px;
+	padding: 0;
+	font-size: 2em;
+	font-weight: bolder;
+	font-style: italic;
+	color: green;
+}
+
+.error-wrap {
+	height: 0;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.error {
+	border-radius: 4px;
+	margin-top: 0;
+	-moz-border-radius: 4px;
+	background: #c80000;
+	color: white;
+	padding: .5em;
+	font-weight: bold;
+	font-size: 1.1em;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.info-box .description {
+	font-size: 1.5em;
+	color: #111111;
+	font-weight: bold;
+	margin: 0;
+}
+
+.info-box h3,
+.info-box h4 {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+.info-box h4{
+	color: black;
+}
+
+.info-box h3{
+	color: #880000;
+}
+
+#container {
+	width: 1000px;
+	margin: 0 auto;
+	border: none;
+	overflow: hidden;
+	position: relative;
+}
+
+.controls {
+	padding: 10px;
+	margin: 10px;
+	position: relative;
+	min-height: 20px;
+	border: none;
+	margin-bottom: 20px;
+}
+.controls a {
+	background: green;
+	color: white;
+	display: inline-block;
+	padding: 5px;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	cursor: pointer;
+}
+
+.controls .next {
+	position: absolute;
+	right: 0;
+}
+
+.controls .prev {
+	margin: 0;
+}
+
+.steps {
+	background: url('../../images/easy-steps.jpg') top left no-repeat;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	top: -94px;
+	height: 100px;
+	padding-left: 200px;
+	opacity: 0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+}
+
+.steps .step {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	margin-top: 2px;
+	margin-right: -19px;
+	opacity: 0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+}
+
+.box-highlight {
+	padding: 10px;
+	background: #dddddd;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	margin-top: 10px;
+	opacity: 0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	position: relative;
+	left: -100%;
+}
+
+#header{
+	height: 200px;
+	width: 100%;
+	padding: 0;
+	border: none;
+	margin-bottom: 10px;
+}
+
+#header .mask {
+	overflow: hidden;
+	border-radius: 0 200px 200px 0;
+	width: 0;
+	height: 200px;
+	margin-top: -172px;
+}
+
+#header .text-wrap{
+	position: relative;
+	border-bottom: 12px #333333 solid;
+	color: #c80000;
+	font-weight: bolder;
+	letter-spacing: 0em;
+	margin-left: 200px;
+	width: 800px;
+}
+
+#header h1 {
+	text-align: center;
+	margin-bottom: 0;
+	opacity: 0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	font-size: 48px !important;
+}
+
+.logo {
+	position: relative;
+	z-index: 100;
+	width: 250px;
+	height: 200px;
+	background: transparent url('http://vehicleinventorynetwork.com/img/logo.png') top left no-repeat;
+}
+
+.step1 .logo {
+	opacity: 0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+}
+
+.vehicle-info {
+	float: left;
+	display: inline-block;
+}
+
+#market-data .vehicle-info img {
+	width: 300px;
+	border: 5px solid white;
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+#chart div.chart {
+	position: relative;
+}
+
+#market-data .prices {
+	width: 570px;
+	display: block;
+	position: absolute;
+	left: 10px;
+	bottom: 30px;
+	height: 25px;
+}
+
+
+#market-data .row-cell:nth-child(1) {
+	width: 60% !important;
+}
+
+#market-data .row-cell:nth-child(2) {
+	width: 35%;
+}
+#market-data .prices span {
+	display: block;
+	float: left;
+	width: 178px;
+	font-size: 1.5em;
+}
+
+#market-data .prices span:nth-child(1) {
+	text-align: left;
+}
+
+#market-data .prices span:nth-child(2) {
+	text-align: center !important;
+}
+
+#market-data .prices span:nth-child(3) {
+	text-align: right !important;
+}
+
+#market-data .chart {
+	width: 570px;
+	background: #ffffff;
+	display: inline-block;
+	overflow: hidden;
+}
+
+#market-data .chart img {
+	width: 570px;
+}
+
+span.start {
+	font-size: 1em !important;
+	font-weight: bold;
+	margin-top: 6px;
+	margin-left: 5px;
+}
+
+#condition input[type="radio"] {
+	display: none;
+}
+#condition .con_btn{
+	display: inline;
+	cursor: pointer;
+}
+
+.row-cell {
+	display: inline-block;
+	margin-right: 12px;
+	float: left;
+	clear: right;
+	font-size: 1.2em;
+}
+
+.row {
+	display: block;
+	width: 99%;
+}
+
+.row h3 {
+	font-size: 1.5em;
+}
+
+.row input,
+.row select {
+	font-size: 1em;
+}
+.row input {
+	width: 300px;
+}
+
+#get-value-btn img{
+	margin-top: 20px;
+	width: 970px;
+	cursor: pointer;
+}
+
+.row select {
+	width: 120px;
+}
+
+input[name="Mileage"] {
+	height: 69px;
+	font-size: 3em;
+	color: green;
+	font-weight: bold;
+	text-align: center;
+}
+
+.input-wrap .lable {
+	min-width: 75px;
+	display: inline-block;
+}
+
+.reviews.text-wrap{
+	width: 530px;
+	max-height: 400px;
+	overflow: scroll;
+	overflow-x: hidden;
+	margin-top: 0;
+}
+
+.reviews.text-wrap p {
+	border-left: 2px #bbbbbb solid;
+	padding-left: 10px;
+	position: relative;
+	margin-right: 10px;
+	margin-top: 0;
+	padding-top: 5px;
+	margin-bottom: 10px;
+}
+
+.reviews.text-wrap p span.quote {
+	display: block;
+	font-weight: bolder;
+	color: #880000;
+	margin-top: 5px;
+	font-style: italic;
+	padding-bottom: 0px;
+}
+
+#chart p.disclaimer {
+	font-size: .7em;
+	margin: 0;
+	text-align: center;
+}
+
+#trade-in {
+	width: 101%;
+	position: relative;
+}
+
+#trade-in table {
+	width: 100%;
+}
+
+#trade-in th,
+#trade-in td{
+	width: 15%;
+	padding: .5%;
+	margin: 0;
+	background-color: #ffffff;
+	border-radius: 5px;
+}
+
+#trade-in td.side-header {
+	text-align: center;
+}
+
+#trade-in thead th{
+	background: #222222;
+	color: white;
+	font-weight: bolder;
+	font-style: italic;
+}
+
+#trade-in tfoot td {
+	color: white;
+	font-weight: bold;
+}
+
+#trade-in .high td {
+	background: palegreen;
+}
+
+#trade-in .mid td {
+	background: palegoldenrod;
+}
+
+#trade-in .low td {
+	background: lightcoral;
+}
+
+#trade-in .disclaimer {
+	background: pink;
+}
+
+#trade-in .disclaimer p{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-style: italic;
+	font-size: .8em;
+	color: red;
+}
+
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+/*NEW LINES*/
+#options li {
+	display: inline-block;
+	width: 30%;
+	padding: 1%;
+	margin-bottom: 5px;
+	background: white;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 1.0em;
+}
+
+#options li:hover,
+#options li.selected {
+	background: green;
+	color: white;
+}
+/*END NEW LINES*/
+/*------------------------------------------------------*/
+/*------------------------------------------------------*/
+
+#trims li {
+	display: inline-block;
+	width: 40%;
+	padding: 2.5%;
+	margin-bottom: 5px;
+	background: white;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+#trims li:hover,
+#trims li.selected {
+	background: green;
+	color: white;
+}
+
+#vehicle ul {
+	margin: 0;
+	padding: 0;
+	width: 315px;
+}
+
+#vehicle ul li {
+	list-style-type: none;
+	padding: .5em;
+	background: white;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+#carfax {
+ position: relative;
+}
+
+img.carfax-logo {
+	width: 175px;
+	margin-bottom: 0;
+}
+
+#carfax ul {
+	width: 65%;
+	float: left;
+}
+
+#carfax ul,
+#carfax li{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+#carfax .carfax-info,
+#carfax .row-cell {
+	width: 100%;
+}
+
+#carfax li {
+	background: white;
+	padding: .5em;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+#carfax li div.icon {
+	display: inline;
+	float: left;
+	padding: 4px;
+	width: 12px;
+	height: 12px;
+	border: palegreen 2px solid;
+	margin-right: 10px;
+}
+
+#carfax span.disclaimer {
+	width: 31%;
+	float: right;
+	margin-left: 10px;
+	font-size: .8em;
+	font-style: italic;
+	padding: 10px;
+	background: white;
+	margin-top: 10px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+#carfax .owners .number {
+	margin-left: 30px;
+}
+
+#carfax .owners {
+	margin-left: 10px;
+	background: palegreen;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: green;
+	font-size: 8em;
+	position: relative;
+	float: right;
+	width: 31%;
+	padding: 10px;
+}
+
+#carfax .owners span {
+	font-size: 40px;
+	position: absolute;
+	right: 40px;
+	bottom: 40px;
+}
+
+@media print{
+	#header {display: none;}
+}
+div {
+	opacity: 1 !important;
+}    	
+    </style>
+</head>
+<body>
+   <div id="container" class="step5">
+
+	<%--	<div id="header">
+
+			<div class="logo"></div>
+
+			<div class="mask">
+				<div class="text-wrap">
+					<h1>Get Your Trade In Value!</h1>
+				</div>
+			</div>
+			<div class="steps">
+			<div id="step-1" class="step"><img src="<%= Url.Content("~/images/on-step-1.png")%>" alt="step 1"/></div>
+				<div id="step-2" class="step"><img src="<%= Url.Content("~/images/on-step-2.png")%>" alt="step 2"/></div>
+				<div id="step-3" class="step"><img src="<%= Url.Content("~/images/on-step-3.png")%>" alt="step 3"/></div>
+			</div>
+		</div>--%>
+		
+		<div class="slide-wrapper">
+
+			<div class="info-wrap">
+				<h3 class="description-header">Your Vehicle's Trade-In Value</h3>
+				<div id="market-data" class="info-box">
+					<div class="row">
+						<div id="chart" class="row-cell">
+							<h3 class="box-header">Market Value</h3>
+							<div class="chart">
+								<img src="<%= Url.Content("~/images/chart.jpg")%>" />
+							
+							<div class="prices">
+									<span class="start">Call Dealer</span>
+									<%if (Model.TradeInFairPrice.Equals("NA"))
+           { %>
+									
+									<span class="start">Call Dealer</span>
+									<% }
+           else
+           {
+  
+                                      %>
+									<span ><%=Model.TradeInFairPrice%></span>
+									<%} %>
+															<%if (Model.TradeInGoodPrice.Equals("NA"))
+           { %>
+									
+									<span class="start">Call Dealer</span>
+									<% }
+           else
+           {
+  
+                                      %>
+									<span><%=Model.TradeInGoodPrice%></span>
+									<%} %>
+									
+								</div>
+									</div>
+							<p class="disclaimer">* Above numbers are <b><em>ESTIMATED TRADE-IN VALUES</em></b>, dealer offer may vary. *</p>
+						</div>
+						
+						<div id="vehicle" class="row-cell">
+							<h3 class="box-header">Your Vehicle</h3>
+							<ul>
+								<li>Year: <label id="SelectedYear"><%=Model.SelectedYear %></label></li>
+								<li>Make: <label id="SelectedMake"><%=Model.SelectedMake %></label></li>
+								<li>Model: <label id="SelectedModel"><%=Model.SelectedModel %></label></li>
+								<li>Trim: <label id="SelectedTrim"><%=Model.SelectedTrim %></label></li>
+								<li>Mileage: <%=CommonHelper.FormatNumberInThousand(Model.Mileage)%></li>
+								<li>Condition: <%=Model.Condition %></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+	    </div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Error</title>
+</head>
+<style type="text/css">
+  html {
+    background: #111111;
+    color: #eeeeee;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+  }
+
+  body {
+    margin: 0 auto;
+    width: 800px;
+  }
+
+  h1 {
+    margin-bottom: 0;
+    color: #c80000;
+    margin-bottom: 0;
+  }
+  h3 {
+    margin: 0;
+    padding: 20px;
+    font-weight: normal;
+  }
+
+  .wrapper {
+    background: #333333;
+    position: relative;
+  }
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  a:hover {
+    color: #C80000;
+  }
+
+  #ticket {
+    margin-left: 50%;
+    position: relative;
+    left: -250px;
+  }
+</style>
+<body>
+    <h1>An Error Has Occured</h1>
+  <div class="wrapper">
+    <h3>An error has occured during this process, please wait a few seconds and try again. If the problem persists, please <a target="_blank" title="Submit a Support Ticket" href="https://vincontrol.rhinosupport.com/contact.php">Submit a Ticket</a> with a description of the problem below and tech support will get to work on the problem ASAP.</h3>
+    <iframe id="ticket" width="450" height="450" frameborder="0" scrolling="no" src="https://vincontrol.rhinosupport.com/create-ticket.php?frame=true"></iframe>
+  </div>
+</body>
+</html>

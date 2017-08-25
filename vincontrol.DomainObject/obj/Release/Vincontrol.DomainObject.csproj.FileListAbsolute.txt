@@ -1,0 +1,5 @@
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.DomainObject\bin\Release\vincontrol.DomainObject.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.DomainObject\bin\Release\vincontrol.DomainObject.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.DomainObject\obj\Release\Vincontrol.DomainObject.csprojResolveAssemblyReference.cache
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.DomainObject\obj\Release\vincontrol.DomainObject.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.DomainObject\obj\Release\vincontrol.DomainObject.pdb

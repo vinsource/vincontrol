@@ -1,0 +1,116 @@
+.advancedsearch_title {
+	height: 100px;
+}
+.advancedsearch_title label {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.advancedsearch_title p {
+	font-size: 13px;
+	margin-top: 0px;
+	font-style: italic;
+}
+
+.advancedsearch_holder {
+	height: 45px;
+}
+
+.advancedsearch_items {
+	padding: 10px 5px;
+	float: left;
+	width: 185px;
+	height: 25px;
+}
+
+.advancedsearch_items_text {
+	font-size: 13px;
+	float: left;
+	padding-right: 10px;
+}
+
+.advancedsearch_items_input {
+	float: left;
+	width: 80px;
+}
+
+.advancedsearch_items_input select {
+	width: 125px;
+    border: 1px solid black;
+}
+
+.advancedsearch_items_input input {
+	width: 135px;
+	border: 1px solid black;
+}
+
+.advancedsearch_container {
+	padding: 15px 15px 0px 15px;
+}
+
+.advancedsearch_ymm_holder {
+	width: 59%;
+	border: 1px solid gray;
+	float: left;
+	height: 43px;
+}
+
+.advancedsearch_items_text_category {
+	width: 40%;
+	height: 43px;
+	border: 1px solid gray;
+	float: right;
+}
+
+.advancedsearch_btn {
+	margin-top: 7px;
+	cursor: pointer;
+	color: #FFF;
+	clear: both;
+	font-size: 13px;
+	float: right;
+	width: 120px;
+	text-align: center;
+	padding: 4px;
+	background-color: #5C5C5C;
+	font-weight: bold;
+}
+
+.advancedsearch_result_holder {
+	display:block;
+	clear: both;
+}
+
+.no_data {
+	display: block;
+	margin: 20px;
+	font-size: 14px;
+	font-style: italic;
+	color: #808080;
+    padding:20px 0px 0px 350px;
+}
+
+.lnkCategory
+{
+    color: #0000FF; cursor: pointer;
+
+}
+
+.lnkCategoryActive
+{
+    color: #0000FF; cursor: pointer;
+    font-weight:bold;
+}
+
+.imgLoadingAdvSearch
+{
+    position: absolute;
+    top: 3px;
+    left: 48px;
+    display: none;
+}
+
+.divValue
+{
+    position: relative;
+}

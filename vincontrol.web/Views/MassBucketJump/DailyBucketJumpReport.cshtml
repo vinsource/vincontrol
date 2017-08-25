@@ -1,0 +1,56 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Daily Bucket Jump Report</title>
+    
+    <link href="@Url.Content("~/Content/common.css")" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div style="width: 310px; display: inline-block; text-align: center;">
+        <div id="divDealers">@Html.Raw(HTMLControlExtension.DynamicHtmlControlDealerSwitch())</div>
+        <div>
+            <div style="float:left; width: 120px; display: inline-block;">
+                <input type="radio" name="printType" checked="checked" style="display: inherit; width: 120px;" value="2"/>
+                <img src="~/Content/images/print-pdf.png" />
+            </div>
+            <div style="width: 120px; display: inline-block;">
+                <input type="radio" name="printType" style="display: inherit; width: 120px;" value="1"/>
+                <img src="~/Content/images/print-excel.png" />
+            </div>
+        </div>
+        <div>
+            <input type="button" name="btnPrint" id="btnPrint" value="Print" style="cursor:pointer;width:120px;border:0px;background:#00349C;color:white;padding:2px 4px;" />
+        </div>
+    </div>
+    
+    <script src="@Url.Content("~/Scripts/jquery-1.6.4.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/js/jquery.numeric.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/js/resize.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/js/jquery.blockUI.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/js/tablesorter/jquery.tablesorter.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/js/extension.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/js/Utility.js")" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#btnPrint').click(function() {
+                blockUIPopUp();
+                var flag = true;
+                var temp = window.setInterval(function () {
+                    if (flag) {
+                        unblockUI();
+                        flag = false;
+                    }
+                }, 4000);
+                var selectDealer = $('#divDealers').find('select');
+                var url = "/PDF/PrintDailyBucketJump?dealerId=" + selectDealer.val() + '&dealerName=' + selectDealer.find('option:selected').text() + '&type=' + $("input:radio[name='printType']:checked").val();
+                window.location.href = url;
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.WebHelper\bin\Debug\VINControl.WebHelper.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.WebHelper\bin\Debug\VINControl.WebHelper.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.WebHelper\bin\Debug\SgmlReaderDll.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.WebHelper\obj\Debug\VINControl.WebHelper.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.WebHelper\obj\Debug\VINControl.WebHelper.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.WebHelper\obj\Debug\VINControl.WebHelper.csprojResolveAssemblyReference.cache

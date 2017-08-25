@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7F0F1443-BE02-4BAD-8E5C-34ADED92DCA3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>vincontrol.Application</RootNamespace>
+    <AssemblyName>vincontrol.Application</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MVC 4.0\0.2\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\AccountManagement\AccountManagementForm.cs" />
+    <Compile Include="Forms\AccountManagement\IAccountManagementForm.cs" />
+    <Compile Include="Forms\AdminManagement\AdminManagementForm.cs" />
+    <Compile Include="Forms\AdminManagement\IAdminManagementForm.cs" />
+    <Compile Include="Forms\AppraisalManagement\AppraisalManagementForm.cs" />
+    <Compile Include="Forms\AppraisalManagement\IAppraisalManagementForm.cs" />
+    <Compile Include="Forms\BucketJumpManagementForm\BucketJumpWaitingListManagementForm.cs" />
+    <Compile Include="Forms\BucketJumpManagementForm\IBucketJumpWaitingListManagementForm.cs" />
+    <Compile Include="Forms\CarFaxManagement\CarFaxManagementForm.cs" />
+    <Compile Include="Forms\CarFaxManagement\ICarFaxManagementForm.cs" />
+    <Compile Include="Forms\CommonManagement\CommonManagementForm.cs" />
+    <Compile Include="Forms\CommonManagement\ICommonManagementForm.cs" />
+    <Compile Include="Forms\DealerManagement\DealerManagementForm.cs" />
+    <Compile Include="Forms\DealerManagement\IDealerManagementForm.cs" />
+    <Compile Include="Forms\EmailWaitingListManagement\EmaiLWaitingListManagementForm.cs" />
+    <Compile Include="Forms\EmailWaitingListManagement\IEmailWaitingListManagementForm.cs" />
+    <Compile Include="Forms\FacebookManagement\FacebookManagementForm.cs" />
+    <Compile Include="Forms\FacebookManagement\IFacebookManagementForm.cs" />
+    <Compile Include="Forms\InventoryManagement\IInventoryManagementForm.cs" />
+    <Compile Include="Forms\InventoryManagement\InventoryManagementForm.cs" />
+    <Compile Include="Forms\ManheimAuctionManagement\AuctionManagement.cs" />
+    <Compile Include="Forms\ManheimAuctionManagement\IAuctionManagement.cs" />
+    <Compile Include="Forms\BaseForm.cs" />
+    <Compile Include="Forms\NotificationManagement\INotificationManagement.cs" />
+    <Compile Include="Forms\NotificationManagement\NotificationManagement.cs" />
+    <Compile Include="Forms\UserManagement\IUserManagementForm.cs" />
+    <Compile Include="Forms\UserManagement\UserManagementForm.cs" />
+    <Compile Include="Forms\VehicleLogManagement\IVehicleLogManagementForm.cs" />
+    <Compile Include="Forms\VehicleLogManagement\VehicleLogManagementForm.cs" />
+    <Compile Include="Forms\VideoTrackingManagement\IVideoTrackingManagementForm.cs" />
+    <Compile Include="Forms\VideoTrackingManagement\VideoTrackingManagementForm.cs" />
+    <Compile Include="Forms\YoutubeManagement\IYoutubeManagementForm.cs" />
+    <Compile Include="Forms\YoutubeManagement\YoutubeManagementForm.cs" />
+    <Compile Include="ViewModels\AccountManagement\DealerGroupViewModel.cs" />
+    <Compile Include="ViewModels\AccountManagement\DealerViewModel.cs" />
+    <Compile Include="ViewModels\AccountManagement\UserNotificationViewModel.cs" />
+    <Compile Include="ViewModels\AccountManagement\UserRoleViewModel.cs" />
+    <Compile Include="ViewModels\AdvancedSearch\AdvanceSearchItem.cs" />
+    <Compile Include="ViewModels\CommonManagement\CarInfoFormViewModel.cs" />
+    <Compile Include="ViewModels\CommonManagement\ChromeVinStyleCheck.cs" />
+    <Compile Include="ViewModels\CommonManagement\CommonViewModel.cs" />
+    <Compile Include="ViewModels\CommonManagement\DealerLoginResult.cs" />
+    <Compile Include="ViewModels\InventoryManagement\BucketJumpHistoryViewModel.cs" />
+    <Compile Include="ViewModels\InventoryManagement\VehicleLogTracking.cs" />
+    <Compile Include="ViewModels\ManheimAuctionManagement\AuctionTransactionStatistic.cs" />
+    <Compile Include="ViewModels\VideoTrackingManagement\VideoTrackingViewModel.cs" />
+    <Compile Include="ViewModels\YoutubeManagement\YoutubeVideoViewModel.cs" />
+    <Compile Include="Vinchat\Forms\CommonManagement\CommonManagementForm.cs" />
+    <Compile Include="Vinchat\Forms\CommonManagement\ICommonManagementForm.cs" />
+    <Compile Include="VinMarket\Forms\CommonManagement\CommonManagementForm.cs" />
+    <Compile Include="VinMarket\Forms\CommonManagement\ICommonManagementForm.cs" />
+    <Compile Include="VinMarket\ViewModels\CommonManagement\CarMaxViewModel.cs" />
+    <Compile Include="VinMarket\ViewModels\CommonManagement\CommercialTruckDealerViewModel.cs" />
+    <Compile Include="Vinsocial\EmailHandler\CustomerMailer.cs" />
+    <Compile Include="Vinsocial\Forms\CommonManagement\CommonManagementForm.cs" />
+    <Compile Include="Vinsocial\Forms\CommonManagement\ICommonManagementForm.cs" />
+    <Compile Include="Vinsocial\Forms\CustomerManagement\CustomerManagementForm.cs" />
+    <Compile Include="Vinsocial\Forms\CustomerManagement\ICustomerManagementForm.cs" />
+    <Compile Include="Vinsocial\Forms\CustomerManagement\IInsertFormsManagement.cs" />
+    <Compile Include="Vinsocial\Forms\CustomerManagement\InsertFormsManagement.cs" />
+    <Compile Include="Vinsocial\Forms\DepartmentManagement\DepartmentManagementForm.cs" />
+    <Compile Include="Vinsocial\Forms\DepartmentManagement\IDepartmentManagementForm.cs" />
+    <Compile Include="Vinsocial\Forms\ReviewManagement\IReviewManagementForm.cs" />
+    <Compile Include="Vinsocial\Forms\ReviewManagement\ReviewManagementForm.cs" />
+    <Compile Include="Forms\TradeInManagement\ITradeInManagementForm.cs" />
+    <Compile Include="Forms\TradeInManagement\TradeInManagementForm.cs" />
+    <Compile Include="MappingHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\AccountManagement\LogOnViewModel.cs" />
+    <Compile Include="ViewModels\AccountManagement\UserViewModel.cs" />
+    <Compile Include="ViewModels\AdminManagement\AdminViewModel.cs" />
+    <Compile Include="ViewModels\Chart\CarFaxDetailViewModel.cs" />
+    <Compile Include="ViewModels\Chart\ChartSelectionViewModel.cs" />
+    <Compile Include="ViewModels\Chart\ContentViewModel.cs" />
+    <Compile Include="ViewModels\Chart\PrintPageBaseViewModel.cs" />
+    <Compile Include="ViewModels\Chart\VINViewModel.cs" />
+    <Compile Include="ViewModels\CommonManagement\BlackBookViewModel.cs" />
+    <Compile Include="ViewModels\CommonManagement\ButtonPermissionViewModel.cs" />
+    <Compile Include="ViewModels\CommonManagement\CarFaxViewModel.cs" />
+    <Compile Include="ViewModels\CommonManagement\DealershipViewModel.cs" />
+    <Compile Include="ViewModels\CommonManagement\KarPowerViewModel.cs" />
+    <Compile Include="ViewModels\CommonManagement\KellyBlueBookViewModel.cs" />
+    <Compile Include="ViewModels\CommonManagement\ManheimWholesaleViewModel.cs" />
+    <Compile Include="ViewModels\CommonManagement\CarInfoViewModel.cs" />
+    <Compile Include="ViewModels\CommonManagement\WarrantyTypeViewModel.cs" />
+    <Compile Include="ViewModels\FacebookManagement\FacebookViewModel.cs" />
+    <Compile Include="Vinsocial\Forms\SurveyManagement\ISurveyManagementForm.cs" />
+    <Compile Include="Vinsocial\Forms\SurveyManagement\SurveyManagementForm.cs" />
+    <Compile Include="Vinsocial\Forms\TeamManagement\ITeamManagementForm.cs" />
+    <Compile Include="Vinsocial\Forms\TeamManagement\TeamManagementForm.cs" />
+    <Compile Include="Vinsocial\Forms\TemplateManagement\ITemplateManagementForm.cs" />
+    <Compile Include="Vinsocial\Forms\TemplateManagement\TemplateManagementForm.cs" />
+    <Compile Include="Vinsocial\ViewModels\CustomerManagement\CustomerProfileViewModel.cs" />
+    <Compile Include="Vinsocial\ViewModels\DepartmentManagement\DepartmentViewModel.cs" />
+    <Compile Include="Vinsocial\ViewModels\ReviewManagement\ContactViewModel.cs" />
+    <Compile Include="Vinsocial\ViewModels\ReviewManagement\UserStatisticViewModel.cs" />
+    <Compile Include="Vinsocial\ViewModels\ReviewManagement\DealerReviewViewModel.cs" />
+    <Compile Include="Vinsocial\ViewModels\ReviewManagement\DealerUrlViewModel.cs" />
+    <Compile Include="Vinsocial\ViewModels\ReviewManagement\SiteReviewViewModel.cs" />
+    <Compile Include="Vinsocial\ViewModels\ReviewManagement\TeamStatisticViewModel.cs" />
+    <Compile Include="Vinsocial\ViewModels\ReviewManagement\UserRatingBreakdownViewModel.cs" />
+    <Compile Include="Vinsocial\ViewModels\ReviewManagement\UserReviewViewModel.cs" />
+    <Compile Include="ViewModels\TradeInManagement\ContactViewModel.cs" />
+    <Compile Include="ViewModels\TradeInManagement\CustomerReview.cs" />
+    <Compile Include="ViewModels\ManheimAuctionManagement\AdvancedSearchViewModel.cs" />
+    <Compile Include="ViewModels\ManheimAuctionManagement\AnalysisItem.cs" />
+    <Compile Include="ViewModels\ManheimAuctionManagement\AuctionSummarizeViewModel.cs" />
+    <Compile Include="ViewModels\ManheimAuctionManagement\AuctionViewModel.cs" />
+    <Compile Include="ViewModels\ManheimAuctionManagement\AuctionListViewModel.cs" />
+    <Compile Include="ViewModels\ManheimAuctionManagement\RegionActionSummarizeListViewModel.cs" />
+    <Compile Include="ViewModels\ManheimAuctionManagement\RegionActionSummarizeViewModel.cs" />
+    <Compile Include="ViewModels\ManheimAuctionManagement\RegionDetailViewModel.cs" />
+    <Compile Include="ViewModels\ManheimAuctionManagement\RegionViewModel.cs" />
+    <Compile Include="ViewModels\ManheimAuctionManagement\StateViewModel.cs" />
+    <Compile Include="ViewModels\TradeInManagement\LandingViewModel.cs" />
+    <Compile Include="ViewModels\TradeInManagement\TradeinEmail.cs" />
+    <Compile Include="ViewModels\TradeInManagement\TradeInVehicleModel.cs" />
+    <Compile Include="Vinsocial\ViewModels\SurveyManagement\SpotlightSurveysViewModel.cs" />
+    <Compile Include="Vinsocial\ViewModels\SurveyManagement\SurveyViewModel.cs" />
+    <Compile Include="Vinsocial\ViewModels\TeamManagement\TeamViewModel.cs" />
+    <Compile Include="Vinsocial\ViewModels\TemplateManagement\ScriptViewModel.cs" />
+    <Compile Include="Vinsocial\ViewModels\TemplateManagement\TemplateViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\vincontrol.ChromeAutoService\vincontrol.ChromeAutoService.csproj">
+      <Project>{23190b92-1f6d-429a-9876-821ca8e213cc}</Project>
+      <Name>vincontrol.ChromeAutoService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.ConfigurationManagement\vincontrol.ConfigurationManagement.csproj">
+      <Project>{ebcbf920-a03a-431f-a6ed-40210a37228e}</Project>
+      <Name>vincontrol.ConfigurationManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.Constant\vincontrol.Constant.csproj">
+      <Project>{ad3324ca-2044-4c68-be5d-ccb63ad12897}</Project>
+      <Name>vincontrol.Constant</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.Data\vincontrol.Data.csproj">
+      <Project>{7d76e800-c9d8-407a-8844-a775ee6d5a65}</Project>
+      <Name>vincontrol.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.DomainObject\vincontrol.DomainObject.csproj">
+      <Project>{e5a9809f-55e2-4e2e-9696-48042ddf4305}</Project>
+      <Name>vincontrol.DomainObject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.EmailHelper\vincontrol.EmailHelper.csproj">
+      <Project>{b54c9c64-f5b1-4e8b-8f4e-d269fbd9cef2}</Project>
+      <Name>vincontrol.EmailHelper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModels\AppraisalManagement\" />
+    <Folder Include="Vinchat\ViewModels\CommonManagement\" />
+    <Folder Include="Vinsocial\ViewModels\CommonManagement\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

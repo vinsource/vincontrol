@@ -1,0 +1,1154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="vincontrolwarehouseModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="vincontrolwarehouseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="alerts" EntityType="vincontrolwarehouseModel.alert" />
+    <EntitySet Name="answers" EntityType="vincontrolwarehouseModel.answer" />
+    <EntitySet Name="autotradertrims" EntityType="vincontrolwarehouseModel.autotradertrim" />
+    <EntitySet Name="backendusers" EntityType="vincontrolwarehouseModel.backenduser" />
+    <EntitySet Name="backendusertrackings" EntityType="vincontrolwarehouseModel.backendusertracking" />
+    <EntitySet Name="bannercustomers" EntityType="vincontrolwarehouseModel.bannercustomer" />
+    <EntitySet Name="bb_kbb" EntityType="vincontrolwarehouseModel.bb_kbb" />
+    <EntitySet Name="bb_kbb_kbb" EntityType="vincontrolwarehouseModel.bb_kbb_kbb" />
+    <EntitySet Name="buyerguides" EntityType="vincontrolwarehouseModel.buyerguide" />
+    <EntitySet Name="carfaxes" EntityType="vincontrolwarehouseModel.carfax" />
+    <EntitySet Name="carscomtrims" EntityType="vincontrolwarehouseModel.carscomtrim" />
+    <EntitySet Name="chartselections" EntityType="vincontrolwarehouseModel.chartselection" />
+    <EntitySet Name="customers" EntityType="vincontrolwarehouseModel.customer" />
+    <EntitySet Name="datafeedcredentials" EntityType="vincontrolwarehouseModel.datafeedcredential" />
+    <EntitySet Name="datafeedlookups" EntityType="vincontrolwarehouseModel.datafeedlookup" />
+    <EntitySet Name="datafeedprofiles" EntityType="vincontrolwarehouseModel.datafeedprofile" />
+    <EntitySet Name="dealergroups" EntityType="vincontrolwarehouseModel.dealergroup" />
+    <EntitySet Name="dealers" EntityType="vincontrolwarehouseModel.dealer" />
+    <EntitySet Name="dealers_dealersetting" EntityType="vincontrolwarehouseModel.dealers_dealersetting" />
+    <EntitySet Name="descriptions" EntityType="vincontrolwarehouseModel.description" />
+    <EntitySet Name="ebays" EntityType="vincontrolwarehouseModel.ebay" />
+    <EntitySet Name="exportdataprofilemappings" EntityType="vincontrolwarehouseModel.exportdataprofilemapping" />
+    <EntitySet Name="exportservicehistories" EntityType="vincontrolwarehouseModel.exportservicehistory" />
+    <EntitySet Name="fueltypes" EntityType="vincontrolwarehouseModel.fueltype" />
+    <EntitySet Name="grouppermissions" EntityType="vincontrolwarehouseModel.grouppermission" />
+    <EntitySet Name="groups" EntityType="vincontrolwarehouseModel.group" />
+    <EntitySet Name="importdatafeedprofilefiles" EntityType="vincontrolwarehouseModel.importdatafeedprofilefile" />
+    <EntitySet Name="importdatafeedprofiles" EntityType="vincontrolwarehouseModel.importdatafeedprofile" />
+    <EntitySet Name="importservicehistories" EntityType="vincontrolwarehouseModel.importservicehistory" />
+    <EntitySet Name="inventories" EntityType="vincontrolwarehouseModel.inventory" />
+    <EntitySet Name="inventory_appraisalinfo" EntityType="vincontrolwarehouseModel.inventory_appraisalinfo" />
+    <EntitySet Name="inventory_inventoryinfo" EntityType="vincontrolwarehouseModel.inventory_inventoryinfo" />
+    <EntitySet Name="inventoryhistories" EntityType="vincontrolwarehouseModel.inventoryhistory" />
+    <EntitySet Name="kbboptions" EntityType="vincontrolwarehouseModel.kbboption" />
+    <EntitySet Name="kbbpackages" EntityType="vincontrolwarehouseModel.kbbpackage" />
+    <EntitySet Name="kbbtrimoptions" EntityType="vincontrolwarehouseModel.kbbtrimoption" />
+    <EntitySet Name="kbbtrimpackages" EntityType="vincontrolwarehouseModel.kbbtrimpackage" />
+    <EntitySet Name="kbbtrims" EntityType="vincontrolwarehouseModel.kbbtrim" />
+    <EntitySet Name="makes" EntityType="vincontrolwarehouseModel.make" />
+    <EntitySet Name="models" EntityType="vincontrolwarehouseModel.model" />
+    <EntitySet Name="notes" EntityType="vincontrolwarehouseModel.note" />
+    <EntitySet Name="options" EntityType="vincontrolwarehouseModel.option" />
+    <EntitySet Name="packages" EntityType="vincontrolwarehouseModel.package" />
+    <EntitySet Name="permissioncodes" EntityType="vincontrolwarehouseModel.permissioncode" />
+    <EntitySet Name="permissionvalues" EntityType="vincontrolwarehouseModel.permissionvalue" />
+    <EntitySet Name="questions" EntityType="vincontrolwarehouseModel.question" />
+    <EntitySet Name="questiontypes" EntityType="vincontrolwarehouseModel.questiontype" />
+    <EntitySet Name="rebates" EntityType="vincontrolwarehouseModel.rebate" />
+    <EntitySet Name="status" EntityType="vincontrolwarehouseModel.status" />
+    <EntitySet Name="styles" EntityType="vincontrolwarehouseModel.style" />
+    <EntitySet Name="tradeinbannercomments" EntityType="vincontrolwarehouseModel.tradeinbannercomment" />
+    <EntitySet Name="transactions" EntityType="vincontrolwarehouseModel.transaction" />
+    <EntitySet Name="transactiontypes" EntityType="vincontrolwarehouseModel.transactiontype" />
+    <EntitySet Name="trimoptions" EntityType="vincontrolwarehouseModel.trimoption" />
+    <EntitySet Name="trimpackages" EntityType="vincontrolwarehouseModel.trimpackage" />
+    <EntitySet Name="trims" EntityType="vincontrolwarehouseModel.trim" />
+    <EntitySet Name="truckcategories" EntityType="vincontrolwarehouseModel.truckcategory" />
+    <EntitySet Name="truckclasses" EntityType="vincontrolwarehouseModel.truckclass" />
+    <EntitySet Name="trucktypes" EntityType="vincontrolwarehouseModel.trucktype" />
+    <EntitySet Name="useralerts" EntityType="vincontrolwarehouseModel.useralert" />
+    <EntitySet Name="userdealers" EntityType="vincontrolwarehouseModel.userdealer" />
+    <EntitySet Name="users" EntityType="vincontrolwarehouseModel.user" />
+    <EntitySet Name="vehicles" EntityType="vincontrolwarehouseModel.vehicle" />
+    <EntitySet Name="vehicles_truck" EntityType="vincontrolwarehouseModel.vehicles_truck" />
+    <EntitySet Name="vehicletypes" EntityType="vincontrolwarehouseModel.vehicletype" />
+    <EntitySet Name="walkarounds" EntityType="vincontrolwarehouseModel.walkaround" />
+    <EntitySet Name="yearmakes" EntityType="vincontrolwarehouseModel.yearmake" />
+  </EntityContainer>
+  <EntityType Name="alert">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="AlertType" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="AlertType" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="answer">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="AppraisalInfoId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="QuestionId" Type="Int32" />
+    <Property Name="AnswerContent" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Comment" Type="String" MaxLength="455" Unicode="false" FixedLength="false" />
+    <Property Name="AppraisalInfoId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="autotradertrim">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Value" />
+      <PropertyRef Name="AutoTraderId" />
+      <PropertyRef Name="ModelId" />
+      <PropertyRef Name="TrimId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="AutoTraderId" Type="Int64" Nullable="false" />
+    <Property Name="ModelId" Type="Int32" Nullable="false" />
+    <Property Name="TrimId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="backenduser">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="Password" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Role" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="backendusertracking">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="ActionBy" />
+      <PropertyRef Name="Action" />
+      <PropertyRef Name="ActionDate" />
+      <PropertyRef Name="ItemId" />
+      <PropertyRef Name="ItemType" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="ActionBy" Type="Int32" Nullable="false" />
+    <Property Name="Action" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="ActionDate" Type="DateTime" Nullable="false" />
+    <Property Name="ItemId" Type="Int32" Nullable="false" />
+    <Property Name="ItemName" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="ItemType" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="bannercustomer">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="DealerId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="LastName" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Year" Type="Int32" />
+    <Property Name="Make" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Model" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Trim" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Mileage" Type="Int32" />
+    <Property Name="SelectedOptions" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Condition" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="KBBVehicelId" Type="Int32" />
+    <Property Name="Vin" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="TradeInFairValue" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="TradeInMaxValue" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="CreatedDate" Type="DateTime" />
+    <Property Name="VarianceValue" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Source" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="TradeInStatus" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="EmailContent" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ADFEmailContent" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Receivers" Type="String" MaxLength="2000" Unicode="false" FixedLength="false" />
+    <Property Name="DealerId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bb_kbb">
+    <Key>
+      <PropertyRef Name="TrimName" />
+      <PropertyRef Name="DateAdded" />
+      <PropertyRef Name="Type" />
+      <PropertyRef Name="LastUpdated" />
+      <PropertyRef Name="ExpiredDate" />
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Vin" />
+      <PropertyRef Name="MigrateAutoId" />
+    </Key>
+    <Property Name="TrimName" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="FairPrice" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="GoodPrice" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="DateAdded" Type="DateTime" Nullable="false" />
+    <Property Name="Type" Type="Int16" Nullable="false" />
+    <Property Name="LastUpdated" Type="DateTime" Nullable="false" />
+    <Property Name="ExpiredDate" Type="DateTime" Nullable="false" />
+    <Property Name="VeryGoodPrice" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Vin" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="MigrateAutoId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="bb_kbb_kbb">
+    <Key>
+      <PropertyRef Name="BaseWholeSale" />
+      <PropertyRef Name="MileageAdjustment" />
+      <PropertyRef Name="WholeSale" />
+      <PropertyRef Name="TrimId" />
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="BaseWholeSale" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="MileageAdjustment" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="WholeSale" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="TrimId" Type="Int32" Nullable="false" />
+    <Property Name="Id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="buyerguide">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="DealerId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Make" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Model" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Year" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="VinNumber" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="StockNumber" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="WarrantyType" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="IsAsWarranty" Type="Boolean" />
+    <Property Name="IsWarranty" Type="Boolean" />
+    <Property Name="IsFullWarranty" Type="Boolean" />
+    <Property Name="IsLimitedWarranty" Type="Boolean" />
+    <Property Name="IsServiceContract" Type="Boolean" />
+    <Property Name="SystemCovered" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Durations" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="PercentageOfLabor" Type="Double" />
+    <Property Name="PercentageOfPart" Type="Double" />
+    <Property Name="PriorRental" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="IsMixed" Type="Boolean" />
+    <Property Name="SystemCoveredAndDurations" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="LanguageVersion" Type="Int32" />
+    <Property Name="DealerId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="carfax">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Vin" />
+      <PropertyRef Name="Owner" />
+      <PropertyRef Name="ServiceRecord" />
+      <PropertyRef Name="WindowSticker" />
+      <PropertyRef Name="DateAdded" />
+      <PropertyRef Name="LastUpdated" />
+      <PropertyRef Name="ExpiredDate" />
+      <PropertyRef Name="Vehicle_Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Vin" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Owner" Type="Int32" Nullable="false" />
+    <Property Name="ServiceRecord" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="WindowSticker" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="DateAdded" Type="DateTime" Nullable="false" />
+    <Property Name="LastUpdated" Type="DateTime" Nullable="false" />
+    <Property Name="ExpiredDate" Type="DateTime" Nullable="false" />
+    <Property Name="Vehicle_Id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="carscomtrim">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Value" />
+      <PropertyRef Name="CarscomId" />
+      <PropertyRef Name="ModelId" />
+      <PropertyRef Name="TrimId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="CarscomId" Type="Int64" Nullable="false" />
+    <Property Name="ModelId" Type="Int32" Nullable="false" />
+    <Property Name="TrimId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="chartselection">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="InventoryId" />
+    </Key>
+    <Property Name="IsCarsCom" Type="Boolean" />
+    <Property Name="Options" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="Trims" Type="String" MaxLength="550" Unicode="false" FixedLength="false" />
+    <Property Name="IsCertified" Type="Boolean" />
+    <Property Name="IsAll" Type="Boolean" />
+    <Property Name="IsFranchise" Type="Boolean" />
+    <Property Name="IsIndependant" Type="Boolean" />
+    <Property Name="Screen" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="SourceType" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="InventoryId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="customer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="LastName" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Street" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="State" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Country" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="ZipPostal" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Address" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="City" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="datafeedcredential">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="Password" />
+      <PropertyRef Name="DataFeedLookup_Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="DataFeedLookup_Id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="datafeedlookup">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="DataFeedProfileId" />
+      <PropertyRef Name="DealerId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="DataFeedProfileId" Type="Int32" Nullable="false" />
+    <Property Name="DealerId" Type="Int32" Nullable="false" />
+    <Property Name="PartnerId" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="UseSpecificMapping" Type="Boolean" />
+    <Property Name="ExportDataProfileMapping_Id" Type="Int32" />
+    <Property Name="FileName" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="Discontinued" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="datafeedprofile">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="CompanyName" />
+      <PropertyRef Name="Mapping" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="CompanyName" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="FTPServer" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="DefaultUserName" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="DefaultPassword" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Frequency" Type="Int32" />
+    <Property Name="ExportDataProfileMapping_Id" Type="Int32" />
+    <Property Name="Email" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="FileName" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="RunningTime" Type="DateTime" />
+    <Property Name="Bundle" Type="Boolean" />
+    <Property Name="Mapping" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Discontinued" Type="Boolean" />
+    <Property Name="ProfileName" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="dealergroup">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="DateAdded" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="GroupAbbr" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="DateAdded" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="dealer">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Address" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="DealerGroupId" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="City" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="State" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Country" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="ZipPostal" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Phone" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="LeadsEmail" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="EmailFormatId" Type="Int16" />
+    <Property Name="Latitude" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Longtitude" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="WebPageUrl" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="WebInventoryUrl" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="dealers_dealersetting">
+    <Key>
+      <PropertyRef Name="PriceVariance" />
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="InventorySorting" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="SoldOut" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="DealershipId" Type="Int32" />
+    <Property Name="Cragislist" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="CraigslistPassword" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Ebay" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="EbayPassword" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="CarFax" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="CarFaxPassword" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Manheim" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="ManheimPassword" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="KellyBlueBook" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="KellyPassword" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="BlackBook" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="BlackBookPassword" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="AutoCheck" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="AutoCheckPassword" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="AppraisalNotification" Type="Boolean" />
+    <Property Name="WholeNotification" Type="Boolean" />
+    <Property Name="InventoryNotification" Type="Boolean" />
+    <Property Name="C24Hnotification" Type="Boolean" />
+    <Property Name="NoteNotification" Type="Boolean" />
+    <Property Name="PriceChangeNotification" Type="Boolean" />
+    <Property Name="AgeingBucketNotification" Type="Boolean" />
+    <Property Name="DefaultStockImageUrl" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="OverideStockImage" Type="Boolean" />
+    <Property Name="DealerInfo" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="DealerWarranty" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="TermsAndCondition" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="EbayToken" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="EbayInventoryURL" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="CreditURL" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="WebSiteURL" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ContactUsURL" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="FacebookURL" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="LogoURL" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ContactPerson" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="RetailPrice" Type="Boolean" />
+    <Property Name="DealerDiscount" Type="Boolean" />
+    <Property Name="ManufacturerReabte" Type="Boolean" />
+    <Property Name="SalePrice" Type="Boolean" />
+    <Property Name="ManufacturerWarranty" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ManufacturerWarrantySpanish" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ManufacturerWarrantyDuration" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="DealerCertified" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="DealerCertifiedSpanish" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="DealerCertifiedDuration" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ManufacturerCertified" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ManufacturerCertifiedSpanish" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ManufacturerCertifiedDuration" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ShippingInfo" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="AsIsWarranty" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="AsIsWarrantySpanish" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="StartDescriptionSentence" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="EndDescriptionSentence" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="AuctionSentence" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="FirstTimeRangeBucketJump" Type="Int32" />
+    <Property Name="SecondTimeRangeBucketJump" Type="Int32" />
+    <Property Name="IntervalBucketJump" Type="Int32" />
+    <Property Name="RetailPriceText" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="DealerDiscountText" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="ManufactureReabateText" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="SalePriceText" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="HeaderOverlayURL" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="FooterOverlayURL" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="MarketPriceRangeChangeNotification" Type="Boolean" />
+    <Property Name="PriceVariance" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="DiscontinuedImport" Type="Boolean" />
+    <Property Name="DiscontinuedExport" Type="Boolean" />
+    <Property Name="ImportDataFeedProfileId" Type="Int32" />
+    <Property Name="ImportFeedUrl" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="description">
+    <Key>
+      <PropertyRef Name="VinControlDescriptionId" />
+    </Key>
+    <Property Name="VinControlDescriptionId" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="YesNo" Type="Boolean" />
+    <Property Name="DescriptionSentence" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="ebay">
+    <Key>
+      <PropertyRef Name="ServiceId" />
+      <PropertyRef Name="AdUrl" />
+      <PropertyRef Name="StartTime" />
+      <PropertyRef Name="EndTime" />
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Inventory_Id" />
+    </Key>
+    <Property Name="ServiceId" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="AdUrl" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="StartTime" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="EndTime" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Inventory_Id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="exportdataprofilemapping">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Mapping" />
+      <PropertyRef Name="UseHeader" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Mapping" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="UseHeader" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="exportservicehistory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="RunningDate" Type="DateTime" />
+    <Property Name="Status" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="ArchiveFileName" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="DatafeedProfileId" Type="Int32" />
+    <Property Name="DealerId" Type="Int32" />
+    <Property Name="CompletedDate" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="fueltype">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Value" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="45" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="grouppermission">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="GroupId" />
+      <PropertyRef Name="PermissionCode" />
+      <PropertyRef Name="PermissionValue" />
+      <PropertyRef Name="UserStamp" />
+      <PropertyRef Name="DateStamp" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="GroupId" Type="Int32" Nullable="false" />
+    <Property Name="PermissionCode" Type="Int32" Nullable="false" />
+    <Property Name="PermissionValue" Type="Int32" Nullable="false" />
+    <Property Name="UserStamp" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+    <Property Name="DateStamp" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="group">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="GroupName" />
+      <PropertyRef Name="UserStamp" />
+      <PropertyRef Name="DateStamp" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="GroupName" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+    <Property Name="GroupNote" Type="String" MaxLength="150" Unicode="false" FixedLength="false" />
+    <Property Name="UserStamp" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+    <Property Name="DateStamp" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="importdatafeedprofilefile">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="ImportDataFeedProfileId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="ImportDataFeedProfileId" Type="Int32" Nullable="false" />
+    <Property Name="FileName" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="DeveloperEmails" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="importdatafeedprofile">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="CompanyName" />
+      <PropertyRef Name="Mapping" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="CompanyName" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Mapping" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="SampleData" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="RunningTime" Type="DateTime" />
+    <Property Name="Frequency" Type="Int32" />
+    <Property Name="Discontinued" Type="Boolean" />
+    <Property Name="SchemaURL" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="ProfileName" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="UseMappingInCode" Type="Boolean" />
+    <Property Name="Email" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="importservicehistory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="RunningDate" Type="DateTime" />
+    <Property Name="Status" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="ArchiveFileName" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="DealerId" Type="Int32" />
+    <Property Name="ImportProfileId" Type="Int32" />
+    <Property Name="CompletedDate" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="inventory">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Mileage" />
+      <PropertyRef Name="Images" />
+      <PropertyRef Name="VehicleId" />
+      <PropertyRef Name="DealerId" />
+      <PropertyRef Name="Certified" />
+      <PropertyRef Name="MigrateListingId" />
+      <PropertyRef Name="MigrateAppraisalId" />
+      <PropertyRef Name="MigrateSoldoutListingId" />
+      <PropertyRef Name="MigrateWholesaleListingId" />
+      <PropertyRef Name="StatusId" />
+      <PropertyRef Name="Timestamp" />
+      <PropertyRef Name="IsAppraisal" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="StockNumber" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="MSRP" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="Mileage" Type="Int64" Nullable="false" />
+    <Property Name="ACV" Type="Decimal" Precision="20" Scale="2" />
+    <Property Name="DealerCost" Type="Decimal" Precision="20" Scale="2" />
+    <Property Name="SalePrice" Type="Decimal" Precision="20" Scale="2" />
+    <Property Name="ExteriorColor" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="InteriorColor" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Options" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Packages" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Images" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Condition" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="VehicleId" Type="Int32" Nullable="false" />
+    <Property Name="DealerId" Type="Int32" Nullable="false" />
+    <Property Name="Certified" Type="Boolean" Nullable="false" />
+    <Property Name="CarFaxOwner" Type="Int16" />
+    <Property Name="KBBOptionsId" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="KBBTrimsId" Type="Int64" />
+    <Property Name="AddedBy" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="AddedDate" Type="DateTime" />
+    <Property Name="LastModifiedBy" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="LastModifiedDate" Type="DateTime" />
+    <Property Name="MigrateListingId" Type="Int32" Nullable="false" />
+    <Property Name="MigrateAppraisalId" Type="Int32" Nullable="false" />
+    <Property Name="MigrateSoldoutListingId" Type="Int32" Nullable="false" />
+    <Property Name="MigrateWholesaleListingId" Type="Int32" Nullable="false" />
+    <Property Name="StatusId" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="true" />
+    <Property Name="ColorCode" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="MarketRange" Type="Int16" />
+    <Property Name="MarketLowestPrice" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="MarketHighestPrice" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="MarketAveragePrice" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="NumberOfCar" Type="Int32" />
+    <Property Name="Timestamp" Type="DateTime" Nullable="false" />
+    <Property Name="IsAppraisal" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="inventory_appraisalinfo">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="PackageDescription" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="InventoryAdd" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="AppraisalType" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Note" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Signature" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="UserStamp" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="DateStamp" Type="DateTime" />
+    <Property Name="Photo" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="SignatureURL" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="IsFromVinGenie" Type="Boolean" />
+    <Property Name="Id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="inventory_inventoryinfo">
+    <Key>
+      <PropertyRef Name="DateInStock" />
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="DealershipZipCode" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="WarrantyInfo" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="RetailPrice" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="WindowStickerPrice" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="DealerDiscount" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="ManufacturerRebate" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="PriorRental" Type="Boolean" />
+    <Property Name="Recon" Type="Boolean" />
+    <Property Name="Disclaimer" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="DealerDemo" Type="Boolean" />
+    <Property Name="Unwind" Type="Boolean" />
+    <Property Name="IsFeatured" Type="Boolean" />
+    <Property Name="Thumnails" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="DateInStock" Type="DateTime" Nullable="false" />
+    <Property Name="CarRanking" Type="Int32" />
+    <Property Name="Id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="inventoryhistory">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="StockNumber" />
+      <PropertyRef Name="Mileage" />
+      <PropertyRef Name="Images" />
+      <PropertyRef Name="Thumbnails" />
+      <PropertyRef Name="LastUpdated" />
+      <PropertyRef Name="Condition" />
+      <PropertyRef Name="VehicleId" />
+      <PropertyRef Name="DealerId" />
+      <PropertyRef Name="StatusId" />
+      <PropertyRef Name="Certified" />
+      <PropertyRef Name="CarFaxOwner" />
+      <PropertyRef Name="AddedBy" />
+      <PropertyRef Name="AddedDate" />
+      <PropertyRef Name="LastModifiedBy" />
+      <PropertyRef Name="LastModifiedDate" />
+      <PropertyRef Name="InventoryId" />
+      <PropertyRef Name="Timestamp" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="StockNumber" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="MSRP" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="Mileage" Type="Int64" Nullable="false" />
+    <Property Name="ACV" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="DealerCost" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="SalePrice" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="ExteriorColor" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="InteriorColor" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Options" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Packages" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Images" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Thumbnails" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="LastUpdated" Type="DateTime" Nullable="false" />
+    <Property Name="Condition" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="VehicleId" Type="Int32" Nullable="false" />
+    <Property Name="DealerId" Type="Int32" Nullable="false" />
+    <Property Name="StatusId" Type="Int32" Nullable="false" />
+    <Property Name="Certified" Type="Boolean" Nullable="false" />
+    <Property Name="CarFaxOwner" Type="Int16" Nullable="false" />
+    <Property Name="KBBOptionsId" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="KBBTrimsId" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="AddedBy" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="AddedDate" Type="DateTime" Nullable="false" />
+    <Property Name="LastModifiedBy" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="LastModifiedDate" Type="DateTime" Nullable="false" />
+    <Property Name="InventoryId" Type="Int32" Nullable="false" />
+    <Property Name="Timestamp" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="kbboption">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="KBBId" />
+      <PropertyRef Name="Value" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="KBBId" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="kbbpackage">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="KBBId" />
+      <PropertyRef Name="Value" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="KBBId" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="kbbtrimoption">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="TrimId" />
+      <PropertyRef Name="OptionId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="TrimId" Type="Int32" Nullable="false" />
+    <Property Name="OptionId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="kbbtrimpackage">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="TrimId" />
+      <PropertyRef Name="PackageId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="TrimId" Type="Int32" Nullable="false" />
+    <Property Name="PackageId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="kbbtrim">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Value" />
+      <PropertyRef Name="KBBId" />
+      <PropertyRef Name="ModelId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="KBBId" Type="Int64" Nullable="false" />
+    <Property Name="ModelId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="make">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Value" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="ChromeId" Type="Int32" />
+    <Property Name="Source" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="ManheimServiceId" Type="Int32" />
+    <Property Name="KBBServiceId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="model">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Value" />
+      <PropertyRef Name="YearMakeId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="ChromeId" Type="Int32" />
+    <Property Name="YearMakeId" Type="Int32" Nullable="false" />
+    <Property Name="Source" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="ManheimServiceId" Type="Int32" />
+    <Property Name="KBBServiceId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="note">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="InventoryId" />
+      <PropertyRef Name="Content" />
+      <PropertyRef Name="AddedDate" />
+      <PropertyRef Name="StatusId" />
+      <PropertyRef Name="Timestamp" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="InventoryId" Type="Int32" Nullable="false" />
+    <Property Name="Content" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="AddedDate" Type="DateTime" Nullable="false" />
+    <Property Name="StatusId" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="true" />
+    <Property Name="Timestamp" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="option">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="ChromeId" />
+      <PropertyRef Name="Value" />
+      <PropertyRef Name="Price" />
+      <PropertyRef Name="FullValue" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="ChromeId" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Price" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="FullValue" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="package">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="ChromeId" />
+      <PropertyRef Name="Value" />
+      <PropertyRef Name="Price" />
+      <PropertyRef Name="FullValue" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="ChromeId" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Price" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="FullValue" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="permissioncode">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Code" />
+      <PropertyRef Name="PermissionText" />
+      <PropertyRef Name="PermissionCategory" />
+      <PropertyRef Name="Indent" />
+      <PropertyRef Name="ScreenOrder" />
+      <PropertyRef Name="UserStamp" />
+      <PropertyRef Name="DateStamp" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Code" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="PermissionText" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="PermissionCategory" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Indent" Type="Int32" Nullable="false" />
+    <Property Name="ScreenOrder" Type="Int32" Nullable="false" />
+    <Property Name="UserStamp" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+    <Property Name="DateStamp" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="permissionvalue">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Value" />
+      <PropertyRef Name="UserStamp" />
+      <PropertyRef Name="DateStamp" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="UserStamp" Type="String" Nullable="false" MaxLength="25" Unicode="false" FixedLength="false" />
+    <Property Name="DateStamp" Type="DateTime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="question">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="455" Unicode="false" FixedLength="false" />
+    <Property Name="QuestionTypeId" Type="Int32" />
+    <Property Name="ShortDescription" Type="String" MaxLength="300" Unicode="false" FixedLength="false" />
+    <Property Name="Order" Type="Int32" />
+  </EntityType>
+  <EntityType Name="questiontype">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="145" Unicode="false" FixedLength="false" />
+    <Property Name="Option" Type="String" MaxLength="145" Unicode="false" FixedLength="false" />
+    <Property Name="Code" Type="Int32" />
+    <Property Name="Unit" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="rebate">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="DealerId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Year" Type="Int32" />
+    <Property Name="Make" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Model" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Trim" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="BodyType" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ManufactureReabte" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="Disclaimer" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="DateAdded" Type="DateTime" />
+    <Property Name="LastUpdated" Type="DateTime" />
+    <Property Name="DealerId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="status">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="true" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="style">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Value" />
+      <PropertyRef Name="StyleWithoutTrim" />
+      <PropertyRef Name="TrimId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="StyleWithoutTrim" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="TrimId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tradeinbannercomment">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="DealerId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Content" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Name" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="City" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="State" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="DateComment" Type="DateTime" />
+    <Property Name="DateUpdated" Type="DateTime" />
+    <Property Name="DealerId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="transaction">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="InventoryId" />
+      <PropertyRef Name="TransactionTypeId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="TransactionDate" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="CustomerId" Type="Int32" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="InventoryId" Type="Int32" Nullable="false" />
+    <Property Name="TransactionTypeId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="transactiontype">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Type" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Type" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="trimoption">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="TrimId" />
+      <PropertyRef Name="OptionId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="TrimId" Type="Int32" Nullable="false" />
+    <Property Name="OptionId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="trimpackage">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="TrimId" />
+      <PropertyRef Name="PackageId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="TrimId" Type="Int32" Nullable="false" />
+    <Property Name="PackageId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="trim">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Value" />
+      <PropertyRef Name="ChromeId" />
+      <PropertyRef Name="ModelId" />
+      <PropertyRef Name="IsDefault" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="ChromeId" Type="Int64" Nullable="false" />
+    <Property Name="ModelId" Type="Int32" Nullable="false" />
+    <Property Name="IsDefault" Type="Boolean" Nullable="false" />
+    <Property Name="KBBTrimId" Type="Int32" />
+    <Property Name="ManheimTrimId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="truckcategory">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Value" />
+      <PropertyRef Name="TruckTypeId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="TruckTypeId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="truckclass">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Value" />
+      <PropertyRef Name="Text" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Text" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="trucktype">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Value" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Value" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="useralert">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="AlertId" />
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="AlertId" Type="Int32" Nullable="false" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="userdealer">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="DealerId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="DealerId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="Password" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="GroupId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Password" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="CellPhone" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Active" Type="Boolean" />
+    <Property Name="DateAdded" Type="DateTime" />
+    <Property Name="ExpirationDate" Type="DateTime" />
+    <Property Name="MigrateUserId" Type="Int32" />
+    <Property Name="GroupId" Type="Int32" Nullable="false" />
+    <Property Name="DefaultDealership" Type="Int32" />
+  </EntityType>
+  <EntityType Name="vehicle">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="MigrateListingId" />
+      <PropertyRef Name="MigrateAppraisalId" />
+      <PropertyRef Name="MigrateSoldoutListingId" />
+      <PropertyRef Name="MigrateWholesaleListingId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="VIN" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Year" Type="Int32" />
+    <Property Name="Body" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Cylinder" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Engine" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="DriveTrain" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Transmission" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Door" Type="Int16" />
+    <Property Name="FuelEconomyCity" Type="Int16" />
+    <Property Name="FuelEconomyHighway" Type="Int16" />
+    <Property Name="StandardOptions" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="TrimId" Type="Int32" />
+    <Property Name="MakeId" Type="Int32" />
+    <Property Name="DefaultImageURL" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="Liters" Type="String" MaxLength="45" Unicode="false" FixedLength="false" />
+    <Property Name="ModelId" Type="Int32" />
+    <Property Name="MigrateListingId" Type="Int32" Nullable="false" />
+    <Property Name="MigrateAppraisalId" Type="Int32" Nullable="false" />
+    <Property Name="StandardPackages" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="MigrateSoldoutListingId" Type="Int32" Nullable="false" />
+    <Property Name="MigrateWholesaleListingId" Type="Int32" Nullable="false" />
+    <Property Name="VehicleTypeId" Type="Int32" />
+    <Property Name="FuelId" Type="Int32" />
+    <Property Name="MakeValue" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="ModelValue" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="TrimValue" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="vehicles_truck">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="TruckClassId" Type="Int32" />
+    <Property Name="TruckCategoryId" Type="Int32" />
+    <Property Name="Id" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vehicletype">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Type" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Type" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="walkaround">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="AppraisalInfoId" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Order" Type="Int32" />
+    <Property Name="X" Type="Double" />
+    <Property Name="Y" Type="Double" />
+    <Property Name="Note" Type="String" MaxLength="455" Unicode="false" FixedLength="false" />
+    <Property Name="AppraisalInfoId" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="yearmake">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="MakeId" />
+      <PropertyRef Name="Year" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="MakeId" Type="Int32" Nullable="false" />
+    <Property Name="Year" Type="Int32" Nullable="false" />
+  </EntityType>
+</Schema>

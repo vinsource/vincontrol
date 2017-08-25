@@ -1,0 +1,56 @@
+﻿<reviewSite name="cars.com" url="www.cars.com">
+  <namespaces>
+    <namespace name="ns" value="http://www.w3.org/1999/xhtml"/>
+  </namespaces>
+  <pages>
+    <reviewPage name="" dealerId="0" url="" hasAdditionalDealerReview="true" hasAdditionalUserReview="true" hasDetailUserReview="false" category="Sales">
+      <about context="" pattern=""/>
+      <overallScore context="//ns:div[@class='rating dealer']/ns:div/@title"/>
+      <additionalReview>
+        <customerService context="//ns:div[@class='row']/ns:div/ns:div[2]/ns:div/ns:div/ns:div/ns:div/@title"/>
+        <qualityOfWork context="//ns:div[@class='row']/ns:div/ns:div[3]/ns:div/ns:div/ns:div/ns:div/@title"/>
+        <friendliness context=""/>
+        <overallExperience context=""/>
+        <pricing context=""/>
+        <buyingProcess context="//ns:div[@class='row']/ns:div/ns:div[2]/ns:div[2]/ns:div/ns:div/ns:div/@title"/>
+        <overallFacilities context="//ns:div[@class='row']/ns:div/ns:div[3]/ns:div[2]/ns:div/ns:div/ns:div/@title"/>
+      </additionalReview>
+    </reviewPage>
+    
+  </pages>
+
+  <reviews>
+    <reviewNode context="//ns:div[@id='dealer-reviews']/ns:div[not(contains(@id,'review-sort')) and (@class='module no-border')]"/>
+
+    <reviewUrl context=""/>
+    <reviewAuthor context="./ns:div/ns:p/ns:span"/>
+    <reviewDate context="./ns:div/ns:p/ns:span[last()]"/>
+    <reviewContent context="./ns:div/ns:div[@class='row']/ns:div/ns:p"/>
+    <reviewDetailContent context=""/>
+    <reviewRating context="./ns:div/ns:div/ns:div/@title"/>
+    <additionalReview>
+      <customerService context="./ns:div/ns:div[@class='row']/ns:div[2]/ns:div/ns:div/ns:div/@title"/>
+      <qualityOfWork context="./ns:div/ns:div[@class='row']/ns:div[2]/ns:div[3]/ns:div/ns:div/@title"/>
+      <friendliness context=""/>
+      <overallExperience context=""/>
+      <pricing context=""/>
+      <buyingProcess context="./ns:div/ns:div[@class='row']/ns:div[2]/ns:div[2]/ns:div/ns:div/@title"/>
+      <overallFacilities context="./ns:div/ns:div[@class='row']/ns:div[2]/ns:div[4]/ns:div/ns:div/@title"/>
+      <reasonForVisit context=""/>
+      <recommendThisDealer context="./ns:div/ns:div[@class='row']/ns:div[2]/ns:p[3]/ns:strong">
+        <replace>
+          <filter original="Does" replace="true"></filter>
+          <filter original="Does not" replace="false"></filter>
+        </replace>
+      </recommendThisDealer>
+      <purchasedAVehicle context="./ns:div/ns:div[@class='row']/ns:div[2]/ns:p[4]/ns:strong">
+        <replace>
+          <filter original="Did" replace="true"></filter>
+          <filter original="Did not" replace="false"></filter>
+        </replace>
+      </purchasedAVehicle>
+    </additionalReview>
+    
+    <nextPageUrl context="//ns:div[@class='pagination']/ns:a[@class='active']/following-sibling::*[1]/@href"></nextPageUrl>
+  </reviews>
+</reviewSite>

@@ -1,0 +1,81 @@
+﻿.adduser_popup_holder {
+
+}
+
+.adduser_popup_header {
+	background-color: #3366cc;
+	padding: 6px 10px;
+	font-size: 20px;
+}
+
+.adduser_popup_events {
+	height: 30px;
+padding-top: 10px;
+padding-left: 5px;
+color: white;
+background-color: #333;
+}
+
+.adduser_popup_selectall {
+	display: block;
+	float: left;
+	width: 80%;
+	font-weight: bold;
+}
+
+.adduser_selectall {
+
+}
+
+.adduser_popup_default {
+	display: block;
+	float: right;
+	width: 20%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.adduser_popup_list_holder {
+
+}
+
+.adduser_list_items 
+{
+    
+	clear: both;
+	font-size: 15px;
+	padding: 5px;
+	font-weight: bold;
+}
+
+.adduser_list_items_odd {
+	background-color: #EEEEEE }
+.adduser_list_items_odd label {
+	color: black;
+}
+.adduser_list_items_even {
+
+}
+.adduser_list_select {
+cursor: pointer;
+}
+
+.adduser_popup_default input {
+
+}
+.adduser_popup_btns:hover {
+	background-color: #444;
+}
+.adduser_popup_btns {
+	width: 80px;
+	margin: 10px 20px;
+	padding: 5px;
+    float: right;
+	background-color: #515151;
+	text-align: center;
+	font-size: 15px;
+	color: #FFF;
+	border-radius: 2px;
+	font-weight: bold;
+	cursor: pointer;
+}

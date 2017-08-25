@@ -1,0 +1,644 @@
+.av_right_upload_holder
+{
+    height: 100px;
+    background-color: #F2F2F2;
+    padding: 15px;
+}
+.av_right_video
+{
+    margin-top:15px;
+    }
+.av_right_intro
+{
+}
+.av_right_upload_text
+{
+    width: 40%;
+    float: left;
+    font-size: 15px;
+}
+.av_right_upload_icons
+{
+    float: right;
+    width: 57%;
+}
+.av_right_upload_icon
+{
+    width: 135px;
+    height: 100px;
+    float: left;
+    margin-right: 22px;
+    background-color: #039;
+    cursor:pointer;
+}
+.av_right_upload_icon img
+{
+    margin: 36px auto;
+display: block;
+}
+.admin_video_left
+{
+    width: 30%;
+    float: left;
+}
+.av_title
+{
+    font-size: 19px;
+}
+.av_audio_settings
+{
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #F2F2F2;
+}
+.av_voice_select_holder
+{
+    height: 30px;
+}
+.av_voice_select
+{
+    float: left;
+    width: 74%;
+}
+.av_voice_select select
+{
+    width: 97%;
+    margin: 0px;
+    height: 21px;
+}
+.av_preview
+{
+    float: left;
+    cursor: pointer;
+}
+.av_des_holder
+{
+}
+.av_des_holder textarea
+{
+    width: 98%;
+    height: 200px;
+}
+.av_video_topics
+{
+    height: 200px;
+    background-color: #F2F2F2;
+    padding: 15px;
+    overflow: auto;
+}
+.av_video_items
+{
+}
+.av_video_items label
+{
+    font-size: 13px;
+    width: 100%;
+    float: left;
+    height: 23px;
+    cursor: pointer;
+}
+.av_video_items input
+{
+    float: right;
+}
+.admin_video_right
+{
+    width: 64%;
+    float: right;
+    margin-right: 25px;
+}
+#admin_user_add_popup
+{
+    display: none;
+    width: 600px;
+}
+.au_popup_btns
+{
+    background-color: #eee;
+    height: 35px;
+}
+.au_popup_btns > div
+{
+    padding: 4px;
+    float: right;
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #FFF;
+    cursor: pointer;
+    border: 1px solid #CDCDCD;
+    width: 80px;
+    margin-left: 6px;
+}
+.au_popup_title
+{
+    font-size: 16px;
+    color: #039;
+    margin: 5px 0px;
+    font-weight: bold;
+}
+.au_popup_input_holder
+{
+    background-color: #EEE;
+    padding: 10px;
+}
+.au_popup_input_items
+{
+    margin-bottom: 10px;
+    width: 48%;
+    float: left;
+    margin-right: 10px;
+}
+.au_popup_input_items label
+{
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+}
+.au_popup_input_items input
+{
+    width: 97%;
+}
+.au_nobr
+{
+    font-size: 11px;
+    font-style: italic;
+    font-weight: 100;
+}
+.au_popup_input_des
+{
+}
+.au_popup_input_des label
+{
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+}
+.au_popup_input_des textarea
+{
+    width: 97%;
+}
+.admin_user_list
+{
+    clear: both;
+    width: 99%;
+    height: 540px;
+    overflow: auto;
+}
+.admin_user_table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+.admin_user_table th, .admin_user_table td
+{
+    text-align: left;
+    font-size: 12px;
+}
+.admin_user_header
+{
+    background-color: #F2F2F2;
+    height: 23px;
+    border-bottom: 2px solid #000;
+}
+.au_name
+{
+    width: 20%;
+}
+.au_email
+{
+    width: 20%;
+}
+.au_phone
+{
+    width: 15%;
+}
+.au_type
+{
+    width: 15%;
+}
+.au_team
+{
+    width: 20%;
+}
+.au_edit
+{
+    cursor: pointer;
+}
+.au_remove
+{
+    cursor: pointer;
+}
+.admin_user_items
+{
+    height: 25px;
+    border-bottom: 1px solid #CDCDCD;
+}
+.admin_tabs_holder
+{
+    position: absolute;
+    bottom: 0px;
+}
+.admin_holder
+{
+    display: none;
+}
+.admin_tab:hover
+{
+    background-color: #262626;
+}
+.admin_tab
+{
+    font-weight: bold;
+    float: left;
+    margin-right: 7px;
+    width: 140px;
+    padding: 5px;
+    text-align: center;
+    color: White;
+    background-color: #333333;
+    font-size: 13px;
+    cursor: pointer;
+}
+.admin_user_search_btn
+{
+    width: 23px;
+    height: 22px;
+    float: left;
+    margin-right: 10px;
+}
+.admin_tab_active
+{
+    background-color: #039 !important;
+}
+.admin_team_list
+{
+    clear: both;
+    height: 547px;
+    overflow: auto;
+}
+.admin_holder
+{
+    padding-left: 30px;
+}
+
+.admin_add_team
+{
+    float: left;
+    width: 100px;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 2px;
+    font-weight: bold;
+    padding: 4px;
+    border: 1px solid #CDCDCD;
+    background-color: #E9EAEF;
+    cursor: pointer;
+}
+.admin_team_items
+{
+}
+.collumn_remove img
+{
+    cursor: pointer;
+}
+.admin_team_title
+{
+    height: 17px;
+    border: 1px solid #CDCDCD;
+    padding: 5px 8px;
+}
+.team_title_text
+{
+    float: left;
+    font-weight: bold;
+    width: 50%;
+    font-size: 16px;
+    color: #555;
+}
+.team_title_btns
+{
+    float: right;
+    width: 160px;
+}
+.team_add_member_holder
+{
+    position: relative;
+}
+.team_list_member_holder select
+{
+    border: none;
+    width: 100%;
+}
+.team_add_member
+{
+    float: left;
+    width: 124px;
+    border: 1px solid #CDCDCD;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 1px 0px;
+}
+.team_list_member_holder
+{
+    display: none;
+    position: absolute;
+    top: 20px;
+    width: 124px;
+    background-color: #FFF;
+    border: 1px solid gray;
+}
+
+.team_remove_member
+{
+    float: right;
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 9px;
+}
+.admin_team_table
+{
+}
+.team_row_header
+{
+    background-color: #FFD9A2;
+    height: 20px;
+}
+.collumn_name
+{
+    padding-left: 5px;
+}
+.admin_team_table th, .admin_team_table td
+{
+    text-align: left;
+    font-size: 12px;
+}
+.collumn_manager
+{
+}
+.collumn_reviews
+{
+}
+.collumn_survey
+{
+}
+.collumn_remove
+{
+}
+.team_row_items
+{
+    background-color: #FFD9A2;
+}
+.admin_team_tables
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+.team_row_items td
+{
+    background-color: #F2F2F2;
+    border-bottom: 1px solid #CDCDCD;
+    height: 22px;
+}
+.content
+{
+}
+
+.team_listmember_btns
+{
+}
+
+.team_listmember_btns > div
+{
+    font-size: 12px;
+    width: 36%;
+    padding: 1px;
+    text-align: center;
+    margin: 3px 6px;
+    cursor: pointer;
+    border: 1px solid #CDCDCD;
+    background-color: #E9EAEF;
+}
+
+.team_listmember_add
+{
+    float: left;
+}
+
+.team_listmember_cancel
+{
+    float: right;
+}
+
+.admin_notifications_title
+{
+    clear: both;
+    font-size: 20px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+.au_notifications_table
+{
+    margin: 0px 10px;
+}
+.au_notifications_items
+{
+    clear: both;
+    height: 25px;
+    margin-bottom: 5px;
+}
+.au_notifications_items > div
+{
+    float: left;
+    margin-right: 4px;
+    font-size: 13px;
+    height: 19px;
+}
+.au_notifications_header > div
+{
+    text-align: center;
+    font-weight: bold;
+    background-color: #C1C1C1;
+    color: #000 !important;
+}
+
+.aun_type
+{
+    width: 32%;
+    float: left;
+}
+
+.aun_select
+{
+    width: 20%;
+    float: left;
+}
+
+.aun_user
+{
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    background-color: #5C5C5C;
+    width: 13%;
+    float: left;
+    color: #FFF;
+}
+
+.admin_notifications_manage_holder
+{
+    width: 65%;
+    height: 100px;
+    margin: 10px 0px;
+    background-color: #333;
+    clear: both;
+    padding-bottom: 4px;
+    display: none;
+}
+
+.admin_notifications_manage_holder label
+{
+    display: block;
+    color: #FFF;
+    padding: 1px 15px;
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.rdparty_text_top
+{
+    font-size: 13px;
+    padding: 10px 0px;
+}
+.admin_3rdparty_content
+{
+}
+.admin_3rd_content_left
+{
+    width: 40%;
+    float: left;
+}
+.admin_3rd_left_items
+{
+    clear: both;
+}
+.admin_3rd_icon
+{
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+.admin_3rd_left_title
+{
+}
+.admin_3rd_icon_name
+{
+    width: 100px;
+    margin-top: 7px;
+    float: left;
+    font-size: 19px;
+}
+.admin_3rd_logo_holder
+{
+    clear: both;
+    width: 97%;
+    position: relative;
+    height: 100px;
+    background-color: #F2F2F2;
+}
+.plus_icon
+{
+    float: left;
+    margin: 3px;
+}
+.admin_3rd_logo
+{
+    width: 230px;
+    height: 32px;
+    margin: 0px auto;
+    top: 36px;
+    position: relative;
+}
+.admin_3rd_content_right
+{
+    width: 50%;
+    float: right;
+    margin-right: 53px;
+}
+.admin_3rd_right_title
+{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.admin_3rd_right_list
+{
+}
+.admin_3rd_right_items
+{
+}
+.admin_3rd_right_name
+{
+    cursor: pointer;
+    background-color: #F2F2F2;
+    font-size: 14px;
+    border-bottom: 2px solid;
+    font-weight: bold;
+    padding: 4px 5px;
+    position: relative;
+}
+.admin_3rd_arrow
+{
+    background-image: url("/Content/Images/admin/arrow.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 10px;
+    position: absolute;
+    height: 10px;
+    float: right;
+    top: 9px;
+    right: 6px;
+}
+.admin_3rd_right_input
+{
+    display: none;
+    border: 1px solid #CDCDCD;
+    padding: 5px 10px;
+}
+.admin_3rd_input_items
+{
+}
+.admin_3rd_input_items label
+{
+    font-size: 13px;
+    width: 75px;
+    display: block;
+    float: left;
+}
+.admin_3rd_input_items input
+{
+    width: 80%;
+}
+
+.admin_user_search
+{
+    width: 23%;
+    float: right;
+}
+.admin_user_search_btn
+{
+}
+.admin_user_search input
+{
+    margin: 0px;
+}

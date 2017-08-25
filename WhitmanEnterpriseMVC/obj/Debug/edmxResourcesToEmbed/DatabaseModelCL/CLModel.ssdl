@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="whitmanenterprisecraigslistModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="whitmanenterprisecraigslistModelStoreContainer">
+    <EntitySet Name="vinclappdealerschedule" EntityType="whitmanenterprisecraigslistModel.Store.vinclappdealerschedule" store:Type="Tables" Schema="whitmanenterprisecraigslist" />
+    <EntitySet Name="vinclappemailaccount" EntityType="whitmanenterprisecraigslistModel.Store.vinclappemailaccount" store:Type="Tables" Schema="whitmanenterprisecraigslist" />
+    <EntitySet Name="vinclapppcschedule" EntityType="whitmanenterprisecraigslistModel.Store.vinclapppcschedule" store:Type="Tables" Schema="whitmanenterprisecraigslist" />
+    <EntitySet Name="vinclapptracking_date" EntityType="whitmanenterprisecraigslistModel.Store.vinclapptracking_date" store:Type="Tables" Schema="whitmanenterprisecraigslist" />
+    <EntitySet Name="vinclapptrackingemailaccount" EntityType="whitmanenterprisecraigslistModel.Store.vinclapptrackingemailaccount" store:Type="Tables" Schema="whitmanenterprisecraigslist" />
+    <EntitySet Name="vincontrolcraigslisttracking" EntityType="whitmanenterprisecraigslistModel.Store.vincontrolcraigslisttracking" store:Type="Tables" Schema="whitmanenterprisecraigslist" />
+    <EntitySet Name="whitmanenterprisechunkstring" EntityType="whitmanenterprisecraigslistModel.Store.whitmanenterprisechunkstring" store:Type="Tables" Schema="whitmanenterprisecraigslist" />
+    <EntitySet Name="whitmanenterprisecomputeraccount" EntityType="whitmanenterprisecraigslistModel.Store.whitmanenterprisecomputeraccount" store:Type="Tables" Schema="whitmanenterprisecraigslist" />
+    <EntitySet Name="whitmanenterprisecraigslisdailytinventory" EntityType="whitmanenterprisecraigslistModel.Store.whitmanenterprisecraigslisdailytinventory" store:Type="Tables" Schema="whitmanenterprisecraigslist" />
+    <EntitySet Name="whitmanenterprisecraigslistcity" EntityType="whitmanenterprisecraigslistModel.Store.whitmanenterprisecraigslistcity" store:Type="Tables" Schema="whitmanenterprisecraigslist" />
+    <EntitySet Name="whitmanenterprisecraigslistinventory" EntityType="whitmanenterprisecraigslistModel.Store.whitmanenterprisecraigslistinventory" store:Type="Tables" Schema="whitmanenterprisecraigslist" />
+    <EntitySet Name="whitmanenterprisecraigslistinventorysoldout" EntityType="whitmanenterprisecraigslistModel.Store.whitmanenterprisecraigslistinventorysoldout" store:Type="Tables" Schema="whitmanenterprisecraigslist" />
+    <EntitySet Name="whitmanenterprisedealerlist" EntityType="whitmanenterprisecraigslistModel.Store.whitmanenterprisedealerlist" store:Type="Tables" Schema="whitmanenterprisecraigslist" />
+  </EntityContainer>
+  <EntityType Name="vinclappdealerschedule">
+    <Key>
+      <PropertyRef Name="AutoId" />
+    </Key>
+    <Property Name="AutoId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DealerId" Type="int" />
+    <Property Name="CityId" Type="int" />
+    <Property Name="Price" Type="bit" />
+    <Property Name="Split" Type="bit" />
+    <Property Name="Schedules" Type="int" />
+    <Property Name="LastUpdated" Type="datetime" />
+  </EntityType>
+  <EntityType Name="vinclappemailaccount">
+    <Key>
+      <PropertyRef Name="AccountId" />
+    </Key>
+    <Property Name="AccountId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AccountName" Type="varchar" MaxLength="45" />
+    <Property Name="AccountPassword" Type="varchar" MaxLength="45" />
+    <Property Name="Phone" Type="varchar" MaxLength="45" />
+    <Property Name="Computer" Type="int" />
+    <Property Name="Proxy" Type="bit" />
+    <Property Name="ProxyIP" Type="varchar" MaxLength="45" />
+    <Property Name="Notes" Type="longtext" />
+    <Property Name="CurrentStickPercentage" Type="int" />
+    <Property Name="OverallStickPercentage" Type="int" />
+    <Property Name="LastTimeUsed" Type="datetime" />
+    <Property Name="DateAdded" Type="datetime" />
+    <Property Name="LastUpdated" Type="datetime" />
+    <Property Name="Active" Type="bit" />
+  </EntityType>
+  <EntityType Name="vinclapppcschedule">
+    <Key>
+      <PropertyRef Name="AutoId" />
+    </Key>
+    <Property Name="AutoId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PC" Type="int" />
+    <Property Name="Schedule" Type="int" />
+    <Property Name="LastUpdated" Type="datetime" />
+  </EntityType>
+  <EntityType Name="vinclapptracking_date">
+    <Key>
+      <PropertyRef Name="TrackingId" />
+      <PropertyRef Name="TrackingDate" />
+    </Key>
+    <Property Name="TrackingId" Type="int" Nullable="false" />
+    <Property Name="TrackingDate" Type="datetime" Nullable="false" />
+    <Property Name="Counter" Type="int" />
+  </EntityType>
+  <EntityType Name="vinclapptrackingemailaccount">
+    <Key>
+      <PropertyRef Name="AccountName" />
+      <PropertyRef Name="TrackingDate" />
+    </Key>
+    <Property Name="AccountName" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="TrackingDate" Type="datetime" Nullable="false" />
+    <Property Name="GhostingAds" Type="int" />
+    <Property Name="PostingAds" Type="int" />
+    <Property Name="FlagAds" Type="int" />
+    <Property Name="GhostingAdsIds" Type="longtext" />
+    <Property Name="PostingAdsId" Type="longtext" />
+    <Property Name="NumberAds" Type="int" />
+    <Property Name="Percentage" Type="int" />
+  </EntityType>
+  <EntityType Name="vincontrolcraigslisttracking">
+    <Key>
+      <PropertyRef Name="TrackingId" />
+    </Key>
+    <Property Name="TrackingId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CLPostingId" Type="bigint" />
+    <Property Name="ListingId" Type="int" />
+    <Property Name="CityId" Type="int" />
+    <Property Name="DealerId" Type="int" />
+    <Property Name="Computer" Type="int" />
+    <Property Name="EmailAccount" Type="varchar" MaxLength="45" />
+    <Property Name="ShowAd" Type="bit" />
+    <Property Name="HtmlCraigslistUrl" Type="varchar" MaxLength="255" />
+    <Property Name="Renew" Type="bit" />
+    <Property Name="AddedDate" Type="datetime" />
+    <Property Name="ExpirationDate" Type="datetime" />
+    <Property Name="CheckDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisechunkstring">
+    <Key>
+      <PropertyRef Name="ChunkStringId" />
+    </Key>
+    <Property Name="ChunkStringId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ChunkName" Type="varchar" MaxLength="45" />
+    <Property Name="ChunkValue" Type="longtext" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisecomputeraccount">
+    <Key>
+      <PropertyRef Name="AutoCombineId" />
+    </Key>
+    <Property Name="AutoCombineId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AccountPC" Type="int" Nullable="false" />
+    <Property Name="DealerId" Type="int" Nullable="false" />
+    <Property Name="CityId" Type="int" Nullable="false" />
+    <Property Name="Location" Type="varchar" MaxLength="45" />
+    <Property Name="LastUpdated" Type="datetime" />
+    <Property Name="Price" Type="bool" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisecraigslisdailytinventory">
+    <Key>
+      <PropertyRef Name="ListingID" />
+    </Key>
+    <Property Name="ListingID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ModelYear" Type="varchar" MaxLength="10" />
+    <Property Name="Make" Type="varchar" MaxLength="100" />
+    <Property Name="Model" Type="varchar" MaxLength="100" />
+    <Property Name="Trim" Type="varchar" MaxLength="100" />
+    <Property Name="VINNumber" Type="varchar" MaxLength="100" />
+    <Property Name="StockNumber" Type="varchar" MaxLength="100" />
+    <Property Name="SalePrice" Type="varchar" MaxLength="100" />
+    <Property Name="MSRP" Type="varchar" MaxLength="100" />
+    <Property Name="Mileage" Type="varchar" MaxLength="100" />
+    <Property Name="ExteriorColor" Type="varchar" MaxLength="100" />
+    <Property Name="InteriorColor" Type="varchar" MaxLength="100" />
+    <Property Name="InteriorSurface" Type="varchar" MaxLength="100" />
+    <Property Name="BodyType" Type="varchar" MaxLength="100" />
+    <Property Name="Cylinders" Type="varchar" MaxLength="45" />
+    <Property Name="Liters" Type="varchar" MaxLength="45" />
+    <Property Name="EngineType" Type="varchar" MaxLength="100" />
+    <Property Name="DriveTrain" Type="varchar" MaxLength="100" />
+    <Property Name="FuelType" Type="varchar" MaxLength="100" />
+    <Property Name="Tranmission" Type="varchar" MaxLength="200" />
+    <Property Name="Doors" Type="varchar" MaxLength="45" />
+    <Property Name="Certified" Type="bool" />
+    <Property Name="CarsPackages" Type="longtext" />
+    <Property Name="CarsOptions" Type="longtext" />
+    <Property Name="Descriptions" Type="longtext" />
+    <Property Name="CarImageUrl" Type="longtext" />
+    <Property Name="ThumbnailImageURL" Type="longtext" />
+    <Property Name="DateInStock" Type="datetime" />
+    <Property Name="LastUpdated" Type="datetime" />
+    <Property Name="DealershipId" Type="int" />
+    <Property Name="DealershipName" Type="varchar" MaxLength="200" />
+    <Property Name="DealershipAddress" Type="varchar" MaxLength="250" />
+    <Property Name="DealershipCity" Type="varchar" MaxLength="100" />
+    <Property Name="DealershipState" Type="varchar" MaxLength="10" />
+    <Property Name="DealershipPhone" Type="varchar" MaxLength="100" />
+    <Property Name="DealershipZipCode" Type="varchar" MaxLength="45" />
+    <Property Name="DealerCost" Type="varchar" MaxLength="45" />
+    <Property Name="ACV" Type="varchar" MaxLength="45" />
+    <Property Name="DefaultImageUrl" Type="longtext" />
+    <Property Name="NewUsed" Type="varchar" MaxLength="10" />
+    <Property Name="AddToInventoryBy" Type="varchar" MaxLength="100" />
+    <Property Name="AppraisalID" Type="varchar" MaxLength="45" />
+    <Property Name="Age" Type="int" />
+    <Property Name="AccountPC" Type="int" />
+    <Property Name="PostingCityId" Type="int" />
+    <Property Name="Price" Type="bool" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisecraigslistcity">
+    <Key>
+      <PropertyRef Name="CityID" />
+    </Key>
+    <Property Name="CityID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CityName" Type="varchar" MaxLength="45" />
+    <Property Name="CraigsListCityURL" Type="varchar" MaxLength="100" />
+    <Property Name="SubCity" Type="bool" />
+    <Property Name="CLIndex" Type="int" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisecraigslistinventory">
+    <Key>
+      <PropertyRef Name="ListingID" />
+    </Key>
+    <Property Name="ListingID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ModelYear" Type="varchar" MaxLength="10" />
+    <Property Name="Make" Type="varchar" MaxLength="100" />
+    <Property Name="Model" Type="varchar" MaxLength="100" />
+    <Property Name="Trim" Type="varchar" MaxLength="100" />
+    <Property Name="VINNumber" Type="varchar" MaxLength="100" />
+    <Property Name="StockNumber" Type="varchar" MaxLength="100" />
+    <Property Name="SalePrice" Type="varchar" MaxLength="100" />
+    <Property Name="MSRP" Type="varchar" MaxLength="100" />
+    <Property Name="Mileage" Type="varchar" MaxLength="100" />
+    <Property Name="ExteriorColor" Type="varchar" MaxLength="100" />
+    <Property Name="InteriorColor" Type="varchar" MaxLength="100" />
+    <Property Name="InteriorSurface" Type="varchar" MaxLength="100" />
+    <Property Name="BodyType" Type="varchar" MaxLength="100" />
+    <Property Name="Cylinders" Type="varchar" MaxLength="45" />
+    <Property Name="Liters" Type="varchar" MaxLength="45" />
+    <Property Name="EngineType" Type="varchar" MaxLength="100" />
+    <Property Name="DriveTrain" Type="varchar" MaxLength="100" />
+    <Property Name="FuelType" Type="varchar" MaxLength="100" />
+    <Property Name="Tranmission" Type="varchar" MaxLength="200" />
+    <Property Name="Doors" Type="varchar" MaxLength="45" />
+    <Property Name="Certified" Type="bool" />
+    <Property Name="CarsPackages" Type="longtext" />
+    <Property Name="CarsOptions" Type="longtext" />
+    <Property Name="Descriptions" Type="longtext" />
+    <Property Name="CarImageUrl" Type="longtext" />
+    <Property Name="ThumbnailImageURL" Type="longtext" />
+    <Property Name="DateInStock" Type="datetime" />
+    <Property Name="LastUpdated" Type="datetime" />
+    <Property Name="DealershipId" Type="int" />
+    <Property Name="DealershipName" Type="varchar" MaxLength="200" />
+    <Property Name="DealershipAddress" Type="varchar" MaxLength="250" />
+    <Property Name="DealershipCity" Type="varchar" MaxLength="100" />
+    <Property Name="DealershipState" Type="varchar" MaxLength="10" />
+    <Property Name="DealershipPhone" Type="varchar" MaxLength="100" />
+    <Property Name="DealershipZipCode" Type="varchar" MaxLength="45" />
+    <Property Name="DealerCost" Type="varchar" MaxLength="45" />
+    <Property Name="ACV" Type="varchar" MaxLength="45" />
+    <Property Name="DefaultImageUrl" Type="longtext" />
+    <Property Name="NewUsed" Type="varchar" MaxLength="10" />
+    <Property Name="AddToInventoryBy" Type="varchar" MaxLength="100" />
+    <Property Name="AppraisalID" Type="varchar" MaxLength="45" />
+    <Property Name="Age" Type="int" />
+    <Property Name="OverideTitle" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisecraigslistinventorysoldout">
+    <Key>
+      <PropertyRef Name="ListingID" />
+    </Key>
+    <Property Name="ListingID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ModelYear" Type="varchar" MaxLength="10" />
+    <Property Name="Make" Type="varchar" MaxLength="100" />
+    <Property Name="Model" Type="varchar" MaxLength="100" />
+    <Property Name="Trim" Type="varchar" MaxLength="100" />
+    <Property Name="VINNumber" Type="varchar" MaxLength="100" />
+    <Property Name="StockNumber" Type="varchar" MaxLength="100" />
+    <Property Name="SalePrice" Type="varchar" MaxLength="100" />
+    <Property Name="MSRP" Type="varchar" MaxLength="100" />
+    <Property Name="Mileage" Type="varchar" MaxLength="100" />
+    <Property Name="ExteriorColor" Type="varchar" MaxLength="100" />
+    <Property Name="InteriorColor" Type="varchar" MaxLength="100" />
+    <Property Name="InteriorSurface" Type="varchar" MaxLength="100" />
+    <Property Name="BodyType" Type="varchar" MaxLength="100" />
+    <Property Name="Cylinders" Type="varchar" MaxLength="45" />
+    <Property Name="Liters" Type="varchar" MaxLength="45" />
+    <Property Name="EngineType" Type="varchar" MaxLength="100" />
+    <Property Name="DriveTrain" Type="varchar" MaxLength="100" />
+    <Property Name="FuelType" Type="varchar" MaxLength="100" />
+    <Property Name="Tranmission" Type="varchar" MaxLength="200" />
+    <Property Name="Doors" Type="varchar" MaxLength="45" />
+    <Property Name="Certified" Type="bool" />
+    <Property Name="CarsOptions" Type="longtext" />
+    <Property Name="Descriptions" Type="longtext" />
+    <Property Name="CarImageUrl" Type="longtext" />
+    <Property Name="DateInStock" Type="datetime" Nullable="false" />
+    <Property Name="DealershipId" Type="int" />
+    <Property Name="DealershipName" Type="varchar" MaxLength="200" />
+    <Property Name="DealershipAddress" Type="varchar" MaxLength="250" />
+    <Property Name="DealershipCity" Type="varchar" MaxLength="100" />
+    <Property Name="DealershipState" Type="varchar" MaxLength="10" />
+    <Property Name="DealershipPhone" Type="varchar" MaxLength="100" />
+    <Property Name="DealershipZipCode" Type="varchar" MaxLength="45" />
+    <Property Name="DealerCost" Type="varchar" MaxLength="45" />
+    <Property Name="ACV" Type="varchar" MaxLength="45" />
+    <Property Name="DefaultImageUrl" Type="longtext" />
+    <Property Name="NewUsed" Type="varchar" MaxLength="10" />
+    <Property Name="AddToInventoryBy" Type="varchar" MaxLength="100" />
+    <Property Name="AppraisalID" Type="varchar" MaxLength="45" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisedealerlist">
+    <Key>
+      <PropertyRef Name="OldDealerId" />
+    </Key>
+    <Property Name="OldDealerId" Type="int" Nullable="false" />
+    <Property Name="VincontrolId" Type="int" />
+    <Property Name="Password" Type="varchar" MaxLength="45" />
+    <Property Name="DealershipName" Type="varchar" MaxLength="100" />
+    <Property Name="PhoneNumber" Type="varchar" MaxLength="45" />
+    <Property Name="StreetAddress" Type="varchar" MaxLength="255" />
+    <Property Name="City" Type="varchar" MaxLength="100" />
+    <Property Name="State" Type="varchar" MaxLength="45" />
+    <Property Name="ZipCode" Type="varchar" MaxLength="45" />
+    <Property Name="LogoURL" Type="varchar" MaxLength="255" />
+    <Property Name="WebSiteURL" Type="varchar" MaxLength="255" />
+    <Property Name="CreditURL" Type="varchar" MaxLength="355" />
+    <Property Name="Email" Type="varchar" MaxLength="255" />
+    <Property Name="CityOveride" Type="varchar" MaxLength="255" />
+    <Property Name="EmailFormat" Type="int" />
+    <Property Name="Active" Type="bool" />
+    <Property Name="ExceptionCategory" Type="int" />
+    <Property Name="DealerSpecialtyID" Type="varchar" MaxLength="45" />
+    <Property Name="SubConstraint" Type="varchar" MaxLength="50" />
+    <Property Name="GoogleAnalyticAccount" Type="varchar" MaxLength="45" />
+    <Property Name="TradeInBannerLink" Type="longtext" />
+  </EntityType>
+</Schema>

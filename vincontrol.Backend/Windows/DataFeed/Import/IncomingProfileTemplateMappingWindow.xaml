@@ -1,0 +1,101 @@
+﻿<Window x:Class="vincontrol.Backend.Windows.DataFeed.Import.IncomingProfileTemplateMappingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:CustomControls="clr-namespace:vincontrol.Backend.CustomControls"
+        xmlns:controls="clr-namespace:vincontrol.Backend.Controls"
+        xmlns:import="clr-namespace:vincontrol.Backend.Controls.DataFeed.Import" WindowStartupLocation="CenterScreen"
+        Title="Importing Profile Setting" Height="700" Width="1000">
+    
+    <import:IncomingProfileTemplateMapping></import:IncomingProfileTemplateMapping>
+
+    <!--<StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Grid Width="983">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                    <ColumnDefinition Width="3*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Profile Name" Height="28"  Width="70" ></TextBlock>
+
+                <TextBox Height="23" Width="120" Grid.Column="1" HorizontalAlignment="Left"   Text="{Binding ProfileName, ValidatesOnDataErrors=True, NotifyOnValidationError=True}"/>
+                <TextBlock Text="Company Name" Height="28"  Width="90" Grid.Row="1" ></TextBlock>
+                <TextBox Height="23" Width="120" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left"   Text="{Binding CompanyName}"/>
+                <StackPanel Orientation="Horizontal" Grid.Column="2">
+                    <CheckBox Content="Header" Height="16"  IsChecked="{Binding HasHeader}"/>
+                    <CheckBox Content="Mapping in code" Height="16" Grid.Column="2" IsChecked="{Binding UseSpecificMapping}"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="2">
+                    <TextBlock Text="Format"  Height="28" Width="64" Grid.Row="1" ></TextBlock>
+                    <ComboBox Height="23" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left"  Width="120" ItemsSource="{Binding DelimiterList}" SelectedValuePath="Key"  DisplayMemberPath="Value" SelectedValue="{Binding Delimiter, ValidatesOnDataErrors=True, NotifyOnValidationError=True}" />
+
+                </StackPanel>
+                <TextBlock Text="Schema URL" Height="28"  Width="64" Grid.Column="3"/>
+                <TextBox Height="23" HorizontalAlignment="Left" Text="{Binding SchemaURL}"  Width="198" Grid.Column="4"  />
+
+                <TextBlock Text="Running Time" Height="28" Width="80" Grid.Row="1" Grid.Column="3"  ></TextBlock>
+                <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="4">
+                    <CustomControls:TimePicker x:Name="timePicker" SelectedItem="{Binding RunningTime, Mode=TwoWay}" ></CustomControls:TimePicker>
+                    <TextBlock Padding="40,0,0,0" Text="Frequency" Height="28"  />
+                    <CustomControls:NumericControl Maximum="24" Minimum="1" Value="{Binding Frequency}" Height="23"  Width="50"></CustomControls:NumericControl>
+
+                </StackPanel>
+                <Button Content="Mapping From Url" HorizontalAlignment="Left" Grid.Row="2" Grid.Column="1" Command="{Binding ImportSampleFileFromFeedUrlCommand}"  Visibility="{Binding IsAdded, Converter={StaticResource VisibilityConverter}}" Width="113"></Button>
+
+            </Grid>
+        </StackPanel>
+        <DataGrid Height="550"  IsEnabled="{Binding UseSpecificMapping, Converter={StaticResource RevertConverter}}"   Width="955" ItemsSource="{Binding Mappings}" AutoGenerateColumns="False" ScrollViewer.CanContentScroll="True" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="XML Field/Order" Binding="{Binding XMLField}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Sample Data" Binding="{Binding SampleData}"></DataGridTextColumn>
+                <DataGridTemplateColumn Header="DB Field"  >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ComboBox Margin="5" ItemsSource="{Binding DBFields}" MinWidth="100" DisplayMemberPath="Text" SelectedValuePath="Text" SelectedValue="{Binding DBField}">
+                            </ComboBox>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn  >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Replace" Command="{Binding OpenReplaceWindowCommand}"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn  >
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button  Content="Condition" Command="{Binding OpenConditionWindowCommand}"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Orientation="Horizontal">
+            <CheckBox  Content="Discontinue" Height="16" Width="100" IsChecked="{Binding Discontinue}" Visibility="{Binding IsAdded, Converter={StaticResource HiddenConverter}}" />
+            <Button Content="Save Profile" Height="23"  Width="75"  Command="{Binding SaveMappingCommand}" Visibility="{Binding IsAdded, Converter={StaticResource HiddenConverter}}"/>
+            <Button Content="Create Profile" Height="23"  Command="{Binding CreateProfileCommand}" Visibility="{Binding IsAdded, Converter={StaticResource VisibilityConverter}}" />
+        </StackPanel>
+    </StackPanel>-->
+
+
+    <!--<Button Content="Mapping From File" Command="{Binding ImportSampleFileCommand}" Padding="5" Margin="10,85,209,300" Visibility="{Binding IsAdded, Converter={StaticResource VisibilityConverter}}" Width="113"></Button>-->
+
+    <!--<DataGrid AutoGenerateColumns="False" Height="194" HorizontalAlignment="Left" Margin="12,78,0,0"  VerticalAlignment="Top" Width="613" Grid.ColumnSpan="2" />-->
+
+    <!--<Button Content="Save Profile" Height="23" HorizontalAlignment="Left" Margin="244,384,0,0" Name="button3" VerticalAlignment="Top" Width="75" Grid.Column="1" />
+                <CheckBox Content="Discontinue " Height="16" HorizontalAlignment="Left" Margin="19,386,0,0" Name="checkBox9" VerticalAlignment="Top" />-->
+    <!--<TextBox Height="23" HorizontalAlignment="Left" Margin="345,85,0,0" Text="{Binding Frequency}" VerticalAlignment="Top" Width="120" Grid.ColumnSpan="2" />-->
+
+
+
+</Window>

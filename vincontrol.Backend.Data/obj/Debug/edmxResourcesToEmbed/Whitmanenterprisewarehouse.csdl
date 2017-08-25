@@ -1,0 +1,1436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="whitmanenterprisewarehouseModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="whitmanenterprisewarehouseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="manheimmakemodels" EntityType="whitmanenterprisewarehouseModel.manheimmakemodel" />
+    <EntitySet Name="manheimmakes" EntityType="whitmanenterprisewarehouseModel.manheimmake" />
+    <EntitySet Name="manheimmodels" EntityType="whitmanenterprisewarehouseModel.manheimmodel" />
+    <EntitySet Name="manheimmodeltrims" EntityType="whitmanenterprisewarehouseModel.manheimmodeltrim" />
+    <EntitySet Name="manheimtrims" EntityType="whitmanenterprisewarehouseModel.manheimtrim" />
+    <EntitySet Name="manheimyearmakes" EntityType="whitmanenterprisewarehouseModel.manheimyearmake" />
+    <EntitySet Name="vincontrolanswers" EntityType="whitmanenterprisewarehouseModel.vincontrolanswer" />
+    <EntitySet Name="vincontrolbannercustomers" EntityType="whitmanenterprisewarehouseModel.vincontrolbannercustomer" />
+    <EntitySet Name="vincontrolbuyerguides" EntityType="whitmanenterprisewarehouseModel.vincontrolbuyerguide" />
+    <EntitySet Name="vincontrolchartselections" EntityType="whitmanenterprisewarehouseModel.vincontrolchartselection" />
+    <EntitySet Name="vincontroldescriptions" EntityType="whitmanenterprisewarehouseModel.vincontroldescription" />
+    <EntitySet Name="vincontroldescriptiontemplates" EntityType="whitmanenterprisewarehouseModel.vincontroldescriptiontemplate" />
+    <EntitySet Name="vincontrolexportlists" EntityType="whitmanenterprisewarehouseModel.vincontrolexportlist" />
+    <EntitySet Name="vincontrolgrouppermissions" EntityType="whitmanenterprisewarehouseModel.vincontrolgrouppermission" />
+    <EntitySet Name="vincontrolgroups" EntityType="whitmanenterprisewarehouseModel.vincontrolgroup" />
+    <EntitySet Name="vincontrolmanheimvalues" EntityType="whitmanenterprisewarehouseModel.vincontrolmanheimvalue" />
+    <EntitySet Name="vincontrolpermissions" EntityType="whitmanenterprisewarehouseModel.vincontrolpermission" />
+    <EntitySet Name="vincontrolpermissioncodes" EntityType="whitmanenterprisewarehouseModel.vincontrolpermissioncode" />
+    <EntitySet Name="vincontrolpermissionvalues" EntityType="whitmanenterprisewarehouseModel.vincontrolpermissionvalue" />
+    <EntitySet Name="vincontrolpricechangeshistories" EntityType="whitmanenterprisewarehouseModel.vincontrolpricechangeshistory" />
+    <EntitySet Name="vincontrolquestions" EntityType="whitmanenterprisewarehouseModel.vincontrolquestion" />
+    <EntitySet Name="vincontrolquestiontypes" EntityType="whitmanenterprisewarehouseModel.vincontrolquestiontype" />
+    <EntitySet Name="vincontrolrebates" EntityType="whitmanenterprisewarehouseModel.vincontrolrebate" />
+    <EntitySet Name="vincontrolsentences" EntityType="whitmanenterprisewarehouseModel.vincontrolsentence" />
+    <EntitySet Name="vincontrolsentencetypes" EntityType="whitmanenterprisewarehouseModel.vincontrolsentencetype" />
+    <EntitySet Name="vincontrolsouthcoastmitsubishis" EntityType="whitmanenterprisewarehouseModel.vincontrolsouthcoastmitsubishi" />
+    <EntitySet Name="vincontrolsouthcoastmitsubishisettings" EntityType="whitmanenterprisewarehouseModel.vincontrolsouthcoastmitsubishisetting" />
+    <EntitySet Name="vincontrolsouthcoastmitsubishivins" EntityType="whitmanenterprisewarehouseModel.vincontrolsouthcoastmitsubishivin" />
+    <EntitySet Name="vincontroltradeinbannercomments" EntityType="whitmanenterprisewarehouseModel.vincontroltradeinbannercomment" />
+    <EntitySet Name="vincontroltruckcategories" EntityType="whitmanenterprisewarehouseModel.vincontroltruckcategory" />
+    <EntitySet Name="vincontrolusergroups" EntityType="whitmanenterprisewarehouseModel.vincontrolusergroup" />
+    <EntitySet Name="vincontrolusers" EntityType="whitmanenterprisewarehouseModel.vincontroluser" />
+    <EntitySet Name="vincontrolwalkarounds" EntityType="whitmanenterprisewarehouseModel.vincontrolwalkaround" />
+    <EntitySet Name="vincontrolwholesaleinventories" EntityType="whitmanenterprisewarehouseModel.vincontrolwholesaleinventory" />
+    <EntitySet Name="vincontrondnsimportlists" EntityType="whitmanenterprisewarehouseModel.vincontrondnsimportlist" />
+    <EntitySet Name="whitmanenteprisecarfaxes" EntityType="whitmanenterprisewarehouseModel.whitmanenteprisecarfax" />
+    <EntitySet Name="whitmanenterpriseappraisals" EntityType="whitmanenterprisewarehouseModel.whitmanenterpriseappraisal" />
+    <EntitySet Name="whitmanenterprisebayads" EntityType="whitmanenterprisewarehouseModel.whitmanenterprisebayad" />
+    <EntitySet Name="whitmanenterprisebbs" EntityType="whitmanenterprisewarehouseModel.whitmanenterprisebb" />
+    <EntitySet Name="whitmanenterpriseclientinfoes" EntityType="whitmanenterprisewarehouseModel.whitmanenterpriseclientinfo" />
+    <EntitySet Name="whitmanenterprisedealergroups" EntityType="whitmanenterprisewarehouseModel.whitmanenterprisedealergroup" />
+    <EntitySet Name="whitmanenterprisedealerships" EntityType="whitmanenterprisewarehouseModel.whitmanenterprisedealership" />
+    <EntitySet Name="whitmanenterprisedealershipinventories" EntityType="whitmanenterprisewarehouseModel.whitmanenterprisedealershipinventory" />
+    <EntitySet Name="whitmanenterprisedealershipinventorysoldouts" EntityType="whitmanenterprisewarehouseModel.whitmanenterprisedealershipinventorysoldout" />
+    <EntitySet Name="whitmanenterpriseebayvehiclecategories" EntityType="whitmanenterprisewarehouseModel.whitmanenterpriseebayvehiclecategory" />
+    <EntitySet Name="whitmanenterprisekbbs" EntityType="whitmanenterprisewarehouseModel.whitmanenterprisekbb" />
+    <EntitySet Name="whitmanenterprisesettings" EntityType="whitmanenterprisewarehouseModel.whitmanenterprisesetting" />
+    <EntitySet Name="whitmanenterpriseusazipcodes" EntityType="whitmanenterprisewarehouseModel.whitmanenterpriseusazipcode" />
+    <EntitySet Name="whitmanenterpriseusers" EntityType="whitmanenterprisewarehouseModel.whitmanenterpriseuser" />
+    <EntitySet Name="whitmanenterpriseusersnotifications" EntityType="whitmanenterprisewarehouseModel.whitmanenterpriseusersnotification" />
+    <EntitySet Name="whitmanenterprisevehiclecategories" EntityType="whitmanenterprisewarehouseModel.whitmanenterprisevehiclecategory" />
+    <AssociationSet Name="makemodel" Association="whitmanenterprisewarehouseModel.makemodel">
+      <End Role="manheimmakemodel" EntitySet="manheimmakemodels" />
+      <End Role="manheimmodeltrim" EntitySet="manheimmodeltrims" />
+    </AssociationSet>
+    <AssociationSet Name="model" Association="whitmanenterprisewarehouseModel.model">
+      <End Role="manheimmodel" EntitySet="manheimmodels" />
+      <End Role="manheimmakemodel" EntitySet="manheimmakemodels" />
+    </AssociationSet>
+    <AssociationSet Name="yearmake" Association="whitmanenterprisewarehouseModel.yearmake">
+      <End Role="manheimyearmake" EntitySet="manheimyearmakes" />
+      <End Role="manheimmakemodel" EntitySet="manheimmakemodels" />
+    </AssociationSet>
+    <AssociationSet Name="makeId" Association="whitmanenterprisewarehouseModel.makeId">
+      <End Role="manheimmake" EntitySet="manheimmakes" />
+      <End Role="manheimyearmake" EntitySet="manheimyearmakes" />
+    </AssociationSet>
+    <AssociationSet Name="trim" Association="whitmanenterprisewarehouseModel.trim">
+      <End Role="manheimtrim" EntitySet="manheimtrims" />
+      <End Role="manheimmodeltrim" EntitySet="manheimmodeltrims" />
+    </AssociationSet>
+    <AssociationSet Name="fk_answers_appraisals" Association="whitmanenterprisewarehouseModel.fk_answers_appraisals">
+      <End Role="whitmanenterpriseappraisal" EntitySet="whitmanenterpriseappraisals" />
+      <End Role="vincontrolanswer" EntitySet="vincontrolanswers" />
+    </AssociationSet>
+    <AssociationSet Name="fk_answers_questions" Association="whitmanenterprisewarehouseModel.fk_answers_questions">
+      <End Role="vincontrolquestion" EntitySet="vincontrolquestions" />
+      <End Role="vincontrolanswer" EntitySet="vincontrolanswers" />
+    </AssociationSet>
+    <AssociationSet Name="Template" Association="whitmanenterprisewarehouseModel.Template">
+      <End Role="vincontroldescriptiontemplate" EntitySet="vincontroldescriptiontemplates" />
+      <End Role="whitmanenterprisedealershipinventory" EntitySet="whitmanenterprisedealershipinventories" />
+    </AssociationSet>
+    <AssociationSet Name="fk_grouppermission_group" Association="whitmanenterprisewarehouseModel.fk_grouppermission_group">
+      <End Role="vincontrolgroup" EntitySet="vincontrolgroups" />
+      <End Role="vincontrolgrouppermission" EntitySet="vincontrolgrouppermissions" />
+    </AssociationSet>
+    <AssociationSet Name="fk_grouppermission_permissioncodes" Association="whitmanenterprisewarehouseModel.fk_grouppermission_permissioncodes">
+      <End Role="vincontrolpermissioncode" EntitySet="vincontrolpermissioncodes" />
+      <End Role="vincontrolgrouppermission" EntitySet="vincontrolgrouppermissions" />
+    </AssociationSet>
+    <AssociationSet Name="fk_grouppermission_permissionvalue" Association="whitmanenterprisewarehouseModel.fk_grouppermission_permissionvalue">
+      <End Role="vincontrolpermissionvalue" EntitySet="vincontrolpermissionvalues" />
+      <End Role="vincontrolgrouppermission" EntitySet="vincontrolgrouppermissions" />
+    </AssociationSet>
+    <AssociationSet Name="fk_usergroup_groups" Association="whitmanenterprisewarehouseModel.fk_usergroup_groups">
+      <End Role="vincontrolgroup" EntitySet="vincontrolgroups" />
+      <End Role="vincontrolusergroup" EntitySet="vincontrolusergroups" />
+    </AssociationSet>
+    <AssociationSet Name="fk_questions_questiontype" Association="whitmanenterprisewarehouseModel.fk_questions_questiontype">
+      <End Role="vincontrolquestiontype" EntitySet="vincontrolquestiontypes" />
+      <End Role="vincontrolquestion" EntitySet="vincontrolquestions" />
+    </AssociationSet>
+    <AssociationSet Name="fk_sentence_type" Association="whitmanenterprisewarehouseModel.fk_sentence_type">
+      <End Role="vincontrolsentencetype" EntitySet="vincontrolsentencetypes" />
+      <End Role="vincontrolsentence" EntitySet="vincontrolsentences" />
+    </AssociationSet>
+    <AssociationSet Name="fk_vin_customer" Association="whitmanenterprisewarehouseModel.fk_vin_customer">
+      <End Role="vincontrolsouthcoastmitsubishi" EntitySet="vincontrolsouthcoastmitsubishis" />
+      <End Role="vincontrolsouthcoastmitsubishivin" EntitySet="vincontrolsouthcoastmitsubishivins" />
+    </AssociationSet>
+    <AssociationSet Name="fk_usergroup_users" Association="whitmanenterprisewarehouseModel.fk_usergroup_users">
+      <End Role="vincontroluser" EntitySet="vincontrolusers" />
+      <End Role="vincontrolusergroup" EntitySet="vincontrolusergroups" />
+    </AssociationSet>
+    <AssociationSet Name="fk_walkaround_appraisal" Association="whitmanenterprisewarehouseModel.fk_walkaround_appraisal">
+      <End Role="whitmanenterpriseappraisal" EntitySet="whitmanenterpriseappraisals" />
+      <End Role="vincontrolwalkaround" EntitySet="vincontrolwalkarounds" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="manheimmakemodel">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="yearmakeId" />
+    <Property Type="Int32" Name="modelId" />
+    <NavigationProperty Name="manheimmodeltrims" Relationship="whitmanenterprisewarehouseModel.makemodel" FromRole="manheimmakemodel" ToRole="manheimmodeltrim" />
+    <NavigationProperty Name="manheimmodel" Relationship="whitmanenterprisewarehouseModel.model" FromRole="manheimmakemodel" ToRole="manheimmodel" />
+    <NavigationProperty Name="manheimyearmake" Relationship="whitmanenterprisewarehouseModel.yearmake" FromRole="manheimmakemodel" ToRole="manheimyearmake" />
+  </EntityType>
+  <EntityType Name="manheimmake">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="serviceId" />
+    <Property Type="String" Name="name" />
+    <NavigationProperty Name="manheimyearmakes" Relationship="whitmanenterprisewarehouseModel.makeId" FromRole="manheimmake" ToRole="manheimyearmake" />
+  </EntityType>
+  <EntityType Name="manheimmodel">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="serviceId" />
+    <Property Type="String" Name="name" />
+    <NavigationProperty Name="manheimmakemodels" Relationship="whitmanenterprisewarehouseModel.model" FromRole="manheimmodel" ToRole="manheimmakemodel" />
+  </EntityType>
+  <EntityType Name="manheimmodeltrim">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="makemodelId" />
+    <Property Type="Int32" Name="trimId" />
+    <NavigationProperty Name="manheimmakemodel" Relationship="whitmanenterprisewarehouseModel.makemodel" FromRole="manheimmodeltrim" ToRole="manheimmakemodel" />
+    <NavigationProperty Name="manheimtrim" Relationship="whitmanenterprisewarehouseModel.trim" FromRole="manheimmodeltrim" ToRole="manheimtrim" />
+  </EntityType>
+  <EntityType Name="manheimtrim">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="serviceId" />
+    <Property Type="String" Name="name" />
+    <Property Type="String" Name="lowestPrice" />
+    <Property Type="String" Name="averagePrice" />
+    <Property Type="String" Name="highestPrice" />
+    <Property Type="DateTime" Name="expirationDate" />
+    <NavigationProperty Name="manheimmodeltrims" Relationship="whitmanenterprisewarehouseModel.trim" FromRole="manheimtrim" ToRole="manheimmodeltrim" />
+  </EntityType>
+  <EntityType Name="manheimyearmake">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="year" />
+    <Property Type="Int32" Name="makeId" />
+    <NavigationProperty Name="manheimmakemodels" Relationship="whitmanenterprisewarehouseModel.yearmake" FromRole="manheimyearmake" ToRole="manheimmakemodel" />
+    <NavigationProperty Name="manheimmake" Relationship="whitmanenterprisewarehouseModel.makeId" FromRole="manheimyearmake" ToRole="manheimmake" />
+  </EntityType>
+  <EntityType Name="vincontrolanswer">
+    <Key>
+      <PropertyRef Name="answerid" />
+    </Key>
+    <Property Type="Int32" Name="answerid" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="appraisalid" />
+    <Property Type="Int32" Name="questionid" />
+    <Property Type="String" Name="answer" />
+    <Property Type="String" Name="comment" />
+    <NavigationProperty Name="whitmanenterpriseappraisal" Relationship="whitmanenterprisewarehouseModel.fk_answers_appraisals" FromRole="vincontrolanswer" ToRole="whitmanenterpriseappraisal" />
+    <NavigationProperty Name="vincontrolquestion" Relationship="whitmanenterprisewarehouseModel.fk_answers_questions" FromRole="vincontrolanswer" ToRole="vincontrolquestion" />
+  </EntityType>
+  <EntityType Name="vincontrolbannercustomer">
+    <Key>
+      <PropertyRef Name="TradeInCustomerId" />
+    </Key>
+    <Property Type="Int32" Name="TradeInCustomerId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="FirstName" />
+    <Property Type="String" Name="LastName" />
+    <Property Type="String" Name="Email" />
+    <Property Type="String" Name="Phone" />
+    <Property Type="Int32" Name="Year" />
+    <Property Type="String" Name="Make" />
+    <Property Type="String" Name="Model" />
+    <Property Type="String" Name="Trim" />
+    <Property Type="Int32" Name="Mileage" />
+    <Property Type="String" Name="SelectedOptions" />
+    <Property Type="String" Name="Condition" />
+    <Property Type="Int32" Name="KBBVehicelId" />
+    <Property Type="String" Name="Vin" />
+    <Property Type="String" Name="TradeInFairValue" />
+    <Property Type="String" Name="TradeInMaxValue" />
+    <Property Type="Int32" Name="DealerId" />
+    <Property Type="DateTime" Name="CreatedDate" />
+    <Property Type="String" Name="VarianceValue" />
+    <Property Type="String" Name="Source" />
+    <Property Type="String" Name="TradeInStatus" />
+    <Property Type="String" Name="EmailContent" />
+    <Property Type="String" Name="ADFEmailContent" />
+    <Property Type="String" Name="Receivers" />
+  </EntityType>
+  <EntityType Name="vincontrolbuyerguide">
+    <Key>
+      <PropertyRef Name="buyerguideid" />
+    </Key>
+    <Property Type="Int32" Name="buyerguideid" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="make" />
+    <Property Type="String" Name="model" />
+    <Property Type="String" Name="year" />
+    <Property Type="String" Name="vinNumber" />
+    <Property Type="String" Name="stockNumber" />
+    <Property Type="String" Name="warrantyType" />
+    <Property Type="Boolean" Name="isAsWarranty" />
+    <Property Type="Boolean" Name="isWarranty" />
+    <Property Type="Boolean" Name="isFullWarranty" />
+    <Property Type="Boolean" Name="isLimitedWarranty" />
+    <Property Type="Boolean" Name="isServiceContract" />
+    <Property Type="String" Name="systemCovered" />
+    <Property Type="String" Name="durations" />
+    <Property Type="Double" Name="percentageOfLabor" />
+    <Property Type="Double" Name="percentageOfPart" />
+    <Property Type="String" Name="priorRental" />
+    <Property Type="Int32" Name="dealershipId" />
+    <Property Type="Boolean" Name="isMixed" />
+    <Property Type="String" Name="systemCoveredAndDurations" />
+    <Property Type="Int32" Name="LanguageVersion" />
+  </EntityType>
+  <EntityType Name="vincontrolchartselection">
+    <Key>
+      <PropertyRef Name="chartselectionid" />
+    </Key>
+    <Property Type="Int32" Name="chartselectionid" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="listingId" />
+    <Property Type="Boolean" Name="isCarsCom" />
+    <Property Type="String" Name="options" />
+    <Property Type="String" Name="trims" />
+    <Property Type="Boolean" Name="isCertified" />
+    <Property Type="Boolean" Name="isAll" />
+    <Property Type="Boolean" Name="isFranchise" />
+    <Property Type="Boolean" Name="isIndependant" />
+    <Property Type="String" Name="screen" />
+    <Property Type="String" Name="sourceType" />
+  </EntityType>
+  <EntityType Name="vincontroldescription">
+    <Key>
+      <PropertyRef Name="VinControlDescriptionId" />
+    </Key>
+    <Property Type="Int32" Name="VinControlDescriptionId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Title" />
+    <Property Type="Boolean" Name="YesNo" />
+    <Property Type="String" Name="DescriptionSentence" />
+  </EntityType>
+  <EntityType Name="vincontroldescriptiontemplate">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" />
+    <Property Type="String" Name="Content" Nullable="false" />
+    <Property Type="String" Name="Description" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <NavigationProperty Name="whitmanenterprisedealershipinventories" Relationship="whitmanenterprisewarehouseModel.Template" FromRole="vincontroldescriptiontemplate" ToRole="whitmanenterprisedealershipinventory" />
+  </EntityType>
+  <EntityType Name="vincontrolexportlist">
+    <Key>
+      <PropertyRef Name="DealerId" />
+    </Key>
+    <Property Type="Int32" Name="DealerId" Nullable="false" />
+    <Property Type="String" Name="Name" />
+    <Property Type="String" Name="Address" />
+    <Property Type="String" Name="City" />
+    <Property Type="String" Name="State" />
+    <Property Type="String" Name="ZipCode" />
+    <Property Type="String" Name="Email" />
+    <Property Type="String" Name="InventoryURL" />
+    <Property Type="String" Name="Phone" />
+    <Property Type="String" Name="AutoBytelId" />
+    <Property Type="Boolean" Name="AutoBytel" />
+    <Property Type="String" Name="AutoTraderId" />
+    <Property Type="Boolean" Name="AutoTrader" />
+    <Property Type="String" Name="AutoTraderFTPUsername" />
+    <Property Type="String" Name="AutoTraderFTPPassword" />
+    <Property Type="String" Name="CarsComId" />
+    <Property Type="Boolean" Name="CarsCom" />
+    <Property Type="String" Name="CUDLId" />
+    <Property Type="Boolean" Name="CUDL" />
+    <Property Type="String" Name="DealerComId" />
+    <Property Type="Boolean" Name="DealerCom" />
+    <Property Type="String" Name="HomenetId" />
+    <Property Type="Boolean" Name="Homenet" />
+    <Property Type="String" Name="VastId" />
+    <Property Type="Boolean" Name="Vast" />
+    <Property Type="String" Name="DMIId" />
+    <Property Type="Boolean" Name="DMI" />
+    <Property Type="String" Name="LTTFID" />
+    <Property Type="Boolean" Name="LTTF" />
+    <Property Type="String" Name="CostcoId" />
+    <Property Type="Boolean" Name="Costco" />
+    <Property Type="String" Name="CommericalTruckId" />
+    <Property Type="Boolean" Name="CommericalTruck" />
+    <Property Type="String" Name="CobaltId" />
+    <Property Type="Boolean" Name="CobaltFeed" />
+    <Property Type="String" Name="RecycleId" />
+    <Property Type="Boolean" Name="RecycleFeed" />
+    <Property Type="String" Name="PixelId" />
+    <Property Type="Boolean" Name="PixelNationFeed" />
+    <Property Type="String" Name="CarWeekId" />
+    <Property Type="Boolean" Name="CarWeekFeed" />
+    <Property Type="String" Name="Web2CarId" />
+    <Property Type="Boolean" Name="Web2CarFeed" />
+    <Property Type="String" Name="IseeCarId" />
+    <Property Type="Boolean" Name="IseeCarFeed" />
+    <Property Type="String" Name="AutoPaymentFinderId" />
+    <Property Type="Boolean" Name="AutoPaymentFeed" />
+    <Property Type="String" Name="EDriveAutosId" />
+    <Property Type="Boolean" Name="EDriveAutoFed" />
+    <Property Type="String" Name="AutoFerretId" />
+    <Property Type="Boolean" Name="AutoFerretFeed" />
+    <Property Type="String" Name="DealerRaterId" />
+    <Property Type="Boolean" Name="DealerRaterFeed" />
+    <Property Type="String" Name="SamClubId" />
+    <Property Type="Boolean" Name="SamClubFeed" />
+    <Property Type="String" Name="TripleAId" />
+    <Property Type="Boolean" Name="TripleAFeed" />
+    <Property Type="String" Name="DealerForum" />
+    <Property Type="Boolean" Name="DealerForumFeed" />
+    <Property Type="String" Name="DealerLink" />
+    <Property Type="Boolean" Name="DealerLinkFeed" />
+    <Property Type="String" Name="CommericalTruckAdId" />
+    <Property Type="Boolean" Name="CommercialTruckAdFeed" />
+    <Property Type="String" Name="ManheimOVEId" />
+    <Property Type="Boolean" Name="ManheimOVEFeed" />
+    <Property Type="String" Name="GabrielId" />
+    <Property Type="Boolean" Name="GabrielFeed" />
+    <Property Type="String" Name="GlobalAutoSportsId" />
+    <Property Type="Boolean" Name="GlobalAutoSportsFeed" />
+    <Property Type="String" Name="OddleId" />
+    <Property Type="Boolean" Name="OddleFeed" />
+    <Property Type="Boolean" Name="Active" />
+  </EntityType>
+  <EntityType Name="vincontrolgrouppermission">
+    <Key>
+      <PropertyRef Name="grouppermissionid" />
+    </Key>
+    <Property Type="Int32" Name="grouppermissionid" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="groupid" Nullable="false" />
+    <Property Type="Int32" Name="permissioncode" Nullable="false" />
+    <Property Type="Int32" Name="permissionvalue" Nullable="false" />
+    <Property Type="String" Name="userstamp" Nullable="false" />
+    <Property Type="DateTime" Name="datestamp" Nullable="false" />
+    <NavigationProperty Name="vincontrolgroup" Relationship="whitmanenterprisewarehouseModel.fk_grouppermission_group" FromRole="vincontrolgrouppermission" ToRole="vincontrolgroup" />
+    <NavigationProperty Name="vincontrolpermissioncode" Relationship="whitmanenterprisewarehouseModel.fk_grouppermission_permissioncodes" FromRole="vincontrolgrouppermission" ToRole="vincontrolpermissioncode" />
+    <NavigationProperty Name="vincontrolpermissionvalue" Relationship="whitmanenterprisewarehouseModel.fk_grouppermission_permissionvalue" FromRole="vincontrolgrouppermission" ToRole="vincontrolpermissionvalue" />
+  </EntityType>
+  <EntityType Name="vincontrolgroup">
+    <Key>
+      <PropertyRef Name="groupid" />
+    </Key>
+    <Property Type="Int32" Name="groupid" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="groupname" Nullable="false" />
+    <Property Type="String" Name="groupnote" />
+    <Property Type="String" Name="userstamp" Nullable="false" />
+    <Property Type="DateTime" Name="datestamp" Nullable="false" />
+    <NavigationProperty Name="vincontrolgrouppermissions" Relationship="whitmanenterprisewarehouseModel.fk_grouppermission_group" FromRole="vincontrolgroup" ToRole="vincontrolgrouppermission" />
+    <NavigationProperty Name="vincontrolusergroups" Relationship="whitmanenterprisewarehouseModel.fk_usergroup_groups" FromRole="vincontrolgroup" ToRole="vincontrolusergroup" />
+  </EntityType>
+  <EntityType Name="vincontrolmanheimvalue">
+    <Key>
+      <PropertyRef Name="AutoId" />
+    </Key>
+    <Property Type="Int32" Name="AutoId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Vin" />
+    <Property Type="String" Name="Trim" />
+    <Property Type="String" Name="AuctionLowestPrice" />
+    <Property Type="String" Name="AuctionAveragePrice" />
+    <Property Type="String" Name="AuctionHighestPrice" />
+    <Property Type="DateTime" Name="DateAdded" />
+    <Property Type="DateTime" Name="LastUpdated" />
+    <Property Type="DateTime" Name="ExpiredDate" />
+    <Property Type="Int32" Name="TrimServiceId" />
+    <Property Type="Int32" Name="Year" />
+    <Property Type="Int32" Name="MakeServiceId" />
+    <Property Type="Int32" Name="ModelServiceId" />
+  </EntityType>
+  <EntityType Name="vincontrolpermission">
+    <Key>
+      <PropertyRef Name="permissionid" />
+    </Key>
+    <Property Type="Int32" Name="permissionid" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="permissionname" Nullable="false" />
+    <Property Type="String" Name="userstamp" Nullable="false" />
+    <Property Type="DateTime" Name="datestamp" Nullable="false" />
+  </EntityType>
+  <EntityType Name="vincontrolpermissioncode">
+    <Key>
+      <PropertyRef Name="permissioncodeid" />
+    </Key>
+    <Property Type="Int32" Name="permissioncodeid" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="permissioncode" Nullable="false" />
+    <Property Type="String" Name="permissiontext" Nullable="false" />
+    <Property Type="String" Name="permissioncategory" Nullable="false" />
+    <Property Type="Int32" Name="indent" Nullable="false" />
+    <Property Type="Int32" Name="screenorder" Nullable="false" />
+    <Property Type="String" Name="userstamp" Nullable="false" />
+    <Property Type="DateTime" Name="datestamp" Nullable="false" />
+    <NavigationProperty Name="vincontrolgrouppermissions" Relationship="whitmanenterprisewarehouseModel.fk_grouppermission_permissioncodes" FromRole="vincontrolpermissioncode" ToRole="vincontrolgrouppermission" />
+  </EntityType>
+  <EntityType Name="vincontrolpermissionvalue">
+    <Key>
+      <PropertyRef Name="permissionvalueid" />
+    </Key>
+    <Property Type="Int32" Name="permissionvalueid" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="permissionvalue" Nullable="false" />
+    <Property Type="String" Name="userstamp" Nullable="false" />
+    <Property Type="DateTime" Name="datestamp" Nullable="false" />
+    <NavigationProperty Name="vincontrolgrouppermissions" Relationship="whitmanenterprisewarehouseModel.fk_grouppermission_permissionvalue" FromRole="vincontrolpermissionvalue" ToRole="vincontrolgrouppermission" />
+  </EntityType>
+  <EntityType Name="vincontrolpricechangeshistory">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Decimal" Name="OldPrice" />
+    <Property Type="Decimal" Name="NewPrice" />
+    <Property Type="String" Name="AttachFile" />
+    <Property Type="String" Name="UserStamp" />
+    <Property Type="DateTime" Name="DateStamp" />
+    <Property Type="Int32" Name="ListingId" />
+    <Property Type="String" Name="Type" />
+  </EntityType>
+  <EntityType Name="vincontrolquestion">
+    <Key>
+      <PropertyRef Name="questionid" />
+    </Key>
+    <Property Type="Int32" Name="questionid" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="title" />
+    <Property Type="Int32" Name="questiontypeid" />
+    <Property Type="String" Name="shortdescription" />
+    <Property Type="Int32" Name="order" />
+    <NavigationProperty Name="vincontrolanswers" Relationship="whitmanenterprisewarehouseModel.fk_answers_questions" FromRole="vincontrolquestion" ToRole="vincontrolanswer" />
+    <NavigationProperty Name="vincontrolquestiontype" Relationship="whitmanenterprisewarehouseModel.fk_questions_questiontype" FromRole="vincontrolquestion" ToRole="vincontrolquestiontype" />
+  </EntityType>
+  <EntityType Name="vincontrolquestiontype">
+    <Key>
+      <PropertyRef Name="questiontypeid" />
+    </Key>
+    <Property Type="Int32" Name="questiontypeid" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="name" />
+    <Property Type="String" Name="description" />
+    <Property Type="String" Name="option" />
+    <Property Type="Int32" Name="code" />
+    <Property Type="String" Name="unit" />
+    <NavigationProperty Name="vincontrolquestions" Relationship="whitmanenterprisewarehouseModel.fk_questions_questiontype" FromRole="vincontrolquestiontype" ToRole="vincontrolquestion" />
+  </EntityType>
+  <EntityType Name="vincontrolrebate">
+    <Key>
+      <PropertyRef Name="vincontrolrebateid" />
+    </Key>
+    <Property Type="Int32" Name="vincontrolrebateid" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="Year" />
+    <Property Type="String" Name="Make" />
+    <Property Type="String" Name="Model" />
+    <Property Type="String" Name="Trim" />
+    <Property Type="String" Name="BodyType" />
+    <Property Type="String" Name="ManufactureReabte" />
+    <Property Type="String" Name="Disclaimer" />
+    <Property Type="Int32" Name="DealerId" />
+    <Property Type="DateTime" Name="DateAdded" />
+    <Property Type="DateTime" Name="LastUpdated" />
+  </EntityType>
+  <EntityType Name="vincontrolsentence">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="sentence" Nullable="false" />
+    <Property Type="Int32" Name="typeId" Nullable="false" />
+    <NavigationProperty Name="vincontrolsentencetype" Relationship="whitmanenterprisewarehouseModel.fk_sentence_type" FromRole="vincontrolsentence" ToRole="vincontrolsentencetype" />
+  </EntityType>
+  <EntityType Name="vincontrolsentencetype">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="name" Nullable="false" />
+    <NavigationProperty Name="vincontrolsentences" Relationship="whitmanenterprisewarehouseModel.fk_sentence_type" FromRole="vincontrolsentencetype" ToRole="vincontrolsentence" />
+  </EntityType>
+  <EntityType Name="vincontrolsouthcoastmitsubishi">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="vin" />
+    <Property Type="String" Name="lastName" />
+    <Property Type="String" Name="firstName" />
+    <Property Type="String" Name="address" />
+    <Property Type="Int32" Name="year" />
+    <Property Type="String" Name="make" />
+    <Property Type="String" Name="model" />
+    <Property Type="String" Name="email" />
+    <Property Type="String" Name="phone" />
+    <Property Type="String" Name="title" />
+    <Property Type="String" Name="city" />
+    <Property Type="String" Name="state" />
+    <Property Type="String" Name="zip" />
+    <Property Type="String" Name="street" />
+    <Property Type="String" Name="password" />
+    <Property Type="Int32" Name="dealerId" />
+    <NavigationProperty Name="vincontrolsouthcoastmitsubishivins" Relationship="whitmanenterprisewarehouseModel.fk_vin_customer" FromRole="vincontrolsouthcoastmitsubishi" ToRole="vincontrolsouthcoastmitsubishivin" />
+  </EntityType>
+  <EntityType Name="vincontrolsouthcoastmitsubishisetting">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="deviceId" />
+    <Property Type="Boolean" Name="email" />
+    <Property Type="Boolean" Name="notification" />
+    <Property Type="Boolean" Name="sms" />
+    <Property Type="Int32" Name="customerId" />
+    <Property Type="String" Name="type" />
+    <Property Type="DateTime" Name="dateStamp" />
+  </EntityType>
+  <EntityType Name="vincontrolsouthcoastmitsubishivin">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="year" Nullable="false" />
+    <Property Type="String" Name="make" Nullable="false" />
+    <Property Type="String" Name="model" Nullable="false" />
+    <Property Type="Int32" Name="customerId" Nullable="false" />
+    <Property Type="String" Name="vin" Nullable="false" />
+    <Property Type="String" Name="lastAppointment" />
+    <Property Type="String" Name="mileage" />
+    <Property Type="String" Name="imageUrl" />
+    <NavigationProperty Name="vincontrolsouthcoastmitsubishi" Relationship="whitmanenterprisewarehouseModel.fk_vin_customer" FromRole="vincontrolsouthcoastmitsubishivin" ToRole="vincontrolsouthcoastmitsubishi" />
+  </EntityType>
+  <EntityType Name="vincontroltradeinbannercomment">
+    <Key>
+      <PropertyRef Name="SmartCommentId" />
+    </Key>
+    <Property Type="Int32" Name="SmartCommentId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Content" />
+    <Property Type="String" Name="Name" />
+    <Property Type="String" Name="City" />
+    <Property Type="String" Name="State" />
+    <Property Type="Int32" Name="DealerId" />
+    <Property Type="DateTime" Name="DateComment" />
+    <Property Type="DateTime" Name="DateUpdated" />
+  </EntityType>
+  <EntityType Name="vincontroltruckcategory">
+    <Key>
+      <PropertyRef Name="Vincontroltruckcategoryid" />
+    </Key>
+    <Property Type="Int32" Name="Vincontroltruckcategoryid" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="CategoryName" />
+    <Property Type="String" Name="TruckType" />
+    <Property Type="DateTime" Name="DateAdded" />
+  </EntityType>
+  <EntityType Name="vincontrolusergroup">
+    <Key>
+      <PropertyRef Name="usergroupid" />
+    </Key>
+    <Property Type="Int32" Name="usergroupid" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="userid" Nullable="false" />
+    <Property Type="Int32" Name="groupid" Nullable="false" />
+    <Property Type="String" Name="userstamp" Nullable="false" />
+    <Property Type="DateTime" Name="datestamp" Nullable="false" />
+    <NavigationProperty Name="vincontrolgroup" Relationship="whitmanenterprisewarehouseModel.fk_usergroup_groups" FromRole="vincontrolusergroup" ToRole="vincontrolgroup" />
+    <NavigationProperty Name="vincontroluser" Relationship="whitmanenterprisewarehouseModel.fk_usergroup_users" FromRole="vincontrolusergroup" ToRole="vincontroluser" />
+  </EntityType>
+  <EntityType Name="vincontroluser">
+    <Key>
+      <PropertyRef Name="userid" />
+    </Key>
+    <Property Type="Int32" Name="userid" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="username" Nullable="false" />
+    <Property Type="DateTime" Name="expirationdate" Nullable="false" />
+    <Property Type="Boolean" Name="accountstatus" Nullable="false" />
+    <Property Type="String" Name="password" />
+    <Property Type="String" Name="rolename" />
+    <NavigationProperty Name="vincontrolusergroups" Relationship="whitmanenterprisewarehouseModel.fk_usergroup_users" FromRole="vincontroluser" ToRole="vincontrolusergroup" />
+  </EntityType>
+  <EntityType Name="vincontrolwalkaround">
+    <Key>
+      <PropertyRef Name="walkaroundid" />
+    </Key>
+    <Property Type="Int32" Name="walkaroundid" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="order" />
+    <Property Type="Double" Name="x" />
+    <Property Type="Double" Name="y" />
+    <Property Type="String" Name="note" />
+    <Property Type="Int32" Name="appraisalid" />
+    <NavigationProperty Name="whitmanenterpriseappraisal" Relationship="whitmanenterprisewarehouseModel.fk_walkaround_appraisal" FromRole="vincontrolwalkaround" ToRole="whitmanenterpriseappraisal" />
+  </EntityType>
+  <EntityType Name="vincontrolwholesaleinventory">
+    <Key>
+      <PropertyRef Name="ListingID" />
+    </Key>
+    <Property Type="Int32" Name="ListingID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ModelYear" />
+    <Property Type="String" Name="Make" />
+    <Property Type="String" Name="Model" />
+    <Property Type="String" Name="Trim" />
+    <Property Type="String" Name="VINNumber" />
+    <Property Type="String" Name="StockNumber" />
+    <Property Type="String" Name="SalePrice" />
+    <Property Type="String" Name="MSRP" />
+    <Property Type="String" Name="DealerMSRP" />
+    <Property Type="String" Name="Mileage" />
+    <Property Type="String" Name="ExteriorColor" />
+    <Property Type="String" Name="InteriorColor" />
+    <Property Type="String" Name="InteriorSurface" />
+    <Property Type="String" Name="BodyType" />
+    <Property Type="String" Name="Cylinders" />
+    <Property Type="String" Name="Liters" />
+    <Property Type="String" Name="EngineType" />
+    <Property Type="String" Name="DriveTrain" />
+    <Property Type="String" Name="FuelType" />
+    <Property Type="String" Name="Tranmission" />
+    <Property Type="String" Name="Doors" />
+    <Property Type="String" Name="FuelEconomyCity" />
+    <Property Type="String" Name="FuelEconomyHighWay" />
+    <Property Type="Boolean" Name="Certified" />
+    <Property Type="String" Name="StandardOptions" />
+    <Property Type="String" Name="CarsOptions" />
+    <Property Type="String" Name="CarsPackages" />
+    <Property Type="String" Name="Descriptions" />
+    <Property Type="String" Name="CarImageUrl" />
+    <Property Type="String" Name="ThumbnailImageURL" />
+    <Property Type="DateTime" Name="DateInStock" />
+    <Property Type="DateTime" Name="LastUpdated" />
+    <Property Type="Int32" Name="DealershipId" />
+    <Property Type="String" Name="DealershipName" />
+    <Property Type="String" Name="DealershipAddress" />
+    <Property Type="String" Name="DealershipCity" />
+    <Property Type="String" Name="DealershipState" />
+    <Property Type="String" Name="DealershipPhone" />
+    <Property Type="String" Name="DealershipZipCode" />
+    <Property Type="String" Name="DealerCost" />
+    <Property Type="String" Name="ACV" />
+    <Property Type="String" Name="DefaultImageUrl" />
+    <Property Type="String" Name="NewUsed" />
+    <Property Type="String" Name="AddToInventoryBy" />
+    <Property Type="String" Name="AppraisalID" />
+    <Property Type="String" Name="VehicleType" />
+    <Property Type="String" Name="TruckClass" />
+    <Property Type="String" Name="TruckType" />
+    <Property Type="String" Name="TruckCategory" />
+    <Property Type="Int32" Name="WarrantyInfo" />
+    <Property Type="String" Name="RetailPrice" />
+    <Property Type="String" Name="WindowStickerPrice" />
+    <Property Type="String" Name="DealerDiscount" />
+    <Property Type="String" Name="ManufacturerRebate" />
+    <Property Type="Int32" Name="MarketRange" />
+    <Property Type="Boolean" Name="Recon" />
+    <Property Type="Boolean" Name="PriorRental" />
+    <Property Type="Int32" Name="CarFaxOwner" />
+    <Property Type="String" Name="KBBOptionsId" />
+    <Property Type="Int32" Name="KBBTrimId" />
+    <Property Type="String" Name="Disclaimer" />
+    <Property Type="Boolean" Name="DealerDemo" />
+    <Property Type="Boolean" Name="Unwind" />
+    <Property Type="Int32" Name="NumberOfCar" />
+    <Property Type="Int32" Name="CarRanking" />
+    <Property Type="Decimal" Name="MarketLowestPrice" />
+    <Property Type="Decimal" Name="MarketAveragePrice" />
+    <Property Type="Decimal" Name="MarketHighestPrice" />
+    <Property Type="String" Name="ColorCode" />
+    <Property Type="String" Name="AdditionalTitle" />
+    <Property Type="String" Name="ChromeStyleId" />
+    <Property Type="String" Name="ChromeModelId" />
+  </EntityType>
+  <EntityType Name="vincontrondnsimportlist">
+    <Key>
+      <PropertyRef Name="DealerId" />
+    </Key>
+    <Property Type="Int32" Name="DealerId" Nullable="false" />
+    <Property Type="String" Name="Name" />
+    <Property Type="String" Name="Address" />
+    <Property Type="String" Name="City" />
+    <Property Type="String" Name="State" />
+    <Property Type="String" Name="ZipCode" />
+    <Property Type="String" Name="Phone" />
+    <Property Type="Boolean" Name="Active" />
+  </EntityType>
+  <EntityType Name="whitmanenteprisecarfax">
+    <Key>
+      <PropertyRef Name="AutoId" />
+    </Key>
+    <Property Type="Int32" Name="AutoId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Vin" />
+    <Property Type="Int32" Name="Owner" />
+    <Property Type="String" Name="ServiceRecord" />
+    <Property Type="String" Name="WindowSticker" />
+    <Property Type="DateTime" Name="DateAdded" />
+    <Property Type="DateTime" Name="LastUpdated" />
+    <Property Type="DateTime" Name="ExpiredDate" />
+    <Property Type="Boolean" Name="PriorRental" />
+    <Property Type="Int32" Name="Accident" />
+  </EntityType>
+  <EntityType Name="whitmanenterpriseappraisal">
+    <Key>
+      <PropertyRef Name="idAppraisal" />
+    </Key>
+    <Property Type="Int32" Name="idAppraisal" Nullable="false" />
+    <Property Type="Int32" Name="ModelYear" />
+    <Property Type="String" Name="Make" />
+    <Property Type="String" Name="Model" />
+    <Property Type="String" Name="Trim" />
+    <Property Type="String" Name="VINNumber" />
+    <Property Type="String" Name="StockNumber" />
+    <Property Type="String" Name="SalePrice" />
+    <Property Type="String" Name="MSRP" />
+    <Property Type="String" Name="Mileage" />
+    <Property Type="String" Name="Cylinders" />
+    <Property Type="String" Name="ExteriorColor" />
+    <Property Type="String" Name="InteriorColor" />
+    <Property Type="String" Name="InteriorSurface" />
+    <Property Type="String" Name="BodyType" />
+    <Property Type="String" Name="EngineType" />
+    <Property Type="String" Name="DriveTrain" />
+    <Property Type="String" Name="FuelType" />
+    <Property Type="String" Name="Tranmission" />
+    <Property Type="String" Name="Liters" />
+    <Property Type="String" Name="Doors" />
+    <Property Type="String" Name="FuelEconomyCity" />
+    <Property Type="String" Name="FuelEconomyHighWay" />
+    <Property Type="Boolean" Name="Certified" />
+    <Property Type="String" Name="CarsOptions" />
+    <Property Type="String" Name="CarsPackages" />
+    <Property Type="String" Name="PackageDescription" />
+    <Property Type="String" Name="Descriptions" />
+    <Property Type="String" Name="CarImageUrl" />
+    <Property Type="String" Name="DealershipName" />
+    <Property Type="String" Name="DealershipAddress" />
+    <Property Type="String" Name="DealershipCity" />
+    <Property Type="String" Name="DealershipState" />
+    <Property Type="String" Name="DealershipPhone" />
+    <Property Type="Int32" Name="DealershipId" />
+    <Property Type="String" Name="DealerCost" />
+    <Property Type="String" Name="ACV" />
+    <Property Type="String" Name="DefaultImageUrl" />
+    <Property Type="DateTime" Name="AppraisalDate" />
+    <Property Type="String" Name="FirstName" />
+    <Property Type="String" Name="LastName" />
+    <Property Type="String" Name="Address" />
+    <Property Type="String" Name="City" />
+    <Property Type="String" Name="State" />
+    <Property Type="String" Name="ZipCode" />
+    <Property Type="String" Name="AppraisalBy" />
+    <Property Type="Boolean" Name="InventoryAdd" />
+    <Property Type="String" Name="AppraisalType" />
+    <Property Type="String" Name="AppraisalID" />
+    <Property Type="String" Name="ChromeModelId" />
+    <Property Type="String" Name="ChromeStyleId" />
+    <Property Type="String" Name="StandardOptions" />
+    <Property Type="DateTime" Name="LastUpdated" />
+    <Property Type="String" Name="VehicleType" />
+    <Property Type="String" Name="TruckClass" />
+    <Property Type="String" Name="TruckType" />
+    <Property Type="String" Name="TruckCategory" />
+    <Property Type="String" Name="KBBOptionsId" />
+    <Property Type="String" Name="Note" />
+    <Property Type="Int32" Name="Carfaxowner" />
+    <Property Type="Int32" Name="KBBTrimId" />
+    <Property Type="Binary" Name="Signature" />
+    <Property Type="String" Name="Email" />
+    <Property Type="String" Name="Phone" />
+    <Property Type="String" Name="Street" />
+    <Property Type="Binary" Name="Photo" />
+    <Property Type="String" Name="Status" />
+    <Property Type="Boolean" Name="VinGenie" />
+    <Property Type="String" Name="UserStamp" />
+    <Property Type="DateTime" Name="DateStamp" />
+    <Property Type="Int32" Name="NumberOfCar" />
+    <Property Type="Int32" Name="CarRanking" />
+    <Property Type="String" Name="DeviceId" />
+    <Property Type="String" Name="DeviceName" />
+    <Property Type="Decimal" Name="MarketLowestPrice" />
+    <Property Type="Decimal" Name="MarketAveragePrice" />
+    <Property Type="Decimal" Name="MarketHighestPrice" />
+    <Property Type="String" Name="ColorCode" />
+    <Property Type="String" Name="PhotoUrl" />
+    <Property Type="String" Name="SignatureUrl" />
+    <Property Type="Int32" Name="MarketRange" />
+    <Property Type="String" Name="PackageDescriptions" />
+    <Property Type="String" Name="KarPowerEntryId" />
+    <Property Type="String" Name="Location" />
+    <Property Type="Int32" Name="ManheimTrimId" />
+    <Property Type="String" Name="MarketTrim" />
+    <NavigationProperty Name="vincontrolanswers" Relationship="whitmanenterprisewarehouseModel.fk_answers_appraisals" FromRole="whitmanenterpriseappraisal" ToRole="vincontrolanswer" />
+    <NavigationProperty Name="vincontrolwalkarounds" Relationship="whitmanenterprisewarehouseModel.fk_walkaround_appraisal" FromRole="whitmanenterpriseappraisal" ToRole="vincontrolwalkaround" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisebayad">
+    <Key>
+      <PropertyRef Name="AutoId" />
+    </Key>
+    <Property Type="Int32" Name="AutoId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ListingId" Nullable="false" />
+    <Property Type="String" Name="EbayAdId" />
+    <Property Type="String" Name="EbayAdURL" />
+    <Property Type="DateTime" Name="EbayAdStartTime" />
+    <Property Type="DateTime" Name="EbayAdEndTime" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisebb">
+    <Key>
+      <PropertyRef Name="AutoId" />
+    </Key>
+    <Property Type="Int32" Name="AutoId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Vin" />
+    <Property Type="String" Name="Trim" />
+    <Property Type="String" Name="TradeInFairPrice" />
+    <Property Type="String" Name="TradeInGoodPrice" />
+    <Property Type="String" Name="TradeInVeryGoodPrice" />
+    <Property Type="DateTime" Name="DateAdded" />
+    <Property Type="DateTime" Name="LastUpdated" />
+    <Property Type="DateTime" Name="ExpiredDate" />
+  </EntityType>
+  <EntityType Name="whitmanenterpriseclientinfo">
+    <Key>
+      <PropertyRef Name="idwhitmanenterpriseclientinfo" />
+    </Key>
+    <Property Type="Int32" Name="idwhitmanenterpriseclientinfo" Nullable="false" />
+    <Property Type="String" Name="FirstName" />
+    <Property Type="String" Name="LastName" />
+    <Property Type="String" Name="Email" />
+    <Property Type="String" Name="Phone" />
+    <Property Type="String" Name="Date" />
+    <Property Type="String" Name="Time" />
+    <Property Type="String" Name="Comment" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisedealergroup">
+    <Key>
+      <PropertyRef Name="DealerGroupId" />
+    </Key>
+    <Property Type="String" Name="DealerGroupId" Nullable="false" />
+    <Property Type="String" Name="DealerGroupName" />
+    <Property Type="String" Name="MasterUserName" />
+    <Property Type="String" Name="MasterLogin" />
+    <Property Type="Int32" Name="DefaultDealerID" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisedealership">
+    <Key>
+      <PropertyRef Name="idWhitmanenterpriseDealership" />
+    </Key>
+    <Property Type="Int32" Name="idWhitmanenterpriseDealership" Nullable="false" />
+    <Property Type="String" Name="DealerPassword" />
+    <Property Type="String" Name="DealershipName" />
+    <Property Type="String" Name="DealershipAddress" />
+    <Property Type="DateTime" Name="DateAdded" />
+    <Property Type="String" Name="Lattitude" />
+    <Property Type="String" Name="Longtitude" />
+    <Property Type="String" Name="Address" />
+    <Property Type="String" Name="City" />
+    <Property Type="String" Name="State" />
+    <Property Type="String" Name="ZipCode" />
+    <Property Type="String" Name="Phone" />
+    <Property Type="String" Name="DealerGroupID" />
+    <Property Type="String" Name="Email" />
+    <Property Type="Int32" Name="EmailFormat" />
+    <Property Type="Decimal" Name="PriceVariance" />
+    <Property Type="Boolean" Name="OverideDealerKBBReport" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisedealershipinventory">
+    <Key>
+      <PropertyRef Name="ListingID" />
+    </Key>
+    <Property Type="Int32" Name="ListingID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ModelYear" />
+    <Property Type="String" Name="Make" />
+    <Property Type="String" Name="Model" />
+    <Property Type="String" Name="Trim" />
+    <Property Type="String" Name="VINNumber" />
+    <Property Type="String" Name="StockNumber" />
+    <Property Type="String" Name="SalePrice" />
+    <Property Type="String" Name="MSRP" />
+    <Property Type="String" Name="DealerMSRP" />
+    <Property Type="String" Name="Mileage" />
+    <Property Type="String" Name="ExteriorColor" />
+    <Property Type="String" Name="InteriorColor" />
+    <Property Type="String" Name="InteriorSurface" />
+    <Property Type="String" Name="BodyType" />
+    <Property Type="String" Name="Cylinders" />
+    <Property Type="String" Name="Liters" />
+    <Property Type="String" Name="EngineType" />
+    <Property Type="String" Name="DriveTrain" />
+    <Property Type="String" Name="FuelType" />
+    <Property Type="String" Name="Tranmission" />
+    <Property Type="String" Name="Doors" />
+    <Property Type="String" Name="FuelEconomyCity" />
+    <Property Type="String" Name="FuelEconomyHighWay" />
+    <Property Type="Boolean" Name="Certified" />
+    <Property Type="String" Name="StandardOptions" />
+    <Property Type="String" Name="CarsOptions" />
+    <Property Type="String" Name="CarsPackages" />
+    <Property Type="String" Name="Descriptions" />
+    <Property Type="String" Name="CarImageUrl" />
+    <Property Type="String" Name="ThumbnailImageURL" />
+    <Property Type="DateTime" Name="DateInStock" />
+    <Property Type="DateTime" Name="LastUpdated" />
+    <Property Type="Int32" Name="DealershipId" />
+    <Property Type="String" Name="DealershipName" />
+    <Property Type="String" Name="DealershipAddress" />
+    <Property Type="String" Name="DealershipCity" />
+    <Property Type="String" Name="DealershipState" />
+    <Property Type="String" Name="DealershipPhone" />
+    <Property Type="String" Name="DealershipZipCode" />
+    <Property Type="String" Name="DealerCost" />
+    <Property Type="String" Name="ACV" />
+    <Property Type="String" Name="DefaultImageUrl" />
+    <Property Type="String" Name="NewUsed" />
+    <Property Type="String" Name="AddToInventoryBy" />
+    <Property Type="String" Name="AppraisalID" />
+    <Property Type="String" Name="VehicleType" />
+    <Property Type="String" Name="TruckClass" />
+    <Property Type="String" Name="TruckType" />
+    <Property Type="String" Name="TruckCategory" />
+    <Property Type="Int32" Name="WarrantyInfo" />
+    <Property Type="String" Name="RetailPrice" />
+    <Property Type="String" Name="WindowStickerPrice" />
+    <Property Type="String" Name="DealerDiscount" />
+    <Property Type="String" Name="ManufacturerRebate" />
+    <Property Type="Int32" Name="MarketRange" />
+    <Property Type="Boolean" Name="Recon" />
+    <Property Type="Boolean" Name="PriorRental" />
+    <Property Type="Int32" Name="CarFaxOwner" />
+    <Property Type="String" Name="KBBOptionsId" />
+    <Property Type="Int32" Name="KBBTrimId" />
+    <Property Type="Boolean" Name="PreWholeSale" />
+    <Property Type="String" Name="Disclaimer" />
+    <Property Type="Boolean" Name="DealerDemo" />
+    <Property Type="Boolean" Name="Unwind" />
+    <Property Type="Boolean" Name="IsFeatured" />
+    <Property Type="Int32" Name="NumberOfCar" />
+    <Property Type="Int32" Name="CarRanking" />
+    <Property Type="Decimal" Name="MarketLowestPrice" />
+    <Property Type="Decimal" Name="MarketAveragePrice" />
+    <Property Type="Decimal" Name="MarketHighestPrice" />
+    <Property Type="String" Name="ColorCode" />
+    <Property Type="String" Name="AdditionalTitle" />
+    <Property Type="String" Name="ChromeStyleId" />
+    <Property Type="String" Name="ChromeModelId" />
+    <Property Type="Boolean" Name="EnableAutoDescription" />
+    <Property Type="Int32" Name="Template" />
+    <Property Type="String" Name="PackageDescriptions" />
+    <Property Type="Boolean" Name="Loaner" />
+    <Property Type="Boolean" Name="Auction" />
+    <Property Type="Int32" Name="BucketJumpCompleteDay" />
+    <Property Type="Int32" Name="ManheimTrimId" />
+    <Property Type="String" Name="MarketTrim" />
+    <Property Type="Boolean" Name="ACar" />
+    <NavigationProperty Name="vincontroldescriptiontemplate" Relationship="whitmanenterprisewarehouseModel.Template" FromRole="whitmanenterprisedealershipinventory" ToRole="vincontroldescriptiontemplate" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisedealershipinventorysoldout">
+    <Key>
+      <PropertyRef Name="ListingID" />
+    </Key>
+    <Property Type="Int32" Name="ListingID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ModelYear" />
+    <Property Type="String" Name="Make" />
+    <Property Type="String" Name="Model" />
+    <Property Type="String" Name="Trim" />
+    <Property Type="String" Name="VINNumber" />
+    <Property Type="String" Name="StockNumber" />
+    <Property Type="String" Name="SalePrice" />
+    <Property Type="String" Name="MSRP" />
+    <Property Type="String" Name="DealerMSRP" />
+    <Property Type="String" Name="Mileage" />
+    <Property Type="String" Name="ExteriorColor" />
+    <Property Type="String" Name="InteriorColor" />
+    <Property Type="String" Name="InteriorSurface" />
+    <Property Type="String" Name="BodyType" />
+    <Property Type="String" Name="Cylinders" />
+    <Property Type="String" Name="Liters" />
+    <Property Type="String" Name="EngineType" />
+    <Property Type="String" Name="DriveTrain" />
+    <Property Type="String" Name="FuelType" />
+    <Property Type="String" Name="Tranmission" />
+    <Property Type="String" Name="Doors" />
+    <Property Type="String" Name="FuelEconomyCity" />
+    <Property Type="String" Name="FuelEconomyHighWay" />
+    <Property Type="Boolean" Name="Certified" />
+    <Property Type="String" Name="CarsOptions" />
+    <Property Type="String" Name="CarsPackages" />
+    <Property Type="String" Name="Descriptions" />
+    <Property Type="String" Name="CarImageUrl" />
+    <Property Type="String" Name="ThumbnailImageURL" />
+    <Property Type="DateTime" Name="DateInStock" />
+    <Property Type="DateTime" Name="LastUpdated" />
+    <Property Type="DateTime" Name="DateRemoved" />
+    <Property Type="String" Name="DealershipName" />
+    <Property Type="String" Name="DealershipAddress" />
+    <Property Type="String" Name="DealershipCity" />
+    <Property Type="String" Name="DealershipState" />
+    <Property Type="String" Name="DealershipZipCode" />
+    <Property Type="String" Name="DealershipPhone" />
+    <Property Type="Int32" Name="DealershipId" />
+    <Property Type="String" Name="DealerCost" />
+    <Property Type="String" Name="ACV" />
+    <Property Type="String" Name="DefaultImageUrl" />
+    <Property Type="String" Name="NewUsed" />
+    <Property Type="String" Name="RemoveBy" />
+    <Property Type="String" Name="AddToInventoryBy" />
+    <Property Type="String" Name="AppraisalID" />
+    <Property Type="Boolean" Name="DataFeed" />
+    <Property Type="String" Name="FirstName" />
+    <Property Type="String" Name="LastName" />
+    <Property Type="String" Name="Address" />
+    <Property Type="String" Name="City" />
+    <Property Type="String" Name="State" />
+    <Property Type="String" Name="ZipCode" />
+    <Property Type="String" Name="VehicleType" />
+    <Property Type="String" Name="TruckClass" />
+    <Property Type="String" Name="TruckType" />
+    <Property Type="String" Name="TruckCategory" />
+    <Property Type="Int32" Name="WarrantyInfo" />
+    <Property Type="String" Name="RetailPrice" />
+    <Property Type="String" Name="WindowStickerPrice" />
+    <Property Type="String" Name="DealerDiscount" />
+    <Property Type="String" Name="ManufacturerRebate" />
+    <Property Type="Boolean" Name="Recon" />
+    <Property Type="Boolean" Name="PriorRental" />
+    <Property Type="String" Name="StandardOptions" />
+    <Property Type="Int32" Name="CarFaxOwner" />
+    <Property Type="String" Name="KBBOptionsId" />
+    <Property Type="Int32" Name="KBBTrimId" />
+    <Property Type="String" Name="Disclaimer" />
+    <Property Type="Boolean" Name="DealerDemo" />
+    <Property Type="Boolean" Name="Unwind" />
+    <Property Type="Int32" Name="NumberOfCar" />
+    <Property Type="Int32" Name="CarRanking" />
+    <Property Type="String" Name="ColorCode" />
+    <Property Type="String" Name="AdditionalTitle" />
+    <Property Type="String" Name="ChromeStyleId" />
+    <Property Type="String" Name="ChromeModelId" />
+    <Property Type="Boolean" Name="Loaner" />
+    <Property Type="Boolean" Name="Auction" />
+    <Property Type="String" Name="Country" />
+  </EntityType>
+  <EntityType Name="whitmanenterpriseebayvehiclecategory">
+    <Key>
+      <PropertyRef Name="EbayCategoryID" />
+    </Key>
+    <Property Type="Int32" Name="EbayCategoryID" Nullable="false" />
+    <Property Type="String" Name="Make" />
+    <Property Type="String" Name="Model" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisekbb">
+    <Key>
+      <PropertyRef Name="AutoId" />
+    </Key>
+    <Property Type="Int32" Name="AutoId" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Vin" />
+    <Property Type="String" Name="Trim" />
+    <Property Type="String" Name="TradeInFairPrice" />
+    <Property Type="String" Name="TradeInGoodPrice" />
+    <Property Type="String" Name="TradeInVeryGoodPrice" />
+    <Property Type="DateTime" Name="DateAdded" />
+    <Property Type="DateTime" Name="LastUpdated" />
+    <Property Type="DateTime" Name="ExpiredDate" />
+    <Property Type="String" Name="BaseWholeSale" />
+    <Property Type="String" Name="MileageAdjustment" />
+    <Property Type="String" Name="WholeSale" />
+    <Property Type="Int32" Name="TrimId" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisesetting">
+    <Key>
+      <PropertyRef Name="idwhitmanenterprisesetting" />
+    </Key>
+    <Property Type="Int32" Name="idwhitmanenterprisesetting" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="InventorySorting" />
+    <Property Type="String" Name="SoldOut" />
+    <Property Type="Int32" Name="DealershipId" />
+    <Property Type="String" Name="Cragislist" />
+    <Property Type="String" Name="CraigslistPassword" />
+    <Property Type="String" Name="Ebay" />
+    <Property Type="String" Name="EbayPassword" />
+    <Property Type="String" Name="CarFax" />
+    <Property Type="String" Name="CarFaxPassword" />
+    <Property Type="String" Name="Manheim" />
+    <Property Type="String" Name="ManheimPassword" />
+    <Property Type="String" Name="KellyBlueBook" />
+    <Property Type="String" Name="KellyPassword" />
+    <Property Type="String" Name="BlackBook" />
+    <Property Type="String" Name="BlackBookPassword" />
+    <Property Type="String" Name="AutoCheck" />
+    <Property Type="String" Name="AutoCheckPassword" />
+    <Property Type="Boolean" Name="AppraisalNotification" />
+    <Property Type="Boolean" Name="WholeNotification" />
+    <Property Type="Boolean" Name="InventoryNotification" />
+    <Property Type="Boolean" Name="C24Hnotification" />
+    <Property Type="Boolean" Name="NoteNotification" />
+    <Property Type="Boolean" Name="PriceChangeNotification" />
+    <Property Type="Boolean" Name="AgeingBucketNotification" />
+    <Property Type="String" Name="DefaultStockImageUrl" />
+    <Property Type="Boolean" Name="OverideStockImage" />
+    <Property Type="String" Name="DealerInfo" />
+    <Property Type="String" Name="DealerWarranty" />
+    <Property Type="String" Name="TermsAndCondition" />
+    <Property Type="String" Name="EbayToken" />
+    <Property Type="String" Name="EbayInventoryURL" />
+    <Property Type="String" Name="CreditURL" />
+    <Property Type="String" Name="WebSiteURL" />
+    <Property Type="String" Name="ContactUsURL" />
+    <Property Type="String" Name="FacebookURL" />
+    <Property Type="String" Name="LogoURL" />
+    <Property Type="String" Name="ContactPerson" />
+    <Property Type="Boolean" Name="RetailPrice" />
+    <Property Type="Boolean" Name="DealerDiscount" />
+    <Property Type="Boolean" Name="ManufacturerReabte" />
+    <Property Type="Boolean" Name="SalePrice" />
+    <Property Type="String" Name="ManufacturerWarranty" />
+    <Property Type="String" Name="ManufacturerWarrantySpanish" />
+    <Property Type="String" Name="ManufacturerWarrantyDuration" />
+    <Property Type="String" Name="DealerCertified" />
+    <Property Type="String" Name="DealerCertifiedSpanish" />
+    <Property Type="String" Name="DealerCertifiedDuration" />
+    <Property Type="String" Name="ManufacturerCertified" />
+    <Property Type="String" Name="ManufacturerCertifiedSpanish" />
+    <Property Type="String" Name="ManufacturerCertifiedDuration" />
+    <Property Type="String" Name="ShippingInfo" />
+    <Property Type="String" Name="AsIsWarranty" />
+    <Property Type="String" Name="AsIsWarrantySpanish" />
+    <Property Type="String" Name="StartDescriptionSentence" />
+    <Property Type="String" Name="EndDescriptionSentence" />
+    <Property Type="String" Name="AuctionSentence" />
+    <Property Type="Int32" Name="FirstTimeRangeBucketJump" />
+    <Property Type="Int32" Name="SecondTimeRangeBucketJump" />
+    <Property Type="Int32" Name="IntervalBucketJump" />
+    <Property Type="String" Name="RetailPriceText" />
+    <Property Type="String" Name="DealerDiscountText" />
+    <Property Type="String" Name="ManufactureReabateText" />
+    <Property Type="String" Name="SalePriceText" />
+    <Property Type="String" Name="HeaderOverlayURL" />
+    <Property Type="String" Name="FooterOverlayURL" />
+    <Property Type="Boolean" Name="MarketPriceRangeChangeNotification" />
+    <Property Type="Boolean" Name="KellyBlueBookAccessRight" />
+    <Property Type="Boolean" Name="AutoDescription" />
+    <Property Type="Boolean" Name="AutoDescriptionSubscribe" />
+  </EntityType>
+  <EntityType Name="whitmanenterpriseusazipcode">
+    <Key>
+      <PropertyRef Name="ZIPCode" />
+    </Key>
+    <Property Type="Int32" Name="ZIPCode" Nullable="false" />
+    <Property Type="String" Name="ZIPType" />
+    <Property Type="String" Name="CityName" />
+    <Property Type="String" Name="CityType" />
+    <Property Type="String" Name="CountyName" />
+    <Property Type="String" Name="CountyFIPS" />
+    <Property Type="String" Name="StateName" />
+    <Property Type="String" Name="StateAbbr" />
+    <Property Type="String" Name="StateFIPS" />
+    <Property Type="String" Name="MSACode" />
+    <Property Type="String" Name="AreaCode" />
+    <Property Type="String" Name="TimeZone" />
+    <Property Type="String" Name="UTC" />
+    <Property Type="String" Name="DST" />
+    <Property Type="String" Name="Latitude" />
+    <Property Type="String" Name="Longitude" />
+  </EntityType>
+  <EntityType Name="whitmanenterpriseuser">
+    <Key>
+      <PropertyRef Name="idwhitmanenterpriseuser" />
+    </Key>
+    <Property Type="Int32" Name="idwhitmanenterpriseuser" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" />
+    <Property Type="String" Name="UserName" />
+    <Property Type="String" Name="Password" />
+    <Property Type="String" Name="Email" />
+    <Property Type="String" Name="Cellphone" />
+    <Property Type="String" Name="RoleName" />
+    <Property Type="Int32" Name="DealershipID" />
+    <Property Type="Boolean" Name="Active" />
+    <Property Type="Int32" Name="DefaultLogin" />
+    <Property Type="String" Name="DealerGroupId" />
+  </EntityType>
+  <EntityType Name="whitmanenterpriseusersnotification">
+    <Key>
+      <PropertyRef Name="idwhitmanenterpriseusersnotification" />
+    </Key>
+    <Property Type="Int32" Name="idwhitmanenterpriseusersnotification" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="UserName" />
+    <Property Type="Boolean" Name="AppraisalNotification" />
+    <Property Type="Boolean" Name="WholeNotification" />
+    <Property Type="Boolean" Name="InventoryNotification" />
+    <Property Type="Boolean" Name="C24Hnotification" />
+    <Property Type="Boolean" Name="NoteNotification" />
+    <Property Type="Boolean" Name="PriceChangeNotification" />
+    <Property Type="Boolean" Name="AgingNotification" />
+    <Property Type="Int32" Name="DealershipId" />
+    <Property Type="Boolean" Name="MarketPriceRangeNotification" />
+  </EntityType>
+  <EntityType Name="whitmanenterprisevehiclecategory">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Type="Int32" Name="CategoryID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="NameCompare" />
+    <Property Type="String" Name="Make" />
+    <Property Type="Int32" Name="Year" />
+    <Property Type="String" Name="Model" />
+    <Property Type="DateTime" Name="LastUpdated" Nullable="false" />
+  </EntityType>
+  <Association Name="makemodel">
+    <End Type="whitmanenterprisewarehouseModel.manheimmakemodel" Role="manheimmakemodel" Multiplicity="0..1" />
+    <End Type="whitmanenterprisewarehouseModel.manheimmodeltrim" Role="manheimmodeltrim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="manheimmakemodel">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="manheimmodeltrim">
+        <PropertyRef Name="makemodelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="model">
+    <End Type="whitmanenterprisewarehouseModel.manheimmodel" Role="manheimmodel" Multiplicity="0..1" />
+    <End Type="whitmanenterprisewarehouseModel.manheimmakemodel" Role="manheimmakemodel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="manheimmodel">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="manheimmakemodel">
+        <PropertyRef Name="modelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="yearmake">
+    <End Type="whitmanenterprisewarehouseModel.manheimyearmake" Role="manheimyearmake" Multiplicity="0..1" />
+    <End Type="whitmanenterprisewarehouseModel.manheimmakemodel" Role="manheimmakemodel" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="manheimyearmake">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="manheimmakemodel">
+        <PropertyRef Name="yearmakeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="makeId">
+    <End Type="whitmanenterprisewarehouseModel.manheimmake" Role="manheimmake" Multiplicity="0..1" />
+    <End Type="whitmanenterprisewarehouseModel.manheimyearmake" Role="manheimyearmake" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="manheimmake">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="manheimyearmake">
+        <PropertyRef Name="makeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="trim">
+    <End Type="whitmanenterprisewarehouseModel.manheimtrim" Role="manheimtrim" Multiplicity="0..1" />
+    <End Type="whitmanenterprisewarehouseModel.manheimmodeltrim" Role="manheimmodeltrim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="manheimtrim">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="manheimmodeltrim">
+        <PropertyRef Name="trimId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_answers_appraisals">
+    <End Type="whitmanenterprisewarehouseModel.whitmanenterpriseappraisal" Role="whitmanenterpriseappraisal" Multiplicity="0..1" />
+    <End Type="whitmanenterprisewarehouseModel.vincontrolanswer" Role="vincontrolanswer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="whitmanenterpriseappraisal">
+        <PropertyRef Name="idAppraisal" />
+      </Principal>
+      <Dependent Role="vincontrolanswer">
+        <PropertyRef Name="appraisalid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_answers_questions">
+    <End Type="whitmanenterprisewarehouseModel.vincontrolquestion" Role="vincontrolquestion" Multiplicity="0..1" />
+    <End Type="whitmanenterprisewarehouseModel.vincontrolanswer" Role="vincontrolanswer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vincontrolquestion">
+        <PropertyRef Name="questionid" />
+      </Principal>
+      <Dependent Role="vincontrolanswer">
+        <PropertyRef Name="questionid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Template">
+    <End Type="whitmanenterprisewarehouseModel.vincontroldescriptiontemplate" Role="vincontroldescriptiontemplate" Multiplicity="0..1" />
+    <End Type="whitmanenterprisewarehouseModel.whitmanenterprisedealershipinventory" Role="whitmanenterprisedealershipinventory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vincontroldescriptiontemplate">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="whitmanenterprisedealershipinventory">
+        <PropertyRef Name="Template" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_grouppermission_group">
+    <End Type="whitmanenterprisewarehouseModel.vincontrolgroup" Role="vincontrolgroup" Multiplicity="1" />
+    <End Type="whitmanenterprisewarehouseModel.vincontrolgrouppermission" Role="vincontrolgrouppermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vincontrolgroup">
+        <PropertyRef Name="groupid" />
+      </Principal>
+      <Dependent Role="vincontrolgrouppermission">
+        <PropertyRef Name="groupid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_grouppermission_permissioncodes">
+    <End Type="whitmanenterprisewarehouseModel.vincontrolpermissioncode" Role="vincontrolpermissioncode" Multiplicity="1" />
+    <End Type="whitmanenterprisewarehouseModel.vincontrolgrouppermission" Role="vincontrolgrouppermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vincontrolpermissioncode">
+        <PropertyRef Name="permissioncodeid" />
+      </Principal>
+      <Dependent Role="vincontrolgrouppermission">
+        <PropertyRef Name="permissioncode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_grouppermission_permissionvalue">
+    <End Type="whitmanenterprisewarehouseModel.vincontrolpermissionvalue" Role="vincontrolpermissionvalue" Multiplicity="1" />
+    <End Type="whitmanenterprisewarehouseModel.vincontrolgrouppermission" Role="vincontrolgrouppermission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vincontrolpermissionvalue">
+        <PropertyRef Name="permissionvalueid" />
+      </Principal>
+      <Dependent Role="vincontrolgrouppermission">
+        <PropertyRef Name="permissionvalue" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_usergroup_groups">
+    <End Type="whitmanenterprisewarehouseModel.vincontrolgroup" Role="vincontrolgroup" Multiplicity="1" />
+    <End Type="whitmanenterprisewarehouseModel.vincontrolusergroup" Role="vincontrolusergroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vincontrolgroup">
+        <PropertyRef Name="groupid" />
+      </Principal>
+      <Dependent Role="vincontrolusergroup">
+        <PropertyRef Name="groupid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_questions_questiontype">
+    <End Type="whitmanenterprisewarehouseModel.vincontrolquestiontype" Role="vincontrolquestiontype" Multiplicity="0..1" />
+    <End Type="whitmanenterprisewarehouseModel.vincontrolquestion" Role="vincontrolquestion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vincontrolquestiontype">
+        <PropertyRef Name="questiontypeid" />
+      </Principal>
+      <Dependent Role="vincontrolquestion">
+        <PropertyRef Name="questiontypeid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_sentence_type">
+    <End Type="whitmanenterprisewarehouseModel.vincontrolsentencetype" Role="vincontrolsentencetype" Multiplicity="1" />
+    <End Type="whitmanenterprisewarehouseModel.vincontrolsentence" Role="vincontrolsentence" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vincontrolsentencetype">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="vincontrolsentence">
+        <PropertyRef Name="typeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_vin_customer">
+    <End Type="whitmanenterprisewarehouseModel.vincontrolsouthcoastmitsubishi" Role="vincontrolsouthcoastmitsubishi" Multiplicity="1" />
+    <End Type="whitmanenterprisewarehouseModel.vincontrolsouthcoastmitsubishivin" Role="vincontrolsouthcoastmitsubishivin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vincontrolsouthcoastmitsubishi">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="vincontrolsouthcoastmitsubishivin">
+        <PropertyRef Name="customerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_usergroup_users">
+    <End Type="whitmanenterprisewarehouseModel.vincontroluser" Role="vincontroluser" Multiplicity="1" />
+    <End Type="whitmanenterprisewarehouseModel.vincontrolusergroup" Role="vincontrolusergroup" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="vincontroluser">
+        <PropertyRef Name="userid" />
+      </Principal>
+      <Dependent Role="vincontrolusergroup">
+        <PropertyRef Name="userid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_walkaround_appraisal">
+    <End Type="whitmanenterprisewarehouseModel.whitmanenterpriseappraisal" Role="whitmanenterpriseappraisal" Multiplicity="0..1" />
+    <End Type="whitmanenterprisewarehouseModel.vincontrolwalkaround" Role="vincontrolwalkaround" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="whitmanenterpriseappraisal">
+        <PropertyRef Name="idAppraisal" />
+      </Principal>
+      <Dependent Role="vincontrolwalkaround">
+        <PropertyRef Name="appraisalid" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

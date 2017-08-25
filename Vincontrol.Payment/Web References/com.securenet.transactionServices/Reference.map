@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://certify.securenet.com/API/DATA/TRANSACTION.svc?xsd=xsd1" filename="TRANSACTION.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://certify.securenet.com/API/DATA/TRANSACTION.svc?wsdl=wsdl0" filename="TRANSACTION.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="https://certify.securenet.com/API/Data/TRANSACTION.svc?wsdl" filename="TRANSACTION0.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://certify.securenet.com/API/DATA/TRANSACTION.svc?xsd=xsd0" filename="TRANSACTION0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://certify.securenet.com/API/DATA/TRANSACTION.svc?xsd=xsd2" filename="TRANSACTION1.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

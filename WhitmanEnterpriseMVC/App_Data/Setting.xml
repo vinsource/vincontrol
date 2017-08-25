@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfVINCustomSetting>
+  <VINCustomSetting Key="MaintenanceStartDateTime" Value="2013-10-07 10:18:00"></VINCustomSetting>
+  <VINCustomSetting Key="MaintenanceEndDateTime" Value="2013-10-07 10:25:42"></VINCustomSetting>
+  <VINCustomSetting Key="IsMaintenance" Value="false"></VINCustomSetting>
+  <VINCustomSetting Key="NotifyBeforeInMinutes" Value="60"></VINCustomSetting>
+</ArrayOfVINCustomSetting>

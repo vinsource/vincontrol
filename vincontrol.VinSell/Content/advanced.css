@@ -1,0 +1,80 @@
+.content h3 {
+  margin: 0;
+  padding: 10px;
+  background: #161e8a;
+}
+
+select.cr {
+  padding: 0;
+}
+
+.content .filter {
+  padding: 20px;
+}
+
+.text-search {
+  padding: 15px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background: #e8eaef;
+  /*border: 3px solid #161e8a;*/
+}
+
+.carfax-lable {
+  display: inline-block;
+  width: 125px;
+}
+
+.advanced-vehicle,
+.advanced-auction {
+  display: inline-block;
+  float: left;
+  padding: 15px;
+  margin-right: 5px;
+  background: #e8eaef;
+  /*border: 3px solid #161e8a;*/
+  height: 325px;
+}
+
+.ui-multiselect-menu {
+  background: white;
+}
+
+.content .adv-wrap {
+  margin-bottom: 10px;
+  display: inline-block;
+  width: 240px;
+}
+
+.content .adv-wrap select {
+  width: 200px;
+}
+
+#mileage select {
+  width: 93px;
+}
+
+button.adv-search {
+  background: #161e8a;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  border: none;
+  padding: .2em .6em .2em .6em;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.adv-info {
+  padding: 15px;
+  margin-right: 20px;
+  background: #e8eaef;
+  /*border: 3px solid #161e8a;*/
+  margin-bottom: 20px;
+  font-style: italic;
+  font-size: .9em;
+}
+
+button.adv-search:hover {
+  background: #aaa;
+}

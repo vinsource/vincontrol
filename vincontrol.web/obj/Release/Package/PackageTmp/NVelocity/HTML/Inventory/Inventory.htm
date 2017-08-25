@@ -1,0 +1,181 @@
+﻿<style type="text/css">
+    .nav_middle {
+        width: 56px!important;
+    }
+</style>
+#set ($i=0)
+<!--<div class="vin_listVehicle_holder">-->
+    #foreach($car in $Inventories) #set ($i=$i+1) #set ($j=$i%2) #if($j==1)
+    <div class="contain_list list_even $car.ClassFilter">
+        #else
+        <div class="contain_list list_odd $car.ClassFilter">
+            #end
+            <div class="right_content_items nav_middle">
+                #if($car.IsFeatured==true)
+                <input type="checkbox" title="Is featured car?" name="IsFeatured_$car.ListingId"
+                    id="IsFeatured_$car.ListingId" value="true" checked="checked" />
+                #else
+                <input type="checkbox" title="Is featured car?" name="IsFeatured_$car.ListingId"
+                    id="IsFeatured_$car.ListingId" value="true" />
+                #end
+            </div>
+            <div class="right_content_items nav_short">
+                <a class="vin_viewprofile" href="$car.URLDetail">
+                    #if ($car.Condition == true && $car.Type < 4)
+                        #if ($car.MarketRange == 3)
+                        <div class="age_text orange_color">
+                            #if ($car.DaysInInvenotry > 0)
+                                $!car.DaysInInvenotry
+                            #else
+                                N/A
+                            #end
+                        </div>
+                        #elseif ($car.MarketRange == 2)
+                        <div class="age_text green_color">
+                            #if ($car.DaysInInvenotry > 0)
+                                $!car.DaysInInvenotry
+                            #else
+                                N/A
+                            #end
+                        </div>
+                        #elseif ($car.MarketRange == 1)
+                        <div class="age_text blue_color">
+                            #if ($car.DaysInInvenotry > 0)
+                                $!car.DaysInInvenotry
+                            #else
+                                N/A
+                            #end
+                        </div>
+                        #else
+                        <div class="age_text black_color">
+                            #if ($car.DaysInInvenotry > 0)
+                                $!car.DaysInInvenotry
+                            #else
+                                N/A
+                            #end
+                        </div>
+                        #end
+                    #else
+                        <div class="age_text_border border_color">
+                            #if ($car.DaysInInvenotry > 0)
+                                $!car.DaysInInvenotry
+                            #else
+                                N/A
+                            #end
+                        </div>
+                    #end
+                </a>
+            </div>
+            <a class="vin_editProfile" href="$car.URLEdit">
+            <div class="right_content_items right_content_items_maket nav_middle">
+                $!car.MarketData
+            </div>
+            </a>
+            <a class="vin_editProfile invent_expanded" href="$car.URLDetail">
+                <div class="right_content_items  invent_expanded invent_expanded_img">
+                    <img alt="dealer-info-plus-car-info-here" src="http://vincontrol.com/DealerImages/1200/1GNSCBE05CR228104/ThumbnailSizeImages/3da390d8-d845-470c-92ab-25891456adaeDSCF4825.JPG.jpg" />
+                </div>
+            </a><a class="vin_editProfile" href="$car.URLEdit" title="$!car.Vin">
+                <div class="right_content_items right_content_items_vin nav_long">
+                    $!car.SortVin
+                </div>
+            </a><a class="vin_editProfile" href="$car.URLEdit">
+                <div class="right_content_items nav_long">
+                    $!car.Stock
+                </div>
+            </a><a class="vin_editProfile" href="$car.URLEdit">
+                <div class="right_content_items nav_middle">
+                    $!car.ModelYear
+                </div>
+            </a><a class="vin_editProfile" href="$car.URLEdit" title="$!car.Make">
+                <div class="right_content_items nav_long">
+                    $!car.ShortMake
+                </div>
+            </a><a class="vin_editProfile" href="$car.URLEdit" title="$!car.Model">
+                <div class="right_content_items nav_long">
+                    $!car.ShortModel
+                </div>
+            </a><a class="vin_editProfile" href="$car.URLEdit" title="$!car.Trim">
+                <div class="right_content_items nav_long">
+                    $!car.StrTrim
+                </div>
+            </a>
+            <div class="right_content_items nav_middle" title="$!car.ExteriorColor">
+                $!car.StrExteriorColor
+            </div>
+            <div class="right_content_items nav_long vehicle_miles_Search">
+                <input type="text" id="$car.ListingId" name="odometer" class="sForm" disabled="disabled" maxlength="18" value="$car.StrMileage" />  
+            </div>
+            <div class="right_content_items nav_long vehicle_price">
+                <input type="text" id="$car.ListingId" name="price" class="sForm" inventoryStatusCodeId="$car.Type" disabled="disabled" 
+                    maxlength="18" value="$car.StrSalePrice" style="padding-left: 0px;" />
+            </div>
+            #if ($car.Condition == true && $car.Type < 4)
+                <div class="right_content_items">
+                    #if ($car.MarketRange == 3)
+                    <img src="/Content/images/market_higher.gif" class="AdvanceSearch" />
+                    #elseif ($car.MarketRange == 2)
+                    <img src="/Content/images/market_equal.gif" class="AdvanceSearch" />
+                    #elseif ($car.MarketRange == 1)
+                    <img src="/Content/images/market_lower.gif" class="AdvanceSearch" />
+                    #else
+                    <img src="/Content/images/market_question.gif" class="AdvanceSearch" />
+                    #end
+                </div>
+            #else
+                <div style="float: left; min-height: 1px; width: 17px"></div>
+            #end
+
+            #if ($car.CarFaxOwner >= 0)
+            <div class="right_content_items right_content_items_owners_new nav_short" style="margin-left: 40px">
+                $!car.CarFaxOwner
+            </div>
+            #end
+            #if ($car.Type < 9)
+            <div class="inventory_action_btns" style="width: auto !important; float:left !important; margin-right: 0px !important;">
+                #if ($AllowBG == true)
+                <a title="Buyer's Guide" class="iframe btns_shadow" href="$car.URLBG">
+                    <img src="../content/images/vincontrol/buyer-guide.png" height="20px" />
+                </a>
+                #end
+                #if ($AllowWS == true)
+                <a title="Window Sticker" class="iframe btns_shadow" href="$car.URLWS">
+                    <img src="../content/images/vincontrol/windows-sticker.png" height="20px" />
+                </a>
+                #end
+                #if($car.Type==0||$car.Type==1||$car.Type==8) 
+                    #if($car.Reconstatus==false && $AllowEbay == true) 
+                <a title="eBay" class="iframe btns_shadow" href="$car.URLEbay">
+                    <img src="../content/images/vincontrol/ebay.png" height="20px" />
+                </a>
+                    #end 
+                #end
+                #if ($car.Type !="4")
+                <div title="Craigslist" class="iframe btns_shadow adv_btnCraigslist">
+                    <img src="../content/images/vincontrol/Craigslist.png" height="20px" id="btnCraigslist_$car.ListingId"/>
+                </div>
+                #end
+            </div>
+            #end
+            <div class="invent_expanded_action_holder invent_expanded">
+                <label class="invent_expanded_recon">
+                    <input type="checkbox" />
+                    Recon
+                </label>
+                <div class="invent_expanded_ebay">
+                    <a title="eBay" class="iframe" href="$car.URLEbay"></a>
+                </div>
+                <div class="invent_expanded_bg">
+                    <a title="Buyer's Guide" class="iframe" href="$car.URLBG">Buyer's Guide</a>
+                </div>
+                <div class="invent_expanded_ws">
+                    <!--<a title="Window Sticker" target="_blank" onclick="javascript:openWindowSticker($car.ListingId)">Window Stickers</a>-->
+                    <a title="Window Sticker" class="iframe" href="$car.URLWS">Window Stickers</a>
+                </div>
+            </div>
+            <div style="clear: both">
+            </div>
+        </div>
+        #end
+    </div>
+<!--</div>-->

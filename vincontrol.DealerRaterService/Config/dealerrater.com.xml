@@ -1,0 +1,52 @@
+﻿<reviewSite name="dealerrater.com" url="www.dealerrater.com">
+  <namespaces>
+    <namespace name="ns" value="http://www.w3.org/1999/xhtml"/>
+  </namespaces>
+  <pages>
+    <reviewPage name="" dealerId="0" url="" 
+                hasAdditionalDealerReview="true" hasAdditionalUserReview="true" hasDetailUserReview="false" category="Sales">
+      <about context="//div[@id='about']" pattern="\,(.+)$"/>
+      <overallScore context="//span[@class='overall_score']"/>
+      <additionalReview>
+        <customerService context="//ul[@class='category_ratings']/li/span"/>
+        <qualityOfWork context="//ul[@class='category_ratings']/li[2]/span"/>
+        <friendliness context="//ul[@class='category_ratings']/li[3]/span"/>
+        <overallExperience context="//ul[@class='category_ratings']/li[4]/span"/>
+        <pricing context="//ul[@class='category_ratings']/li[5]/span"/>
+        <buyingProcess context=""/>
+        <overallFacilities context=""/>
+      </additionalReview>
+    </reviewPage>
+
+  </pages>
+
+  <reviews>
+    <reviewNode context="//div[@id='reviews']/article"/>
+    
+    <reviewUrl context=""/>
+    <reviewAuthor context="./div[@class='clearfix']/div/span[@class='reviewer']"/>
+    <reviewDate context="./div[@class='clearfix']/div/text()[3]"/>
+    <reviewContent context="./div[@class='clearfix'][2]/p[@class='description']"/>
+    <reviewDetailContent context=""/>
+    <reviewRating context="./div[@class='clearfix']/div[@id='dealerRatings']/ul[@class='category_ratings_indv']/li[@class='total']/span"/>
+    <additionalReview>
+      <customerService context="./div/div[2]/ul/li/span"/>
+      <qualityOfWork context="./div/div[2]/ul/li[2]/span"/>
+      <friendliness context="./div/div[2]/ul/li[3]/span"/>
+      <overallExperience context="./div/div[2]/ul/li[4]/span"/>
+      <pricing context="./div/div[2]/ul/li[5]/span"/>
+      <buyingProcess context=""/>
+      <overallFacilities context=""/>
+      <reasonForVisit context="./div/div/text()[5]"/>
+      <recommendThisDealer context="./div/div/text()[7]">
+        <replace>          
+          <filter original="Yes" replace="true"></filter>
+          <filter original="No" replace="false"></filter>          
+        </replace>
+      </recommendThisDealer>
+      <purchasedAVehicle context=""/>
+    </additionalReview>
+    
+    <nextPageUrl context="//center[@id='reviewNextPage']/a[contains(text(),'>>')]/@href"/>
+  </reviews>
+</reviewSite>

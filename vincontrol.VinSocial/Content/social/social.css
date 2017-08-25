@@ -1,0 +1,167 @@
+div.sub-nav {
+  position: relative;
+  top: 35px;
+}
+
+div.sub-nav .sub-nav-btn{
+  float: left;
+  text-align: center;
+  min-width: 100px;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #444;
+  padding-bottom: 2px;
+  padding-top: 3px;
+  color: white;
+  cursor: pointer;
+}
+
+div.sub-nav .sub-nav-btn.active {
+  background: #003399;
+}
+
+div.main-profile,
+div.profile-reviews {
+  margin-left: 30px;
+  width: 700px;
+  float: left;
+}
+
+div.profile-portrait {
+  width: 150px;
+  height: 200px;
+  background: grey;
+  float: left;
+  overflow: hidden;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+div.profile-portrait img {
+  max-width: 100%;
+}
+
+div.profile-top {
+  font-size: 11pt;
+  position: relative;
+}
+
+div.profile-top h3 {
+  font-size: 18pt;
+  font-weight: normal;
+  margin: 0;
+}
+
+div.profile-description p {
+  font-size: 9pt;
+}
+
+div.star-box {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  border: 1px solid #003399;
+  width: 300px;
+  height: 90px;
+}
+
+div.star-box-controls {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 290px;
+  background: #e9eaef;
+  text-align: right;
+  padding:  5px 10px 5px 0px;
+  font-size: 10pt;
+}
+
+div.rating-box-stars {
+  height: 25px;
+  padding: 15px 20px;
+  font-size: 20pt;
+}
+
+div.popup {
+  width: 950px;
+  height: 600px;
+  position: absolute;
+  top: 175px;
+}
+
+div.popup-wrap {
+  margin: 0 auto;
+  width: 550px;
+  border: 5px solid #003399;
+  margin-top: 25px;
+  background: white;
+  font-size: 9pt;
+  padding: 20px;
+  overflow: hidden;
+}
+
+div.popup-wrap h3 {
+  font-size: 16pt;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+div.popup-keywords {
+  background: #eaefef;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+div.popup-btn {
+  float: right;
+  padding: 5px 10px 5px 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  background: #003399;
+  color: white;
+  cursor: pointer;
+}
+
+div.popup-cancel-btn {
+  background: #414342;
+}
+
+div.large-stars {
+  width: 175px;
+  height: 40px;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+}
+
+.five-stars,
+.four-half-stars,
+.four-stars,
+.three-half-stars,
+.three-stars,
+.two-half-stars,
+.two-stars,
+.one-half-stars,
+.one-star,
+.no-stars {
+  background: transparent url(/Content/Images/social/no-stars.png) top left no-repeat; 
+  background-size: 100% 100% !important;
+}
+
+.five-stars { background: url(/Content/Images/social/five-star.png); }
+.four-half-stars { background: url(/Content/Images/social/four-half-star.png); }
+.four-stars { background: url(/Content/Images/social/four-star.png); }
+.three-half-stars { background: url(/Content/Images/social/three-half-star.png); }
+.three-stars { background: url(/Content/Images/social/three-star.png); }
+.two-half-stars { background: url(/Content/Images/social/two-half-star.png); }
+.two-stars { background: url(/Content/Images/social/two-star.png); }
+.one-half-stars { background: url(/Content/Images/social/one-half-star.png); }
+.one-stars { background: url(/Content/Images/social/one-star.png); }
+
+
+table .stars {
+  width: 75px;
+  height: 18px;
+}

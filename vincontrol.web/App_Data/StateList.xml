@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<StateList>
+
+   <State>
+    <statename>Alaska</statename>
+    <StateAbbr>AK</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Alabama</statename>
+    <StateAbbr>AL</StateAbbr>
+  </State>
+
+ 
+  <State>
+    <statename>Arkansas</statename>
+    <StateAbbr>AR</StateAbbr>
+  </State>
+
+ 
+  <State>
+    <statename>Arizona</statename>
+    <StateAbbr>AZ</StateAbbr>
+  </State>
+
+  <State>
+    <statename>California</statename>
+    <StateAbbr>CA</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Colorado</statename>
+    <StateAbbr>CO</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Connecticut</statename>
+    <StateAbbr>CT</StateAbbr>
+  </State>
+
+  <State>
+    <statename>District of Columbia</statename>
+    <StateAbbr>DC</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Delaware</statename>
+    <StateAbbr>DE</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Florida</statename>
+    <StateAbbr>FL</StateAbbr>
+  </State>
+
+ 
+
+  <State>
+    <statename>Georgia</statename>
+    <StateAbbr>GA</StateAbbr>
+  </State>
+
+  
+
+  <State>
+    <statename>Hawaii</statename>
+    <StateAbbr>HI</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Iowa</statename>
+    <StateAbbr>IA</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Idaho</statename>
+    <StateAbbr>ID</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Illinois</statename>
+    <StateAbbr>IL</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Indiana</statename>
+    <StateAbbr>IN</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Kansas</statename>
+    <StateAbbr>KS</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Kentucky</statename>
+    <StateAbbr>KY</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Louisiana</statename>
+    <StateAbbr>LA</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Massachusetts</statename>
+    <StateAbbr>MA</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Maryland</statename>
+    <StateAbbr>MD</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Maine</statename>
+    <StateAbbr>ME</StateAbbr>
+  </State>
+
+  
+
+  <State>
+    <statename>Michigan</statename>
+    <StateAbbr>MI</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Minnesota</statename>
+    <StateAbbr>MN</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Missouri</statename>
+    <StateAbbr>MO</StateAbbr>
+  </State>
+
+ 
+
+  <State>
+    <statename>Mississippi</statename>
+    <StateAbbr>MS</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Montana</statename>
+    <StateAbbr>MT</StateAbbr>
+  </State>
+
+  <State>
+    <statename>North Carolina</statename>
+    <StateAbbr>NC</StateAbbr>
+  </State>
+
+  <State>
+    <statename>North Dakota</statename>
+    <StateAbbr>ND</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Nebraska</statename>
+    <StateAbbr>NE</StateAbbr>
+  </State>
+
+  <State>
+    <statename>New Hampshire</statename>
+    <StateAbbr>NH</StateAbbr>
+  </State>
+
+  <State>
+    <statename>New Jersey</statename>
+    <StateAbbr>NJ</StateAbbr>
+  </State>
+
+  <State>
+    <statename>New Mexico</statename>
+    <StateAbbr>NM</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Nevada</statename>
+    <StateAbbr>NV</StateAbbr>
+  </State>
+
+  <State>
+    <statename>New York</statename>
+    <StateAbbr>NY</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Ohio</statename>
+    <StateAbbr>OH</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Oklahoma</statename>
+    <StateAbbr>OK</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Oregon</statename>
+    <StateAbbr>OR</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Pennsylvania</statename>
+    <StateAbbr>PA</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Puerto Rico</statename>
+    <StateAbbr>PR</StateAbbr>
+  </State>
+
+
+  <State>
+    <statename>Rhode Island</statename>
+    <StateAbbr>RI</StateAbbr>
+  </State>
+
+  <State>
+    <statename>South Carolina</statename>
+    <StateAbbr>SC</StateAbbr>
+  </State>
+
+  <State>
+    <statename>South Dakota</statename>
+    <StateAbbr>SD</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Tennessee</statename>
+    <StateAbbr>TN</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Texas</statename>
+    <StateAbbr>TX</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Utah</statename>
+    <StateAbbr>UT</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Virginia</statename>
+    <StateAbbr>VA</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Virgin Islands</statename>
+    <StateAbbr>VI</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Vermont</statename>
+    <StateAbbr>VT</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Washington</statename>
+    <StateAbbr>WA</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Wisconsin</statename>
+    <StateAbbr>WI</StateAbbr>
+  </State>
+
+  <State>
+    <statename>West Virginia</statename>
+    <StateAbbr>WV</StateAbbr>
+  </State>
+
+  <State>
+    <statename>Wyoming</statename>
+    <StateAbbr>WY</StateAbbr>
+  </State>
+</StateList>

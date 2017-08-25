@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="VinsellModelStoreContainer" CdmEntityContainer="VinsellEntities">
+    <EntitySetMapping Name="dailylogmanheims">
+      <EntityTypeMapping TypeName="VinsellModel.dailylogmanheim">
+        <MappingFragment StoreEntitySet="dailylogmanheim">
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="ErrorMessage" ColumnName="ErrorMessage" />
+          <ScalarProperty Name="PowerSearchLink" ColumnName="PowerSearchLink" />
+          <ScalarProperty Name="Logid" ColumnName="Logid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manheim_auctions">
+      <EntityTypeMapping TypeName="VinsellModel.manheim_auctions">
+        <MappingFragment StoreEntitySet="manheim_auctions">
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="CityAddress" ColumnName="CityAddress" />
+          <ScalarProperty Name="StreetAddress" ColumnName="StreetAddress" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manheim_bodystyles">
+      <EntityTypeMapping TypeName="VinsellModel.manheim_bodystyles">
+        <MappingFragment StoreEntitySet="manheim_bodystyles">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manheim_Carfax">
+      <EntityTypeMapping TypeName="VinsellModel.manheim_Carfax">
+        <MappingFragment StoreEntitySet="manheim_Carfax">
+          <ScalarProperty Name="VehicleId" ColumnName="VehicleId" />
+          <ScalarProperty Name="Expiration" ColumnName="Expiration" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="Accident" ColumnName="Accident" />
+          <ScalarProperty Name="PriorRental" ColumnName="PriorRental" />
+          <ScalarProperty Name="WindowSticker" ColumnName="WindowSticker" />
+          <ScalarProperty Name="ServiceRecord" ColumnName="ServiceRecord" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="Vin" ColumnName="Vin" />
+          <ScalarProperty Name="CarfaxId" ColumnName="CarfaxId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manheim_exteriorcolors">
+      <EntityTypeMapping TypeName="VinsellModel.manheim_exteriorcolors">
+        <MappingFragment StoreEntitySet="manheim_exteriorcolors">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manheim_favorites">
+      <EntityTypeMapping TypeName="VinsellModel.manheim_favorites">
+        <MappingFragment StoreEntitySet="manheim_favorites">
+          <ScalarProperty Name="SoldVehicleId" ColumnName="SoldVehicleId" />
+          <ScalarProperty Name="Vin" ColumnName="Vin" />
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="UserStamp" ColumnName="UserStamp" />
+          <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+          <ScalarProperty Name="VehicleId" ColumnName="VehicleId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manheim_kbbtrims">
+      <EntityTypeMapping TypeName="VinsellModel.manheim_kbbtrims">
+        <MappingFragment StoreEntitySet="manheim_kbbtrims">
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="DriveTrainId" ColumnName="DriveTrainId" />
+          <ScalarProperty Name="TransmissionId" ColumnName="TransmissionId" />
+          <ScalarProperty Name="Options" ColumnName="Options" />
+          <ScalarProperty Name="TrimId" ColumnName="TrimId" />
+          <ScalarProperty Name="Vin" ColumnName="Vin" />
+          <ScalarProperty Name="DealershipId" ColumnName="DealershipId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manheim_KellyBlueBook">
+      <EntityTypeMapping TypeName="VinsellModel.manheim_KellyBlueBook">
+        <MappingFragment StoreEntitySet="manheim_KellyBlueBook">
+          <ScalarProperty Name="ModelId" ColumnName="ModelId" />
+          <ScalarProperty Name="VehicleId" ColumnName="VehicleId" />
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="VehicleStatusCodeId" ColumnName="VehicleStatusCodeId" />
+          <ScalarProperty Name="TrimId" ColumnName="TrimId" />
+          <ScalarProperty Name="WholeSale" ColumnName="WholeSale" />
+          <ScalarProperty Name="MileageAdjustment" ColumnName="MileageAdjustment" />
+          <ScalarProperty Name="BaseWholeSale" ColumnName="BaseWholeSale" />
+          <ScalarProperty Name="Expiration" ColumnName="Expiration" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="TradeInVeryGoodPrice" ColumnName="TradeInVeryGoodPrice" />
+          <ScalarProperty Name="TradeInGoodPrice" ColumnName="TradeInGoodPrice" />
+          <ScalarProperty Name="TradeInFairPrice" ColumnName="TradeInFairPrice" />
+          <ScalarProperty Name="Trim" ColumnName="Trim" />
+          <ScalarProperty Name="Vin" ColumnName="Vin" />
+          <ScalarProperty Name="KellyBlueBookId" ColumnName="KellyBlueBookId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manheim_makes">
+      <EntityTypeMapping TypeName="VinsellModel.manheim_makes">
+        <MappingFragment StoreEntitySet="manheim_makes">
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manheim_ManheimValue">
+      <EntityTypeMapping TypeName="VinsellModel.manheim_ManheimValue">
+        <MappingFragment StoreEntitySet="manheim_ManheimValue">
+          <ScalarProperty Name="VehicleId" ColumnName="VehicleId" />
+          <ScalarProperty Name="VehicleStatusCodeId" ColumnName="VehicleStatusCodeId" />
+          <ScalarProperty Name="ModelServiceId" ColumnName="ModelServiceId" />
+          <ScalarProperty Name="MakeServiceId" ColumnName="MakeServiceId" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="TrimServiceId" ColumnName="TrimServiceId" />
+          <ScalarProperty Name="Expiration" ColumnName="Expiration" />
+          <ScalarProperty Name="LastUpdated" ColumnName="LastUpdated" />
+          <ScalarProperty Name="DateAdded" ColumnName="DateAdded" />
+          <ScalarProperty Name="AuctionHighestPrice" ColumnName="AuctionHighestPrice" />
+          <ScalarProperty Name="AuctionAveragePrice" ColumnName="AuctionAveragePrice" />
+          <ScalarProperty Name="AuctionLowestPrice" ColumnName="AuctionLowestPrice" />
+          <ScalarProperty Name="Trim" ColumnName="Trim" />
+          <ScalarProperty Name="Vin" ColumnName="Vin" />
+          <ScalarProperty Name="ManheimValueId" ColumnName="ManheimValueId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manheim_markettrim">
+      <EntityTypeMapping TypeName="VinsellModel.manheim_markettrim">
+        <MappingFragment StoreEntitySet="manheim_markettrim">
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="Trim" ColumnName="Trim" />
+          <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+          <ScalarProperty Name="Vin" ColumnName="Vin" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manheim_models">
+      <EntityTypeMapping TypeName="VinsellModel.manheim_models">
+        <MappingFragment StoreEntitySet="manheim_models">
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Make" ColumnName="Make" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manheim_notes">
+      <EntityTypeMapping TypeName="VinsellModel.manheim_notes">
+        <MappingFragment StoreEntitySet="manheim_notes">
+          <ScalarProperty Name="SoldVehicleId" ColumnName="SoldVehicleId" />
+          <ScalarProperty Name="Vin" ColumnName="Vin" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="UserStamp" ColumnName="UserStamp" />
+          <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+          <ScalarProperty Name="VehicleId" ColumnName="VehicleId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manheim_notifications">
+      <EntityTypeMapping TypeName="VinsellModel.manheim_notifications">
+        <MappingFragment StoreEntitySet="manheim_notifications">
+          <ScalarProperty Name="Auction" ColumnName="Auction" />
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="UserStamp" ColumnName="UserStamp" />
+          <ScalarProperty Name="DealerId" ColumnName="DealerId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manheim_regions">
+      <EntityTypeMapping TypeName="VinsellModel.manheim_regions">
+        <MappingFragment StoreEntitySet="manheim_regions">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manheim_sellers">
+      <EntityTypeMapping TypeName="VinsellModel.manheim_sellers">
+        <MappingFragment StoreEntitySet="manheim_sellers">
+          <ScalarProperty Name="Auction" ColumnName="Auction" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manheim_states">
+      <EntityTypeMapping TypeName="VinsellModel.manheim_states">
+        <MappingFragment StoreEntitySet="manheim_states">
+          <ScalarProperty Name="Region" ColumnName="Region" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manheim_trims">
+      <EntityTypeMapping TypeName="VinsellModel.manheim_trims">
+        <MappingFragment StoreEntitySet="manheim_trims">
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Make" ColumnName="Make" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manheim_urls">
+      <EntityTypeMapping TypeName="VinsellModel.manheim_urls">
+        <MappingFragment StoreEntitySet="manheim_urls">
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="AuctionCode" ColumnName="AuctionCode" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manheim_vehicles">
+      <EntityTypeMapping TypeName="VinsellModel.manheim_vehicles">
+        <MappingFragment StoreEntitySet="manheim_vehicles">
+          <ScalarProperty Name="CrUrl" ColumnName="CrUrl" />
+          <ScalarProperty Name="LaneDescription" ColumnName="LaneDescription" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="InteriorType" ColumnName="InteriorType" />
+          <ScalarProperty Name="Airbags" ColumnName="Airbags" />
+          <ScalarProperty Name="Stereo" ColumnName="Stereo" />
+          <ScalarProperty Name="MmrBelow" ColumnName="MmrBelow" />
+          <ScalarProperty Name="MmrAbove" ColumnName="MmrAbove" />
+          <ScalarProperty Name="Equipment" ColumnName="Equipment" />
+          <ScalarProperty Name="Seller" ColumnName="Seller" />
+          <ScalarProperty Name="Images" ColumnName="Images" />
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Auction" ColumnName="Auction" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="Run" ColumnName="Run" />
+          <ScalarProperty Name="Lane" ColumnName="Lane" />
+          <ScalarProperty Name="Mmr" ColumnName="Mmr" />
+          <ScalarProperty Name="Cr" ColumnName="Cr" />
+          <ScalarProperty Name="AsIs" ColumnName="AsIs" />
+          <ScalarProperty Name="InteriorColor" ColumnName="InteriorColor" />
+          <ScalarProperty Name="ExteriorColor" ColumnName="ExteriorColor" />
+          <ScalarProperty Name="Transmission" ColumnName="Transmission" />
+          <ScalarProperty Name="DriveTrain" ColumnName="DriveTrain" />
+          <ScalarProperty Name="VehicleType" ColumnName="VehicleType" />
+          <ScalarProperty Name="BodyStyle" ColumnName="BodyStyle" />
+          <ScalarProperty Name="Doors" ColumnName="Doors" />
+          <ScalarProperty Name="Litters" ColumnName="Litters" />
+          <ScalarProperty Name="Engine" ColumnName="Engine" />
+          <ScalarProperty Name="FuelType" ColumnName="FuelType" />
+          <ScalarProperty Name="Mileage" ColumnName="Mileage" />
+          <ScalarProperty Name="Trim" ColumnName="Trim" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Make" ColumnName="Make" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Vin" ColumnName="Vin" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manheim_vehicles_sold">
+      <EntityTypeMapping TypeName="VinsellModel.manheim_vehicles_sold">
+        <MappingFragment StoreEntitySet="manheim_vehicles_sold">
+          <ScalarProperty Name="CrUrl" ColumnName="CrUrl" />
+          <ScalarProperty Name="LaneDescription" ColumnName="LaneDescription" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="VehicleId" ColumnName="VehicleId" />
+          <ScalarProperty Name="InteriorType" ColumnName="InteriorType" />
+          <ScalarProperty Name="Airbags" ColumnName="Airbags" />
+          <ScalarProperty Name="Stereo" ColumnName="Stereo" />
+          <ScalarProperty Name="MmrBelow" ColumnName="MmrBelow" />
+          <ScalarProperty Name="MmrAbove" ColumnName="MmrAbove" />
+          <ScalarProperty Name="Equipment" ColumnName="Equipment" />
+          <ScalarProperty Name="Seller" ColumnName="Seller" />
+          <ScalarProperty Name="Images" ColumnName="Images" />
+          <ScalarProperty Name="DateStampSold" ColumnName="DateStampSold" />
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Auction" ColumnName="Auction" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="SaleDate" ColumnName="SaleDate" />
+          <ScalarProperty Name="Run" ColumnName="Run" />
+          <ScalarProperty Name="Lane" ColumnName="Lane" />
+          <ScalarProperty Name="Mmr" ColumnName="Mmr" />
+          <ScalarProperty Name="Cr" ColumnName="Cr" />
+          <ScalarProperty Name="AsIs" ColumnName="AsIs" />
+          <ScalarProperty Name="InteriorColor" ColumnName="InteriorColor" />
+          <ScalarProperty Name="ExteriorColor" ColumnName="ExteriorColor" />
+          <ScalarProperty Name="Transmission" ColumnName="Transmission" />
+          <ScalarProperty Name="DriveTrain" ColumnName="DriveTrain" />
+          <ScalarProperty Name="VehicleType" ColumnName="VehicleType" />
+          <ScalarProperty Name="BodyStyle" ColumnName="BodyStyle" />
+          <ScalarProperty Name="Doors" ColumnName="Doors" />
+          <ScalarProperty Name="Litters" ColumnName="Litters" />
+          <ScalarProperty Name="Engine" ColumnName="Engine" />
+          <ScalarProperty Name="FuelType" ColumnName="FuelType" />
+          <ScalarProperty Name="Mileage" ColumnName="Mileage" />
+          <ScalarProperty Name="Trim" ColumnName="Trim" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Make" ColumnName="Make" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Vin" ColumnName="Vin" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manheim_yearmakemodel">
+      <EntityTypeMapping TypeName="VinsellModel.manheim_yearmakemodel">
+        <MappingFragment StoreEntitySet="manheim_yearmakemodel">
+          <ScalarProperty Name="datestamp" ColumnName="datestamp" />
+          <ScalarProperty Name="model" ColumnName="model" />
+          <ScalarProperty Name="make" ColumnName="make" />
+          <ScalarProperty Name="year" ColumnName="year" />
+          <ScalarProperty Name="manheim_yearmakemodel_id" ColumnName="manheim_yearmakemodel_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manheim_years">
+      <EntityTypeMapping TypeName="VinsellModel.manheim_years">
+        <MappingFragment StoreEntitySet="manheim_years">
+          <ScalarProperty Name="Year" ColumnName="Year" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manheimchartselections">
+      <EntityTypeMapping TypeName="VinsellModel.manheimchartselection">
+        <MappingFragment StoreEntitySet="manheimchartselection">
+          <ScalarProperty Name="sourceType" ColumnName="sourceType" />
+          <ScalarProperty Name="screen" ColumnName="screen" />
+          <ScalarProperty Name="isIndependant" ColumnName="isIndependant" />
+          <ScalarProperty Name="isFranchise" ColumnName="isFranchise" />
+          <ScalarProperty Name="isAll" ColumnName="isAll" />
+          <ScalarProperty Name="isCertified" ColumnName="isCertified" />
+          <ScalarProperty Name="trims" ColumnName="trims" />
+          <ScalarProperty Name="options" ColumnName="options" />
+          <ScalarProperty Name="isCarsCom" ColumnName="isCarsCom" />
+          <ScalarProperty Name="dealerId" ColumnName="dealerId" />
+          <ScalarProperty Name="vin" ColumnName="vin" />
+          <ScalarProperty Name="chartselectionid" ColumnName="chartselectionid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ManheimCredentials">
+      <EntityTypeMapping TypeName="VinsellModel.ManheimCredential">
+        <MappingFragment StoreEntitySet="ManheimCredentials">
+          <ScalarProperty Name="DateStamp" ColumnName="DateStamp" />
+          <ScalarProperty Name="CredentialPassword" ColumnName="CredentialPassword" />
+          <ScalarProperty Name="CredentialUsername" ColumnName="CredentialUsername" />
+          <ScalarProperty Name="CredentialId" ColumnName="CredentialId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

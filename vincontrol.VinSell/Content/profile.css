@@ -1,0 +1,1904 @@
+.profile_tab_holder
+{
+    display: none;
+}
+
+.confirm_message
+{
+    width: 300px;
+    height: 70px;
+    border: 5px solid #333;
+    border-radius: 2px;
+    padding: 15px;
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    display: none;
+}
+
+.confirm_message_title
+{
+    font-family: Times;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.confirm_message_btns
+{
+    height: 40px;
+    margin-top: 20px;
+}
+
+    .confirm_message_btns div
+    {
+        cursor: pointer;
+        float: right;
+        padding: 5px 15px;
+        background-color: #5C5C5C;
+        color: white;
+        font-size: 13px;
+        font-weight: bold;
+        margin-right: 5px;
+    }
+
+.leoSeeInventory
+{
+    background-color: #555;
+    margin-top: 10px;
+    display: block;
+    font-size: 13px;
+    padding: 4px;
+    margin: 4px auto;
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+}
+
+.confirm_message_yes
+{
+}
+
+.confirm_message_no
+{
+}
+
+.profile_bg_content
+{
+    margin: 20px 70;
+    padding: 5px;
+    background-color: #5C5C5C;
+}
+
+.profile_bg_content_left
+{
+    float: left;
+    width: 49.5%;
+}
+
+.profile_bg_content img
+{
+    width: 100%;
+}
+
+.profile_bg_content_right
+{
+    float: right;
+    width: 49.5%;
+}
+
+#profile_marksold_holder
+{
+    width: 445px;
+    height: 290px;
+}
+
+#profile_transfer_holder
+{
+    width: 330px;
+    height: 225px;
+}
+
+.profile_marksold_title
+{
+    font-weight: bold;
+    color: #2A558C;
+    font-size: 18px;
+}
+
+.profile_marksold_items_holder
+{
+}
+
+.profile_marksold_items
+{
+    width: 50%;
+    float: left;
+    height: 35px;
+    margin-top: 10px;
+}
+
+.profile_marksold_items_three
+{
+    margin-right: 3px;
+    float: left;
+    height: 35px;
+    margin-top: 10px;
+}
+
+.profile_marksold_delete_holder
+{
+    clear: both;
+    height: 35px;
+    padding-top: 20px;
+}
+
+.profile_marksold_btns_holder
+{
+    height: 30px;
+    float: right;
+    margin: 0px 15px;
+}
+
+.profile_marksold_btns:hover
+{
+    background-color: #800;
+}
+
+.profile_marksold_btns
+{
+    font-weight: bold;
+    cursor: pointer;
+    float: left;
+    margin-left: 10px;
+    font-size: 13px;
+    padding: 7px 20px;
+    background-color: #2A558C;
+    color: #FFF;
+    border-right: 4px;
+}
+
+.profile_marksold_delete_holder label
+{
+    font-size: 14px;
+}
+
+.profile_marksole_key
+{
+    font-size: 14px;
+}
+
+.profile_marksole_value
+{
+}
+
+#history-report ul
+{
+    padding-left: 25px;
+    margin: 4px;
+}
+
+    #history-report ul > li
+    {
+        font-size: 11px !important;
+        list-style-type: none;
+    }
+
+        #history-report ul > li > img
+        {
+            float: right;
+            margin-right: 5px;
+        }
+
+.profile_marksold_items_three input
+{
+    width: 100%;
+}
+
+.profile_marksold_items_three select
+{
+    width: 100%;
+}
+
+.profile_marksold_items input
+{
+    width: 208px;
+}
+
+.profile_marksold_items select
+{
+    width: 208px;
+}
+
+.profle_transfer_header
+{
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.profile_transfer_vh
+{
+    text-align: center;
+    font-size: 20px;
+}
+
+.profile_transfer_title
+{
+    text-align: center;
+    font-weight: bold;
+}
+
+.profile_transfer_currentlocation
+{
+    text-align: center;
+    font-size: 13px;
+}
+
+.profile_transfer_info
+{
+    margin-top: 15px;
+}
+
+.profile_transfer_info_select
+{
+    width: 70%;
+    margin: 0px auto 10px;
+}
+
+.profile_transfer_select_dealership
+{
+    width: 100%;
+}
+
+.profile_transfer_info_input
+{
+    width: 70%;
+    margin: 0px auto;
+}
+
+    .profile_transfer_info_input input
+    {
+        width: 100px;
+    }
+
+.profile_transfer_btns_holder
+{
+    height: 30px;
+    width: 75%;
+    margin: 30px auto;
+}
+
+.profile_transfer_btns
+{
+    font-weight: bold;
+    cursor: pointer;
+    float: left;
+    margin-left: 10px;
+    font-size: 13px;
+    padding: 7px 20px;
+    background-color: #2A558C;
+    color: #FFF;
+    border-right: 4px;
+}
+
+    .profile_transfer_btns:hover
+    {
+        background-color: #800;
+    }
+
+.profile_bg_btns_print
+{
+    float: right !important;
+    margin-right: 17px;
+}
+
+.profile_bg_btns
+{
+    float: left;
+    cursor: pointer;
+    bottom: 2px;
+    margin-left: 15px;
+    background-color: #5C5C5C;
+    color: #FFF;
+    text-align: center;
+    font-size: 19px;
+    padding: 2px 17px 3px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.profile_ebay_top_text
+{
+    text-align: center;
+    margin: 0px auto;
+    padding: 10px;
+    width: 75%;
+    font-size: 15px;
+}
+
+.profile_ebay_textarea
+{
+    width: 95%;
+    border: 1px solid #000;
+    border-radius: 3px;
+    height: 75px;
+}
+
+.profile_ebay_content_holder
+{
+}
+
+.profile_ebay_listingoptions label
+{
+    width: 20%;
+    float: left;
+    margin-right: 5px;
+}
+
+.profile_ebay_small_text
+{
+    float: right;
+    text-align: right;
+    font-size: 10px;
+    padding-right: 37px;
+}
+
+.profile_ebay_lb_long
+{
+    font-size: 13px;
+}
+
+.profile_ebay_items
+{
+    clear: both;
+    padding: 10px 35px;
+}
+
+.profile_ebay_items_left
+{
+    float: left;
+    width: 24%;
+    font-size: 14px;
+}
+
+.profile_ebay_items_right
+{
+    float: right;
+    width: 75%;
+}
+
+.profile_ebay_input_medium
+{
+    width: 140px;
+}
+
+.profile_ebay_input_sort
+{
+    width: 90px;
+}
+
+.profile_ebay_input_long
+{
+    width: 210px;
+}
+
+.profile_ebay_second_text
+{
+    height: 20px;
+    padding: 5px;
+    text-align: center;
+    background-color: #CFCFCF;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.profile_ebay_preview_btns
+{
+    cursor: pointer;
+    position: absolute;
+    bottom: 2px;
+    margin-left: 15px;
+    background-color: #5C5C5C;
+    color: #FFF;
+    text-align: center;
+    width: 175px;
+    font-size: 19px;
+    padding: 2px 5px 3px;
+    font-weight: bold;
+}
+
+.profile_vh_info
+{
+    padding: 10px;
+    float: left;
+    width: 53%;
+    font-size: 30px;
+    color: #FFF;
+}
+
+    .profile_vh_info > label
+    {
+        width: 93%;
+        display: block;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        padding-left: 5px;
+    }
+
+.profile_top_items_holder
+{
+    float: left;
+    width: 100%; /*height: 120px*/
+    height: 85px;
+}
+
+.profile_top_items div
+{
+    font-weight: bold;
+    float: left;
+    margin-bottom: 6px;
+}
+
+.profile_top_items
+{
+    margin-top: 7px;
+    width: 28%;
+    float: left;
+    margin-right: 23px;
+}
+
+.loPriceSmallBox input
+{
+    font-size: 22px !important;
+}
+.loImgLoadingSmall {
+    left: 80px !important;
+}
+.loPriceSmallBox
+{
+    width: 18% !important;
+    margin-right: 6px !important;
+}
+
+.profile_top_items_text
+{
+    color: #444;
+    font-size: 13px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.profile_top_items_btn
+{
+    text-align: center;
+    background-color: #5C5C5C;
+    cursor: pointer;
+    color: white;
+    width: 38%;
+    font-size: 13px;
+    padding: 2px;
+    float: right !important;
+}
+
+.profile_top_container
+{
+    height: 520px;
+}
+
+.profile_top_left_holder
+{
+    padding-top: 10px;
+    float: left;
+    width: 62%;
+    height: 100%;
+}
+
+#fourSquareBtn
+{
+    cursor: pointer;
+    float: left;
+    width: 72px;
+    height: 72px;
+    text-align: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #FFF;
+    padding: 5px;
+    background-image: url("/Content/images/vincontrol/loFourSquare.png");
+}
+
+
+#autoCalculatorBtn
+{
+    cursor: pointer;
+    float: left;
+    width: 72px;
+    height: 72px;
+    text-align: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #FFF;
+    padding: 5px;
+    background-image: url("/Content/images/vincontrol/loCalculate.png");
+}
+
+#vehicleLogBtn
+{
+    cursor: pointer;
+    float: left;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #FFF;
+    padding: 5px;
+    background-image: url("/Content/images/vincontrol/Vehicle-Log-Icon.png");
+}
+
+#fbPostingBtn
+{
+    cursor: pointer;
+    float: left;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #FFF;
+    padding: 5px;
+    background-image: url("/Content/images/vincontrol/fbPosting.png");
+}
+
+    #autoCalculatorBtn span
+    {
+        background-color: #008000;
+        font-size: 11px;
+        padding: 2px;
+        width: 68%;
+        font-weight: bold;
+        display: block;
+        margin: 26px auto;
+    }
+
+#fourSquareBtn span
+{
+    background-color: #008000;
+    font-size: 11px;
+    padding: 2px;
+    width: 68%;
+    font-weight: bold;
+    display: block;
+    margin: 26px auto;
+}
+
+.profile_top_right_holder
+{
+    margin-right: 5px;
+    float: right;
+    width: 37%;
+    height: 100%;
+}
+
+.pt_left_carsInfo
+{
+    height: 161px;
+    position: relative;
+}
+
+.ptl_carinfo_des
+{
+    width: 100%;
+    clear: both;
+    left: 5px;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    top: 163px;
+    white-space: normal;
+}
+
+.pt_left_carsInfo_left
+{
+    float: left;
+    width: 25%;
+}
+
+.pt_left_carsInfo_right
+{
+    float: right;
+    width: 75%;
+}
+
+#txtLabelDescription
+{
+    font-size: 14px;
+    display: block;
+    overflow: hidden;
+    float: left;
+    width: 95%;
+}
+
+.pt_left_carsInfo_img
+{
+    width: 150px;
+}
+
+.pt_left_carsInfo_btn
+{
+    cursor: pointer;
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+    background-color: #5C5C5C;
+    font-weight: bold;
+    width: 70px;
+    font-size: 13px;
+    color: white;
+    padding: 2px;
+}
+
+.pt_left_carsInfo_btn_Empty
+{
+    float: left;
+    margin-right: 5px;
+    width: 70px;
+}
+
+.pt_left_carsInfo_btn > a
+{
+    color: white;
+}
+
+.pt_left_carsInfo_btn_holder
+{
+    margin-top: 10px;
+    float: right;
+    margin-right: 20px;
+}
+
+.pt_left_carsInfo_right ul
+{
+    list-style: none;
+    padding-left: 10px;
+    margin: 0px;
+}
+
+    .pt_left_carsInfo_right ul li
+    {
+        font-size: 14px;
+        width: 49%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        float: left;
+    }
+
+.container_right_price
+{
+    height: 290px;
+}
+
+.pt_left_charts_holder
+{
+    /*margin-top: 105px;*/
+    clear: both;
+}
+
+.ptl_charts_title
+{
+    height: 24px;
+}
+
+.ptl_chart_rangking_text
+{
+    width: 40%;
+    float: left;
+}
+
+.market_ranking_key
+{
+    font-weight: bold;
+}
+
+.market_ranking_value
+{
+    text-align: center;
+    color: #458C00;
+    font-weight: bold;
+}
+
+.ptl_chart_rangking_text > div
+{
+    font-size: 17px;
+}
+
+.ptl_charts_btn
+{
+    font-weight: bold;
+    width: 100px;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    float: left;
+    background-color: #5C5C5C;
+}
+
+.ptl_charts_text
+{
+    float: left;
+    margin-left: 13px;
+    margin-top: 10px;
+    font-size: 11px;
+}
+
+.profile_top_items_input
+{
+    height: 30px;
+    width: 96%;
+    font-size: 25px;
+    border: 2px solid gray;
+}
+
+.ptr_items_content_list
+{
+    clear: both;
+}
+
+.ptl_charts
+{
+    width: 400px;
+    height: 177px;
+    clear: both;
+}
+
+.ptl_charts_none
+{
+    width: 582px;
+    min-height: 180px;
+    border: 2px solid gray;
+    clear: both;
+    text-align: center;
+    font-size: 22px;
+    padding-top: 70px;
+}
+
+#txtSalePrice
+{
+    color: black;
+    border: 2px solid #458C00;
+}
+
+.ptl_charts img
+{
+    margin-left: 10px;
+}
+
+.ptl_charts_ranking
+{
+    height: 26px;
+    width: 100%;
+}
+
+.ptl_charts_right_items:first-child
+{
+    margin-top: 2px !important;
+}
+
+.ptr_items
+{
+    margin-top: 11px;
+    /*height: 157px;*/
+}
+
+.ptr_items_top
+{
+    cursor: pointer;
+    position: relative;
+    width: 157px;
+    height: 27px;
+    border: 2px solid #3366cc;
+}
+
+.ptr_items_content
+{
+    height: 135px;
+    border: 2px solid #3366cc;
+    min-height: 123px;
+    font-size: 14px;
+}
+
+.ptl_charts_left
+{
+    float: left;
+    border: solid 2px gray;
+}
+
+.ptl_charts_right
+{
+   text-align: center;
+    float: left;
+    width: 28%;
+     height: 249px;
+    border: 1px solid gray;
+    border-left: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box; /* Firefox */
+}
+
+.ptl_chart_avg
+{
+    font-weight: bold;
+    width: 26%;
+    float: right;
+}
+
+.ptl_charts_right_icons
+{
+    float: left;
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+}
+
+.ptl_charts_right_value
+{
+    font-weight: bold;
+    font-size: 18px;
+    float: left;
+    margin-left: 15px;
+}
+
+.ptl_charts_right_items
+{
+    margin-top: 20px;
+    height: 26px;
+    margin: 4px auto;
+    width: 30%;
+    float: left;
+}
+
+.profile_bottom_charts_holder
+{
+    clear: both;
+    height: 58px;
+    margin: 0px 5px;
+}
+
+
+.ptr_items_content_header
+{
+    height: 18px;
+    background-color: #3366cc;
+    color: white;
+    padding-bottom: 6px;
+}
+
+.ptr_items_btns:hover
+{
+    opacity: 0.6;
+}
+
+.ptr_items_left_btn
+{
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    background-image: url("/content/images/arrow_left.png");
+    float: left;
+}
+
+.ptr_items_btns
+{
+    cursor: pointer;
+    width: 15px;
+    height: 20px;
+}
+
+.ptr_items_right_btn
+{
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    float: right;
+    background-image: url("/content/images/arrow_right.png");
+}
+
+.ptr_items_textInfo
+{
+    font-size: 16px;
+    text-align: center;
+    float: left;
+    width: 85%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 15px;
+    color: white !important;
+}
+
+    .ptr_items_textInfo > a
+    {
+        color: white !important;
+    }
+
+.ptr_item_top_circle
+{
+    text-align: center;
+    font-weight: bold;
+    background-color: #FFF;
+    z-index: 1;
+    position: absolute;
+    right: -11px;
+    top: -11px;
+    border: 2px solid #3366cc;
+    width: 20px;
+    width: 22px;
+    height: 22px;
+}
+
+.circleBase
+{
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    behavior: url(PIE.htc);
+}
+
+.ptr_items_top_title_text
+{
+    width: 90px;
+    float: left;
+    text-align: center;
+    padding-top: 3px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.ptri_content_value_icons
+{
+    width: 18px;
+    height: 18px;
+    float: left;
+    background-size: 100%;
+}
+
+.ptr_items_content_value
+{
+    width: 49%;
+    text-align: center;
+    float: right;
+}
+
+.ptr_items_top_title_logo img
+{
+    width: 20px;
+    height: 20px;
+}
+
+.ptr_items_top_title_logo
+{
+    float: left;
+    margin: 3px 5px;
+}
+
+.ptr_items_content_key
+{
+    width: 49%;
+    font-weight: bold;
+    text-align: center;
+    float: left;
+}
+
+.ptri_content_value_text
+{
+    font-weight: bold;
+    float: left;
+    margin-left: 10px;
+}
+
+.ptri_content_value_text_auction
+{
+    font-weight: bold;
+    font-size: 13px;
+    float: left;
+    margin-left: 10px;
+}
+.ptri_content_value_text_auction_number
+{
+    font-weight: bold;
+    font-size: 15px;
+    float: left;
+    margin-left: 55px;
+}
+
+.ptr_items_content_value_auction
+{
+    width: 35%;
+    font-weight: bold;
+    text-align: left;
+    float: left;
+}
+
+.ptr_items_content_value_auctionmore
+{
+    width: 65%;
+    text-align: center;
+    float: right;
+}
+.ptri_content_value_text_auction_number-right
+{
+   font-weight: bold;
+    font-size: 13px;
+    float: right;
+    margin-right: 25px;
+}
+
+
+.ptr_items_content_items
+{
+    margin-top: 3px;
+    clear: both;
+    height: 18px;
+}
+
+.ptr_cafax_owners
+{
+    font-size: 16px;
+    width: 40%;
+    text-align: center;
+    float: left;
+}
+
+.ptr_cafax_number
+{
+    font-weight: bold;
+}
+
+.ptr_cafax_service_repords
+{
+    font-size: 16px;
+    text-align: center;
+    float: right;
+    font-size: 13px
+}
+
+/*ebay preview listing */
+.ebay_preview_listing_holder
+{
+    padding-bottom: 10px;
+    width: 1200px;
+    margin: 0px auto;
+    background-color: #FFF;
+    box-shadow: 4px 0px 5px #888;
+}
+
+.ebay_prelisting_top
+{
+    background-color: black;
+    height: 100px;
+}
+
+.ebay_prelisting_top_logo
+{
+    float: left;
+}
+
+.ebay_prelisting_top_phone
+{
+    float: left;
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-top: 60px;
+}
+
+.ebay_prelisting_tabs_holder
+{
+    background-image: url("/images/navbg.jpg");
+    height: 38px;
+}
+
+.ebay_prelisting_tabs:hover
+{
+    color: red;
+}
+
+.ebay_prelisting_tabs_active:hover
+{
+    color: white !important;
+}
+
+.ebay_prelisting_tabs_active
+{
+    background-color: #800;
+}
+
+.ebay_prelisting_tabs
+{
+    padding: 8px 15px;
+    cursor: pointer;
+    float: left;
+    font-weight: bold;
+    color: white;
+    border-right: 1px #333 solid;
+    border-left: 1px #000 solid;
+}
+
+.ebay_prelisting_tabs_facebook
+{
+    height: 19px;
+    width: 19px;
+}
+
+    .ebay_prelisting_tabs_facebook img
+    {
+        width: 100%;
+    }
+
+.ebay_prelisting_tabs_test
+{
+    width: 40%;
+}
+
+.ebay_prelisting_content
+{
+    clear: both;
+}
+
+.ebay_prelisting_content_left
+{
+    width: 38%;
+    float: left;
+}
+
+.ebay_prelisting_content_right
+{
+    float: right;
+    width: 62%;
+}
+
+.epc_left_header
+{
+    background-image: url("/images/navbg.jpg");
+    height: 23px;
+    color: #FFF;
+    text-align: center;
+    padding: 7px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.epc_left_vehicleInfo
+{
+    padding: 7px;
+    background-color: #EEEEEE;
+}
+
+.epc_left_vehicleInfo_items
+{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.epc_left_info_key
+{
+    font-weight: bold;
+    float: left;
+    font-size: 13px;
+}
+
+.epc_left_info_value
+{
+    float: left;
+    font-size: 13px;
+    margin-left: 7px;
+}
+
+.epc_left_images_holder
+{
+    padding-bottom: 15px;
+    padding-top: 50px;
+    background-color: #525252;
+}
+
+.epc_left_images_main
+{
+    margin: 0px auto;
+    width: 340px;
+    background-color: #808080;
+}
+
+    .epc_left_images_main img
+    {
+        width: 96%;
+        margin: 6px;
+    }
+
+.epc_left_images_items img
+{
+    width: 100%;
+}
+
+.epc_left_images_list
+{
+    margin: 0px auto;
+    width: 87%;
+}
+
+.epc_left_images_items
+{
+    float: left;
+    width: 85px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.ebay_prelisting_right_top
+{
+    background-color: #525252;
+    height: 116px;
+}
+
+.epc_right_top_btns
+{
+    height: 68px;
+    padding: 10px;
+}
+
+.epc_right_top_text
+{
+    width: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    float: left;
+}
+
+.epcr_btns_holder
+{
+    float: left;
+    margin-left: 40px;
+}
+
+.epcr_btns_items
+{
+    margin-left: 5px;
+    float: left;
+    padding: 5px 10px;
+    background-color: #800;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.epc_right_top_tabs
+{
+    margin-left: 28px;
+}
+
+.epcr_tabs_items
+{
+    float: left;
+    text-align: center;
+    padding: 5px;
+    margin-right: 5px;
+    width: 22%;
+    cursor: pointer;
+    color: #FFF;
+    background-image: url("/images/navbg.jpg");
+    font-size: 12px;
+}
+
+.epc_right_list_holder
+{
+    background-color: #EEE;
+    height: 474px;
+    overflow: auto;
+}
+
+    .epc_right_list_holder ul
+    {
+        float: left;
+        width: 25%;
+        margin: 5px;
+    }
+
+        .epc_right_list_holder ul li
+        {
+            font-size: 13px;
+        }
+
+.ebay_prelisting_bottom
+{
+    border: 2px solid black;
+    padding: 8px;
+    font-size: 13px;
+}
+
+.control_apprailsals_bottom_holder
+{
+    clear: both;
+    height: 58px;
+    margin-top: 30px;
+}
+
+.control_apprailsals_bottom_btns
+{
+    width: 500px;
+}
+
+    .control_apprailsals_bottom_btns > div > input
+    {
+        background-color: transparent;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .control_apprailsals_bottom_btns > div
+    {
+        float: left;
+        margin-left: 5px;
+        width: 30%;
+        padding: 5px;
+        text-align: center;
+        height: 18px;
+        cursor: pointer;
+        background-color: #5C5C5C;
+        color: white;
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+.control_appraisals_print
+{
+    cursor: pointer;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.customerInfo_popup_holder
+{
+    width: 315px;
+    height: 450px;
+    padding: 0px !important;
+}
+
+.customerInfo_popup_header
+{
+    background-color: #3366cc;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.customerInfo_popup_content
+{
+}
+
+.inspectionFormInfo_popup_content
+{
+    margin: 10px;
+}
+
+.customerInfo_popup_items
+{
+    padding: 5px 30px;
+}
+
+    .customerInfo_popup_items label
+    {
+        display: block;
+        margin-bottom: 2px;
+        font-size: 14px;
+    }
+
+    .customerInfo_popup_items input
+    {
+        width: 250px;
+    }
+
+    .customerInfo_popup_items select
+    {
+        width: 250px;
+    }
+
+.inspectionFormInfo_popup_items input
+{
+    width: 150px;
+}
+
+.inspectionFormInfo_popup_items
+{
+    float: left;
+    margin: 1px;
+}
+
+.inspectionFormInfo_Left
+{
+    float: left;
+    width: 110px;
+    margin-top: 3px;
+}
+
+.inspectionFormInfo_Right
+{
+    float: left;
+    width: 150px;
+}
+
+.customerInfo_popup_btns div
+{
+    background-color: #5C5C5C;
+    margin-left: 10px;
+    cursor: pointer;
+    float: left;
+    width: 100px;
+    color: #FFF;
+    padding: 5px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.customerInfo_popup_btns
+{
+    padding-left: 30px;
+    margin-top: 20px;
+}
+
+/* kbb popup */
+.appraisal_kbb_popup_holder
+{
+    width: 700px;
+    padding: 0px;
+}
+
+.appraisal_kbb_content
+{
+    padding-bottom: 55px;
+}
+
+.appraisal_kbb_content_header
+{
+    background-color: #3366cc;
+    padding: 10px;
+    color: black;
+}
+
+    .appraisal_kbb_content_header > label
+    {
+        float: left;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+.appraisal_kbb_header_mileage
+{
+    float: right;
+}
+
+    .appraisal_kbb_header_mileage > label
+    {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .appraisal_kbb_header_mileage > input
+    {
+    }
+
+.appraisal_kbb_content_prices
+{
+    height: 43px;
+    background-color: #212121;
+}
+
+.appraisal_kbb_price_items
+{
+    color: #FFF;
+    font-weight: bold;
+    float: left;
+    width: 32.7%;
+    font-size: 24px;
+    text-align: center;
+    padding: 5px 0px;
+    border: 1px solid #FFF;
+    margin-right: 2px;
+}
+
+.appraisal_kbb_price_under
+{
+    background-color: #0062A1;
+}
+
+.appraisal_kbb_price_equal
+{
+    background-color: #008001;
+}
+
+.appraisal_kbb_price_upper
+{
+    background-color: #D12C00;
+}
+
+.appraisal_kbb_vh
+{
+    background-color: #3366cc;
+    padding: 10px;
+}
+
+.appraisal_kbb_vh_items
+{
+    margin-bottom: 5px;
+    width: 50%;
+    float: left;
+}
+
+    .appraisal_kbb_vh_items label
+    {
+        float: left;
+        font-size: 15px;
+        width: 110px;
+    }
+
+    .appraisal_kbb_vh_items input
+    {
+        float: left;
+        width: 170px;
+    }
+
+    .appraisal_kbb_vh_items select
+    {
+        float: left;
+        width: 170px;
+    }
+
+.appraisal_kbb_option_equipment
+{
+}
+
+.appraisal_kbb_oe_items
+{
+    float: left;
+    width: 25%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+    .appraisal_kbb_oe_items label
+    {
+        font-size: 13px;
+    }
+
+    .appraisal_kbb_oe_items input
+    {
+    }
+
+.appraisal_kbb_btns
+{
+    margin-top: 10px;
+    float: right;
+}
+
+.appraisal_kbb_btns_report
+{
+    float: left;
+}
+
+    .appraisal_kbb_btns_report label
+    {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .appraisal_kbb_btns_report select
+    {
+        margin-left: 10px;
+    }
+
+.appraisal_kbb_btns_holder
+{
+    float: left;
+    width: 145px;
+}
+
+    .appraisal_kbb_btns_holder > div
+    {
+        float: right;
+        font-size: 14px;
+        margin-right: 4px;
+        text-align: center;
+        width: 50px;
+        background-color: #3366cc;
+        padding: 5px;
+        color: #FFF;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+.appraisal_kbb_oc_header
+{
+    clear: both;
+    padding: 5px;
+    font-size: 17px;
+    font-weight: bold;
+}
+/* end */
+
+/* manheim popup */
+.appraisal_manheim_popup_holder
+{
+    width: 1100px;
+    padding: 0px;
+}
+
+.appraisal_manheim_content
+{
+}
+
+.appraisal_manheim_top
+{
+    margin-bottom: 3px;
+    background-color: #3366cc;
+    height: 50px;
+    padding: 10px;
+}
+
+    .appraisal_manheim_top > label
+    {
+        padding-top: 20px;
+        color: white;
+        font-weight: bold;
+        font-size: 24px;
+        float: left;
+    }
+
+.appraisal_manheim_select_area
+{
+    float: right;
+    margin: 25px 50px 0px;
+}
+
+#manheim_select_area
+{
+    width: 240px;
+    background-color: white;
+}
+
+.appraisal_manheim_list
+{
+    height: 500px;
+    overflow: auto;
+}
+
+.appraisal_manheim_header
+{
+    height: 20px;
+    padding: 5px 10px;
+    background-color: #3366cc;
+}
+
+    .appraisal_manheim_header > div
+    {
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+.appraisal_manheim_collumn
+{
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.appraisal_manheim_long
+{
+    width: 20%;
+}
+
+.appraisal_manheim_medium
+{
+    width: 9%;
+}
+
+.appraisal_manheim_sort
+{
+    width: 7%;
+}
+
+.appraisal_manheim_odd
+{
+    background-color: #EEEEEE;
+}
+
+.appraisal_manheim_row
+{
+    height: 20px;
+    padding: 4px 0px 3px 10px;
+}
+
+.appraisal_manheim_auction
+{
+    width: 15%;
+}
+/* end */
+
+/*Liem Add*/
+.profile_ebay_textareaNew
+{
+    width: 95%;
+    border: 1px solid #000;
+    border-radius: 3px;
+    height: 52px;
+}
+
+.DDLSold
+{
+    height: 22px;
+    margin-top: 2px;
+}
+
+.profile_marksold_btns > a
+{
+    font-size: 13px;
+}
+
+.confirm_message_btns div > a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.ptr_items_contentKBB
+{
+    border: 2px solid #3366cc;
+    padding-bottom: 4px;
+    font-size: 12px;
+}
+
+.ptr_itemsKBB
+{
+    margin-top: 11px;
+}
+
+.ptr_items_content_Appraisal
+{
+    height: 91px;
+    border: 2px solid #3366cc;
+    font-size: 14px;
+}
+
+.ptr_items_Appraisal
+{
+    height: 123px;
+    margin-top: 11px;
+}
+/*End Liem Add*/
+
+.profile_top_items_holder_appraisal
+{
+    margin-top: 0px;
+    height: 27px;
+    margin-left: 170px;
+}
+
+.profile_top_items_appraisal
+{
+    width: 150px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 1px;
+}
+
+.profile_top_items_text_appraisal
+{
+    padding-left: 2px;
+    font-weight: :bold;
+    font-size: 13px;
+    padding-top: 5px;
+    font-weight: bold;
+    float: left;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+#ACV
+{
+    height: 30px;
+    width: 96%;
+    border: 2px solid #cdcdcd;
+    font-size: 25px;
+}
+
+.data-no-content
+{
+    padding: 10px;
+    min-height: 110px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.carFax-data-no-content
+{
+    font-size: 22px;
+    text-align: center;
+}
+
+.recommendation
+{
+    float: left;
+}
+
+.recommendationTR
+{
+    background-color: #efefef;
+}
+
+.recommendationTD
+{
+    padding-left: 10px!important;
+    font-size: 14px!important;
+    font-weight: bold!important;
+    width: 90px;
+}
+
+.recommendationPriceAboveTD
+{
+    padding-left: 10px!important;
+    font-size: 14px!important;
+    font-weight: bold!important;
+    width: 60px;
+    color: white;
+    background-color: #d12c00;
+}
+
+.recommendationPriceAverageTD
+{
+    padding-left: 10px!important;
+    font-size: 14px!important;
+    font-weight: bold!important;
+    width: 60px;
+    color: white;
+    background-color: #458c00;
+}
+
+.recommendationPriceBelowTD
+{
+    padding-left: 10px!important;
+    font-size: 14px!important;
+    font-weight: bold!important;
+    width: 60px;
+    color: white;
+    background-color: #0062a1;
+}
+
+.recommendationHeaderTR
+{
+    background-color: #5c5c5c;
+    color: white;
+    text-align: center;
+}
+
+.divValue
+{
+    position: relative;
+}
+
+.imgLoading
+{
+    position: absolute;
+    top: 4px;
+    left: 148px;
+    display: none;
+}

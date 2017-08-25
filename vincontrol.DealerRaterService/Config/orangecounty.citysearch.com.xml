@@ -1,0 +1,48 @@
+﻿<reviewSite name="orangecounty.citysearch.com" url="orangecounty.citysearch.com">
+  <namespaces>
+    <namespace name="ns" value="http://www.w3.org/1999/xhtml"/>
+  </namespaces>
+  <pages>
+    <reviewPage name="" dealerId="0" url="" hasAdditionalDealerReview="false" hasAdditionalUserReview="false" hasDetailUserReview="true" category="Sales">
+      <about context=""/>
+      <overallScore context=""/>
+      <additionalReview>
+        <customerService context=""/>
+        <qualityOfWork context=""/>
+        <friendliness context=""/>
+        <overallExperience context=""/>
+        <pricing context=""/>
+        <buyingProcess context=""/>
+        <overallFacilities context=""/>
+      </additionalReview>
+    </reviewPage>
+
+  </pages>
+
+  <reviews>
+    <reviewNode context="//div[@id='detailsReviews']/div[@class='h-review block clip boxSegment']"/>
+    
+    <reviewUrl context="./p[@class='clearfix extendedBlock']/a/@href"/>
+    <reviewAuthor context="./div/span[last()]"/>
+    <reviewDate context="./div[2]/span/span/@title"/>
+    <reviewContent context="./p"/>
+    <reviewDetailContent context="//span[@class='description']"/>
+    <reviewRating context="./div[2]/div/span"/>
+    <additionalReview>
+      <customerService context=""/>
+      <qualityOfWork context=""/>
+      <friendliness context=""/>
+      <overallExperience context=""/>
+      <pricing context=""/>
+      <buyingProcess context=""/>
+      <overallFacilities context=""/>
+      <reasonForVisit context=""/>
+      <recommendThisDealer context=""/>
+      <purchasedAVehicle context=""/>
+    </additionalReview>
+    
+    <nextPageUrl context="//span[@class='highlight2']/following-sibling::*[1]/@href">
+      
+    </nextPageUrl>
+  </reviews>
+</reviewSite>

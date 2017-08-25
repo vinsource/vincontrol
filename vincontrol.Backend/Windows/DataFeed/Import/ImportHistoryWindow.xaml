@@ -1,0 +1,70 @@
+﻿<Window x:Class="vincontrol.Backend.Windows.DataFeed.Import.ImportHistoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        Title="ImportHistoryWindow" Height="1000" Width="1000">
+    <ScrollViewer>
+        <Grid>
+            <StackPanel>
+                <TextBlock Text="Inventory" Padding="10 20"></TextBlock>
+                <DataGrid CanUserAddRows="False" AutoGenerateColumns="False" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" ItemsSource="{Binding Inventories}" FontSize="14">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ACV"  Binding="{Binding Path=ACV}"/>
+                        <DataGridTextColumn Header="Car Image Url"  Binding="{Binding Path=CarImageUrl}"/>
+                        <DataGridTextColumn Header="Cars Options"  Binding="{Binding Path=CarsOptions}"/>
+                        <DataGridTextColumn Header="Cars Packages"  Binding="{Binding Path=CarsPackages}"/>
+                        <DataGridTextColumn Header="Date In Stock"  Binding="{Binding Path=DateInStock}"/>
+                        <DataGridTextColumn Header="Dealer MSRP"  Binding="{Binding Path=DealerMSRP}"/>
+                        <DataGridTextColumn Header="Default Image Url"  Binding="{Binding Path=DefaultImageUrl}"/>
+                        <DataGridTextColumn Header="Make"  Binding="{Binding Path=Make}"/>
+                        <DataGridTextColumn Header="Year"  Binding="{Binding Path=ModelYear}"/>
+                        <DataGridTextColumn Header="MSRP"  Binding="{Binding Path=MSRP}"/>
+                        <DataGridTextColumn Header="Model"  Binding="{Binding Path=Model}"/>
+                        <DataGridTextColumn Header="Sale Price"  Binding="{Binding Path=SalePrice}"/>
+                        <DataGridTextColumn Header="Standard Options"  Binding="{Binding Path=StandardOptions}"/>
+                        <DataGridTextColumn Header="Trim"  Binding="{Binding Path=Trim}"/>
+                        <DataGridTextColumn Header="VIN"  Binding="{Binding Path=VINNumber}"/>
+                    </DataGrid.Columns>
+                    <!--<DataGridTemplateColumn Header="Company Name">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock>Carscom</TextBlock>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>-->
+
+                </DataGrid>
+                <TextBlock Text="Soldout Inventory" Padding="10 20"></TextBlock>
+
+                <DataGrid CanUserAddRows="False" AutoGenerateColumns="False" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" ItemsSource="{Binding SoldoutInventories}" FontSize="14">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="ACV"  Binding="{Binding Path=ACV}"/>
+                        <DataGridTextColumn Header="Car Image Url"  Binding="{Binding Path=CarImageUrl}"/>
+                        <DataGridTextColumn Header="Cars Options"  Binding="{Binding Path=CarsOptions}"/>
+                        <DataGridTextColumn Header="Cars Packages"  Binding="{Binding Path=CarsPackages}"/>
+                        <DataGridTextColumn Header="Date In Stock"  Binding="{Binding Path=DateInStock}"/>
+                        <DataGridTextColumn Header="Dealer MSRP"  Binding="{Binding Path=DealerMSRP}"/>
+                        <DataGridTextColumn Header="Default Image Url"  Binding="{Binding Path=DefaultImageUrl}"/>
+                        <DataGridTextColumn Header="Make"  Binding="{Binding Path=Make}"/>
+                        <DataGridTextColumn Header="Year"  Binding="{Binding Path=ModelYear}"/>
+                        <DataGridTextColumn Header="MSRP"  Binding="{Binding Path=MSRP}"/>
+                        <DataGridTextColumn Header="Model"  Binding="{Binding Path=Model}"/>
+                        <DataGridTextColumn Header="Sale Price"  Binding="{Binding Path=SalePrice}"/>
+                        <DataGridTextColumn Header="Standard Options"  Binding="{Binding Path=StandardOptions}"/>
+                        <DataGridTextColumn Header="Trim"  Binding="{Binding Path=Trim}"/>
+                        <DataGridTextColumn Header="VIN"  Binding="{Binding Path=VINNumber}"/>
+                    </DataGrid.Columns>
+                    <!--<DataGridTemplateColumn Header="Company Name">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock>Carscom</TextBlock>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>-->
+
+                </DataGrid>
+            </StackPanel>
+            <xctk:BusyIndicator VerticalAlignment="Stretch"  HorizontalAlignment="Stretch" Margin="6,0,6,66" IsBusy="{Binding IsBusy}"></xctk:BusyIndicator>
+
+        </Grid>
+    </ScrollViewer>
+</Window>

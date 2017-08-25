@@ -1,0 +1,11 @@
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.PdfHelper\bin\Release\vincontrol.PdfHelper.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.PdfHelper\bin\Release\vincontrol.PdfHelper.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.PdfHelper\bin\Release\HiQPdf.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.PdfHelper\bin\Release\itextsharp.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.PdfHelper\bin\Release\vincontrol.ConfigurationManagement.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.PdfHelper\bin\Release\vincontrol.ConfigurationManagement.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.PdfHelper\bin\Release\HiQPdf.xml
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.PdfHelper\bin\Release\HiQPdf.dep
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.PdfHelper\obj\Release\Vincontrol.PdfHelper.csprojResolveAssemblyReference.cache
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.PdfHelper\obj\Release\vincontrol.PdfHelper.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.PdfHelper\obj\Release\vincontrol.PdfHelper.pdb

@@ -1,0 +1,438 @@
+﻿@model Vincontrol.Web.Models.WindowStickerViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+    .print-area {
+      position: relative;
+      float: left;
+      width: 1180px;
+      height: 1429px;
+    }
+
+    .print-area > img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .sticker-area {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .content-area {
+      position: absolute;
+      bottom: 0;
+      right: 10px;
+      width: 730px;
+      height: 1290px;
+      font-family: arial, sans-serif;
+      text-transform: uppercase;
+    }
+
+    .header {
+      float: left;
+      width: 100%;
+    }
+
+    .header h1 {
+      margin: 0;
+    }
+
+    .car-info {
+      float: left;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .car-info > div {
+      width: 50%;
+      float: left;
+    }
+
+    .car-details .label {
+      font-weight: bold;
+      display: block;
+      float: left;
+      margin-right: 10px;
+    }
+
+    .car-details li {
+      float: left;
+      width: 100%;
+      margin-bottom: 5px;
+    }
+
+    ul.no-style {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li.barcode-vin {
+      width: 100%;
+      height: 70px;
+    }
+
+    .fuel-econ {
+      position: relative;
+      top: -25px;
+    }
+
+    .fuel-econ > img {
+      width: 100%;
+    }
+
+    .fuel-info {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .fuel-info .fuel-header {
+      text-transform: none;
+      font-size: 1.3em;
+    }
+
+    .fuel-info .mileages {
+      float: left;
+      width: 100%;
+      margin-top: 15px;
+      margin-bottom: 30px;
+    }
+
+    .fuel-info .mileages > div {
+      width: 30%;
+      float: left;
+    }
+
+    .fuel-info .mileages > div:nth-child(1) {
+      margin-right: 38%;
+    }
+
+    .mileages .number {
+      font-weight: bold;
+      font-size: 4em;
+    }
+
+    .combined-avg .disclaimer {
+      font-size: .8em;
+      text-transform: none;
+      width: 100%;
+    }
+
+    .section li {
+      width: 45%;
+      margin-right: 5%;
+      float: left;
+      font-size: .8em;
+      text-overflow:ellipsis;
+      white-space: nowrap; 
+      overflow: hidden;
+    }
+
+    .section {
+      margin-bottom: 10px;
+      float: left;
+    }
+
+    .packages {
+      height: 160px;
+      overflow: hidden;
+    }
+
+    .options {
+      height: 593px;
+      overflow: hidden;
+    }
+
+    .option-packages
+        {
+            height: 753px;
+            float: left;
+        }
+
+    .pricing {
+      float: right;
+      width: 100%;
+    }
+
+    .price-label,
+    .price-amount,
+    .addition-pricing,
+    .sales-price {
+      float: left;
+      text-align: right;
+      width: 100%;
+    }
+
+    .addition-pricing {
+      font-size: 1.2em;
+      margin-top: 20px;
+    }
+
+    .addition-pricing .price-label {
+      width: 80%;
+    }
+
+    .addition-pricing .price-amount {
+      width: 20%;
+    }
+
+    .sales-price {
+      font-size: 3em;
+      margin-top: 20px;
+    }
+
+    .sales-price .price-label {
+      width: 70%;
+      position: relative;
+      top: 25px;
+      font-size: 0.5em;
+    }
+
+    .sales-price .price-amount {
+      width: 30%;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="print-area">
+     <img src="@Model.TemplateUrl">
+    <div class="sticker-area">
+      <div class="content-area">
+        <div class="header">
+         <h1>@Html.DisplayFor(model => model.Title)</h1>
+                    <span class="subtext">@Html.DisplayFor(model => model.Trim)</span>
+        </div>
+        <div class="car-info">
+          <div class="car-details">
+            <ul class="no-style">
+              <li><span class="label">Mileage:</span> @Html.DisplayFor(model => model.Mileage)</li>
+                            <li><span class="label">Stock:</span> @Html.DisplayFor(model => model.Stock)</li>
+                            <li><span class="label">Exterior:</span>  @Html.DisplayFor(model => model.ExteriorColor)</li>
+                            <li><span class="label">Interior:</span>  @Html.DisplayFor(model => model.InteriorColor)</li>
+                            <li><span class="label">Transmission:</span>   @Html.DisplayFor(model => model.Transmission)</li>
+                            <li><span class="label">Engine: </span>@Html.DisplayFor(model => model.Engine)</li>
+                            <li><span class="label">VIN:</span>    @Html.DisplayFor(model => model.VIN)</li>
+                            <li class="barcode-vin">
+                                <img style="width: 100%;height: 100%" src="@Model.BarCodeUrl"/></li>
+            </ul>
+          </div>
+              <div class="fuel-econ" style="border: 5px solid #A7A9AC; height: 247px; border-radius: 39px; width: 337px;">
+                        <div class="newmpg_img" style="width: 100%; border-bottom: 7px solid #A7A9AC; position: absolute; height: 108px; top: 57px;">
+                            <img src="http://@System.Web.HttpContext.Current.Request.Url.Host:@System.Web.HttpContext.Current.Request.Url.Port/Content/images/vincontrol/PDF/newmpg.png" style="width: 115px; margin: 0px auto; display: block;">
+                        </div>
+                        <div class="fuel-info">
+                            <div class="fuel-header">
+                                EPA Fuel Economy Estimate
+                            </div>
+                            <div class="mileages">
+                                <div>
+                                    <div class="title">
+                                        City
+                                    </div>
+                                    <div class="number">@Html.DisplayFor(model => model.FuelEconomyCity)</div>
+                                </div>
+                                <div>
+
+                                    <div class="title">
+                                        Highway
+                                    </div>
+
+                                    <div class="number">@Html.DisplayFor(model => model.FuelEconomyHighWay)</div>
+                                </div>
+
+                            </div>
+                            <div class="combined-avg">
+                                <span class="number">Combined Fuel Economy <strong>@Html.DisplayFor(model => model.FuelEconomyAverage) MPG</strong></span>
+                                <br>
+                                <span class="disclaimer"><strong>Actual mileage will vary</strong> depending on driving habits and maintenance.</span>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+     @*   <div class="section packages">
+          <h1 class="section-header">Additional Packages &amp; Options</h1>
+          <ul class="item-list no-style">
+            <li>Premium Plus Pkg</li>
+            <li>Navigation Pkg w/ Camera Navigation Pkg w/ Camera</li>
+            <li>Premium Plus Pkg</li>
+            <li>Navigation Pkg w/ Camera</li>
+            <li>Premium Plus Pkg</li>
+            <li>Navigation Pkg w/ Camera</li>
+            <li>Premium Plus Pkg</li>
+            <li>Navigation Pkg w/ Camera</li>
+            <li>Premium Plus Pkg</li>
+            <li>Navigation Pkg w/ Camera Navigation Pkg w/ Camera</li>
+          </ul>
+        </div>
+        <div class="section options">
+          <h1 class="section-header">Standard Options</h1>
+          <ul class="item-list no-style">
+            <li>Driver Air Bag</li>
+            <li>Passenger Air Bag</li>
+            <li>Front Side Air Bag</li>
+            <li>Front Head Air Bag</li>
+            <li>Rear Head Air Bag</li>
+            <li>Climate Control</li>
+            <li>Multi-Zone A/C</li>
+            <li>A/C</li>
+            <li>Rear A/C</li>
+            <li>Security System</li>
+            <li>AM/FM Stereo</li>
+            <li>CD Player</li>
+            <li>ABS</li>
+            <li>4-Wheel Disc Brakes</li>
+            <li>Cruise Control</li>
+            <li>Driver Air Bag</li>
+            <li>Passenger Air Bag</li>
+            <li>Front Side Air Bag</li>
+            <li>Front Head Air Bag</li>
+            <li>Rear Head Air Bag</li>
+            <li>Climate Control</li>
+            <li>Multi-Zone A/C</li>
+            <li>A/C</li>
+            <li>Rear A/C</li>
+            <li>Security System</li>
+            <li>AM/FM Stereo</li>
+            <li>CD Player</li>
+            <li>ABS</li>
+            <li>4-Wheel Disc Brakes</li>
+            <li>Cruise Control</li>
+            <li>Driver Air Bag</li>
+            <li>Passenger Air Bag</li>
+            <li>Front Side Air Bag</li>
+            <li>Front Head Air Bag</li>
+            <li>Rear Head Air Bag</li>
+            <li>Climate Control</li>
+            <li>Multi-Zone A/C</li>
+            <li>A/C</li>
+            <li>Rear A/C</li>
+            <li>Security System</li>
+            <li>AM/FM Stereo</li>
+            <li>CD Player</li>
+            <li>Driver Air Bag</li>
+            <li>Passenger Air Bag</li>
+            <li>Front Side Air Bag</li>
+            <li>Front Head Air Bag</li>
+            <li>ABS</li>
+            <li>4-Wheel Disc Brakes</li>
+            <li>Cruise Control</li>
+            <li>Driver Air Bag</li>
+            <li>Passenger Air Bag</li>
+            <li>Front Side Air Bag</li>
+            <li>Front Head Air Bag</li>
+            <li>Rear Head Air Bag</li>
+            <li>Climate Control</li>
+            <li>Multi-Zone A/C</li>
+            <li>A/C</li>
+            <li>Rear A/C</li>
+            <li>Security System</li>
+            <li>AM/FM Stereo</li>
+            <li>CD Player</li>
+            <li>ABS</li>
+            <li>4-Wheel Disc Brakes</li>
+            <li>Cruise Control</li>
+          </ul>
+        </div>
+        <div class="section pricing">
+          <div class="addition-pricing">
+            <div class="price-label">Retail Price</div>
+            <div class="price-amount">$31,431</div>
+            <div class="price-label">Dealer Discount</div>
+            <div class="price-amount">$2,857</div>
+            <div class="price-label">Dealer Discount</div>
+            <div class="price-amount">$2,857</div>
+          </div>
+          <div class="sales-price">
+            <div class="price-label">Sales Price</div>
+            <div class="price-amount">$28,574</div>
+          </div>
+        </div>*@
+            <div class="option-packages">
+                    @if (Model.PackageAndOptions.Count != 0)
+                    {
+                        <div class="section packages">
+                            <h1 class="section-header">Additional Packages &amp; Options</h1>
+                            <ul class="item-list no-style">
+                                @foreach (string s in Model.PackageAndOptions)
+                                {
+                                    @: <li>@s</li>
+                      }
+                            </ul>
+                        </div>
+                    }
+                    <div class="section options">
+                        <h1 class="section-header">Standard Options</h1>
+                        <ul class="item-list no-style">
+                            @foreach (string s in Model.StandardOptions)
+                            {
+                                @: <li>@s</li>
+                      }
+                        </ul>
+                    </div>
+                </div>
+                <div class="section pricing">
+                    <div class="addition-pricing">
+                        @{ int count = 0; }
+                        @if (Model.RetailPrice.HasValue)
+                        {
+                            <div class="price-label">@Model.RetailPriceText</div>
+                            <div class="price-amount">@Model.RetailPrice.Value.ToString("c0")</div>
+                        }
+                        else
+                        {
+                            count++;
+                        }
+
+                        @if(Model.DealerDiscount.HasValue)
+                        {
+                            <div class="price-label">@Model.DealerDiscountText</div>
+                            <div class="price-amount">@Model.DealerDiscount.Value.ToString("c0")</div>
+                        }
+                        else
+                        {
+                            count++;
+                        }
+
+                        @if(Model.ManufacturerRebate.HasValue)
+                        {
+                            <div class="price-label">@Model.ManufacturerRebateText</div>
+                            <div class="price-amount">@Model.ManufacturerRebate.Value.ToString("c0")</div>
+                        }
+                        else
+                        {
+                            count++;
+                        }
+
+                        @for (int i = 0; i < count;i++ )
+                        {
+                            @: &nbsp;
+                        }
+                    </div>
+                    <div class="sales-price">
+                        @if(Model.SalePrice.HasValue)
+                        {
+                        <div class="price-label">@Model.SalePriceText</div>
+                        <div class="price-amount">@Model.SalePrice.Value.ToString("c0")</div>
+                        }
+                    </div>
+                </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

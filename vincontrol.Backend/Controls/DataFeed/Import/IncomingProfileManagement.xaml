@@ -1,0 +1,103 @@
+﻿<UserControl x:Class="vincontrol.Backend.Controls.DataFeed.Import.IncomingProfileManagement"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:xctk="clr-namespace:Xceed.Wpf.Toolkit;assembly=Xceed.Wpf.Toolkit"
+             xmlns:Helper="clr-namespace:vincontrol.Backend.Helper" xmlns:Backend="clr-namespace:vincontrol.Backend"
+             mc:Ignorable="d" 
+             d:DesignHeight="700" d:DesignWidth="1000">
+    <Grid>
+        <StackPanel HorizontalAlignment="Stretch">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch"></StackPanel>
+            <DataGrid CanUserAddRows="False" AutoGenerateColumns="False" Height="600" Name="dtgImportProfile" HorizontalAlignment="Stretch" ItemsSource="{Binding Profiles}">
+                <DataGrid.CellStyle>
+                    <Style TargetType="{x:Type DataGridCell}">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Discontinued}" Value="true">
+                                <Setter Property="Background" Value="Pink"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </DataGrid.CellStyle>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Profile Name"  Binding="{Binding Path=ProfileName}"/>
+                    <DataGridTextColumn Header="Company Name"  Binding="{Binding Path=CompanyName}"/>
+                    <!--<DataGridTemplateColumn Header="Company Name">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBlock>Carscom</TextBlock>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>-->
+                    <DataGridTemplateColumn Header="View Dealer">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Command="{Binding OpenDealershipCommand}">View Dealer</Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="View Profile Setting">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Command="{Binding OpenProfileSettingCommand}">View Profile Setting</Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn >
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Width="40" Height="20"   Visibility="{Binding Source={x:Static Backend:App.CurrentUser}, Converter={StaticResource RoleToVisibilityConverter}, ConverterParameter=Admin}"
+                                    Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}, Path= DataContext.DeleteImportProfileTemplateCommand}" CommandParameter="{Binding}" HorizontalAlignment="Right" VerticalAlignment="Top" Name="linkDelete" IsTabStop="False" >
+                                    <Button.Content>
+                                        <Image Margin="5,0,5,0" VerticalAlignment="Center" Stretch="Uniform"  Cursor="Hand" Source="../../../Images/delete.png" />
+                                    </Button.Content>
+                                </Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn >
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <Button Width="40" Height="20" Visibility="{Binding Discontinued, Converter={StaticResource HiddenConverter}}"  Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}, Path= DataContext.PauseProfileTemplateCommand}" CommandParameter="{Binding}" HorizontalAlignment="Right" VerticalAlignment="Top" IsTabStop="False" >
+                                        <Button.Content>
+                                            <Image Margin="5,0,5,0" VerticalAlignment="Center" Stretch="None"  Cursor="Hand" Source="../../../Images/pause.png" />
+                                        </Button.Content>
+                                    </Button>
+                                    <Button Width="40" Height="20" Visibility="{Binding Discontinued, Converter={StaticResource VisibilityConverter}}"  Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}, Path= DataContext.PlayProfileTemplateCommand}" CommandParameter="{Binding}" HorizontalAlignment="Right" VerticalAlignment="Top" IsTabStop="False" >
+                                        <Button.Content>
+                                            <Image Margin="5,0,5,0" VerticalAlignment="Center" Stretch="None"  Cursor="Hand" Source="../../../Images/play.png" />
+                                        </Button.Content>
+                                    </Button>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTextColumn Header="Last Deposited Date" Width="150" Binding="{Binding Path=LastDepositedDate}" />
+                    <!--<DataGridTextColumn Header="File URL" Width="500" Binding="{Binding Path=FileURL}" />-->
+
+                    <DataGridTemplateColumn Header="File URL">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="{Binding FileURL}"  Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}},  Path= DataContext.DownloadFileCommand}"  CommandParameter="{Binding FileURL}"></Button>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn Header="Status">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="{Binding ProfileStatus}" Visibility="{Binding UseSpecificMapping, Converter={StaticResource VisibilityConverter}}"  Command="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type DataGrid}}, Path= DataContext.AttachDescriptionCommand}" CommandParameter="{Binding}"/>
+                                
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Button Margin="0,20,0,0" Content="Create a profile"  Width="157" Command="{Binding AddImportProfileCommand}"  Height="28"></Button>
+        </StackPanel>
+        <xctk:BusyIndicator VerticalAlignment="Stretch"  HorizontalAlignment="Stretch" Margin="6,0,6,66" IsBusy="{Binding IsBusy}"></xctk:BusyIndicator>
+
+    </Grid>
+</UserControl>

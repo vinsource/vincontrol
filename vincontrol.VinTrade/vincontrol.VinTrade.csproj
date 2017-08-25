@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{87BD529F-5918-46D6-ABA3-8CAFBE404AD0}</ProjectGuid>
+    <ProjectTypeGuids>{e53f8fea-eae0-44a6-8774-ffd645390401};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>vincontrol.VinTrade</RootNamespace>
+    <AssemblyName>vincontrol.VinTrade</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MVC 4.0\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Abstractions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Routing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InventoryController.cs" />
+    <Compile Include="Controllers\TradeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\SessionHandler.cs" />
+    <Compile Include="Helpers\LandingPageEmailHelper.cs" />
+    <Compile Include="Helpers\TradeInEmailHelper.cs" />
+    <Compile Include="Helpers\TrimExceptionHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Shared\TradeIn.Master.cs">
+      <DependentUpon>TradeIn.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Shared\TradeIn.Master.designer.cs">
+      <DependentUpon>TradeIn.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\fancybox\blank.gif" />
+    <Content Include="Content\fancybox\fancybox-x.png" />
+    <Content Include="Content\fancybox\fancybox-y.png" />
+    <Content Include="Content\fancybox\fancybox.png" />
+    <Content Include="Content\fancybox\fancy_close.png" />
+    <Content Include="Content\fancybox\fancy_loading.png" />
+    <Content Include="Content\fancybox\fancy_nav_left.png" />
+    <Content Include="Content\fancybox\fancy_nav_right.png" />
+    <Content Include="Content\fancybox\fancy_shadow_e.png" />
+    <Content Include="Content\fancybox\fancy_shadow_n.png" />
+    <Content Include="Content\fancybox\fancy_shadow_ne.png" />
+    <Content Include="Content\fancybox\fancy_shadow_nw.png" />
+    <Content Include="Content\fancybox\fancy_shadow_s.png" />
+    <Content Include="Content\fancybox\fancy_shadow_se.png" />
+    <Content Include="Content\fancybox\fancy_shadow_sw.png" />
+    <Content Include="Content\fancybox\fancy_shadow_w.png" />
+    <Content Include="Content\fancybox\fancy_title_left.png" />
+    <Content Include="Content\fancybox\fancy_title_main.png" />
+    <Content Include="Content\fancybox\fancy_title_over.png" />
+    <Content Include="Content\fancybox\fancy_title_right.png" />
+    <Content Include="Content\fancybox\jquery.easing-1.3.pack.js" />
+    <Content Include="Content\fancybox\jquery.fancybox-1.3.4.css" />
+    <Content Include="Content\fancybox\jquery.fancybox-1.3.4.js" />
+    <Content Include="Content\fancybox\jquery.fancybox-1.3.4.pack.js" />
+    <Content Include="Content\forms.css" />
+    <Content Include="Content\Images\ajax-loader1.gif" />
+    <Content Include="Content\Images\carfax.gif" />
+    <Content Include="Content\Images\carfax.jpg" />
+    <Content Include="Content\Images\fair.jpg" />
+    <Content Include="Content\Images\get-trade-value-btn.jpg" />
+    <Content Include="Content\Images\great.jpg" />
+    <Content Include="Content\Images\NoPhotoAvailable.jpg" />
+    <Content Include="Content\Images\Trade-in-whitebanner.png" />
+    <Content Include="Content\Images\TradeInStep\header.png" />
+    <Content Include="Content\Images\on-fair.jpg" />
+    <Content Include="Content\Images\on-great.jpg" />
+    <Content Include="Content\Images\on-poor.jpg" />
+    <Content Include="Content\Images\on-step-1.png" />
+    <Content Include="Content\Images\on-step-2.png" />
+    <Content Include="Content\Images\on-step-3.png" />
+    <Content Include="Content\Images\poor.jpg" />
+    <Content Include="Content\Images\step-1.png" />
+    <Content Include="Content\Images\step-2.png" />
+    <Content Include="Content\Images\step-3.png" />
+    <Content Include="Content\Images\TradeInStep\chart.jpg" />
+    <Content Include="Content\Images\TradeInStep\img.png" />
+    <Content Include="Content\Images\TradeInStep\img2.jpg" />
+    <Content Include="Content\Images\TradeInStep\nag.png" />
+    <Content Include="Content\Images\TradeInStep\st1-1.png" />
+    <Content Include="Content\Images\TradeInStep\st1.png" />
+    <Content Include="Content\Images\TradeInStep\st2-2.png" />
+    <Content Include="Content\Images\TradeInStep\st2.png" />
+    <Content Include="Content\Images\TradeInStep\st3-3.png" />
+    <Content Include="Content\Images\TradeInStep\st3.png" />
+    <Content Include="Content\Images\TradeInStep\text.png" />
+    <Content Include="Content\Images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\Images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\jquery-ui.css" />
+    <Content Include="Content\LandingCSS\images\bx_loader.gif" />
+    <Content Include="Content\LandingCSS\images\controls.png" />
+    <Content Include="Content\LandingCSS\jquery.bxslider.css" />
+    <Content Include="Content\LandingCSS\print.css" />
+    <Content Include="Content\LandingCSS\style.css" />
+    <Content Include="Content\NewSite.css" />
+    <Content Include="Content\Images\NewSiteImages\bg-repeat.jpg" />
+    <Content Include="Content\Images\NewSiteImages\car.jpg" />
+    <Content Include="Content\Images\NewSiteImages\carfax-check.jpg" />
+    <Content Include="Content\Images\NewSiteImages\carfax-check.png" />
+    <Content Include="Content\Images\NewSiteImages\carfax-one-owner.png" />
+    <Content Include="Content\Images\NewSiteImages\carfax.png" />
+    <Content Include="Content\Images\NewSiteImages\logo.png" />
+    <Content Include="Content\Images\NewSiteImages\print-btn.png" />
+    <Content Include="Content\Images\NewSiteImages\sidebar-line.png" />
+    <Content Include="Content\Images\NewSiteImages\stars.png" />
+    <Content Include="Content\TradeIn.css" />
+    <Content Include="Content\TradeIn\ie-7.css" />
+    <Content Include="Content\TradeIn\style.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Libs\HiQPdf.dll" />
+    <Content Include="Libs\HiQPdf.xml" />
+    <Content Include="Libs\HtmlAgilityPack.dll" />
+    <Content Include="Libs\HtmlAgilityPack.pdb" />
+    <Content Include="Libs\HtmlAgilityPack.xml" />
+    <Content Include="Libs\itextsharp.dll" />
+    <Content Include="Libs\Newtonsoft.Json.dll" />
+    <Content Include="Libs\Newtonsoft.Json.pdb" />
+    <Content Include="Libs\Newtonsoft.Json.xml" />
+    <Content Include="Libs\System.Web.Mvc.dll" />
+    <Content Include="Libs\System.Web.Mvc.xml" />
+    <Content Include="Scripts\DateFormmater.js" />
+    <Content Include="Scripts\jquery-1.6.4.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.16.custom.min.js" />
+    <Content Include="Scripts\jquery.base64.js" />
+    <Content Include="Scripts\jquery.maskedinput-1.3.js" />
+    <Content Include="Scripts\jquery.maskedinput.js" />
+    <Content Include="Scripts\jquery.numeric.js" />
+    <Content Include="Scripts\Landing\tradein3step.js" />
+    <Content Include="Scripts\Landing\jquery.bxslider.js" />
+    <Content Include="Scripts\Landing\jquery.js" />
+    <Content Include="Scripts\Landing\tradein_landing.js" />
+    <Content Include="Scripts\trade-in.js" />
+    <Content Include="Scripts\TradeInStep.js" />
+    <Content Include="Scripts\underscore-min.js" />
+    <Content Include="Scripts\util.js" />
+    <Content Include="Views\Inventory\MakeOffer.ascx" />
+    <Content Include="Views\Inventory\MoreInfo.ascx" />
+    <Content Include="Views\Inventory\NewTradeIn.aspx" />
+    <Content Include="Views\Inventory\PrintTradeIn.aspx" />
+    <Content Include="Views\Inventory\TestDrive.ascx" />
+    <Content Include="Views\Shared\Left.ascx" />
+    <Content Include="Views\Trade\Makes.ascx" />
+    <Content Include="Views\Trade\Models.ascx" />
+    <Content Include="Views\Trade\Reviews.aspx" />
+    <Content Include="Views\Trade\ReviewsData.ascx" />
+    <Content Include="Views\Trade\TradeInStep2.aspx" />
+    <Content Include="Views\Trade\TradeInStep1.aspx" />
+    <Content Include="Views\Trade\TradeInStep3.aspx" />
+    <Content Include="Views\Trade\Trims.ascx" />
+    <Content Include="Views\Trade\VehicleValue.aspx" />
+    <Content Include="Views\Trade\Years.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Scripts\jquery-1.4.4.js" />
+    <Content Include="Scripts\jquery-1.4.4-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.4.min.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery-ui.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\vincontrol.Application\vincontrol.Application.csproj">
+      <Project>{7F0F1443-BE02-4BAD-8E5C-34ADED92DCA3}</Project>
+      <Name>vincontrol.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.CarFax\vincontrol.CarFax.csproj">
+      <Project>{E5C5FBB2-88D1-4DC3-AE3A-4CA4E3E4C75E}</Project>
+      <Name>vincontrol.CarFax</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.ChromeAutoService\vincontrol.ChromeAutoService.csproj">
+      <Project>{23190B92-1F6D-429A-9876-821CA8E213CC}</Project>
+      <Name>vincontrol.ChromeAutoService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.Constant\vincontrol.Constant.csproj">
+      <Project>{AD3324CA-2044-4C68-BE5D-CCB63AD12897}</Project>
+      <Name>vincontrol.Constant</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.Data\vincontrol.Data.csproj">
+      <Project>{7D76E800-C9D8-407A-8844-A775EE6D5A65}</Project>
+      <Name>vincontrol.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.DomainObject\vincontrol.DomainObject.csproj">
+      <Project>{E5A9809F-55E2-4E2E-9696-48042DDF4305}</Project>
+      <Name>vincontrol.DomainObject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.Helper\vincontrol.Helper.csproj">
+      <Project>{9B02AFFB-392B-46D8-A75D-A0A5D521222C}</Project>
+      <Name>vincontrol.Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vincontrol.Market\Vincontrol.Market.csproj">
+      <Project>{52A069CD-0EEC-45DA-AE66-B0B9BB58B1BF}</Project>
+      <Name>Vincontrol.Market</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.PdfHelper\vincontrol.PdfHelper.csproj">
+      <Project>{1572D91A-33F5-43F4-9E7B-8CC2A25414BB}</Project>
+      <Name>vincontrol.PdfHelper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Libs\HiQPdf.dep" />
+    <Content Include="Views\Shared\NewSite.Master" />
+    <Content Include="Views\Shared\TradeIn.Master" />
+    <None Include="Properties\PublishProfiles\VinTrade.pubxml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62360</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

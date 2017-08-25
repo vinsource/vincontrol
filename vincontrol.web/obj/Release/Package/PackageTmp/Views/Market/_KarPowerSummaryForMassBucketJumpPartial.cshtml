@@ -1,0 +1,222 @@
+﻿@using Vincontrol.Web.Handlers
+@model Vincontrol.Web.Models.BucketJumpViewModel
+
+<div class="bucketjump_container">
+    <div style="display:inline;">
+        <table border="1" cellpadding="2" cellspacing="2" width="750px" style="font-size: 1.9em; color: White; border-color: White;">
+            <tr>
+                <td style="background-color: #0062A0">@Model.CarOnMarket.Price.ToString("c0")</td>
+                <td style="background-color: #008000">@Model.MileageAdjustmentDiff.ToString("c0")</td>
+                <td style="background-color: #D02C00">@Model.CarOfDealer.SuggestedRetailPrice.ToString("c0")</td>
+                <input type="hidden" id="hidWholeSaleOptions" name="hidWholeSaleOptions" value="@Model.WholeSaleWithOptions" />
+                <input type="hidden" id="hidCertified" name="hidCertified" value="@Model.Certified.ToString()" />
+            </tr>
+        </table>
+    </div>
+    
+    <div style="display:inline-block;width:100%;">
+    <div class="bucketjump_dealer_compare_holder">
+        <div class="bj_dc_left">
+            @SessionHandler.Dealer.DealershipName
+        </div>
+        <div class="bj_dc_middle">
+            @if (Model.CarOfDealer.Miles > Model.CarOnMarket.Miles)
+            {
+                @((Model.CarOfDealer.Miles - Model.CarOnMarket.Miles).ToString("#,##0"))
+            }
+            else
+            {
+                    @((Model.CarOnMarket.Miles - Model.CarOfDealer.Miles).ToString("#,##0"))
+            }
+            mi
+        </div>
+        <div class="bj_dc_right">
+            @Model.CarOnMarket.Dealer
+        </div>
+    </div>
+    <div class="bj_vh_holder">
+        <div class="bj_vh_left">
+            <div class="bj_vh_title">
+                @Model.CarOfDealer.Year @Model.CarOfDealer.Make @Model.CarOfDealer.Model
+            </div>
+            <div class="bj_vh_info">
+                <div class="bj_vh_info_img">
+                    <img src="@Model.CarOfDealer.Image" alt="" style="max-height:80px;"/>
+                </div>
+                <div class="bj_vh_info_pm">
+                    <div class="bj_vh_info_price">
+                        <div class="bj_vh_info_title">
+                            Price
+                        </div>
+                        <div class="bj_vh_info_value">
+                            @Model.CarOfDealer.Price.ToString("c0")
+                        </div>
+                    </div>
+                    <div class="bj_vh_info_mileage">
+                        <div class="bj_vh_info_title">
+                            Mileage
+                        </div>
+                        <div class="bj_vh_info_value">
+                            @Model.CarOfDealer.Miles.ToString("0,0") mi
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bj_vh_right">
+            <div class="bj_vh_title">
+                @Model.CarOnMarket.Year @Model.CarOnMarket.Make @Model.CarOnMarket.Model
+            </div>
+            <div class="bj_vh_info">
+                <div class="bj_vh_info_img">
+                    <img src="@Model.CarOnMarket.Image" alt="" style="max-height:80px;"/>
+                </div>
+                <div class="bj_vh_info_pm">
+                    <div class="bj_vh_info_price">
+                        <div class="bj_vh_info_title">
+                            Price
+                        </div>
+                        <div class="bj_vh_info_value">
+                            @Model.CarOnMarket.Price.ToString("c0")
+                        </div>
+                    </div>
+                    <div class="bj_vh_info_mileage">
+                        <div class="bj_vh_info_title">
+                            Mileage
+                        </div>
+                        <div class="bj_vh_info_value">
+                            @Model.CarOnMarket.Miles.ToString("0,0") mi
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div style="clear:both;width:100%;">        
+        <div id="right_content_nav" class="right_content_nav" style="margin-left: 0px;">
+            <div class="right_content_nav_items nav_first">
+                <input type="checkbox" title="Apply for Bucket Jump" name="IsMassBucketJumpAll" id="IsMassBucketJumpAll">
+            </div>            
+            <div class="right_content_nav_items nav_long" value="vin" style="width:100px;">
+                <a href="javascript:void(0)">VIN</a>
+                <img class="imgSort" id="imgSortVin" src="" width="12px" style="display: none;">
+            </div>
+            <div class="right_content_nav_items nav_long" value="stock" style="width:50px;">
+                <a href="javascript:void(0)">Stock</a>
+                <img class="imgSort" id="imgSortStock" src="" width="12px" style="display: none;">
+            </div>
+            <div class="right_content_nav_items nav_long" value="year" style="width:40px;">
+                <a href="javascript:void(0)">Year</a>
+                <img class="imgSort" id="imgSortYear" src="" width="12px" style="display: none;">
+            </div>
+            <div class="right_content_nav_items nav_long" value="make" style="">
+                <a href="javascript:void(0)">Make</a>
+                <img class="imgSort" id="imgSortMake" src="../Content/images/vincontrol/up.png" width="12px" style="display: none;">
+            </div>
+            <div class="right_content_nav_items nav_long" value="model" style="">
+                <a href="javascript:void(0)">Model</a>
+                <img class="imgSort" id="imgSortModel" src="" width="12px" style="display: none;">
+            </div>
+            <div class="right_content_nav_items nav_long" value="trim" style="">
+                <a href="javascript:void(0)">Trim</a>
+                <img class="imgSort" id="imgSortTrim" src="" width="12px" style="display: none;">
+            </div>
+            <div class="right_content_nav_items nav_long" value="color" style="">
+                <a href="javascript:void(0)">Color</a>
+                <img class="imgSort" id="imgSortColor" src="" width="12px" style="display: none;">
+            </div>
+            <div class="right_content_nav_items nav_long" value="odometer" style="width:80px;">
+                <a href="javascript:void(0)">Odometer</a>
+                <img class="imgSort" id="imgSortOdometer" src="" width="12px" style="display: none;">
+            </div>
+            <div class="right_content_nav_items nav_long" value="price" style="">
+                <a href="javascript:void(0)">Price</a>
+                <img class="imgSort" id="imgSortPrice" src="" width="12px" style="display: none;">
+            </div>
+            @*<div class="right_content_nav_items nav_first" style="font-size:12px;width:70px;">
+                <input type="checkbox" title="Certified" name="IsCertified" id="IsCertified" style="float: left;">Certified
+            </div>*@
+        </div>        
+        <div class="vin_listVehicle_holder" style="padding-left: 0px; height: 300px; overflow:scroll;">
+            @{ 
+                if (Model.ListOfSimilarUsedInventories.Any()){
+                foreach (var group in Model.ListOfSimilarUsedInventories.GroupBy(i => i.DealershipName))
+                {
+                    <div><b><u>@group.Key</u></b></div>
+                    foreach (var item in group)
+                    {
+                    <div class="contain_list list_odd @(item.IsCertified ? "certified" : "nocertified")">
+                    <div class="right_content_items nav_first">
+                        <input type="checkbox" title="Apply for Bucket Jump" name="IsMassBucketJump_@item.ListingId" id="IsMassBucketJump_@item.ListingId" value="@item.ListingId">
+                    </div>                    
+                    <a class="vin_editProfile" href="javascript:;" title="@item.Vin">
+                        <div class="right_content_items nav_long" style="width:100px;">
+                            <img src="@(!String.IsNullOrEmpty(item.CarThumbnailImageUrl) ? item.CarThumbnailImageUrl.Split(new[] { ',', ';' }, StringSplitOptions.RemoveEmptyEntries)[0] : item.CarThumbnailImageUrl)" style="width:40px;display:inline-block;float:left;"/>
+                            <div style="float:right;">@(item.Vin.Length > 8 ? item.Vin.Substring(item.Vin.Length - 8) : item.Vin)</div>
+                        </div>
+                    </a>
+                    <a class="vin_editProfile" href="javascript:;">
+                        <div class="right_content_items nav_long" style="width:50px;">
+                            @item.StockNumber
+                        </div>
+                    </a>
+                    <a class="vin_editProfile" href="javascript:;">
+                        <div class="right_content_items nav_long" style="width:40px;">
+                            @item.ModelYear
+                        </div>
+                    </a>
+                    <a class="vin_editProfile" href="javascript:;" title="@item.Make">
+                        <div class="right_content_items nav_long" style="">
+                            @item.Make
+                        </div>
+                    </a>
+                    <a class="vin_editProfile" href="javascript:;" title="@item.Model">
+                        <div class="right_content_items nav_long" style="">
+                            @item.Model
+                        </div>
+                    </a>
+                    <a class="vin_editProfile" href="javascript:;" title="@item.Trim">
+                        <div class="right_content_items nav_long" style="">
+                            @item.Trim
+                        </div>
+                    </a>
+                    <a class="vin_editProfile" href="javascript:;" title="@item.ExteriorColor">
+                        <div class="right_content_items nav_long" style="">
+                            @item.ExteriorColor
+                        </div>
+                    </a>
+                    <a class="vin_editProfile" href="javascript:;" title="@item.Mileage">
+                        <div class="right_content_items nav_long" style="width:80px;">
+                            @item.Mileage
+                        </div>
+                    </a>
+                    <a class="vin_editProfile" href="/Inventory/EditIProfile?ListingID=135538" title="@item.SalePrice">
+                        <div class="right_content_items nav_long" style="">
+                            @item.SalePrice
+                        </div>
+                    </a>
+                    <div class="right_content_items nav_first">
+                    </div>
+                </div>            
+                    }
+                }
+                } else {
+                    <div class="contain_list list_odd">No similar cars</div>
+                }
+            }
+        </div>
+    </div>
+    @if (Model.ListOfSimilarUsedInventories.Any())
+    {
+        <input type="button" name="btnApplyAll" id="btnApplyAll" value="Apply" style="cursor:pointer;width:120px;" />
+        @*<input type="button" name="btnSkip" id="btnSkip" value="Skip" style="cursor:pointer;width:120px;" />*@
+        <input type="button" name="btnSkip" id="btnClose" value="Close" style="cursor:pointer;width:120px;" />
+    }
+    else
+    {
+        @*<input type="button" name="btnSkip" id="btnSkip" value="Print" style="cursor:pointer;width:120px;" />*@
+        <input type="button" name="btnSkip" id="btnClose" value="Close" style="cursor:pointer;width:120px;" />
+    }
+</div>

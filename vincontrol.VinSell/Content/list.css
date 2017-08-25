@@ -1,0 +1,35 @@
+
+
+.calendar-selection {
+  position: absolute;
+  right:30px;
+  bottom: 0;
+}
+
+.calendar-selection > div {
+  display: inline-block;
+  padding: 5px 15px 1px 15px;
+  background: #424443;
+  color: white;
+  margin-left: 0px;
+  font-size: .9em;
+  cursor: pointer;
+}
+
+.calendar-selection > div:hover,
+.calendar-selection > div.active {
+  background: #161e8a;
+}
+
+.calendar-header:hover {
+  background: none !important
+}
+
+.calendar-header {
+  background: none !important;
+  padding: 0 !important;
+  display: block !important;
+  color: #424443 !important;
+  font-size: 1em !important;
+  cursor: default !important;
+}

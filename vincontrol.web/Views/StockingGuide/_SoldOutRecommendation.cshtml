@@ -1,0 +1,167 @@
+﻿@using System.Web.Script.Serialization
+@using DocumentFormat.OpenXml.Office.CustomUI
+@using Newtonsoft.Json
+@model List<vincontrol.DomainObject.MarketCarInfo>
+
+<div class="v3BrandOther_row">
+    <div class="v3BrandOther_Segments_Detail" style="display: block;">
+        <div id="SDTableMarket" class="v3BrandOther_SD_table">
+            <div id="header">
+                <div class="v3BrandOther_SD_row v3BrandOther_SD_rowTop">
+                    <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnMedium" style="width: 15%;" value="marketYear" sortdirection="up" dealersegmentid="" detailid="">
+                        Year
+                    </div>
+                    <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnMedium" style="width: 15%;" value="marketMake" sortdirection="up" dealersegmentid="" detailid="">
+                        Make
+                    </div>
+                    <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnMedium" style="width: 15%;" value="marketModel" sortdirection="up" dealersegmentid="" detailid="">
+                        Model
+                    </div>
+                    <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnMedium" style="width: 15%;" value="marketTrim" sortdirection="up" dealersegmentid="" detailid="">
+                        Trim
+                    </div>
+                    <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnSmall v3BalanceEqual" value="marketHistory30D" sortdirection="up" dealersegmentid="" detailid="">
+                        History(30d)
+                    </div>
+                    <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnSmall v3BalanceEqual" value="marketHistory60D" sortdirection="up" dealersegmentid="" detailid="">
+                        History(60d)
+                    </div>
+                    <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnSmall v3BalanceEqual" value="marketHistory90D" sortdirection="up" dealersegmentid="" detailid="">
+                        History(90d)
+                    </div>
+                    <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnLarge" style="width: 19%;" value="marketWishList" sortdirection="up" dealersegmentid="" detailid="">
+                        Market Supply
+                    </div>
+                </div>
+            </div>
+            <div id="body">
+                @if (Model.Any())
+                {
+                    foreach (var item in Model.GroupBy(i => new { i.Year, i.Make }))
+                    {
+                        <div class="main-group" id="@(item.First().Year)_@(item.First().Make)">
+                            <div class="SDRowsMarket" id="groupByMake_@(item.First().Year)_@(item.First().Make)">
+                                <div class="v3BrandOther_SD_row">
+                                    <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnMedium" style="width: 15%;">
+                                        @item.First().Year
+                                    </div>
+                                    <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnMedium" style="width: 15%;">
+                                        @item.First().Make
+                                    </div>
+                                    <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnMedium" style="width: 15%;">
+                                        -
+                                    </div>
+                                    <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnMedium" style="width: 15%;">
+                                        -
+                                    </div>
+                                    <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnMedium" style="width: 7%; color: green;">
+                                        @*<div class="v3BrandOtherSD_marketStock_left">@item.SoldDays</div>*@
+                                        @item.Count(i => i.SoldDays <= 30)
+                                    </div>
+                                    <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnMedium" style="width: 7%; color: green;">
+                                        @item.Count(i => i.SoldDays > 30 && i.SoldDays <= 60)
+                                    </div>
+                                    <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnMedium" style="width: 7%; color: green;">
+                                        @item.Count(i => i.SoldDays > 60)
+                                    </div>
+                                    <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnLarge" style="width: 19%;">
+                                        @item.First().MarketSupply
+                                    </div>
+                                </div>
+                            </div>
+
+                            @foreach (var item01 in item.GroupBy(i => i.Model))
+                            {
+                                <div class="SDRowsMarket" id="groupByModel_@(item.First().Year)_@(item.First().Make)_@(item01.First().Model)" style="display: none;">
+                                    <div class="v3BrandOther_SD_row">
+                                        <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnMedium" style="width: 15%; border: none; border-bottom: 1px solid #CDDCDC;">
+                                        </div>
+                                        <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnMedium" style="width: 15%; border: none; border-right: 1px solid #CDDCDC; border-bottom: 1px solid #CDDCDC;">
+                                        </div>
+                                        <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnMedium" style="width: 15%;">
+                                            @item01.First().Model
+                                        </div>
+                                        <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnMedium" style="width: 15%;">
+                                            -
+                                        </div>
+                                        <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnMedium" style="width: 7%; color: green;">
+                                            @item01.Count(i => i.SoldDays <= 30)
+                                        </div>
+                                        <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnMedium" style="width: 7%; color: green;">
+                                            @item01.Count(i => i.SoldDays > 30 && i.SoldDays <= 60)
+                                        </div>
+                                        <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnMedium" style="width: 7%; color: green;">
+                                            @item01.Count(i => i.SoldDays > 60)
+                                        </div>
+                                        <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnLarge" style="width: 19%;">
+                                            @item01.First().MarketSupply
+                                        </div>
+                                    </div>
+                                </div>
+
+                                foreach (var item02 in item01.GroupBy(i => i.Trim))
+                                {
+                                    <div class="SDRowsMarket" id="groupByTrim_@(item.First().Year)_@(item.First().Make)_@(item01.First().Model)_@(item02.First().Trim)" style="display: none;">
+                                        <div class="v3BrandOther_SD_row">
+                                            <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnMedium" style="width: 15%; border: none; border-bottom: 1px solid #CDDCDC;">
+                                            </div>
+                                            <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnMedium" style="width: 15%; border: none; border-bottom: 1px solid #CDDCDC;">
+                                            </div>
+                                            <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnMedium" style="width: 15%; border: none; border-right: 1px solid #CDDCDC; border-bottom: 1px solid #CDDCDC;">
+                                            
+                                            </div>
+                                            <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnMedium" style="width: 15%;">
+                                                @item02.First().Trim
+                                            </div>
+                                            <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnMedium" style="width: 7%; color: green;">
+                                                @item02.Count(i => i.SoldDays <= 30)
+                                            </div>
+                                            <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnMedium" style="width: 7%; color: green;">
+                                                @item02.Count(i => i.SoldDays > 30 && i.SoldDays <= 60)
+                                            </div>
+                                            <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnMedium" style="width: 7%; color: green;">
+                                                @item02.Count(i => i.SoldDays > 60)
+                                            </div>
+                                            <div class="v3BrandOtherSD_collumn v3BrandOtherSD_collumnLarge" style="width: 19%;">
+                                                @item02.First().MarketSupply
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            }
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</div>
+    
+<script>
+    var result = @Html.Raw(new JavaScriptSerializer().Serialize(Model));
+
+    var makes = [];
+    var models = [];
+    $.each(result, function (index, value) {
+        if ($.inArray(value.Make, makes) == -1) {
+            makes.push(value.Make);
+        }
+
+        if ($.inArray(value.Make + "_" + value.Model, models) == -1) {
+            models.push(value.Make + "_" + value.Model);
+        }
+    });
+
+    $.each(makes, function (key, value) {
+        $('#ddlMake').append($("<option/>", {
+            value: value,
+            text: value
+        }));
+    });
+    $.each(models, function (key, value) {
+        $('#ddlModel').append($("<option/>", {
+            value: value,
+            text: value.split('_')[1]
+        }));
+    });
+</script>

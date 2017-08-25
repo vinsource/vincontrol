@@ -1,0 +1,10 @@
+.container .page-info .state-dropdown {
+  position: absolute;
+  right: 25px;
+  bottom: 0;
+}
+
+.map {
+  margin: 0 auto;
+  text-align: center;
+}

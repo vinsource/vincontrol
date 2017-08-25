@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{43B03EE3-6ADF-4FB2-BECC-F769ED49EC23}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>vincontrol.DataFeed</RootNamespace>
+    <AssemblyName>vincontrol.DataFeed</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LumenWorks.Framework.IO, Version=3.8.0.0, Culture=neutral, PublicKeyToken=5ad3ea2f85776344, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\LumenWorks.Framework.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="Starksoft.Net.Ftp, Version=1.0.158.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Starksoft.Net.Ftp.dll</HintPath>
+    </Reference>
+    <Reference Include="Starksoft.Net.Proxy, Version=1.0.131.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\Starksoft.Net.Proxy.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helper\AutoServiceHelper.cs" />
+    <Compile Include="Helper\CommonHelper.cs" />
+    <Compile Include="Helper\CsvExport.cs" />
+    <Compile Include="Helper\CsvFile.cs" />
+    <Compile Include="Helper\CsvReader.cs" />
+    <Compile Include="Helper\EmailHelper.cs" />
+    <Compile Include="Helper\ExportXMLHelper.cs" />
+    <Compile Include="Helper\FTPClientHelper.cs" />
+    <Compile Include="Helper\FTPExcelHelper.cs" />
+    <Compile Include="Helper\FTPHelper.cs" />
+    <Compile Include="Helper\XMLHelper.cs" />
+    <Compile Include="LogFile.cs" />
+    <Compile Include="Model\CompanyViewModel.cs" />
+    <Compile Include="Model\DealerViewModel.cs" />
+    <Compile Include="Model\ExportHistoryViewModel.cs" />
+    <Compile Include="Model\ImportHistoryViewModel.cs" />
+    <Compile Include="Model\MappingViewModel.cs" />
+    <Compile Include="Model\VehicleUpdateInfoViewModel.cs" />
+    <Compile Include="Model\VehicleViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\AutomotiveService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Libs\LumenWorks.Framework.IO.dll" />
+    <Content Include="Libs\Starksoft.Net.Ftp.dll" />
+    <Content Include="Libs\Starksoft.Net.Proxy.dll" />
+    <Content Include="SampleTemplate.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Service References\AutomotiveService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\AutomotiveService\configuration.svcinfo" />
+    <None Include="Service References\AutomotiveService\configuration91.svcinfo" />
+    <None Include="Service References\AutomotiveService\vincontrol.DataFeed.AutomotiveService.DataVersion.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AutomotiveService\vincontrol.DataFeed.AutomotiveService.Division.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AutomotiveService\vincontrol.DataFeed.AutomotiveService.Model.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AutomotiveService\vincontrol.DataFeed.AutomotiveService.Style.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AutomotiveService\vincontrol.DataFeed.AutomotiveService.StyleInformation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AutomotiveService\vincontrol.DataFeed.AutomotiveService.Subdivision.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AutomotiveService\vincontrol.DataFeed.AutomotiveService.ValidationResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\AutomotiveService\vincontrol.DataFeed.AutomotiveService.VehicleInformation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\AutomotiveService\AutomotiveDescriptionService6.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\vincontrol.Backend.Data\vincontrol.Backend.Data.csproj">
+      <Project>{47C95BEB-99DA-4D93-94F6-0B4E5DB0FDD9}</Project>
+      <Name>vincontrol.Backend.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.Backend.Model\vincontrol.Backend.Model.csproj">
+      <Project>{583FD08A-00A7-4992-B675-15C08E41BE28}</Project>
+      <Name>vincontrol.Backend.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\AutomotiveService\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
