@@ -1,0 +1,13 @@
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC4\Vincontrol.Youtube\bin\Debug\Vincontrol.Youtube.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC4\Vincontrol.Youtube\bin\Debug\Vincontrol.Youtube.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC4\Vincontrol.Youtube\bin\Debug\Google.GData.Client.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC4\Vincontrol.Youtube\bin\Debug\Google.GData.Extensions.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC4\Vincontrol.Youtube\bin\Debug\Google.GData.YouTube.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC4\Vincontrol.Youtube\bin\Debug\Newtonsoft.Json.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC4\Vincontrol.Youtube\bin\Debug\vincontrol.ConfigurationManagement.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC4\Vincontrol.Youtube\bin\Debug\vincontrol.ConfigurationManagement.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC4\Vincontrol.Youtube\bin\Debug\Newtonsoft.Json.pdb
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC4\Vincontrol.Youtube\bin\Debug\Newtonsoft.Json.xml
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC4\Vincontrol.Youtube\obj\Debug\Vincontrol.Youtube.csprojResolveAssemblyReference.cache
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC4\Vincontrol.Youtube\obj\Debug\Vincontrol.Youtube.dll
+E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC4\Vincontrol.Youtube\obj\Debug\Vincontrol.Youtube.pdb
