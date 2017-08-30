@@ -22,7 +22,8 @@
     <OldToolsVersion>4.0</OldToolsVersion>
     <UseIISExpress>false</UseIISExpress>
     <TargetFrameworkProfile />
-    <SilverlightApplicationList>{A3BC906D-3187-4973-A18C-167D481DE0D5}|..\vincontrol.Silverlight.NewLayout\vincontrol.Silverlight.NewLayout.csproj|ClientBin|False</SilverlightApplicationList>
+    <SilverlightApplicationList>
+    </SilverlightApplicationList>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -3133,10 +3134,6 @@
     <EmbeddedResource Include="ReportTemplates\UsedInventoryReportTemplate2.rdlc" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\NewVinControlMVC4\Vincontrol.Facebook\Vincontrol.Facebook.csproj">
-      <Project>{5e8c87e8-ee9d-4694-9b8d-d8886281a056}</Project>
-      <Name>Vincontrol.Facebook</Name>
-    </ProjectReference>
     <ProjectReference Include="..\vincontrol.Application\vincontrol.Application.csproj">
       <Project>{7f0f1443-be02-4bad-8e5c-34aded92dca3}</Project>
       <Name>vincontrol.Application</Name>
@@ -3173,6 +3170,10 @@
       <Project>{B54C9C64-F5B1-4E8B-8F4E-D269FBD9CEF2}</Project>
       <Name>vincontrol.EmailHelper</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Vincontrol.Facebook\Vincontrol.Facebook.csproj">
+      <Project>{5e8c87e8-ee9d-4694-9b8d-d8886281a056}</Project>
+      <Name>Vincontrol.Facebook</Name>
+    </ProjectReference>
     <ProjectReference Include="..\vincontrol.Helper\vincontrol.Helper.csproj">
       <Project>{9b02affb-392b-46d8-a75d-a0a5d521222c}</Project>
       <Name>vincontrol.Helper</Name>
@@ -3200,6 +3201,10 @@
     <ProjectReference Include="..\vincontrol.StockingGuide\vincontrol.StockingGuide.DataService.csproj">
       <Project>{c8ea26fd-1bd6-409c-8b0d-0086f7f03d98}</Project>
       <Name>vincontrol.StockingGuide.DataService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vincontrol.Youtube\Vincontrol.Youtube.csproj">
+      <Project>{373a2555-8bbc-48f6-9c70-ae8753e8f103}</Project>
+      <Name>Vincontrol.Youtube</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

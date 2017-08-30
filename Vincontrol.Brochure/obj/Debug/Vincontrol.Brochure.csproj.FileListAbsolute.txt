@@ -55,3 +55,17 @@ E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\Vincontrol.Brochure\bin\D
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\Vincontrol.Brochure\bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\Vincontrol.Brochure\obj\Debug\Vincontrol.Brochure.exe.manifest
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\Vincontrol.Brochure\obj\Debug\Vincontrol.Brochure.application
+C:\VIN\vinsource\vincontrol\Vincontrol.Brochure\obj\Debug\Vincontrol.Brochure.csprojResolveAssemblyReference.cache
+C:\VIN\vinsource\vincontrol\Vincontrol.Brochure\obj\Debug\Vincontrol.Brochure.csproj.ResolveComReference.cache
+C:\VIN\vinsource\vincontrol\Vincontrol.Brochure\obj\Debug\MainWindow.baml
+C:\VIN\vinsource\vincontrol\Vincontrol.Brochure\obj\Debug\UploadImage.baml
+C:\VIN\vinsource\vincontrol\Vincontrol.Brochure\obj\Debug\App.baml
+C:\VIN\vinsource\vincontrol\Vincontrol.Brochure\obj\Debug\MainWindow.g.cs
+C:\VIN\vinsource\vincontrol\Vincontrol.Brochure\obj\Debug\UploadImage.g.cs
+C:\VIN\vinsource\vincontrol\Vincontrol.Brochure\obj\Debug\App.g.cs
+C:\VIN\vinsource\vincontrol\Vincontrol.Brochure\obj\Debug\Vincontrol.Brochure_MarkupCompile.cache
+C:\VIN\vinsource\vincontrol\Vincontrol.Brochure\obj\Debug\Vincontrol.Brochure.g.resources
+C:\VIN\vinsource\vincontrol\Vincontrol.Brochure\obj\Debug\Vincontrol.Brochure.Properties.Resources.resources
+C:\VIN\vinsource\vincontrol\Vincontrol.Brochure\obj\Debug\Vincontrol.Brochure.csproj.GenerateResource.Cache
+C:\VIN\vinsource\vincontrol\Vincontrol.Brochure\obj\Debug\Vincontrol.Brochure.exe
+C:\VIN\vinsource\vincontrol\Vincontrol.Brochure\obj\Debug\Vincontrol.Brochure.pdb

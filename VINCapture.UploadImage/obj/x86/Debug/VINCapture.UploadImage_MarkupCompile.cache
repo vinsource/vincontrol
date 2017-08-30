@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINCapture.UploadImage\obj\x86\Debug\
+C:\VIN\vinsource\vincontrol\VINCapture.UploadImage\obj\x86\Debug\
 VINCapture.UploadImage
 none
 false
 DEBUG;TRACE
-E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINCapture.UploadImage\View\App.xaml
+C:\VIN\vinsource\vincontrol\VINCapture.UploadImage\View\App.xaml
 6-516611553
-
+4-657855970
 38-2069378944
-28-1767875148
+28-961382851
 View\DetailPage.xaml;View\EmailListWindow.xaml;View\HiddenWindow.xaml;View\LoginPage.xaml;View\StartupPage.xaml;View\StartupWindow.xaml;
 
-False
+True
 

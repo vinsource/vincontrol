@@ -20,3 +20,14 @@ E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.PdfHelper\bin\
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.PdfHelper\obj\Debug\Vincontrol.PdfHelper.csprojResolveAssemblyReference.cache
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.PdfHelper\obj\Debug\vincontrol.PdfHelper.dll
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.PdfHelper\obj\Debug\vincontrol.PdfHelper.pdb
+C:\VIN\vinsource\vincontrol\vincontrol.PdfHelper\bin\Debug\vincontrol.PdfHelper.dll
+C:\VIN\vinsource\vincontrol\vincontrol.PdfHelper\bin\Debug\vincontrol.PdfHelper.pdb
+C:\VIN\vinsource\vincontrol\vincontrol.PdfHelper\bin\Debug\HiQPdf.dll
+C:\VIN\vinsource\vincontrol\vincontrol.PdfHelper\bin\Debug\itextsharp.dll
+C:\VIN\vinsource\vincontrol\vincontrol.PdfHelper\bin\Debug\vincontrol.ConfigurationManagement.dll
+C:\VIN\vinsource\vincontrol\vincontrol.PdfHelper\bin\Debug\vincontrol.ConfigurationManagement.pdb
+C:\VIN\vinsource\vincontrol\vincontrol.PdfHelper\bin\Debug\HiQPdf.xml
+C:\VIN\vinsource\vincontrol\vincontrol.PdfHelper\bin\Debug\HiQPdf.dep
+C:\VIN\vinsource\vincontrol\vincontrol.PdfHelper\obj\Debug\Vincontrol.PdfHelper.csprojResolveAssemblyReference.cache
+C:\VIN\vinsource\vincontrol\vincontrol.PdfHelper\obj\Debug\vincontrol.PdfHelper.dll
+C:\VIN\vinsource\vincontrol\vincontrol.PdfHelper\obj\Debug\vincontrol.PdfHelper.pdb

@@ -5,7 +5,7 @@
 	</assembly>
 	<members>
 		<member name="N:Microsoft.Reporting.WebForms">
-			<summary>The <see cref="N:Microsoft.Reporting.WebForms" /> namespace contains methods and properties for the ReportViewer Web server control.</summary>
+			<summary>The <see cref="N:Microsoft.Reporting.WebForms" /> namespace contains methods and properties for the ReportViewer Web server control. </summary>
 		</member>
 		<member name="T:Microsoft.Reporting.WebForms.AspNetSessionExpiredException">
 			<summary>Occurs when the ASP.NET session has expired.</summary>
@@ -14,7 +14,7 @@
 			<summary>Provides data for the <see cref="E:Microsoft.Reporting.WebForms.ReportViewer.Back" /> event.</summary>
 		</member>
 		<member name="M:Microsoft.Reporting.WebForms.BackEventArgs.#ctor(Microsoft.Reporting.WebForms.Report)">
-			<summary>Initializes a new instance of the <see cref="T:Microsoft.Reporting.WebForms.BackEventArgs" /> class. </summary>
+			<summary>Constructs a BackEventArgs object.</summary>
 			<param name="parentReport">The parent report of the drillthrough report.</param>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.BackEventArgs.ParentReport">
@@ -41,9 +41,6 @@
 			<summary>Represents the method that will handle the <see cref="T:Microsoft.Reporting.WebForms.BookmarkNavigation" /> event of a <see cref="T:Microsoft.Reporting.WebForms.ReportViewer" />.</summary>
 			<param name="sender">The object that raised the event.</param>
 			<param name="e">A <see cref="T:Microsoft.Reporting.WebForms.BookmarkNavigationEventArgs" /> object that contains the event arguments.</param>
-		</member>
-		<member name="T:Microsoft.Reporting.WebForms.ClientRenderingException">
-			<summary>Represents errors that occur when the <see cref="T:Microsoft.Reporting.WebForms.ReportViewer" /> control is rendering a processed report from report page layout (RPL) format into HTML format.</summary>
 		</member>
 		<member name="T:Microsoft.Reporting.WebForms.ContentDisposition">
 			<summary>Indicates how the report content should be presented.</summary>
@@ -83,41 +80,6 @@
 		<member name="P:Microsoft.Reporting.WebForms.DataSourceCredentials.UserId">
 			<summary>Gets or sets the user identification to be used by the data source for connecting to the report server.</summary>
 			<returns>A string containing the user ID.</returns>
-		</member>
-		<member name="T:Microsoft.Reporting.WebForms.DataSourceCredentialsCollection">
-			<summary>Represents a collection of <see cref="T:Microsoft.Reporting.WebForms.DataSourceCredentials" /> objects. </summary>
-		</member>
-		<member name="M:Microsoft.Reporting.WebForms.DataSourceCredentialsCollection.#ctor">
-			<summary>Initializes a new instance of the <see cref="T:Microsoft.Reporting.WebForms.DataSourceCredentialsCollection" /> class.</summary>
-		</member>
-		<member name="P:Microsoft.Reporting.WebForms.DataSourceCredentialsCollection.Item(System.String)">
-			<summary>Gets the <see cref="T:Microsoft.Reporting.WebForms.DataSourceCredentials" /> object of the specified name from the collection.</summary>
-			<returns>A <see cref="T:Microsoft.Reporting.WebForms.DataSourceCredentials" /> object.</returns>
-			<param name="name">Name of the <see cref="T:Microsoft.Reporting.WebForms.DataSourceCredentials" /> object. This parameter is not case sensitive.</param>
-		</member>
-		<member name="T:Microsoft.Reporting.WebForms.DeviceInfo">
-			<summary>Contains a name-value pair that represents a case insensitive device information setting.</summary>
-		</member>
-		<member name="M:Microsoft.Reporting.WebForms.DeviceInfo.#ctor(System.String,System.String)">
-			<summary>Initializes a new instance of the <see cref="T:Microsoft.Reporting.WebForms.DeviceInfo" /> class. </summary>
-			<param name="name">The name of the device information.</param>
-			<param name="value">The value of the device information.</param>
-		</member>
-		<member name="P:Microsoft.Reporting.WebForms.DeviceInfo.Name">
-			<summary>Gets the name of the device information.</summary>
-			<returns>A string value.</returns>
-		</member>
-		<member name="P:Microsoft.Reporting.WebForms.DeviceInfo.Value">
-			<summary>Gets the value of the device information.</summary>
-			<returns>A string value.</returns>
-		</member>
-		<member name="T:Microsoft.Reporting.WebForms.DeviceInfoCollection">
-			<summary>Represents a collection of device information settings. </summary>
-		</member>
-		<member name="M:Microsoft.Reporting.WebForms.DeviceInfoCollection.Add(System.String,System.String)">
-			<summary>Adds a <see cref="T:Microsoft.Reporting.WebForms.DeviceInfo" /> object to the collection using the specified name and value.</summary>
-			<param name="name">The name of the device information setting.</param>
-			<param name="value">The value of the device information setting.</param>
 		</member>
 		<member name="T:Microsoft.Reporting.WebForms.DocumentMapNavigationEventArgs">
 			<summary>Provides data for the <see cref="E:Microsoft.Reporting.WebForms.ReportViewer.DocumentMapNavigation" /> event.</summary>
@@ -170,18 +132,6 @@
 			<summary>Represents the method that will handle the <see cref="E:Microsoft.Reporting.WebForms.ReportViewer.Drillthrough" /> event of a <see cref="T:Microsoft.Reporting.WebForms.ReportViewer" />.</summary>
 			<param name="sender">The object that raised the event.</param>
 			<param name="e">A <see cref="T:Microsoft.Reporting.WebForms.DrillthroughEventArgs" /> object that contains the event data.</param>
-		</member>
-		<member name="T:Microsoft.Reporting.WebForms.InteractivityPostBackMode">
-			<summary>Specifies the postback modes of the <see cref="T:Microsoft.Reporting.WebForms.ReportViewer" /> control when the user interacts with the report viewer and the currently displayed report. </summary>
-		</member>
-		<member name="F:Microsoft.Reporting.WebForms.InteractivityPostBackMode.AlwaysAsynchronous">
-			<summary>Always perform asynchronous postbacks.</summary>
-		</member>
-		<member name="F:Microsoft.Reporting.WebForms.InteractivityPostBackMode.AlwaysSynchronous">
-			<summary>Always perform synchronous postbacks.</summary>
-		</member>
-		<member name="F:Microsoft.Reporting.WebForms.InteractivityPostBackMode.SynchronousOnDrillthrough">
-			<summary>Perform synchronous postbacks on drillthrough actions, and asynchronous postbacks on other actions. In this mode, both clicking a drillthrough report and clicking the Back to Parent button will cause synchronous postbacks. For more information on drillthrough reports, see Adding Drillthrough Reports in SQL Server Books Online.</summary>
 		</member>
 		<member name="T:Microsoft.Reporting.WebForms.InvalidConfigFileTypeException">
 			<summary>Occurs when an object supplied through an entry in the Web.config file is missing or invalid.</summary>
@@ -428,23 +378,6 @@
 			<summary>Gets the ToolTip text to display when a pointer pauses over the down arrow of a multivalue parameter drop-down list.</summary>
 			<returns>A text String that contains the ToolTip text to display when a pointer pauses over the down arrow of a multivalue parameter drop-down list.</returns>
 		</member>
-		<member name="T:Microsoft.Reporting.WebForms.IReportViewerMessages3">
-			<summary>Allows applications to provide customized user interface messages.</summary>
-		</member>
-		<member name="M:Microsoft.Reporting.WebForms.IReportViewerMessages3.TotalPages(System.Int32,Microsoft.Reporting.WebForms.PageCountMode)">
-			<summary>Returns the string in the default toolbar that represents the total number of pages in the current report and the page count mode that is used. </summary>
-			<returns>A localized string that represents the total number of pages and the page count mode.</returns>
-			<param name="pageCount">The number of pages in the current report.</param>
-			<param name="pageCountMode">Indicates whether the pageCount parameter represents an estimate or the actual number of pages.</param>
-		</member>
-		<member name="P:Microsoft.Reporting.WebForms.IReportViewerMessages3.CalendarLoading">
-			<summary>Gets the text displayed in the date and time picker when the control waits for the Web server to generate a calendar for a given month.</summary>
-			<returns>A string value that represents the text displayed when the control waits for the Web server to generate a calendar for a given month.</returns>
-		</member>
-		<member name="P:Microsoft.Reporting.WebForms.IReportViewerMessages3.CancelLinkText">
-			<summary>Gets the text of the Cancel link in the wait control.</summary>
-			<returns>A string value that represents the Cancel link text.</returns>
-		</member>
 		<member name="T:Microsoft.Reporting.WebForms.ITemporaryStorage">
 			<summary>Provides custom storage for temporary data.</summary>
 		</member>
@@ -464,10 +397,6 @@
 		<member name="E:Microsoft.Reporting.WebForms.LocalReport.SubreportProcessing">
 			<summary>Occurs when a subreport is processed.</summary>
 		</member>
-		<member name="M:Microsoft.Reporting.WebForms.LocalReport.AddFullTrustModuleInSandboxAppDomain(System.Security.Policy.StrongName)">
-			<summary>Adds the supplied assembly to the list of assemblies that run in full trust mode in the sandboxed application domain.</summary>
-			<param name="assemblyName">The name of the assembly to be added. </param>
-		</member>
 		<member name="M:Microsoft.Reporting.WebForms.LocalReport.AddTrustedCodeModuleInCurrentAppDomain(System.String)">
 			<summary>Adds the supplied assembly to the list of assemblies that are trusted to execute in the current <see cref="T:System.AppDomain" />.</summary>
 			<param name="assemblyName">The name of the assembly to be added. </param>
@@ -483,8 +412,8 @@
 			<summary>Causes processing extensions and expressions to be run with limited permissions in an application domain.  </summary>
 		</member>
 		<member name="M:Microsoft.Reporting.WebForms.LocalReport.GetDataSourceNames">
-			<summary>Returns the names of all datasets used within the local report.</summary>
-			<returns>An array of String objects containing the list of dataset names.</returns>
+			<summary>Returns the names of all data sources used within the local report.</summary>
+			<returns>An array of String objects containing the list of data source names.</returns>
 		</member>
 		<member name="M:Microsoft.Reporting.WebForms.LocalReport.GetDefaultPageSettings">
 			<summary>Gets the default page settings specified in the local report.</summary>
@@ -492,12 +421,11 @@
 		</member>
 		<member name="M:Microsoft.Reporting.WebForms.LocalReport.GetParameters">
 			<summary>Returns report parameter properties for the report. </summary>
-			<returns>A <see cref="T:Microsoft.Reporting.WebForms.ReportParameterInfoCollection" /> object containing an array of <see cref="T:Microsoft.Reporting.WebForms.ReportParameterInfo" /> objects.</returns>
+			<returns>A <see cref="T:Microsoft.Reporting.WinForms.ReportParameterInfoCollection" /> object containing an array of <see cref="T:Microsoft.Reporting.WinForms.ReportParameterInfo" /> objects.</returns>
 		</member>
-		<member name="M:Microsoft.Reporting.WebForms.LocalReport.GetTotalPages(Microsoft.Reporting.WebForms.PageCountMode@)">
-			<summary>Returns the total number of soft pages in the report and a <see cref="T:Microsoft.Reporting.WebForms.PageCountMode" /> enumeration value that indicates the current page count mode.</summary>
-			<returns>An integer value containing the total number of soft pages in the report. For more information on soft pages, see Understanding Rendering Behaviors.</returns>
-			<param name="pageCountMode">[out] A <see cref="T:Microsoft.Reporting.WebForms.PageCountMode" /> enumeration value that indicates the page count mode used to calculate the total number of soft pages.</param>
+		<member name="M:Microsoft.Reporting.WebForms.LocalReport.GetTotalPages">
+			<summary>Returns the total number of logical pages in the report.</summary>
+			<returns>An integer value containing the total number of logical pages in the report.</returns>
 		</member>
 		<member name="M:Microsoft.Reporting.WebForms.LocalReport.ListRenderingExtensions">
 			<summary>Returns all available rendering extensions for the local report.</summary>
@@ -505,12 +433,12 @@
 		</member>
 		<member name="M:Microsoft.Reporting.WebForms.LocalReport.LoadReportDefinition(System.IO.TextReader)">
 			<summary>Loads a report definition from the local file system using a <see cref="T:System.IO.TextReader" />.</summary>
-			<param name="report">A <see cref="T:System.IO.TextReader" /> class that contains the report definition for the local report.</param>
+			<param name="report">A <see cref="T:System.IO.TextReader" /> class that can be used to read the report definition language (RDL) file for the report.</param>
 		</member>
 		<member name="M:Microsoft.Reporting.WebForms.LocalReport.LoadSubreportDefinition(System.String,System.IO.Stream)">
 			<summary>Loads a subreport definition using a <see cref="T:System.IO.Stream" />.</summary>
 			<param name="reportName">The path and filename of the subreport definition.</param>
-			<param name="report">A <see cref="T:System.IO.Stream" /> class that contains the report definition for the subreport.</param>
+			<param name="report">A <see cref="T:System.IO.Stream" /> class that can be used to read the report definition language (RDL) file for the subreport.</param>
 		</member>
 		<member name="M:Microsoft.Reporting.WebForms.LocalReport.LoadSubreportDefinition(System.String,System.IO.TextReader)">
 			<summary>Loads a subreport definition using a <see cref="T:System.IO.TextReader" />.</summary>
@@ -520,43 +448,27 @@
 		<member name="M:Microsoft.Reporting.WebForms.LocalReport.Refresh">
 			<summary>Causes the local report to be rendered with new data.</summary>
 		</member>
-		<member name="M:Microsoft.Reporting.WebForms.LocalReport.ReleaseSandboxAppDomain">
-			<summary>Causes the <see cref="T:Microsoft.Reporting.WebForms.LocalReport" /> object to release its reference to the sandboxed application domain immediately.</summary>
-		</member>
 		<member name="M:Microsoft.Reporting.WebForms.LocalReport.Render(System.String,System.String,Microsoft.Reporting.WebForms.CreateStreamCallback,Microsoft.Reporting.WebForms.Warning[]@)">
 			<summary>Processes the report and renders it in the specified format using a stream provided by a callback function.</summary>
-			<param name="format">The format in which to render the report. This argument maps to a rendering extension. Supported formats include Excel, PDF, Word, and Image. To access the list of available rendering extensions, use the <see cref="M:Microsoft.Reporting.WebForms.LocalReport.ListRenderingExtensions" /> method.</param>
-			<param name="deviceInfo">An XML string that contains the device-specific content that is required by the rendering extension specified in the format parameter. For more information about device information settings for specific output formats, see Device Information Settings in SQL Server Books Online.</param>
+			<param name="format">The format in which to render the report. This argument maps to a rendering extension. Only the EXCEL format is supported in this release. </param>
+			<param name="deviceInfo">An XML string that contains the device-specific content that is required by the rendering extension specified in the format parameter. For more information about device information settings for specific output formats, see "Device Information Settings" in SQL Server Books Online.</param>
 			<param name="createStream">A <see cref="T:Microsoft.Reporting.WebForms.CreateStreamCallback" /> delegate function that will be used to provide a <see cref="T:System.IO.Stream" /> object for rendering.</param>
-			<param name="warnings">[out] An array of <see cref="T:Microsoft.Reporting.WebForms.Warning" /> objects that describes any warnings that occurred during report processing and rendering.</param>
+			<param name="warnings">[out] An array of <see cref="T:Microsoft.Reporting.WebForms.Warning" /> objects that describes any warnings that occurred during report processing.</param>
 		</member>
-		<member name="M:Microsoft.Reporting.WebForms.LocalReport.Render(System.String,System.String,Microsoft.Reporting.WebForms.PageCountMode,Microsoft.Reporting.WebForms.CreateStreamCallback,Microsoft.Reporting.WebForms.Warning[]@)">
-			<summary>Processes the report with a specified page count mode and renders it in the specified format using a stream provided by a callback function.</summary>
-			<param name="format">The format in which to render the report. This parameter maps to a rendering extension. Supported formats include Excel, PDF, Word, and Image. To access the list of available rendering extensions, use the <see cref="M:Microsoft.Reporting.WebForms.LocalReport.ListRenderingExtensions" /> method.</param>
-			<param name="deviceInfo">An XML string that contains the device-specific content that is required by the rendering extension specified in the format parameter. For more information about device information settings for specific output formats, see Device Information Settings in SQL Server Books Online.</param>
-			<param name="pageCountMode">A <see cref="T:Microsoft.Reporting.WebForms.PageCountMode" /> enumeration value that specifies the page count mode. This parameter has no effect on hard page renderers. For more information on soft and hard page renderers, see Understanding Rendering Behaviors</param>
-			<param name="createStream">A <see cref="T:Microsoft.Reporting.WebForms.CreateStreamCallback" /> delegate function that will be used to provide a <see cref="T:System.IO.Stream" /> object for rendering.</param>
-			<param name="warnings">[out] An array of <see cref="T:Microsoft.Reporting.WebForms.Warning" /> objects that describes any warnings that occurred during report processing and rendering.</param>
-		</member>
-		<member name="M:Microsoft.Reporting.WebForms.LocalReport.Render(System.String,System.String,Microsoft.Reporting.WebForms.PageCountMode,System.String@,System.String@,System.String@,System.String[]@,Microsoft.Reporting.WebForms.Warning[]@)">
-			<summary>Processes the report with a specified page count mode and renders it in the specified format.</summary>
+		<member name="M:Microsoft.Reporting.WebForms.LocalReport.Render(System.String,System.String,System.String@,System.String@,System.String@,System.String[]@,Microsoft.Reporting.WebForms.Warning[]@)">
+			<summary>Processes the report and renders it in the specified format.</summary>
 			<returns>A <see cref="T:System.Byte" /> array of the report in the specified format.</returns>
-			<param name="format">The format in which to render the report. This argument maps to a rendering extension. Supported formats include Excel, PDF, Word, and Image. To access the list of available rendering extensions, use the <see cref="M:Microsoft.Reporting.WebForms.LocalReport.ListRenderingExtensions" /> method.</param>
-			<param name="deviceInfo">An XML string that contains the device-specific content that is required by the rendering extension specified in the format parameter. For more information about device information settings for specific output formats, see Device Information Settings in SQL Server Books Online.</param>
-			<param name="pageCountMode">A <see cref="T:Microsoft.Reporting.WebForms.PageCountMode" /> enumeration value that specifies the page count mode.</param>
+			<param name="format">The format in which to render the report. This argument maps to a rendering extension. Supported formats include Microsoft Office Excel, PDF, and Image. </param>
+			<param name="deviceInfo">An XML string that contains the device-specific content that is required by the rendering extension specified in the format parameter. For more information about device information settings for specific output formats, see "Device Information Settings" in SQL Server Books Online.</param>
 			<param name="mimeType">[out] The MIME type of the rendered report.</param>
 			<param name="encoding">[out] The encoding used when rendering the contents of the report.</param>
 			<param name="fileNameExtension">[out] The file name extension used for the output file.</param>
 			<param name="streams">[out] The stream identifiers. You can use them to render external resources (images, for example) that are associated with the report.</param>
-			<param name="warnings">[out] An array of <see cref="T:Microsoft.Reporting.WebForms.Warning" /> objects that describes any warnings that occurred during report processing and rendering.</param>
-		</member>
-		<member name="M:Microsoft.Reporting.WebForms.LocalReport.SetBasePermissionsForSandboxAppDomain(System.Security.PermissionSet)">
-			<summary>Sets the base permissions for the sandboxed application domain with the supplied permission set.</summary>
-			<param name="permissions">The <see cref="T:System.Security.PermissionSet" /> to set. The default base permission is Execution.</param>
+			<param name="warnings">[out] An array of <see cref="T:Microsoft.Reporting.WebForms.Warning" /> objects that describes any warnings that occurred during report processing.</param>
 		</member>
 		<member name="M:Microsoft.Reporting.WebForms.LocalReport.SetParameters(System.Collections.Generic.IEnumerable{Microsoft.Reporting.WebForms.ReportParameter})">
 			<summary>Sets report parameter properties for the local report.</summary>
-			<param name="parameters">An <see cref="T:System.Collections.Generic.IEnumerable`1" /> of <see cref="T:Microsoft.Reporting.WebForms.ReportParameter" /> objects that contains a list of the report parameter properties.</param>
+			<param name="parameters">An array of <see cref="T:Microsoft.Reporting.WinForms.ReportParameter" /> objects that contains a list of the report parameter properties.</param>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.LocalReport.DataSources">
 			<summary>Gets a collection of data sources used by the report.</summary>
@@ -571,8 +483,8 @@
 			<returns>A Boolean value. A value of true indicates that the report can be rendered if it contains hyperlink actions. The default value is false.</returns>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.LocalReport.OriginalParametersToDrillthrough">
-			<summary>Returns the parameters passed from a parent report to this report, if it is a drillthrough report.</summary>
-			<returns>An <see cref="T:System.Collections.Generic.IList`1" /> of <see cref="T:Microsoft.Reporting.WebForms.ReportParameter" /> objects, representing the parameters passed from the parent reports to the drillthrough report, or an empty collection if this report is not a drillthrough report.</returns>
+			<summary>Returns the parameters passed from a parent report to a drillthrough report.</summary>
+			<returns>An array of <see cref="T:Microsoft.Reporting.WebForms.ReportParameter" /> objects in an IList collection, representing the parameters passed from the parent reports to the drillthrough report, or an empty collection if this report is not a drillthrough report.</returns>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.LocalReport.ReportEmbeddedResource">
 			<summary>Gets or sets the name of the report embedded resource.</summary>
@@ -581,10 +493,6 @@
 		<member name="P:Microsoft.Reporting.WebForms.LocalReport.ReportPath">
 			<summary>Gets or sets the local file system path of the local report.</summary>
 			<returns>A String value.</returns>
-		</member>
-		<member name="P:Microsoft.Reporting.WebForms.LocalReport.ShowDetailedSubreportMessages">
-			<summary>Gets or sets a Boolean value that indicates whether detailed messages should be displayed when an error occurs in a subreport. </summary>
-			<returns>true if detailed messages should be displayed; otherwise, false. The default is true.</returns>
 		</member>
 		<member name="T:Microsoft.Reporting.WebForms.MissingDataSourceCredentialsException">
 			<summary>Represents an exception that occurs when credentials have not been supplied for a data source used by a report.</summary>
@@ -603,15 +511,6 @@
 		</member>
 		<member name="T:Microsoft.Reporting.WebForms.MissingReportSourceException">
 			<summary>Represents the exception that occurs when no report source has been specified.</summary>
-		</member>
-		<member name="T:Microsoft.Reporting.WebForms.PageCountMode">
-			<summary>Represents values that control whether to calculate the actual page count or use an estimate. </summary>
-		</member>
-		<member name="F:Microsoft.Reporting.WebForms.PageCountMode.Actual">
-			<summary>Calculate the actual page count for the report. </summary>
-		</member>
-		<member name="F:Microsoft.Reporting.WebForms.PageCountMode.Estimate">
-			<summary>Provide an estimate of the page count for the report instead of calculating the actual page count.</summary>
 		</member>
 		<member name="T:Microsoft.Reporting.WebForms.PageNavigationEventArgs">
 			<summary>Provides data for a <see cref="E:Microsoft.Reporting.WebForms.ReportViewer.PageNavigation" /> event.</summary>
@@ -699,73 +598,41 @@
 		</member>
 		<member name="M:Microsoft.Reporting.WebForms.Report.GetParameters">
 			<summary>Returns report parameter properties for the report. </summary>
-			<returns>A collection of <see cref="T:Microsoft.Reporting.WebForms.ReportParameterInfo" /> objects.</returns>
+			<returns>A <see cref="T:Microsoft.Reporting.WebForms.ReportParameterInfoCollection" /> object containing an array of <see cref="T:Microsoft.Reporting.WebForms.ReportParameterInfo" /> objects.</returns>
 		</member>
 		<member name="M:Microsoft.Reporting.WebForms.Report.GetTotalPages">
-			<summary>Returns the total number of soft pages in the report. </summary>
-			<returns>An integer value containing the total number of soft pages in the report. For more information on soft pages, see Understanding Rendering Behaviors.</returns>
-		</member>
-		<member name="M:Microsoft.Reporting.WebForms.Report.GetTotalPages(Microsoft.Reporting.WebForms.PageCountMode@)">
-			<summary>Returns the total number of soft pages in the report and a <see cref="T:Microsoft.Reporting.WebForms.PageCountMode" /> value that indicates the current page count mode.</summary>
-			<returns>An integer value containing the total number of soft pages in the report. For more information on soft pages, see Understanding Rendering Behaviors.</returns>
-			<param name="pageCountMode">[out] A <see cref="T:Microsoft.Reporting.WebForms.PageCountMode" /> enumeration value that indicates the page count mode that was used to calculate the total number of pages.</param>
+			<summary>Returns the total number of logical pages in the report.</summary>
+			<returns>An integer value containing the total number of logical pages in the report.</returns>
 		</member>
 		<member name="M:Microsoft.Reporting.WebForms.Report.ListRenderingExtensions">
-			<summary>Returns all available rendering extensions for the report.</summary>
+			<summary>Returns all available rendering extensions for the local report.</summary>
 			<returns>An array of <see cref="T:Microsoft.Reporting.WebForms.RenderingExtension" /> objects.</returns>
 		</member>
 		<member name="M:Microsoft.Reporting.WebForms.Report.LoadReportDefinition(System.IO.Stream)">
-			<summary>Loads a report definition for processing using a <see cref="T:System.IO.Stream" />.</summary>
-			<param name="report">A <see cref="T:System.IO.Stream" /> class that contains the report definition for the report.</param>
+			<summary>Loads a report definition from the local file system using a <see cref="T:System.IO.Stream" />.</summary>
+			<param name="report">A <see cref="T:System.IO.Stream" /> class that can be used to read the report definition language (RDL) file for the report.</param>
 		</member>
 		<member name="M:Microsoft.Reporting.WebForms.Report.LoadReportDefinition(System.IO.TextReader)">
-			<summary>Loads a report definition for processing using a <see cref="T:System.IO.TextReader" />.</summary>
-			<param name="report">A <see cref="T:System.IO.TextReader" /> class that contains the report definition for the report.</param>
+			<summary>Loads a report definition from the local file system using a <see cref="T:System.IO.TextReader" />.</summary>
+			<param name="report">A <see cref="T:System.IO.TextReader" /> class that can be used to read the report definition language (RDL) file for the report.</param>
 		</member>
 		<member name="M:Microsoft.Reporting.WebForms.Report.Refresh">
 			<summary>Causes the report to be rendered with new data.</summary>
 		</member>
-		<member name="M:Microsoft.Reporting.WebForms.Report.Render(System.String)">
-			<summary>Processes the report and renders it in the specified format.</summary>
-			<returns>A byte array of the report in the specified format.</returns>
-			<param name="format">The format in which to render the report. This parameter maps to a rendering extension.In local processing mode, supported extensions are Excel, PDF, Word, and Image. In remote processing mode, supported extensions depend on the extensions supported by the report server.You can access the list of available rendering extensions using the ListRenderingExtensions method in <see cref="P:Microsoft.Reporting.WebForms.ReportViewer.ServerReport" /> or <see cref="P:Microsoft.Reporting.WebForms.ReportViewer.LocalReport" />, depending on the processing mode (see <see cref="P:Microsoft.Reporting.WebForms.ReportViewer.ProcessingMode" />).</param>
-		</member>
-		<member name="M:Microsoft.Reporting.WebForms.Report.Render(System.String,System.String)">
-			<summary>Processes the report and renders it in the specified format.</summary>
-			<returns>A byte array of the report in the specified format.</returns>
-			<param name="format">The format in which to render the report. This parameter maps to a rendering extension.In local processing mode, supported extensions are Excel, PDF, Word, and Image. In remote processing mode, supported extensions depend on the extensions supported by the report server.You can access the list of available rendering extensions using the ListRenderingExtensions method in <see cref="P:Microsoft.Reporting.WebForms.ReportViewer.ServerReport" /> or <see cref="P:Microsoft.Reporting.WebForms.ReportViewer.LocalReport" />, depending on the processing mode (see <see cref="P:Microsoft.Reporting.WebForms.ReportViewer.ProcessingMode" />).</param>
-			<param name="deviceInfo">An XML string that contains the device-specific content that is required by the rendering extension specified in the format parameter. For more information about device information settings for specific output formats, see Device Information Settings in SQL Server Books Online.</param>
-		</member>
 		<member name="M:Microsoft.Reporting.WebForms.Report.Render(System.String,System.String,System.String@,System.String@,System.String@,System.String[]@,Microsoft.Reporting.WebForms.Warning[]@)">
 			<summary>Processes the report and renders it in the specified format.</summary>
-			<returns>A <see cref="T:System.Byte" /> array of the report in the specified format. </returns>
-			<param name="format">The format in which to render the report. This argument maps to a rendering extension.In local processing mode, supported extensions are Excel, PDF, Word, and Image. In remote processing mode, supported extensions depend on the extensions supported by the report server.You can access the list of available rendering extensions using the ListRenderingExtensions method in <see cref="P:Microsoft.Reporting.WebForms.ReportViewer.ServerReport" /> or <see cref="P:Microsoft.Reporting.WebForms.ReportViewer.LocalReport" />, depending on the processing mode (see <see cref="P:Microsoft.Reporting.WebForms.ReportViewer.ProcessingMode" />).</param>
-			<param name="deviceInfo">An XML string that contains the device-specific content that is required by the rendering extension specified in the format parameter. For more information about device information settings for specific output formats, see Device Information Settings in SQL Server Books Online.</param>
+			<returns>A <see cref="T:System.Byte" /> array of the report in the specified format.</returns>
+			<param name="format">The format in which to render the report. This argument maps to a rendering extension. Supported extensions include XML, NULL, CSV, IMAGE, PDF, HTML4.0, HTML3.2, MHTML, EXCEL, and HTMLOWC. </param>
+			<param name="deviceInfo">An XML string that contains the device-specific content that is required by the rendering extension specified in the format parameter. For more information about device information settings for specific output formats, see "Device Information Settings" in the SQL Server 2005 Reporting Services documentation.</param>
 			<param name="mimeType">[out] The MIME type of the rendered report.</param>
 			<param name="encoding">[out] The encoding used when rendering the contents of the report.</param>
 			<param name="fileNameExtension">[out] The file name extension used for the output file.</param>
 			<param name="streams">[out] The stream identifiers You can use them to render the external resources (images, for example) that are associated with the report.</param>
 			<param name="warnings">[out] An array of <see cref="T:Microsoft.Reporting.WebForms.Warning" /> objects that describes any warnings that occurred during report processing.</param>
 		</member>
-		<member name="M:Microsoft.Reporting.WebForms.Report.Render(System.String,System.String,Microsoft.Reporting.WebForms.PageCountMode,System.String@,System.String@,System.String@,System.String[]@,Microsoft.Reporting.WebForms.Warning[]@)">
-			<summary>Processes the report with the specified <see cref="T:Microsoft.Reporting.WebForms.PageCountMode" /> value and renders it in the specified format.</summary>
-			<returns>A byte array of the report in the specified format.</returns>
-			<param name="format">The format in which to render the report. This parameter maps to a rendering extension.In local processing mode, supported extensions are Excel, PDF, Word, and Image. In remote processing mode, supported extensions depend on the extensions supported by the report server.You can access the list of available rendering extensions using the ListRenderingExtensions method in <see cref="P:Microsoft.Reporting.WebForms.ReportViewer.ServerReport" /> or <see cref="P:Microsoft.Reporting.WebForms.ReportViewer.LocalReport" />, depending on the processing mode (see <see cref="P:Microsoft.Reporting.WebForms.ReportViewer.ProcessingMode" />).</param>
-			<param name="deviceInfo">An XML string that contains the device-specific content that is required by the rendering extension specified in the format parameter. For more information about device information settings for specific output formats, see Device Information Settings in SQL Server Books Online.</param>
-			<param name="pageCountMode">A <see cref="T:Microsoft.Reporting.WebForms.PageCountMode" /> enumeration value that specifies the page count mode.</param>
-			<param name="mimeType">[out] The MIME type of the rendered report.</param>
-			<param name="encoding">[out] The encoding used when rendering the contents of the report.</param>
-			<param name="fileNameExtension">[out] The file name extension used for the output file.</param>
-			<param name="streams">[out] The stream identifiers. You can use them to render the external resources (images, for example) that are associated with the report.</param>
-			<param name="warnings">[out] An array of <see cref="T:Microsoft.Reporting.WebForms.Warning" /> objects that describes any warnings that occurred during report processing.</param>
-		</member>
 		<member name="M:Microsoft.Reporting.WebForms.Report.SetParameters(System.Collections.Generic.IEnumerable{Microsoft.Reporting.WebForms.ReportParameter})">
 			<summary>Sets report parameter properties for the report.</summary>
 			<param name="parameters">An array of <see cref="T:Microsoft.Reporting.WebForms.ReportParameter" /> objects that contains a list of the report parameters properties.</param>
-		</member>
-		<member name="M:Microsoft.Reporting.WebForms.Report.SetParameters(Microsoft.Reporting.WebForms.ReportParameter)">
-			<summary>Sets report parameter properties for the report.</summary>
-			<param name="parameter">A <see cref="T:Microsoft.Reporting.WebForms.ReportParameter" /> object.</param>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.Report.DisplayName">
 			<summary>Gets or sets the display name of the report.</summary>
@@ -774,37 +641,6 @@
 		<member name="P:Microsoft.Reporting.WebForms.Report.IsDrillthroughReport">
 			<summary>Indicates whether the report is a drillthrough report.</summary>
 			<returns>A Boolean value. A value of true indicates that this is a drillthrough report.</returns>
-		</member>
-		<member name="P:Microsoft.Reporting.WebForms.Report.IsReadyForRendering">
-			<summary>Gets a Boolean value that indicates whether a report definition and all parameters have been specified, and all data sources are ready for use. </summary>
-			<returns>true if a report definition and all required parameters have been specified, and all data sources are ready for use; otherwise, false. The default is false.</returns>
-		</member>
-		<member name="T:Microsoft.Reporting.WebForms.ReportAreaContent">
-			<summary>Specifies the type of content displayed in the report area.</summary>
-		</member>
-		<member name="F:Microsoft.Reporting.WebForms.ReportAreaContent.Error">
-			<summary>The report area displays an error message.</summary>
-		</member>
-		<member name="F:Microsoft.Reporting.WebForms.ReportAreaContent.None">
-			<summary>The report area displays nothing.</summary>
-		</member>
-		<member name="F:Microsoft.Reporting.WebForms.ReportAreaContent.ReportPage">
-			<summary>The report area displays a report page.</summary>
-		</member>
-		<member name="F:Microsoft.Reporting.WebForms.ReportAreaContent.Unknown">
-			<summary>The current content type displayed in the report area is unknown. For more information, see <see cref="P:Microsoft.Reporting.WebForms.ReportViewer.ReportAreaContentType" />.</summary>
-		</member>
-		<member name="T:Microsoft.Reporting.WebForms.ReportCredentialsEventArgs">
-			<summary>Provides data for the <see cref="E:Microsoft.Reporting.WebForms.ReportViewer.SubmittingDataSourceCredentials" /> event. </summary>
-		</member>
-		<member name="P:Microsoft.Reporting.WebForms.ReportCredentialsEventArgs.Credentials">
-			<summary>Gets a collection of <see cref="T:Microsoft.Reporting.WebForms.DataSourceCredentials" />. </summary>
-			<returns>A collection of <see cref="T:Microsoft.Reporting.WebForms.DataSourceCredentials" /> objects.</returns>
-		</member>
-		<member name="T:Microsoft.Reporting.WebForms.ReportCredentialsEventHandler">
-			<summary>Represents the method that will handle a <see cref="E:Microsoft.Reporting.WebForms.ReportViewer.SubmittingDataSourceCredentials" /> event.</summary>
-			<param name="sender">The source of the event.</param>
-			<param name="e">A <see cref="T:Microsoft.Reporting.WebForms.ReportCredentialsEventArgs" /> that contains the event data.</param>
 		</member>
 		<member name="T:Microsoft.Reporting.WebForms.ReportDataSource">
 			<summary>Represents a data source for a report.</summary>
@@ -816,21 +652,6 @@
 			<summary>Constructs a named data source.</summary>
 			<param name="name">The name of the data source.</param>
 		</member>
-		<member name="M:Microsoft.Reporting.WebForms.ReportDataSource.#ctor(System.String,System.Data.DataTable)">
-			<summary>Constructs a named data source with a <see cref="T:System.Data.DataTable" /> in the <see cref="P:Microsoft.Reporting.WebForms.ReportDataSource.Value" /> property.</summary>
-			<param name="name">The name of the data source, as specified in the report definition for the current report.</param>
-			<param name="dataSourceValue">A <see cref="T:System.Data.DataTable" /> object that contains the data.</param>
-		</member>
-		<member name="M:Microsoft.Reporting.WebForms.ReportDataSource.#ctor(System.String,System.Web.UI.IDataSource)">
-			<summary>Constructs a named data source with an <see cref="T:System.Web.UI.IDataSource" /> in the <see cref="P:Microsoft.Reporting.WebForms.ReportDataSource.Value" /> property.</summary>
-			<param name="name">The name of the data source, as specified in the report definition for the current report.</param>
-			<param name="dataSourceValue">An <see cref="T:System.Web.UI.IDataSource" /> object that contains the data.</param>
-		</member>
-		<member name="M:Microsoft.Reporting.WebForms.ReportDataSource.#ctor(System.String,System.Collections.IEnumerable)">
-			<summary>Constructs a named data source with an <see cref="T:System.Collections.IEnumerable" /> in the <see cref="P:Microsoft.Reporting.WebForms.ReportDataSource.Value" /> property.</summary>
-			<param name="name">The name of the data source, as specified in the report definition for the current report.</param>
-			<param name="dataSourceValue">An <see cref="T:System.Collections.IEnumerable" /> object that contains the data.</param>
-		</member>
 		<member name="M:Microsoft.Reporting.WebForms.ReportDataSource.#ctor(System.String,System.Object)">
 			<summary>Constructs a named data source with a value.</summary>
 			<param name="name">The name of the data source.</param>
@@ -838,16 +659,16 @@
 		</member>
 		<member name="M:Microsoft.Reporting.WebForms.ReportDataSource.#ctor(System.String,System.String)">
 			<summary>Constructs a named data source with a data source ID.</summary>
-			<param name="name">The name of the data source.</param>
+			<param name="name">The name of the data source</param>
 			<param name="dataSourceId">The ID of the data source.</param>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ReportDataSource.DataMember">
 			<summary>Specifies the name of the list of data for binding.</summary>
-			<returns>A <see cref="T:System.String" /> value.</returns>
+			<returns>A String value.</returns>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ReportDataSource.DataSourceId">
 			<summary>Gets or sets the data source ID.</summary>
-			<returns>A <see cref="T:System.String" /> value.</returns>
+			<returns>A String value.</returns>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ReportDataSource.Name">
 			<summary>Gets or sets the name of the report data source.</summary>
@@ -903,10 +724,6 @@
 		<member name="T:Microsoft.Reporting.WebForms.ReportPageSettings">
 			<summary>Represents the page settings for a report.</summary>
 		</member>
-		<member name="P:Microsoft.Reporting.WebForms.ReportPageSettings.IsLandscape">
-			<summary>Indicates whether the orientation of the report as defined in the report definition file is landscape.</summary>
-			<returns>true if the orientation of the report as defined in the report definition file is landscape; otherwise, false. </returns>
-		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ReportPageSettings.Margins">
 			<summary>Represents the margins for a report page. Read-only.</summary>
 			<returns>A read-only Margins object containing margin information about the report page.</returns>
@@ -958,17 +775,6 @@
 		<member name="P:Microsoft.Reporting.WebForms.ReportParameter.Visible">
 			<summary>Determines whether the parameter can be displayed in the user interface.</summary>
 			<returns>A Boolean value.</returns>
-		</member>
-		<member name="T:Microsoft.Reporting.WebForms.ReportParameterCollection">
-			<summary>Represents a collection of <see cref="T:Microsoft.Reporting.WebForms.ReportParameter" /> objects. </summary>
-		</member>
-		<member name="M:Microsoft.Reporting.WebForms.ReportParameterCollection.#ctor">
-			<summary>Initializes a new instance of the <see cref="T:Microsoft.Reporting.WebForms.ReportParameterCollection" /> class.</summary>
-		</member>
-		<member name="P:Microsoft.Reporting.WebForms.ReportParameterCollection.Item(System.String)">
-			<summary>Gets an <see cref="T:Microsoft.Reporting.WebForms.ReportParameter" /> object in the collection by its name.</summary>
-			<returns>A <see cref="T:Microsoft.Reporting.WebForms.ReportParameter" /> with the specified name, if found; otherwise, a null reference (Nothing in Visual Basic).</returns>
-			<param name="name">The name of the <see cref="T:Microsoft.Reporting.WebForms.ReportParameter" /> object to get. This is the value of the <see cref="P:Microsoft.Reporting.WebForms.ReportParameter.Name" /> property.This parameter is not case sensitive.</param>
 		</member>
 		<member name="T:Microsoft.Reporting.WebForms.ReportParameterInfo">
 			<summary>Encapsulates information about report parameters.</summary>
@@ -1049,31 +855,15 @@
 			<returns>A <see cref="T:Microsoft.Reporting.WebForms.ReportParameterInfo" /> object from the collection.</returns>
 			<param name="name">The name of the item to retrieve.</param>
 		</member>
-		<member name="T:Microsoft.Reporting.WebForms.ReportParametersEventArgs">
-			<summary>Provides data for the <see cref="E:Microsoft.Reporting.WebForms.ReportViewer.SubmittingParameterValues" /> event.</summary>
-		</member>
-		<member name="P:Microsoft.Reporting.WebForms.ReportParametersEventArgs.AutoSubmit">
-			<summary>Gets a value indicating whether the <see cref="E:Microsoft.Reporting.WebForms.ReportViewer.SubmittingParameterValues" /> event is triggered by the automatic submission of report parameters due to dependencies between them.</summary>
-			<returns>true if the <see cref="E:Microsoft.Reporting.WinForms.ReportViewer.SubmittingParameterValues" /> event is triggered by the automatic submission of report parameters; false if it is triggered by the user clicking the View Report button.</returns>
-		</member>
-		<member name="P:Microsoft.Reporting.WebForms.ReportParametersEventArgs.Parameters">
-			<summary>Gets the parameters that are being submitted to the report server by the user in the parameter prompt area.</summary>
-			<returns>A <see cref="T:Microsoft.Reporting.WebForms.ReportParameterCollection" /> object containing the parameter values submitted by the user.</returns>
-		</member>
-		<member name="T:Microsoft.Reporting.WebForms.ReportParametersEventHandler">
-			<summary>Represents the callback method that will handle the <see cref="E:Microsoft.Reporting.WebForms.ReportViewer.SubmittingParameterValues" /> event.</summary>
-			<param name="sender">The source of the event.</param>
-			<param name="e">A <see cref="T:Microsoft.Reporting.WebForms.ReportParametersEventArgs" /> that contains the event data.</param>
-		</member>
 		<member name="T:Microsoft.Reporting.WebForms.ReportSecurityException">
 			<summary>Represents the error that occurs when a report contains a security violation.</summary>
 		</member>
 		<member name="T:Microsoft.Reporting.WebForms.ReportServerException">
-			<summary>Represents errors that occur while connecting to a report server and also errors that occur on the report server while processing a server report or rendering the report to the report page layout (RPL) format.</summary>
+			<summary>Represents errors that occur while viewing a server report.</summary>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ReportServerException.ErrorCode">
 			<summary>Returns the error code from the exception.</summary>
-			<returns>A string value containing the error code returned by the report server, or null if the connection attempt to the report server is unsuccessful.</returns>
+			<returns>A string value containing the error code returned by the exception.</returns>
 		</member>
 		<member name="T:Microsoft.Reporting.WebForms.ReportViewer">
 			<summary>Encapsulates the methods and properties used for the ReportViewer control.</summary>
@@ -1103,31 +893,13 @@
 			<summary>Occurs when the report is refreshed.</summary>
 		</member>
 		<member name="E:Microsoft.Reporting.WebForms.ReportViewer.Search">
-			<summary>Occurs when the Find or Find Next button is clicked, or when a search operation is invoked programmatically.</summary>
+			<summary>Occurs when the Find or Find Next button is clicked.</summary>
 		</member>
 		<member name="E:Microsoft.Reporting.WebForms.ReportViewer.Sort">
 			<summary>Occurs when the user activates a sort on the report data.</summary>
 		</member>
-		<member name="E:Microsoft.Reporting.WebForms.ReportViewer.SubmittingDataSourceCredentials">
-			<summary>Occurs when the user submits new data source credentials using the data source prompt area.</summary>
-		</member>
-		<member name="E:Microsoft.Reporting.WebForms.ReportViewer.SubmittingParameterValues">
-			<summary>Occurs when report parameter values are submitted to the report server.</summary>
-		</member>
 		<member name="E:Microsoft.Reporting.WebForms.ReportViewer.Toggle">
 			<summary>Occurs when the user toggles the visibility of an item in the report.</summary>
-		</member>
-		<member name="F:Microsoft.Reporting.WebForms.ReportViewer.MaximumPageCount">
-			<summary>A constant that represents the maximum number of pages in a report when the current page count mode is <see cref="F:Microsoft.Reporting.WebForms.PageCountMode.Estimate" />.</summary>
-		</member>
-		<member name="M:Microsoft.Reporting.WebForms.ReportViewer.Find(System.String,System.Int32)">
-			<summary>Searches the report in the report area for the specified text string, starting from the specified page number. </summary>
-			<param name="searchText">The search string.</param>
-			<param name="startPage">The page number on which to start searching.</param>
-		</member>
-		<member name="M:Microsoft.Reporting.WebForms.ReportViewer.GetPageSettings">
-			<summary>Returns the page settings that are used to print the current report in the ReportViewer control.</summary>
-			<returns>A <see cref="T:System.Drawing.Printing.PageSettings" /> object that contains the page settings that are used to print the current report in the ReportViewer control, or null if the ReportViewer control has not yet processed a report.</returns>
 		</member>
 		<member name="M:Microsoft.Reporting.WebForms.ReportViewer.JumpToBookmark(System.String)">
 			<summary>Moves the focus of the report to the specified bookmark.</summary>
@@ -1140,23 +912,12 @@
 		<member name="M:Microsoft.Reporting.WebForms.ReportViewer.PerformBack">
 			<summary>Navigates the ReportViewer control back to the parent report from a drillthrough report.</summary>
 		</member>
-		<member name="M:Microsoft.Reporting.WebForms.ReportViewer.RegisterPostBackControl(System.Web.UI.Control)">
-			<summary>Registers the specified control with the ReportViewer control. The ReportViewer control displays the wait control when the registered control causes a postback.</summary>
-			<param name="control">The control to register as a trigger for a ReportViewer postback.</param>
-		</member>
 		<member name="M:Microsoft.Reporting.WebForms.ReportViewer.Reset">
 			<summary>Resets the control to its default values.</summary>
 		</member>
-		<member name="M:Microsoft.Reporting.WebForms.ReportViewer.ResetPageSettings">
-			<summary>Reverts the page settings for the current report in the ReportViewer control to the settings in the report definition.</summary>
-		</member>
-		<member name="M:Microsoft.Reporting.WebForms.ReportViewer.SetPageSettings(System.Drawing.Printing.PageSettings)">
-			<summary>Sets the page settings that are used to print the current report in the ReportViewer control. </summary>
-			<param name="pageSettings">A <see cref="T:System.Drawing.Printing.PageSettings" /> object that contains the new page settings.This parameter must not be null.</param>
-		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.AsyncRendering">
-			<summary>Gets or sets a Boolean value that indicates whether the report is rendered asynchronously from the rest of the Web page when the Web page is being loaded.</summary>
-			<returns>true if the report is rendered asynchronously; otherwise, false. The default is true.</returns>
+			<summary>Gets or sets a value that indicates whether the ReportViewer control renders reports asynchronously.</summary>
+			<returns>true if the <see cref="T:Microsoft.Reporting.WebForms.ReportViewer" /> control renders reports asynchronously; otherwise, false. The default is true.</returns>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.BackColor">
 			<summary>Gets or sets the background color of the control's report area.</summary>
@@ -1172,31 +933,15 @@
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.DocumentMapWidth">
 			<summary>Gets or sets the width of the document map.</summary>
-			<returns>A <see cref="T:System.Web.UI.WebControls.Unit" /> object that represents the document map width. By default, a <see cref="T:System.Web.UI.WebControls.Unit" /> object that represents 25 percent of the ReportViewer width is returned.</returns>
+			<returns>A <see cref="T:System.Web.UI.WebControls.Unit" /> value containing the document map width in pixels. The default value is 40.</returns>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.ExportContentDisposition">
 			<summary>Gets or sets a value that indicates whether content should be present in-line or as an attachment.</summary>
 			<returns>A <see cref="T:Microsoft.Reporting.WebForms.ContentDisposition" /> enumeration value indicating how content should be presented.</returns>
 		</member>
-		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.Height">
-			<summary>Gets or sets the height of the control.</summary>
-			<returns>A <see cref="System.Web.UI.WebControls.Unit" /> object that represents the height of the control.</returns>
-		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.HyperlinkTarget">
 			<summary>Gets or sets the target window or frame for the Web page content that is returned when a hyperlink in the report is clicked.</summary>
 			<returns>A String value.</returns>
-		</member>
-		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.ID">
-			<summary>Specifies the ID of the control.</summary>
-			<returns>A string value that represents the ID of the control.</returns>
-		</member>
-		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.InteractiveDeviceInfos">
-			<summary>Gets the <see cref="T:Microsoft.Reporting.WebForms.DeviceInfoCollection" /> object that the ReportViewer control uses to render the report in the report area as HTML.</summary>
-			<returns>A <see cref="T:Microsoft.Reporting.WebForms.DeviceInfoCollection" /> object.</returns>
-		</member>
-		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.InteractivityPostBackMode">
-			<summary>Gets or sets an <see cref="T:Microsoft.Reporting.WebForms.InteractivityPostBackMode" /> value that indicates the postback mode of the <see cref="T:Microsoft.Reporting.WebForms.ReportViewer" /> control.</summary>
-			<returns>An <see cref="T:Microsoft.Reporting.WebForms.InteractivityPostBackMode" /> value that indicates the postback mode. The default value is <see cref="F:Microsoft.Reporting.WebForms. InteractivityPostBackMode.AlwaysAsynchronous" />.</returns>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.InternalBorderColor">
 			<summary>Gets or sets the internal border color of the control.</summary>
@@ -1209,10 +954,6 @@
 		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.InternalBorderWidth">
 			<summary>Gets or sets the width of the internal border of the control.</summary>
 			<returns>A <see cref="T:System.Web.UI.WebControls.Unit" /> value containing the width of the internal border of the control.</returns>
-		</member>
-		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.KeepSessionAlive">
-			<summary>Gets or sets a Boolean value that indicates whether to keep the user session from expiring as long as the Web page is displayed in the browser.</summary>
-			<returns>true to keep the user session from expiring; otherwise, false. The default is true.</returns>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.LinkActiveColor">
 			<summary>Gets or sets the color of an active link in the control.</summary>
@@ -1230,25 +971,13 @@
 			<summary>Gets the instance of the <see cref="T:Microsoft.Reporting.WebForms.Report" /> class that is used when the <see cref="P:Microsoft.Reporting.WebForms.ReportViewer.ProcessingMode" /> for the <see cref="T:Microsoft.Reporting.WebForms.ReportViewer" /> control is set to <see cref="F:Microsoft.Reporting.WebForms.ProcessingMode.Local" />.</summary>
 			<returns>A <see cref="T:Microsoft.Reporting.WebForms.LocalReport" /> object containing the local report in the ReportViewer control.</returns>
 		</member>
-		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.PageCountMode">
-			<summary>Gets or sets a <see cref="T:Microsoft.Reporting.WebForms.PageCountMode" /> enumeration value that indicates the default page count mode to use when rendering a report in the report area.</summary>
-			<returns>A <see cref="T:Microsoft.Reporting.WebForms.PageCountMode" /> enumeration value. The default value is <see cref="F:Microsoft.Reporting.WebForms.PageCountMode.Estimate" />.</returns>
-		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.ProcessingMode">
 			<summary>Gets or sets the processing mode of the ReportViewer control.</summary>
 			<returns>A <see cref="T:Microsoft.Reporting.WebForms.ProcessingMode" /> enumerator value of either Local or Remote. The default value is Local.</returns>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.PromptAreaCollapsed">
-			<summary>Gets or sets the collapsed state of the parameter prompt area or the credentials prompt area.</summary>
-			<returns>true if the prompt area is collapsed; otherwise, false. The default is false.</returns>
-		</member>
-		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.ReportAreaContentType">
-			<summary>Gets a <see cref="T:Microsoft.Reporting.WebForms.ReportAreaContent" /> object that indicates the current content type of the report area.</summary>
-			<returns>A <see cref="T:Microsoft.Reporting.WebForms.ReportAreaContent" /> object.</returns>
-		</member>
-		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.SearchState">
-			<summary>Gets the search text and the start page of the current report search operation.</summary>
-			<returns>A <see cref="T:Microsoft.Reporting.WebForms.SearchState" /> object, or null if there is not an ongoing report search operation.</returns>
+			<summary>Gets or sets the collapsed state of the prompt area.</summary>
+			<returns>true if the promp area is collapsed; otherwise, false. The default is false.</returns>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.ServerReport">
 			<summary>Gets the instance of the <see cref="T:Microsoft.Reporting.WebForms.Report" /> class that is used when the <see cref="P:Microsoft.Reporting.WebForms.ReportViewer.ProcessingMode" /> for the <see cref="T:Microsoft.Reporting.WebForms.ReportViewer" /> control is set to <see cref="F:Microsoft.Reporting.WebForms.ProcessingMode.Remote" />.</summary>
@@ -1263,8 +992,8 @@
 			<returns>true if a prompt for credentials is shown to the user; otherwise, false. The default is true.</returns>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.ShowDocumentMapButton">
-			<summary>Gets or sets a value that indicates whether the button that shows and collapses the document map is visible on the split bar.</summary>
-			<returns>true if the button is visible on the split bar; otherwise, false. The default is true.</returns>
+			<summary>Gets or sets a value that indicates whether the Document Map button is visible on the toolbar.</summary>
+			<returns>true if the Document Map button is visible on the toolbar; otherwise, false. The default is true.</returns>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.ShowExportControls">
 			<summary>Gets or sets a value that indicates whether the Export control is visible on the toolbar.</summary>
@@ -1287,8 +1016,8 @@
 			<returns>true if the Print button is visible on the toolbar; otherwise, false. The default is true.</returns>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.ShowPromptAreaButton">
-			<summary>Gets or sets a value that indicates whether the button that shows and collapses the prompt area is visible on the split bar.</summary>
-			<returns>true if the button is visible on the split bar; otherwise, false. The default is true.</returns>
+			<summary>Gets or sets a value that indicates whether the Prompt Area button is visible on the toolbar.</summary>
+			<returns>true if the Prompt Area button is visible on the toolbar; otherwise, false. The default is true.</returns>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.ShowRefreshButton">
 			<summary>Gets or sets a value that indicates whether the Refresh button is visible.</summary>
@@ -1302,21 +1031,13 @@
 			<summary>Gets or sets a value that indicates whether the toolbar is visible on the control.</summary>
 			<returns>A Boolean value. The default value is true.</returns>
 		</member>
-		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.ShowWaitControlCancelLink">
-			<summary>Gets or sets a Boolean value that controls whether to display the Cancel link in the wait control.</summary>
-			<returns>true if the Cancel link should be shown; otherwise, false. The default is true.</returns>
-		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.ShowZoomControl">
-			<summary>Gets or sets a value that indicates whether the Zoom list box is visible.</summary>
+			<summary>Gets or sets a value that indicates whether the Zoom text box is visible.</summary>
 			<returns>A Boolean value. The default value is true.</returns>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.SizeToReportContent">
 			<summary>Gets or sets a value that indicates whether the ReportViewer control should automatically resize to accommodate report content.</summary>
 			<returns>A Boolean value. A value of true indicates that the control should automatically resize to accommodate report content. The default value is false.</returns>
-		</member>
-		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.SplitterBackColor">
-			<summary>Gets or sets the background color of the document map split bar and the prompt area split bar.</summary>
-			<returns>A <see cref="T:System.Drawing.Color" /> object. The default color has the RGB values (236,233,216).</returns>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.ToolBarItemBorderColor">
 			<summary>Gets or sets the border color of an item on the toolbar.</summary>
@@ -1335,32 +1056,24 @@
 			<returns>A <see cref="T:System.Drawing.Color" /> value indicating the background color of the toolbar item in hover state.</returns>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.ToolBarItemPressedBorderColor">
-			<summary>This property is no longer applicable and exists for backward compatibility. ReportViewer control no longer uses pressed buttons.</summary>
+			<summary>Gets or sets the color of a toolbar item while it is being pressed.</summary>
 			<returns>A <see cref="T:System.Drawing.Color" /> value indicating the color of the toolbar item in pressed state.</returns>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.ToolBarItemPressedBorderStyle">
-			<summary>This property is no longer applicable and exists for backward compatibility. The ReportViewer control no longer uses pressed buttons.</summary>
+			<summary>Gets or sets the border style of the toolbar item while it is being selected.</summary>
 			<returns>A <see cref="T:System.Web.UI.WebControls.BorderStyle" /> value containing the border style of the toolbar item in selected state.</returns>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.ToolBarItemPressedBorderWidth">
-			<summary>This property is no longer applicable and exists for backward compatibility. The ReportViewer control no longer uses pressed buttons.</summary>
+			<summary>Gets or sets the border width of a toolbar item while it is being selected.</summary>
 			<returns>A <see cref="T:System.Web.UI.WebControls.Unit" /> value containing the border width of the toolbar item while it is being selected. </returns>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.ToolBarItemPressedHoverBackColor">
-			<summary>This property is no longer applicable and exists for backward compatibility. The ReportViewer control no longer uses pressed buttons.</summary>
+			<summary>Gets or sets the background color of toolbar item while the mouse pointer is over the item.</summary>
 			<returns>A <see cref="T:System.Drawing.Color" /> value indicating the background color of the toolbar item in hover state.</returns>
-		</member>
-		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.WaitControlDisplayAfter">
-			<summary>Gets or sets the delay in milliseconds before the wait control is displayed to the user when the report is loaded.</summary>
-			<returns>An int value that specifies the time in milliseconds. The default value is 1000 (1 second).</returns>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.WaitMessageFont">
 			<summary>Gets the font for the message that is displayed while the report is being executed.</summary>
 			<returns>A <see cref="T:System.Web.UI.WebControls.FontInfo" /> object containing the font value. The default font is 14-point Verdana.</returns>
-		</member>
-		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.Width">
-			<summary>Gets or sets the width of the control.</summary>
-			<returns>A <see cref="System.Web.UI.WebControls.Unit" /> object that represents the width of the control.</returns>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ReportViewer.ZoomMode">
 			<summary>Gets or sets the zoom mode of the control.</summary>
@@ -1374,7 +1087,7 @@
 			<summary>Represents a collection of <see cref="T:System.Net.Cookie" /> objects. </summary>
 		</member>
 		<member name="T:Microsoft.Reporting.WebForms.ReportViewerException">
-			<summary>Represents errors that occur while viewing or configuring a report.</summary>
+			<summary>Represents errors that occur while viewing a report.</summary>
 		</member>
 		<member name="M:Microsoft.Reporting.WebForms.ReportViewerException.#ctor(System.String)">
 			<summary>This constructor supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
@@ -1382,11 +1095,11 @@
 		<member name="M:Microsoft.Reporting.WebForms.ReportViewerException.#ctor(System.String,System.Exception)">
 			<summary>This constructor supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
 		</member>
+		<member name="T:Microsoft.Reporting.WebForms.ReportViewerHandlerNotRegisteredException">
+			<summary>Occurs when the Web.config file does not have an HTTP handler entry.</summary>
+		</member>
 		<member name="T:Microsoft.Reporting.WebForms.ReportViewerHeaderCollection">
 			<summary>Represents a collection of strings that contain custom headers. </summary>
-		</member>
-		<member name="T:Microsoft.Reporting.WebForms.ScriptManagerNotFoundException">
-			<summary>The exception that is thrown if a <see cref="T:System.Web.UI.ScriptManager" /> control is not found in the Web form. </summary>
 		</member>
 		<member name="T:Microsoft.Reporting.WebForms.SearchEventArgs">
 			<summary>Provides data for a <see cref="E:Microsoft.Reporting.WebForms.ReportViewer.Search" /> event in the ReportViewer control.</summary>
@@ -1414,22 +1127,8 @@
 			<param name="sender">The object that raised the event.</param>
 			<param name="e">A <see cref="T:Microsoft.Reporting.WebForms.ReportErrorEventArgs" /> object that contains information about the event.</param>
 		</member>
-		<member name="T:Microsoft.Reporting.WebForms.SearchState">
-			<summary>Contains the search text and the start page of a search operation. </summary>
-		</member>
-		<member name="P:Microsoft.Reporting.WebForms.SearchState.StartPage">
-			<summary>Gets the start page of the search operation.</summary>
-			<returns>An int value that represents the start page of the search operation.</returns>
-		</member>
-		<member name="P:Microsoft.Reporting.WebForms.SearchState.Text">
-			<summary>Gets the search text.</summary>
-			<returns>A string that represents the search text.</returns>
-		</member>
 		<member name="T:Microsoft.Reporting.WebForms.ServerReport">
-			<summary>Represents a report that is processed on the report server.</summary>
-		</member>
-		<member name="M:Microsoft.Reporting.WebForms.ServerReport.#ctor">
-			<summary>Initializes a new instance of the <see cref="T:Microsoft.Reporting.WebForms.ServerReport" /> class. </summary>
+			<summary>Represents a report that is processed and rendered on the report server.</summary>
 		</member>
 		<member name="M:Microsoft.Reporting.WebForms.ServerReport.GetDataSources">
 			<summary>Retrieves information about the data sources used for a report.</summary>
@@ -1441,7 +1140,7 @@
 			<param name="allCredentialsSet">[out] Indicates whether all required credentials have been supplied for the data sources used by the server report.</param>
 		</member>
 		<member name="M:Microsoft.Reporting.WebForms.ServerReport.GetDefaultPageSettings">
-			<summary>Gets the default page settings specified in the report definition.</summary>
+			<summary>Gets the default page settings specified in the local report.</summary>
 			<returns>A <see cref="T:Microsoft.Reporting.WebForms.ReportPageSettings" /> object containing the default page settings for the local report.</returns>
 		</member>
 		<member name="M:Microsoft.Reporting.WebForms.ServerReport.GetExecutionId">
@@ -1456,10 +1155,9 @@
 			<summary>Returns the version of the report server.</summary>
 			<returns>A string value containing the server version information.</returns>
 		</member>
-		<member name="M:Microsoft.Reporting.WebForms.ServerReport.GetTotalPages(Microsoft.Reporting.WebForms.PageCountMode@)">
-			<summary>Returns the total number of soft pages in the report and a <see cref="T:Microsoft.Reporting.WebForms.PageCountMode" /> value that indicates the current page count mode.</summary>
-			<returns>An integer value containing the total number of soft pages in the report. For more information on soft pages, see Understanding Rendering Behaviors.</returns>
-			<param name="pageCountMode">[out] A <see cref="T:Microsoft.Reporting.WebForms.PageCountMode" /> enumeration value that indicates the page count mode used to calculate the total number of soft pages.</param>
+		<member name="M:Microsoft.Reporting.WebForms.ServerReport.GetTotalPages">
+			<summary>Retrieves the total number of logical pages for the server report.</summary>
+			<returns>An integer value containing the total number of logical pages in the report.</returns>
 		</member>
 		<member name="M:Microsoft.Reporting.WebForms.ServerReport.IsQueryExecutionAllowed">
 			<summary>Indicates whether the report can execute queries.</summary>
@@ -1470,7 +1168,7 @@
 			<returns>An array of <see cref="T:Microsoft.Reporting.WebForms.RenderingExtension" /> objects.</returns>
 		</member>
 		<member name="M:Microsoft.Reporting.WebForms.ServerReport.LoadReportDefinition(System.IO.TextReader)">
-			<summary>Loads the report definition on the report server for remote processing using a <see cref="T:System.IO.TextReader" />.</summary>
+			<summary>Loads the report definition from the report server using a <see cref="T:System.IO.TextReader" />.</summary>
 			<param name="report">A <see cref="T:System.IO.TextReader" /> class that can be used to read the report definition language (RDL) file for the report.</param>
 		</member>
 		<member name="M:Microsoft.Reporting.WebForms.ServerReport.Refresh">
@@ -1479,27 +1177,26 @@
 		<member name="M:Microsoft.Reporting.WebForms.ServerReport.Render(System.String,System.String,System.Collections.Specialized.NameValueCollection,System.String@,System.String@)">
 			<summary>Renders the report with optional URL access parameters.</summary>
 			<returns>A <see cref="T:System.IO.Stream" /> that contains the rendered report.</returns>
-			<param name="format">The format in which to render the report. This argument maps to a rendering extension. You can use any rendering extension available on the report server.To access the list of available rendering extensions, use the <see cref="M:Microsoft.Reporting.WebForms.ServerReport.ListRenderingExtensions" /> method.</param>
-			<param name="deviceInfo">An XML string that contains the device-specific content that is required by the rendering extension specified in the format parameter. For more information about device information settings for specific output formats, see Device Information Settings in SQL Server Books Online.</param>
+			<param name="format">The format in which to render the report. This argument maps to a rendering extension. Supported formats include Microsoft Office Excel, PDF, and Image. </param>
+			<param name="deviceInfo">An XML string that contains the device-specific content that is required by the rendering extension specified in the format parameter. For more information about device information settings for specific output formats, see "Device Information Settings" in SQL Server Books Online.</param>
 			<param name="urlAccessParameters">URL access parameters to pass to the report server. For more information, see the URL Access documentation in SQL Server Books Online.This parameter may be set to null.</param>
 			<param name="mimeType">[out] The MIME type of the rendered report.</param>
 			<param name="fileNameExtension">[out] The file name extension used for the output file.</param>
 		</member>
 		<member name="M:Microsoft.Reporting.WebForms.ServerReport.Render(System.String,System.String,System.Collections.Specialized.NameValueCollection,System.IO.Stream,System.String@,System.String@)">
 			<summary>Renders the report with optional URL access parameters.</summary>
-			<param name="format">The format in which to render the report. This argument maps to a rendering extension. You can use any rendering extension available on the report server.To access the list of available rendering extensions, use the <see cref="M:Microsoft.Reporting.WebForms.ServerReport.ListRenderingExtensions" /> method.</param>
-			<param name="deviceInfo">An XML string that contains the device-specific content that is required by the rendering extension specified in the format parameter. For more information about device information settings for specific output formats, see Device Information Settings in SQL Server Books Online. </param>
+			<param name="format">The format in which to render the report. This argument maps to a rendering extension. Supported formats include Microsoft Office Excel, PDF, and Image. </param>
+			<param name="deviceInfo">An XML string that contains the device-specific content that is required by the rendering extension specified in the format parameter. For more information about device information settings for specific output formats, see "Device Information Settings" in SQL Server Books Online. </param>
 			<param name="urlAccessParameters">URL access parameters to pass to the report server. For more information, see the URL Access documentation in SQL Server Books Online.This parameter may be set to null.</param>
 			<param name="reportStream">The stream into which the rendered report will be written.</param>
 			<param name="mimeType">[out] The MIME type of the rendered report.</param>
 			<param name="fileNameExtension">[out] The file name extension used for the output file.</param>
 		</member>
-		<member name="M:Microsoft.Reporting.WebForms.ServerReport.Render(System.String,System.String,Microsoft.Reporting.WebForms.PageCountMode,System.String@,System.String@,System.String@,System.String[]@,Microsoft.Reporting.WebForms.Warning[]@)">
-			<summary>Processes the report with the specified <see cref="T:Microsoft.Reporting.WebForms.PageCountMode" /> value and renders it in the specified format.</summary>
+		<member name="M:Microsoft.Reporting.WebForms.ServerReport.Render(System.String,System.String,System.String@,System.String@,System.String@,System.String[]@,Microsoft.Reporting.WebForms.Warning[]@)">
+			<summary>Processes the report and renders it in the specified format.</summary>
 			<returns>A <see cref="T:System.Byte" /> array of the report in the specified format.</returns>
-			<param name="format">The format in which to render the report. This argument maps to a rendering extension. You can use any formatting extension available on the report server.To access the list of available rendering extensions, use the <see cref="M:Microsoft.Reporting.WebForms.ServerReport.ListRenderingExtensions" /> method.</param>
-			<param name="deviceInfo">An XML string that contains the device-specific content that is required by the rendering extension specified in the format parameter. For more information about device information settings for specific output formats, see Device Information Settings in SQL Server Books Online.</param>
-			<param name="pageCountMode">A <see cref="T:Microsoft.Reporting.WebForms.PageCountMode" /> enumeration value that specifies the page count mode.</param>
+			<param name="format">The format in which to render the report. This argument maps to a rendering extension. Supported formats include Microsoft Office Excel, PDF, and Image. </param>
+			<param name="deviceInfo">An XML string that contains the device-specific content that is required by the rendering extension specified in the format parameter. For more information about device information settings for specific output formats, see "Device Information Settings" in SQL Server Books Online.</param>
 			<param name="mimeType">[out] The MIME type of the rendered report.</param>
 			<param name="encoding">[out] The encoding used when rendering the contents of the report.</param>
 			<param name="fileNameExtension">[out] The file name extension used for the output file.</param>
@@ -1509,15 +1206,15 @@
 		<member name="M:Microsoft.Reporting.WebForms.ServerReport.RenderStream(System.String,System.String,System.String,System.String@,System.String@)">
 			<summary>Returns a secondary stream associated with a processed report.</summary>
 			<returns>A <see cref="T:System.Byte" /> array of the stream in the specified format. For more information about this data type, see "Byte Structure" in the .NET Framework documentation.</returns>
-			<param name="format">The format in which to render the stream. This argument maps to a rendering extension. You can use any rendering extension available on the report server.To access the list of available rendering extensions, use the <see cref="M:Microsoft.Reporting.WebForms.ServerReport.ListRenderingExtensions" /> method.</param>
+			<param name="format">The format in which to render the stream. This argument maps to a rendering extension. Supported extensions include XML, NULL, CSV, IMAGE, PDF, HTML4.0, HTML3.2, MHTML, Excel, and HTMLOWC.</param>
 			<param name="streamId">The stream identifier.</param>
-			<param name="deviceInfo">An XML string that contains the device-specific content that is required by the rendering extension specified in the format parameter. For more information about device information settings for specific output formats, see Device Information Settings in SQL Server Books Online.</param>
+			<param name="deviceInfo">An XML string that contains the device-specific content that is required by the rendering extension specified in the format parameter. For more information about device information settings for specific output formats, see "Device Information Settings" in SQL Server Books Online.</param>
 			<param name="mimeType">The MIME type of the stream.</param>
 			<param name="encoding"> The Microsoft .NET Framework encoding class name.</param>
 		</member>
-		<member name="M:Microsoft.Reporting.WebForms.ServerReport.SetDataSourceCredentials(System.Collections.Generic.IEnumerable{Microsoft.Reporting.WebForms.DataSourceCredentials})">
-			<summary>Sets the data source credentials for the report.</summary>
-			<param name="credentials">A set of data source credentials to submit to the report server.</param>
+		<member name="M:Microsoft.Reporting.WebForms.ServerReport.SetDataSourceCredentials(Microsoft.Reporting.WebForms.DataSourceCredentials[])">
+			<summary>Sets data source credentials for the report.</summary>
+			<param name="credentials">An array of <see cref="T:Microsoft.Reporting.WebForms.Credentials" /> objects.</param>
 		</member>
 		<member name="M:Microsoft.Reporting.WebForms.ServerReport.SetExecutionId(System.String)">
 			<summary>Initializes a server report using a specific report execution on the server. </summary>
@@ -1525,10 +1222,10 @@
 		</member>
 		<member name="M:Microsoft.Reporting.WebForms.ServerReport.SetParameters(System.Collections.Generic.IEnumerable{Microsoft.Reporting.WebForms.ReportParameter})">
 			<summary>Sets report parameter properties for the report.</summary>
-			<param name="parameters">An <see cref="T:System.Collections.Generic.IEnumerable" /> of <see cref="T:Microsoft.Reporting.WebForms.ReportParameter" /> objects that contains a list of the report parameters properties.</param>
+			<param name="parameters">An array of <see cref="T:Microsoft.Reporting.WebForms.ReportParameter" /> objects that contains a list of the report parameters properties.</param>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ServerReport.Cookies">
-			<summary>Gets a collection of <see cref="T:System.Net.Cookie" /> objects. The <see cref="T:Microsoft.Reporting.WebForms.ServerReport" /> object uses the cookies in this collection when making server requests.</summary>
+			<summary>Gets a collection of <see cref="T:System.Net.Cookie" /> objects.</summary>
 			<returns>A <see cref="T:Microsoft.Reporting.WebForms.ReportViewerCookieCollection" /> object that contains a collection of <see cref="T:System.Net.Cookie" /> objects.</returns>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ServerReport.Headers">
@@ -1536,8 +1233,8 @@
 			<returns>A <see cref="T:Microsoft.Reporting.WebForms.ReportViewerHeaderCollection" /> object that contains a collection custom headers.</returns>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ServerReport.HistoryId">
-			<summary>Gets or sets the unique identifier of the report history snapshot used for the server report.</summary>
-			<returns>A string value containing the unique identifier of the report history snapshot used for the server report.</returns>
+			<summary>Gets or sets the unique identifier of the snapshot used for the server report.</summary>
+			<returns>A string value containing the <see cref="P:Microsoft.Reporting.WebForms.ServerReport.HistoryId" />.</returns>
 		</member>
 		<member name="P:Microsoft.Reporting.WebForms.ServerReport.ReportPath">
 			<summary>Gets or sets the path to the report on the server.</summary>
@@ -1639,9 +1336,6 @@
 		<member name="P:Microsoft.Reporting.WebForms.ValidValue.Value">
 			<summary>Gets a valid value.</summary>
 			<returns>A read-only string object.</returns>
-		</member>
-		<member name="T:Microsoft.Reporting.WebForms.ViewStateDisabledException">
-			<summary>Occurs when the ReportViewer control detects that view state is disabled. </summary>
 		</member>
 		<member name="T:Microsoft.Reporting.WebForms.Warning">
 			<summary>Represents a list of errors or warnings that are returned when a report is rendered or processed.</summary>

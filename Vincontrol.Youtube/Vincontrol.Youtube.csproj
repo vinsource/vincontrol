@@ -66,7 +66,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\NewVinControlMVC_v7\vincontrol.ConfigurationManagement\vincontrol.ConfigurationManagement.csproj">
+    <ProjectReference Include="..\vincontrol.ConfigurationManagement\Vincontrol.ConfigurationManagement.csproj">
       <Project>{ebcbf920-a03a-431f-a6ed-40210a37228e}</Project>
       <Name>vincontrol.ConfigurationManagement</Name>
     </ProjectReference>

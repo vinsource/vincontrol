@@ -25,3 +25,17 @@ E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Services\bin\D
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Services\bin\Debug\System.Xml.Linq.dll
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Services\obj\Debug\vincontrol.Services.dll
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Services\obj\Debug\vincontrol.Services.pdb
+C:\VIN\vinsource\vincontrol\vincontrol.Services\bin\Debug\vincontrol.Services.dll.config
+C:\VIN\vinsource\vincontrol\vincontrol.Services\bin\Debug\vincontrol.Services.dll
+C:\VIN\vinsource\vincontrol\vincontrol.Services\bin\Debug\vincontrol.Services.pdb
+C:\VIN\vinsource\vincontrol\vincontrol.Services\bin\Debug\Microsoft.CSharp.dll
+C:\VIN\vinsource\vincontrol\vincontrol.Services\bin\Debug\System.Configuration.dll
+C:\VIN\vinsource\vincontrol\vincontrol.Services\bin\Debug\System.Data.DataSetExtensions.dll
+C:\VIN\vinsource\vincontrol\vincontrol.Services\bin\Debug\System.Data.dll
+C:\VIN\vinsource\vincontrol\vincontrol.Services\bin\Debug\System.Data.Entity.dll
+C:\VIN\vinsource\vincontrol\vincontrol.Services\bin\Debug\System.dll
+C:\VIN\vinsource\vincontrol\vincontrol.Services\bin\Debug\System.Xml.dll
+C:\VIN\vinsource\vincontrol\vincontrol.Services\bin\Debug\System.Xml.Linq.dll
+C:\VIN\vinsource\vincontrol\vincontrol.Services\obj\Debug\Vincontrol.Services.csprojResolveAssemblyReference.cache
+C:\VIN\vinsource\vincontrol\vincontrol.Services\obj\Debug\vincontrol.Services.dll
+C:\VIN\vinsource\vincontrol\vincontrol.Services\obj\Debug\vincontrol.Services.pdb

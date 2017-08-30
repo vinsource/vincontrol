@@ -101,13 +101,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\NewVINCONTROL.Services\VINCONTROL.Services.Business\VINCONTROL.Services.Business.csproj">
+    <ProjectReference Include="..\..\service\VINCONTROL.Services.Business\VINCONTROL.Services.Business.csproj">
       <Project>{eacfc4a8-015d-4400-9c3f-629f15fd443a}</Project>
       <Name>VINCONTROL.Services.Business</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\NewVinControlMVC4\Vincontrol.Youtube\Vincontrol.Youtube.csproj">
-      <Project>{373a2555-8bbc-48f6-9c70-ae8753e8f103}</Project>
-      <Name>Vincontrol.Youtube</Name>
+    <ProjectReference Include="..\..\service\VINCONTROL.Services.Model\VINCONTROL.Services.Model.csproj">
+      <Project>{3ea3b900-4446-4e93-af85-90cd261d40d1}</Project>
+      <Name>VINCONTROL.Services.Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\vincontrol.Application\vincontrol.Application.csproj">
       <Project>{7f0f1443-be02-4bad-8e5c-34aded92dca3}</Project>
@@ -136,6 +136,10 @@
     <ProjectReference Include="..\VINControl.TruckTrader\VINControl.TruckTrader.csproj">
       <Project>{bf6286ca-6ad4-497d-a109-5179e45f8db1}</Project>
       <Name>VINControl.TruckTrader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vincontrol.Youtube\Vincontrol.Youtube.csproj">
+      <Project>{373a2555-8bbc-48f6-9c70-ae8753e8f103}</Project>
+      <Name>Vincontrol.Youtube</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

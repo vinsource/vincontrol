@@ -5,3 +5,11 @@ E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.ExcelHelper\bi
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.ExcelHelper\bin\Debug\ClosedXML.xml
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.ExcelHelper\obj\Debug\VINControl.ExcelHelper.dll
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.ExcelHelper\obj\Debug\VINControl.ExcelHelper.pdb
+C:\VIN\vinsource\vincontrol\VINControl.ExcelHelper\bin\Debug\VINControl.ExcelHelper.dll
+C:\VIN\vinsource\vincontrol\VINControl.ExcelHelper\bin\Debug\VINControl.ExcelHelper.pdb
+C:\VIN\vinsource\vincontrol\VINControl.ExcelHelper\bin\Debug\ClosedXML.dll
+C:\VIN\vinsource\vincontrol\VINControl.ExcelHelper\bin\Debug\DocumentFormat.OpenXml.dll
+C:\VIN\vinsource\vincontrol\VINControl.ExcelHelper\bin\Debug\ClosedXML.xml
+C:\VIN\vinsource\vincontrol\VINControl.ExcelHelper\obj\Debug\VINControl.ExcelHelper.csprojResolveAssemblyReference.cache
+C:\VIN\vinsource\vincontrol\VINControl.ExcelHelper\obj\Debug\VINControl.ExcelHelper.dll
+C:\VIN\vinsource\vincontrol\VINControl.ExcelHelper\obj\Debug\VINControl.ExcelHelper.pdb

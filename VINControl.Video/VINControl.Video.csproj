@@ -45,10 +45,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\NewVinControlMVC4\Vincontrol.Youtube\Vincontrol.Youtube.csproj">
-      <Project>{373a2555-8bbc-48f6-9c70-ae8753e8f103}</Project>
-      <Name>Vincontrol.Youtube</Name>
-    </ProjectReference>
     <ProjectReference Include="..\vincontrol.Application\vincontrol.Application.csproj">
       <Project>{7f0f1443-be02-4bad-8e5c-34aded92dca3}</Project>
       <Name>vincontrol.Application</Name>
@@ -56,6 +52,10 @@
     <ProjectReference Include="..\vincontrol.ConfigurationManagement\vincontrol.ConfigurationManagement.csproj">
       <Project>{ebcbf920-a03a-431f-a6ed-40210a37228e}</Project>
       <Name>vincontrol.ConfigurationManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Vincontrol.Youtube\Vincontrol.Youtube.csproj">
+      <Project>{373a2555-8bbc-48f6-9c70-ae8753e8f103}</Project>
+      <Name>Vincontrol.Youtube</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

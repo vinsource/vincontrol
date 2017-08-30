@@ -14,3 +14,11 @@ E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Backend.Data\b
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Backend.Data\obj\Debug\Vincontrol.Backend.Data.csprojResolveAssemblyReference.cache
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Backend.Data\obj\Debug\vincontrol.Backend.Data.dll
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Backend.Data\obj\Debug\vincontrol.Backend.Data.pdb
+C:\VIN\vinsource\vincontrol\vincontrol.Backend.Data\bin\Debug\vincontrol.Backend.Data.dll.config
+C:\VIN\vinsource\vincontrol\vincontrol.Backend.Data\bin\Debug\vincontrol.Backend.Data.dll
+C:\VIN\vinsource\vincontrol\vincontrol.Backend.Data\bin\Debug\vincontrol.Backend.Data.pdb
+C:\VIN\vinsource\vincontrol\vincontrol.Backend.Data\bin\Debug\vincontrol.Backend.Model.dll
+C:\VIN\vinsource\vincontrol\vincontrol.Backend.Data\bin\Debug\vincontrol.Backend.Model.pdb
+C:\VIN\vinsource\vincontrol\vincontrol.Backend.Data\obj\Debug\Vincontrol.Backend.Data.csprojResolveAssemblyReference.cache
+C:\VIN\vinsource\vincontrol\vincontrol.Backend.Data\obj\Debug\vincontrol.Backend.Data.dll
+C:\VIN\vinsource\vincontrol\vincontrol.Backend.Data\obj\Debug\vincontrol.Backend.Data.pdb

@@ -3,3 +3,8 @@ E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.ConfigurationM
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.ConfigurationManagement\obj\Debug\vincontrol.ConfigurationManagement.dll
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.ConfigurationManagement\obj\Debug\vincontrol.ConfigurationManagement.pdb
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.ConfigurationManagement\obj\Debug\Vincontrol.ConfigurationManagement.csprojResolveAssemblyReference.cache
+C:\VIN\vinsource\vincontrol\vincontrol.ConfigurationManagement\bin\Debug\vincontrol.ConfigurationManagement.dll
+C:\VIN\vinsource\vincontrol\vincontrol.ConfigurationManagement\bin\Debug\vincontrol.ConfigurationManagement.pdb
+C:\VIN\vinsource\vincontrol\vincontrol.ConfigurationManagement\obj\Debug\vincontrol.ConfigurationManagement.dll
+C:\VIN\vinsource\vincontrol\vincontrol.ConfigurationManagement\obj\Debug\vincontrol.ConfigurationManagement.pdb
+C:\VIN\vinsource\vincontrol\vincontrol.ConfigurationManagement\obj\Debug\Vincontrol.ConfigurationManagement.csprojResolveAssemblyReference.cache
