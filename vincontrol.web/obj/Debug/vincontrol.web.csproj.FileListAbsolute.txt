@@ -670,3 +670,8 @@ C:\VIN\vinsource\vincontrol\vincontrol.web\bin\Microsoft.Build.Utilities.v3.5.xm
 C:\VIN\vinsource\vincontrol\vincontrol.web\bin\RestSharp.xml
 C:\VIN\vinsource\vincontrol\vincontrol.web\bin\log4net.xml
 C:\VIN\vinsource\vincontrol\vincontrol.web\bin\HiQPdf.dep
+C:\VIN\vinsource\vincontrol\vincontrol.web\bin\System.Web.WebPages.Razor.dll
+C:\VIN\vinsource\vincontrol\vincontrol.web\bin\System.Web.WebPages.Razor.xml
+C:\VIN\vinsource\vincontrol\vincontrol.web\bin\Microsoft.Web.Infrastructure.dll
+C:\VIN\vinsource\vincontrol\vincontrol.web\bin\Microsoft.Web.Infrastructure.xml
+C:\VIN\vinsource\vincontrol\vincontrol.web\bin\System.Web.WebPages.Deployment.dll

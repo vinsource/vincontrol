@@ -393,7 +393,7 @@ namespace VINControl.Craigslist
 
         public string Posting(DealerViewModel dealer, CarShortViewModel car, string locationUrl, string cryptedStepCheck)
         {
-            var postData = String.Format("id2={0}&" +
+            var postData = String.Format("language=5&condition=40&id2={0}&" +
                                          "browserinfo={1}&" +
                                          "contact_method={2}&" +
                                          "contact_phone_ok=1&" +
@@ -409,11 +409,11 @@ namespace VINControl.Craigslist
                                          "auto_make_model={12}&" +
                                          "auto_miles={13}&" +
                                          "auto_vin={14}&" +
-                                         "auto_trans_manual={15}&" +
-                                         "auto_trans_auto={16}&" +
+                                         "auto_fuel_type={15}&" +
+                                         "auto_transmission={16}&" +
                                          "see_my_other={17}&" +
                                          "auto_title_status={18}&" +
-                                         "Privacy=C&cryptedStepCheck={19}&sale_condition=excellent&go=Continue",
+                                         "Privacy=C&cryptedStepCheck={19}&condition={20}&sale_condition=excellent&oc=1&go=Continue",
                                          "1903x1045X1903x602X1920x1080",
                                          "%257B%250A%2509%2522plugins%2522%253A%2520%2522Plugin%25200%253A%2520Google%2520Update%253B%2520Google%2520Update%253B%2520npGoogleUpdate3.dll%253B%2520%2528%253B%2520application%2Fx-vnd.google.update3webcontrol.3%253B%2520%2529%2520%2528%253B%2520application%2Fx-vnd.google.oneclickctrl.9%253B%2520%2529.%2520Plugin%25201%253A%2520Silverlight%2520Plug-In%253B%25204.0.50826.0%253B%2520npctrl.dll%253B%2520%2528npctrl%253B%2520application%2Fx-silverlight%253B%2520scr%2529%2520%2528%253B%2520application%2Fx-silverlight-2%253B%2520%2529.%2520%2522%252C%250A%2509%2522timezone%2522%253A%2520480%252C%250A%2509%2522video%2522%253A%2520%25221920x1080x16%2522%252C%250A%2509%2522supercookies%2522%253A%2520%2522DOM%2520localStorage%253A%2520Yes%252C%2520DOM%2520sessionStorage%253A%2520Yes%252C%2520IE%2520userData%253A%2520No%2522%250A%257D",
                                          1,
@@ -429,13 +429,58 @@ namespace VINControl.Craigslist
                                          String.Format("{0} {1}", car.Make, car.Model),
                                          car.Odometer, 
                                          car.Vin,
-                                         car.Tranmission.Equals("Manual") ? 1 : 0,
-                                         car.Tranmission.Equals("Automatic") ? 1 : 0,
+                                         GetFuelType(car),
+                                         GetTransmission(car),
                                          1,
                                          1,
-                                         cryptedStepCheck);
+                                         cryptedStepCheck,
+                                         GetCondition(car));
 
             return ExecutePost(locationUrl, postData);
+        }
+
+        private int GetCondition(CarShortViewModel car)
+        {
+            return car.Condition.ToLower().Equals("new") ? 10 : 40;
+        }
+
+        private int GetFuelType(CarShortViewModel car)
+        {
+            var fuel = car.Fuel.ToLower();
+            if (fuel.Contains("gas")) return 1;
+            if (fuel.Contains("diesel")) return 2;
+            if (fuel.Contains("hybrid")) return 3;
+            if (fuel.Contains("electric")) return 4;
+
+            return 6;
+        }
+
+        private int GetTransmission(CarShortViewModel car)
+        {
+            var tm = car.Tranmission.ToLower();
+            if (tm.Contains("manual")) return 1;
+            if (tm.Contains("automatic")) return 2;
+            
+            return 3;
+        }
+
+        private int GetBodyStyle(CarShortViewModel car)
+        {
+            var tm = car.BodyType.ToLower();
+            if (tm.Contains("bus")) return 1;
+            if (tm.Contains("convertible")) return 2;
+            if (tm.Contains("coupe")) return 3;
+            if (tm.Contains("hatchback")) return 4;
+            if (tm.Contains("mini van")) return 5;
+            if (tm.Contains("offroad")) return 6;
+            if (tm.Contains("pickup")) return 7;
+            if (tm.Contains("sedan")) return 8;
+            if (tm.Contains("truck")) return 9;
+            if (tm.Contains("suv")) return 10;
+            if (tm.Contains("wagon")) return 11;
+            if (tm.Contains("van")) return 12;
+
+            return 13;
         }
 
         public string UploadImages(string locationUrl, string cryptedStepCheck, DealerViewModel dealer, CarShortViewModel car)
