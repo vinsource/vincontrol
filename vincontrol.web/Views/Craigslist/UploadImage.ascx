@@ -6,6 +6,7 @@
 </div>
 <%}%>
 
+<% if (Model.Post != null) {%>
 <input type="hidden" id="listingId" name="listingId" value="<%= (string)ViewData["ListingId"] %>"/>
 <input type="hidden" id="locationUrl" name="locationUrl" value="<%= (string)ViewData["LocationUrl"] %>"/>
 <input type="hidden" id="cryptedStepCheck" name="cryptedStepCheck" value="<%= (string)ViewData["CryptedStepCheck"] %>"/>
@@ -40,4 +41,6 @@
     <input type="button" id="btnContinue" value="Continue" style="float: right; padding: 6px 10px; cursor: pointer;" />
 </div>
 <%}%>
+<%}%>
+
 

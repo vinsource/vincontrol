@@ -117,6 +117,15 @@ namespace VINControl.Craigslist
         {
             //Step 2: log on
             WebRequestPost(email, password);
+            if (StatusCode == 302)
+            {
+                return new PostingPreview { Post = null, Warning = "You forgot to input Username/Password in Admin setting? or Your account is invalid." };
+            }
+
+            if (string.IsNullOrEmpty(dealer.CraigslistSetting.CityUrl))
+            {
+                return new PostingPreview { Post = null, Warning = "You forgot to set State/City/Location in Admin setting. Let's do that first." };
+            }
 
             var locationPostUrl = GetLocationPostUrl(dealer.CraigslistSetting.CityUrl);
             var locationUrl = GetEncodedLocationUrl(locationPostUrl);
