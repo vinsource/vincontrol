@@ -1,5 +1,11 @@
 ﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<VINControl.Craigslist.PostingPreview>" %>
 
+<% if (!string.IsNullOrEmpty(Model.Warning)) {%>
+<div style="display: inline-block; width: 100%; color: red; font-weight: bold; padding-bottom: 10px;">
+    <%= Model.Warning %>
+</div>
+<%}%>
+
 <input type="hidden" id="listingId" name="listingId" value="<%= (string)ViewData["ListingId"] %>"/>
 <input type="hidden" id="locationUrl" name="locationUrl" value="<%= (string)ViewData["LocationUrl"] %>"/>
 <input type="hidden" id="cryptedStepCheck" name="cryptedStepCheck" value="<%= (string)ViewData["CryptedStepCheck"] %>"/>
@@ -29,6 +35,9 @@
         <li><%= Model.Post.Note %></li>
     </ul>
 </div>
+<% if (string.IsNullOrEmpty(Model.Warning)) {%>
 <div style="display: inline-block; width: 100%; float: right">
     <input type="button" id="btnContinue" value="Continue" style="float: right; padding: 6px 10px; cursor: pointer;" />
 </div>
+<%}%>
+

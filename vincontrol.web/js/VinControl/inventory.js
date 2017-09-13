@@ -1503,3 +1503,82 @@ function todayDate(isFlash) {
 
     return today;
 }
+
+function postCraiglist(listingId) {
+    var id = listingId;
+
+    var url = '/Craigslist/GoToPostingPreviewPage?listingId=' + id;
+    $.fancybox({
+        href: url,
+        'width': 600,
+        'height': 600,
+        'hideOnOverlayClick': false,
+        'centerOnScroll': true,
+        'padding': 0,
+        'scrolling': 'no',
+        'onCleanup': function () {
+        },
+        isLoaded: function () {
+            //unblockUI();
+        },
+        onClosed: function () {
+            //unblockUI();
+        }
+    });
+
+    ////blockUI();
+    //$.ajax({
+    //    type: "GET",
+    //    dataType: "html",
+    //    url: "/Craigslist/AuthenticationChecking",
+    //    data: {},
+    //    cache: false,
+    //    traditional: true,
+    //    success: function (result) {
+    //        if (result == 302) {
+    //            //$.ajax({
+    //            //    type: "GET",
+    //            //    dataType: "html",
+    //            //    url: "/Craigslist/LocationChecking",
+    //            //    data: {},
+    //            //    cache: false,
+    //            //    traditional: true,
+    //            //    success: function (result) {
+    //            //        if (result == false) {
+    //            //            ShowWarningMessage("Please choose State/City/Location in Admin section.");
+    //            //            return false;
+    //            //        }
+    //            //        else
+    //            //        {
+    //            //            var url = '/Craigslist/GoToPostingPreviewPage?listingId=' + id;                            
+    //            //            $.fancybox({
+    //            //                href: url,
+    //            //                'width': 600,
+    //            //                'height': 600,
+    //            //                'hideOnOverlayClick': false,
+    //            //                'centerOnScroll': true,
+    //            //                'padding': 0,
+    //            //                'scrolling': 'no',
+    //            //                'onCleanup': function () {
+    //            //                },
+    //            //                isLoaded: function () {
+    //            //                    //unblockUI();
+    //            //                },
+    //            //                onClosed: function () {
+    //            //                    //unblockUI();
+    //            //                }
+    //            //            });
+    //            //        }
+    //            //    }
+    //            //});
+                
+    //        } else {
+    //            unblockUI();
+    //            ShowWarningMessage("Please enter valid Email/Password in Admin section.");
+    //        }
+    //    },
+    //    error: function (err) {
+    //        unblockUI();
+    //    }
+    //});
+}

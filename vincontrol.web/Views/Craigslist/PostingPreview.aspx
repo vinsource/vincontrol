@@ -1,25 +1,25 @@
 ﻿<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<dynamic>" %>
 
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Craigslist</title>
-    <script src="<%=Url.Content("~/js/jquery-1.6.1.min.js")%>" type="text/javascript"></script>
-    <script src="<%=Url.Content("~/js/fancybox/jquery.easing-1.3.pack.js")%>" type="text/javascript"></script>
-    <script src="<%=Url.Content("~/js/fancybox/jquery.mousewheel-3.0.4.pack.js")%>" type="text/javascript"></script>
-    <script src="<%=Url.Content("~/js/fancybox/jquery.fancybox-1.3.4.pack.js")%>" type="text/javascript"></script>
-    <%--<script src="<%=Url.Content("~/js/jquery.blockUI.js")%>" type="text/javascript"></script>--%>
-    <%--<script src="<%=Url.Content("~/js/Utility.js")%>" type="text/javascript"></script>--%>
+    <script src="<%=Url.Content("~/js/jquery-1.6.4.min.js")%>" type="text/javascript"></script>
+    <script src="<%=Url.Content("~/js/jquery.blockUI.js")%>" type="text/javascript"></script>
     <script src="<%=Url.Content("~/js/jquery.alerts.js")%>" type="text/javascript"></script>
     <link href="<%=Url.Content("~/js/jquery.alerts.css")%>" rel="stylesheet" type="text/css" />
+    <link href="<%=Url.Content("~/Content/common.css")%>" rel="stylesheet" type="text/css" />
+    <link href="<%=Url.Content("~/Content/profile.css")%>" rel="stylesheet" type="text/css" />
+    
     <style type="text/css">
         .error
         {
             border-color: red;
         }
         #progressBarHolder{
-			width: 600px;
+			/*width: 600px;*/
 			margin: 0px auto;
 		}
         .prBars_phase1
@@ -75,7 +75,7 @@
     <script src="<%=Url.Content("~/js/VinControl/craigslist.js")%>" type="text/javascript"></script>
 </head>
 <body>
-    <form id="postingForm" style="width:600px; margin: 0 auto; padding-top: 5px;">
+    <form id="postingForm" style="display: inline-block; padding-top: 5px;">
     
         <div id="progressBarHolder">
             <div class="prBars_phase1 prBars_phase1_active" id="prBars_phase1">
@@ -87,7 +87,7 @@
             <div class="prBars_phase4" id="prBars_phase4">
             </div>
         </div>
-        <div id="content" style="width: 600px; height: 590px;margin: 0 auto; overflow: scroll;">
+        <div id="content" style="display: inline-block;margin: 0 auto;">
             <%--<img id="waitingImage" src="../../Content/Images/ajaxloadingindicator.gif" style="border: 0;position:absolute; top: 280px; left: 280px; display: none;"/>--%>
         </div>
     </form>

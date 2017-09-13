@@ -858,6 +858,11 @@
     <Content Include="Css\validationEngine.jquery.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="js\fancybox\jquery.fancybox-2.1.5.css" />
+    <Content Include="js\fancybox\jquery.fancybox-2.1.5.js" />
+    <Content Include="js\jquery-1.10.2.min.js" />
+    <Content Include="js\jquery-1.4.0.min.js" />
+    <Content Include="js\jquery-1.8.0.min.js" />
     <Content Include="Library\System.Web.WebPages.Razor.dll" />
     <Content Include="Library\System.Web.WebPages.Razor.xml" />
     <Content Include="Scripts\jquery-1.12.4.js" />

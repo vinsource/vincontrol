@@ -62,7 +62,7 @@ $(document).ready(function () {
                     $('#waitingImage').hide();
                     if (result == 'Success') {
                         //parent.$.fancybox.close();
-                        jAlert('Your ad has been posted successfully.', 'Error');
+                        jAlert('Your ad has been posted successfully.', 'Success');
                     } else {
                         jAlert('Cannot process your request!', 'Error');
                     }

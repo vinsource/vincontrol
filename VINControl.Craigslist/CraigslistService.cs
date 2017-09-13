@@ -152,6 +152,10 @@ namespace VINControl.Craigslist
             //Step 8: go to billing page & get Crypted code
             var billingUrl = GetBillingUrl(locationUrl, cryptedStepCheck, 1);
             cryptedStepCheck = GetCryptedStepCheckFromUrl(billingUrl);
+            string warning = null;
+            if (billingUrl.Contains("s=mailoop"))
+                warning = "This is your first post on this device so you should receive an email shortly, with a link to confirm your ad. Please check Inbox or Spam " + email;
+
             GetBillingUrl(locationUrl, cryptedStepCheck, 2);
 
             //Step 9: payment
@@ -161,7 +165,8 @@ namespace VINControl.Craigslist
             {
                 Post = post,
                 CryptedStepCheck = cryptedStepCheck,
-                LocationUrl = paymentUrl
+                LocationUrl = paymentUrl,
+                Warning = warning
             };
         }
 
@@ -838,6 +843,7 @@ namespace VINControl.Craigslist
         public AdsPosting Post { get; set; }
         public string CryptedStepCheck { get; set; }
         public string LocationUrl { get; set; }
+        public string Warning { get; set; }
     }
 
     public class AdsPosting
