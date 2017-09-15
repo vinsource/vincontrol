@@ -76,7 +76,7 @@
 
         .span6
         {
-            width: 270px;
+            width: 270px;            
         }
 
         [class*="span"]
@@ -89,6 +89,15 @@
             cursor: pointer;
             float: right;
             padding-top: 5px;
+        }
+
+        @media screen and (max-width: 1028px)
+        {
+            .span6
+            {
+                width: 340px;
+                margin-left: -120px !important;
+            }
         }
     </style>
 </head>
