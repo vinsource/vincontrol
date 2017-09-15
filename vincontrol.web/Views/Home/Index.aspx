@@ -96,7 +96,8 @@
             .span6
             {
                 width: 340px;
-                margin-left: -120px !important;
+                margin-left: -150px !important;
+                margin-top: -120px !important;
             }
         }
     </style>
