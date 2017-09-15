@@ -117,7 +117,7 @@ namespace VINControl.Craigslist
         {
             //Step 2: log on
             WebRequestPost(email, password);
-            if (StatusCode == 302)
+            if (StatusCode != 302)
             {
                 return new PostingPreview { Post = null, Warning = "You forgot to input Username/Password in Admin setting? or Your account is invalid." };
             }
@@ -293,7 +293,8 @@ namespace VINControl.Craigslist
                     StatusCode = (int)response.StatusCode;
                     // Read the response
                     //var streamReader = new StreamReader(response.GetResponseStream());
-                    //result = streamReader.ReadToEnd();
+                    //var result = streamReader.ReadToEnd();
+                    //if (result.Contains("Please try again")) StatusCode = 302;
                     //streamReader.Close();
                 }
             }

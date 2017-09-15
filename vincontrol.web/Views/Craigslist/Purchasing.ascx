@@ -34,13 +34,13 @@
             <tr>
                 <td align="right"><b><span style="color: green">Card Number:</span></b></td>
                 <td>
-                    <input type="text" size="20" maxlength="20" autocomplete="off" name="CardNumber" id="CardNumber" value="">
+                    <input type="text" size="20" maxlength="20" autocomplete="off" name="CardNumber" id="CardNumber" value="<%= Model.CardNumber %>">
                 </td>
             </tr>
             <tr>
                 <td align="right"><b><span style="color: green">Verification Number:</span></b></td>
                 <td>
-                    <input type="text" size="4" maxlength="4" id="VerificationNumber" name="VerificationNumber" value="">
+                    <input type="text" size="4" maxlength="4" id="VerificationNumber" name="VerificationNumber" value="<%= Model.VerificationNumber %>">
                 </td>
             </tr>
             <tr>
@@ -51,84 +51,86 @@
                 <td align="right"><b>Expiration <span style="color: green">Month</span> / <span style="color: green">Year:</span></b></td>
                 <td>
                     <select name="ExpirationMonth" id="ExpirationMonth">
-                        <option value="Month" selected>
-                        Month<option value="01">
+                        <option value="Month" <%= Model.ExpirationMonth == 0 ? "selected" : "" %>>
+                        Month<option value="01" <%= Model.ExpirationMonth == 1 ? "selected" : "" %>>
                         01
-                            <option value="02">
+                            <option value="02" <%= Model.ExpirationMonth == 2 ? "selected" : "" %>>
                         02
-                            <option value="03">
+                            <option value="03" <%= Model.ExpirationMonth == 3 ? "selected" : "" %>>
                         03
-                            <option value="04">
+                            <option value="04" <%= Model.ExpirationMonth == 4 ? "selected" : "" %>>
                         04
-                            <option value="05">
+                            <option value="05" <%= Model.ExpirationMonth == 5 ? "selected" : "" %>>
                         05
-                            <option value="06">
+                            <option value="06" <%= Model.ExpirationMonth == 6 ? "selected" : "" %>>
                         06
-                            <option value="07">
+                            <option value="07" <%= Model.ExpirationMonth == 7 ? "selected" : "" %>>
                         07
-                            <option value="08">
+                            <option value="08" <%= Model.ExpirationMonth == 8 ? "selected" : "" %>>
                         08
-                            <option value="09">
+                            <option value="09" <%= Model.ExpirationMonth == 9 ? "selected" : "" %>>
                         09
-                            <option value="10">
+                            <option value="10" <%= Model.ExpirationMonth == 10 ? "selected" : "" %>>
                         10
-                            <option value="11">
+                            <option value="11" <%= Model.ExpirationMonth == 11 ? "selected" : "" %>>
                         11
-                            <option value="12">
+                            <option value="12" <%= Model.ExpirationMonth == 12 ? "selected" : "" %>>
                         12
                     </select>
                     /
                         <select name="ExpirationYear" id="ExpirationYear">
-                            <option value="Year" selected>
-                            Year<option value="2014">
-                            2014
-                            <option value="2015">
-                            2015
-                            <option value="2016">
-                            2016
-                            <option value="2017">
+                            <option value="Year" <%= Model.ExpirationYear == 0 ? "selected" : "" %>>
+                            Year
+                            
+                            <option value="2017" <%= Model.ExpirationYear == 2017 ? "selected" : "" %>>
                             2017
-                            <option value="2018">
+                            <option value="2018" <%= Model.ExpirationYear == 2018 ? "selected" : "" %>>
                             2018
-                            <option value="2019">
+                            <option value="2019" <%= Model.ExpirationYear == 2019 ? "selected" : "" %>>
                             2019
-                            <option value="2020">
+                            <option value="2020" <%= Model.ExpirationYear == 2020 ? "selected" : "" %>>
                             2020
-                            <option value="2021">
+                            <option value="2021" <%= Model.ExpirationYear == 2021 ? "selected" : "" %>>
                             2021
-                            <option value="2022">
+                            <option value="2022" <%= Model.ExpirationYear == 2022 ? "selected" : "" %>>
                             2022
-                            <option value="2023">
+                            <option value="2023" <%= Model.ExpirationYear == 2023 ? "selected" : "" %>>
                             2023
-                            <option value="2024">
+                            <option value="2024" <%= Model.ExpirationYear == 2024 ? "selected" : "" %>>
                             2024
+                            <option value="2025" <%= Model.ExpirationYear == 2025 ? "selected" : "" %>>
+                            2025
+                            <option value="2026" <%= Model.ExpirationYear == 2026 ? "selected" : "" %>>
+                            2026
+                            <option value="2027" <%= Model.ExpirationYear == 2027 ? "selected" : "" %>>
+                            2027
                         </select></td>
             </tr>
             <tr>
                 <td align="right"><b><span style="color: green">Card Name, First:</span></b></td>
                 <td>
-                    <input type="text" size="20" maxlength="80" id="FirstName" name="FirstName" value="">
+                    <input type="text" size="20" maxlength="80" id="FirstName" name="FirstName" value="<%= Model.FirstName %>">
                     <b><span style="color: green">Last:</span></b>
-                    <input type="text" size="20" maxlength="80" id="LastName" name="LastName" value=""></td>
+                    <input type="text" size="20" maxlength="80" id="LastName" name="LastName" value="<%= Model.LastName %>"></td>
             </tr>
             <tr>
                 <td align="right"><b><span style="color: green">Card Address:</span></b></td>
                 <td>
-                    <input type="text" size="30" maxlength="80" id="Address" name="Address" value="">
+                    <input type="text" size="30" maxlength="80" id="Address" name="Address" value="<%= Model.Address %>">
                     <%--<i>(must match address on card statement exactly)</i>--%>
                 </td>
             </tr>
             <tr>
                 <td align="right"><b><span style="color: green">City:</span></b></td>
                 <td>
-                    <input type="text" size="15" maxlength="80" id="City" name="City" value="">
+                    <input type="text" size="15" maxlength="80" id="City" name="City" value="<%= Model.City %>">
                     <b><span style="color: green" id="ccst">State:</span></b>
-                    <input type="text" size="2" maxlength="2" id="State" name="State" value=""></td>
+                    <input type="text" size="2" maxlength="2" id="State" name="State" value="<%= Model.State %>"></td>
             </tr>
             <tr>
                 <td align="right"><b><span style="color: green">Zip/Postal Code:</span></b></td>
                 <td>
-                    <input type="text" size="5" maxlength="20" id="Postal" name="Postal" value="">
+                    <input type="text" size="5" maxlength="20" id="Postal" name="Postal" value="<%= Model.Postal %>">
                 </td>
             </tr>
             <tr>
@@ -148,12 +150,12 @@
         <tr>
             <td align="right"><b><span style="color: green">Contact Name:</span></b></td>
             <td>
-                <input type="text" size="20" maxlength="80" id="ContactName" name='ContactName' value=""></td>
+                <input type="text" size="20" maxlength="80" id="ContactName" name='ContactName' value="<%= Model.ContactName %>"></td>
         </tr>
         <tr>
             <td align="right"><b><span style="color: green">Contact Phone Number:</span></b></td>
             <td>
-                <input type="text" size="16" maxlength="80" id="ContactPhone" name='ContactPhone' value=""></td>
+                <input type="text" size="16" maxlength="80" id="ContactPhone" name='ContactPhone' value="<%= Model.ContactPhone %>"></td>
         </tr>
         <tr>
             <td align="right"><b><span style="color: green">Contact Email Address:</span></b></td>
