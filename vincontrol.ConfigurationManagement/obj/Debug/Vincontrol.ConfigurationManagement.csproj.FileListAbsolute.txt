@@ -7,4 +7,4 @@ C:\VIN\vinsource\vincontrol\vincontrol.ConfigurationManagement\bin\Debug\vincont
 C:\VIN\vinsource\vincontrol\vincontrol.ConfigurationManagement\bin\Debug\vincontrol.ConfigurationManagement.pdb
 C:\VIN\vinsource\vincontrol\vincontrol.ConfigurationManagement\obj\Debug\vincontrol.ConfigurationManagement.dll
 C:\VIN\vinsource\vincontrol\vincontrol.ConfigurationManagement\obj\Debug\vincontrol.ConfigurationManagement.pdb
-C:\VIN\vinsource\vincontrol\vincontrol.ConfigurationManagement\obj\Debug\vincontrol.ConfigurationManagement.csprojResolveAssemblyReference.cache
+C:\VIN\vinsource\vincontrol\vincontrol.ConfigurationManagement\obj\Debug\Vincontrol.ConfigurationManagement.csprojResolveAssemblyReference.cache

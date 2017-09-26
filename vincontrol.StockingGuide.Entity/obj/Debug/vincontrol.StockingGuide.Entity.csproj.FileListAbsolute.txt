@@ -7,3 +7,4 @@ C:\VIN\vinsource\vincontrol\vincontrol.StockingGuide.Entity\bin\Debug\vincontrol
 C:\VIN\vinsource\vincontrol\vincontrol.StockingGuide.Entity\bin\Debug\vincontrol.StockingGuide.Entity.pdb
 C:\VIN\vinsource\vincontrol\vincontrol.StockingGuide.Entity\obj\Debug\vincontrol.StockingGuide.Entity.dll
 C:\VIN\vinsource\vincontrol\vincontrol.StockingGuide.Entity\obj\Debug\vincontrol.StockingGuide.Entity.pdb
+C:\VIN\vinsource\vincontrol\vincontrol.StockingGuide.Entity\obj\Debug\vincontrol.StockingGuide.Entity.csprojResolveAssemblyReference.cache

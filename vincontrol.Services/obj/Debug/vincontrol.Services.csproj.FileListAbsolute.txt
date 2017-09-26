@@ -36,5 +36,6 @@ C:\VIN\vinsource\vincontrol\vincontrol.Services\bin\Debug\System.Data.Entity.dll
 C:\VIN\vinsource\vincontrol\vincontrol.Services\bin\Debug\System.dll
 C:\VIN\vinsource\vincontrol\vincontrol.Services\bin\Debug\System.Xml.dll
 C:\VIN\vinsource\vincontrol\vincontrol.Services\bin\Debug\System.Xml.Linq.dll
+C:\VIN\vinsource\vincontrol\vincontrol.Services\obj\Debug\Vincontrol.Services.csprojResolveAssemblyReference.cache
 C:\VIN\vinsource\vincontrol\vincontrol.Services\obj\Debug\vincontrol.Services.dll
 C:\VIN\vinsource\vincontrol\vincontrol.Services\obj\Debug\vincontrol.Services.pdb

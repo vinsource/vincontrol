@@ -6,3 +6,4 @@ C:\VIN\vinsource\vincontrol\vincontrol.Business\bin\Debug\vincontrol.Business.dl
 C:\VIN\vinsource\vincontrol\vincontrol.Business\bin\Debug\vincontrol.Business.pdb
 C:\VIN\vinsource\vincontrol\vincontrol.Business\obj\Debug\vincontrol.Business.dll
 C:\VIN\vinsource\vincontrol\vincontrol.Business\obj\Debug\vincontrol.Business.pdb
+C:\VIN\vinsource\vincontrol\vincontrol.Business\obj\Debug\Vincontrol.Business.csprojResolveAssemblyReference.cache
