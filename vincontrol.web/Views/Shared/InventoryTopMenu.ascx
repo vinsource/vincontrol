@@ -27,8 +27,8 @@
         <% } %>
         <% if (userRight.Craigslist) %>
         <% { %>
-        <a href="javascript:;" style="color: black">
-            <div id="postCL_Tab" class="admin_top_btns">
+        <a class="iframe iframeCommon" href="<%=Url.Action("GoToPostingPreviewPage", "Craigslist", new { listingId = Model.ListingId }) %>" style="color: black">
+            <div id="postCL_Tab_Delete" class="admin_top_btns">
                 Craigslist
             </div>
         </a>

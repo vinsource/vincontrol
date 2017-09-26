@@ -78,10 +78,14 @@ namespace Vincontrol.Web.Controllers
             _dealer.DealerImagesFolder = System.Web.HttpContext.Current.Server.MapPath("/DealerImages");
             _car = _inventoryForm.GetCarInfo(SessionHandler.CurrentUser.DealershipId, Convert.ToInt32(listingId));
             var posting = _craigslistService.GoToPostingPreviewPage(SessionHandler.Dealer.DealerCraigslistSetting.Email, SessionHandler.Dealer.DealerCraigslistSetting.Password, _dealer, _car);
-            ViewData["ListingId"] = listingId;
-            ViewData["LocationUrl"] = posting.LocationUrl;
-            ViewData["CryptedStepCheck"] = posting.CryptedStepCheck;
-            ViewData["PostingTitle"] = posting.Post.Title;
+            if (posting != null && posting.Post != null)
+            {
+                ViewData["ListingId"] = listingId;
+                ViewData["LocationUrl"] = posting.LocationUrl;
+                ViewData["CryptedStepCheck"] = posting.CryptedStepCheck;
+                ViewData["PostingTitle"] = posting.Post.Title;
+            }
+            
             return PartialView("UploadImage", posting);
         }
 
@@ -89,6 +93,15 @@ namespace Vincontrol.Web.Controllers
         public ActionResult GoToPurchasingPage(PostingBasicInfo postData)
         {            
             ViewData["PostingTitle"] = postData.PostingTitle;
+            if (SessionHandler.CreditCardInfo != null)
+            {
+                var currentCredit = SessionHandler.CreditCardInfo;
+                currentCredit.LocationUrl = postData.LocationUrl;
+                currentCredit.CryptedStepCheck = postData.CryptedStepCheck;
+                currentCredit.ListingId = postData.ListingId;
+                return PartialView("Purchasing", currentCredit);
+            }
+
             return PartialView("Purchasing", new CreditCardInfo() { ContactEmail = SessionHandler.Dealer.DealerCraigslistSetting.Email, LocationUrl = postData.LocationUrl, CryptedStepCheck = postData.CryptedStepCheck, ListingId = postData.ListingId });
         }
 
@@ -99,6 +112,7 @@ namespace Vincontrol.Web.Controllers
             {
                 var confirmation = _craigslistService.GoToPurchasingPage(SessionHandler.Dealer.DealerCraigslistSetting.Email, SessionHandler.Dealer.DealerCraigslistSetting.Password, postData);
                 _dealerForm.AddNewCraigslistHistory(SessionHandler.CurrentUser.UserId, postData.ListingId, confirmation.PaymentId, confirmation.PostingId);
+                SessionHandler.CreditCardInfo = postData;
                 return "Success";
             }
             catch (Exception ex)

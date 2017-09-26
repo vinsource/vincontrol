@@ -146,8 +146,8 @@
                     </a>
             {{else}}
             {{if Type != 4 && AllowCraigslist}}
-            <a title="Craigslist" href="javascript:;">
-                <img src="../content/images/vincontrol/Craigslist.png" id="btnCraigslist_{{>ListingId}}" />
+            <a title="Craigslist" href="/Craigslist/GoToPostingPreviewPage?listingId={{>ListingId}}" class="iframe">
+                <img src="../content/images/vincontrol/Craigslist.png" id="btnCraigslistDelete_{{>ListingId}}" />
             </a>
             {{/if}}
         {{/if}}

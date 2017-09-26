@@ -7,6 +7,7 @@ using System.IO;
 using System.Xml;
 using System.Net;
 using vincontrol.CarFax;
+using Vincontrol.Web.Handlers;
 
 namespace Vincontrol.Web.Controllers
 {
@@ -15,6 +16,9 @@ namespace Vincontrol.Web.Controllers
     {
         public ActionResult Index()
         {
+            if (SessionHandler.CurrentUser != null)
+                return RedirectPermanent("/Market/ViewKpi");
+
             return View();
         }
 

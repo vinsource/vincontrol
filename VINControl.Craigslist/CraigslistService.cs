@@ -117,6 +117,15 @@ namespace VINControl.Craigslist
         {
             //Step 2: log on
             WebRequestPost(email, password);
+            if (StatusCode != 302)
+            {
+                return new PostingPreview { Post = null, Warning = "You forgot to input Username/Password in Admin setting? or Your account is invalid." };
+            }
+
+            if (string.IsNullOrEmpty(dealer.CraigslistSetting.CityUrl))
+            {
+                return new PostingPreview { Post = null, Warning = "You forgot to set State/City/Location in Admin setting. Let's do that first." };
+            }
 
             var locationPostUrl = GetLocationPostUrl(dealer.CraigslistSetting.CityUrl);
             var locationUrl = GetEncodedLocationUrl(locationPostUrl);
@@ -152,6 +161,10 @@ namespace VINControl.Craigslist
             //Step 8: go to billing page & get Crypted code
             var billingUrl = GetBillingUrl(locationUrl, cryptedStepCheck, 1);
             cryptedStepCheck = GetCryptedStepCheckFromUrl(billingUrl);
+            string warning = null;
+            if (billingUrl.Contains("s=mailoop"))
+                warning = "This is your first post on this device so you should receive an email shortly, with a link to confirm your ad. Please check Inbox or Spam " + email;
+
             GetBillingUrl(locationUrl, cryptedStepCheck, 2);
 
             //Step 9: payment
@@ -161,7 +174,8 @@ namespace VINControl.Craigslist
             {
                 Post = post,
                 CryptedStepCheck = cryptedStepCheck,
-                LocationUrl = paymentUrl
+                LocationUrl = paymentUrl,
+                Warning = warning
             };
         }
 
@@ -279,7 +293,8 @@ namespace VINControl.Craigslist
                     StatusCode = (int)response.StatusCode;
                     // Read the response
                     //var streamReader = new StreamReader(response.GetResponseStream());
-                    //result = streamReader.ReadToEnd();
+                    //var result = streamReader.ReadToEnd();
+                    //if (result.Contains("Please try again")) StatusCode = 302;
                     //streamReader.Close();
                 }
             }
@@ -838,6 +853,7 @@ namespace VINControl.Craigslist
         public AdsPosting Post { get; set; }
         public string CryptedStepCheck { get; set; }
         public string LocationUrl { get; set; }
+        public string Warning { get; set; }
     }
 
     public class AdsPosting
