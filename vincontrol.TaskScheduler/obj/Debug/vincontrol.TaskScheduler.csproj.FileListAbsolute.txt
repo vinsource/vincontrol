@@ -11,4 +11,3 @@ C:\VIN\vinsource\vincontrol\vincontrol.TaskScheduler\bin\Debug\vincontrol.TaskSc
 C:\VIN\vinsource\vincontrol\vincontrol.TaskScheduler\bin\Debug\vincontrol.TaskScheduler.pdb
 C:\VIN\vinsource\vincontrol\vincontrol.TaskScheduler\obj\Debug\vincontrol.TaskScheduler.dll
 C:\VIN\vinsource\vincontrol\vincontrol.TaskScheduler\obj\Debug\vincontrol.TaskScheduler.pdb
-C:\VIN\vinsource\vincontrol\vincontrol.TaskScheduler\obj\Debug\Vincontrol.TaskScheduler.csprojResolveAssemblyReference.cache

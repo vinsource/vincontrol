@@ -7,4 +7,3 @@ C:\VIN\vinsource\vincontrol\vincontrol.Constant\bin\Debug\vincontrol.Constant.dl
 C:\VIN\vinsource\vincontrol\vincontrol.Constant\bin\Debug\vincontrol.Constant.pdb
 C:\VIN\vinsource\vincontrol\vincontrol.Constant\obj\Debug\vincontrol.Constant.dll
 C:\VIN\vinsource\vincontrol\vincontrol.Constant\obj\Debug\vincontrol.Constant.pdb
-C:\VIN\vinsource\vincontrol\vincontrol.Constant\obj\Debug\Vincontrol.Constant.csprojResolveAssemblyReference.cache

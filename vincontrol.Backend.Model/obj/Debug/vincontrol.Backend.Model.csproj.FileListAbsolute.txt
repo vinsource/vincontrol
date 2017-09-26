@@ -11,4 +11,3 @@ C:\VIN\vinsource\vincontrol\vincontrol.Backend.Model\bin\Debug\vincontrol.Backen
 C:\VIN\vinsource\vincontrol\vincontrol.Backend.Model\bin\Debug\vincontrol.Backend.Model.pdb
 C:\VIN\vinsource\vincontrol\vincontrol.Backend.Model\obj\Debug\vincontrol.Backend.Model.dll
 C:\VIN\vinsource\vincontrol\vincontrol.Backend.Model\obj\Debug\vincontrol.Backend.Model.pdb
-C:\VIN\vinsource\vincontrol\vincontrol.Backend.Model\obj\Debug\Vincontrol.Backend.Model.csprojResolveAssemblyReference.cache
