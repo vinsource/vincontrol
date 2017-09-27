@@ -203,7 +203,6 @@ C:\VIN\vinsource\vincontrol\vincontrol.VinTrade\bin\Vincontrol.Market.pdb
 C:\VIN\vinsource\vincontrol\vincontrol.VinTrade\bin\vincontrol.PdfHelper.pdb
 C:\VIN\vinsource\vincontrol\vincontrol.VinTrade\bin\Newtonsoft.Json.pdb
 C:\VIN\vinsource\vincontrol\vincontrol.VinTrade\bin\Newtonsoft.Json.xml
-C:\VIN\vinsource\vincontrol\vincontrol.VinTrade\bin\System.Web.Mvc.xml
 C:\VIN\vinsource\vincontrol\vincontrol.VinTrade\bin\vincontrol.EmailHelper.pdb
 C:\VIN\vinsource\vincontrol\vincontrol.VinTrade\bin\vincontrol.ConfigurationManagement.pdb
 C:\VIN\vinsource\vincontrol\vincontrol.VinTrade\bin\HtmlAgilityPack.pdb
@@ -216,3 +215,6 @@ C:\VIN\vinsource\vincontrol\vincontrol.VinTrade\bin\HiQPdf.dep
 C:\VIN\vinsource\vincontrol\vincontrol.VinTrade\obj\Debug\Vincontrol.VinTrade.csprojResolveAssemblyReference.cache
 C:\VIN\vinsource\vincontrol\vincontrol.VinTrade\obj\Debug\vincontrol.VinTrade.dll
 C:\VIN\vinsource\vincontrol\vincontrol.VinTrade\obj\Debug\vincontrol.VinTrade.pdb
+C:\VIN\vinsource\vincontrol\vincontrol.VinTrade\bin\System.Web.WebPages.Razor.dll
+C:\VIN\vinsource\vincontrol\vincontrol.VinTrade\bin\Microsoft.Web.Infrastructure.dll
+C:\VIN\vinsource\vincontrol\vincontrol.VinTrade\bin\System.Web.WebPages.Deployment.dll

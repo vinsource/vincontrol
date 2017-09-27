@@ -72,6 +72,6 @@ C:\VIN\vinsource\vincontrol\vincontrol.Application\bin\Debug\Twilio.Api.xml
 C:\VIN\vinsource\vincontrol\vincontrol.Application\bin\Debug\HiQPdf.xml
 C:\VIN\vinsource\vincontrol\vincontrol.Application\bin\Debug\RestSharp.xml
 C:\VIN\vinsource\vincontrol\vincontrol.Application\bin\Debug\HiQPdf.dep
-C:\VIN\vinsource\vincontrol\vincontrol.Application\obj\Debug\Vincontrol.Application.csprojResolveAssemblyReference.cache
+C:\VIN\vinsource\vincontrol\vincontrol.Application\obj\Debug\vincontrol.Application.csprojResolveAssemblyReference.cache
 C:\VIN\vinsource\vincontrol\vincontrol.Application\obj\Debug\vincontrol.Application.dll
 C:\VIN\vinsource\vincontrol\vincontrol.Application\obj\Debug\vincontrol.Application.pdb

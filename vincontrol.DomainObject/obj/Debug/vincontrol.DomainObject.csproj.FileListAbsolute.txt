@@ -5,6 +5,6 @@ E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.DomainObject\o
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.DomainObject\obj\Debug\vincontrol.DomainObject.csprojResolveAssemblyReference.cache
 C:\VIN\vinsource\vincontrol\vincontrol.DomainObject\bin\Debug\vincontrol.DomainObject.dll
 C:\VIN\vinsource\vincontrol\vincontrol.DomainObject\bin\Debug\vincontrol.DomainObject.pdb
+C:\VIN\vinsource\vincontrol\vincontrol.DomainObject\obj\Debug\Vincontrol.DomainObject.csprojResolveAssemblyReference.cache
 C:\VIN\vinsource\vincontrol\vincontrol.DomainObject\obj\Debug\vincontrol.DomainObject.dll
 C:\VIN\vinsource\vincontrol\vincontrol.DomainObject\obj\Debug\vincontrol.DomainObject.pdb
-C:\VIN\vinsource\vincontrol\vincontrol.DomainObject\obj\Debug\Vincontrol.DomainObject.csprojResolveAssemblyReference.cache
