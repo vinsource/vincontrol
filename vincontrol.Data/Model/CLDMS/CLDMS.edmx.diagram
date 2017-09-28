@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="41c848553cfb4ae5acd85fe835b61d4a" Name="Diagram1">
+        <EntityTypeShape EntityType="CLDMSModel.Account" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CLDMSModel.City" Width="1.5" PointX="3.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CLDMSModel.DataFeedVendor" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="CLDMSModel.Dealer" Width="1.5" PointX="0.75" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CLDMSModel.Email" Width="1.5" PointX="0.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="CLDMSModel.Inventory" Width="1.5" PointX="3" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CLDMSModel.Package" Width="1.5" PointX="5.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="CLDMSModel.SelectedCity" Width="1.5" PointX="6" PointY="17.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CLDMSModel.SoldOutInventory" Width="1.5" PointX="3" PointY="27.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CLDMSModel.Tracking" Width="1.5" PointX="6" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CLDMSModel.UsaZipCode" Width="1.5" PointX="7.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="CLDMSModel.WheelDrive" Width="1.5" PointX="5.75" PointY="9" IsExpanded="true" />
+        <AssociationConnector Association="CLDMSModel.FK_SelectedCity_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="CLDMSModel.FK_Tracking_Account" ManuallyRouted="false" />
+        <AssociationConnector Association="CLDMSModel.FK_SelectedCity_City" ManuallyRouted="false" />
+        <AssociationConnector Association="CLDMSModel.FK_Tracking_City" ManuallyRouted="false" />
+        <AssociationConnector Association="CLDMSModel.FK_Inventory_Dealer" ManuallyRouted="false" />
+        <AssociationConnector Association="CLDMSModel.FK_SelectedCity_Dealer" ManuallyRouted="false" />
+        <AssociationConnector Association="CLDMSModel.FK_SoldOutInventory_Dealer" ManuallyRouted="false" />
+        <AssociationConnector Association="CLDMSModel.FK_Tracking_Dealer" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

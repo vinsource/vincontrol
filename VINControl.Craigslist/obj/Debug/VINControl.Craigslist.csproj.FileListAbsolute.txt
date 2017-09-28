@@ -87,3 +87,4 @@ C:\VIN\vinsource\vincontrol\VINControl.Craigslist\bin\Debug\HiQPdf.dep
 C:\VIN\vinsource\vincontrol\VINControl.Craigslist\obj\Debug\VINControl.Craigslist.csprojResolveAssemblyReference.cache
 C:\VIN\vinsource\vincontrol\VINControl.Craigslist\obj\Debug\VINControl.Craigslist.dll
 C:\VIN\vinsource\vincontrol\VINControl.Craigslist\obj\Debug\VINControl.Craigslist.pdb
+C:\VIN\vinsource\vincontrol\VINControl.Craigslist\bin\Debug\EntityFramework.dll

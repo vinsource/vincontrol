@@ -33,3 +33,5 @@ C:\VIN\vinsource\vincontrol\vincontrol.Data\bin\Debug\vincontrol.DomainObject.pd
 C:\VIN\vinsource\vincontrol\vincontrol.Data\obj\Debug\Vincontrol.Data.csprojResolveAssemblyReference.cache
 C:\VIN\vinsource\vincontrol\vincontrol.Data\obj\Debug\vincontrol.Data.dll
 C:\VIN\vinsource\vincontrol\vincontrol.Data\obj\Debug\vincontrol.Data.pdb
+C:\VIN\vinsource\vincontrol\vincontrol.Data\bin\Debug\EntityFramework.dll
+C:\VIN\vinsource\vincontrol\vincontrol.Data\bin\Debug\EntityFramework.xml

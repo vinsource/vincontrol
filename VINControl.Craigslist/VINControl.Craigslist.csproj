@@ -30,12 +30,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Libs\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="SgmlReaderDll, Version=1.8.7.14535, Culture=neutral, PublicKeyToken=46b2db9ca481831b, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Libs\SgmlReaderDll.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -50,12 +55,17 @@
     <Compile Include="WebHandler.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Libs\EntityFramework.dll" />
     <Content Include="Libs\SgmlReaderDll.dll" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\vincontrol.Application\vincontrol.Application.csproj">
       <Project>{7f0f1443-be02-4bad-8e5c-34aded92dca3}</Project>
       <Name>vincontrol.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vincontrol.Data\vincontrol.Data.csproj">
+      <Project>{7D76E800-C9D8-407A-8844-A775EE6D5A65}</Project>
+      <Name>vincontrol.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\vincontrol.EmailHelper\vincontrol.EmailHelper.csproj">
       <Project>{b54c9c64-f5b1-4e8b-8f4e-d269fbd9cef2}</Project>

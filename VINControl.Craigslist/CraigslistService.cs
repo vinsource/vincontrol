@@ -16,6 +16,8 @@ using vincontrol.Application.ViewModels.AccountManagement;
 using vincontrol.Application.ViewModels.CommonManagement;
 using vincontrol.EmailHelper;
 using vincontrol.Helper;
+using vincontrol.Data.Model;
+using vincontrol.Data.Model.CLDMS;
 
 namespace VINControl.Craigslist
 {
@@ -56,7 +58,7 @@ namespace VINControl.Craigslist
         {
             CookieContainer = new CookieContainer();
             CookieCollection = new CookieCollection();
-            _emailHelper = new Email();
+            _emailHelper = new vincontrol.EmailHelper.Email();
             _commonManagementForm = new CommonManagementForm();
             _dealerManagementForm = new DealerManagementForm();
             _inventoryManagementForm = new InventoryManagementForm();
@@ -665,6 +667,77 @@ namespace VINControl.Craigslist
             return list;
         }
 
+        public List<StateChoosing> GetStateListForCLDMS()
+        {
+            var list = new List<StateChoosing>();
+            var xmlDocument = WebHandler.DownloadDocument(WebHandler.DownloadContent("http://www.craigslist.org/about/sites"));
+            for (int i = 1; i <= 4; i++)
+            {
+                var state01Nodes = xmlDocument.SelectNodes(string.Format("//div[@class='colmask'][1]/div[@class='box box_{0}']/h4", i));
+                if (state01Nodes != null)
+                {
+                    var index = 1;
+                    foreach (XmlNode node in state01Nodes)
+                    {
+                        var state = new StateChoosing();
+                        state.Name = node.InnerText.Trim();
+                        //state.Value = _commonManagementForm.AddNewState(state.Name);
+                        var location01Nodes = xmlDocument.SelectNodes(string.Format("//div[@class='colmask'][1]/div[@class='box box_1']/ul[{0}]/li", index));
+                        if (location01Nodes != null)
+                        {
+                            var locations = new List<LocationChoosing>();
+                            foreach (XmlNode subnode in location01Nodes)
+                            {
+                                var location = new LocationChoosing() { SubLocations = new List<SubLocationChoosing>() };
+                                location.Value = WebHandler.GetString(subnode, "./a/@href", null, null, true);
+                                location.Name = UppercaseFirst(WebHandler.GetString(subnode, "./a/@title", null, null, true));                                
+                                
+                                var subxmlDocument = WebHandler.DownloadDocument(WebHandler.DownloadContent(location.Value));
+                                var sublocation01Nodes = subxmlDocument.SelectNodes(string.Format("//ul[@class='sublinks']/li"));
+                                if (sublocation01Nodes.Count > 0)
+                                {
+                                    foreach (XmlNode item in sublocation01Nodes)
+                                    {
+                                        var sublocation = new SubLocationChoosing();
+                                        sublocation.Href = WebHandler.GetString(item, "./a/@href", null, null, true);
+                                        sublocation.Name = UppercaseFirst(WebHandler.GetString(item, "./a", null, null, true));
+
+                                        var cldms = new CLDMSEntities();
+                                        cldms.Cities.AddObject(new vincontrol.Data.Model.CLDMS.City()
+                                        {
+                                            CityName = location.Name + " - " + sublocation.Name,
+                                            CraigsListCityURL = location.Value + sublocation.Href,
+                                            State = state.Name
+                                        });
+                                        cldms.SaveChanges();
+                                    }
+                                }
+                                else
+                                {
+                                    var cldms = new CLDMSEntities();
+                                    cldms.Cities.AddObject(new vincontrol.Data.Model.CLDMS.City()
+                                    {
+                                        CityName = location.Name,
+                                        CraigsListCityURL = location.Value,
+                                        State = state.Name
+                                    });
+                                    cldms.SaveChanges();
+                                }
+                                
+                                locations.Add(location);
+                            }
+                            state.Locations = locations;                            
+                        }
+
+                        list.Add(state);
+                        index++;
+                    }
+                }
+            }
+
+            return list;
+        }
+
         public AdsPosting PreviewPosting(string previewUrl, DealerViewModel dealer, CarShortViewModel car)
         {
             var post = new AdsPosting()
@@ -894,6 +967,8 @@ namespace VINControl.Craigslist
     {
         public int Value { get; set; }
         public string Name { get; set; }
+        public string Href { get; set; }
+
     }
 
     public static class DictionaryExtensions
