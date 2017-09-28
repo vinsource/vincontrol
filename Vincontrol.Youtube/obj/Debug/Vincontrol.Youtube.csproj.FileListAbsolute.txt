@@ -24,3 +24,16 @@ C:\VIN\vinsource\vincontrol\Vincontrol.Youtube\bin\Debug\Newtonsoft.Json.xml
 C:\VIN\vinsource\vincontrol\Vincontrol.Youtube\obj\Debug\Vincontrol.Youtube.csprojResolveAssemblyReference.cache
 C:\VIN\vinsource\vincontrol\Vincontrol.Youtube\obj\Debug\Vincontrol.Youtube.dll
 C:\VIN\vinsource\vincontrol\Vincontrol.Youtube\obj\Debug\Vincontrol.Youtube.pdb
+E:\VIN\vinsource\vincontrol\Vincontrol.Youtube\bin\Debug\Vincontrol.Youtube.dll
+E:\VIN\vinsource\vincontrol\Vincontrol.Youtube\bin\Debug\Vincontrol.Youtube.pdb
+E:\VIN\vinsource\vincontrol\Vincontrol.Youtube\bin\Debug\Google.GData.Client.dll
+E:\VIN\vinsource\vincontrol\Vincontrol.Youtube\bin\Debug\Google.GData.Extensions.dll
+E:\VIN\vinsource\vincontrol\Vincontrol.Youtube\bin\Debug\Google.GData.YouTube.dll
+E:\VIN\vinsource\vincontrol\Vincontrol.Youtube\bin\Debug\Newtonsoft.Json.dll
+E:\VIN\vinsource\vincontrol\Vincontrol.Youtube\bin\Debug\vincontrol.ConfigurationManagement.dll
+E:\VIN\vinsource\vincontrol\Vincontrol.Youtube\bin\Debug\vincontrol.ConfigurationManagement.pdb
+E:\VIN\vinsource\vincontrol\Vincontrol.Youtube\bin\Debug\Newtonsoft.Json.pdb
+E:\VIN\vinsource\vincontrol\Vincontrol.Youtube\bin\Debug\Newtonsoft.Json.xml
+E:\VIN\vinsource\vincontrol\Vincontrol.Youtube\obj\Debug\Vincontrol.Youtube.csprojResolveAssemblyReference.cache
+E:\VIN\vinsource\vincontrol\Vincontrol.Youtube\obj\Debug\Vincontrol.Youtube.dll
+E:\VIN\vinsource\vincontrol\Vincontrol.Youtube\obj\Debug\Vincontrol.Youtube.pdb

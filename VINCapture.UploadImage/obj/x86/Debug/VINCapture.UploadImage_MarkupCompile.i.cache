@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\VIN\vinsource\vincontrol\VINCapture.UploadImage\obj\x86\Debug\
+E:\VIN\vinsource\vincontrol\VINCapture.UploadImage\obj\x86\Debug\
 VINCapture.UploadImage
 none
 false
 DEBUG;TRACE
-C:\VIN\vinsource\vincontrol\VINCapture.UploadImage\View\App.xaml
+E:\VIN\vinsource\vincontrol\VINCapture.UploadImage\View\App.xaml
 6-516611553
 4-657855970
-39-703903525
-28-961382851
+39-1531755794
+28410969156
 View\DetailPage.xaml;View\EmailListWindow.xaml;View\HiddenWindow.xaml;View\LoginPage.xaml;View\StartupPage.xaml;View\StartupWindow.xaml;
 
 True

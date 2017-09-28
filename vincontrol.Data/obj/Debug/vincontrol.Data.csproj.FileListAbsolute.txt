@@ -35,3 +35,15 @@ C:\VIN\vinsource\vincontrol\vincontrol.Data\obj\Debug\vincontrol.Data.dll
 C:\VIN\vinsource\vincontrol\vincontrol.Data\obj\Debug\vincontrol.Data.pdb
 C:\VIN\vinsource\vincontrol\vincontrol.Data\bin\Debug\EntityFramework.dll
 C:\VIN\vinsource\vincontrol\vincontrol.Data\bin\Debug\EntityFramework.xml
+E:\VIN\vinsource\vincontrol\vincontrol.Data\bin\Debug\vincontrol.Data.dll.config
+E:\VIN\vinsource\vincontrol\vincontrol.Data\bin\Debug\vincontrol.Data.dll
+E:\VIN\vinsource\vincontrol\vincontrol.Data\bin\Debug\vincontrol.Data.pdb
+E:\VIN\vinsource\vincontrol\vincontrol.Data\bin\Debug\EntityFramework.dll
+E:\VIN\vinsource\vincontrol\vincontrol.Data\bin\Debug\vincontrol.Constant.dll
+E:\VIN\vinsource\vincontrol\vincontrol.Data\bin\Debug\vincontrol.DomainObject.dll
+E:\VIN\vinsource\vincontrol\vincontrol.Data\bin\Debug\vincontrol.Constant.pdb
+E:\VIN\vinsource\vincontrol\vincontrol.Data\bin\Debug\vincontrol.DomainObject.pdb
+E:\VIN\vinsource\vincontrol\vincontrol.Data\bin\Debug\EntityFramework.xml
+E:\VIN\vinsource\vincontrol\vincontrol.Data\obj\Debug\Vincontrol.Data.csprojResolveAssemblyReference.cache
+E:\VIN\vinsource\vincontrol\vincontrol.Data\obj\Debug\vincontrol.Data.dll
+E:\VIN\vinsource\vincontrol\vincontrol.Data\obj\Debug\vincontrol.Data.pdb

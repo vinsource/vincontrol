@@ -690,17 +690,19 @@ namespace VINControl.Craigslist
                             {
                                 var location = new LocationChoosing() { SubLocations = new List<SubLocationChoosing>() };
                                 location.Value = WebHandler.GetString(subnode, "./a/@href", null, null, true);
-                                location.Name = UppercaseFirst(WebHandler.GetString(subnode, "./a/@title", null, null, true));                                
+                                location.Name = UppercaseFirst(WebHandler.GetString(subnode, "./a", null, null, true));                                
                                 
                                 var subxmlDocument = WebHandler.DownloadDocument(WebHandler.DownloadContent(location.Value));
-                                var sublocation01Nodes = subxmlDocument.SelectNodes(string.Format("//ul[@class='sublinks']/li"));
-                                if (sublocation01Nodes.Count > 0)
+                                var sublocation01Nodes = subxmlDocument.SelectNodes("//ul[@class=\'sublinks\']/li");
+                                if (sublocation01Nodes != null && sublocation01Nodes.Count > 0)
                                 {
                                     foreach (XmlNode item in sublocation01Nodes)
                                     {
-                                        var sublocation = new SubLocationChoosing();
-                                        sublocation.Href = WebHandler.GetString(item, "./a/@href", null, null, true);
-                                        sublocation.Name = UppercaseFirst(WebHandler.GetString(item, "./a", null, null, true));
+                                        var sublocation = new SubLocationChoosing
+                                        {
+                                            Href = WebHandler.GetString(item, "./a/@href", null, null, true),
+                                            Name = UppercaseFirst(WebHandler.GetString(item, "./a/@title", null, null, true))
+                                        };
 
                                         var cldms = new CLDMSEntities();
                                         cldms.Cities.AddObject(new vincontrol.Data.Model.CLDMS.City()

@@ -10,3 +10,9 @@ C:\VIN\vinsource\vincontrol\VINControl.WebHelper\bin\Debug\SgmlReaderDll.dll
 C:\VIN\vinsource\vincontrol\VINControl.WebHelper\obj\Debug\VINControl.WebHelper.csprojResolveAssemblyReference.cache
 C:\VIN\vinsource\vincontrol\VINControl.WebHelper\obj\Debug\VINControl.WebHelper.dll
 C:\VIN\vinsource\vincontrol\VINControl.WebHelper\obj\Debug\VINControl.WebHelper.pdb
+E:\VIN\vinsource\vincontrol\VINControl.WebHelper\bin\Debug\VINControl.WebHelper.dll
+E:\VIN\vinsource\vincontrol\VINControl.WebHelper\bin\Debug\VINControl.WebHelper.pdb
+E:\VIN\vinsource\vincontrol\VINControl.WebHelper\bin\Debug\SgmlReaderDll.dll
+E:\VIN\vinsource\vincontrol\VINControl.WebHelper\obj\Debug\VINControl.WebHelper.csprojResolveAssemblyReference.cache
+E:\VIN\vinsource\vincontrol\VINControl.WebHelper\obj\Debug\VINControl.WebHelper.dll
+E:\VIN\vinsource\vincontrol\VINControl.WebHelper\obj\Debug\VINControl.WebHelper.pdb
