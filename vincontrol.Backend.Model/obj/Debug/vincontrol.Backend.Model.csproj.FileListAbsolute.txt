@@ -7,3 +7,8 @@ E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Backend.Model\
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Backend.Model\bin\Debug\vincontrol.Backend.Model.pdb
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Backend.Model\obj\Debug\vincontrol.Backend.Model.dll
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Backend.Model\obj\Debug\vincontrol.Backend.Model.pdb
+C:\VIN\vinsource\vincontrol\vincontrol.Backend.Model\bin\Debug\vincontrol.Backend.Model.dll
+C:\VIN\vinsource\vincontrol\vincontrol.Backend.Model\bin\Debug\vincontrol.Backend.Model.pdb
+C:\VIN\vinsource\vincontrol\vincontrol.Backend.Model\obj\Debug\vincontrol.Backend.Model.dll
+C:\VIN\vinsource\vincontrol\vincontrol.Backend.Model\obj\Debug\vincontrol.Backend.Model.pdb
+C:\VIN\vinsource\vincontrol\vincontrol.Backend.Model\obj\Debug\Vincontrol.Backend.Model.csprojResolveAssemblyReference.cache

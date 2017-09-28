@@ -48,10 +48,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\NewVinControlMVC4\Vincontrol.Youtube\Vincontrol.Youtube.csproj">
-      <Project>{373a2555-8bbc-48f6-9c70-ae8753e8f103}</Project>
-      <Name>Vincontrol.Youtube</Name>
-    </ProjectReference>
     <ProjectReference Include="..\vincontrol.Application\vincontrol.Application.csproj">
       <Project>{7f0f1443-be02-4bad-8e5c-34aded92dca3}</Project>
       <Name>vincontrol.Application</Name>

@@ -16,6 +16,8 @@ using vincontrol.Application.ViewModels.AccountManagement;
 using vincontrol.Application.ViewModels.CommonManagement;
 using vincontrol.EmailHelper;
 using vincontrol.Helper;
+using vincontrol.Data.Model;
+using vincontrol.Data.Model.CLDMS;
 
 namespace VINControl.Craigslist
 {
@@ -56,7 +58,7 @@ namespace VINControl.Craigslist
         {
             CookieContainer = new CookieContainer();
             CookieCollection = new CookieCollection();
-            _emailHelper = new Email();
+            _emailHelper = new vincontrol.EmailHelper.Email();
             _commonManagementForm = new CommonManagementForm();
             _dealerManagementForm = new DealerManagementForm();
             _inventoryManagementForm = new InventoryManagementForm();
@@ -117,6 +119,15 @@ namespace VINControl.Craigslist
         {
             //Step 2: log on
             WebRequestPost(email, password);
+            if (StatusCode != 302)
+            {
+                return new PostingPreview { Post = null, Warning = "You forgot to input Username/Password in Admin setting? or Your account is invalid." };
+            }
+
+            if (string.IsNullOrEmpty(dealer.CraigslistSetting.CityUrl))
+            {
+                return new PostingPreview { Post = null, Warning = "You forgot to set State/City/Location in Admin setting. Let's do that first." };
+            }
 
             var locationPostUrl = GetLocationPostUrl(dealer.CraigslistSetting.CityUrl);
             var locationUrl = GetEncodedLocationUrl(locationPostUrl);
@@ -152,6 +163,10 @@ namespace VINControl.Craigslist
             //Step 8: go to billing page & get Crypted code
             var billingUrl = GetBillingUrl(locationUrl, cryptedStepCheck, 1);
             cryptedStepCheck = GetCryptedStepCheckFromUrl(billingUrl);
+            string warning = null;
+            if (billingUrl.Contains("s=mailoop"))
+                warning = "This is your first post on this device so you should receive an email shortly, with a link to confirm your ad. Please check Inbox or Spam " + email;
+
             GetBillingUrl(locationUrl, cryptedStepCheck, 2);
 
             //Step 9: payment
@@ -161,7 +176,8 @@ namespace VINControl.Craigslist
             {
                 Post = post,
                 CryptedStepCheck = cryptedStepCheck,
-                LocationUrl = paymentUrl
+                LocationUrl = paymentUrl,
+                Warning = warning
             };
         }
 
@@ -279,7 +295,8 @@ namespace VINControl.Craigslist
                     StatusCode = (int)response.StatusCode;
                     // Read the response
                     //var streamReader = new StreamReader(response.GetResponseStream());
-                    //result = streamReader.ReadToEnd();
+                    //var result = streamReader.ReadToEnd();
+                    //if (result.Contains("Please try again")) StatusCode = 302;
                     //streamReader.Close();
                 }
             }
@@ -393,7 +410,7 @@ namespace VINControl.Craigslist
 
         public string Posting(DealerViewModel dealer, CarShortViewModel car, string locationUrl, string cryptedStepCheck)
         {
-            var postData = String.Format("id2={0}&" +
+            var postData = String.Format("language=5&condition=40&id2={0}&" +
                                          "browserinfo={1}&" +
                                          "contact_method={2}&" +
                                          "contact_phone_ok=1&" +
@@ -409,11 +426,11 @@ namespace VINControl.Craigslist
                                          "auto_make_model={12}&" +
                                          "auto_miles={13}&" +
                                          "auto_vin={14}&" +
-                                         "auto_trans_manual={15}&" +
-                                         "auto_trans_auto={16}&" +
+                                         "auto_fuel_type={15}&" +
+                                         "auto_transmission={16}&" +
                                          "see_my_other={17}&" +
                                          "auto_title_status={18}&" +
-                                         "Privacy=C&cryptedStepCheck={19}&sale_condition=excellent&go=Continue",
+                                         "Privacy=C&cryptedStepCheck={19}&condition={20}&sale_condition=excellent&oc=1&go=Continue",
                                          "1903x1045X1903x602X1920x1080",
                                          "%257B%250A%2509%2522plugins%2522%253A%2520%2522Plugin%25200%253A%2520Google%2520Update%253B%2520Google%2520Update%253B%2520npGoogleUpdate3.dll%253B%2520%2528%253B%2520application%2Fx-vnd.google.update3webcontrol.3%253B%2520%2529%2520%2528%253B%2520application%2Fx-vnd.google.oneclickctrl.9%253B%2520%2529.%2520Plugin%25201%253A%2520Silverlight%2520Plug-In%253B%25204.0.50826.0%253B%2520npctrl.dll%253B%2520%2528npctrl%253B%2520application%2Fx-silverlight%253B%2520scr%2529%2520%2528%253B%2520application%2Fx-silverlight-2%253B%2520%2529.%2520%2522%252C%250A%2509%2522timezone%2522%253A%2520480%252C%250A%2509%2522video%2522%253A%2520%25221920x1080x16%2522%252C%250A%2509%2522supercookies%2522%253A%2520%2522DOM%2520localStorage%253A%2520Yes%252C%2520DOM%2520sessionStorage%253A%2520Yes%252C%2520IE%2520userData%253A%2520No%2522%250A%257D",
                                          1,
@@ -429,13 +446,58 @@ namespace VINControl.Craigslist
                                          String.Format("{0} {1}", car.Make, car.Model),
                                          car.Odometer, 
                                          car.Vin,
-                                         car.Tranmission.Equals("Manual") ? 1 : 0,
-                                         car.Tranmission.Equals("Automatic") ? 1 : 0,
+                                         GetFuelType(car),
+                                         GetTransmission(car),
                                          1,
                                          1,
-                                         cryptedStepCheck);
+                                         cryptedStepCheck,
+                                         GetCondition(car));
 
             return ExecutePost(locationUrl, postData);
+        }
+
+        private int GetCondition(CarShortViewModel car)
+        {
+            return car.Condition.ToLower().Equals("new") ? 10 : 40;
+        }
+
+        private int GetFuelType(CarShortViewModel car)
+        {
+            var fuel = car.Fuel.ToLower();
+            if (fuel.Contains("gas")) return 1;
+            if (fuel.Contains("diesel")) return 2;
+            if (fuel.Contains("hybrid")) return 3;
+            if (fuel.Contains("electric")) return 4;
+
+            return 6;
+        }
+
+        private int GetTransmission(CarShortViewModel car)
+        {
+            var tm = car.Tranmission.ToLower();
+            if (tm.Contains("manual")) return 1;
+            if (tm.Contains("automatic")) return 2;
+            
+            return 3;
+        }
+
+        private int GetBodyStyle(CarShortViewModel car)
+        {
+            var tm = car.BodyType.ToLower();
+            if (tm.Contains("bus")) return 1;
+            if (tm.Contains("convertible")) return 2;
+            if (tm.Contains("coupe")) return 3;
+            if (tm.Contains("hatchback")) return 4;
+            if (tm.Contains("mini van")) return 5;
+            if (tm.Contains("offroad")) return 6;
+            if (tm.Contains("pickup")) return 7;
+            if (tm.Contains("sedan")) return 8;
+            if (tm.Contains("truck")) return 9;
+            if (tm.Contains("suv")) return 10;
+            if (tm.Contains("wagon")) return 11;
+            if (tm.Contains("van")) return 12;
+
+            return 13;
         }
 
         public string UploadImages(string locationUrl, string cryptedStepCheck, DealerViewModel dealer, CarShortViewModel car)
@@ -601,6 +663,77 @@ namespace VINControl.Craigslist
                     }
                 }   
             }            
+
+            return list;
+        }
+
+        public List<StateChoosing> GetStateListForCLDMS()
+        {
+            var list = new List<StateChoosing>();
+            var xmlDocument = WebHandler.DownloadDocument(WebHandler.DownloadContent("http://www.craigslist.org/about/sites"));
+            for (int i = 1; i <= 4; i++)
+            {
+                var state01Nodes = xmlDocument.SelectNodes(string.Format("//div[@class='colmask'][1]/div[@class='box box_{0}']/h4", i));
+                if (state01Nodes != null)
+                {
+                    var index = 1;
+                    foreach (XmlNode node in state01Nodes)
+                    {
+                        var state = new StateChoosing();
+                        state.Name = node.InnerText.Trim();
+                        //state.Value = _commonManagementForm.AddNewState(state.Name);
+                        var location01Nodes = xmlDocument.SelectNodes(string.Format("//div[@class='colmask'][1]/div[@class='box box_1']/ul[{0}]/li", index));
+                        if (location01Nodes != null)
+                        {
+                            var locations = new List<LocationChoosing>();
+                            foreach (XmlNode subnode in location01Nodes)
+                            {
+                                var location = new LocationChoosing() { SubLocations = new List<SubLocationChoosing>() };
+                                location.Value = WebHandler.GetString(subnode, "./a/@href", null, null, true);
+                                location.Name = UppercaseFirst(WebHandler.GetString(subnode, "./a/@title", null, null, true));                                
+                                
+                                var subxmlDocument = WebHandler.DownloadDocument(WebHandler.DownloadContent(location.Value));
+                                var sublocation01Nodes = subxmlDocument.SelectNodes(string.Format("//ul[@class='sublinks']/li"));
+                                if (sublocation01Nodes.Count > 0)
+                                {
+                                    foreach (XmlNode item in sublocation01Nodes)
+                                    {
+                                        var sublocation = new SubLocationChoosing();
+                                        sublocation.Href = WebHandler.GetString(item, "./a/@href", null, null, true);
+                                        sublocation.Name = UppercaseFirst(WebHandler.GetString(item, "./a", null, null, true));
+
+                                        var cldms = new CLDMSEntities();
+                                        cldms.Cities.AddObject(new vincontrol.Data.Model.CLDMS.City()
+                                        {
+                                            CityName = location.Name + " - " + sublocation.Name,
+                                            CraigsListCityURL = location.Value + sublocation.Href,
+                                            State = state.Name
+                                        });
+                                        cldms.SaveChanges();
+                                    }
+                                }
+                                else
+                                {
+                                    var cldms = new CLDMSEntities();
+                                    cldms.Cities.AddObject(new vincontrol.Data.Model.CLDMS.City()
+                                    {
+                                        CityName = location.Name,
+                                        CraigsListCityURL = location.Value,
+                                        State = state.Name
+                                    });
+                                    cldms.SaveChanges();
+                                }
+                                
+                                locations.Add(location);
+                            }
+                            state.Locations = locations;                            
+                        }
+
+                        list.Add(state);
+                        index++;
+                    }
+                }
+            }
 
             return list;
         }
@@ -793,6 +926,7 @@ namespace VINControl.Craigslist
         public AdsPosting Post { get; set; }
         public string CryptedStepCheck { get; set; }
         public string LocationUrl { get; set; }
+        public string Warning { get; set; }
     }
 
     public class AdsPosting
@@ -833,6 +967,8 @@ namespace VINControl.Craigslist
     {
         public int Value { get; set; }
         public string Name { get; set; }
+        public string Href { get; set; }
+
     }
 
     public static class DictionaryExtensions

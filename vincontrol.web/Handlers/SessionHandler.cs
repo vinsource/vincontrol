@@ -10,6 +10,7 @@ using vincontrol.DomainObject;
 using vincontrol.Helper;
 using Vincontrol.Web.Models;
 using Vincontrol.Web.Objects;
+using VINControl.Craigslist;
 using SelectListItem = System.Web.Mvc.SelectListItem;
 
 namespace Vincontrol.Web.Handlers
@@ -79,7 +80,9 @@ namespace Vincontrol.Web.Handlers
         private const string _manheimPastAuctions = "ManheimPastAuction";
         private const string _stockingGuideCars = "StockingGuideCars";
         private const string _stockingGuideAuctions = "StockingGuideAuctions";
-        
+        private const string _creditCardInfo = "CreditCardInfo";
+
+
         public static VehicleDescription GetVehicleDescriptionData(string key)
         {
             string result =_vehicleDesriptionData+key;
@@ -1062,6 +1065,22 @@ namespace Vincontrol.Web.Handlers
             set
             {
                 HttpContext.Current.Session[_stockingGuideAuctions] = value;
+            }
+        }
+
+        public static CreditCardInfo CreditCardInfo
+        {
+            get
+            {
+                if (HttpContext.Current.Session[_creditCardInfo] == null)
+                {
+                    return null;
+                }
+                return (CreditCardInfo)HttpContext.Current.Session[_creditCardInfo];
+            }
+            set
+            {
+                HttpContext.Current.Session[_creditCardInfo] = value;
             }
         }
     }

@@ -4,7 +4,7 @@
 library
 C#
 .cs
-E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\Vincontrol.Vinsell.WPFLibrary\obj\Debug\
+C:\VIN\vinsource\vincontrol\Vincontrol.Vinsell.WPFLibrary\obj\Debug\
 Vincontrol.Vinsell.WPFLibrary
 none
 false
@@ -13,7 +13,7 @@ DEBUG;TRACE
 2139975170
 2492962218
 7-472754548
-1587330003
+15-260776432
 ChartControl.xaml;GroupGridView.xaml;
 
 False

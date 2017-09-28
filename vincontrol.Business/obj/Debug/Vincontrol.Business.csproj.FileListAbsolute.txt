@@ -2,3 +2,8 @@ E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Business\bin\D
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Business\bin\Debug\vincontrol.Business.pdb
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Business\obj\Debug\vincontrol.Business.dll
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.Business\obj\Debug\vincontrol.Business.pdb
+C:\VIN\vinsource\vincontrol\vincontrol.Business\bin\Debug\vincontrol.Business.dll
+C:\VIN\vinsource\vincontrol\vincontrol.Business\bin\Debug\vincontrol.Business.pdb
+C:\VIN\vinsource\vincontrol\vincontrol.Business\obj\Debug\vincontrol.Business.dll
+C:\VIN\vinsource\vincontrol\vincontrol.Business\obj\Debug\vincontrol.Business.pdb
+C:\VIN\vinsource\vincontrol\vincontrol.Business\obj\Debug\Vincontrol.Business.csprojResolveAssemblyReference.cache

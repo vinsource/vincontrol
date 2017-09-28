@@ -63,7 +63,7 @@
     </Reference>
     <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\ShareLibrary\EntityFramework.dll</HintPath>
+      <HintPath>Libs\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -98,6 +98,11 @@
     <Compile Include="Interface\IBaseRepository.cs" />
     <Compile Include="Interface\IUnitOfWork.cs" />
     <Compile Include="LinqExtendedHelper.cs" />
+    <Compile Include="Model\CLDMS\CLDMS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CLDMS.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Model\DataCommonHelper.cs" />
     <Compile Include="Model\ExtendedEntities.cs" />
     <Compile Include="Model\Truck\ExtendedEntities.cs" />
@@ -267,6 +272,10 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Vinsell.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <EntityDeploy Include="Model\CLDMS\CLDMS.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CLDMS.Designer.cs</LastGenOutput>
+    </EntityDeploy>
     <None Include="Model\Vinsell.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Vinsell.cs</LastGenOutput>
@@ -283,6 +292,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Model\CarMax\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Libs\EntityFramework.dll" />
+    <Content Include="Libs\EntityFramework.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

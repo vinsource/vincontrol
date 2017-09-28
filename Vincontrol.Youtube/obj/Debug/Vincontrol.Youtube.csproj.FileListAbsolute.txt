@@ -11,3 +11,16 @@ E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC4\Vincontrol.Youtube\bin\Debu
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC4\Vincontrol.Youtube\obj\Debug\Vincontrol.Youtube.csprojResolveAssemblyReference.cache
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC4\Vincontrol.Youtube\obj\Debug\Vincontrol.Youtube.dll
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC4\Vincontrol.Youtube\obj\Debug\Vincontrol.Youtube.pdb
+C:\VIN\vinsource\vincontrol\Vincontrol.Youtube\bin\Debug\Vincontrol.Youtube.dll
+C:\VIN\vinsource\vincontrol\Vincontrol.Youtube\bin\Debug\Vincontrol.Youtube.pdb
+C:\VIN\vinsource\vincontrol\Vincontrol.Youtube\bin\Debug\Google.GData.Client.dll
+C:\VIN\vinsource\vincontrol\Vincontrol.Youtube\bin\Debug\Google.GData.Extensions.dll
+C:\VIN\vinsource\vincontrol\Vincontrol.Youtube\bin\Debug\Google.GData.YouTube.dll
+C:\VIN\vinsource\vincontrol\Vincontrol.Youtube\bin\Debug\Newtonsoft.Json.dll
+C:\VIN\vinsource\vincontrol\Vincontrol.Youtube\bin\Debug\vincontrol.ConfigurationManagement.dll
+C:\VIN\vinsource\vincontrol\Vincontrol.Youtube\bin\Debug\vincontrol.ConfigurationManagement.pdb
+C:\VIN\vinsource\vincontrol\Vincontrol.Youtube\bin\Debug\Newtonsoft.Json.pdb
+C:\VIN\vinsource\vincontrol\Vincontrol.Youtube\bin\Debug\Newtonsoft.Json.xml
+C:\VIN\vinsource\vincontrol\Vincontrol.Youtube\obj\Debug\Vincontrol.Youtube.csprojResolveAssemblyReference.cache
+C:\VIN\vinsource\vincontrol\Vincontrol.Youtube\obj\Debug\Vincontrol.Youtube.dll
+C:\VIN\vinsource\vincontrol\Vincontrol.Youtube\obj\Debug\Vincontrol.Youtube.pdb

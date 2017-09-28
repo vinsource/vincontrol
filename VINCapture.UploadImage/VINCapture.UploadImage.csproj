@@ -88,6 +88,16 @@
     <Reference Include="ImageResizer">
       <HintPath>..\Package\ImageResizer.dll</HintPath>
     </Reference>
+    <Reference Include="Interop.PortableDeviceApiLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>Libs\Interop.PortableDeviceApiLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.PortableDeviceTypesLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>Libs\Interop.PortableDeviceTypesLib.dll</HintPath>
+    </Reference>
     <Reference Include="Starksoft.Net.Ftp">
       <HintPath>D:\ShareLibrary\Starksoft.Net.Ftp.dll</HintPath>
     </Reference>
@@ -327,27 +337,6 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <COMReference Include="PortableDeviceApiLib">
-      <Guid>{1F001332-1A57-4934-BE31-AFFC99F4EE0A}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>tlbimp</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
-    </COMReference>
-    <COMReference Include="PortableDeviceTypesLib">
-      <Guid>{2B00BA2F-E750-4BEB-9235-97142EDE1D3E}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>tlbimp</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>False</EmbedInteropTypes>
-      <Private>True</Private>
-    </COMReference>
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Image\ajax-loader1.gif" />
   </ItemGroup>
   <ItemGroup>
@@ -355,6 +344,12 @@
       <Project>{7d76e800-c9d8-407a-8844-a775ee6d5a65}</Project>
       <Name>vincontrol.Data</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Libs\Interop.PortableDeviceApiLib.dll" />
+    <Content Include="Libs\Interop.PortableDeviceTypesLib.dll" />
+    <Content Include="Libs\Starksoft.Net.Ftp.dll" />
+    <Content Include="Libs\Starksoft.Net.Proxy.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

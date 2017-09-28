@@ -24,3 +24,16 @@ E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.DataFeed\bin\D
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.DataFeed\obj\Debug\Vincontrol.DataFeed.csprojResolveAssemblyReference.cache
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.DataFeed\obj\Debug\vincontrol.DataFeed.dll
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.DataFeed\obj\Debug\vincontrol.DataFeed.pdb
+C:\VIN\vinsource\vincontrol\vincontrol.DataFeed\bin\Debug\vincontrol.DataFeed.dll.config
+C:\VIN\vinsource\vincontrol\vincontrol.DataFeed\bin\Debug\vincontrol.DataFeed.dll
+C:\VIN\vinsource\vincontrol\vincontrol.DataFeed\bin\Debug\vincontrol.DataFeed.pdb
+C:\VIN\vinsource\vincontrol\vincontrol.DataFeed\bin\Debug\LumenWorks.Framework.IO.dll
+C:\VIN\vinsource\vincontrol\vincontrol.DataFeed\bin\Debug\Starksoft.Net.Ftp.dll
+C:\VIN\vinsource\vincontrol\vincontrol.DataFeed\bin\Debug\Starksoft.Net.Proxy.dll
+C:\VIN\vinsource\vincontrol\vincontrol.DataFeed\bin\Debug\vincontrol.Backend.Data.dll
+C:\VIN\vinsource\vincontrol\vincontrol.DataFeed\bin\Debug\vincontrol.Backend.Model.dll
+C:\VIN\vinsource\vincontrol\vincontrol.DataFeed\bin\Debug\vincontrol.Backend.Data.pdb
+C:\VIN\vinsource\vincontrol\vincontrol.DataFeed\bin\Debug\vincontrol.Backend.Model.pdb
+C:\VIN\vinsource\vincontrol\vincontrol.DataFeed\obj\Debug\Vincontrol.DataFeed.csprojResolveAssemblyReference.cache
+C:\VIN\vinsource\vincontrol\vincontrol.DataFeed\obj\Debug\vincontrol.DataFeed.dll
+C:\VIN\vinsource\vincontrol\vincontrol.DataFeed\obj\Debug\vincontrol.DataFeed.pdb

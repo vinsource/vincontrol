@@ -5,3 +5,10 @@ E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.Logging\bin\De
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.Logging\obj\Debug\VINControl.Logging.dll
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.Logging\obj\Debug\VINControl.Logging.pdb
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.Logging\obj\Debug\VINControl.Logging.csprojResolveAssemblyReference.cache
+C:\VIN\vinsource\vincontrol\VINControl.Logging\bin\Debug\VINControl.Logging.dll
+C:\VIN\vinsource\vincontrol\VINControl.Logging\bin\Debug\VINControl.Logging.pdb
+C:\VIN\vinsource\vincontrol\VINControl.Logging\bin\Debug\log4net.dll
+C:\VIN\vinsource\vincontrol\VINControl.Logging\bin\Debug\log4net.xml
+C:\VIN\vinsource\vincontrol\VINControl.Logging\obj\Debug\VINControl.Logging.dll
+C:\VIN\vinsource\vincontrol\VINControl.Logging\obj\Debug\VINControl.Logging.pdb
+C:\VIN\vinsource\vincontrol\VINControl.Logging\obj\Debug\VINControl.Logging.csprojResolveAssemblyReference.cache

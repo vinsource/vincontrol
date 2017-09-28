@@ -23,3 +23,11 @@ E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.ChromeAutoServ
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.ChromeAutoService\obj\Debug\Vincontrol.ChromeAutoService.csprojResolveAssemblyReference.cache
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.ChromeAutoService\obj\Debug\vincontrol.ChromeAutoService.dll
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\vincontrol.ChromeAutoService\obj\Debug\vincontrol.ChromeAutoService.pdb
+C:\VIN\vinsource\vincontrol\vincontrol.ChromeAutoService\bin\vincontrol.ChromeAutoService.dll.config
+C:\VIN\vinsource\vincontrol\vincontrol.ChromeAutoService\bin\vincontrol.ChromeAutoService.dll
+C:\VIN\vinsource\vincontrol\vincontrol.ChromeAutoService\bin\vincontrol.ChromeAutoService.pdb
+C:\VIN\vinsource\vincontrol\vincontrol.ChromeAutoService\bin\vincontrol.DomainObject.dll
+C:\VIN\vinsource\vincontrol\vincontrol.ChromeAutoService\bin\vincontrol.DomainObject.pdb
+C:\VIN\vinsource\vincontrol\vincontrol.ChromeAutoService\obj\Debug\Vincontrol.ChromeAutoService.csprojResolveAssemblyReference.cache
+C:\VIN\vinsource\vincontrol\vincontrol.ChromeAutoService\obj\Debug\vincontrol.ChromeAutoService.dll
+C:\VIN\vinsource\vincontrol\vincontrol.ChromeAutoService\obj\Debug\vincontrol.ChromeAutoService.pdb

@@ -7,3 +7,12 @@ E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.Canon\obj\Debu
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.Canon\obj\Debug\VINControl.Canon.csproj.GenerateResource.Cache
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.Canon\obj\Debug\VINControl.Canon.exe
 E:\Working\SVN\VinControlMVC\trunk\NewVinControlMVC_v7\VINControl.Canon\obj\Debug\VINControl.Canon.pdb
+C:\VIN\vinsource\vincontrol\VINControl.Canon\bin\Debug\VINControl.Canon.exe.config
+C:\VIN\vinsource\vincontrol\VINControl.Canon\bin\Debug\VINControl.Canon.exe
+C:\VIN\vinsource\vincontrol\VINControl.Canon\bin\Debug\VINControl.Canon.pdb
+C:\VIN\vinsource\vincontrol\VINControl.Canon\obj\Debug\VINControl.Canon.csprojResolveAssemblyReference.cache
+C:\VIN\vinsource\vincontrol\VINControl.Canon\obj\Debug\VINControl.Canon.MainForm.resources
+C:\VIN\vinsource\vincontrol\VINControl.Canon\obj\Debug\VINControl.Canon.Properties.Resources.resources
+C:\VIN\vinsource\vincontrol\VINControl.Canon\obj\Debug\VINControl.Canon.csproj.GenerateResource.Cache
+C:\VIN\vinsource\vincontrol\VINControl.Canon\obj\Debug\VINControl.Canon.exe
+C:\VIN\vinsource\vincontrol\VINControl.Canon\obj\Debug\VINControl.Canon.pdb

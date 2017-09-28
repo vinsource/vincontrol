@@ -40,13 +40,13 @@ namespace VINControl.TestConsole
         {
             //CarMaxExecuteByApi();
             //CarMaxExecuteByMake();
-            CarMaxMarkSold();
+            //CarMaxMarkSold();
             //CarMaxInsertStore();
 
-            //var craigslistService = new CraigslistService();
+            var craigslistService = new CraigslistService();
             //craigslistService.UpdatePrice("TestyFlavor518@yahoo.com", "wCjdpMyD02", 134471, 65000);
             //craigslistService.Execute("TestyFlavor518@yahoo.com", "wCjdpMyD02", "http://losangeles.craigslist.org/");
-            //var states = craigslistService.GetStateList();
+            var states = craigslistService.GetStateListForCLDMS();
             //craigslistService.GetConfirmationPaymentInfo("https://post.craigslist.org/k/THBGxGmF4xG9kqIjysgB6Q/vfvjy");
 
             //carmaxService.ExecuteByMake(ConfigurationManager.AppSettings["carmax:MakeName"], Convert.ToInt64(ConfigurationManager.AppSettings["carmax:MakeValue"])); 
