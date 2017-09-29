@@ -38,6 +38,9 @@ namespace VINControl.TestConsole
 
         static void Main(string[] args)
         {
+            // Use Base.GData("UserTimezone") as user time zone id. Ex, "America/New_York"
+            //var localDate = TimeZoneConverter.GetLocalDateTime(DateTime.Now, TimeZoneConverter.ConvertToTimeZoneInfo("America/New_York"));
+
             //CarMaxExecuteByApi();
             //CarMaxExecuteByMake();
             //CarMaxMarkSold();
